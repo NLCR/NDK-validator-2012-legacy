@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:titleInfo>
+<mods:title>SERIALS-2011-09-1M_6M-20110913114834-05708-crawler01.webarchiv.cz.arc.warc</mods:title>
+<mods:subTitle>Serials-2011-09-1M-6M</mods:subTitle>
+<mods:subTitle>sklizen serialu s mesicni a sesti mesicni frekvenci - zari 2011 - V1M - V6M</mods:subTitle>
+</mods:titleInfo>
+<mods:originInfo>
+<mods:dateCaptured encoding="w3cdtf">2012-06-01T10:36:26Z</mods:dateCaptured>
+</mods:originInfo>
+<mods:recordInfo>
+<mods:recordIdentifier>urn:uuid:49ffe5f0-4501-4504-bf8c-2203cc82b8c6</mods:recordIdentifier>
+</mods:recordInfo>
+<mods:identifier type="modsType">warcinfo</mods:identifier>
+</mods:mods>

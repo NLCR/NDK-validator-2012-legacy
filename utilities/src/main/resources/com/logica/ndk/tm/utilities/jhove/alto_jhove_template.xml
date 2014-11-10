@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04">
+ <date>2013-05-31T19:49:07+02:00</date>
+ <repInfo uri="%5C%5Chdigfscl04%5CCDMP_05%5CCDM-P-T2-05%5CCDM_084cd680-bd21-11e2-8b87-005056827e51%5Cdata%5CALTO%5C1_0001_1L.tif.xml">
+  <reportingModule release="1.4" date="2007-01-08">XML-hul</reportingModule>
+  <lastModified></lastModified>
+  <size></size>
+  <format>XML</format>
+  <version>1.0</version>
+  <status></status>
+  <sigMatch>
+  <module>XML-hul</module>
+  </sigMatch>
+  <mimeType></mimeType>
+  <properties>
+   <property>
+    <name>XMLMetadata</name>
+    <values arity="List" type="Property">
+    <property>
+     <name>Parser</name>
+     <values arity="Scalar" type="String">
+      <value>com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser</value>
+     </values>
+    </property>
+    <property>
+     <name>Encoding</name>
+     <values arity="Scalar" type="String">
+      <value>utf-8</value>
+     </values>
+    </property>
+    <property>
+     <name>Standalone</name>
+     <values arity="Scalar" type="String">
+      <value>yes</value>
+     </values>
+    </property>
+    <property>
+     <name>Root</name>
+     <values arity="Scalar" type="String">
+      <value>alto</value>
+     </values>
+    </property>
+    <property>
+     <name>Namespaces</name>
+     <values arity="List" type="Property">
+     <property>
+      <name>Namespace</name>
+      <values arity="Array" type="Property">
+       <property>
+        <name>URI</name>
+        <values arity="Scalar" type="String">
+         <value>http://www.loc.gov/standards/alto/ns-v2#</value>
+        </values>
+       </property>
+      </values>
+     </property>
+      <property>
+       <name>Namespace</name>
+       <values arity="Array" type="Property">
+       <property>
+        <name>Prefix</name>
+        <values arity="Scalar" type="String">
+         <value>xlink</value>
+        </values>
+       </property>
+       <property>
+        <name>URI</name>
+        <values arity="Scalar" type="String">
+         <value>http://www.w3.org/1999/xlink</value>
+        </values>
+       </property>
+       </values>
+      </property>
+      <property>
+       <name>Namespace</name>
+       <values arity="Array" type="Property">
+       <property>
+        <name>Prefix</name>
+        <values arity="Scalar" type="String">
+         <value>xsi</value>
+        </values>
+       </property>
+       <property>
+        <name>URI</name>
+        <values arity="Scalar" type="String">
+         <value>http://www.w3.org/2001/XMLSchema-instance</value>
+        </values>
+       </property>
+       </values>
+      </property>
+     </values>
+    </property>
+    </values>
+   </property>
+  </properties>
+ </repInfo>
+ </jhove>

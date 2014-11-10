@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<digitalObject PID="uuid:5be08930-abf3-11e1-b7a2-00505682629d" VERSION="1.1" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd" xmlns="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <objectProperties>
+        <property VALUE="Test title = 5be08930-abf3-11e1-b7a2-00505682629d" NAME="info:fedora/fedora-system:def/model#label"/>
+        <property VALUE="Active" NAME="info:fedora/fedora-system:def/model#state"/>
+        <property VALUE="fedoraAdmin" NAME="info:fedora/fedora-system:def/model#ownerId"/>
+        <property VALUE="2012-06-01T16:22:02.868+02:00" NAME="info:fedora/fedora-system:def/model#createdDate"/>
+        <property VALUE="2012-06-01T16:22:02.868+02:00" NAME="info:fedora/fedora-system:def/view#lastModifiedDate"/>
+    </objectProperties>
+    <datastream VERSIONABLE="false" STATE="A" CONTROL_GROUP="X" ID="DC">
+        <datastreamVersion FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" MIMETYPE="text/xml" CREATED="2012-06-01T16:22:02.880+02:00" LABEL="Dublin Core Record for this object" ID="DC.0">
+            <xmlContent>
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"> 
+          
+                    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Bílá nemoc : [drama o třech aktech ve 14 obrazech] /</dc:title>  
+          
+                    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Čapek, Karel, 1890-1938 jk01021023 aut</dc:creator>  
+          
+                    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">model:monograph</dc:type>  
+          
+                    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">česká dramata fd133957 czenas</dc:type>  
+          
+                    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">Czech drama eczenas</dc:type>  
+          
+                    <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Praha : Artur,</dc:publisher>  
+          
+                    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2004</dc:date>  
+          
+                    <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">cze</dc:language>  
+          
+                    <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">URN:ISBN:80-86216-47-0</dc:identifier>  
+          
+                    <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">uuid:5be08930-abf3-11e1-b7a2-00505682629d</dc:identifier>  
+          
+                    <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">urnNbn:urn:nbn:cz:aba001-000687</dc:identifier>
+        </oai_dc:dc>
+            </xmlContent>
+        </datastreamVersion>
+    </datastream>
+    <datastream VERSIONABLE="false" STATE="A" CONTROL_GROUP="X" ID="BIBLIO_MODS">
+        <datastreamVersion FORMAT_URI="http://www.loc.gov/mods/v3" MIMETYPE="text/xml" CREATED="2012-06-01T16:22:02.886+02:00" LABEL="BIBLIO_MODS description of current object" ID="BIBLIO_MODS.0">
+            <xmlContent>
+                <mods:mods ID="MODS_VOLUME_0001" xmlns="" xmlns:ns4="info:fedora/fedora-system:def/foxml#" xmlns:mods="http://www.loc.gov/mods/v3"> 
+          
+                    <mods:titleInfo ID="MODS_TITLE"> 
+            
+                        <mods:title>Bílá nemoc</mods:title>  
+            
+                        <mods:subTitle>[drama o třech aktech ve 14 obrazech]</mods:subTitle> 
+          </mods:titleInfo>  
+          
+                    <mods:name type="personal" usage="primary"> 
+            
+                        <mods:namePart>Čapek, Karel</mods:namePart>  
+            
+                        <mods:namePart type="date">1890-1938</mods:namePart>  
+            
+                        <mods:role> 
+              
+                            <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          
+                    <mods:typeOfResource>text</mods:typeOfResource>  
+          
+                    <mods:genre>volume</mods:genre>  
+          
+                    <mods:originInfo> 
+            
+                        <mods:place> 
+              
+                            <mods:placeTerm authority="marccountry" type="text">xr</mods:placeTerm> 
+            </mods:place>  
+            
+                        <mods:place> 
+              
+                            <mods:placeTerm type="text">Praha</mods:placeTerm> 
+            </mods:place>  
+            
+                        <mods:publisher>Artur</mods:publisher>  
+            
+                        <mods:dateIssued>2004</mods:dateIssued>  
+            
+                        <mods:edition>Vyd. 21., V nakl. Artur 1.</mods:edition>  
+            
+                        <mods:issuance>monographic</mods:issuance> 
+          </mods:originInfo>  
+          
+                    <mods:language> 
+            
+                        <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+          </mods:language>  
+          
+                    <mods:physicalDescription> 
+            
+                        <mods:form authority="marcform">print</mods:form>  
+            
+                        <mods:form authority="marccategory">text</mods:form>  
+            
+                        <mods:form authority="marcsmd">regular print</mods:form>  
+            
+                        <mods:extent>93 s. ; 19 cm</mods:extent> 
+          </mods:physicalDescription>  
+          
+                    <mods:targetAudience authority="marctarget">general</mods:targetAudience>  
+          
+                    <mods:classification authority="udc">821.162.3-2</mods:classification>  
+          
+                    <mods:classification authority="udc">(0:82-2)</mods:classification>  
+          
+                    <mods:relatedItem type="series"> 
+            
+                        <mods:titleInfo> 
+              
+                            <mods:title>D (Artur)</mods:title> 
+            </mods:titleInfo> 
+          </mods:relatedItem>  
+          
+                    <mods:identifier type="ccnb">cnb001490472</mods:identifier>  
+          
+                    <mods:identifier type="isbn">80-86216-47-0</mods:identifier>  
+          
+                    <mods:identifier invalid="yes" type="isbn">80-8621-47-0</mods:identifier>  
+          
+                    <mods:identifier type="oclc">85124282</mods:identifier>  
+          
+                    <mods:recordInfo> 
+            
+                        <mods:descriptionStandard>aacr</mods:descriptionStandard>  
+            
+                        <mods:recordContentSource authority="marcorg">BOA001</mods:recordContentSource>  
+            
+                        <mods:recordCreationDate encoding="marc">041203</mods:recordCreationDate>  
+            
+                        <mods:recordChangeDate encoding="iso8601">20050126133634.0</mods:recordChangeDate>  
+            
+                        <mods:recordIdentifier source="CZ-PrNK">cpk20041490472</mods:recordIdentifier>  
+            
+                        <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl (Revision 1.76 2012/02/01)</mods:recordOrigin>  
+            
+                        <mods:languageOfCataloging> 
+              
+                            <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+            </mods:languageOfCataloging> 
+          </mods:recordInfo>  
+          
+                    <mods:identifier type="uuid">5be08930-abf3-11e1-b7a2-00505682629d</mods:identifier>  
+          
+                    <mods:identifier type="urnNbn">urn:nbn:cz:aba001-000687</mods:identifier>
+        </mods:mods>
+            </xmlContent>
+        </datastreamVersion>
+    </datastream>
+    <datastream VERSIONABLE="false" STATE="A" CONTROL_GROUP="X" ID="RELS-EXT">
+        <datastreamVersion FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" MIMETYPE="application/rdf+xml" CREATED="2012-06-01T16:22:02.886+02:00" LABEL="RDF Statements about this object" ID="RELS-EXT.0">
+            <xmlContent>
+                <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:kramerius="http://www.nsdl.org/ontologies/relationships#">
+                    <rdf:Description rdf:about="info:fedora/uuid:5be08930-abf3-11e1-b7a2-00505682629d">
+                        <fedora-model:hasModel rdf:resource="info:fedora/model:monograph"/>
+                        <oai:itemID>uuid:5be08930-abf3-11e1-b7a2-00505682629d</oai:itemID>
+                        <kramerius:hasPage rdf:resource="info:fedora/uuid:2832f170-abf5-11e1-b7a2-00505682629d"/>
+                        <kramerius:hasPage rdf:resource="info:fedora/uuid:2841e590-abf5-11e1-b7a2-00505682629d"/>
+                    </rdf:Description>
+                </rdf:RDF>
+            </xmlContent>
+        </datastreamVersion>
+    </datastream>
+    <datastream VERSIONABLE="false" STATE="A" CONTROL_GROUP="E" ID="POLICY">
+        <datastreamVersion MIMETYPE="application/rdf+xml" CREATED="2012-06-01T16:22:02.886+02:00" ID="POLICY.0">
+            <contentLocation REF="http://local.fedora.server/fedora/get/policy:public/POLICYDEF" TYPE="URL"/>
+        </datastreamVersion>
+    </datastream>
+</digitalObject>

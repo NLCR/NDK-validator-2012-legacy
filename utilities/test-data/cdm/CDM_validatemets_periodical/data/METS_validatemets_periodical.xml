@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><mets:mets xmlns:mets="http://www.loc.gov/METS/" LABEL="Dobrý večer, 1993-1993" OBJID="ce2a5da0-c3b7-11e1-adc3-00505682629d" TYPE="Periodical" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+   <mets:metsHdr CREATEDATE="2012-07-01T22:10:14Z" LASTMODDATE="2012-07-01T22:10:14Z">
+      <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION">
+         <mets:name>ABA001</mets:name>
+      </mets:agent>
+      <mets:agent ROLE="ARCHIVIST" TYPE="ORGANIZATION">
+         <mets:name>ABA001</mets:name>
+      </mets:agent>
+   </mets:metsHdr>
+   <dmdSec xmlns="http://www.loc.gov/METS/" ID="MODSMD_TITLE_0001">
+      <mdWrap MDTYPE="MODS" MDTYPEVERSION="3.4" MIMETYPE="text/xml">
+         <xmlData>
+            <mods:mods ID="MODS_TITLE_0001" version="3.4">
+               <mods:titleInfo ID="MODS_TITLE">
+                  <mods:title>Dobrý večer</mods:title>
+                  <mods:subTitle>Noviny pro Prahu a okolí</mods:subTitle>
+               </mods:titleInfo>
+               <mods:typeOfResource>text</mods:typeOfResource>
+               <mods:genre>title</mods:genre>
+               <mods:originInfo>
+                  <mods:place>
+                     <mods:placeTerm authority="marccountry" type="text">xr</mods:placeTerm>
+                  </mods:place>
+                  <mods:place>
+                     <mods:placeTerm type="text">Praha</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>RISK</mods:publisher>
+                  <mods:dateIssued>1993-1993</mods:dateIssued>
+                  <mods:dateIssued encoding="marc" point="start">1993</mods:dateIssued>
+                  <mods:dateIssued encoding="marc" point="end">1993</mods:dateIssued>
+                  <mods:issuance>serial</mods:issuance>
+                  <mods:frequency authority="marcfrequency">Denně</mods:frequency>
+                  <mods:frequency>Daily</mods:frequency>
+               </mods:originInfo>
+               <mods:language>
+                  <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+               </mods:language>
+               <mods:physicalDescription>
+                  <mods:form authority="marcform">print</mods:form>
+                  <mods:extent>1 sv. ; 36 cm</mods:extent>
+               </mods:physicalDescription>
+               <mods:abstract>Noviny pro Prahu a okolí.</mods:abstract>
+               <mods:note type="date/sequential designation">Roč. 1, č. 1 (květen 1993)-Roč. 1, č. 83 (3. září 1993)</mods:note>
+               <mods:note>Rozsah a rozměry pro registraci: 16 s., 250/360</mods:note>
+               <mods:subject>
+                  <mods:geographicCode authority="marcgac">e-xr---</mods:geographicCode>
+                  <mods:geographicCode>e-xr-pg</mods:geographicCode>
+               </mods:subject>
+               <mods:subject authority="czenas">
+                  <mods:geographic>Praha (Česko)</mods:geographic>
+               </mods:subject>
+               <mods:subject>
+                  <mods:topic>aktuality služby inzerce tv programy</mods:topic>
+               </mods:subject>
+               <mods:classification authority="udc">070</mods:classification>
+               <mods:relatedItem type="constituent">
+                  <mods:titleInfo>
+                     <mods:title>TV Magazín</mods:title>
+                  </mods:titleInfo>
+               </mods:relatedItem>
+               <mods:relatedItem type="succeeding">
+                  <mods:titleInfo>
+                     <mods:title>Dobrý večerník</mods:title>
+                  </mods:titleInfo>
+               </mods:relatedItem>
+               <mods:identifier type="ccnb">cnb000358653</mods:identifier>
+               <mods:recordInfo>
+                  <mods:descriptionStandard>aacr</mods:descriptionStandard>
+                  <mods:recordContentSource authority="marcorg">ABA001</mods:recordContentSource>
+                  <mods:recordCreationDate encoding="marc">930512</mods:recordCreationDate>
+                  <mods:recordChangeDate encoding="iso8601">19980619000000.0</mods:recordChangeDate>
+                  <mods:recordIdentifier source="CZ-PrNK">cps19950358653</mods:recordIdentifier>
+                  <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl (Revision 1.76 2012/02/01)</mods:recordOrigin>
+                  <mods:languageOfCataloging>
+                     <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+                  </mods:languageOfCataloging>
+               </mods:recordInfo>
+               <mods:identifier type="uuid">ce2a5da0-c3b7-11e1-adc3-00505682629d</mods:identifier>
+            </mods:mods>
+         </xmlData>
+      </mdWrap>
+   </dmdSec>
+   <mets:dmdSec ID="DCMD_TITLE_0001">
+      <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml">
+         <mets:xmlData>
+            <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+               <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Dobrý večer : Noviny pro Prahu a okolí</dc:title>
+               <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+               <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Praha : RISK,</dc:publisher>
+               <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1993-1993</dc:date>
+               <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">cze</dc:language>
+               <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Noviny pro Prahu a okolí.</dc:description>
+               <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Rozsah a rozměry pro registraci: 16 s., 250/360</dc:description>
+               <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Noviny pro Prahu a okolí.</dc:description>
+               <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">aktuality služby inzerce tv programy</dc:subject>
+               <dc:relation xmlns:dc="http://purl.org/dc/elements/1.1/">TV Magazín</dc:relation>
+               <dc:relation xmlns:dc="http://purl.org/dc/elements/1.1/">Dobrý večerník</dc:relation>
+               <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">uuid:ce2a5da0-c3b7-11e1-adc3-00505682629d</dc:identifier>
+            </oai_dc:dc>
+         </mets:xmlData>
+      </mets:mdWrap>
+   </mets:dmdSec>
+   <dmdSec xmlns="http://www.loc.gov/METS/" ID="MODSMD_VOLUME_0001">
+      <mdWrap MDTYPE="MODS" MDTYPEVERSION="3.4" MIMETYPE="text/xml">
+         <xmlData>
+            <mods:mods ID="MODS_VOLUME_0001" version="3.4">
+               <mods:genre>volume</mods:genre>
+               <mods:titleInfo>
+               </mods:titleInfo>
+               <mods:originInfo>
+                  <mods:dateIssued>2011</mods:dateIssued>
+               </mods:originInfo>
+            </mods:mods>
+         </xmlData>
+      </mdWrap>
+   </dmdSec>
+   <dmdSec xmlns="http://www.loc.gov/METS/" ID="MODSMD_ISSUE_0004">
+      <mdWrap MDTYPE="MODS" MDTYPEVERSION="3.4" MIMETYPE="text/xml">
+         <xmlData>
+            <mods:mods ID="MODS_ISSUE_0004" version="3.4">
+               <mods:genre type="normal">issue</mods:genre>
+               <mods:titleInfo>
+                  <mods:subTitle>Noviny pro Prahu a okolí</mods:subTitle>
+                  <mods:partNumber>4</mods:partNumber>
+               </mods:titleInfo>
+               <mods:originInfo>
+                  <mods:place>
+                     <mods:placeTerm>xr</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>RISK</mods:publisher>
+                  <mods:dateIssued>13.08.2012</mods:dateIssued>
+               </mods:originInfo>
+               <mods:language>
+                  <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+               </mods:language>
+               <mods:subject>
+                  <mods:topic>aktuality služby inzerce tv programy</mods:topic>
+               </mods:subject>
+               <mods:identifier type="ccnb">cnb000358653</mods:identifier>
+            </mods:mods>
+         </xmlData>
+      </mdWrap>
+   </dmdSec>
+   <dmdSec xmlns="http://www.loc.gov/METS/" ID="MODSMD_ISSUE_0002">
+      <mdWrap MDTYPE="MODS" MDTYPEVERSION="3.4" MIMETYPE="text/xml">
+         <xmlData>
+            <mods:mods ID="MODS_ISSUE_0002" version="3.4">
+               <mods:genre type="normal">issue</mods:genre>
+               <mods:titleInfo>
+                  <mods:title>Dobrý večer</mods:title>
+                  <mods:subTitle>Noviny pro Prahu a okolí</mods:subTitle>
+               </mods:titleInfo>
+               <mods:originInfo>
+                  <mods:place>
+                     <mods:placeTerm>xr</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>RISK</mods:publisher>
+                  <mods:dateIssued>13.08.2012</mods:dateIssued>
+               </mods:originInfo>
+               <mods:language>
+                  <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+               </mods:language>
+               <mods:subject>
+                  <mods:topic>aktuality služby inzerce tv programy</mods:topic>
+               </mods:subject>
+               <mods:identifier type="ccnb">cnb000358653</mods:identifier>
+            </mods:mods>
+         </xmlData>
+      </mdWrap>
+   </dmdSec>
+   <dmdSec xmlns="http://www.loc.gov/METS/" ID="MODSMD_ISSUE_0003">
+      <mdWrap MDTYPE="MODS" MDTYPEVERSION="3.4" MIMETYPE="text/xml">
+         <xmlData>
+            <mods:mods ID="MODS_ISSUE_0003" version="3.4">
+               <mods:genre type="normal">issue</mods:genre>
+               <mods:titleInfo>
+                  <mods:title>Dobrý večer</mods:title>
+                  <mods:subTitle>Noviny pro Prahu a okolí</mods:subTitle>
+                  <mods:partNumber>4</mods:partNumber>
+               </mods:titleInfo>
+               <mods:originInfo>
+                  <mods:place>
+                     <mods:placeTerm>xr</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>RISK</mods:publisher>
+                  <mods:dateIssued>13.08.2012</mods:dateIssued>
+               </mods:originInfo>
+               <mods:language>
+                  <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+               </mods:language>
+               <mods:subject>
+                  <mods:topic>aktuality služby inzerce tv programy</mods:topic>
+               </mods:subject>
+               <mods:identifier type="ccnb">cnb000358653</mods:identifier>
+            </mods:mods>
+         </xmlData>
+      </mdWrap>
+   </dmdSec>
+   <dmdSec xmlns="http://www.loc.gov/METS/" ID="MODSMD_ISSUE_0001">
+      <mdWrap MDTYPE="MODS" MDTYPEVERSION="3.4" MIMETYPE="text/xml">
+         <xmlData>
+            <mods:mods ID="MODS_ISSUE_0001" version="3.4">
+               <mods:genre type="normal">issue</mods:genre>
+               <mods:titleInfo>
+                  <mods:title>Dobrý večer</mods:title>
+                  <mods:subTitle>Noviny pro Prahu a okolí</mods:subTitle>
+                  <mods:partNumber>4</mods:partNumber>
+               </mods:titleInfo>
+               <mods:originInfo>
+                  <mods:place>
+                     <mods:placeTerm>xr</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>RISK</mods:publisher>
+                  <mods:dateIssued>13.08.2012</mods:dateIssued>
+               </mods:originInfo>
+               <mods:language>
+                  <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm>
+               </mods:language>
+               <mods:subject>
+                  <mods:topic>aktuality služby inzerce tv programy</mods:topic>
+               </mods:subject>
+               <mods:identifier type="ccnb">cnb000358653</mods:identifier>
+            </mods:mods>
+         </xmlData>
+      </mdWrap>
+   </dmdSec>
+</mets:mets>

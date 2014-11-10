@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="2.0" 
+xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<jxb:globalBindings>
+		<jxb:serializable uid="1" />
+	</jxb:globalBindings>
+	<jxb:bindings schemaLocation="../urnNbn/xsd/digDocRegistration.xsd"  >
+		<!-- Customise the package name -
+		<jxb:schemaBindings>
+			<jxb:package name="resources.urnNbn.xsd" />
+		</jxb:schemaBindings>-->
+
+		<!-- rename the value element -->
+		<jxb:bindings node="//xs:complexType[@name='successor']">
+			<jxb:bindings node=".//xs:attribute[@name='value']">
+				<jxb:property name="SuccessorValueAttribute" />
+			</jxb:bindings>
+		</jxb:bindings>
+
+		<jxb:bindings node="//xs:complexType[@name='predecessor']">
+			<jxb:bindings node=".//xs:attribute[@name='value']">
+				<jxb:property name="PredecessorValueAttribute" />
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+	
+</jxb:bindings>

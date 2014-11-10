@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+  <local-tx-datasource>
+    <jndi-name>jboss/datasources/jbpmDS</jndi-name>    
+    <connection-url>jdbc:sqlserver://HSQLCL07:56240;instanceName=HSQLTEST;databaseName=NDK_Jbpm</connection-url>
+    <driver-class>com.microsoft.sqlserver.jdbc.SQLServerXADataSource</driver-class>
+    <user-name>svc_db_jbpm</user-name>
+    <password>jbpmPwd2012</password>
+  </local-tx-datasource>
+</datasources>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:premis="info:lc/xmlns/premis-v2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LABEL="Áčko" TYPE="Periodical" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://www.w3.org/1999/xlink http://www.w3.org/1999/xlink.xsd">  
+  <mets:metsHdr CREATEDATE="2013-11-15T14:21:53" LASTMODDATE="2013-11-15T14:21:53"> 
+    <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION"> 
+      <mets:name>ABA001</mets:name> 
+    </mets:agent>  
+    <mets:agent ROLE="ARCHIVIST" TYPE="ORGANIZATION"> 
+      <mets:name>ABA001</mets:name> 
+    </mets:agent> 
+  </mets:metsHdr>  
+  <mets:dmdSec ID="MODSMD_TITLE_0001"> 
+    <mets:mdWrap MDTYPE="MODS" MDTYPEVERSION="3.4" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <mods:mods ID="MODS_TITLE_0001" version="3.4"> 
+          <mods:titleInfo> 
+            <mods:title>Áčko</mods:title>  
+            <mods:subTitle>týdeník pro sedm set tisíc školáků</mods:subTitle> 
+          </mods:titleInfo>  
+          <mods:titleInfo type="alternative"> 
+            <mods:title>Týdeník Áčko</mods:title> 
+          </mods:titleInfo>  
+          <mods:name type="corporate"> 
+            <mods:namePart>Deltapress (vydavatelství)</mods:namePart> 
+          </mods:name>  
+          <mods:typeOfResource>text</mods:typeOfResource>  
+          <mods:genre>title</mods:genre>  
+          <mods:originInfo> 
+            <mods:place> 
+              <mods:placeTerm authority="marccountry" type="text">xr</mods:placeTerm> 
+            </mods:place>  
+            <mods:place> 
+              <mods:placeTerm type="text">Praha</mods:placeTerm> 
+            </mods:place>  
+            <mods:publisher>Deltapress, vydavatelství</mods:publisher>  
+            <mods:dateIssued>1991-1992</mods:dateIssued>  
+            <mods:dateIssued encoding="marc" point="start">1991</mods:dateIssued>  
+            <mods:dateIssued encoding="marc" point="end">1992</mods:dateIssued>  
+            <mods:issuance>continuing</mods:issuance>  
+            <mods:frequency authority="marcfrequency">1x týdně</mods:frequency>  
+            <mods:frequency>Weekly</mods:frequency> 
+          </mods:originInfo>  
+          <mods:language> 
+            <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+          </mods:language>  
+          <mods:physicalDescription> 
+            <mods:form authority="marcform">print</mods:form>  
+            <mods:extent>2 sv. ; 30 cm</mods:extent> 
+          </mods:physicalDescription>  
+          <mods:note type="date/sequential designation">Roč. 1, č. 1 (1991)-roč. 2, č. 18 (1992)</mods:note>  
+          <mods:note>Rozsah a rozměry pro registraci: 52x16 s., 210/297</mods:note>  
+          <mods:note>Vydává: Deltapress, vydavatelství</mods:note>  
+          <mods:subject> 
+            <mods:geographicCode authority="marcgac">e-xr---</mods:geographicCode>  
+            <mods:geographicCode>e-xr-pg</mods:geographicCode> 
+          </mods:subject>  
+          <mods:subject> 
+            <mods:topic>děti mládež volný čas zábava</mods:topic> 
+          </mods:subject>  
+          <mods:classification authority="udc">08</mods:classification>  
+          <mods:classification authority="udc">379.8</mods:classification>  
+          <mods:classification authority="udc">050</mods:classification>  
+          <mods:location> 
+            <mods:physicalLocation authority="siglaADR">ABA001</mods:physicalLocation>  
+            <mods:shelfLocator>54 D 91634</mods:shelfLocator> 
+          </mods:location>  
+          <mods:relatedItem type="succeeding"> 
+            <mods:titleInfo> 
+              <mods:title>Áčko s hvězdičkou</mods:title> 
+            </mods:titleInfo> 
+          </mods:relatedItem>  
+          <mods:identifier type="barCode">357380-10</mods:identifier>  
+          <mods:identifier type="uuid">0541fbe0-4dfa-11e3-a0a4-00505682629d</mods:identifier>  
+          <mods:identifier type="ccnb">cnb000357380</mods:identifier>  
+          <mods:recordInfo> 
+            <mods:descriptionStandard>aacr</mods:descriptionStandard>  
+            <mods:recordContentSource authority="marcorg">ABA001</mods:recordContentSource>  
+            <mods:recordCreationDate encoding="iso8601">1991-04-26T00:00:00Z</mods:recordCreationDate>  
+            <mods:recordChangeDate encoding="iso8601">2013-05-20T13:53:01Z</mods:recordChangeDate>  
+            <mods:recordIdentifier source="CZ-PrNK">cps19950357380</mods:recordIdentifier>  
+            <mods:recordOrigin>machine generated</mods:recordOrigin>  
+            <mods:languageOfCataloging> 
+              <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+            </mods:languageOfCataloging> 
+          </mods:recordInfo> 
+        </mods:mods> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec>  
+  <mets:dmdSec ID="DCMD_TITLE_0001"> 
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <oai_dc:dc> 
+          <dc:title>Áčko: týdeník pro sedm set tisíc školáků</dc:title>  
+          <dc:title>Týdeník Áčko</dc:title>  
+          <dc:contributor>Deltapress (vydavatelství)</dc:contributor>  
+          <dc:date>1991-1992</dc:date>  
+          <dc:date>1991-1992</dc:date>  
+          <dc:date>1991</dc:date>  
+          <dc:date>1992</dc:date>  
+          <dc:publisher>Deltapress, vydavatelství</dc:publisher>  
+          <dc:language>cze</dc:language>  
+          <dc:format>2 sv. ; 30 cm</dc:format>  
+          <dc:format>print</dc:format>  
+          <dc:description>Roč. 1, č. 1 (1991)-roč. 2, č. 18 (1992)</dc:description>  
+          <dc:description>Rozsah a rozměry pro registraci: 52x16 s., 210/297</dc:description>  
+          <dc:description>Vydává: Deltapress, vydavatelství</dc:description>  
+          <dc:subject>děti mládež volný čas zábava</dc:subject>  
+          <dc:subject>08</dc:subject>  
+          <dc:subject>379.8</dc:subject>  
+          <dc:subject>050</dc:subject>  
+          <dc:relation>Áčko s hvězdičkou</dc:relation>  
+          <dc:type>model:Periodical</dc:type>  
+          <dc:identifier>uuid:0541fbe0-4dfa-11e3-a0a4-00505682629d</dc:identifier>  
+          <dc:identifier>ccnb:cnb000357380</dc:identifier>  
+          <dc:identifier>barCode:357380-10</dc:identifier> 
+        </oai_dc:dc> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec>  
+  <mets:fileSec/>  
+  <mets:structMap> 
+    <mets:div DMDID="J-1" TYPE="investigation"> 
+      <mets:div DMDID="J-2" TYPE="dataset"> 
+        <mets:fptr FILEID="F-1"/>  
+        <mets:fptr FILEID="F-2"/> 
+      </mets:div> 
+    </mets:div> 
+  </mets:structMap>  
+  <mets:dmdSec ID="MODSMD_VOLUME_0001"> 
+    <mets:mdWrap MDTYPE="MODS" MDTYPEVERSION="3.4" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <mods:mods ID="MODS_VOLUME_0001" version="3.4"> 
+          <mods:genre>volume</mods:genre>  
+          <mods:originInfo> 
+            <mods:dateIssued>2013</mods:dateIssued> 
+          </mods:originInfo>  
+          <mods:identifier type="uuid">0b3014b0-4dfa-11e3-a0a4-00505682629d</mods:identifier>  
+          <mods:titleInfo> 
+            <mods:partNumber>2013</mods:partNumber> 
+          </mods:titleInfo> 
+        </mods:mods> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec>  
+  <mets:dmdSec ID="MODSMD_ISSUE_0001"> 
+    <mets:mdWrap MDTYPE="MODS" MDTYPEVERSION="3.4" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <mods:mods ID="MODS_ISSUE_0001" version="3.4"> 
+          <mods:genre type="normal">issue</mods:genre>  
+          <mods:titleInfo> 
+            <mods:title>Áčko</mods:title>  
+            <mods:subTitle>aaa</mods:subTitle>  
+            <mods:partNumber>1</mods:partNumber> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:place> 
+              <mods:placeTerm>Praha</mods:placeTerm> 
+            </mods:place>  
+            <mods:publisher>Deltapress, vydavatelství</mods:publisher>  
+            <mods:dateIssued>15.11.2013</mods:dateIssued> 
+          </mods:originInfo>  
+          <mods:language> 
+            <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+          </mods:language>  
+          <mods:subject> 
+            <mods:topic>děti mládež volný čas zábava</mods:topic> 
+          </mods:subject>  
+          <mods:identifier type="ccnb">cnb000357380</mods:identifier>  
+          <mods:location> 
+            <mods:physicalLocation>ABA001</mods:physicalLocation>  
+            <mods:shelfLocator>54 D 91634</mods:shelfLocator> 
+          </mods:location> 
+        </mods:mods> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec>  
+  <mets:dmdSec ID="DCMD_ISSUE_0001"> 
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <oai_dc:dc> 
+          <dc:type>issue</dc:type>  
+          <dc:title>Áčko: aaa. 1</dc:title>  
+          <dc:date>15.11.2013</dc:date>  
+          <dc:publisher>Deltapress, vydavatelství</dc:publisher>  
+          <dc:language>cze</dc:language>  
+          <dc:subject>děti mládež volný čas zábava</dc:subject>  
+          <dc:identifier>ccnb:cnb000357380</dc:identifier>
+        </oai_dc:dc> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec>  
+  <mets:dmdSec ID="DCMD_VOLUME_0001"> 
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <oai_dc:dc> 
+          <dc:type>volume</dc:type>  
+          <dc:date>2013</dc:date>  
+          <dc:title>. 2013</dc:title>  
+          <dc:identifier>uuid:0b3014b0-4dfa-11e3-a0a4-00505682629d</dc:identifier> 
+        </oai_dc:dc> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec> 
+</mets:mets>

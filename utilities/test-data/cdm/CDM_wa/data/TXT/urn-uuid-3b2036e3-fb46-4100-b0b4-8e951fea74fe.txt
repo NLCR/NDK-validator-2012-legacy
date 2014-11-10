@@ -1,0 +1,938 @@
+Ke stíhání korupce z pohledu státního zástupce                 
+
+JUDr. Miloslav Růžička
+
+
+I. Úvod
+
+	Zcela úvodem této přednášky bych chtěl zdůraznit, že nebudou uváděny nějaké podrobnější poznatky ke konkrétním případům výskytu korupce, protože takové poznatky pochopitelně mohl mít k dispozici původní přednášející JUDr. Jaroslav Dolejší. Přesto situace není až tak nepříznivá.� V měsíci říjnu 2006 jsem se v Paříži zúčastnil druhého kola hodnocení úrovně implementace Úmluvy OECD o boji proti podplácení zahraničních veřejných činitelů v mezinárodních podnikatelských transakcích č. 25/2000 Sb. m. s. Přesto je faktem, že své vystoupení zaměřuji spíše na otázky obecné, analytické a legislativní, méně již na ony uváděné konkrétní případy, o kterých z pochopitelných důvodů nedisponuji potřebnými informacemi.
+
+	Toto vystoupení se zaměřuje na problematiku korupce, která po poměrně dlouhou dobu po roce 1989 zůstávala v České republice stranou pozornosti, ale zejména v poslední době nastal výrazný vzestup počtu příspěvků věnovaných této otázce.� 
+	Je pochopitelné, že na fenomén korupce lze nahlížet z nejrůznějších pohledů. Velmi pozoruhodné shrnutí některých náhledů na uvedenou tématiku podává publikace P. Friče a kol.� I když zkoumání korupce z hlediska kriminologického se zatím děje spíše nesystematicky,� vytvořil se tu poměrně široký prostor pro analýzu tohoto závažného negativního jevu� právě na podkladě uplatnění kriminologických přístupů a metod. 
+
+	Jak z toho, co bylo dosud jen rámcově naznačeno, plyne: Ve svém vystoupení se soustředím zejména na korupci z pohledu trestního práva. Vzhledem k tomu, že v této oblasti přísluší důležitá úloha státnímu zastupitelství, je uvedené hledisko ještě doplněno pohledem státního zástupce. Jakkoli jeho doménou je uplatňování především represivní funkce směřující proti známým pachatelům, kteří se ve sféře trestního procesu dostávají do role podezřelých, obviněných (v přípravném řízení), popř. obžalovaných (ve stadiu řízení před soudem), není možno nevidět, že zřejmě s ohledem na to, že korupce je řazena mezi trestné činy bez oběti, stává se to důvodem, pro který se u korupce předpokládá vysoká míra latence.� Na tom se shodují všechny publikace, které se problematice trestné činnosti spojené s korupcí věnují; odlišují se většinou jen ve zdůvodnění tohoto stavu.� Připomenout je třeba v této souvislosti i to, že Česká republika má stabilně velmi nízký index vnímání korupce CPI.�   
+
+	To by mohly být skutečnosti, které by pohled státního zástupce na fenomén korupce mohly zavádět směrem k velmi pesimistickému výhledu, k tomu, že stíhání případů korupce by rozhodně nespadalo mezi priority státního zastupitelství (o tom by pak mohl koneckonců svědčit i výskyt trestních věcí z této oblasti, jak bude uvedeno níže), protože těžiště pozornosti by se spíše zaměřovalo na případy, v nichž byl zjištěn pachatel skutku. Již v této souvislosti je nutno uvést zcela jednoznačně, že je tomu přesně naopak – stíhání korupce patří mezi zcela zásadní priority státního zastupitelství, což platilo jak v minulosti (přinejmenším od období let 1999 – 2000),� tak i dnes.� Nezřídka byl dokonce vytýkán Nejvyššímu státnímu zastupitelství přílišný tzv. „aktivismus“, což se týkalo právě úvah o posílení významu některých iniciačních policejních metod, které se nepřesně označují jako „policejní provokace“.�
+	Má-li však být při stíhání korupce dosaženo alespoň částečně uspokojivých výsledků (tak tomu – jak bude níže uvedeno – zatím rozhodně není), pak jsou úvahy nad využitím některých specifických procesních metod a postupů zcela legitimní, jak to bude ještě podrobněji zmíněno v druhé části tohoto vystoupení, jakkoli by se všechny takové postupy měly odehrávat v příslušném zákonném rámci. Jistě ale nikdo nepředpokládá, že by se korupce měla potírat nezákonnými prostředky, spíše jde o to – ujasnit si, jaký by měl být obsah platné právní úpravy, pokud chceme s korupcí vést rozhodný boj.
+
+II. Vymezení pojmu korupce a trestné činy spojené s korupcí v České republice
+
+	Korupcí se podle definice, kterou podávají skripta „Korupce a protikorupční politika ve veřejné správě“,� rozumí takové jednání, kterým osoba v určitém kvalifikovaném postavení (volený zástupce, úředník zaměstnaný ve veřejné správě, zaměstnanec veřejného sektoru, ale i osoba na určité pozici v soukromém sektoru) zneužívá svého postavení k osobnímu obohacení nebo obohacení třetích osob, přičemž z tohoto jednání mohou mít přímý užitek osoby, které korupční jednání vyvolají, a vždy vzniká škoda do různé míry určitelné skupině fyzických i právnických osob.
+	Zpráva Ministerstva vnitra o korupci v České republice v roce 2004 a o plnění Aktualizovaného vládního programu boje proti korupci tento pojem vymezuje jako zneužití postavení spojené s porušením principu nestrannosti při rozhodování, motivované snahou po zisku.�
+	Publikace J. Chmelíka a kol.� vychází z toho, že v běžném slova smyslu lze jako korupci označit jednání, kterým se na určitou osobu působí různými nenásilnými prostředky, aby osoba jednala buď proti dobrým mravům nebo proti svým úředním nebo morálním povinnostem. Při uplatnění násilných prostředků by takové jednání mohlo mít charakter vydírání, útisku, apod. Zdůrazňují se tu ovšem i další dva momenty – vztah korupce a střetu zájmů a úzké sepětí mezi korupcí a organizovaným zločinem.
+
+	Velmi stručnou (a zároveň i výstižnou) definici korupce podává publikace J. Vidrny a Z. Náchodského,� bylo-li zde uvedeno, že znamená vždy vyjádření vztahu, ve kterém jeden subjekt nabízí druhému formu odměny za poskytnutí nebo příslib neoprávněné odměny. Korupci přitom autoři charakterizují tak, že v konkrétních případech jde např. o to, zda má větší iniciativu nabízející nebo přijímající, zda u očekávaného výsledku dochází k posunu časové souvislosti anebo ne, jaký je její konkrétní účel, její adresná společenská závažnost, míra její systematičnosti, stupeň její všeobecné (případné) akceptace, atd.
+	Charakteristickým rysem korupce především je, že je vedena zištnými cíli (touhou po zisku či jiném osobním prospěchu). Neoprávněná výhoda, která se uplácené osobě dostává, však zdaleka nemusí mít pouze peněžní podobu. Úplatkem může být jakákoliv neoprávněná výhoda, z které může mít uplacená osoba prospěch. Může spočívat v jakékoliv jiné výhodě spočívající v přímém majetkovém obohacení (věcný „dar“) nebo v jiném prospěchu nemajetkové povahy (určitá protislužba). U klientelismu a nepotismu navíc často vzniká „pouze“ síť vzájemných vazeb, z nichž jejich účastníci profitují zpravidla až se značným časovým odstupem a často jen tím, že jsou právě jen součástí tohoto systému.�
+
+Exkurs I: Ze skript korupce ve veřejné správě (Transparency International):
+
+Typologie korupce ve veřejné správě
+
+I. Malá administrativní korupce
+
+I. 1 Podplácení úředníků
+
+I. 2 Záměrně nepřehledná regulace, zatemňování pravidel, špatná organizace
+
+I. 3 Zneužívání pravomocí vyplývajících z dozorové činnosti veřejné správy
+
+II. Zneužívání veřejných zdrojů
+
+II.1 Zpronevěra veřejných zdrojů
+
+II.2 Nehospodárné využívání veřejných zdrojů
+
+II.3 Soukromý prospěch z privatizace
+
+II.4 Zneužívání úřední moci při udělování veřejných zakázek
+
+II.5 Nepotismus, klientelismus, případně „prodej“ pozic
+
+Malá administrativní korupce
+
+Za podmínek nedostatečného veřejného dohledu a kontrolních mechanismů je možné, aby byli jednotliví úředníci podpláceni soukromými subjekty proto, aby si tyto subjekty zajistily nějakou výhodu (I.1). Podplácení může být buď iniciováno soukromými subjekty nebo může být naopak vyžádáno úředníky, kteří jej mohou někdy realizovat organizovaným způsobem.
+
+Korupční příležitosti jsou dále vytvářeny nadměrnou a nepřehlednou regulací (I.2), která nutí soukromé subjekty k tomu, aby hledaly „kratší cesty“ pro řešení jejich záležitostí pomocí úplatků.
+
+Ještě jiná cesta k získávání úplatků především od malých podnikatelských subjektů je skrze zneužívání pravomocí vyplývajících z dozorové činnosti veřejné správy (I.3). Tato strategie je zvláště „výnosná“ tehdy, když nejsou známa jasná pravidla podnikání nebo když jsou tato pravidla nepřehledná, tj. když se I.2 kombinuje s I.3 (Karklins 2002: 24-25).
+
+Zneužívání veřejných zdrojů
+
+Ke zpronevěře veřejných zdrojů (II.1) může docházet skrze skryté rozpočtové položky či skryté bonusy k platům. Tento typ korupce vytváří podmínky pro organizovanou formu korupce. Bonusy jsou totiž vypláceny na odpovědnost vedoucích pracovníků, což je vybavuje mocí vyžadovat od svých podřízených „nestandardní úkony“. Vytváří se tak korumpovaná síť vzájemných služeb a protislužeb uvnitř samotné organizace veřejné správy.
+
+Fungování takové sítě pak vede k neefektivnímu hospodaření s veřejnými zdroji (II.2). V prostředí postkomunistické východní Evropy se k těmto typům korupce přidalo zneužívání privatizace (II.3). Tento typ korupčního jednání však spíše než do administrativní korupce spadá do kategorie velké politické korupce.
+
+To se však netýká zneužívání úřední moci při udělování veřejných zakázek (II.4). Udělování veřejných zakázek je postiženo problémy nejen na centrální, ale také na nižších úrovních. V České republice je jejich udělování zasaženo střetem zájmů (k pojmu viz níže). V případě nepotismu, klientelismu a prodeje pozic (II.5) se jedná o zvýhodňování určité skupiny lidí osobami, kterým byl svěřen výkon veřejné moci. Protože se jedná o nejzávažnější formy korupce, je jim na tomto místě věnován podrobnější výklad:
+
+Klientelismus (z lat. cliens - poslušný) je termín označující upřednostňování přátel a spřízněných skupin. Je založený na vztahu mezi závislými klienty a jejich patronem.
+
+Nejvýraznějším rysem klientského vztahu je uznaná nerovnost zúčastněných stran. Vztah je přísně osobní, zpravidla silně emotivně zabarvený ideálem věrnosti, čímž se liší od neosobních vztahů tržního typu. Paradoxní kombinace vzájemné věrnosti a nekompromisní nerovnosti nebrání tomu, aby byl vztah udržován dobrovolně oběma stranami (MVČR 2004). Vede k tomu, že rozdělování statků neprobíhá na základě neosobních pravidel trhu, ale je nahrazen pravidly známostí, protekcí a lidí zapojených do určité klientské sítě.
+
+Nepotismus (z it. nepos - vnuk) je způsob uplatňování, upevňování a rozšiřování vlivu významného jedince na společenské struktury prostřednictvím prosazování vlastních příbuzných a oblíbenců do lukrativních a společensky vlivných pozic a rolí (MV ČR 2004). Vzniká síť vzájemných vazeb a osobních kontaktů, přičemž rodinné vztahy určují vztahy politické a ekonomické.
+
+Konečně charakteristickým znakem prodeje pozic je skutečnost, že dochází k upevňování a rozšiřování vlivu významného jedince prostřednictvím „placeného protežování“. Tento jedinec je v postavení, které mu umožňuje rozhodovat o personálních otázkách. Pracovní místa, o nichž rozhoduje, pak obsazuje na základě úplatků, které získává od jednotlivých zájemců o tyto pozice. Jakmile tito kandidáti místo získají, chovají se k němu jako ke „kořisti“, neboť se jim musí vrátit vynaložené náklady.
+
+Společným rysem klientelismu, nepotismu i prodeje pozic je skutečnost, že toky výhod v rámci těchto vztahů mohou probíhat až se značným časovým odstupem (to je také jeden z důvodů, proč lze tyto formy korupce velmi těžko odhalovat). Osoby, které se těchto vztahů účastní, totiž těží již ze samotné účasti na tomto vztahu, z čehož pak plynou výhody, které osoby na tomto systému vztahů nezúčastněné nemají. Velmi často se navíc nejedná o finanční výhody (plynoucí např. z přidělovaných veřejných zakázek); může jít o prestiž či jiné nemajetkové benefity (např. exkluzivní přístup k informacím, výhodná zaměstnání, rychlejší pracovní postup, podíl při rozhodování o odměně apod.).
+
+Klientelismus, nepotismus a prodej pozic mohou postupně přerůst do korupční symbiózy politické elity s vlivnými ekonomickými skupinami, což je pro fungování demokratického systému největším nebezpečím (problém takzvaného převzetí státu soukromými subjekty – state capture). Časem se z této skryté spolupráce obvykle vyvine korupční systém, na jehož hladkém fungování se jednotlivé elity stávají existenčně závislé.
+
+Nevyhrávají totiž nejlepší či nejkonkurenceschopnější, ale ti, co mají nejlepší konexe a známosti. (Významnou roli v rámci těchto vztahů proto hrají zprostředkovatelé, což jsou osoby, které nekontrolují žádané zdroje, ale mají strategické kontakty na ty, kdo takové zdroje
+
+kontrolují.) Vzájemná výhodnost skrytých korupčních transakcí dělá z členů politických, ekonomických a byrokratických elit komplice, kteří si vzájemně „kryjí záda“ (Frič 2002).
+
+Negativní dopady korupce
+
+K jednotlivým typům korupce lze přiřadit i negativní vlivy, které s sebou korupce přináší (zpracováno podle Transparency International - Česká republika 2000: 2-3):
+
+Podplácení úředníků soukromými osobami přispívá k deformaci toho, co je nazýváno veřejným zájmem, na úkor zájmů soukromých, čímž podlamuje důvěru ostatních občanů ve veřejné instituce. V důsledku toho se obecně ztrácí důvěra v právní stát a vynutitelnost práva a dochází k vytváření paralelních a nedemokratických mocenských struktur.
+
+Nadměrná a nepřehledná regulace vyvolává nadbytečné transakční náklady pro podnikání (jako klasický příklad tohoto problému lze uvést snad již odstraněný problém zápisu do obchodních rejstříků). Dalším negativním dopadem tohoto druhu korupce je zhoršování pověsti země v zahraničí, což má za následek snižování přílivu zahraničních investic.
+
+Zneužívání dozorových pravomocí zvyšuje investiční riziko tím, že podnikatelské prostředí vykazuje značnou míru nepředvídatelnosti, v důsledku čehož se deformuje hospodářská soutěž a snižují investice v zemi. Hospodářský růst stagnuje.
+
+Zpronevěra veřejných prostředků (zdrojů) přináší růst administrativních nákladů vynakládaných na služby poskytované státem, čímž se zmenšuje objem prostředků, které by jinak bylo lze vynakládat na veřejně prospěšné projekty či veřejné služby.
+
+Jakmile se ve veřejné sféře „institucionalizuje“ zpronevěra veřejných prostředků, začíná docházet k obecně neefektivnímu hospodaření s veřejnými zdroji. Veřejné zdroje jsou rozdělovány neúčelně, neefektivně a nehospodárně. Pokud země disponuje přírodními zdroji, přestávají být využívány trvale udržitelným způsobem (jsou doslova „rabovány“).
+
+V podmínkách postkomunistických zemí v tomto ohledu docházelo a dochází k výprodeji státního majetku „pod cenou“.
+
+Občané místo toho, aby využívali těch mechanismů, které jim poskytuje stát, se při řešení svých problémů uchylují ke svépomoci či využívají nelegitimních struktur a nástrojů, čímž se paradoxně podílejí na roztáčení „korupční spirály“.
+
+Tento typ mj. způsobuje i společenské a hospodářské zaostávání korupcí zasažených zemí tzv. třetího světa.
+
+Zvláštním případem je zneužívání pravomocí v procesu zadávání veřejných zakázek. Také v tomto případě se zmenšuje objem prostředků, které by jinak bylo lze vynakládat na veřejně prospěšné projekty či veřejné služby. Důvodem, proč je o nich pojednáno zvlášť, je fakt, že jsou hlavním zdrojem nelegálních prostředků pro financování politických stran.
+
+Rozsáhlý klientelismus, nepotismus a prodej pozic pak ohrožují důvěru občanů v demokratické mechanismy jako takové. Tím se radikálně snižuje ochota občanů účastnit se veřejného života (především formou výkonu pasivního i aktivního volebního práva).
+
+Jevy „na hraně“: střet zájmů, lobbying
+
+Na tomto místě je třeba zmínit i určité jevy, které se sice nepovažují za korupci, ale s korupcí přímo souvisejí, neboť pro ni vytvářejí „živnou půdu“. Jedná se o tzv. střet zájmů a (nekontrolovaný) lobbying.
+
+Střet zájmů
+
+Střet zájmů nastává tam, kde se způsob výkonu určitého zaměstnání nebo funkce může dostat nebo přímo dostává do rozporu se soukromým zájmem osoby, která toto zaměstnání nebo funkci zastává. Střet zájmů může nastat jak u veřejných funkcionářů, tak u soukromých subjektů.
+
+Je třeba zdůraznit, že střet zájmů není sám o sobě korupčních chováním. Je stavem, v němž se riziko korupce zvyšuje. Nejsou-li případné střety zájmů jasně a přesvědčivě řešeny, vyvolávají podezření a ohrožují důvěru v nestranný výkon veřejné funkce. Nový zákon č. 159/2006 Sb., o střetu zájmů, zde byl zmíněn.
+
+Lobbying
+
+Lobbying je prosazováním zájmů určité skupiny v rámci politického procesu, tedy při schvalování legislativy nebo exekutivních rozhodnutí. V demokratických zemích je lobbying považován za legitimní činnost, neboť snaha přizpůsobit normy a rozhodnutí svým zájmům a získat politický vliv na tvorbu legislativy je přirozeným zájmem firem a nátlakových skupin. Této činnosti se věnují profesionální lobbyisté (jak fyzické, tak i podnikatelské právnické osoby).
+
+Při lobbyingu existuje vysoké riziko, že se pracovní metodou lobbyistů stanou různé formy korupce (od podplácení až po zavazování objektů lobbyingu v rámci klientelistických vztahů),
+
+neboť hodnoty, které získává lobbyista pro svého zákazníka, jsou často nevyčíslitelné hodnoty
+
+(typicky změna regulačního rámce - zákonů, vyhlášek, limitů, případně personální politiky státu). Proto existuje ve světě (srov. z poslední doby např. Polsko) snaha nastavit taková pravidla, která by tuto legitimní činnost udělala průhlednou a kontrolovatelnou. Používanými opatřeními jsou například povinnost registrace profesionálních lobbyistů, oznamování jejich příjmů a zdrojů těchto příjmů (kdo lobbyisty platí), někdy i snaha nařídit povinné oznamování veškerých schůzek a jednání lobbyistů.
+
+Jeden konkrétní případ 
+
+
+Václav Vlk: Uplácet politiky není trestné
+
+07.10.2004, Lidové noviny
+
+Hypermarketový dýchánek pana Dalíka, Večerka a Kořistky se díky aktivitě účastníků a policie dramaticky přeměnil na podezření ze spáchání závažné trestné činnosti. To vyústilo v následné sdělení obvinění pro podezření ze spáchání trestného činu podplácení, s peripetiemi již stokrát vyřčenými. 
+
+Dnes se tak soustřeďuje úsilí policie i politických komentátorů shodně na jediný problém, a to zda k uplácení došlo, či nikoliv. Zejména pro média je rozhodujícím důkazem detektor lži, zatímco pro policii, alespoň formálně, rozhovor unionistického poslance Kořistky s vlastní manželkou a svědectví dvou dam, s nimiž se chystali povečeřet zbývající účastníci. Nehodlám zde polemizovat s tím, co se stalo, a stavět na jednu či druhou stranu argumenty, proč ke skutku došlo.
+
+Jsem však přesvědčen, že podstata trestněprávního rozměru věci uniká jak policii, tak bohužel většině masmédií.
+
+Z toho, jak je skutek popsán ve sdělení obvinění a prezentován ze strany poslance Kořistky v médiích, musí být na první pohled jasné, že se o trestný čin nejedná. Nabídnutí úplatku podmiňuje totiž obstarání věci obecného zájmu, a to asi rozhodně není pád současné vlády - či jakékoliv jiné.
+
+Právní teorie říká, že obstarání věci veřejného zájmu se rozumí činnost při uspokojování zájmů občanů a právnických osob v oblasti materiální, sociální, kulturních a jiných potřeb. Je sice nepochybné, že vládnout tomuto státu někdo musí, ovšem o tom, zda se jedná o obstarání věci veřejného zájmu, lze hovořit jen těžko.
+
+Protože je vládnutí věcí politickou, logicky z toho vyplývá, že příznivci opozice považují současnou vládu nikoliv za veřejné blaho, ale takovou škodu, že by jediným rozumným obstaráním věci veřejného zájmu byl pád vlády. A protože poměr příznivců různých politických směrů je ve společnosti odvislý od mnoha neznámých subjektivních nálad a momentálního postavení každého jednotlivce, považuje v tomto směru za obecný zájem každý něco jiného, a definice obecného zájmu na setrvání vlády je tudíž nemožná.
+
+Rozum zůstává nad uvažováním policie stát tam, kde se pokusíme kvalifikovat pojem úplatek na funkci poslance. Jednak je poslanec ve své činnosti nezávislý (a to i na stranickém aparátu, což spousta jednotlivců dokázala), ale zejména je podstatou politické práce usilovat o moc a postavení, za jejímž účelem se běžně realizují dohody, které se svým obsahem od jednání "kluků z hypermarketu" nijak neliší.
+
+Například strana lidová by musela být kompletně za katrem a každý její předseda popraven. Kolik náměstskovských a velvyslaneckých či ministerských křesel už přijala výměnou za podporu momentálně nejsilnější partaje, které ovšem jaksi chyběly hlasy k prosazení politických zájmů v parlamentu? A navíc se k tomu veřejně hlásí kdekdo při koaličních jednáních, aniž by kdokoliv spatřil v těchto handlech cokoliv závadného.
+
+Policie se pustila naprosto nesmyslně do role strážce spravedlnosti při politických vyjednáváních na místě, kde jí to nepřísluší. O podplácení může jít při realizaci veřejných zakázek, nikoliv však při vyjednávání o politické pozici.
+
+V této souvislosti je tedy jasné, že kauza nepatří před soud, ty mají na práci důležitější věci, a státní zastupitelství by mohlo trestní stíhání zastavit už v tomto stadiu. Bohužel maškaráda s výletem policejní helikoptérou bude asi takovému postupu bránit, neboť ten, kdo ho vymyslel, by ho měl také zaplatit, což se mu nebude líbit.
+
+Policie se pustila naprosto nesmyslně do role strážce spravedlnosti. O podplácení může jít při realizaci veřejných zakázek, nikoliv však při vyjednávání o politické pozici.
+
+
+Růžička, J. Regulujme a hlídejme lobbing kvalitním zákonem (HN – 30. 6. 2006):
+
+Lobbing je v českém veřejném životě tak novým pojmem, že se ještě neustálilo, zda psát "lobbying", "lobbing", nebo dokonce "lobbyismus". Objevují se totiž všechny tyto možnosti. Mnohem závažnější však je, že nikdo pořádně neví, co lobbing znamená. 
+
+Z významové nejasnosti vyplývá problém, jak se k lidem zabývajícím se lobbingem a jejich aktivitám postavit. Měli bychom si však tuto otázku klást a hledat na ni odpověď. Jde totiž o důvěru v liberálně-demokratický režim.
+
+Až do kauzy Zdeňka Kořistky v roce 2004 se slovo lobbing v českém prostředí téměř nevyskytovalo. Jeden z těch, kteří údajně Kořistkovi nabídli úplatek za nevyslovení důvěry Grossově vládě, byl označen za lobbistu. Pojem byl užit, aniž by se příliš dbalo na jeho vysvětlení a zřejmě (možná dokonce hlavně) proto se uchytil. Poněvadž se v celé kauze jednalo o uplácení, je lobbing od té doby dáván do spojitosti s korupcí. K tomu přispěly i další kauzy jako Unipetrol nebo biolíh, v nichž jsou Jacek Spyra, respektive František Vybíral označováni za lobbisty. 
+
+Nabouraný ideál rovnosti 
+
+Neexistuje ovšem dobrý důvod, používat slovo lobbing jako synonymum korupce. Dochází tím totiž k zamlžování závažného trestného jednání (korupci a úplatky bychom měli nazývat korupcí a úplatky), přičemž je zároveň naznačena kriminalizace hájení partikulárních zájmů. A právě to je předmětem práce lobbistů. Prosazování zájmů, které nejsou jejich vlastní, ale toho, kdo si kupuje jejich schopnosti a vědomosti, jak tyto zájmy prosadit. 
+
+Problematičnost lobbingu spočívá v tom, že jde na jedné straně o normální součást demokracie, která může obohacovat rozhodovací procesy, na straně druhé však nabourává ideál rovnosti občanů. Šance totiž samozřejmě nejsou rovné, protože svou roli hrají peníze, sociální kapitál nebo čas. Lobbisty si nemůže najmout každý a jsou lobbisté, kteří mají lepší přístup k rozhodovacím procesům než jiní lobbisté. Co s takovým problémem dělat? 
+
+Registrované lobbování 
+
+V Kanadě, Spojených státech, ale dnes již také v Litvě nebo Polsku je působení lobbistů upraveno zvláštním zákonem. Jakkoli se tyto zákony dosti liší, mají společné to, že definují jisté druhy chování jako lobbing a předepisují lobbistům různé povinnosti, například zaregistrovat se nebo zveřejňovat jména klientů. 
+
+Naopak veřejnost získává informace o tom, s kým a proč se její zástupci v legislativě či exekutivě setkali. Háček je v tom, že lobbing lze praktikovat i bez podobného zákona a politikům i lobbistům taková praxe dobře vyhovuje. Udržuje se šedá zóna, v níž se leccos ztratí. 
+
+Dlouhodobě tím dochází k narušování důvěry v politiku a celý systém veřejného rozhodování, tedy k tomu, čeho jsme svědky v České republice. 
+
+V Česku stále temno 
+
+Dosud jediný pokus vymezit aktivity lobbistů se v české politice objevil v návrhu etického kodexu poslance od Lubomíra Zaorálka. Tři řádky, které byly styku s lobbisty věnovány, však neřešily a ani nemohly řešit, kdo je lobbista, proč a jak by se měl registrovat, či co by případná registrace obnášela. Kodexy také jen zřídka obsahují sankční mechanismy, ale při obecně nízkém etickém povědomí by u nás i takový kodex byl krokem kupředu. 
+
+Česká republika je jedinou zemí ve střední Evropě, kde dosud nebyl předložen byť jen návrh zákona o lobbingu. Politici i pozorovatelé, s nimiž jsem hovořil, se shodují, že šance, že se tak stane a nějaký návrh bude předložen nebo přijat, jsou mizivé. Aby měl zákon smysl, bude muset definovat lobbing, vymáhat registraci lobbistů, údaje o jejich schůzkách s vymezenými představiteli státu a samosprávy, jména klientů i částky, které klienti lobbistům platí.
+
+Některé kroky, jež by zvýšily průhlednost veřejného rozhodování a důvěru občanů v něj, lze ovšem provést i bez zákona. Sněmovna i Senát by měly spolu se zápisy ze zasedání výborů zveřejňovat také jména návštěvníků. Poslanci, senátoři, ministři a vysocí státní úředníci by mohli zveřejňovat své diáře schůzek. 
+
+Pro politiky, kteří si čím dále častěji stěžují na tlaky lobbistů, se otevírá hned několik možností, jak vymezit pravidla lobbingu. Ta sama o sobě nezaručí, že nebude docházet k nepravostem, ale umožní snáze je poznat. To je v zájmu nejen veřejnosti, ale také politiků a lobbistů. 
+
+Autor je OSI Policy Fellow ve Woodrow Wilson Center ve Washingtonu
+
+
+	Korupce má svá četná specifika, kterými se odlišuje od jiných protiprávních jednání. Obětí korupce je zejména společnost a teprve zprostředkovaně třetí osoby.�
+	Korupční vztahy se tedy nemusejí objevovat pouze ve vztahu soukromá osoba – „veřejný činitel“, nýbrž k nim může docházet i v případě dvou soukromých osob (typicky v obchodním styku). Jedna ze stran tohoto vztahu má obvykle zájem na získání zakázky nebo jiné výhody od strany druhé, přičemž zástupce této druhé strany je v takové pozici, že o přidělení zakázky či udělení jiné výhody může rozhodovat. Veřejný zájem zde sice dotčen zpravidla není (ve vztahu nevystupuje veřejný subjekt), na druhou stranu i tento druh korupce
+
+přináší významné škody: v tomto případě zakázku nezíská subjekt, který by ji dokázal provést
+
+nejlépe, ale subjekt, který má nějaký zvláštní vztah k osobě rozhodující o zakázce, čímž vzniká škoda podniku, který zakázku přiděluje.�
+	Pojem korupce není v trestněprávních normách České republiky (na rozdíl např. od úpravy platné na území Slovenské republiky)� definován jako samostatný trestný čin. Jde především o trestné činy uvedené v hlavě třetí zvláštní části trestního zákona - trestné činy proti pořádku ve věcech veřejných. Oddíl třetí „Úplatkářství” obsahuje skutkové podstaty trestných činů, jež v sobe nesou znaky korupce. Jedná se o trestný čin přijímání úplatku podle § 160 TrZ,� podplácení podle § 161 TrZ� a nepřímého úplatkářství podle § 162 TrZ� Beztrestnost zakotvená v § 163 TrZ jako zvláštním ustanovení o účinné lítosti má motivovat občany, kteří byli o úplatek požádáni, a proto jej poskytli nebo slíbili, k okamžitému oznámení trestné činnosti příslušným orgánům.� Podle § 162a TrZ úplatkem se rozumí neoprávněná výhoda  spočívající v přímém majetkovém obohacení nebo jiném zvýhodnění, které se dostává nebo má dostat uplácené osobě nebo s jejím souhlasem jiné osobě, a na kterou není nárok. Veřejným  činitelem podle § 160 až 162 TrZ se vedle osoby uvedené v § 89 odst. 9 TrZ� rozumí též jakákoliv osoba zastávající funkci jednak v zákonodárném nebo soudním orgánu nebo v orgánu veřejné správy cizího státu, jednak v podniku, v němž má rozhodující vliv cizí stát, nebo v mezinárodní organizaci vytvořené státy nebo jinými subjekty mezinárodního práva veřejného, pokud je s výkonem takové funkce spojena pravomoc při obstarávání věcí obecného zájmu a trestný čin byl spáchán v souvislosti s touto pravomocí. 
+
+	Jak je z výše zmiňovaného vymezení pojmu „veřejný činitel“ (rekodifikace trestního práva hmotného předpokládá zavedení nového výrazu „úřední osoba“) zřejmé, úplatkářství (přijímání úplatku a podplácení) staví na pojmu „úplatek“� a dále na pojmu „obstarávání věci obecného zájmu“, jehož definici však výslovně zákon neuvádí. Co je nebo není obstaráváním věcí obecného zájmu, ponechává zákonodárce na judikatuře� a nauce,� jak zdůrazňuje P. Gřivna.� Za obstarávání věcí obecného zájmu se považuje „činnost, která souvisí s plněním úkolů týkajících se věcí obecného zájmu, tedy nejen rozhodování orgánů státní moci a správy, ale i jiná činnost při uspokojování zájmů občanů a právnických osob v oblasti materiálních, sociálních, kulturních a jiných potřeb. Jde tedy o plnění všech úkolů, na jejichž řádném a nestranném plnění má zájem celá společnost nebo určitá sociální skupina. Nespadá sem činnost občanů, jež je výlučným projevem jejich osobních práv“.�
+	Novela trestního zákona č. 537/2004 Sb. v ustanovení § 162a odst. 3 TrZ vložila s účinností od 22. 10. 2004 úpravu, dle níž za obstarávání věcí obecného zájmu se považuje též zachovávání povinnosti uložené právním předpisem nebo smluvně převzaté, jejímž účelem je zajistit, aby v obchodních vztazích nedocházelo k poškozování nebo bezdůvodnému zvýhodňování účastníků těchto vztahů nebo osob, které jejich jménem jednají.�
+
+Výběr judikatury k trestným činům dle § 160 - § 162 TrZ:
+
+
+NS ČSR - Zm II 359/30 (č. 4102/31 Sb. rozh. tr.)
+
+II. Obstaráváním věcí úředních lze rozuměti jen řádný, nezávadný výkon úřadu, přesné, výhradně věcnými hledisky se řídící a osobní přízně nebo nepřízně k dotčeným osobám neznající plnění úředních předpisů.
+
+
+NS ČSR - Zm I 556/30 (č. 3957/30 Sb. rozh. tr.)
+
+Úplatkem jest jakýkoliv, třebas i nikoli majetkový prospěch, vše, co podplácené osobě nějak prospívá nebo prospěje, vše, co, poskytujíc podplácené osobě v tom či onom směru výhodu nebo úlevu, činí její stav v některém směru proti dřívějšímu stavu příznivějším.
+
+
+NS ČSR - Zm IV 21/32 (č. 4587/33 Sb. rozh. tr.)
+
+Skutková podstata přečinu podplácení není dána, byl-li veřejnému úředníku slíben neb poskytnut dar po skončení jeho úřední činnosti v určité věci.
+
+
+NS ČSR - Zm III 313/35 (č. 5375/35 Sb.rozh.tr.)
+
+Nejde o zločin podplácení, nýbrž o podvod , tvrdil-li soudní kancelářský úředník osobě odsouzené k trestu na svobodě, že tento trest lze přeměniti na trest peněžitý, a přijal-li od ní peníze k tomuto účelu a ponechal-li si je.
+
+
+NS ČSSR - Plsf 1/78 (č. 17/78 Sb. rozh. tr.)
+
+III. Přijetí úplatku v souvislosti s obejitím předpisů o zřizování účastnických telefonních stanic zakládá skutkovou podstatu trestného činu přijímání úplatku podle §160 odst. 1 tr. zák.
+
+IV. Znak " obstarávání věcí obecného zájmu" vykládají soudy správně tak, že jde o každou činnost, která souvisí s plněním společensky významných úkolů. Za obstarávání věcí obecného zájmu soudy považují nejen rozhodování orgánů státní moci a správy, ale i uspokojování zájmů občanů a organizací v oblasti materiálních, zdravotních, sociálních, kulturních a jiných potřeb. V činnosti orgánů státní moci a správy je ovšem obstaráváním věcí obecného zájmu nejen vlastní rozhodování nebo jeho výkon, ale také příprava rozhodnutí, tj. opatřování potřebných podkladů.
+
+V. Vyžaduje se, aby mezi úplatkem a obstaráním věcí obecného zájmu byla souvislost. Taková souvislost je dána tehdy, když úplatek má vztah ke konkrétní činnosti, která má povahu obstarání věci obecného zájmu.
+
+Úplatek je neoprávněná výhoda, která spočívá zpravidla v přímém majetkovém prospěchu ( např. peníze, naturálie). Může však jít o výhodu jiného druhu ( např. protislužbu). Úplatek je znakem trestných činů úplatkářství podle §160 až §162 tr. zák. Z hlediska naplnění tohoto znaku není rozhodující výše úplatku; zákon nestanoví žádnou hodnotovou hranici.
+
+VI. Přijetí úplatku předpokládá, že se pachateli skutečně dostalo neoprávněné výhody. K přijetí úplatku může dojít i bez předchozí nabídky nebo slibu. Znak dá si slíbit je formou přípravy ( §7 tr.zák.), která je tu povýšena na dokonaný trestný čin. Je nerozhodné, zda popř. kdy došlo ke splnění slibu.
+
+Znak "úplatek žádá" je naplněn tehdy, jestliže pachatel dal sám podnět k poskytnutí úplatku nebo ke slibu úplatku; nemusí jít o přímé vyslovení požadavku, ale postačí určitý náznak, z něhož je nepochybné, že pachatel navozuje situaci, aby mu byl úplatek slíben nebo nabídnut.
+
+VII. Jestliže jsou dány formální znaky trestných činů úplatkářství, je třeba vždy zkoumat, zda je naplněn i materiální znak, tj. takový stupeň nebezpečnosti činu pro společnost, že konkrétní jednání pachatele je nutno posoudit jako trestný čin (§ 3 odst. 1 tr. zák.)
+
+Jedním z významných kriterií pro určení stupně nebezpečnosti činu pro společnost je výše úplatku. Výše úplatku není pojmovým znakem těchto trestných činů, nicméně úplatek nepatrné hodnoty (např. sáček kávy, balíček cigaret apod.) sám o sobě zpravidla nezvýší stupeň nebezpečnosti činu natolik, aby šlo o trestný čin.
+
+Tuto otázku nelze posuzovat izolovaně a mechanicky; v některých případech může jednání pachatele dosáhnout stupně nebezpečnosti trestného činu i při úplatku nepatrné hodnoty. V jiných případech nemusí ani vyšší úplatek znamenat, že je naplněn i materiální znak trestného činu. Výši úplatku je proto třeba hodnotit v souvislosti s dalšími okolnostmi, které spoluurčují stupeň nebezpečnosti činu.
+
+V naznačeném směru je významná zejména okolnost, v jaké oblasti společenského života k úplatkářství došlo. Zcela nesmlouvavý postoj je třeba zaujmout k úplatkářství - zvláště pak k trestnému činu přijímání úplatku- v oblasti výkonu státní moci a správy; v této oblasti nelze tolerovat zásadně žádné úplatky, a to ani nepatrné hodnoty. Je to odůvodněno zájmem společnosti na čistotě veřejného života zdůrazněním především skutečností, že orgány státní moci a správy vydávají závažná rozhodnutí.
+
+
+NS ČSR - 1 Tz 43/83 (č. 43/84 Sb. rozh. tr., Bull.3/84 rozh.č.10)
+
+Ředitel dětského domova, pokud rozhoduje o návštěvách chovanců dětského domova u jiných osob než rodičů nebo o svěření dítěte, u kterého nebyla soudem nařízena ústavní výchova, do zatímní (preadopční) péče budoucích osvojitelů, je veřejným činitelem.
+
+Přijme-li v této souvislosti úplatek, dopouští se trestného činu podle § 160 odst. 1, 3, popř. § 160 odst. 2, 3 tr. zák.
+
+
+NS ČSR - 11 Tz 30/85 (Bull. 2/86 rozh. č. 28)
+
+Určení konkrétního data nástupu přidělené lázeňské léčby předsedkyní správní posudkové komise ONV je obstaráváním věci obecného zájmu. Skutečnost, že úplatek měl malou hodnotu a byl poskytnut a přijat proto, aby nástup lázeňské léčby byl stanoven v termínu, o který není větší zájem účastníků lázeňské léčby, je třeba hodnotit v souvislosti s dalšími okolnostmi, které spoluurčují stupeň nebezpečnosti pro společnost.
+
+
+NS ČSR - 11 Tz 19/86 (č. 43/87 Sb. rozh. tr.)
+
+II. Jestliže předseda posudkové komise sociálního zabezpečení okresního (obvodního) národního výboru při přidělení poukazu na lázeňskou léčbu na konkrétní termín přijme úplatek, dopouští se trestného činu přijímání úplatku podle § 160 odst. 1, 3 tr. zák.Osoba, která úplatek poskytla, se dopouští trestného činu podplácení podle § 161 odst. 1, 2 tr. zák.
+
+III. Jednočinný souběh trestného činu přijímání úplatku podle 160 odst. 1, 3 tr. zák. je možný za předpokladu, že veřejný činitel, který v souvislosti s výkonem své pravomoci přijal úplatek, zároveň poruší svoje povinnosti způsobem a za podmínek stanovených v ustanovení § 158 odst. 1 tr.zák.
+
+
+NS ČSR - 7 Tz 7/87 (č.11/89 Sb. rozh. tr., Bull. 1/88 rozh. č. 8)
+
+Požaduje-li uživatel bytu úplatek za to, že uzavře s jiným uživatelem dohodu o výměně bytu, nejde o trestný čin přijímání úplatku podle § 160 odst. 2 tr. zák., neboť nejde o obstarávání věci obecného zájmu.
+
+
+NS ČSSR - Tpjf 28/87 (č. 16/88 Sb. rozh. tr.)
+
+II. Při výkladu znaku "úplatek žádá" (§ 160 odst. 2, § 162 odst. 1 tr. zák.) bylo bráno v úvahu, že k jeho naplnění se nevyžaduje, aby pachatel požádal o úplatek výslovně. Stačí takové jednání, z něhož je patrno, že pachatel úplatek očekává a chce. Tyto případy je však nutno odlišit od těch, kdy pachatel svým jednáním pouze vytváří podmínky pro nabídnutí úplatku, ale svůj zájem na něm nedá najevo, např. zdůrazňuje nebo zveličuje obtížnost provedení služby, aby tak zákazníka přivedl na myšlenku, že provedení služby snáze dosáhne, když úplatek nabídne.
+
+III. V SSR bylo odsouzeno pro trestný čin přijímání úplatku podle 160 odst. 1 tr. zák. několik obviněných, kteří přijali úplatek od funkcionářů tělovýchovných jednot. Motivem poskytnutí neoprávněných výhod zde byla snaha funkcionářů zajistit lepší sportovní výsledky pro svou organizaci. Správný byl tento postup soudů jen u rozhodčího, který úplatek přijal v souvislosti s řízením fotbalového zápasu. U trenéra, jenž přijal větší peněžní částku za to, že uzavřel dohodu o činnosti ve fotbalovém oddíle, ani u brankáře, jenž peníze převzal za podepsání přestupu, o tento trestný čin nemohlo jít. Bylo totiž jejich vlastní věcí, zda změní zaměstnání nebo místo svého sportovního působiště.
+
+IV. Trestné činy přijímání úplatku a podplácení mohou být spáchány jenom v souvislosti s výkonem funkčních a pracovních povinností funkcionářů a pracovníků státních orgánů.
+
+Pod pojmem "obstarání věcí obecného zájmu" se rozumí především ta činnost, jíž jsou takové úkoly plněny přímo, např. rozhodování soudců, poskytování právních rad advokáty; z dalších činností to budou jenom takové, které mohou plnění úkolů určitým způsobem ovlivnit, např. příprava podkladů pro rozhodnutí, asistence při chirurgickém zákroku atd.
+
+VI. Obstaráním věcí obecného zájmu nemohou být činnosti nebo jednání občanů, jež vyplývají z jejich osobních práv nebo osobních povinností, jako např. prodej věcí v osobním vlastnictví, výměna bytu, pronájem nemovitostí, nepřekažení nebo neoznámení trestného činu podle § 167, § 168 tr. zák., apod. Není rozhodné, zda občan přitom svá práva překročí nebo své povinnosti neplní řádně. V takovém případě může jít o trestnou činnost jiného druhu.
+
+VIII. Poskytování ani přijímání spropitného v souvislosti s provozováním některých služeb, zejména v restauracích není jako úplatkářství postihováno, protože pro ně není typický korupční motiv, jak je tomu u úplatkářství.
+
+XI. Pokud pachatel pouze předstírá, že bude svým vlivem působit na výkon pravomoci veřejného činitele, popř. na činnost osoby, která obstarává věci obecného zájmu, ale pro vyřízení věci nehodlá nic podniknout, dopouští se trestného činu podvodu podle 250 tr. zák. případně pokusu tohoto trestného činu, když o úplatek požádal, ale nepřijal ho.
+
+
+Krajský soud v Brně - 3 Tk 137/51 (č. 50/52 Sb. rozh. tr.)
+
+Trestný čin podplácení podle § 182 tr.zák.č. 86/1950 Sb. je dokonán i tehdy, jestliže úplatek, určený pro jiného v souvislosti s rozhodováním ve věcech obecného zájmu nebo s výkonem takového rozhodnutí, je pachatelem předán prostředníkovi, což plyne z toho, že pachatel úplatek dá, resp. se s prostředníkem dohodne o nabídce či slibu, jejž má zprostředkovat. To plyne z toho, že k dokonání činu stačí i pouhé nabídnutí nebo slib úplatku, a že za nabídnutí nebo slib nutno považovat i projev vůle pachatele vůči prostředníkovi. Zákon nežádá výslovně, aby nabídka došla též sluchu podpláceného a rozhodující je, že nabídka úplatku (prospěchu z úplatku) je jemu určena.
+
+
+NS ČSSR - Plsf 1/78 (č.17/78 Sb. rozh. tr.)
+
+IX. O poskytnutí úplatku ve smyslu § 161 odst. 1 tr. zák. jde nejen v případě, kdy peníze nebo věc jako úplatek jsou předány osobě obstarávající věci obecného zájmu, ale i tehdy, dostane-li se takové osobě protislužby nebo jiné výhody. Trestný čin podplácení podle § 161 odst. 1 tr. zák. je dokonán nejen poskytnutím úplatku, ale též jeho nabídnutím nebo slíbením; v posledních dvou uvedených případech se nevyžaduje, aby podplácená osoba úplatek přijala.
+
+V případech, kdy pachatel poskytne, nabídne nebo slíbí úplatek veřejnému činiteli v souvislosti s obstaráním věci obecného zájmu nebo jestliže žádá či přijme úplatek za to, že bude svým vlivem působit na výkon pravomoci veřejného činitele nebo za to, že tak již učinil nebo z téhož důvodu poskytne, nabídne nebo slíbí úplatek bez úmyslu navést veřejného činitele k zneužití jeho pravomoci , dopustí se jen trestného činu nepřímého úplatkářství podle § 162 odst. 1, nebo 2 tr. zák. (např. poskytnutí nebo nabídnutí úplatku veřejnému činiteli až po příznivém vyřízení věci, které bylo v souladu se zákonem).
+
+
+NS SSR - 4 Tz 13/81 (č. 8/82 Sb. rozh. tr.)
+
+Nejde o trestný čin podle § 161 odst. 1 tr. zák., pokud pachatel poskytne, nabídne, anebo slíbí úplatek jinému za to, aby před orgánem činným v trestním řízení jako svědek zamlčel okolnost, která má podstatný význam pro rozhodnutí. Jedná se podle okolností o přípravu resp. návod k trestnému činu křivé výpovědi a nepravdivého znaleckého posudku podle §175 odst. 1 písm.b) tr.zák. Není rozhodující, že navedený neměl v době návodu procesní postavení svědka, tedy ještě nebyl jako svědek vyslechnut ani nebyl k výslechu předvolán. Rozhodující je, že obviněný naváděl svědka, aby pro případ, že takto bude svědčit, zamlčel pravdu.
+
+
+NS ČSR - 5 Tz 46/83
+
+Jednání pachatele, který se na lékařské pohotovostní stanici snažil ovlivnit službu konající zdravotní sestru tím, že jí vnucoval pětisetkorunovou bankovku se žádostí, aby krev, která mu bude odebrána ke zkoušce na alkohol, vyměnila za jinou krev, aby se tak vyhnul případné sankci za porušení dopravních předpisů řízením vozidla po požití alkoholických nápojů není trestným činem podle § 209 tr. zák., ale jde o trestný čin podplácení podle 161 tr. zák.
+
+
+NS SSR - 4 Tz 23/80 (č. 16/81 Sb. rozh. tr.)
+
+I. Trestný čin nepřímého úplatkářství podle § 162 odst. 1 tr. zák. je dokonán již tím, že pachatel žádá nebo přijme úplatek za to, že bude svým vlivem působit na výkon pravomoci veřejného činitele. Nevyžaduje se, aby pachatel u veřejného činitele skutečně intervenoval. Znak " působit na výkon pravomoci veřejného činitele svým vlivem" v ustanovení § 162 odst. 1 tr. zák.předpokládá, že pachatel má možnost působit na veřejného činitele v důsledku svého postavení, vztahu, apod. (např. proto, že je jeho nadřízeným, známým, příbuzným, atd.). Nestačí obyčejná intervence, jakou může uskutečnit každý, kdo jedná jménem podplácejícího.
+
+Jestliže pachatel na výkon pravomoci veřejného činitele skutečně působil, došlo k dokončení trestného činu, což je možno hodnotit jako okolnost zvyšující nebezpečnost činu pro společnost.
+
+Znak "žádá úplatek" ve smyslu § 162 odst. 1 tr. zák. je naplněn nejen tehdy, když pachatel požádá o úplatek výslovně, ale i tehdy, jestliže navodí takovou situaci, že tím dá podplácejícímu konkludentně najevo, že chce úplatek. V tomto konkrétním případě obviněný svědkovi naznačoval, že jeho intervence "bude něco stát", resp. že "na to budou potřeba nějaké peníze".
+
+II. Jestliže pachatel, který žádá anebo přijme úplatek, jen předstírá, že bude svým vlivem působit na výkon pravomoci veřejného činitele, ve skutečnosti to však nemíní učinit, nejde o trestný čin nepřímého úplatkářství podle §162 odst. 1 tr. zák., ale o trestný čin podvodu podle § 250 tr. zák., případně o pokus tohoto trestného činu.
+
+
+R 13/1990
+
+
+       Rozhodování o úkonech lékařské péče je obstaráváním věcí obecného zájmu, lékař jím však nevykonává pravomoc veřejného činitele. Takovým rozhodováním je i rozhodnutí o tom, že pacient bude operován a hospitalizován v nemocničním oddělení, které lékař - přednosta oddělení - řídí, popř. rozhodnutí, že lékař provede operaci sám. Jestliže za to, že takto rozhodne, přijme úplatek, může se dopustit trestného činu přijímání úplatků podle 160 odst. 1 tr. zák., nenaplní však znaky ustanovení 160 odst. 3 tr. zák. V takovém případě je nerozhodné, že pacienta bude nutno v důsledku provedené operace a hospitalizace uznat práce neschopným.
+
+
+RNs T 723/2004 (Nejvyšší soud)- K podmínkám trestní odpovědnosti za přijímání úplatku u pachatele, který přímo nerozhoduje o obstarávání věcí veřejného zájmu
+
+Pro naplnění objektivní stránky skutkové podstaty trestného činu přijímání úplatku podle § 160 odst. 2 TrZ je rozhodující, aby pachatel požádal o úplatek v souvislosti s obstaráváním věcí obecného zájmu, přičemž tato souvislost může být velmi různorodá. Trestní zákon tudíž nepožaduje, aby věc obecného zájmu byla realizována určitým konkrétním způsobem.
+
+           Trestný čin přijímání úplatku podle § 160 odst. 2 TrZ může spáchat i osoba, která jen spolupůsobí při obstarávání věcí obecného zájmu nebo při tom vykonává faktický vliv na činnost osoby přímo obstarávající určitou věc obecného zájmu. Pachatelem trestného činu podle § 160 odst. 2 TrZ tedy může být i ten, kdo sám sice nemá rozhodovací pravomoc, ale např. provádí jen přípravné práce při opatřování podkladů pro rozhodnutí nebo vykonává poradní či obdobnou činnost, která je způsobilá zásadním způsobem ovlivnit konečné rozhodnutí.
+
+          Skutková podstata trestného činu přijímání úplatku podle § 160 odst. 2 TrZ je naplněna již tím, že pachatel žádá o úplatek, takže další okolnosti (zejména otázka, zda k předání úplatku došlo a zda a jak bylo obstarávání věci obecného zájmu ovlivněno) již nemají vliv na trestnost, ale mohou mít význam jen při posuzování stupně nebezpečnosti činu pro společnost nebo při stanovení výměry ukládaného trestu.
+
+          Rovněž tak není trestní postih omezen – pokud je věc obecného zájmu obstarávána na podkladě veřejné zakázky – na přijímání úplatku až po vyhlášení veřejné zakázky či po zveřejnění jakékoli obdobné nabídky. Žádost o úplatek tedy může pachatel učinit i dříve, jestliže mu je již známo, že určitá věc obecného zájmu bude obstarávána, tedy např. že nabídka bude zveřejněna, přestože v době, kdy pachatel o úplatek požádal, ještě veřejná zakázka či jiná nabídka učiněna nebyla.
+
+Uvedený závěr vyplývá především ze skutečnosti, že citované ustanovení trestního zákona (odkazem na okolnosti uvedené v § 160 odst. 1 TrZ) předpokládá jen určitou „souvislost s obstaráváním věcí obecného zájmu“, což je pojem mnohem širší, než podmínka spočívající v požadování úplatku „při obstarávání věcí obecného zájmu“. Obviněný skutečně nebyl osobou, která by rozhodovala, avšak fakticky měl možnost konečné rozhodnutí ovlivnit, tedy působit ve smyslu § 160 odst. 2 TrZ v souvislosti s obstaráváním věci obecného zájmu proti objektu tohoto trestného činu, tj. proti řádnému, nestrannému a zákonnému obstarávání takových věcí.
+
+
+RNs T 502/2003 (Nejvyšší soud)
+
+	K zákonnému znaku „věc obecného zájmu“ u trestného činu přijímání úplatku. 
+
+	Rozhodování o stavbě či modernizaci čistírny odpadních vod, byť by se jednalo o tzv. podnikovou čistírnu, není výhradní autonomní oblastí jejího vlastníka, protože takové rozhodování má souvislost s obstaráváním věcí obecného zájmu, které spočívá v ochraně a zachování vydatnosti, jakosti a zdravotní nezávadnosti vod a vyplývá ze zákona č. 254/2001 Sb., o vodách.
+
+
+Z poslední doby: Za „obstarávání věcí obecného zájmu“ bylo považováno např. i vyřizování podkladů k poskytnutí bankovních úvěrů (nejde však o judikatorní rozhodnutí).
+
+
+I. ÚS 587/2000 - Koncepce § 160 TrZ – přijímání úplatku je založena na objektivním kritériu „souvislosti s obstaráváním věcí obecného zájmu“, které má přednost před subjektivním kritériem vycházejícím z právní povahy subjektů daného právního vztahu.
+
+     Jednání spočívalo v tom, že odsouzený od zástupce firmy E., s. r. o., (dále jen „E.“) převzal částku 500 000 Kč, kterou měl nejméně ve výši 400 000 Kč požadovat za to, že zařídí u firmy I. C. r., a. s., (dále jen „I.“), využívaje svých kontaktů inspektora České inspekce životního prostředí (dále jen „ČIŽP“), aby firma E. získala od I. zakázku pro rekonstrukci a intenzifikaci čističky odpadních vod.
+
+      Nelze nevidět souvislost stěžovatelovy nabídky s jeho postavením inspektora ČIŽP, tedy veřejného činitele, přičemž působnost této instituce při zřizování, resp. rekonstrukci čistírny odpadních vod je ze zákona podle výpovědi ředitele ČIŽP velmi významná a postavení 
+
+inspektora ČIŽP je komerčně zneužitelné.
+
+
+Pl. ÚS 6/98 - K trestnému činu přijímání úplatku
+
+	Právní úpravu úplatkářství je třeba posuzovat v oddílu třetím hlavy třetí zvláštní části trestního zákona jako celek. Trestní zákon hovoří jednak o přijímání úplatku a jednak o podplácení. Dopustí-li se takového jednání veřejný činitel, jedná se o přitěžující okolnost. Obstarávání věcí obecného zájmu je základním předpokladem naplnění skutkové podstaty těchto trestných činů.
+
+	Zvláštní povinnosti a závazky vůči veřejné správě má nepochybně nejen veřejný činitel, ale i ten, kdo na základě smlouvy s městskou částí přejímá úkol obstarávat v zájmu obce správu věcí, jež obci patří. Tato okolnost je v našem trestním zákoně vyjádřena slovy „v souvislosti s obstaráváním věcí obecného zájmu”. V zájmu obce pak jistě nebyl příslib zařídit nezvýšení nájemného u nebytových prostor, když obec přistupovala celkově k jeho zvyšování.
+
+	Navrhovatelka byla uznána vinnou trestným činem přijímání úplatku podle ustanovení § 160 odst. 2 trestního zákona, jehož se dopustila tím, že v přesně nezjištěné době od počátku roku 1994 do června 1994 v Praze v kancelářích firmy Realit Real servis v nebytových prostorách v bazaru svědka J. M. a jinde požadovala pod příslibem, že zařídí u majetkové komise Obvodního úřadu Městské části Praha 2 nezvýšení nájemného v těchto prostorách, od J. M. a L. P. úplatek, který pak skutečně přijala ve formě zlatého řetízku a který vrátila poté, kdy L. P. ověřovala u starosty Městské části Praha 2 postup při zvyšování nájemného u nebytových prostor. Za tento trestný čin jí byl uložen trest odnětí svobody v trvání jednoho roku s podmíněným odkladem na dobu tří let.
+
+	Navrhovatelka navrhla zrušit ustanovení § 160 odst. 2 tr. zák. V odůvodnění svého návrhu na zrušení § 160 odst. 2 trestního zákona navrhovatelka poukázala na existující judikaturu, která se zabývá přijímáním úplatku podle § 160 odst. 2 trestního zákona, podle něhož se tohoto trestného činu dopouští ten, kdo v souvislosti s obstaráváním věcí obecného zájmu úplatek žádá. Uvedla, že tato judikatura pocházející převážně z dřívějšího období pod obstaráváním věcí obecného zájmu rozumí nejen rozhodovací činnost, ale i jinou činnost, která souvisí s plněním společensky významných úkolů (např. přípravu podkladů pro rozhodnutí). Podle názoru navrhovatelky se při její činnosti jedná o výkon jejího osobního práva podnikat, konkrétně provádět správu části nemovitostí na základě obchodní smlouvy, a v jejím rámci pak jde o uzavření či neuzavření nájemní smlouvy s tím či oním pronajímatelem, přičemž jeho výběr je předmětem svobodného rozhodování v oblasti civilního práva.
+
+	Podle Ústavního soudu jde navrhovatelka ve své argumentaci směřující ke zrušení napadeného ustanovení dále a tvrdí, že podnikatel při své podnikatelské činnosti vykonávané na základě živnostenského listu a podle uzavřené obchodní smlouvy věci „obecného zájmu” vůbec obstarávat nemůže. Tím odděluje soukromoprávní a veřejnoprávní aspekty do dvou izolovaných sfér a pomíjí i skutečnost, že zákon neomezuje úplatek pouze na bezprostřední obstarávání věcí obecného zájmu, ale vztahuje tento pojem vůbec na činnosti podniknuté v souvislosti s obstaráváním věci obecného zájmu. Užití vlivu na majetkovou komisi, která je poradním orgánem rady Městské části Praha 2, k tomu, aby nebylo zvýšeno stěžovatelce nájemné užívaného nebytového prostoru, je třeba chápat jako činnost podniknutou v souvislosti s obstaráváním věcí obecného zájmu.
+
+          Dle judikatury obecných soudů je obstarávání věcí veřejného zájmu činností, která souvisí s plněním úkolů týkajících se věcí obecného zájmu, tedy nejen rozhodování orgánů státní moci a správy, ale i uspokojování zájmů občanů a právnických osob v oblasti materiálních, sociálních, kulturních a jiných potřeb, pokud se jedná o záležitosti obecného (veřejného) zájmu. Lze souhlasit s tím, že výklad tohoto pojmu různými soudy může vytvářet dojem, že není jednotný, neboť zákon neposkytuje žádnou definici konkrétních pojmových znaků pro jeho posouzení, a rovněž lze souhlasit i s tím, že zcela jednoznačný obsah tohoto pojmu v zákoně by přispěl k právní jistotě podnikatelů. Na druhé straně je zřejmé, že úplatkářství jako takové a v souvislosti s tím i způsob vyžadování úplatků a jejich povaha mohou mít i v podmínkách tržního hospodářství natolik rozmanitou podobu, že pokus o jejich ještě bližší definici by mohl znamenat takové pojmové omezení, jež by nepostihlo všechny myslitelné formy této trestné činnosti. Složitost života společnosti vylučuje schopnost objektivně (v zákonech) formulovaného práva postihnout svými výčty a definicemi veškerou variabilitu jeho projevů. Proto v této souvislosti vystupuje do popředí právě úloha soudů při  interpretaci tohoto pojmu a při jeho aplikaci na jednotlivé případy.
+
+
+         Také v České republice má zvláštní povinnosti a závazky vůči veřejné správě nepochybně nejen veřejný činitel, ale i ten, kdo na základě smlouvy s městskou částí přejímá úkol obstarávat v zájmu obce správu věcí, jež obci patří. Tato okolnost je v našem trestním zákoně vyjádřena právě slovy „v souvislosti s obstaráváním věcí obecného zájmu”. V zájmu obce byl pak sotva příslib zařídit nezvýšení nájemného, když obec přistupovala celkově k jeho zvyšování.
+
+
+***
+
+
+Kromě úplatkářství je v právním řádu zakotveno několik dalších skutkových podstat trestných činů, které definují korupční chování. Vzhledem k tomu, že rozhodující prostor a hlavní nebezpečí korupce leží nepochybně v oblasti veřejné správy a rovněž ve sféře moci zákonodárné a soudní, jde především o vybrané trestné činy veřejných činitelů podle druhého oddílu třetí hlavy zvláštní části trestního zákona – tj. zneužívání pravomoci veřejného činitele (§ 158 TrZ) a maření úkolu veřejného činitele z nedbalosti (§ 159 TrZ). K trestným činům, které mají znaky korupčního chování, lze řadit také trestné činy porušování předpisů o nakládání s kontrolovaným zbožím a technologiemi podle § 124a TrZ, porušení povinnosti v řízení o konkursu podle § 126 TrZ, porušování povinnosti při správě cizího majetku podle § 255 TrZ, zneužívání informací v obchodním styku podle § 128 TrZ, pletichy při veřejné soutěži a veřejné dražbě podle § 128a až 128c TrZ, porušování závazných pravidel hospodářského styku podle § 127 TrZ a nekalé soutěže podle § 149 TrZ.�
+
+III. Některé poznatky o stíhání trestných činů spojených s korupcí 
+
+	Zvláštní zpráva Nejvyššího státního zastupitelství analyzující míru korupce z roku 2002� vycházela z toho, že korupční jednání, které bylo předmětem trestního stíhání, se vyskytovalo především v oblasti činnosti Policie ČR a bylo postihováno v souvislosti s protiprávním jednáním, jehož se příslušníci Policie ČR dopouštěli při výkonu pravomoci nebo v souvislosti s ním. Nejčastější případy, které byly zaznamenány, lze rozdělit do následujících skupin činností policie:
+
+•	v dopravě,
+
+•	ve službě cizinecké a pohraniční policie,
+
+•	v souvislosti s trestním řízením, při prověřování podezření z trestné činnosti a trestním stíháním jejích pachatelů.
+
+	Nejvíce případů nezákonného postupu příslušníků policie bylo zjištěno při odhalování a projednávání přestupků v dopravě, zejména při ukládání a vybírání pokut za dopravní přestupky projednávané s řidiči pří výkonu hlídkové služby přímo v terénu, v některých případech i na odděleních policie.�
+	Porušování povinnosti v činnosti cizinecké a pohraniční policie bylo méně četným.� Většinou znamenalo vytvoření či usnadnění podmínek pro trestnou činnost související s nelegální migrací, včetně nedůsledného či nezákonného postupu při  plnění povinností plynoucích pro tyto složky policie ze zákonů o pobytu cizinců na území republiky a předpisů s nimi souvisejících (např. zákona č. 325/1999 Sb., o azylu a změně zákona č. 283/1991 Sb., o Policii České republiky, ve znění pozdějších předpisů). S tím samozřejmě souvisel i další negativní jev, jako bylo nelegální zaměstnávání cizinců na území republiky.
+
+	Činnost policie na úseku trestního řízení byla z tohoto hlediska (podle zjištěných případů) nejméně ohrožena a až na zcela výjimečné případy (např. případy nabízení úplatku v souvislosti s podezřením z trestné činnosti pachatelem ve snaze zamezit dalšímu prověřování skutečností nasvědčujících tomu, že byl spáchán trestný čin) nebyla prokázána na straně policistů konajících trestní řízení.� 
+
+	Vedle Policie ČR, která je zjevně (alespoň co do četnosti zjištěných případů, jejich plošného rozložení a také nepochybně i příležitostí k páchání trestné činnosti) nejvíce ohroženou institucí z hlediska možnosti pronikání tohoto negativního jevu, jsou poměrně výrazně ohroženou skupinou též příslušníci Vězeňské služby ČR. V jejich případech se jednalo zejména o porušování předpisů upravujících výkon vazby a trestu odnětí svobody, jímž se má usnadnit osobám ve výkonu vazby či trestu odnětí svobody pobyt ve vězeňských zařízeních s cílem eliminovat některá omezení vazby a výkonu trestu. To vedlo k porušování základních pravidel stanovených pro zajištění bezpečnosti a ostrahy ve věznicích a také pravidel, která mají zamezit takovému chování odsouzených a zejména obviněných, které by mohlo ohrozit účel vedeného  trestního řízení.�
+	Vyskytovaly se i případy korupce zjištěné v činnosti celních orgánů. Konkrétní zjištěné případy umožnily rozdělit tyto negativní jevy z hlediska motivu či cíle pachatelů korumpujících celní orgány na dvě základní skupiny – na případy, kdy byli pachatelé vedeni snahou obejít celní a daňové předpisy s cílem získat daňové (celní) výhody, a na případy, kdy pachatelé obcházeli celní zákazy či omezení ohledně dovozu, průvozu a vývozu některého druhu zboží a věcí. 
+
+	Výjimečný byl výskyt případů v oblasti justice, kde byly zaznamenány jen ojedinělé případy.�
+	Zpráva o činnosti státního zastupitelství za rok 2005: 
+
+K problematice korupce a trestné činností s ní spojené je nutno především konstatovat, že v roce 2005 se projevil výrazný vzestup v počtu osob stíhaných i obžalovaných u trestného činu přijímání úplatku podle § 160 tr. zák., a to o 110,6 %, resp. 122 %. Uvedený nárůst byl na druhé straně kompenzován dílčím poklesem těchto ukazatelů u trestného činu podplácení podle § 161 tr. zák. (o 10,2 %, resp. o 20,4 %) a poměrně podstatným poklesem u trestného činu nepřímého úplatkářství podle § 162 tr. zák. (o 81,8 %, resp. 66,7 %; zde však šlo o velmi nízké absolutní počty stíhaných i žalovaných osob). Je otázkou, zda naznačená tendence v případě trestného činu podle § 160 tr. zák. je již trvalá (zpráva o činnosti za rok 2004 totiž také naznačovala vzestup).� Údaje o počtu osob stíhaných i obžalovaných by měly být porovnávány i s policejní statistikou – z ní plyne, že v roce 2005 došlo k poklesu zjištěných trestných činů přijímání úplatku podle § 160 tr. zák. na 39 (snížení dokonce o 87 trestných činů), podplácení podle § 161 tr. zák. na 94 trestných činů (snížení o 55) i nepřímého úplatkářství podle § 162 tr. zák. na 5 trestných činů (pokles o 7). Z poznatků policejních specialistů vyplývá, že problémem zůstává trestná činnost pracovníků státní správy při zadávání a uzavírání výběrových řízení na veřejné zakázky.
+
+Na tuto problematiku se zaměřovala samostatná zvláštní zpráva obsahující vyhodnocení efektivnosti trestního postihu jednání v oblasti samosprávy a veřejné (státní) správy na místní úrovni a postupu státních zástupců v této souvislosti vypracovaná Nejvyšším státním zastupitelstvím počátkem roku 2006. Poznatky této zvláštní zprávy nasvědčují tomu, že policejní orgány Útvaru odhalování korupce a finanční kriminality Služby kriminální policie a vyšetřování Policie ČR náležitě a na odpovídající úrovni plní úkoly, usilují o všestranné objasnění věcí a opatření důkazů pro rozhodnutí státního zástupce. Charakterem se přitom jedná o věci poměrně velice složité z hlediska  skutkového zjištění a právního  posouzení. Vyžadují průběžný a kvalifikovaný výkon dozoru státního zástupce nad zachováváním zákonnosti v přípravném řízení, který průběžně a v krátkých lhůtách, převážně z vlastní iniciativy, sleduje a přezkoumává postup policejního orgánu a věcnými pokyny usměrňuje jeho činnost. Zvláštní pozornosti zasluhují pokyny státního zástupce vydávané k opatření znaleckých posudků, k zaměření znaleckých posudků a event. k doplnění podaných znaleckých posudků.
+
+Na straně druhé se poukazuje rovněž na to, že trestní postih jednání v oblasti samosprávy a veřejné správy na místní úrovni nelze nazvat zatím příliš efektivní. Zadokumentování trestné činnosti v oblasti činnosti samosprávy či veřejné správy je značně obtížné. Přímo zainteresované osoby zásadně o vlastní protiprávní činnosti nehovoří a popírají „nečisté“ praktiky, kdy tak pro orgány činné v trestním řízení je často téměř nemožné zpětně prokázat trestnou činnost. Vyšetřování komplikuje také to, že řada oznámení je anonymních a není tedy možno doplnit výslechem konkrétní osoby a upřesnit v podáních uváděné informace. V řadě případů pak nelze ani využít, s ohledem na právní kvalifikaci, jež podle povahy věci přichází v úvahu, ani ustanovení § 88 tr. ř. o odposlechu a záznamu telekomunikačního provozu, ačkoli lze důvodně předpokládat, že mnohdy jen touto cestou by bylo možno zajistit dostatečné podklady pro objasnění a zejména pak prokázání trestné činnosti konkrétním osobám. Jeví se také potřebným, aby orgány činné v trestním řízení získávaly více podnětů z činnosti resortní či instanční kontroly.
+
+
+Pokud jde o další aktuální poznatky k trestné činnosti spojené s korupcí, tak KSZ v Praze zmínilo, že v roce 2005 byl zaznamenán výrazný nárůst počtu stíhaných a obžalovaných osob pro trestný čin přijímání úplatku podle § 160 tr. zák. a trestný čin podplácení podle § 161 tr. zák. (v případě trestného činu podle § 160 tr. zák. byl zaznamenán nejvyšší počet evidovaných stíhaných a obžalovaných osob přinejmenším od roku 1990) s tím, že větší počet osob byl pro tyto trestné činy stíhán a obžalován na OSZ v Kladně,  a to v souvislosti s trestnou činností pracovnice bývalého Okresního úřadu v Kladně, posléze pracovnice Městského úřadu Slaný, která za účasti dalších zprostředkovatelů za úplatu zařizovala ve větším rozsahu (minimálně 35 případů) řidičská oprávnění osobám nesplňujícím zákonem stanovené požadavky, přičemž při páchání trestné činnosti také neoprávněně vstupovala do počítačové databáze evidence řidičů vedené Ministerstvem vnitra a prováděla v ní změny údajů s tím, že na podkladě takto neoprávněně upravené evidence byla vystavována řidičská oprávnění (věc OSZ Kladno, sp. zn. Zt 460/2004, proti obv. K.M. pro trestné činy podle § 158 odst. 1 písm. a), § 160 odst. 1, 3 písm. b), § 178 odst. 1, § 162 odst. 1 a § 257a odst. 1 písm. b) tr. zák.).
+
+
+Na KSZ v Praze byl ve věci sp. zn. KZv 141/2002 doručen v prosinci 2005 spis s návrhem na podání obžaloby týkající se  trestního stíhání proti obviněnému Radovanu S. pro trestný čin přijímání úplatku podle § 160 odst. 1, 4 písm. a) tr. zák. a spolu s ním proti dalším 18 obviněným, zejména pro trestné činy podplácení podle § 161 odst. 1, 2 písm. a) tr. zák., přičemž předmětem trestního řízení je korupční jednání v souvislosti se zadáváním veřejných zakázek a jejich organizování firmou obviněného R. S. ve větším počtu případů na území celé České republiky. Věc je ve stadiu zpracování obžaloby. 
+
+
+KSZ v Plzni zdůrazňuje, že určitou část trestné činnosti hospodářského a majetkového charakteru tvoří případy, které byly zmíněny ve shora citované zvláštní zprávě. Již v této souvislosti byl učiněn i závěr, že policejním orgánům se nedaří operativní činností vyhledávat především případy související s korupcí, ač sdělovací prostředky opakovaně informují o konkrétních případech z výkonu samosprávy i veřejné správy. V průběhu roku 2005 byla stíhána pro trestný čin  přijímání úplatku  podle § 160 tr. zák.  jedna osoba,  pro trestný čin podplácení podle § 161 tr. zák. 8 osob.  Přitom v roce 2004 šlo celkem o 20 osob. Již v předchozím období  se KSZ v Plzni vyjadřovalo k problémům korupce, a v této souvislosti lze jen připomenout, že policejní orgány zřejmě nemají zpracovanou dostatečnou metodiku na  odhalování tohoto druhu trestné činnosti. Důsledkem toho je zřejmě nespokojenost s činností Útvaru pro odhalování korupce a finanční kriminality, takže vedení policie rozhodlo o částečném přenesení této činnosti na územní útvary Služby kriminální policie a vyšetřování.  I když v mezidobí bylo příslušné opatření policejního prezidenta zrušeno, lze i na tomto případu dokumentovat současný postup policie. V případech, kdy není vedení spokojeno s činností, přijímají se další opatření směřující k různým reorganizacím, kterým zřejmě nepředchází dostatečná analýza aplikace předchozí úpravy. Důsledkem je postup formou „pokus - omyl“, který se stále  opakuje v určitém kruhu. 
+
+ 
+
+Situace v ČR (podle skript „Korupce ve veřejné správě“)
+
+V posledních letech lze v České republice pozorovat následující trend: malé administrativní korupce ubývá s tím, jak se postupně profesionalizuje fungování veřejné správy, a korupce se
+
+koncentruje do politické a hospodářské sféry. Stává se organizovanou a sofistikovanou činností, což činí její odhalování velmi obtížným. Elity vytváří korupční symbiózu a klientelistické kartely, které negativně ovlivňují demokratičnost rozhodování a mají tendenci ovlivňovat vytváření pravidel hry.
+
+I když je zřejmé, že uvnitř elitních kruhů naší společnosti se vytvářejí různě silné kliky, které mezi sebou zápasí o monopol nad korupčními příležitostmi v jednotlivých oblastech státní správy, výhody korupční symbiózy jsou příliš zřejmé, než aby jim stálo za to je rozbít (Frič 1999). Nejedná se o náhodné případy, ale o systémovou poruchu, která snižuje kvalitu české demokracie.
+
+Výše uvedené důvody vedou k jednoznačnému závěru, že je potřeba s korupcí nekompromisně bojovat. Minimálně ve vyspělé Evropě je trend přijmout a implementovat komplexní celonárodní strategii (legislativních i organizačních opatření), jejíž efektivitu je nutné pravidelně hodnotit. Veřejně známé a nepotrestané případy vytváří společenské klima, kdy se zdá korupce všemocná a nemá smysl s ní bojovat. Ačkoli drobná korupce na správních
+
+úřadech nebo ve zdravotnictví je nepříjemná, vláda by se měla zaměřit především na potírání velké korupce. Je naivní si myslet, že je možné začít zametat odspodu. Primárním úkolem vlády je proto tlačit na odstranění korupční symbiózy, v níž žijí české elity (politici, vysoce postavení úředníci a finanční skupiny), které uzavírají vzájemně výhodné spojenectví založené na směně úplatků a protekcí.
+
+
+IV. Korupce jako mezinárodní fenomén
+
+	Korupce nezná hranic – časových (byla, je a bude) ani prostorových - územních (jde o nadnárodní, resp. internacionální - jev).�
+	Nejzávažnější formy korupce představují právě ty, které mají mezistátní, až nadnárodní přesah a účinky. V současném světě existuje stále naléhavější potřeba řešit korupci například v oblasti obchodu se zbraněmi nebo korupci nadnárodních korporací vůči celým vládám ekonomicky slabších zemí.
+
+	Státní zastupitelství již jen z těchto hledisek musí v potřebné míře zohlednit i aspekt mezinárodní spolupráce při stíhání případů korupce.
+
+	Mezinárodní společenství, jednotlivé státy i mezinárodní organizace volí a vyvíjejí pestrou škálu prostředků proti korupci – uzavírání mezinárodních smluv proti korupci a jejím jednotlivým aspektům, sdružování v mezinárodních organizacích, přijímání programových dokumentů (akčních plánů), neformální spolupráci zemí v rámci různých programů či formou podpory výzkumu a analýz.�
+	V oblasti potírání korupce jako významného problému celého mezinárodního společenství je tradičně aktivní Organizace spojených národů. V jejím rámci byly přijaty dvě klíčové protikorupční smlouvy (ani jedna z nich se zatím v ČR nestala součástí právního řádu). 
+
+	První z nich je Úmluva OSN proti korupci, přijatá v roce 2003. Velmi brzy ji podepsal nebývalý počet států, což ilustruje závažnost problému korupce. Dosud však není účinná, protože ji neratifikoval dostatečný počet států, včetně České republiky (ta ji ovšem podepsala dne 22. 4. 2005, k ratifikaci dosud nedošlo). Jejími hlavními požadavky jsou trestní postih korupce a využívání stanovených nástrojů mezinárodní spolupráce. Tato opatření mají být doprovázena preventivními opatřeními. Velkým průlomem je závazek navracení prospěchu z korupce do zemí jeho původu. To má v mezinárodní korupci význam zejména u rozvojových zemí, jejichž národní bohatství je často korupcí doslova vysáváno.
+
+	Druhým smluvním počinem OSN je Úmluva proti nadnárodnímu organizovanému  zločinu, přijatá v roce 2000 v Palermu. Necelé tři roky od jejího schválení Valným shromážděním OSN a otevřením k podpisům ji ratifikovalo 40 států a je tedy již od září 2003 účinná. Česká republika je signatářem této smlouvy, ale zatím ji neratifikovala.
+
+	Rada Evropy schválila již na 2. summitu hlav států a vlád ve Strasbourgu (10. – 11. 10. 1997) Závěrečnou deklaraci a Akční plán pro boj proti korupci a organizovanému zločinu. Poté, co v roce 1990 byla přijata Úmluva o praní, vyhledávání, zadržování a konfiskaci výnosů zločinu (č. 33/1997 Sb.), XXI. konference evropských ministrů spravedlnosti (uskutečnila se v roce 1997 v Praze) doporučila urychlené přijetí jednak rámcové dohody, která by poskytla obecné směrnice k boji proti korupci a byla by provedena vnitrostátním zákonodárstvím, popř. dodatečnými mezinárodními instrumenty, jednak úmluvy k trestnímu postihu korupce.
+
+	Dne 6. 11. 1997 Výbor ministrů Rady Evropy schválil Dohodu zřizující Skupinu států proti korupci (Group of States Against Corruption – GRECO). Úkolem GRECO je zlepšit schopnost členů RE v boji proti korupci, a to monitorováním dodržování 20 směrnic (jež byly schváleny rovněž zmiňovaného dne 6. 11. 1997).�
+	Trestněprávní úmluva proti korupci přijatá ve Strasbourgu v lednu 1999 byla ČR podepsána na konci roku 1999, následující rok pak byla ratifikována (č. 70/2002 Sb.m.s.); Úmluva pak nabyla účinnosti tři měsíce po ratifikaci čtrnáctým státem, což se stalo 1. 7. 2002. Trestněprávní úmluva o korupci je nástroj, jehož cílem je postihovat (kriminalizovat) široké spektrum korupčních jednání. Úmluva dále přináší některé doplňkové trestněprávní nástroje a snaží se zlepšit mezinárodní spolupráci v postihování této trestné činnosti. Ustanovení Úmluvy se týkají následujících skutkových podstat, které představují zvláštní formy korupčního jednání: aktivní a pasivní úplatkářství zahraničních veřejných činitelů, členů domácích i zahraničních zákonodárných sborů a členů mezinárodních zastupitelských sborů, mezinárodních institucí, domácích a zahraničních soudců a soudců pracujících u  mezinárodních soudů a nesoudního personálu mezinárodních soudů, aktivní a pasivní úplatkářství v rámci soukromého sektoru, aktivní a pasivní „obchodování s vlivem“ (nepřímé úplatkářství), praní výnosů z korupčních trestných činů a korupční trestné činy související s vedením hospodářské evidence.
+
+	V oblasti mezinárodní spolupráce je kladen důraz i na neformální výměnu informací o korupčních jevech s mezinárodním prvkem. Počítá i se spontánním oznamováním relevantních informací druhému státu a umožňuje nahradit klasický mezistátní styk prostřednictvím ústředních orgánů (zpravidla ministerstva spravedlnosti či zahraničí) přímým stykem justičních orgánů dvou či více států, je-li to v daném případě nutné.
+
+	Úmluva státům ukládá přijmout účinné a odstrašující opatření a sankce, včetně odnětí svobody a následného vyhoštění. Právnické osoby mají být odpovědné za kvalifikované protiprávní jednání, z něhož mají prospěch, a mají být postihovány jak trestněprávními, tak i jinými druhy sankcí (Úmluva výslovně zmiňuje peněžité sankce).
+
+	Zde je nutno dodat, že trestněprávní postih právnických osob byl obsahem návrhu zákona o trestní odpovědnosti právnických osob v rámci rekodifikace trestního práva hmotného na konci roku 2004 (tisk 745 Poslanecké sněmovny), avšak citovaný návrh zákona byl dne 2. 11. 2004 Poslaneckou sněmovnou zamítnut. Panuje však stále obecné přesvědčení, že v budoucnu stejně v souladu s trendy ve vyspělých zemích bude trestní odpovědnost právnických osob přece jen zavedena.
+
+	Pro úplnost je třeba uvést, že občanskoprávní úmluvu proti korupci, která byla přijata v listopadu 1999, Česká republika podepsala v roce 2000, k ratifikaci pak došlo o dva roky později (č. 3/2004 Sb. m. s.) a Úmluva nabyla účinnosti pro ČR 1. 1. 2004.
+
+	Uvádí se, že jde o první pokus definovat obecná mezinárodní pravidla v oblasti boje proti korupci nástroji soukromého práva. Úmluva od smluvních stran požaduje, aby ve svém vnitrostátním právním řádu poskytly fyzickým i právnickým osobám, jimž v důsledku korupčního jednání vznikne škoda, právní prostředky ochrany jejich práv a právem chráněných zájmů, včetně možnosti domoci se náhrady škody. Na rozdíl od trestního práva, kde je aktivita primárně na státu, tato Úmluva mířící do oblasti soukromého práva dává každé osobě možnost bránit se korupci, respektive jejím majetkovým důsledkům podle své volby.
+
+	Pod patronací Organizace pro ekonomickou spolupráci a rozvoj (OECD) byla v listopadu roku 1997 vypracována Úmluva proti podplácení zahraničních veřejných činitelů. Česká republika podepsala tuto Úmluvu v roce 2000; ve stejném roce pak vstoupila tato Úmluva pro Českou republiku v účinnost (č. 25/2000 Sb. m. s.). Prováděcí národní legislativa nicméně vstoupila v ČR v účinnost již o rok dříve (novelou trestního zákona provedenou zákonem č. 96/1999 Sb.). Úmluva je primárně zaměřena na velmi nebezpečné uplácení v mezinárodním obchodu a podnikání. S obrovským rozmachem pohybu kapitálu po celém světě se díky obrovské síle nadnárodních korporací lze stále více setkat s uplácením veřejných činitelů (především cílových zemí investic) jako součásti těchto obchodních transakcí. Na to reaguje Úmluva, která postihuje uplácení zahraničních veřejných činitelů s obchodními motivy.
+
+
+Informace o podstatném průběhu druhého kola hodnocení České republiky z hlediska implementace Úmluvy o boji proti podplácení zahraničních veřejných činitelů v mezinárodních podnikatelských transakcích z roku 1997 Českou republikou (č. 25/2000 Sb. m. s.)
+
+
+1. Úvod
+
+	Ve dnech 24. – 27. 10. 2006 byl na plenárním zasedání Pracovní skupiny OECD v Paříži projednáván a schválen text zprávy OECD hodnotící aplikaci Úmluvy o boji proti podplácení zahraničních veřejných činitelů v mezinárodních podnikatelských transakcích z roku 1997 Českou republikou (dále jen „Úmluva“), spolu s texty doporučení a tiskové zprávy. Zasedání probíhalo v anglickém jazyce (bylo tlumočeno do českého jazyka dvěma tlumočnicemi přibranými Ministerstvem spravedlnosti).
+
+	Za Českou republiku se projednávání uvedených dokumentů zúčastnili zástupci Ministerstva spravedlnosti (JUDr. Robert Kopecký, Ph. D. – vedoucí delegace, mezinárodní odbor; Mgr. Lenka Trešlová, legislativní odbor), dále se zasedání jsem se zúčastnil na požádání mezinárodního odboru Ministerstva spravedlnosti já osobně (viz žádost o mou účast a její schválení ve spisu). Zasedání se účastnili též zástupci resortu vnitra (a to konkrétně Mgr. Petr Habarta - k vynikající úrovni jeho vystoupení srov. blíže v informaci) financí.
+
+
+2. Podstatný průběh hodnocení
+
+
+a) Tři čtení hodnotících dokumentů
+
+	Na uvedeném zasedání proběhla tři čtení předmětných dokumentů, v jejichž rámci zástupci České republiky uplatnili připomínky ke všem projednávaným dokumentům a měli možnost obhájit svůj postoj jak před examinátory, tak i před všemi členy Pracovní skupiny OECD (zástupci jednotlivých států, jež ratifikovaly Úmluvu). Examinátoři i jednotliví členové Pracovní skupiny OECD rovněž mohli uplatňovat další návrhy na změnu textu všech dokumentů, zejména ve smyslu zpřísnění či změkčení doporučení České republice. Program jednání vyplývá z přílohy č. 1 k této informaci.
+
+
+b) Problematika postavení nejvyššího státního zástupce v soustavě státního zastupitelství
+
+	Soustavy státního zastupitelství a postavení nejvyššího státního zástupce se týkaly dva body hodnotící zprávy (dle původního označení 126. a 127.). I když jsem původní znění těchto bodů uváděl v informaci ze dne 11. 9. 2006, přesto opětovně poukazuji, že z původního znění těchto bodů vyplývalo následující:
+
+"126. 	Z diskuse v průběhu návštěvy na místě hlavní kontroloři získali dojem, že dozor ze strany NSZ v nejvýznamnějších případech korupce by mohl být vystaven politickým tlakům. Nejvyšší státní zástupce je jmenován vládou na návrh ministra spravedlnosti. NSZ může být odvolán bez zdůvodnění na rozdíl o vrchních, krajských a okresních/obvodních státních zástupců, kteří mohou být obecně odvolání pouze za vážné porušení povinností. Podle jednoho státního zástupce, který se zúčastnil návštěvy na místě, praxe ukázala, že jmenování a odvolání NSZ je předmětem politických vlivů. To ve velké míře závisí na shodě mezi NSZ a ministrem spravedlnosti. 
+
+127.	Hlavní kontroloři tak mají určité obavy, že faktory uvedené v článku 5 Úmluvy by mohly mít vliv na případy podplácení cizích vládních činitelů. Jak bylo poznamenáno výše, NSZ disponuje obecnými pravomocemi dozoru nad ostatními státními zástupci. Kromě toho NSZ dozoruje vrchní státní zástupce v konkrétních významných případech podplácení cizích státních činitelů. S ohledem na politické tlaky, kterým je nejvyšší státní zástupce vystaven, existuje nebezpečí, že dozor ze strany NSZ by mohl být ovlivněn „zájmy politického charakteru“, „národními hospodářskými zájmy, možnými dopady na vztahy s jiným státem nebo identitou fyzických nebo právnických osob zapojených do případu“. Jistý profesor práva, který se zúčastnil návštěvy na místě, skutečně poznamenal, že zásada podřízenosti, která se uplatňuje v českém státním zastupitelství, by mohla v „některých případech vést k subjektivním vlivům“. Hlavní kontroloři jsou si vědomi obecných ustanovení zákona, která usiluje o zajištění nestrannosti státních zástupců, ale tato ustanovení nemusí být dostatečná k vyřešení problému.
+
+Komentář:
+
+Hlavní kontroloři doporučují, aby ČR zajistila, aby úvahy o národních hospodářských zájmech, možné dopady na vztahy s jinými státy a totožnost osob do případu zapojených nebyly brány v potaz při vyšetřování případů podplácení cizích veřejných činitelů. Doporučují rovněž, aby pracovní skupina sledovala tuto problematiku souběžně s vývojem případů.  
+
+	Vzhledem k tomu, že to, co zde uvádělo, jsem považoval za doklad nepochopení obsahu platné právní úpravy (a přílišného přihlížení "hlavních kontrolorů" k některým subjektivním tvrzením účastníků examinace), zpracoval jsem písemné připomínky (přičemž připomínky uplatnilo i Ministerstvo spravedlnosti, legislativní odbor).
+
+	Obsah našich připomínek vycházel z toho, že "Novelou provedenou zákonem č. 14/2002 Sb. byl korigován v zákoně o státním zastupitelství fakt, že soustava státních zastupitelství byla v původním znění nadměrně decentralizována (způsobem, který nemá zřejmě obdobu v žádné jiné zemi) a že v soustavě byly postrádány dostatečné kontrolní mechanismy vůči činnosti nejnižších stupňů soustavy. Citovaná novela byla přijata mj. na základě doporučení Evropské komise v rámci pravidelného předvstupního hodnocení České republiky z roku 1999, kde právě výslovně takovéto doporučení bylo uvedeno. Tomu pak odpovídala skutečnost, že bylo výstižněji reglementováno oprávnění nejvyššího státního zástupce usměrňovat a sjednocovat postupy nižších státních zastupitelství mj.i při činnosti v oblasti trestního řízení. 
+
+	Nadále však platí, že ze strany nejvyššího státního zástupce jsou vydávány pokyny obecné povahy, které se týkají především procesních otázek, vztahují se k postupu zcela obecně, jde totiž o interní předpis, který podle dostupných informací je vydáván ve všech zemích, nikoli tedy pouze v ČR. Hmotněprávní otázky těmito pokyny obecné povahy buď vůbec nejsou řešeny anebo jen metodicky. Pokyny obecné povahy jsou tedy závazné jen potud, pokud skutečně mají povahu interního předpisu v soustavě státního zastupitelství, řeší-li otázky metodiky, jsou nezávazné (totéž se týká i výkladových stanovisek, která se týkají odstraňování nejasností ve výkladu a aplikace práva v případech jednotlivých anebo určitého druhu - ta jsou zásadně doporučující povahy). 
+
+	Nejvyšší státní zástupce také nedisponuje oprávněním dávat závazné pokyny jakémukoli státnímu zástupci v soustavě, toto právo má toliko vůči vrchním státním zástupcům. Nemůže jim dát ale pokyn např. k tomu, aby oni sami vydali pokyn - k postupu v konkrétní věci - ještě nižším vedoucím státním zástupcům (krajským či okresním). 
+
+	Nejvyšší státní zástupce disponuje - po novele z roku 2002, která promítla mj. i závěry pravidelného hodnocení Evropské komise z roku 1999 - oprávněním podrobit kontrole skončenou věc a přijmout opatření potřebná k nápravě. Jde však o to, že jde-li o věc skončenou (a obdobně tomu je ohledně mimořádného kasačního oprávnění podle § 174a tr. ř., kde se ale jedná pouze o věci, v nichž bylo trestní stíhání zastaveno nebo byla věc postoupena jinému orgánu jako přestupek, kárné provinění, jiný správní delikt, atd.), nezakládá tato pravomoc nejvyššího státního zástupce jeho oprávnění vydat tzv. negativní pokyn (tzn., aby věc byla odložena, zastavena, postoupena, atd.), ale naopak toliko tzv. pozitivní pokyn (tzn., aby věc byla dále objasňována, vyšetřována a popř. se dostala k soudu po podání obžaloby).
+
+	I když zákonodárce v případě nejvyššího státního zástupce nezakotvil obdobnou pojistku, jaká je upravena u všech ostatních vedoucích státních zástupců, proti možnosti neodůvodněného odvolání z funkce (tato skutečnost je oprávněně předmětem kritiky a nesvědčí o tom, že by Česká republika a její vrcholné orgány byly ochotny komplexně a z hlediska všech možných důsledků čelit nebezpečí neodůvodněných zásahů do státního zastupitelství, a to zejména ze strany politiků, to je ovšem problém, který se neméně týká i států nepoměrně vyspělejších než ČR, např. SRN a zvláště Francie), přesto se až dosud v konkrétních věcech, ale i v rámci vztahů v soustavě státního zastupitelství, tato okolnost do postupu státních zástupců nepromítla. Jinými slovy řečeno - ministr spravedlnosti jako činitel, který navrhuje jmenování i odvolání nejvyššího státního zástupce, a vláda, která ho jmenuje i odvolává, nečinili žádné zásahy do soustavy státního zastupitelství, jež by se týkaly konkrétních věcí a postupu v nich. Jistě je v této souvislosti hodné pozornosti, že ministr spravedlnosti, ale ani vláda, nedisponují oprávněním vydávat pokyny nejvyššímu státnímu zástupci (tak tomu bylo po celou dobu existence státního zastupitelství), nejsou mu ani služebně nadřízeni (to byl právní stav před účinností shora citované novely z roku 2002 - týkal ministra spravedlnosti).
+
+	Tvrzení hodnotící zprávy v této části není dostatečně podloženo, protože pouze na základě neexistence jednoho ustanovení, jež by zakotvovalo odvolatelnost nejvyššího státního zástupce (a které absentuje i v právních řádech četných jiných - a nesporně demokratických - zemí), jen pokud závažným způsobem poruší povinnosti vyplývající z výkonu funkce vedoucího státního zástupce (jak je tomu u všech ostatních vedoucích státních zástupců, a to až do nejnižší úrovně), ve spojení s nerelevantními fakty ("obecné pravomoci dozoru", "dohled nad vrchními státními zastupitelstvími, která mají zvláštní věcnou příslušnost v případech uvedených v § 15 vyhlášky č. 23/1994 Sb. - jednacího řádu) a dokonce se subjektivně podbarvenými údaji od konkrétních osob (nelze vyloučit, že jsou právě oněmi osobami, které působily dříve ve vedení Nejvyššího státního zastupitelství) v tom smyslu, že jmenování a odvolání nejvyššího státního zástupce může být předmětem politických vlivů, činí poměrně zásadní závěry. 
+
+	V této části se údaje hodnocení zcela zásadně odmítají; měly-li být ve zprávě ponechány, Nejvyšší státní zastupitelství má za to, že úroveň hodnotící zprávy a především její objektivita by byly velmi závažným způsobem zpochybněny. Nebyly předloženy žádné konkrétní příklady nesprávného postupu a ovlivnění údajnými politickými tlaky, jde pouze o všeobecně zaměřená hodnocení, nadto nedostatečně reflektující bezprostřední obsah právní úpravy.
+
+	Z toho, co je výše uvedeno, se naznačuje jako určitý námět pouze to, aby byl "oprášen" původní záměr, který předpokládal, že by nejvyšší státní zástupce byl chráněn shodnou pojistkou proti odvolání z funkce jako ostatní vedoucí státní zástupci - srov. § 10 odst. 4 zákona o státním zastupitelství:
+
+	(4) Ministr spravedlnosti může vrchního státního zástupce, krajského státního zástupce a okresního státního zástupce z této funkce odvolat, pokud závažným způsobem poruší povinnosti vyplývající z výkonu funkce vedoucího státního zástupce; nejde-li o odvolání z důvodu porušení povinností při výkonu státní správy státního zastupitelství (dále jen "správa státního zastupitelství"), činí tak na návrh vedoucího státního zástupce, který je podle odstavců 1 až 3 oprávněn navrhovat jmenování do funkce, z níž má být vedoucí státní zástupce odvolán.
+
+	Pro úplnost podotýkám, že původní vládní návrh novely zákona o státním zastupitelství č. 14/2002 Sb. původně tuto pojistku (ve vztahu i k nejvyššímu státnímu zástupci) neobsahoval a i když v průběhu legislativního procesu se tento návrh do novely formou pozměňovacího návrhu dostal, návrh byl Poslaneckou sněmovnou odmítnut."
+
+	Dne 3. 10. 2006 mi pak byl doručen od JUDr. Roberta Kopeckého, Ph. D. mj. i revidovaný text hodnotící zprávy (příloha č. 2 - pouze v angličtině) s žádostí o sdělení podstatných připomínek nejpozději do 11. 10. 2006. Připomínky viz příloha č. 3. Kromě dalších připomínek k jiným bodům zprávy jsem vyslovil plný souhlas s eventuálním doplněním bodu 125. o část úpravy v zákoně o státním zastupitelství (připomínka legislativního odboru Ministerstva spravedlnosti). Dále jsem zdůraznil, že byť byl v textu ponechán velmi diskutabilní bod 126. a byl doplněn bod 127., který vyjadřuje kritický pohled ČR, což by zřejmě nebylo možno akceptovat (a v této podobě by hodnotící zpráva vyznívat neměla a bude zřejmě vyjasňována na jednání v Paříži), řešením by mohlo být doplnění, které rovněž navrhl legislativní odbor Ministerstva spravedlnosti (příloha č. 4) s tím, že nad bodem 126. bude nepochybně vedena diskuse v Paříži.
+
+
+	Na jednání v Paříži proběhla i k tomuto bodu diskuse, která byla uvozena mým vystoupením nejprve v rámci prvního dne jednání (diskuse s examinátory), v němž jsem stručně upozornil na obsah našich dosud uplatňovaných připomínek, zdůraznil, že pozice nejvyššího státního zástupce v ČR není taková, že by se jednalo o politickou funkci. Nic na tom nemění skutečnost, že nejvyšší státní zástupce je jmenován i odvoláván vládou (na návrh ministra spravedlnosti) jakožto vrcholným orgánem moci výkonné, jejíž složkou - obdobně jako tomu je i v jiných zemích, a to převážně demokratických - v ČR státní zastupitelství formálně je (ve skutečnosti je pokládáno i za orgán moci justiční v širším smyslu - je tak složkou systému trestní i netrestní justice, orgánem trestní i netrestní spravedlnosti, ochráncem veřejného zájmu v trestním řízení i v jiném než trestním procesu). 
+
+	Na dotazy examinátorů jsem sdělil, že nejvyšší státní zástupce je oprávněn vydávat pokyny obecné povahy, ty však mají povahu interních norem a nemohou se týkat bezprostředně konkrétních věcí. Postupu v konkrétních věcí se týká jednak dohled (který však může být vykonáván toliko vůči vrchním státním zastupitelstvím - to plní úkoly v oblasti trestního řízení jako orgán veřejné žaloby ve vlastním slova smyslu - jako standardně okresní a krajská státní zastupitelství - jen ve vztahu k velmi omezenému počtu věcí, z oboru zvlášť závažné ekonomické a finanční kriminality, pokud jde o korupci zahraničních veřejných činitelů nebo o korupci vůbec, působnost vrchních státních zastupitelství je zcela marginální), kde by pokyn skutečně přicházel v úvahu (v zásadě ale jen jako pokyn tzv. pozitivní - ke konání, nikoli negativní - k zastavení řízení), jednak kontrola skončených věcí (popsal jsem hlavní důvody přijetí této úpravy i několik poznámek k její aplikaci).
+
+	Nejvyšší státní zástupce za celou dobu existence státního zastupitelství od roku 1994 svého práva dávat pokyny v konkrétních věcech nikdy nevyužil. Kdyby tak učinil, stalo by se tak velice transparentní procedurou, jak z toho ostatně vychází např. Doporučení Rec (2000) 19 o úloze veřejné žaloby v systému trestní justice.
+
+	Další den, kdy se již uskutečnilo plenární zasedání pracovní skupiny (první čtení zprávy), jsem podal podrobnou informaci o obsahu české právní úpravy, jak byla výše naznačena, o tom, že nejvyšší státní zástupce sice může být vládou odvolán, v případě všech dosud odvolaných nejvyšších státních zástupců (3 - 1997, 1999 a 2005) se tak stalo tak, že vláda velmi podrobně svůj krok zdůvodnila. Vláda je kolektivní orgán, který rozhoduje ve sboru, není zde žádná vázanost na návrh ministra spravedlnosti na odvolání, který musí nutně předcházet. Skutečnost, že nebyla stanovena zákonná pojistka proti odvolání shodná jako v případě vrchních, krajských a okresních státních zástupců, je v ČR již od roku 1994 předmětem trvalé kritiky, objevila se dokonce v návrhu novely později schváleném pod č. 14/2002 Sb., ale byla Poslaneckou sněmovnou vypuštěna. Přesto se opětovně vyskytlo úsilí takovou úpravu zakotvit, a to nezávisle na tomto hodnocení.
+
+	Nejvyšší státní zástupce je sice hlavou soustavy státního zastupitelství, tato soustava je však silně decentralizována (vysvětlil jsem hlavní principy fungování této soustavy podle platné právní úpravy včetně principu dohledu ve vztahu dvou bezprostředně sousedících stupňů a nepřípustnosti vydání pokynu k tomu, aby nižší článek rovněž vydal pokyn článku soustavy ještě o stupeň nižšímu). Jeho oprávnění - byť byla novelou z roku 2002 poněkud posílena - směřují především do oblasti interní legislativy, analytické činnosti, kasačního oprávnění ve vztahu k některým věcem, jimiž řízení končí, účasti na rozhodování Nejvyššího soudu a podávání některých mimořádných opravných prostředků a návrhů ve specifických případech - zejména v jiném než trestním řízení. Pokud jde o dohled a právo dávat pokyny v konkrétních věcech, jde o důsledek obecné úpravy, ale vrchní státní zastupitelství, nad nimiž výlučně lze dohled vykonávat, plní úkoly v trestním řízení jen ve velmi omezeném rozsahu (obdobné úkoly jako okresní či krajská státní zastupitelství) - ve vztahu ke korupci prakticky minimálně (jen pokud se v souvislosti s prověřováním či vyšetřováním vyskytla korupce, podezření z ní). Pokyn za takřka 13 let existence soustavy nikdy vydán nebyl - kdyby se tak stalo, z kontextu úpravy - zejména ve vztahu k úpravě institutu kontroly skončené věci - vyplývá, že by se nemohlo jednat o tzv. negativní pokyn, ale o pokyn pozitivní (to se týká právě zmiňovaného oprávnění nařídit kontrolu skončené věci i kasačního oprávnění podle trestního řádu). Pokyn by byl vydán za situace, kdy počínání nejvyššího státního zástupce je takříkajíc pod drobnohledem veřejnosti, musí být tedy přísně transparentní.
+
+	V rámci druhého čtení jsem pouze stručně zopakoval tyto argumenty, se zdůrazněním např. německé či francouzské úpravy postavení veřejné žalobce a generálních prokurátorů a oprávnění ministrů spravedlnosti dávat pokyny, v případě Nizozemí dokonce ve velmi omezeném rozsahu i pokyny negativní. Širší diskuse poté neproběhla, resp. byly činěny pouze obecné dotazy ve vztahu k již řečenému, a bylo konstatováno, že úprava v ČR nikterak nevybočuje z evropských či světových standardů.
+
+	Ve třetím čtení už žádné dotazy k této otázce ani jiné připomínky činěny nebyly.
+
+
+	Schválený závěr hodnotící zprávy (v rámci druhého a především třetího čtení) byl nakonec takový, že předmětem monitoringu budou mimo jiné zejména principy jmenování a odvolávání nejvyššího státního zástupce, které vzbudily pochybnosti o možném uplatnění politických vlivů na jednotlivé trestní případy prostřednictvím využití pravomocí nejvyššího státního zástupce jmenovaného vládou. To je z hlediska možných jiných opatření, která hrozila a případně byla i uplatněna (viz dále), pozitivní výsledek. Přesto se i nadále kloním, aby změna právní úpravy posilující postavení i nejvyššího státního zástupce byla s nejvyšším možným úsilím prosazována (to jsem ostatně opakovaně při jednání uváděl, a to i s výhradou, že konečné rozhodnutí je jednak na vedení NSZ, jednak na Parlamentu).
+
+
+c) Zavedení trestní odpovědnosti právnických osob	
+
+	Nejbouřlivější diskuse proběhla ohledně článku 2 Úmluvy, který požaduje zavést odpovědnost právnických osob (trestní nebo mimotrestní) za podplácení zahraničních veřejných činitelů. Bylo konstatováno, že v této otázce za posledních deset let nedošlo na straně České republiky ke změně (byť Úmluva byla transformována do právního řádu až před 6 lety) a stále nesplňuje požadavek článku 2, ačkoli se jedná o zásadní článek Úmluvy. Předsedající Pracovní skupiny OECD a následně pak zejména zástupce Spojených států amerických (jakož i další členové Pracovní skupiny OECD) vyjádřili vážné znepokojení nad absencí implementace článku 2 Úmluvy. České republice bylo z tohoto důvodu navrženo poměrně tvrdé doporučení, aby do jednoho roku od uskutečnění hodnocení České republiky přijala odpovědnost právnických osob za podplácení zahraničních veřejných činitelů. Členové české delegace následně apelovali na členy Pracovní skupiny OECD i na examinátory, aby bylo změněno znění textu doporučení, s argumentací, že vzhledem k délce legislativního procesu, systémovosti potřebné legislativní změny a zejména vzhledem k stávající politické situaci je uvedenou jednoroční lhůtu s velkou pravděpodobností nemožné dodržet. Zástupci České republiky poukázali na hodnocení Slovenské republiky, které bylo uloženo zavést odpovědnost právnických osob „as soon as possible“, tj. nebyla jim stanovena časová lhůta. Examinátoři vyslyšeli požadavek zástupců České republiky pouze částečně, neboť poukázali naopak na tzv. Lucemburský případ, kdy bylo Lucembursku uloženo stejně tvrdé doporučení přijmout odpovědnost právnických osob do jednoho roku od hodnocení. Ve vztahu k Slovenské republice examinátoři uvedli, že Slovenská republika byla v jiné situaci, neboť byly právě vyhlášeny volby, zatímco v České republice není jasné, jak se situace dále vyvine. 	V návaznosti na uvedené bylo doporučení změněno v tom smyslu, že do osmi měsíců od hodnocení České republiky má být legislativní úprava zavádějící odpovědnost právnických osob zpracována, předložena vládě a vládou schválena.
+
+	Navržené znění se zástupcům České republiky ještě podařilo změkčit na následném druhém čtení zprávy, kdy po dalších rozsáhlých diskusích bylo přijato konečné znění doporučení:
+
+
+„České republice se doporučuje, aby zavedla odpovědnost právnických osob za podplácení zahraničních veřejných činitelů bez odkladu (without delay) a zavedla účinné, odrazující a proporcionální sankce. Pracovní skupina dále očekává, že jí Česká republika za 12 měsíců (od hodnocení České republiky) písemně vyrozumí o pokroku („progress“), jaký v této věci učinila.“
+
+
+	Ačkoli byl text doporučení v maximálním možném rozsahu zmírněn, přesto je toto doporučení pro Českou republiku nejzásadnějším. Pracovní skupina OECD tuto otázku vyzdvihla a poukázala na trvající deficit. Dále zdůraznila, že po roce bude chtít vidět reálné výsledky a prokázané úsilí České republiky odpovědnost právnických osob zavést. V opačném případě lze očekávat, že Pracovní skupina OECD vyvine na Českou republiku velký tlak, a to včetně tlaku mediálního. 
+
+	Nelze rovněž pominout, že i v rámci Evropské unie je Česká republika spolu se Slovenskou republikou víceméně posledním státem, který dosud nemá zavedenou odpovědnost právnických osob. Absence odpovědnosti právnických osob znemožňuje též ratifikaci řady významných mezinárodních smluv a mezinárodní tlak na Českou republiku, aby urychleně přijala řešení, stále narůstá. Odůvodnění absence tohoto institutu vůči mezinárodním organizacím a Evropské unii pak bude požadováno primárně po ministru spravedlnosti.
+
+	Z dosavadních jednání mezi Ministerstvem spravedlnosti a Ministerstvem vnitra vyplývá, že Ministerstvo vnitra odmítá vypracovat správní odpovědnost právnických osob  (s poukazem, že je to velmi obtížné), zřejmě není nakloněno ani vytvoření modelu trestně-správní odpovědnosti. Doposud trvalo na znovupředložení návrhu na trestní odpovědnosti právnických osob v užším pojetí (oproti původnímu tisku 745 Poslanecké sněmovny - volební období 2002 - 2006; návrh byl zamítnut dne 2. 11. 2004). Podle dosavadního vývoje tedy nelze zřejmě očekávat, že by Ministerstvo vnitra z vlastní iniciativy vypracovalo návrh mimotrestní odpovědnosti právnických osob, i když nám není znám názor stávajícího ministra vnitra.
+
+	Nicméně vzhledem k reálné potřebě urychleně řešit otázku zavedení odpovědnosti právnických osob legislativní a mezinárodní odbor Ministerstva spravedlnosti, jehož zástupci se hodnocení zúčastnili, navrhujemí v případě negativního postoje k opakovanému předložení návrhu trestní odpovědnosti právnických osob v užším pojetí projednat tuto otázku na úrovni vedení Ministerstva spravedlnosti a Ministerstva vnitra, neboť je nezbytné nalézt přijatelné společné řešení.
+
+
+d) Ostatní doporučení
+
+	Pokud jde o ostatní doporučení Pracovní skupiny OECD, soustavy státního zastupitelství či alespoň resortu spravedlnosti se týkají následující:
+
+
+1)	Ve vztahu k legalizaci výnosů z trestné činnosti:
+
+- statisticky sledovat, která hlášení podezřelých transakcí vyústila v trestní stíhání (zde bude zapotřebí, aby státní zástupci poskytli Finančně analytickému útvaru zpětně informaci o zahájení trestního stíhání na základě nahlášené podezřelé transakce; zástupcům České republiky se podařilo vypustit obdobnou povinnost pro soudce).
+
+
+2) Ve vztahu k stíhání trestného činu podplácení zahraničního veřejného činitele:
+
+-	zajistit dodatečná školení ohledně trestnosti podplácení zahraničního veřejného činitele pro soudce, státní zástupce a čekatele,
+
+-	vést statistiky ohledně počtu trestných činů týkajících se domácího a zahraničního podplácení.
+
+
+3)	Ve vztahu k mezinárodní právní pomoci a k vydávání:
+
+-	obecně instruovat státní zástupce, kteří se zabývají mezinárodní právní pomocí, aby v případech vydávání osob ve vztahu k podplácení zahraničního veřejného činitele nebyli ovlivněni faktory uvedenými v článku 5 Úmluvy (lze řešit pokynem obecné povahy nejvyššího státního zástupce č. 1/2005 - zde srov. již stávající znění např. čl. 1 odst. 1 - bude třeba konzultovat s mezinárodním odborem, ale osobně se domnívám, že je již dnes řešeno dostatečně),
+
+-	upozornit soudce na vztah § 377 trestního řádu a článku 5 Úmluvy.
+
+          
+
+4)	Ve vztahu k trestnosti podplácení zahraničního veřejného činitele
+
+- vypustit účinnou lítost ve vztahu k podplácení zahraničního veřejného činitele (uvedený požadavek je standardní v rámci OECD, stejné doporučení obdržela i Slovenská republika, nebylo proto možné účinnou lítost v tomto případě obhájit).
+
+
+5) Ve vztahu k legalizaci výnosů z trestné činnosti
+
+-	zvážit změnu § 252a tr. zák. tak, aby výslovně pokrýval legalizaci výnosů z  trestné činnosti, pochází-li výnos z podplácení v zahraničí,
+
+-	zajistit účinnost a proporcionalitu trestu (bylo řešeno v návrhu trestního zákoníku),
+
+-	zvýšit povědomí státních zástupců o významu propadnutí a zabrání úplatků  a povzbudit je v navrhování propadnutí a zabrání úplatku vždy, když je to možné (bude řešeno Nejvyšším státním zastupitelstvím zřejmě v metodice ke korupci, v pokynu obecné povahy to řešit nelze).
+
+
+6) Ve vztahu k trestnému činu zkreslování údajů o stavu hospodaření a jmění podle § 125 tr. zák.
+
+-	zajistit účinnost a proporcionalitu trestu (zástupci České republiky dosáhli vypuštění požadavku na změnu skutkové podstaty tohoto trestného činu, nicméně trvá požadavek na zvýšení trestní sazby).
+
+
+7) Ve vztahu k statistikám:
+
+- vést v rozsahu, v jakém je to možné, detailnější statistiky ohledně trestů ukládaných za domácí a zahraniční podplácení, legalizaci výnosů z trestné činnosti a trestný čin podle § 125 tr. zák. (zde bylo dosaženo vypuštění požadavku na statistické sledování řízení o vydání bezdůvodného obohacení a o nekalosoutěžním jednání ve vztahu k podplácení zahraničních veřejných činitelů).
+
+
+       U dalších doporučení bylo dosaženo jejich změny na pouhé monitorování Pracovní skupinou OECD, zda jsou v tomto směru požadavky Úmluvy plněny, takže v této fázi žádná další doporučení České republice uložena nebyla. 
+
+
+3. Souhrn doporučení pro všechny resorty (získáno z informace JUDr. Kopeckého, Ph. D. pro vedení Ministerstva spravedlnosti)
+
+
+	Všechna doporučení Pracovní skupiny pro jednotlivé rezorty lze shrnout následovně:
+
+
+I. MINISTERSTVO SPRAVEDLNOSTI
+
+
+ a)  zavedení odpovědnosti právnických osob v případech úplatkářství
+
+      s cizím prvkem
+   Tento úkol má být vyřešen ve spolupráci s Ministerstvem vnitra. ČR má neprodleně zavést odpovědnost právnických osob pro případy uplácení zahraničních veřejných činitelů a zajistit, aby uložené sankce byly účinné, přiměřené a odrazující. Během tzv. ústního hlášení v příštím roce má ČR  Pracovní skupinu informovat o učiněných krocích a své exposé podložit písemnými podklady. Viz podrobně výše.
+
+
+b) zvýšení povědomí o cizím úplatkářství v justici
+    Justiční akademie má zintenzivnit povědomí o úplatkářství cizích veřejných činitelů formou seminářů a  školení pro státní zástupce a soudce, včetně nových posil.
+
+    Justiční akademie má formou seminářů a  školení pro státní zástupce a soudce, včetně nových posil zvýšit povědomí o důležitosti ukládání trestů propadnutí věci, respektive majetku v případech cizího úplatkářství.
+
+    NSZ má vydat interní předpis pro státní zástupce, který by v rámci extradičního řízení a různých forem vzájemné právní pomoci v případech cizího úplatkářství zamezil tomu, že rozhodnutí příslušných orgánů bude ovlivněno zřetelem na státní hospodářský zájem, vztahy s jiným státem  či totožností zúčastněných fyzických nebo právnických osob (viz blíže shora).
+
+    NSZ má povzbudit státní zástupce, aby navrhovali co nejvíce uložení trestů propadnutí věci, respektive majetku v případech cizího úplatkářství (viz shora).
+
+    Ministerstvo spravedlnosti má upozornit soudy na vztah mezi § 377 Trestního řádu a článkem 5 Úmluvy.
+
+     Ministerstvo spravedlnosti má povzbudit soudce, aby ukládali co nejvíce  tresty propadnutí věci, respektive majetku v případech cizího úplatkářství.
+
+
+c) novelizace trestněprávních předpisů
+     Pracovní skupina doporučuje ČR odstranit ze skutkové podstaty trestného činu úplatkářství s cizím prvkem institut účinné lítosti (zde nebyla naděje prosadit v žádné formě stávající úpravu, a to i přes skutečnost, že v rámci písemných připomínek bylo namítáno, že bude znemožněn postih závažnější korupce - pracovní skupina však uplatnila tzv. Slovenský precedens - převzala beze změny hodnocení Slovenské republiky z roku 2005).
+
+ČR má novelizovat ustanovení § 252a Trestního zákona, aby expressis verbis pokrývalo legalizaci výnosů z cizího úplatkářství, došlo-li k němu v zahraničí.
+
+     ČR má zajistit, aby trestní sankce, uložené za trestný čin dle § 125 Trestního zákona byly účinné, přiměřené a odrazující. 
+
+
+d) statistické údaje
+
+    ČR má zpracovávat detailnější statistiky týkající se ukládaných trestů za domácí a cizí úplatkářství, legalizace výnosů z trestné činnosti a daňových trestných  činů. 
+
+     Statisticky je také potřeba zachytit  odklon v případech domácího a cizího úplatkářství.
+
+
+II. MINISTERSTVO VNITRA
+
+zvýšení povědomí o cizím úplatkářství
+      V rámci Národní strategie boje proti korupci je třeba zintenzivnit povědomí o úplatkářství cizích veřejných činitelů formou seminářů, školení, distribucí osvětových materiálů mezi veřejností a zaangažovat v této kampani i nevládní sektor.
+
+      MV má zintenzivnit povědomí o úplatkářství cizích veřejných činitelů formou seminářů,  školení a praktických cvičení pro policejní složky, včetně nových posil.
+
+      Policejní prezídium má jednoznačně vymezit rozdělení kompetencí mezí ÚOKFK  a ÚONVDK v případech cizího úplatkářství a zlepšit spolupráci mezi těmito složkami na všech úrovních. 
+
+
+b) zavedení odpovědnosti právnických osob v případech úplatkářství
+
+      s cizím prvkem
+    Tento úkol má být vyřešen ve spolupráci s Ministerstvem spravedlnosti. ČR má neprodleně zavést odpovědnost právnických osob pro případy uplácení zahraničních veřejných činitelů a zajistit, aby uložené sankce byly účinné, přiměřené a odrazující. Během tzv. ústního hlášení v příštím roce má ČR  Pracovní skupinu informovat o učiněných krocích a své exposé podložit písemnými podklady.
+
+
+c) novelizace trestněprávních předpisů
+    Pracovní skupina doporučuje ČR odstranit ze skutkové podstaty trestného činu úplatkářství s cizím prvkem institut účinné lítosti a jeho využívání v rámci vyšetřování tohoto typu trestné činnosti.
+
+
+d) legalizace výnosů z trestné činnosti
+    ÚONVDK má ve spolupráci s FAÚ MF zajistit přiměřená opatření k tomu, aby  oblast legalizace výnosů z korupčního jednání byla paralyzována a účinněji vyšetřována.
+
+
+e) statistické údaje
+
+    ČR má zpracovávat detailnější statistiky týkající se ukládaných trestů za domácí a cizí úplatkářství, legalizace výnosů z trestné činnosti a daňových trestných  činů. 
+
+
+III. MINISTERSTVO FINANCÍ
+
+
+ a)  zvýšení povědomí o cizím úplatkářství
+    MF má zintenzivnit povědomí o úplatkářství cizích veřejných činitelů a o nezapočitatelnosti úplatků formou seminářů, školení, distribucí osvětových materiálů mezi správci daně, účetními  a auditory.
+
+    MF  vydat co nejdříve směrnice a metodické pokyny k odhalování cizího úplatkářství pro správce daně, účetní a auditory.
+
+
+
+b) hranice povinnosti  mlčenlivosti
+    MF má pouvažovat o prolomení povinnosti  mlčenlivosti u výše uvedených subjektů a povzbudit tyto profese k aktivnější spolupráci s policejními složkami v případech podezření ze spáchání korupčního  jednání.
+
+
+c) odhalování nezákonných operací
+
+    FAÚ MF má   poskytnout správcům daně, účetním  a auditorům kvalitní a propracované materiály k odhalování podezřelých transakcí v oblasti korupce a legalizace výnosů z trestné činnosti.
+
+      Těmto subjektům je třeba dále poskytovat součinnost a typologii legalizace výnosů z trestné činnosti. 
+
+      Je třeba i vést podrobné statistiky  podezřelých jednání, které usnadní vyšetřování  korupčních případů  a jejich trestní stíhání.
+
+
+d)  legalizace výnosů z trestné činnosti
+     FAÚ má ve spolupráci s  ÚONVDK zajistit přiměřená opatření k tomu, aby  oblast legalizace výnosů z korupčního jednání byla paralyzována a účinněji vyšetřována.
+
+
+e) podvodné účetnictví
+    MF má ve spolupráci s jednotlivými Finančními úřady a kontrolními orgány v oblasti účetnictví zajistit přiměřená opatření k tomu, aby  oblast podvodného vedení účetnictví související s  korupčním jednáním  byla paralyzována, účinněji vyšetřována a aby sankce v Zákoně o účetnictví  byly dostatečně využívány.
+
+
+f) statistické údaje
+
+   ČR má zpracovávat detailnější statistiky týkající se ukládaných trestů za domácí a cizí úplatkářství, legalizace výnosů z trestné činnosti a daňových trestných  činů. 
+
+
+g) Česká exportní banka
+    Česká exportní banka má zintenzivnit povědomí o úplatkářství cizích veřejných činitelů formou seminářů, školení, distribucí osvětových materiálů mezi svými zaměstnanci, klienty a dalšími  subjekty operujícími na zahraničních trzích.
+
+
+
+ IV.  MINISTERSTVO PRŮMYSLU  A  OBCHODU
+
+ Česká exportní banka
+       Česká exportní banka má zintenzivnit povědomí o úplatkářství cizích veřejných činitelů formou seminářů, školení, distribucí osvětových materiálů mezi svými zaměstnanci, klienty a dalšími  subjekty operujícími na zahraničních trzích.
+
+
+
+V.  NEJVYŠŠÍ  KONTROLNÍ ÚŘAD
+
+
+      NKÚ má zintenzivnit povědomí o úplatkářství cizích veřejných činitelů formou seminářů, školení, distribucí osvětových materiálů mezi svými zaměstnanci a instruovat je, jak odhalit případy cizího úplatkářství.
+
+
+ VI.  MINISTERSTVO PRÁCE A  SOCIÁLNÍCH VĚCÍ
+
+
+      MPSV má uvažovat o přijetí dodatečných opatření ke   zvýšení ochrany  „oznamovatelů korupčního jednání na pracovišti“ (whistleblowers), aby tak povzbudilo čestné zaměstnance k rozkrývání korupčního jednání s cizím prvkem, aniž by museli mít strach z represí zaměstnavatele.
+
+
+
+VII. MINISTERSTVO  ZAHRANIČNÍCH VĚCÍ
+
+
+a) zvýšení povědomí o cizím úplatkářství
+    MZV má v rámci své působnosti zintenzivnit povědomí o úplatkářství cizích veřejných činitelů formou seminářů, školení, distribucí osvětových materiálů mezi svými zaměstnanci, veřejností, především však mezi subjekty operujícími na zahraničních trzích.
+
+
+státní rozvojová pomoc
+      MZV má v rámci státní rozvojové pomoci v souvislosti s prevencí a odhalováním cizího úplatkářství podniknout  následné kroky  ke zvýšení povědomí o úplatkářství cizích veřejných činitelů mezi svými zaměstnanci v  dané oblasti, včetně těch působících v zahraničních misích. 
+
+     Dále je třeba šířit osvětu  nejen mezi subjekty operujícími na zahraničních trzích a zapojenými do státní rozvojové pomoci, ale i mezi nevládními organizacemi, působícími v této oblasti svými projekty financovanými ze státního rozpočtu.
+
+ 
+
+	V rámci Evropské unie byla Úmluva o boji proti korupci vztahující se na úředníky Evropských společenství nebo na úředníky členských zemí Evropské unie� z května 1997 přijata aktem Rady EU. Do doby přijetí tohoto smluvního instrumentu v rámci III. pilíře EU v mnoha státech nebylo uplácení cizích veřejných činitelů, byť i na vlastním území, trestným činem. Situace se stávala neudržitelnou a přijetí Prvního protokolu k Úmluvě o ochraně finančních zájmů EU bylo jen dílčím řešením. S touto Úmluvou těsně souvisí další smluvní instrumenty EU proti korupci a souvisejícím jevům, mj. právě citovaná Úmluva o ochraně finančních zájmů Evropských společenství z roku 1995. Přímo na korupci byl pak zaměřen její První protokol z roku 1996,� zatímco Druhý protokol z roku 1997 byl zaměřen na dohledávání kriminálních transakcí a zabavování výnosů z nich.�
+	Dále je třeba zmínit i tyto dokumenty, jež byly přijaty v rámci EU, a to:
+
+	Společnou akci ze dne 22. 12. 1998 o korupci v soukromém sektoru, která byla přijata Radou EU na základě článku K.3 Smlouvy o Evropské unii. Zmíněný dokument upravuje trestné činy aktivní a pasivní korupce v soukromém sektoru, které působí nebo mohou způsobit narušení hospodářské soutěže v rámci společného trhu, jejichž výsledkem je nebo by mohla být ekonomická újma. Členské země zavazuje k přijetí nezbytných opatření.
+
+	Rámcové rozhodnutí Rady EU ze dne 22. 7. 2003 o boji proti korupci v soukromém sektoru, jenž kriminalizuje aktivní i pasivní korupci (včetně návodu, pomoci a účasti) při podnikatelské činnosti, a to jak ziskových, tak neziskových subjektů. I v tomto případě mají členské země přijmout nezbytná opatření.
+
+	Jinak je třeba ještě dodat, že za vnesení pojmu korupce do trestního řádu vděčíme právě Rámcovému rozhodnutí Rady č. 2002/584/JVV z 13. června 2002 o evropském zatýkacím rozkazu a procesu předávání mezi členskými státy.� 
+
+	V důsledku mezinárodních smluv a legislativy EU však dochází k harmonizaci znaků trestného činu označovaného v jednotlivých státech EU tu jako korupce, tu jako úplatkářství. Nemělo by se tedy stát, že jednání trestné v některém z členských států EU a označované jako korupce (případně jinak), by nebylo trestné podle trestního zákonodárství jiného členského státu. Alespoň teoreticky však nejsou vyloučeny případy, kdy zákonodárství konkrétního státu půjde nad rámec závazku k harmonizaci a bude trestně postihovat i jiná jednání, která označí za korupci. Lze vycházet z názoru, že de lege ferenda není nutné měnit název již tradičního institutu úplatkářství v našem trestním zákoně; v tomto ohledu jsou důležitější znaky skutkové podstaty nežli jejich zákonné označení.�
+
+V. Úvahy nad přijetím interní úpravy státního zastupitelství týkající se stíhání korupce
+
+	Tyto úvahy se objevily přibližně v březnu 2003, kdy začalo být zjevným, že dosavadní přístupy ke stíhání korupce jsou zřejmě zcela neúčinné. Státní zastupitelství by svou interní úpravou (která by byla obsahem pokynu obecné povahy),� sice nemohlo vycházet z postupů, jež by šly nad rámec zákona (to ostatně ani ze zcela zásadních důvodů není možné), ale taková úprava mohla usměrnit a sjednotit postup státních zástupců při postihu trestných činů spojených s korupcí jednoznačně v pozitivním směru. Záhy se však ukázalo, že si bylo možno jen velmi obtížně představit, že by případný pokyn obecné povahy se týkal jen stíhání korupce� a že by převažovala spíše jeho hmotněprávní podoba.�
+	I když byl posléze dokonce zpracován věcný záměr návrhu pokynu obecné povahy, jímž by byly upraveny podrobnosti postupu při využívání operativně pátracích prostředků za účelem postihu trestných činů souvisejících s korupcí, drogových trestných činů, trestných činů spočívajících v padělání a pozměňování peněz a bezhotovostních platebních prostředků a dalších trestných činů,� značné obtíže vyvolávala skutečnost, že měl-li by se uvažovaný pokyn obecné povahy týkat postupu státních zástupců při využívání tzv. zvláštních metod a technik a vyšetřování,� musel být založen na zhodnocení aplikační praxe soudů (případně i státních zastupitelství a policie) vztahující se k používání těchto specifických prostředků. Vzhledem k tomu, že novela trestního řádu provedená zákonem č. 265/2001 Sb. nabyla účinnosti dnem 1. 1. 2002, byly poznatky z využívání zejména operativně pátracích prostředků zatím poměrně kusé, jednoznačně vedly spíše k závěru, že tato úprava se aplikuje tak, že panuje spíše neochota soudů - až na nevýrazné výjimky – akceptovat využití některých specifických procesních postupů policie (které by bylo možno v souhrnu označit i jako skryté policejní operace; jejich neochota v podstatě pramenila z extenzivní aplikace nálezu Ústavního soudu III. ÚS 597/99). Neexistovala potom reálná možnost, jak do procesního postupu státních zástupců dostat některá opatření, která by se ve své podstatě blížila něčemu, co se populárně (a – jak již bylo shora zmíněno - zcela nesprávně) označuje jako „policejní provokace“.
+
+	Přetrvávala i jistá neschůdnost zaměření případné interní úpravy jen na některé formy trestné činnosti, jestliže zákonné podmínky pro využívání většiny těchto specifických vyšetřovacích metod a technik nejsou navázány na formy trestné činnosti, ale tyto podmínky jsou obecné, takže (vyjma odposlechu a záznamu telekomunikačního provozu a dále zejména institutu policejního agenta a po novele č. 539/2004 Sb. i tzv. skrytého vyšetřování) je bylo možno využívat prakticky u veškeré úmyslné trestné činnosti. Nadále bylo zřejmé, že vázat případnou úpravu na postih korupce, kde se mohou nejčetněji zvažovat otázky týkající se využití zákonných policejních iniciačních metod, by bylo značně riskantní, taková úprava by se týkala pouze malého okruhu trestních věcí a nepochybně by vznikaly i aplikační problémy ve vztahu k jiným trestním věcem, pokud by uvedených metod policie využila. 
+
+	Řešení, které se nakonec jevilo jako nejpřijatelnější (ale ani to v době zpracování tohoto příspěvku nelze říci zcela jednoznačně – jde o nejméně špatné řešení z těch, která se nabízejí), spočívá v tom, že by postup při využívání zvláštních vyšetřovacích metod a technik státními zástupci byl upraven v rámci pokynu obecné povahy poř. č. 12/2003, což je dnes interní úprava, která upravuje obecně činnost státních zástupců při trestním stíhání osob, při výkonu dozoru nad zachováváním zákonnosti v přípravném řízení a při účasti v řízení soudním v trestních věcech. V budoucnu by pak měl být vypracován metodický návod pro státní zástupce týkající se stíhání korupce.�
+	Závěrem této partie je možno ještě poznamenat, že tématika řešení korupce v podmínkách státního zastupitelství má ještě jeden rozměr, který zatím nebyl ani naznačen – jde o riziko možného korupčního chování u státních zástupců a ostatních zaměstnanců státního zastupitelství.� Je možno jen velmi rámcově konstatovat, že korupce v podmínkách státního zastupitelství nepředstavuje z hlediska evidované kriminality zásadnější problém a závažnější věci se prakticky nevyskytly. To pochopitelně nevylučuje, že by se mohly snahy o korumpování státních zástupců nebo ostatních zaměstnanců státního zastupitelství objevit.� 
+
+
+VI. Závěry
+
+	V tomto vystoupení jsem se zaměřil pouze na některé aspekty stíhání korupce z pohledu státního zástupce. Vzhledem k tomu, že fenomén korupce představuje jev s mnoha různými úrovněmi a vrstvami, jev, na který lze nahlížet z různých hledisek, byla pozornost věnována především vymezení pojmu korupce, resp. trestných činů spojených s korupcí, jak to vyplývá z jejího tradičního chápání v soustavě státního zastupitelství (včetně úsilí rozšířit výčet korupčních trestných činů v souladu s mezinárodními úmluvami, z nichž většina již zavazuje i Českou republiku, a s dokumenty EU, které již ČR zavazují v plné míře – tyto úmluvy i dokumenty byly rovněž v článku uvedeny vzhledem k tomu, že mezinárodní justiční spolupráce v oblasti potírání korupce je považována ze velmi důležitou). Následovala zmínka o výskytu korupce z analytických materiálů zpracovaných v soustavě státního zastupitelství včetně na to navazujícího úsilí o přípravu interního předpisu, který by usnadnil stíhání těchto trestných činů (a údaje o tom, k jakému reálnému výsledku toto úsilí směřuje). Posléze byla alespoň stručně naznačena problematika korupčních rizik v soustavě státních zastupitelství.
+
+	Nyní by měla následovat velice stručná poznámka – zcela na závěr – k tomu, jakou budoucnost má stíhání trestných činů spojených s korupcí, což je nepochybně to nejzásadnější, k čemuž je zde potřebné se vyjádřit.
+
+	I přes v příspěvku uváděný údaj o nepochybné vysoké latenci korupčních trestných činů, i přes skutečnost, že v poslední době se stále více – i v soustavě státního zastupitelství – apeluje na odklonnou funkci přípravného řízení - to by mohlo nasvědčovat jisté shovívavosti i ke korupci (srov. i druhé kolo hodnocení OECD v Paříži), mám za to, že státní zastupitelství přinejmenším od konce 90. let evidentně považuje potírání korupce za jednoznačně jednu z prvořadných priorit, které má. Nejedná se přitom o pouhou proklamaci, náznak úsilí, jež by třeba nebylo ani míněno vážně (a vycházelo by jen z reakce na to, co se v konkrétní době žádá, co je moderní a co státní zastupitelství takříkajíc „zviditelňuje“ na veřejnosti), ale jde o souhrn zásadních požadavků adresovaných každému státnímu zástupci, které směřují k maximálnímu zefektivnění postihu korupčních trestných činů.
+
+	Z tohoto pohledu – bez zřetele na nepříliš pozitivní vývoj z hlediska počtu stíhaných, obžalovaných, případně odsouzených osob, nehledě na to, že jen málokdy zatím uvázly v sítích orgánů činných v trestním řízení opravdu „velké ryby“ – je možno pohlížet na perspektivu stíhání těchto trestních věcí spíše optimisticky, což vcelku jednoznačně vyplyne i ze srovnání s počátkem nebo polovinou 90. let z hlediska tehdejších náhledů na fenomén korupce. Je však nesporné, že jen samotný trestní postih nestačí, ten totiž může pouze  napomoci změně korupčního klimatu; o tom, že v České republice takové klima stále existuje, nepochybuje ani dnes takřka nikdo.
+
+� Některé konkrétní případy korupce byly uvedeny ve zprávě o činnosti státního zastupitelství za uplynulý rok (naposledy tedy za rok 2005), ve zvláštní zprávě obsahující vyhodnocení efektivnosti trestního postihu jednání v oblasti samosprávy a veřejné (státní) správy na místní úrovni a postupu státních zástupců v této souvislosti, která byla vypracována v lednu 2006, popř. byly poměrně široce zmiňovány (byť většinou nepřesně) v médiích.
+
+� Jen velmi rámcově je možno upozornit na: Chmelík, J. a kol. Pozornost, úplatek a korupce. Praha: Linde, 2003; Gřivna, T. Trestní postih korupce v soukromé sféře, Trestněprávní revue 2005, č. 7, s. 169; Pachmann, A. Policejní korupce v členských a kandidátských státech Evropské unie, Kriminalistika 2005, č. 3, s. 209; Jalč, A. Priblíženie niektorých protikorupčných opatrení v podmienkach SR, Trestní právo 2005, č. 9, s. 9; Jalč, A. Dynamika, stav a štruktúra korupcie v Slovenskej republike, jej porovnanie s okolitými štátmi, Trestní právo 2005, č. 1, s. 19; Pachmann, A. Policejní korupce v členských a kandidátských státech Evropské unie, Kriminalistika 2005, č. 3, s. 209; Lopourová, V. Současná úprava postihu korupčního jednání v trestním zákoně a návrhy de lege ferenda, Právník 2006, č. 1, s. 64; Navrátilová, J. Korupce z mezinárodněprávní perspektivy, Právní fórum 2006, č. 1, s. 22. Podstatné zdroje poznatků k tématice korupce lze také najít na internetu, především na webových stránkách Ministerstva vnitra � HYPERLINK "http://www.mvcr.cz" ��www.mvcr.cz� a Transparency International � HYPERLINK "http://www.transparency.cz" ��www.transparency.cz�. Z poslední doby např. jde o příspěvky věnované politické korupci – sborník Transparency International „Transparentní procesy v politickém rozhodování“ nebo sborník „Veřejné zakázky v ČR – korupce nebo transparentnost“. Řadu studií věnovaných korupci vydal rovněž Institut pro kriminologii a sociální prevenci (např.: Boj proti korupci. Praha: IKSP, 1999; Evropské společenství a OSN ke zpronevěře, korupci a úplatkářství. Praha: IKSP, 2001, atd.). Zcela samostatnou kapitolu tvoří literatura, která se na pozadí (mimo jiné) boje s korupcí zaměřuje na otázky spojené s tzv. policejní provokací – tomu se však budeme věnovat v druhé části přednášky. 
+
+� Srov. Frič, P. a kol. Korupce na český způsob. Praha: Nakladatelství G plus G, 1999. Publikace nejprve vymezuje korupci jako jistý sociální fenomén (Frič, P. a Kabele, J., s. 9 – 47), následuje trestněprávní pojetí (Rozehnal, A., s. 48 – 72), posléze se zmiňuje o korupčním klimatu v ČR (Frič, P., s. 73 – 115), o politické korupci v postkomunistické společnosti (Reed, Q., s. 116 – 158), o korupci v privatizaci tzv. českou cestou (Reed, Q., s. 159 – 204). Závěr publikace se pak týká témat vysoce interesantních, jakými jsou nepochybně korupce v médiích (Žák, V., s. 205 – 210), česká byrokracie a korupce (Kabele, J., s. 211 – 254) a úplně nakonec korupce ve světě (Burian, M., s. 255 – 293). I když tento, zřejmě neprávem trochu zapomenutý sborník preferuje zejména sociologický přístup ke korupci, jedná se o ojedinělý pokus zabývat se korupcí v České republice po roce 1989 (a samozřejmě v úzké návaznosti na období předcházející – viz především Kabele, J. Česká byrokracie a korupce, s. 211).
+
+� Kromě studií vydaných Institutem pro kriminologii a sociální prevenci zmíněných již v poznámce pod čarou č. 1 není jistě možno přehlédnout, že např. kniha Kuchty, J., Válkové, H. a kol.: Základy kriminologie a trestní politiky. Praha: C. H. Beck, 2005, resp. učebnice Novotného, O., Zapletala, J. a kol.: Kriminologie. Praha: Eurolex Bohemia, 2001, se na problematiku korupce zaměřují spíše okrajově (včleňují tento fenomén pod obecnější pojem trestné činnosti hospodářské – viz např. s. 357 prvně jmenované publikace).
+
+� Frič, P. a kol. Korupce na český způsob. Praha: Nakladatelství G plus G, 1999, na s. 73 uvádí, že fenomén korupce svým rozsahem a razantním nástupem v transformující se ČR významně zasahuje do všech oblastí veřejné politiky. Bez poptávky obyvatelstva by nemohlo být zkorumpovaných veřejných činitelů, úředníků a politiků… K masovému šíření korupce nemůže dojít ve společnosti, kde se dodržování pravidel, z jejichž hlediska se korupce jeví jednoznačně jeví jako patologická forma chování, a vynucování jejich dodržování u jiných stalo osobní věcí alespoň většiny občanů.
+
+� Gřivna, T. Trestní postih korupce v soukromé sféře, Trestněprávní revue 2005, č. 7, s. 169, v této souvislosti uvádí výstižnou charakteristiku korupce v tom smyslu, že „spokojen bývá jak ten, kdo přijímá úplatek, tak i osoba, která uplácí.“
+
+� Např. Frič, P. a kol. Korupce na český způsob. Praha: Nakladatelství G plus G, 1999, na s. 73 – 74 zdůrazňuje vliv předlistopadového politického režimu na formování korupčního klimatu ve společnosti, v jiné části tohoto sborníku se však neopomíjí ani dopad politické transformace v období po roce 1989 (s. 117 – Reed, Q.) nebo privatizace prováděné specificky českým způsobem (s. 159 a n. – rovněž Reed, Q.). J. Chmelík a kol. v publikaci Pozornost, úplatek a korupce. Praha: Linde, 2003, s. 43 – 44, upozorňuje na současné postoje veřejnosti, pokud tzv. „korupční morálka“ má u nás dlouhodobou tradici (i když se v poslední době situace poněkud mění, korupce nepředstavuje u většiny obyvatelstva nějakou prioritu); dále poukazuje na nepochybné propojení mezi korupcí a organizovaným zločinem (jeho prorůstání do veřejné správy).
+
+� Jak na to poukazuje např. zmiňovaná publikace J. Chmelíka a kol. Pozornost, úplatek a korupce. Praha: Linde, 2003, s. 28 – 29, nebo příspěvek Pachmanna, A. Policejní korupce v členských a kandidátských zemích Evropské unie, Kriminalistika 2005, č. 3, s. 209, stejně tak jako citovaný sborník Frič, P. a kol. Korupce na český způsob. Praha: Nakladatelství G plus G, 1999, především s. 84 a n. a s. 101 a n., při pokusech o „změření“ úrovně korupce v jednotlivých zemích všechny objektivizující systémy selhaly a lze konstatovat, že skutečnou hladinu korupce zjistit nelze. Co však lze porovnávat a hodnotit, to je veřejné mínění občanů, tj. jejich vnímání korupce. Z řady na sobě nezávislých průzkumů různých subjektů zabývajících se statistickými a názorovými průzkumy byl vytvořen tzv. index vnímání korupce - CPI, který v jednotlivých zemích každoročně aktualizován. Např. na žebříčku, který letos zahrnuje 163 zemí, se Česká republika dělí o 46. příčku s Litvou a Kuvajtem. Všechny tři země dosáhly indexu 4,8 (na stupnici 10 – 0, kde hodnocení 10 označuje zemi téměř bez korupce a hodnocení 0 zemi s vysokou mírou korupce). Ačkoli se Česko v letošním roce posunulo o 0,5 bodu, stále patří mezi země evropské pětadvacítky s nejhorším hodnocením. Na předposledním žebříčku, který v roce 2005 zahrnoval celkem 159 zemí, se Česká republika dělila o 47. - 50. příčku s Řeckem, Namibií a Slovenskem; všechny tyto země dosáhly hodnocení 4,3, přičemž mezi státy evropské pětadvacítky patřilo hodnocení ČR k nejhorším). Objektivnost indexace je zaručena metodikou sestavování, podle které je index průměrem nejméně tří na sobě nezávislých průzkumů různých institucí (výzkum veřejného mínění apod.), které v té které hodnocené zemi proběhly. Stupnice CPI je desetistupňová v rozmezí od 0 (země je hodnocena jako naprosto zkorumpovaná) do 10 (země naopak hodnocena jako prostá korupce). Článek A. Pachmanna o policejní korupci v členských a kandidátských zemích EU na s. 210 – 211 zmiňuje i tzv. „Global Corruption Barometer 2004“ (GCP), průzkum veřejného mínění, jehož výsledky byly poprvé zveřejněny v roce 2003 (pro Transparency International jen zajišťuje mezinárodní agentura Gallup International v rámci celosvětového průzkumu názorů veřejnosti). GCP 2004 měřil i míru tzv. drobné korupce (tj. korupce v běžném životě, jakou byly úplatky zaplacené za licence, dopravní přestupky, atd.) a zabýval se i tzv. velkou (politickou) korupcí. Ani v tomto srovnání, jak uvádí příspěvek A. Pachmanna, nevyzněla pozice České republiky příliš příznivě (respondenti ji přisoudili – ve vztahu k policii, kterou se citovaný článek zaobírá především – hodnotu 3,8 na stupnici, kde 1 znamená vůbec nezkorumpovanou policii a 5 extrémně zkorumpovanou policii – to staví ČR do jedné řady např. z Bulharskem, Litvou, Lotyšskem, Polskem, Rumunskem a Tureckem; pro srovnání ve Francii šlo o hodnotu 3,1, obdobně i v Irsku, v Řecku 3,2 a v Portugalsku 3,4 ). Jinak ovšem i zmíněný příspěvek poukazuje na to, že u všech průzkumů veřejného mínění zaměřených na korupci vyvstává problém spojený s relevancí dat – vždy se jedná spíše o otázku vnímání korupce nežli o míru korupce samotné. Přesto nelze význam takových průzkumů podceňovat, lze jimi – jak to článek uvádí – indikovat slabiny v rámci veřejné správy včetně policie.
+
+� Tehdy vykonalo Nejvyšší státní zastupitelství řadu aktivit, kterým se přešlo (alespoň pokud jde o soustavu státního zastupitelství) od pouhých proklamací k činům (viz např. vytvoření specializovaných odborů závažné hospodářské a finanční kriminality při vrchních a Nejvyšším státním zastupitelství v roce 2000 poté, co – mj. i na základě doporučení Nejvyššího státního zastupitelství – se dospělo k závěru, že boj s ekonomickou a finanční kriminalitou i s korupcí není možno vést prostřednictvím kampaní typu „akce čisté ruce“). Na druhé straně nelze pominout, že před rokem 1999 zůstávala korupce poněkud stranou pozornosti ne snad proto, že by tato problematika byla podceňována (např. zprávy o činnosti za uplynulý rok, jež budou zmíněny ještě níže, se jí věnovaly poměrně zevrubně; velmi obsáhlý analytický materiál v té době zpracovalo i Vrchní státní zastupitelství v Olomouci), ale proto, že tehdy se uplatňovaly jiné priority (zejména boj s ekonomickou kriminalitou a s organizovaným zločinem).
+
+� Potvrzuje to ostatně i obsah koncepce zaměření činnosti Nejvyššího státního zastupitelství v soustavě státního zastupitelství a soustavy státních zastupitelství jako celku, jejíž podrobnější část byla zveřejněna na webových stránkách Nejvyššího státního zastupitelství a stručná verze byla vzata na vědomí vládou dne 9. 11. 2005 jejím usnesením č. 1456. Postih korupce je uveden na prvním místě.
+
+� Srov. v této souvislosti druhou část tohoto vystoupení. 
+
+� Byla vydána v roce 2005 jako učebnice pro vzdělávací program mezinárodní nevládní organizace Transparency International a jsou také dostupná na webových stránkách � HYPERLINK "http://www.transparency.cz" ��www.transparency.cz�.
+
+� Srov. webové stránky Ministerstva vnitra, kde je tato zpráva dostupná.
+
+� Chmelík, J. a kol. Pozornost, úplatek a korupce. Praha: Linde, 2003, s. 11 – 13 (na s. 19 – 20 jsou pak uvedeny další definice korupce ať už slovníkové (encyklopedické) nebo z pohledu různých mezinárodních úmluv.
+
+� Vidrna, J., Náchodský, Z. Pracovník justice v ohrožení. Praha: Institut Ministerstva spravedlnosti České republiky pro další vzdělávání soudců a státních zástupců, Příručky Ministerstva spravedlnosti České republiky, sv. 61,  s. 17.
+
+� Srov. publikace J. Chmelíka a kol., s. 17 a n.
+
+� Gřivna, T. Trestní postih korupce v soukromé sféře, Trestněprávní revue 2005, č. 7, s. 169.
+
+� Publikace „Korupce a protikorupční politika ve veřejné správě“ citovaná výše.
+
+� Právě Slovensko v roce 1999 změnilo terminologii a pojem úplatkářství nahradilo pojmem korupce (viz zákon č. 10/1999 Z. z.). Stejné pojetí úpravy zachoval i nový trestní zákoník - § 328 až § 336 zákona č. 300/2005 Z. z.
+
+� Tohoto trestného činu se dopustí pachatel, který v souvislosti s obstaráváním věcí obecného zájmu přijme nebo si dá slíbit úplatek. Přísněji bude trestný ten, kdo za takových okolností úplatek žádá, a ještě přísněji osoba, spáchá-li čin uvedený v § 160 odst. 1 nebo 2 v úmyslu opatřit sobě nebo jinému značný prospěch, nebo spáchá-li takový čin jako veřejný činitel. Nejvyšší trestní sazba je stanovena na jednání pachatele, spáchá-li čin uvedený v odstavci 1 nebo 2 v úmyslu  opatřit sobě  nebo jinému  prospěch velkého  rozsahu, nebo spáchá-li takový čin jako veřejný činitel v úmyslu opatřit sobě nebo jinému značný prospěch.
+
+�Zmíněná skutková podstata je naplněna jednáním pachatele, který jinému v souvislosti s  obstaráváním věcí  obecného zájmu poskytne, nabídne nebo slíbí úplatek. Kvalifikované (přísněji trestné) skutkové podstaty se vztahují ke spáchání činu uvedeného v § 161 odst. 1 v úmyslu opatřit sobě nebo jinému značný prospěch nebo  způsobit jinému značnou škodu nebo jiný zvlášť závažný následek, nebo spáchání takového činu vůči veřejnému činiteli.
+
+� Zmíněný trestný čin spáchá ten, kdo žádá nebo přijme úplatek za to, že bude svým vlivem působit na výkon pravomoci veřejného činitele, nebo za to, že tak již učinil. Stejně tak ho spáchá i osoba, která z tohoto důvodu jinému poskytne, nabídne nebo slíbí úplatek.
+
+� Uvedená otázka – využívání institutu účinné lítosti podle zvláštního ustanovení § 163 TrZ – se stala předmětem diskusí, zda je na místě tuto úpravu v trestním zákoně ponechat, či ji případně vypustit, především vzhledem k tomu, že skupina států GRECO doporučila ČR, aby zvážila ponechání stávající úpravy tohoto případu účinné lítosti, neboť by ve svých důsledcích zřejmě mohl znamenat porušení principu rovnosti před zákonem. 
+
+Podle údajů zvláštní zprávy týkající se tématiky postihu korupce (vypracované v roce 2002 – srov. níže) závažným problémem z hlediska stíhání korupce se jeví podmínka bezodkladného oznámení korupčního jednání ve vztahu k možnosti použití zvláštního ustanovení o účinné lítosti ve smyslu § 163 TrZ. Odstranění či zmírnění této podmínky by mohlo přispět k účinnému odhalování a prokazování tohoto druhu trestné činnosti. Na druhé straně nelze však vyloučit ani nežádoucí zneužívání tohoto institutu (např. ve směru dosažení vrácení poskytnutého úplatku v případech, kdy podplácející nedosáhl slíbené výhody apod.). I v ojedinělých případech, jestliže by pachatel učinil ve smyslu ustanovení § 163 TrZ dobrovolně bez odkladu oznámení, vznikají značné problémy v prokázání viny, když zpravidla důkazní situace zůstane ve fázi, kdy se jedná o stav „výpověď proti výpovědi„ a pokud např. příjemce úplatku neobstará věc obecného zájmu způsobem výrazně se vymykajícím praxi, což by mohlo potvrdit věrohodnost výpovědi toho, kdo úplatek poskytl, soudu zpravidla nezbývá, než rozhodnout podle zásady „in dubio pro reo“. Nadále proto zůstává problémem včasné odhalení podezření z korupce, přičemž patrně teprve  praxe ukáže, do jaké míry k tomu mohla přispět i novelizace zákona o Policii ČR a trestního řádu (provedená zákonem č. 265/2001 Sb.), která mimo jiné zakotvila možnost využití operativně pátracích prostředků již ve stadiu před zahájením trestního stíhání včetně použití pořízeného záznamu jako důkazu v trestním řízení. V této souvislosti je přitom nutno zdůraznit, že signalizace porušování předpisů upravujících záležitosti související s obstaráváním věcí obecného zájmu, resp. případů obstarávání věcí obecného zájmu způsobem výrazně se vymykajícím praxi (extrémně rychle nebo naopak extrémně pomalu, poskytování výjimek, apod.), se jeví jako nejvýznamnější zdroj pro vyhledávací činnost policejních orgánů.
+
+Ve zprávách Ministerstva vnitra týkajících se plnění Akčního programu boje proti korupci z roku 1999 (aktualizované programy boje proti korupci za příslušný rok) se v tomto ohledu také vždy uvádělo, že v rámci rekodifikace trestního práva hmotného je zapotřebí upravit ustanovení § 163 TrZ o účinné lítosti, ve kterém je třeba vypustit z textu předpoklad “bez odkladu”. Je nezbytné rozšířit možnosti zániku trestnosti podplácení (§ 161 TrZ) a nepřímého úplatkářství (§ 162 TrZ) tak, aby osoby, které úplatek nabídly, měly možnost policii poskytnout informace a pomoc, bez obav z případné vlastní trestní odpovědnosti.
+
+Návrh nového trestního zákoníku (jenž byl Poslaneckou sněmovnou dne 30. 11. 2005 schválen, ale posléze v břerznu 2006 zamítnut) nadále obsahuje úpravu § 309, dle níž trestnost podplácení (§ 307) a nepřímého úplatkářství (§ 308) zaniká, jestliže pachatel úplatek poskytl nebo slíbil jen proto, že byl o to požádán, a učinil o tom dobrovolně oznámení státnímu zástupci nebo policejnímu orgánu. Uvedený návrh nedoznal změny ani v dosavadním průběhu legislativního procesu. Je tomu tak i přesto, že předkladatel návrhu – Ministerstvo spravedlnosti – v důvodové zprávě k vládnímu návrhu nového trestního zákoníku k citované úpravě uváděl mj., že „toto ustanovení bude zřejmě předmětem kritiky orgánů mezinárodních organizací pověřených kontrolou plnění závazků smluvních stran vyplývajících z Úmluvy o boji proti podplácení zahraničních veřejných činitelů v mezinárodních podnikatelských transakcích (č. 25/2000 Sb. m . s.) a Trestněprávní úmluvy o korupci Rady Evropy (č. 70/2002 Sb. m. s.). Mezinárodní orgány v rámci OECD a Rady Evropy vyjádřily své výhrady již k dosavadnímu ustanovení § 163 platného trestního zákona. Ani výše uvedené mezinárodní smlouvy, ani Úmluva o boji proti korupci úředníků Evropských společenství nebo úředníků členských států Evropské unie vypracovaná na základě článku K 3 Smlouvy o Evropské unii nebo Protokol k Úmluvě o ochraně finančních zájmů Evropských společenství, vypracovaný na základě článku K.3 Smlouvy o Evropské unii, neobsahují oprávnění členských států stanovit takový zvláštní způsob zániku trestnosti podplácení a nepřímého úplatkářství. Dále je třeba uvážit, že toto ustanovení by se vztahovalo i na korupční jednání v cizině. Z těchto důvodů lze proto očekávat, že příslušné mezinárodní organizace mohou v rámci dalšího postupu vyzvat Českou republiku ke zrušení tohoto ustanovení.“
+
+Obdobný tlak vykonává i OECD – druhé kolo hodnocení zřejmě z důvodu, že se tím fakticky uplatňuje beztrestnost určité skupiny osob (a byť jen ve vztahu k předmětu Úmluvy č. 25/2000 Sb. m. s.) obsahuje doporučení – vypustit ustanovení o účinné lítosti z trestního zákoníku.
+
+� Veřejným  činitelem je volený funkcionář nebo jiný odpovědný pracovník orgánu státní správy a samosprávy, soudu nebo jiného  státního  orgánu  nebo  příslušník  ozbrojených  sil  nebo ozbrojeného sboru, soudní exekutor při výkonu exekuční činnosti, sepisování exekutorských zápisů a při  činnostech vykonávaných z pověření soudu podle zvláštního právního předpisu (zákona č. 320/2001 Sb., o  soudních  exekutorech a exekuční činnosti - exekuční řád - a o změně dalších zákonů), pokud se podílí  na  plnění  úkolů  společnosti  a  státu  a používá přitom pravomoci,  která mu  byla v  rámci odpovědnosti  za plnění těchto úkolů svěřena. Při výkonu oprávnění a pravomocí podle zvláštních právních  předpisů (zákon č. 289/1995 Sb., o lesích a o změně a doplnění některých zákonů - lesní zákon, zákon  č.  449/2001 Sb., o myslivosti, ve znění pozdějších předpisů, zákon č. 114/1992 Sb., o ochraně přírody a  krajiny, ve znění pozdějších předpisů, zákon  č. 99/2004 Sb., o  rybářství, zákon č. 254/2001 Sb., o vodách a o změně některých zákonů - vodní zákon, je veřejným činitelem také fyzická osoba, která byla ustanovena lesní  stráží, vodní stráží, stráží přírody, mysliveckou stráží nebo rybářskou stráží. K trestní odpovědnosti a ochraně  veřejného  činitele  se  podle  jednotlivých ustanovení tohoto zákona vyžaduje, aby trestný čin byl spáchán v souvislosti s jeho  pravomocí a  odpovědností. Funkcionář  nebo jiný odpovědný pracovník  státního  orgánu, samosprávy, ozbrojených sil nebo ozbrojeného sboru cizího státu, se za těchto podmínek považuje za veřejného činitele, pokud tak stanoví vyhlášená mezinárodní smlouva, kterou je Česká republika vázána.
+
+� Ve smyslu ustanovení § 162a odst. 1 TrZ úplatkem se rozumí neoprávněná výhoda spočívající v přímém majetkovém obohacení nebo jiném zvýhodnění, které se dostává nebo má dostat uplácené osobě nebo s jejím souhlasem jiné osobě, a na kterou není nárok.
+
+� Srov. např. rozhodnutí č. 1/1978, č. 32/1987 a č. 13/1990 Sbírky soudních rozhodnutí a stanovisek.
+
+� Např. Jelínek, J. a kol.: Trestní právo hmotné – obecná a zvláštní část. Praha : Linde, 2005, s. 504, nebo Novotný, O. a kol. Trestní právo hmotné. II. díl – Zvláštní část. 4. přepracované vydání. Praha : ASPI Publishing, 2004, s. 250.
+
+� Gřivna, T. Trestní postih korupce v soukromé sféře, Trestněprávní revue 2005, č. 7, s. 170.
+
+� Šámal, P., Púry, F., Rizman, S. Trestní zákon. Komentář. II. díl. 6. vydání. Praha : C. H. Beck, 2004, s. 1001. 
+
+Ani komentářová definice nic nemění na tom, že pojem „obstarávání věcí obecného zájmu“ je neurčitý a zahrnuje široký okruh případů. To vede v praxi k nejednotné aplikaci – sjednocující judikatura po roce 1989 téměř chybí, použitelnost předlistopadových rozhodnutí je s ohledem na společensko-politické změny značně omezena. Za obstarávání věcí obecného zájmu považovaly soudy např. rozhodování o úkonech lékařské péče (č. 17/1990 Sb. rozh. tr.). Citované judikatorně rozhodnutí vychází z toho, že rozhodování o úkonech lékařské péče je obstaráváním věcí obecného zájmu, lékař jím však nevykonává  pravomoc veřejného činitele. Takovým rozhodováním je i rozhodnutí o tom, že pacient bude operován a hospitalizován v nemocničním oddělení, které lékař - přednosta oddělení - řídí, popř. rozhodnutí, že lékař provede operaci sám. Jestliže za to, že takto rozhodne, přijme úplatek, může se dopustit trestného činu přijímání úplatku podle § 160 odst. 1 TrZ, nenaplní však znaky ustanovení § 160 odst. 3 TrZ. V takovém případě je nerozhodné, že pacienta bude nutno v důsledku provedené operace a hospitalizace uznat práce neschopným; jednání lékaře spočívající v žádosti o úplatek za výkon zdravotní péče, která je poskytována zdarma, úplatek v souvislosti s uznáním pracovní neschopnosti, umístěním nemocných ve zdravotnickém zařízení a léčením pacientů zejména na chirurgických a interních odděleních nemocnic, přijímání úplatků od rodinných  příslušníků hospitalizovaných osob za příslib náležité léčebné péče, může znak "obstarávání věci v obecném zájmu" nepochybně naplnit (srov. i rozh. č. 2/1983 a č. 16/1988 Sb. rozh. tr.).
+
+Nejvyšší státní zastupitelství pod sp. zn. SL 762/2005 např. zaujalo stanovisko (nepublikované vzhledem k tomu, že nešlo o stanovisko vydané v souladu s ustanovením § 12 odst. 2 zákona o státním zastupitelství), že podmiňuje-li lékař  provedení operace či jiného úkonu lékařské péče dalšími platbami od pacientů bez stanoveného důvodu, může se dopustit trestného činu přijímání úplatku podle ustanovení § 160 TrZ. Činit rozdílu mezi lékařem státního zdravotního zařízení, lékařem nestátního zdravotního zařízení či lékařem  soukromým nemá žádného opodstatnění.  
+
+� P. Gřivna v cit. článku (s. 170) poukazuje na to, že není zcela jasné, zda chtěl zákonodárce upozornit na to, co lze také zahrnout pod neurčitý pojem „obstarávání věcí obecného zájmu,“ anebo chtěl-li skutečně rozšířit trestnost dalších jednání, dosud pod pojem obstarávání věcí obecného zájmu nespadajících. Z kontextu důvodové zprávy k návrhu novely a účelu ustanovení § 162a odst. 3 TrZ zřejmě plyne, že se má jednat o rozšíření trestnosti úplatkářství i na jednání uvedená v § 163a odst. 2 TrZ. Na místě je také závěr, že se tu jedná o projev úsilí postihovat korupci i v soukromém sektoru, jak k tomu ČR zavazuje Trestněprávní úmluva o korupci (č. 70/2002 Sb. m. s.), byť Česká republika učinila výhradu, že jako trestný čin podle vnitrostátního práva bude hodnotit chování uvedená v čl. 7 a 8 této Úmluvy, pouze pokud odpovídají skutkovým podstatám trestných činů stanovených v trestním zákoně České republiky. Tato výhrada platí pro období tří let, přičemž prodloužení je možné.  
+
+� Opětovně viz článek T. Gřivny, s. 171 – 173. Dále je třeba poukázat na to, že – na rozdíl od skutkových podstat upravených v § 160 až § 162 TrZ – nelze tyto skutkové podstaty řadit mezi tzv. „univerzální“ skutkové podstaty, jež by postihovaly korupci. S korupcí také velmi úzké souvisí i trestný čin podvodu podle § 250 TrZ, byl-li spáchán za takových okolností, že uplácející byl upláceným uveden v omyl (nebo bylo jeho omylu využito) za účelem získání majetkového či jiného prospěchu (pokud uplácející požadoval nějakou neoprávněnou výhodu a uplácený nikdy nemínil vážně to, že by k něčemu takovému mělo vůbec dojít. Jistou formu korupce mohou představovat i některá jednání spadající i pod skutkové podstaty trestných činů pojistného podvodu nebo úvěrového podvodu (§ 250a a § 250b TrZ), ovšem spáchaná rovněž za určitých specifických okolností (pachatel trestného činu podle § 250a nebo § 250b TrZ bude postupovat ve srozumění se zaměstnancem pojišťovny, banky, atd., současně zde bude i korupční pozadí).
+
+� Pochopitelně dnes jde již o zprávu, jejíž závěry jsou poněkud překonané, a proto se jedná o poznatky, které jsou aktualizovány především v návaznosti na obsah zpráv o činnosti státního zastupitelství za uplynulý rok (zejména 2003, 2004 a 2005).
+
+� Velmi zevrubnou analýzu korupce v policii podává citovaný příspěvek Pachmanna, A. Policejní korupce v členských a kandidátských zemích Evropské unie, Kriminalistika 2005, č. 3, s. 209, který k tomu účelu provedl i velmi obsáhlé dotazníkové šetření.
+
+� Právě zpráva o činnosti státního zastupitelství za rok 2004 konstatovala již výskyt závažných případů korupce u cizinecké a pohraniční policie (zvláště v obvodu Krajského státního zastupitelství v Plzni). Celý rozsah této trestné činnosti se však ještě tehdy dokumentoval.
+
+� Pozdější situace (která byla registrována ve zprávách o činnosti za rok 2003 a 2004 – většina těchto případů prošla informačními prostředky) tento trend příliš nepodpořila – jednoznačně se začal projevovat trend spočívající v nárůstu případů, kdy policisté byli podezřelí (jen nízký počet věcí skončil již pravomocným odsouzením) z otevřené spolupráce se skupinami organizovaného zločinu, s pachateli hospodářských nebo majetkových trestných činů, atd. (v převážné většině případů se jednalo o informování o zamýšlených vyšetřovacích úkonech, předávání osobních údajů týkajících se policistů působících u různých útvarů s celostátní působností na daném úseku, apod.). Viz i výše citovaný příspěvek A. Pachmanna uveřejněný v časopisu Kriminalistika 2005, č. 3, na s. 209 a n., jakkoli se tam na tyto závažné případy bezprostředně neodkazuje.
+
+� I zde by bylo možno zmínit řadu konkrétních věcí z poslední doby (kdy bylo obviněným nebo odsouzeným umožněno opatřit si nedovoleně mobilní telefon – počty těchto telefonů ve věznicích, jak se nezřídka uvádí, jsou poměrně vysoké a jejich rušení zatím platná právní úprava nedovoluje – nebo kdy bylo přihlíženo aktivitám obviněných či odsouzených při organizování aktivit zločineckých skupin).
+
+� Platí to i poté, co byly policií zjištěny a vyhledány některé velmi závažné případy korupce v souvislosti s řízením konkursním – tyto věci však nebyly pravomocně skončeny.
+
+� Zpráva o činnosti státního zastupitelství za rok 2004 uváděla, že konkrétní výskyt a postih trestných činů splňujících podmínky vymezení korupce byl a z pohledu statistických ukazatelů zůstává stále okrajovou záležitostí a naprosto nepodstatnou částí spektra celkové kriminality, když v roce 2004 bylo pro trestné činy dle § 160 až § 162 TrZ stíháno 47, 127, resp. 11 osob, obžalováno jich bylo 41, 103, resp. 6 osob (celkové počty 185 stíhaných a 150 obžalovaných). Na druhé straně je ale zřejmé, že zde nastal určitý, byť zatím jen dílčí vzestup.
+
+Statistické údaje o stavu a vývoji korupce by měly být nadále porovnávány i s údaji policejní statistiky, jejíž údaje mohou být výstižnější  (v roce 2004 bylo zjištěno dokonce 287 skutků a objasněno jich bylo 281). Je tedy zjevné, že počty zjištěných i objasněných skutků úplatkářství jsou vyšší (a to poměrně výrazně) než počty osob stíhaných a obžalovaných pro trestné činy podle § 160 až § 162 TrZ. Přistupuje i skutečnost, že ve statistických podkladech Ministerstva spravedlnosti chybějí některé další skutkové podstaty, jak byly uvedeny výše v závěru bodu II. Přesné rozlišení těchto věcí z hlediska, zda se jedná o korupci, či nikoli, je však velmi obtížné, ne-li zcela nemožné.
+
+� Gřivna, T. Trestní postih korupce v soukromé sféře, Trestněprávní revue 2005, č. 7, s. 169.
+
+� Publikace „Korupce a protikorupční politika ve veřejné správě“ citovaná výše.
+
+� Publikace Šturma, P., Nováková, J., Bílková, V.: Mezinárodní a evropské instrumenty proti terorismu a organizovanému zločinu. Praha: C. H. Beck, 2003, na s. 109 – 110 uvádí podrobnosti k činnosti GRECO i jejím aktivitám.
+
+GRECO např. v rámci I. evaluačního kola hodnotící zprávy o protikorupčních opatřeních v České republice (ve dnech 24. - 28. 3. 2003) vyslovilo následující výhrady vůči ČR:
+
+- neexistence odpovědnosti právnických osob za korupční trestné činy, což je v rozporu s některými závazky převzatými podle Úmluvy OECD o boji proti podplácení zahraničních veřejných činitelů v mezinárodních podnikatelských transakcích a podle Trestněprávní úmluvy Rady Evropy o korupci;
+
+- slabý důraz na objektivní výzkum korupčního jednání;
+
+- dosud slabá role institutu Veřejného ochránce lidských práv;
+
+- systém imunit členů zákonodárného sboru ve smyslu aplikace konkrétních a objektivních kritérií při jejich zbavování a systém vylučující trestní stíhání po ukončení funkce clena zákonodárného sboru.
+
+Statut a procesní pravidla GRECO ukládají hodnoceným zemím předložit informaci o nesplněných bodech doporučení nejpozději do 18 měsíců od přijetí hodnotící zprávy. 
+
+� Úmluva zavazuje členské země k zavedení definic trestných činů aktivní a pasivní korupce úředníka, které se vztahují na činy spáchané přímo nebo vůči členům vlád, parlamentních komor, nejvyšších soudů, účetních dvorů, Komise ES, Evropského parlamentu, Evropského soudního dvora, Účetního dvora ES, při výkonu jejich povinností.
+
+� Protokol definuje pasivní a aktivní korupci. Jednotlivé členské země jsou povinny přijmout taková opatření, aby takové způsoby jednání byly trestným činem jak v oblasti vnitrostátní veřejné správy, tak ve vztahu ke správě evropských záležitostí.
+
+� Na základě tohoto protokolu mají členské státy přijmout nezbytná opatření, aby zajistily, že právnické osoby lze činit odpovědnými za podvod, aktivní korupci a praní peněz, které v jejich prospěch spáchala jakákoli osoba jednající samostatně nebo jako člen orgánu dotyčné právnické osoby, která v této právnické osobě působí ve vedoucím postavení na základe oprávnění zastupovat tuto právnickou osobu nebo má pravomoc činit rozhodnutí jménem právnické osoby, nebo pravomoc vykonávat kontrolu v rámci právnické osoby. Odpovědnost se týká také účasti, návodu nebo pokusu za spáchání uvedených činů. Právnickou osobu lze činit odpovědnou i v případě, že umožnila spáchání těchto činů nedostatkem dohledu nebo kontroly jí podřízených osob. Odpovědnost právnické osoby nevylučuje trestní stíhání proti fyzickým osobám, jež se uvedených činů dopustily.
+
+� Rámcové rozhodnutí není podle Smlouvy o Evropské unii vnitrostátně přímo aplikovatelný předpis. Vyžaduje plnou transpozici do vnitrostátního práva v každém státě Evropské unie.
+
+Zavedení evropského zatýkacího rozkazu do českého právního řádu s sebou nese následující tři zásadní změny: 1. prolomení zásady nevydávání vlastních občanů k trestnímu stíhání nebo výkonu trestu do zahraničí, 2. prolomení zásady dvojí trestnosti u 32 výslovně uvedených protiprávních jednání (a to kupř. právě korupce, dále podvodu, legalizace výnosů z trestné činnosti, počítačové trestné činnosti, padělání a pirátství výrobků), pokud je za ně možno v dožadujícím členském státě uložit trest odnětí svobody s horní hranicí sazby alespoň tří let, a 3. přesunutí rozhodovací pravomoci z ústředního správního orgánu (ve většině členských států ministerstvo spravedlnosti) na soudy.
+
+K problematice evropského zatýkacího rozkazu jinak srovnej např.: Fenyk,. J. – Kloučková, S.: Mezinárodní justiční spolupráce v trestních věcech. Praha : Linde, 2. aktualizované a doplněné vydání, 2005, s. 76 – 77 a 183 - 214; Kloučková, S.: Evropský zatýkací rozkaz, Státní zastupitelství 2004, č. 1, s. 2; Novotná, J.: Evropský zatýkací rozkaz z pohledu práv obviněného a jeho obhájce (Některé úvahy de lege ferenda), Trestněprávní revue 2003, č. 4, s. 101; Vantuch, P.: Evropský zatýkací rozkaz, Právní rádce 2004, č. 4, s. 61, atd.
+
+� Gřivna, T.: Trestní postih korupce v soukromé sféře, Trestněprávní revue 2005, č. 7, s. 169.
+
+� K pokynům obecné povahy jinak podrobněji srov. Šámal, P., Novotný, F., Růžička, M., Vondruška, F., Novotná, J. Přípravné řízení trestní. Praha: C. H. Beck, 2003, 2. podstatně přepracované vydání, s. 571 – 572.
+
+� Vedle korupce bylo nepochybně třeba zaměřit pozornost i na terorismus, organizovaný zločin, ekonomickou a finanční kriminalitu (s nimiž je sama korupce velice úzce propojena), dále případně i na drogovou trestnou činnost a další tzv. sofistikované formy kriminality, jak se tento pojem často v literatuře objevuje. V podmínkách ČR by orientace výlučně na korupci znamenala současně i velmi úzký rámec takové interní úpravy, která by nutně dopadala nejvýše na 100 – 150 případů; to zřejmě akceptovat nelze (nebo jen za splnění zcela výjimečných podmínek, které by vyplývaly z naléhavých potřeb reagovat na nějakou novou právní úpravu – ty však dány zjevně nebyly).
+
+� K tomu je třeba vysvětlit, že stejně, jako tomu bylo v případě dřívějších příkazů generálních prokurátorů, se pokyny obecné povahy nejvyššího státního zástupce vztahují především k postupu státního zastupitelství v oblasti procesu; zpravidla se proto jimi neřeší otázky hmotněprávní povahy (výjimku tvořily např. pokyn obecné povahy poř. č. 3/1995 – trestné činy rasově, národnostně či jinak motivované, pokyn obecné povahy poř. č. 3/1997 – trestné činy proti majetku a nedotknutelnosti obydlí spáchaných v oblastech postižených povodněmi, pokyn obecné povahy poř. č. 6/2000 – trestný čin podle § 187a TrZ, ale i v těchto pokynech obecné povahy se řešily především otázky procesního postupu ve věcech příslušných trestných činů). Postup státních zástupců ve věcech práva hmotného (v tomto případě tedy trestního) není v podstatě ani možno svázat nějakými zásadními omezeními, což platí tím spíše, že žádná interní úprava nemůže do všech podrobností předjímat okolnosti každé konkrétní věci.
+
+� Jak se podává již z citovaného názvu předpokládaného pokynu obecné povahy, došlo k výraznému rozšíření předmětu úpravy; zároveň se hlavní těžiště pozornosti mělo zaměřit na využívání některých specifických procesních metod a postupů (operativních pátracích prostředků, odposlechu a záznamu telekomunikačního provozu, zjišťování údajů z telekomunikačního provozu, sledování zásilek, atd.) státními zástupci.
+
+� Jak se v souhrnu (a zejména v zahraničních právních řádech) označují důkazní prostředky uvedené v předchozí poznámce pod čarou.
+
+� Výhodou metodického návodu je především to, že může obsahovat i nejrůznější doporučení či poznatky jednoznačně nezávazné, doporučující, a tedy nenormativní povahy. Proto také nakonec příslušná novela pokynu obecné povahy poř. č. 12/2003, která byla provedena na konci roku pokynem obecné povahy poř. č. 7/2005, obsahovala jen skutečně velmi rámcovou úpravu využívání operativně pátracích prostředků (větší pozornost soustředila vzhledem k známým potížím vyplývajícím nezřídka i z nepochopení pravého smyslu tohoto institutu na odposlech a záznam telekomunikačního provozu).
+
+� Velmi podrobně se této otázce věnuje publikace Vidrna, J., Náchodský, Z. Pracovník justice v ohrožení. Praha: Institut Ministerstva spravedlnosti České republiky pro další vzdělávání soudců a státních zástupců, Příručky Ministerstva spravedlnosti České republiky, sv. 61,  s. 17 a n.
+
+� Oblasti takovýchto případných snah (rizik) jsou jinak poměrně jasné a plynou ze samotné působnosti státního zastupitelství, jak je vymezena v zákoně o státním zastupitelství a v dalších zákonech – jedná se tedy o působnost trestní i v netrestní oblasti. V roce 2001 byl pro Ministerstvo spravedlnosti vypracován analytický materiál, který výskyt potencionálních rizik vymezoval (např. se jednalo o všechny případy meritorního rozhodování o věci v přípravném řízení, rozhodování a předkládání návrhů soudu v případech zajišťovacích opatření proti osobám i proti věcem, konání vyšetřování státním zástupcem, vystupování v postavení strany v řízení před soudem; v netrestní oblasti působnosti měl být dosah možných korupčních rizik výrazně nižší s ohledem na to, že státní zástupce zde nevykonává rozhodovací činnost, jak je tomu v občanském soudním řízení v případě soudů, resp. soudců; přesto okolnost, zda bude podán určitý návrh anebo nebude, je jistě zásadní, analogicky i to, zda státní zastupitelství vstoupí do občanského soudního řízení nebo nikoli). Analyzován byl i výskyt možných rizik u zaměstnanců státních zastupitelství; o tom, že to nebyla rozhodně práce zbytečná, svědčí jedna věc zaznamenaná v nedávné době u jedné pracovnice Městského státního zastupitelství v Brně, i když není ještě bezpečně známo, zda šlo o korupci.
+
+	Součástí zmiňované analýzy byla i doporučení státního zastupitelství, jež směřovala k tomu, jak se těmto rizikům lze vyhnout (např. transparentností veškerého rozhodování i dalších postupů, vyjasnění vzájemného vztahu mezi vyššími a nižšími státními zastupitelstvími i uvnitř státních zastupitelství, velmi striktní kontrola všech důležitých postupů, a to i včetně správy státního zastupitelství, nepřípustnost, aby se seznamovaly se spisy a rejstříky a evidenčními pomůckami státního zastupitelství jiné než oprávněné osoby (to právě navozuje jeden konkrétní zaznamenaný případ z poslední doby), uplatnění kontroly ze strany veřejnosti (poskytování informací veřejnosti, seznamování s výsledky činnosti státního zastupitelství), atd.
+
+
+
+�PAGE  �
+
+�PAGE  �1�
+
+
+

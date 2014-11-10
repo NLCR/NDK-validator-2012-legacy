@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:spring="http://www.springframework.org/schema/beans" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf"
+	xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio"
+	xmlns:script="http://www.mulesoft.org/schema/mule/scripting"
+	xmlns:management="http://www.mulesoft.org/schema/mule/management"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jersey="http://www.mulesoft.org/schema/mule/jersey"
+	xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz"
+	xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.mulesoft.org/schema/mule/core META-INF/mule.xsd
+	http://www.mulesoft.org/schema/mule/cxf META-INF/mule-cxf.xsd
+	http://www.mulesoft.org/schema/mule/jms META-INF/mule-jms.xsd
+	http://www.mulesoft.org/schema/mule/http META-INF/mule-http.xsd
+	http://www.mulesoft.org/schema/mule/stdio META-INF/mule-stdio.xsd
+	http://www.mulesoft.org/schema/mule/scripting META-INF/mule-scripting.xsd
+	http://www.mulesoft.org/schema/mule/jersey META-INF/mule-jersey.xsd
+	http://www.mulesoft.org/schema/mule/management META-INF/mule-management.xsd
+	http://www.mulesoft.org/schema/mule/xml META-INF/mule-xml.xsd
+	http://www.mulesoft.org/schema/mule/quartz META-INF/mule-quartz.xsd">
+
+	<management:jmx-default-config port="${master.jmx.port}"
+		registerMx4jAdapter="true" />
+	<management:jmx-mx4j-adaptor jmxAdaptorUrl="${master.mx4j.url}" />
+
+	<context:property-placeholder location="classpath:master.properties" />
+
+	<jms:activemq-connector name="JMSConnectorMaster" connectionFactory-ref="jmsFactory" persistentDelivery="true" />
+
+	<mulexml:jaxb-context name="processJaxb"
+		packageNames="com.logica.ndk.tm.process" />
+
+	<spring:beans>
+
+		<spring:import resource="mule-config-jbpm.xml" />
+		<spring:import resource="mule-config-quartz-master.xml" />
+		<spring:import resource="mule-config-utils-master.xml" />
+
+		<spring:bean id="jmsFactory"
+			class="org.apache.activemq.ActiveMQConnectionFactory">
+			<spring:property name="brokerURL" value="${activemq.broker.url}" />
+		</spring:bean>
+
+		<spring:bean id="responseJmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+			<spring:constructor-arg ref="jmsFactory" />
+			<spring:property name="defaultDestinationName" value="responseQueue" />
+			<spring:property name="receiveTimeout" value="1" />
+		</spring:bean>
+		
+		<!-- we need to init TMInfo class on Spring initialization to LOG TMInfo on startup of mule -->
+		<spring:bean id="tmInfo" class="com.logica.ndk.tm.info.TMInfo"/>
+		
+		<spring:bean class="com.logica.ndk.tm.master.ws.security.ServiceKeystorePasswordCallback">
+			<spring:constructor-arg>
+				<spring:map>
+					<spring:entry key="${serviceKeystore.key.alias}" value="${serviceKeystore.key.password}" />
+				</spring:map>
+			</spring:constructor-arg>
+		</spring:bean>
+		
+		<!-- WSS4JInInterceptor for decrypting and validating the signature of the SOAP request. -->
+		<spring:bean id="TimestampSignEncrypt_Request" class="org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor">
+			<spring:constructor-arg>
+				<spring:map>
+					<spring:entry key="action" value="Timestamp Signature Encrypt" />
+					<spring:entry key="signaturePropFile" value="${serviceKeystore.file}" />
+					<spring:entry key="decryptionPropFile" value="${serviceKeystore.file}" />
+					<spring:entry key="passwordCallbackClass" value="com.logica.ndk.tm.master.ws.security.ServiceKeystorePasswordCallback" />
+				</spring:map>
+			</spring:constructor-arg>
+		</spring:bean>
+	    
+	    <!-- WSS4JOutInterceptor for encoding and signing the SOAP response. -->
+		<spring:bean id="TimestampSignEncrypt_Response" class="org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor">
+			<spring:constructor-arg>
+				<spring:map>
+					<spring:entry key="action" value="Timestamp Signature Encrypt" />
+					<spring:entry key="user" value="${serviceKeystore.key.alias}" />
+					<spring:entry key="signaturePropFile" value="${serviceKeystore.file}" />
+					<spring:entry key="encryptionPropFile" value="${serviceKeystore.file}" />
+					<spring:entry key="encryptionUser" value="useReqSigCert" /> <!-- When this value is used instead of a specific client key alias, it tells the service to use the same key that was used to sign the SOAP request. This allows the service to handle any client whose public key is in the service's truststore. -->
+					<spring:entry key="passwordCallbackClass" value="com.logica.ndk.tm.master.ws.security.ServiceKeystorePasswordCallback" />
+					<spring:entry key="signatureParts"
+						value="{Element}{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}Timestamp;{Element}{http://schemas.xmlsoap.org/soap/envelope/}Body" />
+					<spring:entry key="encryptionParts"
+						value="{Element}{http://www.w3.org/2000/09/xmldsig#}Signature;{Content}{http://schemas.xmlsoap.org/soap/envelope/}Body" />
+					<spring:entry key="encryptionSymAlgorithm" value="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+				</spring:map>
+			</spring:constructor-arg>
+		</spring:bean>
+		
+		<!-- DB -->
+		
+		<spring:bean id="tmMasterDS" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+			<spring:property name="driverClass">
+				<spring:value>com.microsoft.sqlserver.jdbc.SQLServerDriver</spring:value>
+			</spring:property>
+			<spring:property name="jdbcUrl">
+				<spring:value>${master.db.url}</spring:value>
+			</spring:property>
+			<spring:property name="user">
+				<spring:value>${master.db.username}</spring:value>
+			</spring:property>
+			<spring:property name="password">
+				<spring:value>${master.db.password}</spring:value>
+			</spring:property>
+			<spring:property name="properties">
+				<spring:props>
+					<spring:prop key="c3p0.acquire_increment">5</spring:prop>
+					<spring:prop key=" c3p0.idle_test_period">100</spring:prop>
+					<spring:prop key="c3p0.max_size">10</spring:prop>
+					<spring:prop key="c3p0.max_statements">1</spring:prop>
+					<spring:prop key=" c3p0.min_size">3</spring:prop>
+					<spring:prop key="user">${master.db.username}</spring:prop>
+					<spring:prop key="password">${master.db.password}</spring:prop>
+				</spring:props>
+			</spring:property>
+		</spring:bean>	
+
+		<spring:bean id="tmMasterTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			<spring:property name="dataSource" ref="tmMasterDS" />
+		</spring:bean>
+
+		<spring:bean id="tmMasterTransactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+			<spring:property name="transactionManager" ref="tmMasterTransactionManager" />
+			<spring:property name="propagationBehaviorName" value="PROPAGATION_REQUIRED" />
+		</spring:bean>
+
+		<spring:bean id="tmMasterJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+			<spring:property name="dataSource" ref="tmMasterDS" />
+		</spring:bean>
+
+		<spring:bean id="LogDAO" class="com.logica.ndk.tm.log.LogDAO">
+			<spring:property name="jdbcTemplate" ref="tmMasterJdbcTemplate" />
+			<spring:property name="txTemplate" ref="tmMasterTransactionTemplate" />
+		</spring:bean>
+		
+		<spring:bean name="LogServer" class="com.logica.ndk.tm.log.LogServerImpl">
+			<spring:property name="logDAO" ref="LogDAO"/>
+		</spring:bean>
+
+	</spring:beans>
+
+	<!-- sem si treba napichnut vlastneho consumera, stdio out je len na testovacie 
+		ucely -->
+	<!-- flow name="NotificationConsumer"> <jms:inbound-endpoint topic="${notificationTopic.name}" 
+		/> <outbound-endpoint address="stdio://out" /> </flow -->
+
+	<flow name="NotificationFlow">
+		<inbound-endpoint address="${notification.url}" />
+		<cxf:jaxws-service serviceClass="com.logica.ndk.tm.process.Notify" />
+		<mulexml:jaxb-object-to-xml-transformer
+			jaxbContext-ref="processJaxb" returnClass="java.lang.String" />
+		<jms:outbound-endpoint topic="${notificationTopic.name}" />
+	</flow>
+
+	<flow name="NotificationFlowToQueue">
+		<jms:inbound-endpoint topic="${notificationTopic.name}" />
+		<jms:outbound-endpoint queue="${notificationQueue.name}">
+			<message-properties-transformer>
+				<add-message-property key="timeToLive" value="${notificationQueue.ttl}"/>
+			</message-properties-transformer>
+		</jms:outbound-endpoint>
+	</flow>
+ 
+	<flow name="TaskHandlerSync">
+		<inbound-endpoint address="${taskhandlersync.url}"
+			exchange-pattern="request-response" />
+		<cxf:jaxws-service serviceClass="com.logica.ndk.tm.utilities.integration.wf.TaskHandler" >
+			<!-- comment both interceptors to disable WS Secutiry -->
+			<!-- cxf:inInterceptors>
+				<spring:ref bean="TimestampSignEncrypt_Request" />
+			</cxf:inInterceptors>		
+			<cxf:outInterceptors>
+				<spring:ref bean="TimestampSignEncrypt_Response"/>
+			</cxf:outInterceptors-->
+		</cxf:jaxws-service>
+		<component>
+			<singleton-object class="com.logica.ndk.tm.utilities.integration.wf.TaskHandlerImpl" />
+		</component>
+	</flow>
+
+	<flow name="TaskHandlerAsync">
+		<inbound-endpoint address="${taskhandlerasync.url}"
+			exchange-pattern="request-response" />
+		<cxf:jaxws-service serviceClass="com.logica.ndk.tm.utilities.integration.wf.TaskHandler" >
+			<!-- comment both interceptors to disable WS Secutiry -->
+			<!-- cxf:inInterceptors>
+				<spring:ref bean="TimestampSignEncrypt_Request" />
+			</cxf:inInterceptors>		
+			<cxf:outInterceptors>
+				<spring:ref bean="TimestampSignEncrypt_Response"/>
+			</cxf:outInterceptors-->		
+		</cxf:jaxws-service>
+		<response>
+			<script:component>
+				<script:script engine="groovy">message.correlationId=message.id
+				</script:script>
+			</script:component>
+		</response>
+		<async>
+			<component>
+				<singleton-object
+					class="com.logica.ndk.tm.utilities.integration.wf.TaskHandlerImpl" />
+			</component>
+			<!-- tu bolo preposlanie do responseQueue.url ale bolo to chybne pretoze do tejto queue maju zapisovat vysledky iba async utility a cita ich jbpm  -->
+		</async>
+		<!-- tu bola default ex. strategy ktora posielala spravy do responseQueue.url ale bolo to chybne pretoze do tejto queue maju zapisovat vysledky iba async utility a cita ich jbpm  -->
+	</flow>
+
+	<flow name="WFAPISync">
+		<inbound-endpoint address="${wfapisync.url}"
+			exchange-pattern="request-response" />
+		<cxf:jaxws-service serviceClass="com.logica.ndk.tm.utilities.integration.wf.WFAPI" >
+			<!-- comment both interceptors to disable WS Secutiry -->
+			<!-- cxf:inInterceptors>
+				<spring:ref bean="TimestampSignEncrypt_Request" />
+			</cxf:inInterceptors>		
+			<cxf:outInterceptors>
+				<spring:ref bean="TimestampSignEncrypt_Response"/>
+			</cxf:outInterceptors-->
+		</cxf:jaxws-service>
+		<component>
+			<singleton-object class="com.logica.ndk.tm.utilities.integration.wf.WFAPIImpl" />
+		</component>
+	</flow>
+
+	<flow name="WFAPIAsync">
+		<inbound-endpoint address="${wfapiasync.url}"
+			exchange-pattern="request-response" />
+		<cxf:jaxws-service serviceClass="com.logica.ndk.tm.utilities.integration.wf.WFAPI" >
+			<!-- comment both interceptors to disable WS Secutiry -->
+			<!-- cxf:inInterceptors>
+				<spring:ref bean="TimestampSignEncrypt_Request" />
+			</cxf:inInterceptors>		
+			<cxf:outInterceptors>
+				<spring:ref bean="TimestampSignEncrypt_Response"/>
+			</cxf:outInterceptors-->		
+		</cxf:jaxws-service>
+		<response>
+			<script:component>
+				<script:script engine="groovy">message.correlationId=message.id
+				</script:script>
+			</script:component>
+		</response>
+		<async>
+			<component>
+				<singleton-object
+					class="com.logica.ndk.tm.utilities.integration.wf.WFAPIImpl" />
+			</component>
+			<!-- tu bolo preposlanie do responseQueue.url ale bolo to chybne pretoze do tejto queue maju zapisovat vysledky iba async utility a cita ich jbpm  -->
+		</async>
+		<!-- tu bola default ex. strategy ktora posielala spravy do responseQueue.url ale bolo to chybne pretoze do tejto queue maju zapisovat vysledky iba async utility a cita ich jbpm  -->
+	</flow>
+
+	<flow name="EventTrigerSync">
+		<inbound-endpoint address="${eventtrigersync.url}"
+			exchange-pattern="request-response" />
+		<cxf:jaxws-service serviceClass="com.logica.ndk.tm.utilities.integration.jbpm.EventTriger" >
+		</cxf:jaxws-service>
+		<component>
+			<singleton-object class="com.logica.ndk.tm.utilities.integration.jbpm.EventTrigerImpl" />
+		</component>
+	</flow>
+
+	<flow name="EventTrigerAsync">
+		<inbound-endpoint address="${eventtrigerasync.url}"
+			exchange-pattern="request-response" />
+		<cxf:jaxws-service serviceClass="com.logica.ndk.tm.utilities.integration.jbpm.EventTriger" >
+		</cxf:jaxws-service>
+		<response>
+			<script:component>
+				<script:script engine="groovy">message.correlationId=message.id
+				</script:script>
+			</script:component>
+		</response>
+		<async>
+			<component>
+				<singleton-object
+					class="com.logica.ndk.tm.utilities.integration.jbpm.EventTrigerImpl" />
+			</component>
+		</async>
+	</flow>
+
+
+	<flow name="ProcessFinishedHandler">
+		<jms:inbound-endpoint queue="${notificationQueue.name}" />
+		<mulexml:jaxb-xml-to-object-transformer jaxbContext-ref="processJaxb"/>
+		<component>
+			<singleton-object class="com.logica.ndk.tm.utilities.integration.wf.ProcessFinishedHandlerImpl" />
+		</component>
+		<default-exception-strategy>
+	        <choice> 
+	            <when evaluator="groovy" expression='((org.mule.component.ComponentException)((org.mule.message.ExceptionMessage) payload).getException()).getCause() instanceof com.logica.ndk.tm.utilities.integration.wf.exception.WFConnectionUnavailableException'>
+	            	<!-- do queue chceme vlozit povodnu message a nie message s ComponentException, takze ju transformujeme -->
+	            	<!-- z delay queue to cita cron flow ProcessNotificationDelayQueue -->
+	            	<expression-transformer evaluator="groovy" expression="payload.getPayload()"/>
+					<jms:outbound-endpoint queue="${notificationDelayQueue.name}"/>
+	            </when>
+	            <otherwise>
+	            	<!-- do queue chceme vlozit povodnu message a nie message s ComponentException, takze ju transformujeme -->
+	            	<expression-transformer evaluator="groovy" expression="payload.getPayload()"/>
+					<jms:outbound-endpoint queue="${notificationErrorQueue.name}"/>
+	            </otherwise>
+	        </choice>
+	    </default-exception-strategy>
+	</flow>
+	
+	<flow name="CdmServicesSync">
+		<inbound-endpoint address="${cdmservicessync.url}" exchange-pattern="request-response" />
+		<cxf:jaxws-service serviceClass="com.logica.ndk.tm.cdm.CDMServices" />
+		<component>
+			<singleton-object class="com.logica.ndk.tm.cdm.CDMServicesImpl" />
+		</component>
+	</flow>	
+	
+	<flow name="LogServerService">
+	    <http:inbound-endpoint address="${logging.ws.url}" exchange-pattern="request-response">
+	        <cxf:jaxws-service serviceClass="com.logica.ndk.tm.log.LogServer"/>
+	    </http:inbound-endpoint>
+	    <component>
+	    	<spring-object bean="LogServer"/>
+	    </component>	     
+	</flow>
+
+</mule>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<validationNode name="mets:mets" mandatory="MANDATORY">
+	<attribute name="LABEL" mandatory="MANDATORY" />
+	<attribute name="TYPE" mandatory="MANDATORY" />
+
+	<element name="mets:metsHdr" mandatory="MANDATORY">
+		<attribute name="CREATEDATE" mandatory="MANDATORY" />
+		<attribute name="LASTMODDATE" mandatory="MANDATORY" />
+		<element name="mets:agent" mandatory="MANDATORY">
+			<attribute name="ROLE" mandatory="MANDATORY">
+				<possibleValue>CREATOR</possibleValue>
+				<possibleValue>ARCHIVIST</possibleValue>
+			</attribute>
+			<attribute name="TYPE" mandatory="MANDATORY">
+				<possibleValue>ORGANIZATION</possibleValue>
+			</attribute>
+			<element name="mets:name" mandatory="MANDATORY" />
+		</element>
+	</element>
+
+	<element name="mets:dmdSec[@ID='MODSMD_SUPPL_0001']" mandatory="MANDATORY_IF_AVAILABLE">
+		<element name="mets:mdWrap" mandatory="MANDATORY">
+			<element name="mets:xmlData" mandatory="MANDATORY">
+				<element name="mods:mods" mandatory="MANDATORY">
+					<attribute name="ID" mandatory="MANDATORY">
+						<possibleValue>MODSMD_SUPPL_0001</possibleValue>
+					</attribute>
+					<element name="mods:titleInfo" mandatory="MANDATORY">
+						<element name="mods:title" mandatory="MANDATORY" />
+						<element name="mods:partNumber" mandatory="MANDATORY_IF_AVAILABLE" />
+						<element name="mods:partName" mandatory="MANDATORY_IF_AVAILABLE" />
+					</element>
+					<element name="mods:name" mandatory="MANDATORY_IF_AVAILABLE">
+						<attribute name="type" mandatory="MANDATORY">
+							<possibleValue>personal</possibleValue>
+							<possibleValue>corporate</possibleValue>
+							<possibleValue>conference</possibleValue>
+							<possibleValue>family</possibleValue>
+						</attribute>
+						<element name="mods:namePart" mandatory="MANDATORY_IF_AVAILABLE">
+							<attribute name="type" mandatory="MANDATORY">
+								<possibleValue>date</possibleValue>
+								<possibleValue>family</possibleValue>
+								<possibleValue>given</possibleValue>
+								<possibleValue>termsOfAddress</possibleValue>
+							</attribute>
+						</element>
+						<element name="mods:role" mandatory="MANDATORY_IF_AVAILABLE">
+							<element name="mods:roleTerm" mandatory="MANDATORY_IF_AVAILABLE">
+								<attribute name="type" mandatory="MANDATORY" />
+								<attribute name="authority" mandatory="MANDATORY" />
+							</element>
+						</element>
+					</element>
+					<element name="mods:genre" mandatory="MANDATORY">
+					</element>
+					<element name="mods:originInfo" mandatory="MANDATORY_IF_AVAILABLE">
+						<element name="mods:place" mandatory="MANDATORY_IF_AVAILABLE"></element>
+						<element name="mods:placeTerm" mandatory="MANDATORY_IF_AVAILABLE">
+							<attribute name="type" mandatory="MANDATORY"></attribute>
+						</element>
+						<element name="mods:publisher" mandatory="MANDATORY_IF_AVAILABLE" />
+						<element name="mods:dateIssued" mandatory="MANDATORY"/>
+						<element name="mods:language" mandatory="MANDATORY">
+							<element name="mods:languageTerm" mandatory="MANDATORY">
+								<attribute name="type" mandatory="MANDATORY">
+									<possibleValue>code</possibleValue>
+								</attribute>
+								<attribute name="authority" mandatory="MANDATORY">
+									<possibleValue>iso639‐2b</possibleValue>
+								</attribute>
+							</element>
+						</element>
+						<element name="mods:physicalDescription"  mandatory="MANDATORY">
+							<element name="mods:form" mandatory="MANDATORY">
+								<attribute name="authority" mandatory="MANDATORY">
+									<possibleValue>marcform</possibleValue>
+								</attribute>
+							</element>
+						</element>
+						<element name="mods:identifier" mandatory="MANDATORY">
+							<attribute name="type" mandatory="MANDATORY">
+								<possibleValue>doi</possibleValue>
+								<possibleValue>hdl</possibleValue>
+								<possibleValue>issn</possibleValue>
+								<possibleValue>isbn</possibleValue>
+								<possibleValue>urnnbn</possibleValue>
+								<possibleValue>uuid</possibleValue>
+								<possibleValue>local</possibleValue>
+								<possibleValue>barcode</possibleValue>
+								<possibleValue>oclc</possibleValue>
+								<possibleValue>URN</possibleValue>
+								<possibleValue>ccnb</possibleValue>
+								<possibleValue>uri</possibleValue>
+							</attribute>
+						</element>						
+					</element>
+				</element>
+
+			</element>
+		</element>
+
+	</element>
+	<element name="mets:dmdSec[@ID='DCMD_ISSUE_0001']" mandatory="MANDATORY_IF_AVAILABLE">
+		<element name="mets:mdWrap" mandatory="MANDATORY">
+			<attribute name="MDTYPE" mandatory="MANDATORY">
+				<possibleValue>DC</possibleValue>
+			</attribute>
+			<attribute name="MIMETYPE" mandatory="MANDATORY">
+				<possibleValue>text/xml</possibleValue>
+			</attribute>
+			<element name="mets:xmlData" mandatory="MANDATORY">
+				<element name="oai_dc:dc" mandatory="MANDATORY">
+					<element name="dc:title" mandatory="MANDATORY" />
+					<element name="dc:description" mandatory="MANDATORY_IF_AVAILABLE" />
+					<element name="dc:creator" mandatory="MANDATORY_IF_AVAILABLE" />
+					<element name="dc:type" mandatory="MANDATORY" />
+					<element name="dc:coverage" mandatory="MANDATORY_IF_AVAILABLE" />
+					<element name="dc:publisher" mandatory="MANDATORY_IF_AVAILABLE" />
+					<element name="dc:date" mandatory="MANDATORY_IF_AVAILABLE" />
+					<element name="dc:language" mandatory="MANDATORY" />
+					<element name="dc:subject" mandatory="MANDATORY_IF_AVAILABLE" />
+					<element name="dc:identifier" mandatory="MANDATORY" />
+					<element name="dc:source" mandatory="MANDATORY_IF_AVAILABLE" />
+				</element>
+			</element>
+		</element>
+	</element>
+</validationNode>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_wEWQcFlsEeGjH72JZMq0kg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_userItem"/>
+  <bpmn2:itemDefinition id="_dirItem"/>
+  <bpmn2:process id="prototype.GrantAccessAsync" drools:packageName="prototype" name="GrantAccessAsync" isExecutable="true">
+    <bpmn2:property id="user" itemSubjectRef="_userItem"/>
+    <bpmn2:property id="dir" itemSubjectRef="_dirItem"/>
+    <bpmn2:startEvent id="_850D0CE8-FB54-4267-94F9-EF07AC9A67EF" drools:bgcolor="#ffffff" name="">
+      <bpmn2:outgoing>_CC3823AE-92A5-47F9-9FC1-B6366F718056</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_CC3823AE-92A5-47F9-9FC1-B6366F718056" sourceRef="_850D0CE8-FB54-4267-94F9-EF07AC9A67EF" targetRef="_D1224BEE-C698-475D-9569-2CC110917DCB"/>
+    <bpmn2:endEvent id="_9748EA2D-9B1F-46C9-9521-5812604E23E1" drools:bgcolor="#ffffff" name="">
+      <bpmn2:incoming>_F650C934-35E2-4006-9879-8067D500A459</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_F650C934-35E2-4006-9879-8067D500A459" sourceRef="_D1224BEE-C698-475D-9569-2CC110917DCB" targetRef="_9748EA2D-9B1F-46C9-9521-5812604E23E1"/>
+    <bpmn2:task id="_D1224BEE-C698-475D-9569-2CC110917DCB" drools:taskName="GrantAccessAsynchUtilCall" name="GrantAccessAsynchUtilCall">
+      <bpmn2:incoming>_CC3823AE-92A5-47F9-9FC1-B6366F718056</bpmn2:incoming>
+      <bpmn2:outgoing>_F650C934-35E2-4006-9879-8067D500A459</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_wEW3gFlsEeGjH72JZMq0kg">
+        <bpmn2:dataInput id="_D1224BEE-C698-475D-9569-2CC110917DCB_TaskNameInput" name="TaskName"/>
+        <bpmn2:dataInput id="_D1224BEE-C698-475D-9569-2CC110917DCB_userInput" name="user"/>
+        <bpmn2:dataInput id="_D1224BEE-C698-475D-9569-2CC110917DCB_dirInput" name="dir"/>
+        <bpmn2:inputSet id="_wEW3gVlsEeGjH72JZMq0kg">
+          <bpmn2:dataInputRefs>_D1224BEE-C698-475D-9569-2CC110917DCB_userInput</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_D1224BEE-C698-475D-9569-2CC110917DCB_dirInput</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_D1224BEE-C698-475D-9569-2CC110917DCB_TaskNameInput</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_wEW3gllsEeGjH72JZMq0kg"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_wEW3g1lsEeGjH72JZMq0kg">
+        <bpmn2:targetRef>_D1224BEE-C698-475D-9569-2CC110917DCB_TaskNameInput</bpmn2:targetRef>
+        <bpmn2:assignment id="_wEW3hFlsEeGjH72JZMq0kg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_wEW3hVlsEeGjH72JZMq0kg">GrantAccessAsynchUtilCall</bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_wEW3hllsEeGjH72JZMq0kg">_D1224BEE-C698-475D-9569-2CC110917DCB_TaskNameInput</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_wEW3h1lsEeGjH72JZMq0kg">
+        <bpmn2:sourceRef>user</bpmn2:sourceRef>
+        <bpmn2:targetRef>_D1224BEE-C698-475D-9569-2CC110917DCB_userInput</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_wEW3iFlsEeGjH72JZMq0kg">
+        <bpmn2:sourceRef>dir</bpmn2:sourceRef>
+        <bpmn2:targetRef>_D1224BEE-C698-475D-9569-2CC110917DCB_dirInput</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_wEW3iVlsEeGjH72JZMq0kg">
+    <bpmndi:BPMNPlane id="_wEW3illsEeGjH72JZMq0kg" bpmnElement="prototype.GrantAccessAsync">
+      <bpmndi:BPMNShape id="_wEW3i1lsEeGjH72JZMq0kg" bpmnElement="_850D0CE8-FB54-4267-94F9-EF07AC9A67EF">
+        <dc:Bounds height="30.0" width="30.0" x="50.0" y="60.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_wEW3jFlsEeGjH72JZMq0kg" bpmnElement="_CC3823AE-92A5-47F9-9FC1-B6366F718056">
+        <di:waypoint xsi:type="dc:Point" x="65.0" y="75.0"/>
+        <di:waypoint xsi:type="dc:Point" x="234.0" y="74.5"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_wEW3jVlsEeGjH72JZMq0kg" bpmnElement="_9748EA2D-9B1F-46C9-9521-5812604E23E1">
+        <dc:Bounds height="28.0" width="28.0" x="389.0" y="60.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_wEW3jllsEeGjH72JZMq0kg" bpmnElement="_F650C934-35E2-4006-9879-8067D500A459">
+        <di:waypoint xsi:type="dc:Point" x="234.0" y="74.5"/>
+        <di:waypoint xsi:type="dc:Point" x="403.0" y="74.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_wEW3j1lsEeGjH72JZMq0kg" bpmnElement="_D1224BEE-C698-475D-9569-2CC110917DCB">
+        <dc:Bounds height="43.0" width="198.0" x="135.0" y="53.0"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

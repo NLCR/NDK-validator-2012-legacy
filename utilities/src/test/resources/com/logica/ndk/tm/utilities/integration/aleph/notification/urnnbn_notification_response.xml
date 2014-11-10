@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:URNNBNNotificationResponse xmlns:tns="http://www.example.org/urnnbn_notification_response" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/urnnbn_notification_response urnnbn_notification_response.xsd ">
+  <tns:batchNumber>2012_03_29_0001</tns:batchNumber>
+  <tns:records>
+    <tns:record>
+      <tns:docNumber>000358463</tns:docNumber>
+      <tns:barCode>1001240651</tns:barCode>
+      <tns:status>ERROR</tns:status>
+      <tns:reason>Invalid URL for digitalRecord 2</tns:reason>
+	  <tns:uuid>c71af6e0-ae2d-11e1-952a-02004c4f4f50</tns:uuid>
+    </tns:record>
+    <tns:record>
+    	<tns:docNumber>001701183</tns:docNumber>
+    	<tns:barCode>1001519853</tns:barCode>
+    	<tns:status>OK</tns:status>
+		<tns:uuid>c71af6e0-ae2d-11e1-952a-02004c4f4f54</tns:uuid>
+    </tns:record>
+  </tns:records>
+</tns:URNNBNNotificationResponse>

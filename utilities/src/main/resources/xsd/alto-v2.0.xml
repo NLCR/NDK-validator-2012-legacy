@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# alto-v2.0.xsd ">
+	<Description>
+		<MeasurementUnit>pixel</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>fileName</fileName>
+			<fileIdentifier fileIdentifierLocation="">fileIdentifier</fileIdentifier>
+		</sourceImageInformation>
+		<OCRProcessing ID="idvalue0">
+			<ocrProcessingStep>
+				<processingDateTime>2012-01-01</processingDateTime>
+				<processingSoftware>
+					<softwareCreator>ABBYY</softwareCreator>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle FONTCOLOR="0F00" FONTFAMILY="" FONTSIZE="0.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional"
+			ID="idvalue1" />
+		<ParagraphStyle ALIGN="Left" FIRSTLINE="0.0" ID="idvalue2" LEFT="0.0" LINESPACE="0.0" RIGHT="0.0" />
+	</Styles>
+	<Layout STYLEREFS="idvalue0">
+		<Page ACCURACY="0.0" HEIGHT="0" ID="idvalue3" PAGECLASS="" PC="0.0" PHYSICAL_IMG_NR="0" POSITION="Left"
+			PRINTED_IMG_NR="" PROCESSING="idvalue0" QUALITY="OK" QUALITY_DETAIL="" STYLEREFS="idvalue0" WIDTH="0">
+			<TopMargin HEIGHT="0.0" HPOS="0.0" ID="idvalue4" STYLEREFS="idvalue0" VPOS="0.0" WIDTH="0.0" />
+			<LeftMargin HEIGHT="0.0" HPOS="0.0" ID="idvalue5" STYLEREFS="idvalue0" VPOS="0.0" WIDTH="0.0" />
+			<RightMargin HEIGHT="0.0" HPOS="0.0" ID="idvalue6" STYLEREFS="idvalue0" VPOS="0.0" WIDTH="0.0" />
+			<BottomMargin HEIGHT="0.0" HPOS="0.0" ID="idvalue7" STYLEREFS="idvalue0" VPOS="0.0" WIDTH="0.0" />
+			<PrintSpace HEIGHT="0.0" HPOS="0.0" ID="idvalue8" STYLEREFS="idvalue0" VPOS="0.0" WIDTH="0.0">
+				<ComposedBlock HPOS="0" HEIGHT="0" ID="idvalue9" WIDTH="0" VPOS="0">
+					<TextBlock HPOS="3" HEIGHT="4" ID="idvalue10" WIDTH="3" VPOS="3">
+						<TextLine HEIGHT="66" WIDTH="1746" VPOS="599" HPOS="234">
+							<String CONTENT="Mr." WIDTH="86" VPOS="623" HPOS="234" />
+							<SP WIDTH="37" VPOS="619" HPOS="321" />
+							<String CONTENT="Novák:" WIDTH="175" VPOS="616" HPOS="359" />
+							<SP WIDTH="70" VPOS="620" HPOS="535" />
+							<String CONTENT="Gan" WIDTH="93" VPOS="620" HPOS="606" />
+							<SP WIDTH="28" VPOS="627" HPOS="700" />
+							<String CONTENT="you" WIDTH="91" VPOS="625" HPOS="729" />
+							<SP WIDTH="31" VPOS="615" HPOS="821" />
+							<String CONTENT="join" WIDTH="119" VPOS="615" HPOS="853" />
+							<SP WIDTH="31" VPOS="622" HPOS="973" />
+							<String CONTENT="ua" WIDTH="56" VPOS="622" HPOS="1005" />
+							<SP WIDTH="36" VPOS="622" HPOS="1062" />
+							<String CONTENT="on" WIDTH="60" VPOS="620" HPOS="1099" />
+							<SP WIDTH="29" VPOS="620" HPOS="1160" />
+							<String CONTENT="our" WIDTH="89" VPOS="619" HPOS="1190" />
+							<SP WIDTH="32" VPOS="608" HPOS="1280" />
+							<String CONTENT="trip" WIDTH="120" VPOS="608" HPOS="1313" />
+							<SP WIDTH="32" VPOS="607" HPOS="1434" />
+							<String CONTENT="to" WIDTH="55" VPOS="607" HPOS="1467" />
+							<SP WIDTH="36" VPOS="605" HPOS="1523" />
+							<String CONTENT="the" WIDTH="85" VPOS="604" HPOS="1560" />
+							<SP WIDTH="32" VPOS="612" HPOS="1646" />
+							<String CONTENT="mountains," WIDTH="301" VPOS="599" HPOS="1679" />
+						</TextLine>
+					</TextBlock>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

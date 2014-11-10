@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>gov.loc</groupId>
+	<artifactId>warc-tools-eea</artifactId>
+	<name>Warc Tools Implementation</name>
+	<version>1.5.1-SNAPSHOT</version>
+
+  <parent>
+    <groupId>com.logica.ndk.tm</groupId>
+    <artifactId>subprojects</artifactId>
+    <version>1.5.1-SNAPSHOT</version>
+  </parent>
+
+	<url>http://code.hanzoarchives.com/warc-tools</url>
+	<licenses>
+		<license>
+			<name>Public Domain</name>
+			<comments>See LICENSE.txt</comments>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<developers>
+		<developer>
+			<id>thomas.figg</id>
+			<name>Thomas Figg</name>
+			<email>thomas.figg@hanzoarchives.com</email>
+		</developer>
+	</developers>
+	<build>
+	</build>
+</project>

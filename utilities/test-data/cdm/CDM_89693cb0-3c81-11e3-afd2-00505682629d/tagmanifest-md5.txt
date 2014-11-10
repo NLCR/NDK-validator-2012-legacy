@@ -1,0 +1,3 @@
+defc71b28593bb73c7c94a8332f85da8  bagit.txt
+22d11bfeff073a361d023a80d10912e6  cdmProperties.xml
+2a7b2e0d3e7e80cf8fcef58fc9965aaf  bag-info.txt

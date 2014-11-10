@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.logica.ndk.tm</groupId>
+		<artifactId>jbpm</artifactId>
+		<version>1.5.1-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.logica.ndk.tm</groupId>
+	<artifactId>domain-services</artifactId>
+	<packaging>jar</packaging>
+	<name>NDK TM - jbpm domain-services</name>
+	<version>1.5.1-SNAPSHOT</version>
+	<description />
+
+	<dependencies>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>interfaces</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+    <dependency>
+        <groupId>org.mule</groupId>
+        <artifactId>mule-core</artifactId>
+        <version>${mule.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>commons</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>cdm</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>jbpm-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>jbpm-core-config</artifactId>
+			<version>${project.version}</version>
+			<!-- do not use different scope than test - this can't be included in final build -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>knowledge-api</artifactId>
+			<version>5.3.1.Final</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-core</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-pool</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jms</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-jaxrs</artifactId>
+			<version>1.6.3</version>
+		</dependency>
+	</dependencies>
+</project>

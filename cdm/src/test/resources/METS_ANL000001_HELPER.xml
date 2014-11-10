@@ -1,0 +1,3791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd" TYPE="Periodical" LABEL="Obchodní právo no.1 1992-" xmlns:mets="http://www.loc.gov/METS/">
+  <mets:metsHdr CREATEDATE="2012-01-18T17:37:38" LASTMODDATE="2012-01-18T17:37:38">
+    <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <mets:name>Elsyst Egineering</mets:name>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:dmdSec ID="MODSMD_TITLE_0001">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:mods="http://www.loc.gov/mods/v3">
+        <mods:mods>
+          <mods:classification authority="udc">347.7</mods:classification>
+          <mods:classification authority="udc">050</mods:classification>
+          <mods:classification authority="udc">347.7</mods:classification>
+          <mods:genre>title</mods:genre>
+          <mods:identifier type="issn">1210-8278</mods:identifier>
+          <mods:identifier type="ccnb">cnb000358070</mods:identifier>
+          <mods:identifier type="permalink">000358070</mods:identifier>
+          <mods:identifier type="uuid">{CF131E10-B592-45C0-B915-750270A79BF9}</mods:identifier>
+          <mods:language>
+            <mods:languageTerm type="code" authority="iso639-2b">cze</mods:languageTerm>
+          </mods:language>
+          <mods:location>
+            <mods:physicalLocation authority="siglaADR">ABA001</mods:physicalLocation>
+            <mods:shelfLocator>Nd 002882</mods:shelfLocator>
+          </mods:location>
+          <mods:originInfo>
+            <mods:dateIssued>1992-</mods:dateIssued>
+            <mods:issuance>continuing</mods:issuance>
+          </mods:originInfo>
+          <mods:physicalDescription>
+            <mods:form authority="marcform">print</mods:form>
+          </mods:physicalDescription>
+          <mods:part type="volume">
+            <mods:detail type="volume">
+              <mods:number>20</mods:number>
+            </mods:detail>
+            <mods:date>2011</mods:date>
+          </mods:part>
+          <mods:recordInfo>
+            <mods:recordCreationDate encoding="iso8601">2011-01-01T12:30:00</mods:recordCreationDate>
+            <mods:recordOrigin>human prepared</mods:recordOrigin>
+          </mods:recordInfo>
+          <mods:titleInfo ID="MODS_TITLE">
+            <mods:title>Obchodní právo</mods:title>
+            <mods:subTitle>Časopis pro obchodně právní praxi</mods:subTitle>
+          </mods:titleInfo>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_ISSUE_1">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:mods="http://www.loc.gov/mods/v3">
+        <mods:mods>
+          <mods:genre type="normal">issue</mods:genre>
+          <mods:identifier type="local">a</mods:identifier>
+          <mods:identifier type="uuid">{65458E6D-1A6E-4AE0-81BC-FCD226C04A8F}</mods:identifier>
+          <mods:language>
+            <mods:languageTerm type="code" authority="iso639-2b">cze</mods:languageTerm>
+          </mods:language>
+          <mods:physicalDescription>
+            <mods:extent>39 s.</mods:extent>
+          </mods:physicalDescription>
+          <mods:titleInfo ID="MODS_ISSUE">
+            <mods:title>Obchodní právo</mods:title>
+            <mods:subTitle>Časopis pro obchodně právní praxi</mods:subTitle>
+            <mods:partNumber>1</mods:partNumber>
+          </mods:titleInfo>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_ART_0001">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:mods="http://www.loc.gov/mods/v3">
+        <mods:mods>
+          <mods:titleInfo ID="MODS_ARTICLE_0001">
+            <mods:title>Zástavní právo  a rozhodovací  činnost soudu  -I. část</mods:title>
+          </mods:titleInfo>
+          <mods:name type="personal">
+            <mods:namePart type="given">Tomáš</mods:namePart>
+            <mods:namePart type="family">Pohl</mods:namePart>
+            <mods:role>
+              <mods:roleTerm type="code" authority="marcrelator">aut</mods:roleTerm>
+            </mods:role>
+          </mods:name>
+          <mods:genre>article</mods:genre>
+          <mods:language>
+            <mods:languageTerm type="code" authority="iso639-2b">cze</mods:languageTerm>
+          </mods:language>
+          <mods:identifier type="uuid">4539c5b9-2e94-4517-9669-c7cf525c27db</mods:identifier>
+          <mods:part>
+            <mods:extent>
+              <mods:start>2</mods:start>
+              <mods:end>13</mods:end>
+            </mods:extent>
+          </mods:part>
+          <mods:recordInfo>
+            <mods:recordContentSource>Elsyst Engineering</mods:recordContentSource>
+            <mods:recordCreationDate encoding="iso8601">2012-01-12T05:47</mods:recordCreationDate>
+            <mods:recordOrigin>human prepared</mods:recordOrigin>
+          </mods:recordInfo>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_ART_0002">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:mods="http://www.loc.gov/mods/v3">
+        <mods:mods>
+          <mods:titleInfo ID="MODS_ARTICLE_0002">
+            <mods:title>Vznik oprávnění  uplynutím lhůty  podle zákona  o volném pohybu  služeb</mods:title>
+          </mods:titleInfo>
+          <mods:name type="personal">
+            <mods:namePart type="given">Helena</mods:namePart>
+            <mods:namePart type="family">Prášková</mods:namePart>
+            <mods:role>
+              <mods:roleTerm type="code" authority="marcrelator">aut</mods:roleTerm>
+            </mods:role>
+          </mods:name>
+          <mods:genre>article</mods:genre>
+          <mods:language>
+            <mods:languageTerm type="code" authority="iso639-2b">cze</mods:languageTerm>
+          </mods:language>
+          <mods:identifier type="uuid">654f3235-03b0-45e9-a1f3-066f37891c05</mods:identifier>
+          <mods:part>
+            <mods:extent>
+              <mods:start>14</mods:start>
+              <mods:end>25</mods:end>
+            </mods:extent>
+          </mods:part>
+          <mods:recordInfo>
+            <mods:recordContentSource>Elsyst Engineering</mods:recordContentSource>
+            <mods:recordCreationDate encoding="iso8601">2012-01-12T05:47</mods:recordCreationDate>
+            <mods:recordOrigin>human prepared</mods:recordOrigin>
+          </mods:recordInfo>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_ART_0003">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:mods="http://www.loc.gov/mods/v3">
+        <mods:mods>
+          <mods:titleInfo ID="MODS_ARTICLE_0003">
+            <mods:title>SMLOUVA O POSTOUPENÍ  POHLEDÁVKY - NEPLATNOST, POMĚR  VÝŠE POHLEDÁVKY A ÚPLATY</mods:title>
+          </mods:titleInfo>
+          <mods:name type="personal">
+            <mods:namePart type="given">Jan</mods:namePart>
+            <mods:namePart type="family">Hušek</mods:namePart>
+            <mods:role>
+              <mods:roleTerm type="code" authority="marcrelator">aut</mods:roleTerm>
+            </mods:role>
+          </mods:name>
+          <mods:genre>article</mods:genre>
+          <mods:language>
+            <mods:languageTerm type="code" authority="iso639-2b">cze</mods:languageTerm>
+          </mods:language>
+          <mods:identifier type="uuid">9d78975e-13b4-49a9-bd40-db1db02c7d94</mods:identifier>
+          <mods:part>
+            <mods:extent>
+              <mods:start>26</mods:start>
+              <mods:end>29</mods:end>
+            </mods:extent>
+          </mods:part>
+          <mods:recordInfo>
+            <mods:recordContentSource>Elsyst Engineering</mods:recordContentSource>
+            <mods:recordCreationDate encoding="iso8601">2012-01-12T05:47</mods:recordCreationDate>
+            <mods:recordOrigin>human prepared</mods:recordOrigin>
+          </mods:recordInfo>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_ART_0004">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:mods="http://www.loc.gov/mods/v3">
+        <mods:mods>
+          <mods:titleInfo ID="MODS_ARTICLE_0004">
+            <mods:title>VOLNÝ POHYB SLUŽEB - PRAVIDLA  HOSPODÁŘSKÉ SOUTĚŽE V ODVĚTVÍ  DOPRAVY  (ČLÁNEK 49 SFEU)</mods:title>
+          </mods:titleInfo>
+          <mods:name type="personal">
+            <mods:namePart type="given">Ilona</mods:namePart>
+            <mods:namePart type="family">Bažantová</mods:namePart>
+            <mods:role>
+              <mods:roleTerm type="code" authority="marcrelator">aut</mods:roleTerm>
+            </mods:role>
+          </mods:name>
+          <mods:genre>article</mods:genre>
+          <mods:language>
+            <mods:languageTerm type="code" authority="iso639-2b">cze</mods:languageTerm>
+          </mods:language>
+          <mods:identifier type="uuid">7755b8c7-6510-4f96-ac21-63c03e9022a0</mods:identifier>
+          <mods:part>
+            <mods:extent>
+              <mods:start>29</mods:start>
+              <mods:end>38</mods:end>
+            </mods:extent>
+          </mods:part>
+          <mods:recordInfo>
+            <mods:recordContentSource>Elsyst Engineering</mods:recordContentSource>
+            <mods:recordCreationDate encoding="iso8601">2012-01-12T05:47</mods:recordCreationDate>
+            <mods:recordOrigin>human prepared</mods:recordOrigin>
+          </mods:recordInfo>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_ART_0005">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:mods="http://www.loc.gov/mods/v3">
+        <mods:mods>
+          <mods:titleInfo ID="MODS_ARTICLE_0005">
+            <mods:title>Polišenská, P.: Přehled judikatury ve věcech  dokazování  Praha: Wolters Kluwer ČR, a.s. 2010, 404  stran.</mods:title>
+          </mods:titleInfo>
+          <mods:name type="personal">
+            <mods:namePart type="given">Pavel</mods:namePart>
+            <mods:namePart type="family">Andrle</mods:namePart>
+            <mods:role>
+              <mods:roleTerm type="code" authority="marcrelator">aut</mods:roleTerm>
+            </mods:role>
+          </mods:name>
+          <mods:genre>article</mods:genre>
+          <mods:language>
+            <mods:languageTerm type="code" authority="iso639-2b">cze</mods:languageTerm>
+          </mods:language>
+          <mods:identifier type="uuid">c701e05e-2e32-4e01-9b2e-c32fe2c25391</mods:identifier>
+          <mods:part>
+            <mods:extent>
+              <mods:start>39</mods:start>
+              <mods:end>39</mods:end>
+            </mods:extent>
+          </mods:part>
+          <mods:recordInfo>
+            <mods:recordContentSource>Elsyst Engineering</mods:recordContentSource>
+            <mods:recordCreationDate encoding="iso8601">2012-01-12T05:47</mods:recordCreationDate>
+            <mods:recordOrigin>human prepared</mods:recordOrigin>
+          </mods:recordInfo>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DCMD_TITLE_0001">
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:subject>347.7</dc:subject>
+          <dc:subject>050</dc:subject>
+          <dc:subject>347.7</dc:subject>
+          <dc:type>title</dc:type>
+          <dc:identifier>issn: 1210-8278</dc:identifier>
+          <dc:identifier>ccnb: cnb000358070</dc:identifier>
+          <dc:identifier>permalink: 000358070</dc:identifier>
+          <dc:identifier>{CF131E10-B592-45C0-B915-750270A79BF9}</dc:identifier>
+          <dc:language>cze</dc:language>
+          <dc:source>ABA001</dc:source>
+          <dc:source>Nd 002882</dc:source>
+          <dc:date>1992-</dc:date>
+          <dc:format>print</dc:format>
+          <dc:description>volume number: 20</dc:description>
+          <dc:title>Obchodní právo: Časopis pro obchodně právní praxi</dc:title>
+        </oai_dc:dc>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DCMD_ISSUE_1">
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:type>issue</dc:type>
+          <dc:identifier>a</dc:identifier>
+          <dc:identifier>{65458E6D-1A6E-4AE0-81BC-FCD226C04A8F}</dc:identifier>
+          <dc:language>cze</dc:language>
+          <dc:format>39 s.</dc:format>
+          <dc:title>Obchodní právo: Časopis pro obchodně právní praxi</dc:title>
+          <dc:description>1</dc:description>
+        </oai_dc:dc>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DCMD_ART_1">
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:title>Zástavní právo  a rozhodovací  činnost soudu  -I. část</dc:title>
+          <dc:creator>Pohl, Tomáš</dc:creator>
+          <dc:type>article</dc:type>
+          <dc:language>cze</dc:language>
+          <dc:identifier>4539c5b9-2e94-4517-9669-c7cf525c27db</dc:identifier>
+          <dc:coverage>s. 2 - 13;</dc:coverage>
+        </oai_dc:dc>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DCMD_ART_2">
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:title>Vznik oprávnění  uplynutím lhůty  podle zákona  o volném pohybu  služeb</dc:title>
+          <dc:creator>Prášková, Helena</dc:creator>
+          <dc:type>article</dc:type>
+          <dc:language>cze</dc:language>
+          <dc:identifier>654f3235-03b0-45e9-a1f3-066f37891c05</dc:identifier>
+          <dc:coverage>s. 14 - 25;</dc:coverage>
+        </oai_dc:dc>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DCMD_ART_3">
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:title>SMLOUVA O POSTOUPENÍ  POHLEDÁVKY - NEPLATNOST, POMĚR  VÝŠE POHLEDÁVKY A ÚPLATY</dc:title>
+          <dc:creator>Hušek, Jan</dc:creator>
+          <dc:type>article</dc:type>
+          <dc:language>cze</dc:language>
+          <dc:identifier>9d78975e-13b4-49a9-bd40-db1db02c7d94</dc:identifier>
+          <dc:coverage>s. 26 - 29;</dc:coverage>
+        </oai_dc:dc>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DCMD_ART_4">
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:title>VOLNÝ POHYB SLUŽEB - PRAVIDLA  HOSPODÁŘSKÉ SOUTĚŽE V ODVĚTVÍ  DOPRAVY  (ČLÁNEK 49 SFEU)</dc:title>
+          <dc:creator>Bažantová, Ilona</dc:creator>
+          <dc:type>article</dc:type>
+          <dc:language>cze</dc:language>
+          <dc:identifier>7755b8c7-6510-4f96-ac21-63c03e9022a0</dc:identifier>
+          <dc:coverage>s. 29 - 38;</dc:coverage>
+        </oai_dc:dc>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DCMD_ART_5">
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml">
+      <mets:xmlData xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:title>Polišenská, P.: Přehled judikatury ve věcech  dokazování  Praha: Wolters Kluwer ČR, a.s. 2010, 404  stran.</dc:title>
+          <dc:creator>Andrle, Pavel</dc:creator>
+          <dc:type>article</dc:type>
+          <dc:language>cze</dc:language>
+          <dc:identifier>c701e05e-2e32-4e01-9b2e-c32fe2c25391</dc:identifier>
+          <dc:coverage>s. 39 - 39;</dc:coverage>
+        </oai_dc:dc>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:fileSec>
+    <mets:fileGrp ID="MC_IMGGRP" USE="Images">
+      <mets:file ID="MC_ANL000001_0001" MIMETYPE="image/jp2" SIZE="7338853" CHECKSUMTYPE="MD5" CHECKSUM="fae5db44b13a10bee29293f68a8b709d" SEQ="0" CREATED="2012-01-17T19:24:47">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0001.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0002" MIMETYPE="image/jp2" SIZE="5486620" CHECKSUMTYPE="MD5" CHECKSUM="c07dffa9b2b3061502d408d6344b3a79" SEQ="1" CREATED="2012-01-17T19:24:48">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0002.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0003" MIMETYPE="image/jp2" SIZE="6499197" CHECKSUMTYPE="MD5" CHECKSUM="1eaf6dc2da0e1758f27816a0668c5214" SEQ="2" CREATED="2012-01-17T19:24:49">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0003.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0004" MIMETYPE="image/jp2" SIZE="6582183" CHECKSUMTYPE="MD5" CHECKSUM="77006766a7f1c440adac408aa701a557" SEQ="3" CREATED="2012-01-17T19:24:51">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0004.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0005" MIMETYPE="image/jp2" SIZE="6775181" CHECKSUMTYPE="MD5" CHECKSUM="3385018b521d39049c8de6944848201a" SEQ="4" CREATED="2012-01-17T19:24:52">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0005.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0006" MIMETYPE="image/jp2" SIZE="6792636" CHECKSUMTYPE="MD5" CHECKSUM="9d5dc9ef4c7aa1a3f6d8398fa58e5951" SEQ="5" CREATED="2012-01-17T19:24:53">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0006.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0007" MIMETYPE="image/jp2" SIZE="6812805" CHECKSUMTYPE="MD5" CHECKSUM="85aca00f970fdbb77f55fbf008eaae64" SEQ="6" CREATED="2012-01-17T19:24:54">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0007.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0008" MIMETYPE="image/jp2" SIZE="6723802" CHECKSUMTYPE="MD5" CHECKSUM="61001f839139275ef10248f903afb7bb" SEQ="7" CREATED="2012-01-17T19:24:55">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0008.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0009" MIMETYPE="image/jp2" SIZE="6822000" CHECKSUMTYPE="MD5" CHECKSUM="a9e3ffd67bf44d7adfba922575041f53" SEQ="8" CREATED="2012-01-17T19:24:56">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0009.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0010" MIMETYPE="image/jp2" SIZE="6782364" CHECKSUMTYPE="MD5" CHECKSUM="b7bfe99f604c1d8ea9a3bb3933ed6993" SEQ="9" CREATED="2012-01-17T19:24:57">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0010.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0011" MIMETYPE="image/jp2" SIZE="6813224" CHECKSUMTYPE="MD5" CHECKSUM="435a9681024039929eadeb092a2834a1" SEQ="10" CREATED="2012-01-17T19:24:59">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0011.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0012" MIMETYPE="image/jp2" SIZE="6725239" CHECKSUMTYPE="MD5" CHECKSUM="75623e6e1fa52ca95f8bf77bbdbaa5f1" SEQ="11" CREATED="2012-01-17T19:25:00">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0012.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0013" MIMETYPE="image/jp2" SIZE="6794113" CHECKSUMTYPE="MD5" CHECKSUM="1739371064f168d3c610b917569c8b83" SEQ="12" CREATED="2012-01-17T19:25:01">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0013.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0014" MIMETYPE="image/jp2" SIZE="6779084" CHECKSUMTYPE="MD5" CHECKSUM="ec621b2f57f4790eaa81c960d7884203" SEQ="13" CREATED="2012-01-17T19:25:02">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0014.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0015" MIMETYPE="image/jp2" SIZE="6113933" CHECKSUMTYPE="MD5" CHECKSUM="0998c54f3b39a45941a003a742710f11" SEQ="14" CREATED="2012-01-17T19:25:03">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0015.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0016" MIMETYPE="image/jp2" SIZE="6588587" CHECKSUMTYPE="MD5" CHECKSUM="fd32ca9e3169025ceeec0833547adddc" SEQ="15" CREATED="2012-01-17T19:25:04">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0016.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0017" MIMETYPE="image/jp2" SIZE="6814544" CHECKSUMTYPE="MD5" CHECKSUM="9c6ffdc48b2a0b5b33985726c4054b6e" SEQ="16" CREATED="2012-01-17T19:25:05">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0017.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0018" MIMETYPE="image/jp2" SIZE="6788041" CHECKSUMTYPE="MD5" CHECKSUM="9248dccdef39c877725caed7559506b4" SEQ="17" CREATED="2012-01-17T19:25:07">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0018.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0019" MIMETYPE="image/jp2" SIZE="6829608" CHECKSUMTYPE="MD5" CHECKSUM="1c24e29165565ffd819096c830477f22" SEQ="18" CREATED="2012-01-17T19:25:08">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0019.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0020" MIMETYPE="image/jp2" SIZE="6740117" CHECKSUMTYPE="MD5" CHECKSUM="cdc1eb0c3e6242482e8b30180bff9cac" SEQ="19" CREATED="2012-01-17T19:25:09">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0020.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0021" MIMETYPE="image/jp2" SIZE="6882619" CHECKSUMTYPE="MD5" CHECKSUM="52322406ef5c4c2bcc86f14a0a170f70" SEQ="20" CREATED="2012-01-17T19:25:10">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0021.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0022" MIMETYPE="image/jp2" SIZE="6861382" CHECKSUMTYPE="MD5" CHECKSUM="a40a54bc4904a8b41755e59b2c897e95" SEQ="21" CREATED="2012-01-17T19:25:11">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0022.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0023" MIMETYPE="image/jp2" SIZE="6796648" CHECKSUMTYPE="MD5" CHECKSUM="8d9e4c1715b50fc0dc65746d40f32ce6" SEQ="22" CREATED="2012-01-17T19:25:12">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0023.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0024" MIMETYPE="image/jp2" SIZE="6673865" CHECKSUMTYPE="MD5" CHECKSUM="d2ce8676bdd052a078c706f820a0ccb5" SEQ="23" CREATED="2012-01-17T19:25:13">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0024.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0025" MIMETYPE="image/jp2" SIZE="6761394" CHECKSUMTYPE="MD5" CHECKSUM="a40f439e5a54cc07b07d156d47021599" SEQ="24" CREATED="2012-01-17T19:25:14">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0025.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0026" MIMETYPE="image/jp2" SIZE="6651610" CHECKSUMTYPE="MD5" CHECKSUM="7c09535bc28d790b0f185695783e3ff8" SEQ="25" CREATED="2012-01-17T19:25:15">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0026.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0027" MIMETYPE="image/jp2" SIZE="6499074" CHECKSUMTYPE="MD5" CHECKSUM="37066f4a043dbc97947c7180670c6a44" SEQ="26" CREATED="2012-01-17T19:25:17">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0027.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0028" MIMETYPE="image/jp2" SIZE="6535290" CHECKSUMTYPE="MD5" CHECKSUM="53ed8fdb82c504c4e6c39d6cb2747270" SEQ="27" CREATED="2012-01-17T19:25:18">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0028.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0029" MIMETYPE="image/jp2" SIZE="6834106" CHECKSUMTYPE="MD5" CHECKSUM="fa71cbafd877b55572633366dca4961d" SEQ="28" CREATED="2012-01-17T19:25:19">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0029.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0030" MIMETYPE="image/jp2" SIZE="6724553" CHECKSUMTYPE="MD5" CHECKSUM="ce2cbf3f3a4e6d07c1a3f7933b1d7937" SEQ="29" CREATED="2012-01-17T19:25:20">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0030.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0031" MIMETYPE="image/jp2" SIZE="6543907" CHECKSUMTYPE="MD5" CHECKSUM="d5a11bcba5fc72b34859df591e7aa9e9" SEQ="30" CREATED="2012-01-17T19:25:21">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0031.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0032" MIMETYPE="image/jp2" SIZE="6653318" CHECKSUMTYPE="MD5" CHECKSUM="f6c3f41c5bfe4d0834a177ef8f1f5af9" SEQ="31" CREATED="2012-01-17T19:25:22">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0032.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0033" MIMETYPE="image/jp2" SIZE="6800829" CHECKSUMTYPE="MD5" CHECKSUM="e20922711188cb21e1b6420afc9ab68e" SEQ="32" CREATED="2012-01-17T19:25:23">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0033.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0034" MIMETYPE="image/jp2" SIZE="6747179" CHECKSUMTYPE="MD5" CHECKSUM="5306aae68496b0d6cd8b3f540632f6d6" SEQ="33" CREATED="2012-01-17T19:25:24">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0034.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0035" MIMETYPE="image/jp2" SIZE="6802256" CHECKSUMTYPE="MD5" CHECKSUM="866923a5a655ce7286b49e85c1874efb" SEQ="34" CREATED="2012-01-17T19:25:25">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0035.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0036" MIMETYPE="image/jp2" SIZE="6658305" CHECKSUMTYPE="MD5" CHECKSUM="c49644550e37fa3302a5b2708ebfb7a8" SEQ="35" CREATED="2012-01-17T19:25:27">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0036.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0037" MIMETYPE="image/jp2" SIZE="6806044" CHECKSUMTYPE="MD5" CHECKSUM="4e816e22ef649655d396cbd5ed886b98" SEQ="36" CREATED="2012-01-17T19:25:28">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0037.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0038" MIMETYPE="image/jp2" SIZE="6733994" CHECKSUMTYPE="MD5" CHECKSUM="a256cc7f2760c126c60b07fe50187294" SEQ="37" CREATED="2012-01-17T19:25:29">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0038.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0039" MIMETYPE="image/jp2" SIZE="6854268" CHECKSUMTYPE="MD5" CHECKSUM="940f2b3607b64e6eb1a2a76ea85f2b6a" SEQ="38" CREATED="2012-01-17T19:25:31">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0039.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0040" MIMETYPE="image/jp2" SIZE="6765872" CHECKSUMTYPE="MD5" CHECKSUM="029b77e699ff719d61adc85d3e194d0e" SEQ="39" CREATED="2012-01-17T19:25:32">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0040.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0041" MIMETYPE="image/jp2" SIZE="6708315" CHECKSUMTYPE="MD5" CHECKSUM="5a7cf7d7c992f3a5cc794764277550a7" SEQ="40" CREATED="2012-01-17T19:25:33">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0041.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0042" MIMETYPE="image/jp2" SIZE="6076900" CHECKSUMTYPE="MD5" CHECKSUM="5bb397d5b27fde620ce8f924555719d9" SEQ="41" CREATED="2012-01-17T19:25:34">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0042.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0043" MIMETYPE="image/jp2" SIZE="5530930" CHECKSUMTYPE="MD5" CHECKSUM="2543a0c92a8fe2cbc8776b762bfe0b71" SEQ="42" CREATED="2012-01-17T19:25:35">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0043.jp2" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="MC_ANL000001_0044" MIMETYPE="image/jp2" SIZE="6937839" CHECKSUMTYPE="MD5" CHECKSUM="a76708a034c552a9929db7edde1e9442" SEQ="43" CREATED="2012-01-17T19:25:36">
+        <mets:FLocat xlink:href="./masterCopy/MC_ANL000001_0044.jp2" LOCTYPE="URL" />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp ID="ALTOGRP" USE="Text">
+      <mets:file ID="ALTO_ANL000001_0001" MIMETYPE="text/xml" SIZE="31173" CHECKSUMTYPE="MD5" CHECKSUM="ec86d7121efa54a6edea6475ae45ecdc" SEQ="0" CREATED="2012-01-17T19:24:48">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0001.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0002" MIMETYPE="text/xml" SIZE="1564" CHECKSUMTYPE="MD5" CHECKSUM="4ec30750b593ce66e03a86d0d72567d3" SEQ="1" CREATED="2012-01-17T19:24:49">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0002.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0003" MIMETYPE="text/xml" SIZE="242156" CHECKSUMTYPE="MD5" CHECKSUM="d756b019bbba2d7552d37ceadbcae657" SEQ="2" CREATED="2012-01-17T19:24:50">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0003.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0004" MIMETYPE="text/xml" SIZE="330660" CHECKSUMTYPE="MD5" CHECKSUM="949d7df1372894e106e2d3b17ae6de15" SEQ="3" CREATED="2012-01-17T19:24:51">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0004.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0005" MIMETYPE="text/xml" SIZE="408704" CHECKSUMTYPE="MD5" CHECKSUM="7b598642e62fc2a638e8fa17c273de07" SEQ="4" CREATED="2012-01-17T19:24:53">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0005.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0006" MIMETYPE="text/xml" SIZE="408302" CHECKSUMTYPE="MD5" CHECKSUM="7cdbb18c21a7221627eeacd00f6549ce" SEQ="5" CREATED="2012-01-17T19:24:54">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0006.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0007" MIMETYPE="text/xml" SIZE="389896" CHECKSUMTYPE="MD5" CHECKSUM="16b2a99c9a9b4afda3ccb9c195c1f761" SEQ="6" CREATED="2012-01-17T19:24:55">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0007.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0008" MIMETYPE="text/xml" SIZE="394218" CHECKSUMTYPE="MD5" CHECKSUM="45705284b77eff2d274ae83c7a725537" SEQ="7" CREATED="2012-01-17T19:24:56">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0008.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0009" MIMETYPE="text/xml" SIZE="392887" CHECKSUMTYPE="MD5" CHECKSUM="58e2715e9e45c9b43124478ba1a2e26d" SEQ="8" CREATED="2012-01-17T19:24:57">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0009.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0010" MIMETYPE="text/xml" SIZE="392192" CHECKSUMTYPE="MD5" CHECKSUM="3f99c597556bf29e06802cadb47b237f" SEQ="9" CREATED="2012-01-17T19:24:58">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0010.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0011" MIMETYPE="text/xml" SIZE="388357" CHECKSUMTYPE="MD5" CHECKSUM="3ce1e031a337ae5a5490078c9b35a88c" SEQ="10" CREATED="2012-01-17T19:24:59">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0011.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0012" MIMETYPE="text/xml" SIZE="400447" CHECKSUMTYPE="MD5" CHECKSUM="1f5de855d219eab99799636bf2e3b89d" SEQ="11" CREATED="2012-01-17T19:25:00">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0012.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0013" MIMETYPE="text/xml" SIZE="399105" CHECKSUMTYPE="MD5" CHECKSUM="5576293631681004030b6c88d982d881" SEQ="12" CREATED="2012-01-17T19:25:01">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0013.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0014" MIMETYPE="text/xml" SIZE="393306" CHECKSUMTYPE="MD5" CHECKSUM="a12de42492818763c0b2ee91e7106ea8" SEQ="13" CREATED="2012-01-17T19:25:02">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0014.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0015" MIMETYPE="text/xml" SIZE="173637" CHECKSUMTYPE="MD5" CHECKSUM="0a49112209a5de902be6400450b83c08" SEQ="14" CREATED="2012-01-17T19:25:04">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0015.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0016" MIMETYPE="text/xml" SIZE="331465" CHECKSUMTYPE="MD5" CHECKSUM="9c92303be63f32ad6ca7b46bc03140b6" SEQ="15" CREATED="2012-01-17T19:25:05">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0016.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0017" MIMETYPE="text/xml" SIZE="389905" CHECKSUMTYPE="MD5" CHECKSUM="a9ea28c5bcafbc61bffba4a7d3f97ecd" SEQ="16" CREATED="2012-01-17T19:25:06">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0017.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0018" MIMETYPE="text/xml" SIZE="388532" CHECKSUMTYPE="MD5" CHECKSUM="c1b269d5091a3f3cd0c8cfbee43449c2" SEQ="17" CREATED="2012-01-17T19:25:07">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0018.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0019" MIMETYPE="text/xml" SIZE="401004" CHECKSUMTYPE="MD5" CHECKSUM="efd39c8da789fc3fe89506eeb4984d98" SEQ="18" CREATED="2012-01-17T19:25:08">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0019.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0020" MIMETYPE="text/xml" SIZE="411279" CHECKSUMTYPE="MD5" CHECKSUM="1770d757eb09f4167813650510023d61" SEQ="19" CREATED="2012-01-17T19:25:09">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0020.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0021" MIMETYPE="text/xml" SIZE="389103" CHECKSUMTYPE="MD5" CHECKSUM="e8c45a817e5a51bbcffc414a411009f2" SEQ="20" CREATED="2012-01-17T19:25:10">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0021.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0022" MIMETYPE="text/xml" SIZE="424219" CHECKSUMTYPE="MD5" CHECKSUM="2ecb39baf58432552ade8fd1f89711fc" SEQ="21" CREATED="2012-01-17T19:25:11">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0022.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0023" MIMETYPE="text/xml" SIZE="405519" CHECKSUMTYPE="MD5" CHECKSUM="3e7b7c60053bac3a96b19dcc83f81a2e" SEQ="22" CREATED="2012-01-17T19:25:13">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0023.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0024" MIMETYPE="text/xml" SIZE="396457" CHECKSUMTYPE="MD5" CHECKSUM="1e7dbbc42eeef98f2d802ced246cfaa7" SEQ="23" CREATED="2012-01-17T19:25:14">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0024.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0025" MIMETYPE="text/xml" SIZE="380898" CHECKSUMTYPE="MD5" CHECKSUM="3715681041250df1b6a32a0a3fee90f3" SEQ="24" CREATED="2012-01-17T19:25:15">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0025.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0026" MIMETYPE="text/xml" SIZE="376141" CHECKSUMTYPE="MD5" CHECKSUM="063c18fb1aff93df6459f2fcaeefac49" SEQ="25" CREATED="2012-01-17T19:25:16">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0026.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0027" MIMETYPE="text/xml" SIZE="314240" CHECKSUMTYPE="MD5" CHECKSUM="970cefcf060c6dde6654cc1ae604bc90" SEQ="26" CREATED="2012-01-17T19:25:17">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0027.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0028" MIMETYPE="text/xml" SIZE="307936" CHECKSUMTYPE="MD5" CHECKSUM="4f272580a12435f95177945bed0396a5" SEQ="27" CREATED="2012-01-17T19:25:18">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0028.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0029" MIMETYPE="text/xml" SIZE="405446" CHECKSUMTYPE="MD5" CHECKSUM="220563aa38321401d85697446d3fe6c9" SEQ="28" CREATED="2012-01-17T19:25:19">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0029.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0030" MIMETYPE="text/xml" SIZE="417841" CHECKSUMTYPE="MD5" CHECKSUM="fd8b6cb96c6f86a144dfd694fc895cd8" SEQ="29" CREATED="2012-01-17T19:25:20">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0030.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0031" MIMETYPE="text/xml" SIZE="246663" CHECKSUMTYPE="MD5" CHECKSUM="9d29236d4dcf728a7ed9eecf9988a414" SEQ="30" CREATED="2012-01-17T19:25:21">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0031.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0032" MIMETYPE="text/xml" SIZE="377709" CHECKSUMTYPE="MD5" CHECKSUM="33ba997e72a1e0f17c33542a32415a85" SEQ="31" CREATED="2012-01-17T19:25:22">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0032.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0033" MIMETYPE="text/xml" SIZE="379688" CHECKSUMTYPE="MD5" CHECKSUM="54ff7f601577d08c6eaf0b462f4cec57" SEQ="32" CREATED="2012-01-17T19:25:23">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0033.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0034" MIMETYPE="text/xml" SIZE="393294" CHECKSUMTYPE="MD5" CHECKSUM="8e25899c3ae21798b02b7379552432af" SEQ="33" CREATED="2012-01-17T19:25:25">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0034.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0035" MIMETYPE="text/xml" SIZE="385588" CHECKSUMTYPE="MD5" CHECKSUM="01cd7c3499781e87a1ba2ebf6aab7343" SEQ="34" CREATED="2012-01-17T19:25:26">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0035.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0036" MIMETYPE="text/xml" SIZE="386957" CHECKSUMTYPE="MD5" CHECKSUM="0a1b2c379a3dd6a1282a03c49dfdf0cd" SEQ="35" CREATED="2012-01-17T19:25:27">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0036.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0037" MIMETYPE="text/xml" SIZE="408864" CHECKSUMTYPE="MD5" CHECKSUM="46a9753661f45a62f45a9412e98690af" SEQ="36" CREATED="2012-01-17T19:25:28">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0037.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0038" MIMETYPE="text/xml" SIZE="409415" CHECKSUMTYPE="MD5" CHECKSUM="152be8667f830171cc6a7b0ca33e0227" SEQ="37" CREATED="2012-01-17T19:25:30">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0038.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0039" MIMETYPE="text/xml" SIZE="393641" CHECKSUMTYPE="MD5" CHECKSUM="13c8f36fc23e62c1cd3497316cc49338" SEQ="38" CREATED="2012-01-17T19:25:31">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0039.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0040" MIMETYPE="text/xml" SIZE="399882" CHECKSUMTYPE="MD5" CHECKSUM="6f784e9158339990948f7047c0591b15" SEQ="39" CREATED="2012-01-17T19:25:32">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0040.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0041" MIMETYPE="text/xml" SIZE="312670" CHECKSUMTYPE="MD5" CHECKSUM="fe2248e6aa664ab7761505d5a515f068" SEQ="40" CREATED="2012-01-17T19:25:33">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0041.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0042" MIMETYPE="text/xml" SIZE="127076" CHECKSUMTYPE="MD5" CHECKSUM="278947570acab63e3f3661ed07b77acf" SEQ="41" CREATED="2012-01-17T19:25:34">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0042.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0043" MIMETYPE="text/xml" SIZE="1564" CHECKSUMTYPE="MD5" CHECKSUM="f0c7874f77e133ef2a1ebc5bcb299a13" SEQ="42" CREATED="2012-01-17T19:25:35">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0043.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="ALTO_ANL000001_0044" MIMETYPE="text/xml" SIZE="85169" CHECKSUMTYPE="MD5" CHECKSUM="d86936af423b5c0a644a1cced8cf333d" SEQ="43" CREATED="2012-01-17T19:25:36">
+        <mets:FLocat xlink:href="./ALTO/ALTO_ANL000001_0044.xml" LOCTYPE="URL" />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp ID="TXTGRP" USE="Text">
+      <mets:file ID="TXT_ANL000001_0001" MIMETYPE="text/plain" SIZE="462" CHECKSUMTYPE="MD5" CHECKSUM="40b9bd532aeeab281a970a90c3b8140e" SEQ="0" CREATED="2012-01-17T19:24:48">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0001.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0002" MIMETYPE="text/plain" SIZE="2" CHECKSUMTYPE="MD5" CHECKSUM="f3b25701fe362ec84616a93a45ce9998" SEQ="1" CREATED="2012-01-17T19:24:49">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0002.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0003" MIMETYPE="text/plain" SIZE="4016" CHECKSUMTYPE="MD5" CHECKSUM="16093e82d97a4a9ae87d8600659b9998" SEQ="2" CREATED="2012-01-17T19:24:50">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0003.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0004" MIMETYPE="text/plain" SIZE="5636" CHECKSUMTYPE="MD5" CHECKSUM="1fc951465ea34301e5b97f32b3d9692f" SEQ="3" CREATED="2012-01-17T19:24:51">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0004.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0005" MIMETYPE="text/plain" SIZE="7072" CHECKSUMTYPE="MD5" CHECKSUM="a03f6d12f2f669b6ab00a58087df3ab8" SEQ="4" CREATED="2012-01-17T19:24:52">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0005.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0006" MIMETYPE="text/plain" SIZE="7050" CHECKSUMTYPE="MD5" CHECKSUM="3d9cbcc6e00a385a83be27fcbc6cbb75" SEQ="5" CREATED="2012-01-17T19:24:53">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0006.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0007" MIMETYPE="text/plain" SIZE="6726" CHECKSUMTYPE="MD5" CHECKSUM="5b448ccf5857a53ff341fb927bd81924" SEQ="6" CREATED="2012-01-17T19:24:55">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0007.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0008" MIMETYPE="text/plain" SIZE="6798" CHECKSUMTYPE="MD5" CHECKSUM="81882172db08fba5565e3bae416d6026" SEQ="7" CREATED="2012-01-17T19:24:56">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0008.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0009" MIMETYPE="text/plain" SIZE="6798" CHECKSUMTYPE="MD5" CHECKSUM="97bcd21858c7aa13a2cf679f266e249b" SEQ="8" CREATED="2012-01-17T19:24:57">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0009.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0010" MIMETYPE="text/plain" SIZE="6770" CHECKSUMTYPE="MD5" CHECKSUM="36c50aba0a558a1516ee3723dc808b18" SEQ="9" CREATED="2012-01-17T19:24:58">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0010.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0011" MIMETYPE="text/plain" SIZE="6726" CHECKSUMTYPE="MD5" CHECKSUM="0f9d2bfc8ef33899bd9ec3688d81741a" SEQ="10" CREATED="2012-01-17T19:24:59">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0011.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0012" MIMETYPE="text/plain" SIZE="6930" CHECKSUMTYPE="MD5" CHECKSUM="4803159cf697cbc702c6458fc22db3ad" SEQ="11" CREATED="2012-01-17T19:25:00">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0012.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0013" MIMETYPE="text/plain" SIZE="6906" CHECKSUMTYPE="MD5" CHECKSUM="bda2987bef87a4c155255bef05071b23" SEQ="12" CREATED="2012-01-17T19:25:01">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0013.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0014" MIMETYPE="text/plain" SIZE="6782" CHECKSUMTYPE="MD5" CHECKSUM="d764202c1f144ab73663e8ff63098009" SEQ="13" CREATED="2012-01-17T19:25:02">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0014.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0015" MIMETYPE="text/plain" SIZE="2982" CHECKSUMTYPE="MD5" CHECKSUM="24dae398e25cecd9e6e011d1089b4b1a" SEQ="14" CREATED="2012-01-17T19:25:03">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0015.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0016" MIMETYPE="text/plain" SIZE="5642" CHECKSUMTYPE="MD5" CHECKSUM="e2df5188fd663d10bdf4283574525d32" SEQ="15" CREATED="2012-01-17T19:25:05">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0016.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0017" MIMETYPE="text/plain" SIZE="6728" CHECKSUMTYPE="MD5" CHECKSUM="21d99ae58a104d4ed0b0fb7bd5b1e661" SEQ="16" CREATED="2012-01-17T19:25:06">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0017.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0018" MIMETYPE="text/plain" SIZE="6680" CHECKSUMTYPE="MD5" CHECKSUM="2ab91687ceb8864fc08cd2cd5eb5ad51" SEQ="17" CREATED="2012-01-17T19:25:07">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0018.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0019" MIMETYPE="text/plain" SIZE="6942" CHECKSUMTYPE="MD5" CHECKSUM="442c201d0cfa78b3c3944444f0243452" SEQ="18" CREATED="2012-01-17T19:25:08">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0019.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0020" MIMETYPE="text/plain" SIZE="7116" CHECKSUMTYPE="MD5" CHECKSUM="41ec6f2bfc588a0d7d2b916da79d261e" SEQ="19" CREATED="2012-01-17T19:25:09">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0020.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0021" MIMETYPE="text/plain" SIZE="6726" CHECKSUMTYPE="MD5" CHECKSUM="5cd07c18e20bde3c2f772143e4e3b7b8" SEQ="20" CREATED="2012-01-17T19:25:10">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0021.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0022" MIMETYPE="text/plain" SIZE="7384" CHECKSUMTYPE="MD5" CHECKSUM="78b0fcf1f6303ebad38bc6a009614881" SEQ="21" CREATED="2012-01-17T19:25:11">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0022.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0023" MIMETYPE="text/plain" SIZE="7020" CHECKSUMTYPE="MD5" CHECKSUM="b5eb3a34710fe2e07c2c5b2d2ac688e8" SEQ="22" CREATED="2012-01-17T19:25:12">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0023.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0024" MIMETYPE="text/plain" SIZE="6840" CHECKSUMTYPE="MD5" CHECKSUM="193deb1bbff96b66109c79914ac8f08a" SEQ="23" CREATED="2012-01-17T19:25:13">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0024.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0025" MIMETYPE="text/plain" SIZE="6562" CHECKSUMTYPE="MD5" CHECKSUM="6d04bdacb39c0a7b91f6194a7c837340" SEQ="24" CREATED="2012-01-17T19:25:15">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0025.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0026" MIMETYPE="text/plain" SIZE="6454" CHECKSUMTYPE="MD5" CHECKSUM="df0110dac3d57b72edaa15ae58d13ce6" SEQ="25" CREATED="2012-01-17T19:25:16">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0026.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0027" MIMETYPE="text/plain" SIZE="5394" CHECKSUMTYPE="MD5" CHECKSUM="adfbbd5d1eca4905f1916a4d6a32f951" SEQ="26" CREATED="2012-01-17T19:25:17">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0027.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0028" MIMETYPE="text/plain" SIZE="5304" CHECKSUMTYPE="MD5" CHECKSUM="aef30601d6c9fecb6387f96b768f4986" SEQ="27" CREATED="2012-01-17T19:25:18">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0028.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0029" MIMETYPE="text/plain" SIZE="7018" CHECKSUMTYPE="MD5" CHECKSUM="58bf6cb801de37550855345c7c683548" SEQ="28" CREATED="2012-01-17T19:25:19">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0029.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0030" MIMETYPE="text/plain" SIZE="7254" CHECKSUMTYPE="MD5" CHECKSUM="eb96b611557d22496eed87254b6db1c7" SEQ="29" CREATED="2012-01-17T19:25:20">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0030.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0031" MIMETYPE="text/plain" SIZE="4202" CHECKSUMTYPE="MD5" CHECKSUM="a22e848f2ec34330616a9c7da0192102" SEQ="30" CREATED="2012-01-17T19:25:21">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0031.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0032" MIMETYPE="text/plain" SIZE="6518" CHECKSUMTYPE="MD5" CHECKSUM="978961486c84366d095991df42c9ebed" SEQ="31" CREATED="2012-01-17T19:25:22">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0032.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0033" MIMETYPE="text/plain" SIZE="6514" CHECKSUMTYPE="MD5" CHECKSUM="46960ca99b9d81869e8943fd011b1f98" SEQ="32" CREATED="2012-01-17T19:25:23">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0033.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0034" MIMETYPE="text/plain" SIZE="6786" CHECKSUMTYPE="MD5" CHECKSUM="aa25f9b89640dcbb62d62e5d63b06e79" SEQ="33" CREATED="2012-01-17T19:25:24">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0034.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0035" MIMETYPE="text/plain" SIZE="6674" CHECKSUMTYPE="MD5" CHECKSUM="5957c8f10ccce5953826c406f7340061" SEQ="34" CREATED="2012-01-17T19:25:26">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0035.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0036" MIMETYPE="text/plain" SIZE="6690" CHECKSUMTYPE="MD5" CHECKSUM="0950c62e96e28f9c9511373d6bab6805" SEQ="35" CREATED="2012-01-17T19:25:27">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0036.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0037" MIMETYPE="text/plain" SIZE="7102" CHECKSUMTYPE="MD5" CHECKSUM="6632b7771ddf0ca114ad1b7527dfc74a" SEQ="36" CREATED="2012-01-17T19:25:28">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0037.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0038" MIMETYPE="text/plain" SIZE="7082" CHECKSUMTYPE="MD5" CHECKSUM="d08dce5224d60e47cdd7c3719c02dd4c" SEQ="37" CREATED="2012-01-17T19:25:29">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0038.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0039" MIMETYPE="text/plain" SIZE="6812" CHECKSUMTYPE="MD5" CHECKSUM="3931b5107eb8ae50923f7bc51b9ccbcb" SEQ="38" CREATED="2012-01-17T19:25:31">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0039.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0040" MIMETYPE="text/plain" SIZE="6900" CHECKSUMTYPE="MD5" CHECKSUM="088b7832bf821afcb216b94c94b28a4a" SEQ="39" CREATED="2012-01-17T19:25:32">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0040.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0041" MIMETYPE="text/plain" SIZE="5340" CHECKSUMTYPE="MD5" CHECKSUM="5a0e9eda9b6aa9b17f06490cf4c7b663" SEQ="40" CREATED="2012-01-17T19:25:33">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0041.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0042" MIMETYPE="text/plain" SIZE="2074" CHECKSUMTYPE="MD5" CHECKSUM="bc25637eee8810d69c1bb02df7df7c30" SEQ="41" CREATED="2012-01-17T19:25:34">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0042.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0043" MIMETYPE="text/plain" SIZE="2" CHECKSUMTYPE="MD5" CHECKSUM="f3b25701fe362ec84616a93a45ce9998" SEQ="42" CREATED="2012-01-17T19:25:35">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0043.txt" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="TXT_ANL000001_0044" MIMETYPE="text/plain" SIZE="1328" CHECKSUMTYPE="MD5" CHECKSUM="cbac4739a666d2bdba53022372ab4074" SEQ="43" CREATED="2012-01-17T19:25:36">
+        <mets:FLocat xlink:href="./txt/TXT_ANL000001_0044.txt" LOCTYPE="URL" />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp ID="TECHMDGRP" USE="Technical Metadata">
+      <mets:file ID="AMD_METS_ANL000001_0001" MIMETYPE="text/xml" SIZE="55601" CHECKSUMTYPE="MD5" CHECKSUM="daf74b381f77a075d23b39d5fadd6f72" SEQ="0" CREATED="2012-01-18T17:37:46">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0001.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0002" MIMETYPE="text/xml" SIZE="36122" CHECKSUMTYPE="MD5" CHECKSUM="c16ffb7f8316cd0e31de63ca1d901262" SEQ="1" CREATED="2012-01-18T17:37:48">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0002.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0003" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="a697d08c8fc9a5d2ae702932e1559cbe" SEQ="2" CREATED="2012-01-18T17:37:49">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0003.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0004" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="7fc38d5ef009ae3900f7b805acc71dbf" SEQ="3" CREATED="2012-01-18T17:37:50">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0004.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0005" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="df297a215165a5903e1328d2ab2d525e" SEQ="4" CREATED="2012-01-18T17:37:51">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0005.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0006" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="5c64de1f6cf259fcb1f2143cf8bd3e41" SEQ="5" CREATED="2012-01-18T17:37:52">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0006.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0007" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="0d9c4e55534fd52a34e2a612aba3be1b" SEQ="6" CREATED="2012-01-18T17:37:54">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0007.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0008" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="b917cf6256ea6f83ab1c6b7ca1fc0d5e" SEQ="7" CREATED="2012-01-18T17:37:55">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0008.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0009" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="ce75cc148a9134b3353ea90c969a34aa" SEQ="8" CREATED="2012-01-18T17:37:56">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0009.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0010" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="a8126f9cec15265263283d594c43df2e" SEQ="9" CREATED="2012-01-18T17:37:57">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0010.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0011" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="4bed8aa2b7d9be18376f9effe4ef3a6a" SEQ="10" CREATED="2012-01-18T17:37:59">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0011.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0012" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="4382eedbe61531232ab6c57302c84eb8" SEQ="11" CREATED="2012-01-18T17:38:00">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0012.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0013" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="52dfe097c42304723a21e1ce1a6e342d" SEQ="12" CREATED="2012-01-18T17:38:01">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0013.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0014" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="e5f10fd1fec20cfdaf0e7541a62995e8" SEQ="13" CREATED="2012-01-18T17:38:02">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0014.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0015" MIMETYPE="text/xml" SIZE="55603" CHECKSUMTYPE="MD5" CHECKSUM="426acab3271b066d685db9851d45326e" SEQ="14" CREATED="2012-01-18T17:38:04">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0015.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0016" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="de1c0922eb3f4a86db26fc4ff0d9665f" SEQ="15" CREATED="2012-01-18T17:38:05">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0016.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0017" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="8fd9248ad1b54ac759769bd356ce0a03" SEQ="16" CREATED="2012-01-18T17:38:06">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0017.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0018" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="ec1f4d3ba3222dc94a6988b450ec22f4" SEQ="17" CREATED="2012-01-18T17:38:07">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0018.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0019" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="2e0864600ed08aea2daac01ff9a625d8" SEQ="18" CREATED="2012-01-18T17:38:08">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0019.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0020" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="d8820b47c8c4683d982270fbc8f0f6b2" SEQ="19" CREATED="2012-01-18T17:38:09">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0020.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0021" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="9ba995e2ce75e49f97f80eee6501195d" SEQ="20" CREATED="2012-01-18T17:38:11">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0021.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0022" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="230ee36b66639203ace259a3036e74ba" SEQ="21" CREATED="2012-01-18T17:38:12">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0022.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0023" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="516f46049785a17bda12442cd27f1933" SEQ="22" CREATED="2012-01-18T17:38:13">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0023.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0024" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="787ece549a4f4c93aa12ee7b4b259cab" SEQ="23" CREATED="2012-01-18T17:38:14">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0024.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0025" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="05e8d3596e9de864310845d4cd3463a0" SEQ="24" CREATED="2012-01-18T17:38:15">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0025.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0026" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="f22b320c4bc90c8c6e86ed62a4f97d30" SEQ="25" CREATED="2012-01-18T17:38:16">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0026.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0027" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="ff16d888d50ca2636ad549e54558a89b" SEQ="26" CREATED="2012-01-18T17:38:18">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0027.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0028" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="2e3e656885ffeca9193d008a98c11ec7" SEQ="27" CREATED="2012-01-18T17:38:19">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0028.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0029" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="7192216509c932840673fa727c77c96a" SEQ="28" CREATED="2012-01-18T17:38:20">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0029.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0030" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="9040ecd4f8a2b314aecd7271766b3539" SEQ="29" CREATED="2012-01-18T17:38:21">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0030.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0031" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="2289a45e5d0d2860b7b8eb7082e8714d" SEQ="30" CREATED="2012-01-18T17:38:22">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0031.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0032" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="29a4bf4849aec0fcc89248b54448c405" SEQ="31" CREATED="2012-01-18T17:38:23">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0032.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0033" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="427977c3d9ff330dcd9475f5bd219e80" SEQ="32" CREATED="2012-01-18T17:38:25">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0033.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0034" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="6bbb0ecdaf108152d204ddb82935c42a" SEQ="33" CREATED="2012-01-18T17:38:26">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0034.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0035" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="66b8038488eb57ec1e19de68db1e50cd" SEQ="34" CREATED="2012-01-18T17:38:27">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0035.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0036" MIMETYPE="text/xml" SIZE="36130" CHECKSUMTYPE="MD5" CHECKSUM="e146e95104b977120636c74575eebd33" SEQ="35" CREATED="2012-01-18T17:38:28">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0036.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0037" MIMETYPE="text/xml" SIZE="55604" CHECKSUMTYPE="MD5" CHECKSUM="36dd968b72108b2b285c303439397e15" SEQ="36" CREATED="2012-01-18T17:38:29">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0037.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0038" MIMETYPE="text/xml" SIZE="23743" CHECKSUMTYPE="MD5" CHECKSUM="c660cf24dee6548eff0844eba1200bec" SEQ="37" CREATED="2012-01-18T17:38:30">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0038.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0039" MIMETYPE="text/xml" SIZE="41743" CHECKSUMTYPE="MD5" CHECKSUM="fd4656a32a892b02b5253a1d279fe487" SEQ="38" CREATED="2012-01-18T17:38:32">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0039.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0040" MIMETYPE="text/xml" SIZE="30976" CHECKSUMTYPE="MD5" CHECKSUM="ef74605535e5e6d5e2e4cb06af198d58" SEQ="39" CREATED="2012-01-18T17:38:33">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0040.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0041" MIMETYPE="text/xml" SIZE="59278" CHECKSUMTYPE="MD5" CHECKSUM="5e659299be6cb196b3c3d858e3a8b624" SEQ="40" CREATED="2012-01-18T17:38:34">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0041.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0042" MIMETYPE="text/xml" SIZE="30975" CHECKSUMTYPE="MD5" CHECKSUM="2556be466fa25529cc9eb7c9ae207b65" SEQ="41" CREATED="2012-01-18T17:38:35">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0042.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0043" MIMETYPE="text/xml" SIZE="59270" CHECKSUMTYPE="MD5" CHECKSUM="07acd7eb942cb65e3841fc32c72154c7" SEQ="42" CREATED="2012-01-18T17:38:36">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0043.xml" LOCTYPE="URL" />
+      </mets:file>
+      <mets:file ID="AMD_METS_ANL000001_0044" MIMETYPE="text/xml" SIZE="30974" CHECKSUMTYPE="MD5" CHECKSUM="12afe1e9687954e40a8e8ac26d670f66" SEQ="43" CREATED="2012-01-18T17:38:38">
+        <mets:FLocat xlink:href="./amdSec/AMD_METS_ANL000001_0044.xml" LOCTYPE="URL" />
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+  <mets:structMap LABEL="Physical_Structure" TYPE="PHYSICAL">
+    <mets:div LABEL="Obchodní právo no.1 1992-" TYPE="magazine" ID="DIV_P_0000" DMDID="MODSMD_TITLE">
+      <mets:div ID="DIV_P_PAGE_0000" ORDER="0" ORDERLABEL="[a]" TYPE="titlePage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0001" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0001" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0001" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0001" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0001" ORDER="1" ORDERLABEL="[b]" TYPE="blank">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0002" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0002" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0002" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0002" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0002" ORDER="2" ORDERLABEL="1" TYPE="tableOfContents">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0003" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0003" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0003" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0003" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0003" ORDER="3" ORDERLABEL="2" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0004" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0004" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0004" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0004" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0004" ORDER="4" ORDERLABEL="3" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0005" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0005" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0005" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0005" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0005" ORDER="5" ORDERLABEL="4" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0006" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0006" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0006" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0006" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0006" ORDER="6" ORDERLABEL="5" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0007" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0007" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0007" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0007" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0007" ORDER="7" ORDERLABEL="6" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0008" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0008" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0008" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0008" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0008" ORDER="8" ORDERLABEL="7" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0009" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0009" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0009" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0009" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0009" ORDER="9" ORDERLABEL="8" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0010" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0010" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0010" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0010" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0010" ORDER="10" ORDERLABEL="9" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0011" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0011" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0011" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0011" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0011" ORDER="11" ORDERLABEL="10" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0012" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0012" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0012" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0012" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0012" ORDER="12" ORDERLABEL="11" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0013" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0013" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0013" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0013" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0013" ORDER="13" ORDERLABEL="12" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0014" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0014" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0014" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0014" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0014" ORDER="14" ORDERLABEL="13" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0015" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0015" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0015" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0015" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0015" ORDER="15" ORDERLABEL="14" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0016" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0016" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0016" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0016" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0016" ORDER="16" ORDERLABEL="15" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0017" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0017" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0017" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0017" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0017" ORDER="17" ORDERLABEL="16" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0018" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0018" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0018" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0018" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0018" ORDER="18" ORDERLABEL="17" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0019" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0019" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0019" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0019" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0019" ORDER="19" ORDERLABEL="18" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0020" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0020" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0020" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0020" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0020" ORDER="20" ORDERLABEL="19" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0021" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0021" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0021" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0021" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0021" ORDER="21" ORDERLABEL="20" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0022" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0022" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0022" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0022" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0022" ORDER="22" ORDERLABEL="21" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0023" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0023" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0023" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0023" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0023" ORDER="23" ORDERLABEL="22" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0024" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0024" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0024" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0024" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0024" ORDER="24" ORDERLABEL="23" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0025" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0025" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0025" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0025" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0025" ORDER="25" ORDERLABEL="24" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0026" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0026" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0026" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0026" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0026" ORDER="26" ORDERLABEL="25" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0027" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0027" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0027" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0027" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0027" ORDER="27" ORDERLABEL="26" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0028" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0028" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0028" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0028" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0028" ORDER="28" ORDERLABEL="27" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0029" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0029" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0029" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0029" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0029" ORDER="29" ORDERLABEL="28" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0030" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0030" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0030" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0030" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0030" ORDER="30" ORDERLABEL="29" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0031" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0031" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0031" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0031" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0031" ORDER="31" ORDERLABEL="30" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0032" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0032" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0032" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0032" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0032" ORDER="32" ORDERLABEL="31" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0033" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0033" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0033" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0033" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0033" ORDER="33" ORDERLABEL="32" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0034" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0034" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0034" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0034" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0034" ORDER="34" ORDERLABEL="33" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0035" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0035" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0035" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0035" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0035" ORDER="35" ORDERLABEL="34" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0036" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0036" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0036" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0036" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0036" ORDER="36" ORDERLABEL="35" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0037" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0037" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0037" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0037" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0037" ORDER="37" ORDERLABEL="36" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0038" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0038" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0038" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0038" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0038" ORDER="38" ORDERLABEL="[37]" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0039" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0039" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0039" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0039" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0039" ORDER="39" ORDERLABEL="38" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0040" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0040" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0040" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0040" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0040" ORDER="40" ORDERLABEL="39" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0041" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0041" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0041" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0041" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0041" ORDER="41" ORDERLABEL="[40]" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0042" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0042" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0042" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0042" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0042" ORDER="42" ORDERLABEL="[41]" TYPE="blank">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0043" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0043" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0043" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0043" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+      <mets:div ID="DIV_P_PAGE_0043" ORDER="43" ORDERLABEL="[42]" TYPE="normalPage">
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="MC_ANL000001_0044" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="ALTO_ANL000001_0044" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="TXT_ANL000001_0044" />
+          </mets:par>
+        </mets:fptr>
+        <mets:fptr>
+          <mets:par>
+            <mets:area FILEID="AMD_METS_ANL000001_0044" />
+          </mets:par>
+        </mets:fptr>
+      </mets:div>
+    </mets:div>
+  </mets:structMap>
+  <mets:structMap LABEL="Logical_Structure" TYPE="LOGICAL">
+    <mets:div LABEL="Zástavní právo  a rozhodovací  činnost soudu  -I. část" TYPE="ISSUE" ID="ISSUE_1" DMDID="MODSMD_ISSUE_1">
+      <mets:div ID="ART_0001" TYPE="ARTICLE" ORDER="0" LABEL="Zástavní právo  a rozhodovací  činnost soudu  -I. část" DMDID="MODSMD_ART_0001">
+        <mets:div ID="ART_0001_0001" TYPE="AUTHOR" ORDER="0">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0002" TYPE="TITLE" ORDER="1">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0003" TYPE="NORMAL_TEXT" ORDER="2">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0004" TYPE="NORMAL_TEXT" ORDER="3">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0005" TYPE="NORMAL_TEXT" ORDER="4">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0006" TYPE="NORMAL_TEXT" ORDER="5">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0007" TYPE="NORMAL_TEXT" ORDER="6">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0008" TYPE="NORMAL_TEXT" ORDER="7">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0009" TYPE="NORMAL_TEXT" ORDER="8">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0010" TYPE="NORMAL_TEXT" ORDER="9">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0011" TYPE="NORMAL_TEXT" ORDER="10">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock15" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0012" TYPE="NORMAL_TEXT" ORDER="11">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock16" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0013" TYPE="NORMAL_TEXT" ORDER="12">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0004" BETYPE="IDREF" BEGIN="TextBlock17" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0014" TYPE="NORMAL_TEXT" ORDER="13">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0005" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0015" TYPE="NORMAL_TEXT" ORDER="14">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0005" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0016" TYPE="NORMAL_TEXT" ORDER="15">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0005" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0017" TYPE="NORMAL_TEXT" ORDER="16">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0005" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0018" TYPE="NORMAL_TEXT" ORDER="17">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0005" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0019" TYPE="NORMAL_TEXT" ORDER="18">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0005" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0020" TYPE="NORMAL_TEXT" ORDER="19">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0005" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0021" TYPE="NORMAL_TEXT" ORDER="20">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0005" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0022" TYPE="NORMAL_TEXT" ORDER="21">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0005" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0023" TYPE="NORMAL_TEXT" ORDER="22">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0006" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0024" TYPE="NORMAL_TEXT" ORDER="23">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0006" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0025" TYPE="NORMAL_TEXT" ORDER="24">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0006" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0026" TYPE="NORMAL_TEXT" ORDER="25">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0006" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0027" TYPE="NORMAL_TEXT" ORDER="26">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0006" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0028" TYPE="NORMAL_TEXT" ORDER="27">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0006" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0029" TYPE="NORMAL_TEXT" ORDER="28">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0006" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0030" TYPE="NORMAL_TEXT" ORDER="29">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0006" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0031" TYPE="NORMAL_TEXT" ORDER="30">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0006" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0032" TYPE="NORMAL_TEXT" ORDER="31">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0033" TYPE="NORMAL_TEXT" ORDER="32">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0034" TYPE="NORMAL_TEXT" ORDER="33">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0035" TYPE="NORMAL_TEXT" ORDER="34">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0036" TYPE="NORMAL_TEXT" ORDER="35">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0037" TYPE="NORMAL_TEXT" ORDER="36">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0038" TYPE="NORMAL_TEXT" ORDER="37">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0039" TYPE="NORMAL_TEXT" ORDER="38">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0040" TYPE="NORMAL_TEXT" ORDER="39">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0041" TYPE="NORMAL_TEXT" ORDER="40">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0042" TYPE="NORMAL_TEXT" ORDER="41">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0007" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0043" TYPE="NORMAL_TEXT" ORDER="42">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0044" TYPE="NORMAL_TEXT" ORDER="43">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0045" TYPE="NORMAL_TEXT" ORDER="44">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0046" TYPE="NORMAL_TEXT" ORDER="45">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0047" TYPE="NORMAL_TEXT" ORDER="46">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0048" TYPE="NORMAL_TEXT" ORDER="47">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0049" TYPE="NORMAL_TEXT" ORDER="48">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0050" TYPE="NORMAL_TEXT" ORDER="49">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0051" TYPE="NORMAL_TEXT" ORDER="50">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0052" TYPE="NORMAL_TEXT" ORDER="51">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0053" TYPE="NORMAL_TEXT" ORDER="52">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0054" TYPE="NORMAL_TEXT" ORDER="53">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0055" TYPE="NORMAL_TEXT" ORDER="54">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0008" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0056" TYPE="NORMAL_TEXT" ORDER="55">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0057" TYPE="NORMAL_TEXT" ORDER="56">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0058" TYPE="NORMAL_TEXT" ORDER="57">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0059" TYPE="NORMAL_TEXT" ORDER="58">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0060" TYPE="NORMAL_TEXT" ORDER="59">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0061" TYPE="NORMAL_TEXT" ORDER="60">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0062" TYPE="NORMAL_TEXT" ORDER="61">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0063" TYPE="NORMAL_TEXT" ORDER="62">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0064" TYPE="NORMAL_TEXT" ORDER="63">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0065" TYPE="NORMAL_TEXT" ORDER="64">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0009" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0066" TYPE="NORMAL_TEXT" ORDER="65">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0067" TYPE="NORMAL_TEXT" ORDER="66">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0068" TYPE="NORMAL_TEXT" ORDER="67">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0069" TYPE="NORMAL_TEXT" ORDER="68">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0070" TYPE="NORMAL_TEXT" ORDER="69">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0071" TYPE="NORMAL_TEXT" ORDER="70">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0072" TYPE="NORMAL_TEXT" ORDER="71">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0073" TYPE="NORMAL_TEXT" ORDER="72">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0074" TYPE="NORMAL_TEXT" ORDER="73">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0075" TYPE="NORMAL_TEXT" ORDER="74">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0076" TYPE="NORMAL_TEXT" ORDER="75">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0010" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0077" TYPE="NORMAL_TEXT" ORDER="76">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0078" TYPE="NORMAL_TEXT" ORDER="77">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0079" TYPE="NORMAL_TEXT" ORDER="78">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0080" TYPE="NORMAL_TEXT" ORDER="79">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0081" TYPE="NORMAL_TEXT" ORDER="80">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0082" TYPE="NORMAL_TEXT" ORDER="81">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0083" TYPE="NORMAL_TEXT" ORDER="82">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0084" TYPE="NORMAL_TEXT" ORDER="83">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0085" TYPE="NORMAL_TEXT" ORDER="84">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0086" TYPE="NORMAL_TEXT" ORDER="85">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0087" TYPE="NORMAL_TEXT" ORDER="86">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0088" TYPE="NORMAL_TEXT" ORDER="87">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0011" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0089" TYPE="NORMAL_TEXT" ORDER="88">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0012" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0090" TYPE="NORMAL_TEXT" ORDER="89">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0012" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0091" TYPE="NORMAL_TEXT" ORDER="90">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0012" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0092" TYPE="NORMAL_TEXT" ORDER="91">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0012" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0093" TYPE="NORMAL_TEXT" ORDER="92">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0012" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0094" TYPE="NORMAL_TEXT" ORDER="93">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0012" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0095" TYPE="NORMAL_TEXT" ORDER="94">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0012" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0096" TYPE="NORMAL_TEXT" ORDER="95">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0012" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0097" TYPE="NORMAL_TEXT" ORDER="96">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0013" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0098" TYPE="NORMAL_TEXT" ORDER="97">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0013" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0099" TYPE="NORMAL_TEXT" ORDER="98">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0013" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0100" TYPE="NORMAL_TEXT" ORDER="99">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0013" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0101" TYPE="NORMAL_TEXT" ORDER="100">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0013" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0102" TYPE="NORMAL_TEXT" ORDER="101">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0013" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0103" TYPE="NORMAL_TEXT" ORDER="102">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0013" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0104" TYPE="NORMAL_TEXT" ORDER="103">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0013" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0105" TYPE="NORMAL_TEXT" ORDER="104">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0106" TYPE="NORMAL_TEXT" ORDER="105">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0107" TYPE="NORMAL_TEXT" ORDER="106">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0108" TYPE="NORMAL_TEXT" ORDER="107">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0109" TYPE="NORMAL_TEXT" ORDER="108">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0110" TYPE="NORMAL_TEXT" ORDER="109">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0111" TYPE="NORMAL_TEXT" ORDER="110">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0112" TYPE="NORMAL_TEXT" ORDER="111">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0113" TYPE="NORMAL_TEXT" ORDER="112">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0114" TYPE="NORMAL_TEXT" ORDER="113">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0115" TYPE="NORMAL_TEXT" ORDER="114">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0116" TYPE="NORMAL_TEXT" ORDER="115">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0117" TYPE="NORMAL_TEXT" ORDER="116">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0014" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0118" TYPE="NORMAL_TEXT" ORDER="117">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0015" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0119" TYPE="NORMAL_TEXT" ORDER="118">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0015" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0120" TYPE="NORMAL_TEXT" ORDER="119">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0015" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0121" TYPE="NORMAL_TEXT" ORDER="120">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0015" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0122" TYPE="NORMAL_TEXT" ORDER="121">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0015" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0123" TYPE="NORMAL_TEXT" ORDER="122">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0015" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0001_0124" TYPE="NORMAL_TEXT" ORDER="123">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0015" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+      </mets:div>
+      <mets:div ID="ART_0002" TYPE="ARTICLE" ORDER="1" LABEL="Vznik oprávnění  uplynutím lhůty  podle zákona  o volném pohybu  služeb" DMDID="MODSMD_ART_0002">
+        <mets:div ID="ART_0002_0001" TYPE="AUTHOR" ORDER="0">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0002" TYPE="TITLE" ORDER="1">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0003" TYPE="NORMAL_TEXT" ORDER="2">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0004" TYPE="NORMAL_TEXT" ORDER="3">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0005" TYPE="NORMAL_TEXT" ORDER="4">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0006" TYPE="NORMAL_TEXT" ORDER="5">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0007" TYPE="NORMAL_TEXT" ORDER="6">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0008" TYPE="NORMAL_TEXT" ORDER="7">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0009" TYPE="NORMAL_TEXT" ORDER="8">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0010" TYPE="NORMAL_TEXT" ORDER="9">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock15" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0011" TYPE="NORMAL_TEXT" ORDER="10">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock16" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0012" TYPE="NORMAL_TEXT" ORDER="11">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock17" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0013" TYPE="NORMAL_TEXT" ORDER="12">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0016" BETYPE="IDREF" BEGIN="TextBlock18" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0014" TYPE="NORMAL_TEXT" ORDER="13">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0015" TYPE="NORMAL_TEXT" ORDER="14">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0016" TYPE="NORMAL_TEXT" ORDER="15">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0017" TYPE="NORMAL_TEXT" ORDER="16">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0018" TYPE="NORMAL_TEXT" ORDER="17">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0019" TYPE="NORMAL_TEXT" ORDER="18">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0020" TYPE="NORMAL_TEXT" ORDER="19">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0021" TYPE="NORMAL_TEXT" ORDER="20">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0022" TYPE="NORMAL_TEXT" ORDER="21">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0023" TYPE="NORMAL_TEXT" ORDER="22">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0024" TYPE="NORMAL_TEXT" ORDER="23">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0025" TYPE="NORMAL_TEXT" ORDER="24">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0026" TYPE="NORMAL_TEXT" ORDER="25">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0017" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0027" TYPE="NORMAL_TEXT" ORDER="26">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0028" TYPE="NORMAL_TEXT" ORDER="27">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0029" TYPE="NORMAL_TEXT" ORDER="28">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0030" TYPE="NORMAL_TEXT" ORDER="29">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0031" TYPE="NORMAL_TEXT" ORDER="30">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0032" TYPE="NORMAL_TEXT" ORDER="31">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0033" TYPE="NORMAL_TEXT" ORDER="32">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0034" TYPE="NORMAL_TEXT" ORDER="33">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0035" TYPE="NORMAL_TEXT" ORDER="34">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0036" TYPE="NORMAL_TEXT" ORDER="35">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0037" TYPE="NORMAL_TEXT" ORDER="36">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0038" TYPE="NORMAL_TEXT" ORDER="37">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0039" TYPE="NORMAL_TEXT" ORDER="38">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0018" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0040" TYPE="NORMAL_TEXT" ORDER="39">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0019" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0041" TYPE="NORMAL_TEXT" ORDER="40">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0019" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0042" TYPE="NORMAL_TEXT" ORDER="41">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0019" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0043" TYPE="NORMAL_TEXT" ORDER="42">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0019" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0044" TYPE="NORMAL_TEXT" ORDER="43">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0019" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0045" TYPE="NORMAL_TEXT" ORDER="44">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0019" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0046" TYPE="NORMAL_TEXT" ORDER="45">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0019" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0047" TYPE="NORMAL_TEXT" ORDER="46">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0019" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0048" TYPE="NORMAL_TEXT" ORDER="47">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0020" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0049" TYPE="NORMAL_TEXT" ORDER="48">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0020" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0050" TYPE="NORMAL_TEXT" ORDER="49">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0020" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0051" TYPE="NORMAL_TEXT" ORDER="50">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0020" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0052" TYPE="NORMAL_TEXT" ORDER="51">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0020" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0053" TYPE="NORMAL_TEXT" ORDER="52">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0020" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0054" TYPE="NORMAL_TEXT" ORDER="53">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0020" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0055" TYPE="NORMAL_TEXT" ORDER="54">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0020" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0056" TYPE="NORMAL_TEXT" ORDER="55">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0020" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0057" TYPE="NORMAL_TEXT" ORDER="56">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0058" TYPE="NORMAL_TEXT" ORDER="57">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0059" TYPE="NORMAL_TEXT" ORDER="58">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0060" TYPE="NORMAL_TEXT" ORDER="59">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0061" TYPE="NORMAL_TEXT" ORDER="60">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0062" TYPE="NORMAL_TEXT" ORDER="61">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0063" TYPE="NORMAL_TEXT" ORDER="62">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0064" TYPE="NORMAL_TEXT" ORDER="63">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0065" TYPE="NORMAL_TEXT" ORDER="64">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0066" TYPE="NORMAL_TEXT" ORDER="65">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0067" TYPE="NORMAL_TEXT" ORDER="66">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0068" TYPE="NORMAL_TEXT" ORDER="67">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0069" TYPE="NORMAL_TEXT" ORDER="68">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0021" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0070" TYPE="NORMAL_TEXT" ORDER="69">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0022" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0071" TYPE="NORMAL_TEXT" ORDER="70">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0022" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0072" TYPE="NORMAL_TEXT" ORDER="71">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0022" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0073" TYPE="NORMAL_TEXT" ORDER="72">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0022" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0074" TYPE="NORMAL_TEXT" ORDER="73">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0022" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0075" TYPE="NORMAL_TEXT" ORDER="74">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0076" TYPE="NORMAL_TEXT" ORDER="75">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0077" TYPE="NORMAL_TEXT" ORDER="76">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0078" TYPE="NORMAL_TEXT" ORDER="77">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0079" TYPE="NORMAL_TEXT" ORDER="78">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0080" TYPE="NORMAL_TEXT" ORDER="79">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0081" TYPE="NORMAL_TEXT" ORDER="80">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0082" TYPE="NORMAL_TEXT" ORDER="81">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0083" TYPE="NORMAL_TEXT" ORDER="82">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0084" TYPE="NORMAL_TEXT" ORDER="83">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0085" TYPE="NORMAL_TEXT" ORDER="84">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0023" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0086" TYPE="NORMAL_TEXT" ORDER="85">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0087" TYPE="NORMAL_TEXT" ORDER="86">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0088" TYPE="NORMAL_TEXT" ORDER="87">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0089" TYPE="NORMAL_TEXT" ORDER="88">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0090" TYPE="NORMAL_TEXT" ORDER="89">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0091" TYPE="NORMAL_TEXT" ORDER="90">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0092" TYPE="NORMAL_TEXT" ORDER="91">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0093" TYPE="NORMAL_TEXT" ORDER="92">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0094" TYPE="NORMAL_TEXT" ORDER="93">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0095" TYPE="NORMAL_TEXT" ORDER="94">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0024" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0096" TYPE="NORMAL_TEXT" ORDER="95">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0025" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0097" TYPE="NORMAL_TEXT" ORDER="96">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0025" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0098" TYPE="NORMAL_TEXT" ORDER="97">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0025" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0099" TYPE="NORMAL_TEXT" ORDER="98">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0027" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0100" TYPE="NORMAL_TEXT" ORDER="99">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0027" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0101" TYPE="NORMAL_TEXT" ORDER="100">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0027" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0002_0102" TYPE="NORMAL_TEXT" ORDER="101">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0027" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+      </mets:div>
+      <mets:div ID="ART_0003" TYPE="ARTICLE" ORDER="2" LABEL="SMLOUVA O POSTOUPENÍ  POHLEDÁVKY - NEPLATNOST, POMĚR  VÝŠE POHLEDÁVKY A ÚPLATY" DMDID="MODSMD_ART_0003">
+        <mets:div ID="ART_0003_0001" TYPE="TITLE" ORDER="0">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0002" TYPE="NORMAL_TEXT" ORDER="1">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0003" TYPE="NORMAL_TEXT" ORDER="2">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0004" TYPE="NORMAL_TEXT" ORDER="3">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0005" TYPE="NORMAL_TEXT" ORDER="4">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0006" TYPE="NORMAL_TEXT" ORDER="5">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0007" TYPE="NORMAL_TEXT" ORDER="6">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0008" TYPE="NORMAL_TEXT" ORDER="7">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0009" TYPE="NORMAL_TEXT" ORDER="8">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock15" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0010" TYPE="NORMAL_TEXT" ORDER="9">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0028" BETYPE="IDREF" BEGIN="TextBlock16" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0011" TYPE="NORMAL_TEXT" ORDER="10">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0029" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0012" TYPE="NORMAL_TEXT" ORDER="11">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0029" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0013" TYPE="NORMAL_TEXT" ORDER="12">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0029" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0014" TYPE="NORMAL_TEXT" ORDER="13">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0029" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0015" TYPE="NORMAL_TEXT" ORDER="14">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0029" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0016" TYPE="NORMAL_TEXT" ORDER="15">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0029" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0017" TYPE="NORMAL_TEXT" ORDER="16">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0029" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0018" TYPE="NORMAL_TEXT" ORDER="17">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0029" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0019" TYPE="NORMAL_TEXT" ORDER="18">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0029" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0020" TYPE="NORMAL_TEXT" ORDER="19">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0030" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0021" TYPE="NORMAL_TEXT" ORDER="20">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0030" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0022" TYPE="NORMAL_TEXT" ORDER="21">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0030" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0023" TYPE="NORMAL_TEXT" ORDER="22">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0030" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0024" TYPE="NORMAL_TEXT" ORDER="23">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0030" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0025" TYPE="NORMAL_TEXT" ORDER="24">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0030" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0026" TYPE="NORMAL_TEXT" ORDER="25">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0030" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0027" TYPE="NORMAL_TEXT" ORDER="26">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0030" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0028" TYPE="NORMAL_TEXT" ORDER="27">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0030" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0029" TYPE="NORMAL_TEXT" ORDER="28">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0031" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0030" TYPE="NORMAL_TEXT" ORDER="29">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0031" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0003_0031" TYPE="AUTHOR" ORDER="30">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0031" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+      </mets:div>
+      <mets:div ID="ART_0004" TYPE="ARTICLE" ORDER="3" LABEL="VOLNÝ POHYB SLUŽEB - PRAVIDLA  HOSPODÁŘSKÉ SOUTĚŽE V ODVĚTVÍ  DOPRAVY  (ČLÁNEK 49 SFEU)" DMDID="MODSMD_ART_0004">
+        <mets:div ID="ART_0004_0001" TYPE="TITLE" ORDER="0">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0031" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0002" TYPE="NORMAL_TEXT" ORDER="1">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0031" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0003" TYPE="NORMAL_TEXT" ORDER="2">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0031" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0004" TYPE="NORMAL_TEXT" ORDER="3">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0031" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0005" TYPE="NORMAL_TEXT" ORDER="4">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0031" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0006" TYPE="NORMAL_TEXT" ORDER="5">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0031" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0007" TYPE="NORMAL_TEXT" ORDER="6">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0008" TYPE="NORMAL_TEXT" ORDER="7">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0009" TYPE="NORMAL_TEXT" ORDER="8">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0010" TYPE="NORMAL_TEXT" ORDER="9">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0011" TYPE="NORMAL_TEXT" ORDER="10">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0012" TYPE="NORMAL_TEXT" ORDER="11">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0013" TYPE="NORMAL_TEXT" ORDER="12">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0014" TYPE="NORMAL_TEXT" ORDER="13">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0015" TYPE="NORMAL_TEXT" ORDER="14">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0016" TYPE="NORMAL_TEXT" ORDER="15">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0017" TYPE="NORMAL_TEXT" ORDER="16">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0018" TYPE="NORMAL_TEXT" ORDER="17">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock15" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0019" TYPE="NORMAL_TEXT" ORDER="18">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock16" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0020" TYPE="NORMAL_TEXT" ORDER="19">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0032" BETYPE="IDREF" BEGIN="TextBlock17" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0021" TYPE="NORMAL_TEXT" ORDER="20">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0022" TYPE="NORMAL_TEXT" ORDER="21">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0023" TYPE="NORMAL_TEXT" ORDER="22">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0024" TYPE="NORMAL_TEXT" ORDER="23">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0025" TYPE="NORMAL_TEXT" ORDER="24">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0026" TYPE="NORMAL_TEXT" ORDER="25">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0027" TYPE="NORMAL_TEXT" ORDER="26">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0028" TYPE="NORMAL_TEXT" ORDER="27">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0029" TYPE="NORMAL_TEXT" ORDER="28">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0030" TYPE="NORMAL_TEXT" ORDER="29">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0031" TYPE="NORMAL_TEXT" ORDER="30">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0032" TYPE="NORMAL_TEXT" ORDER="31">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0033" TYPE="NORMAL_TEXT" ORDER="32">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0034" TYPE="NORMAL_TEXT" ORDER="33">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0035" TYPE="NORMAL_TEXT" ORDER="34">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0036" TYPE="NORMAL_TEXT" ORDER="35">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock15" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0037" TYPE="NORMAL_TEXT" ORDER="36">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock16" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0038" TYPE="NORMAL_TEXT" ORDER="37">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock17" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0039" TYPE="NORMAL_TEXT" ORDER="38">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock18" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0040" TYPE="NORMAL_TEXT" ORDER="39">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock19" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0041" TYPE="NORMAL_TEXT" ORDER="40">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0033" BETYPE="IDREF" BEGIN="TextBlock20" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0042" TYPE="NORMAL_TEXT" ORDER="41">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0043" TYPE="NORMAL_TEXT" ORDER="42">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0044" TYPE="NORMAL_TEXT" ORDER="43">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0045" TYPE="NORMAL_TEXT" ORDER="44">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0046" TYPE="NORMAL_TEXT" ORDER="45">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0047" TYPE="NORMAL_TEXT" ORDER="46">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0048" TYPE="NORMAL_TEXT" ORDER="47">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0049" TYPE="NORMAL_TEXT" ORDER="48">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0050" TYPE="NORMAL_TEXT" ORDER="49">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0051" TYPE="NORMAL_TEXT" ORDER="50">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0052" TYPE="NORMAL_TEXT" ORDER="51">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0053" TYPE="NORMAL_TEXT" ORDER="52">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock15" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0054" TYPE="NORMAL_TEXT" ORDER="53">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0034" BETYPE="IDREF" BEGIN="TextBlock16" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0055" TYPE="NORMAL_TEXT" ORDER="54">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0056" TYPE="NORMAL_TEXT" ORDER="55">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0057" TYPE="NORMAL_TEXT" ORDER="56">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0058" TYPE="NORMAL_TEXT" ORDER="57">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0059" TYPE="NORMAL_TEXT" ORDER="58">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0060" TYPE="NORMAL_TEXT" ORDER="59">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0061" TYPE="NORMAL_TEXT" ORDER="60">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0062" TYPE="NORMAL_TEXT" ORDER="61">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0063" TYPE="NORMAL_TEXT" ORDER="62">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0064" TYPE="NORMAL_TEXT" ORDER="63">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0065" TYPE="NORMAL_TEXT" ORDER="64">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0066" TYPE="NORMAL_TEXT" ORDER="65">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0035" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0067" TYPE="NORMAL_TEXT" ORDER="66">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0068" TYPE="NORMAL_TEXT" ORDER="67">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0069" TYPE="NORMAL_TEXT" ORDER="68">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0070" TYPE="NORMAL_TEXT" ORDER="69">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0071" TYPE="NORMAL_TEXT" ORDER="70">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0072" TYPE="NORMAL_TEXT" ORDER="71">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0073" TYPE="NORMAL_TEXT" ORDER="72">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0074" TYPE="NORMAL_TEXT" ORDER="73">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0075" TYPE="NORMAL_TEXT" ORDER="74">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0076" TYPE="NORMAL_TEXT" ORDER="75">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0077" TYPE="NORMAL_TEXT" ORDER="76">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0036" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0078" TYPE="NORMAL_TEXT" ORDER="77">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0079" TYPE="NORMAL_TEXT" ORDER="78">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0080" TYPE="NORMAL_TEXT" ORDER="79">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0081" TYPE="NORMAL_TEXT" ORDER="80">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0082" TYPE="NORMAL_TEXT" ORDER="81">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0083" TYPE="NORMAL_TEXT" ORDER="82">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0084" TYPE="NORMAL_TEXT" ORDER="83">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0085" TYPE="NORMAL_TEXT" ORDER="84">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0086" TYPE="NORMAL_TEXT" ORDER="85">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0087" TYPE="NORMAL_TEXT" ORDER="86">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0037" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0088" TYPE="NORMAL_TEXT" ORDER="87">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0089" TYPE="NORMAL_TEXT" ORDER="88">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0090" TYPE="NORMAL_TEXT" ORDER="89">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0091" TYPE="NORMAL_TEXT" ORDER="90">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0092" TYPE="NORMAL_TEXT" ORDER="91">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0093" TYPE="NORMAL_TEXT" ORDER="92">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0094" TYPE="NORMAL_TEXT" ORDER="93">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0095" TYPE="NORMAL_TEXT" ORDER="94">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0096" TYPE="NORMAL_TEXT" ORDER="95">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock12" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0097" TYPE="NORMAL_TEXT" ORDER="96">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock13" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0098" TYPE="NORMAL_TEXT" ORDER="97">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0038" BETYPE="IDREF" BEGIN="TextBlock14" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0099" TYPE="NORMAL_TEXT" ORDER="98">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0100" TYPE="NORMAL_TEXT" ORDER="99">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0101" TYPE="NORMAL_TEXT" ORDER="100">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0102" TYPE="NORMAL_TEXT" ORDER="101">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0103" TYPE="NORMAL_TEXT" ORDER="102">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock4" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0104" TYPE="NORMAL_TEXT" ORDER="103">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock5" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0105" TYPE="NORMAL_TEXT" ORDER="104">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0106" TYPE="NORMAL_TEXT" ORDER="105">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0107" TYPE="NORMAL_TEXT" ORDER="106">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0108" TYPE="NORMAL_TEXT" ORDER="107">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0109" TYPE="NORMAL_TEXT" ORDER="108">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0039" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0110" TYPE="NORMAL_TEXT" ORDER="109">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0040" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0111" TYPE="NORMAL_TEXT" ORDER="110">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0040" BETYPE="IDREF" BEGIN="TextBlock1" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0112" TYPE="NORMAL_TEXT" ORDER="111">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0040" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0113" TYPE="NORMAL_TEXT" ORDER="112">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0040" BETYPE="IDREF" BEGIN="TextBlock3" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0114" TYPE="NORMAL_TEXT" ORDER="113">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0040" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0115" TYPE="NORMAL_TEXT" ORDER="114">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0040" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0116" TYPE="NORMAL_TEXT" ORDER="115">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0040" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0117" TYPE="NORMAL_TEXT" ORDER="116">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0040" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0004_0118" TYPE="AUTHOR" ORDER="117">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0040" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+      </mets:div>
+      <mets:div ID="ART_0005" TYPE="ARTICLE" ORDER="4" LABEL="Polišenská, P.: Přehled judikatury ve věcech  dokazování  Praha: Wolters Kluwer ČR, a.s. 2010, 404  stran." DMDID="MODSMD_ART_0005">
+        <mets:div ID="ART_0005_0001" TYPE="AUTHOR" ORDER="0">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0041" BETYPE="IDREF" BEGIN="TextBlock0" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0005_0002" TYPE="TITLE" ORDER="1">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0041" BETYPE="IDREF" BEGIN="TextBlock2" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0005_0003" TYPE="NORMAL_TEXT" ORDER="2">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0041" BETYPE="IDREF" BEGIN="TextBlock6" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0005_0004" TYPE="NORMAL_TEXT" ORDER="3">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0041" BETYPE="IDREF" BEGIN="TextBlock7" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0005_0005" TYPE="NORMAL_TEXT" ORDER="4">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0041" BETYPE="IDREF" BEGIN="TextBlock8" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0005_0006" TYPE="NORMAL_TEXT" ORDER="5">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0041" BETYPE="IDREF" BEGIN="TextBlock9" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0005_0007" TYPE="NORMAL_TEXT" ORDER="6">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0041" BETYPE="IDREF" BEGIN="TextBlock10" />
+          </mets:fptr>
+        </mets:div>
+        <mets:div ID="ART_0005_0008" TYPE="NORMAL_TEXT" ORDER="7">
+          <mets:fptr>
+            <mets:area FILEID="ALTO_ANL000001_0041" BETYPE="IDREF" BEGIN="TextBlock11" />
+          </mets:fptr>
+        </mets:div>
+      </mets:div>
+    </mets:div>
+  </mets:structMap>
+</mets:mets>

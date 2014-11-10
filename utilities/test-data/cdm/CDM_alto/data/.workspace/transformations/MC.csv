@@ -1,0 +1,4 @@
+# Premis events log file. Created 2012-06-01T16:15:31.096+02:00
+"dateTime";"utility";"utilityVersion";"operation";"eventDir";"agent";"agentVersion";"file";"status";"formatDesignationName";"formatRegistryKey";"preservationLevelValue"
+"2012-06-01T16:15:31.063+02:00";"ConvertToJpeg2000Impl";"";"convert_image";"MC";"Kakadu";"6.1.4";"\data\postprocessingData\1_1000350721_00_0010.tif";"OK";"image/jp2";"fmt/151";"preservation"
+"2012-06-01T16:15:31.609+02:00";"ConvertToJpeg2000Impl";"";"convert_image";"MC";"Kakadu";"6.1.4";"\data\postprocessingData\1_1000350721_00_0011.tif";"OK";"image/jp2";"fmt/151";"preservation"

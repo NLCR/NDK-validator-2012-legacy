@@ -1,0 +1,13 @@
+Projekt pre generovanie konfiguracie pre nasledujuce artefakty pouzivane v jbpm-ws.war:
+- jbpm-core
+- domain-services
+
+Vystupom je jar subor pouzivany ako JBoss module
+
+Postup pouzitia:
+- projekt je zbuildovany
+- do adresara <JBOSS_HOME>\modules\com\logica\ndk\tm\jbpm\core\config\main\ nakopirujeme:
+	- z target subor jbpm-core-config.jar
+	- z target\classes subor module.xml
+	- (adresar main bude teda obsahovat jbpm-core-config.jar a module.xml)
+	- (index subor nie je potrebny pretoze sa generuje pocas buildu a je vo vnutri jar suboru, JBoss si po spusteni dogeneruje index subor)

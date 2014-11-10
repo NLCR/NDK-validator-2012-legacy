@@ -1,0 +1,289 @@
+<project outputDirectory="//Hdigfscl02/cdt-01/CDM-001/CDM_5e1d57ef-9063-4ac0-90b3-2507c14eb858/data/postprocessingData" layoutDirection="LTR">
+  <directories>
+    <directory path="//Hdigfscl02/cdt-01/CDM-001/CDM_5e1d57ef-9063-4ac0-90b3-2507c14eb858/data/rawData/1" id="1"/>
+  </directories>
+  <files>
+    <file dirId="1" id="2" name="1000350721_00_0004.tif"/>
+    <file dirId="1" id="5" name="1000350721_00_0005.tif"/>
+    <file dirId="1" id="8" name="1000350721_00_0006.tif"/>
+  </files>
+  <images>
+    <image subPages="1" fileImage="0" fileId="2" id="3">
+      <size width="2397" height="3507"/>
+      <dpi vertical="300" horizontal="300"/>
+    </image>
+    <image subPages="1" fileImage="0" fileId="5" id="6">
+      <size width="2397" height="3507"/>
+      <dpi vertical="300" horizontal="300"/>
+    </image>
+    <image subPages="1" fileImage="0" fileId="8" id="9">
+      <size width="2397" height="3507"/>
+      <dpi vertical="300" horizontal="300"/>
+    </image>
+  </images>
+  <pages>
+    <page imageId="3" subPage="single" selected="selected" id="4"/>
+    <page imageId="6" subPage="single" id="7"/>
+    <page imageId="9" subPage="single" id="10"/>
+  </pages>
+  <file-name-disambiguation/>
+  <filters>
+    <fix-orientation/>
+    <page-split defaultLayoutType="single-uncut">
+      <image id="3">
+        <params mode="auto">
+          <pages type="single-uncut">
+            <outline>
+              <point x="0" y="0"/>
+              <point x="2397" y="0"/>
+              <point x="2397" y="3507"/>
+              <point x="0" y="3507"/>
+              <point x="0" y="0"/>
+            </outline>
+          </pages>
+          <dependencies>
+            <rotation degrees="0"/>
+            <size width="2397" height="3507"/>
+            <layoutType>single-uncut</layoutType>
+          </dependencies>
+        </params>
+      </image>
+      <image id="6">
+        <params mode="auto">
+          <pages type="single-uncut">
+            <outline>
+              <point x="0" y="0"/>
+              <point x="2397" y="0"/>
+              <point x="2397" y="3507"/>
+              <point x="0" y="3507"/>
+              <point x="0" y="0"/>
+            </outline>
+          </pages>
+          <dependencies>
+            <rotation degrees="0"/>
+            <size width="2397" height="3507"/>
+            <layoutType>single-uncut</layoutType>
+          </dependencies>
+        </params>
+      </image>
+      <image id="9">
+        <params mode="auto">
+          <pages type="single-uncut">
+            <outline>
+              <point x="0" y="0"/>
+              <point x="2397" y="0"/>
+              <point x="2397" y="3507"/>
+              <point x="0" y="3507"/>
+              <point x="0" y="0"/>
+            </outline>
+          </pages>
+          <dependencies>
+            <rotation degrees="0"/>
+            <size width="2397" height="3507"/>
+            <layoutType>single-uncut</layoutType>
+          </dependencies>
+        </params>
+      </image>
+    </page-split>
+    <deskew>
+      <page id="4">
+        <params mode="auto" angle="0">
+          <dependencies>
+            <rotation degrees="0"/>
+            <page-outline>
+              <point x="0" y="0"/>
+              <point x="2397" y="0"/>
+              <point x="2397" y="3507"/>
+              <point x="0" y="3507"/>
+              <point x="0" y="0"/>
+            </page-outline>
+          </dependencies>
+        </params>
+      </page>
+      <page id="7">
+        <params mode="auto" angle="0.5625">
+          <dependencies>
+            <rotation degrees="0"/>
+            <page-outline>
+              <point x="0" y="0"/>
+              <point x="2397" y="0"/>
+              <point x="2397" y="3507"/>
+              <point x="0" y="3507"/>
+              <point x="0" y="0"/>
+            </page-outline>
+          </dependencies>
+        </params>
+      </page>
+      <page id="10">
+        <params mode="auto" angle="-0.375">
+          <dependencies>
+            <rotation degrees="0"/>
+            <page-outline>
+              <point x="0" y="0"/>
+              <point x="2397" y="0"/>
+              <point x="2397" y="3507"/>
+              <point x="0" y="3507"/>
+              <point x="0" y="0"/>
+            </page-outline>
+          </dependencies>
+        </params>
+      </page>
+    </deskew>
+    <select-content>
+      <page id="4">
+        <params mode="auto" page-detect="true" content-detect="false" fine-tune-corners="true">
+          <content-rect width="2324" x="24" y="48" height="3434"/>
+          <content-size-mm width="196.7653333333333" height="290.7453333333333"/>
+          <dependencies>
+            <rotated-page-outline/>
+          </dependencies>
+        </params>
+      </page>
+      <page id="7">
+        <params mode="auto" page-detect="true" content-detect="false" fine-tune-corners="true">
+          <content-rect width="2282" x="80" y="52" height="3388"/>
+          <content-size-mm width="193.2093333333333" height="286.8506666666667"/>
+          <dependencies>
+            <rotated-page-outline/>
+          </dependencies>
+        </params>
+      </page>
+      <page id="10">
+        <params mode="auto" page-detect="true" content-detect="false" fine-tune-corners="true">
+          <content-rect width="2302" x="48" y="58" height="3410"/>
+          <content-size-mm width="194.9026666666667" height="288.7133333333333"/>
+          <dependencies>
+            <rotated-page-outline/>
+          </dependencies>
+        </params>
+      </page>
+    </select-content>
+    <page-layout>
+      <page id="4">
+        <params>
+          <hardMarginsMM right="0" left="0" bottom="0" top="0"/>
+          <contentRect width="0" x="0" y="0" height="0"/>
+          <contentSizeMM width="196.7653333333333" height="290.7453333333333"/>
+          <alignment vert="top" hor="hcenter" tolerance="0.2" null="0"/>
+        </params>
+      </page>
+      <page id="7">
+        <params>
+          <hardMarginsMM right="0" left="0" bottom="0" top="0"/>
+          <contentRect width="0" x="0" y="0" height="0"/>
+          <contentSizeMM width="193.2093333333333" height="286.8506666666667"/>
+          <alignment vert="top" hor="hcenter" tolerance="0.2" null="0"/>
+        </params>
+      </page>
+      <page id="10">
+        <params>
+          <hardMarginsMM right="0" left="0" bottom="0" top="0"/>
+          <contentRect width="0" x="0" y="0" height="0"/>
+          <contentSizeMM width="194.9026666666667" height="288.7133333333333"/>
+          <alignment vert="top" hor="hcenter" tolerance="0.2" null="0"/>
+        </params>
+      </page>
+    </page-layout>
+    <output>
+      <page id="4">
+        <zones/>
+        <fill-zones/>
+        <params pictureShape="0" depthPerception="2" despeckleLevel="cautious" dewarpingMode="off">
+          <dpi vertical="600" horizontal="600"/>
+          <color-params colorMode="mixed">
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
+            <bw thresholdAdj="0"/>
+          </color-params>
+        </params>
+        <output-params>
+          <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="off">
+            <size width="4648" height="6868"/>
+            <content-rect width="4648" x="0" y="0" height="6868"/>
+            <partial-xform>
+              <m11>1</m11>
+              <m12>0</m12>
+              <m21>0</m21>
+              <m22>1</m22>
+            </partial-xform>
+            <dpi vertical="600" horizontal="600"/>
+            <color-params colorMode="mixed">
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
+              <bw thresholdAdj="0"/>
+            </color-params>
+          </image>
+          <file size="1257316" mtime="1333723615"/>
+          <automask size="4076" mtime="1333723615"/>
+          <speckles size="4076" mtime="1333723615"/>
+          <zones/>
+          <fill-zones/>
+        </output-params>
+      </page>
+      <page id="7">
+        <zones/>
+        <fill-zones/>
+        <params pictureShape="0" depthPerception="2" despeckleLevel="cautious" dewarpingMode="off">
+          <dpi vertical="600" horizontal="600"/>
+          <color-params colorMode="mixed">
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
+            <bw thresholdAdj="0"/>
+          </color-params>
+        </params>
+        <output-params>
+          <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="off">
+            <size width="4648" height="6868"/>
+            <content-rect width="4564" x="42" y="0" height="6776"/>
+            <partial-xform>
+              <m11>0.999951808959328</m11>
+              <m12>0.009817319337149617</m12>
+              <m21>-0.009817319337149617</m21>
+              <m22>0.999951808959328</m22>
+            </partial-xform>
+            <dpi vertical="600" horizontal="600"/>
+            <color-params colorMode="mixed">
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
+              <bw thresholdAdj="0"/>
+            </color-params>
+          </image>
+          <file size="4484340" mtime="1333723631"/>
+          <automask size="38212" mtime="1333723631"/>
+          <speckles size="5692" mtime="1333723631"/>
+          <zones/>
+          <fill-zones/>
+        </output-params>
+      </page>
+      <page id="10">
+        <zones/>
+        <fill-zones/>
+        <params pictureShape="0" depthPerception="2" despeckleLevel="cautious" dewarpingMode="off">
+          <dpi vertical="600" horizontal="600"/>
+          <color-params colorMode="mixed">
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
+            <bw thresholdAdj="0"/>
+          </color-params>
+        </params>
+        <output-params>
+          <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="off">
+            <size width="4648" height="6868"/>
+            <content-rect width="4604" x="22" y="0" height="6820"/>
+            <partial-xform>
+              <m11>0.9999785816641292</m11>
+              <m12>-0.006544937967351859</m12>
+              <m21>0.006544937967351859</m21>
+              <m22>0.9999785816641292</m22>
+            </partial-xform>
+            <dpi vertical="600" horizontal="600"/>
+            <color-params colorMode="mixed">
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
+              <bw thresholdAdj="0"/>
+            </color-params>
+          </image>
+          <file size="847162" mtime="1333723646"/>
+          <automask size="9638" mtime="1333723646"/>
+          <speckles size="5478" mtime="1333723646"/>
+          <zones/>
+          <fill-zones/>
+        </output-params>
+      </page>
+    </output>
+  </filters>
+</project>

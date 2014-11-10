@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LABEL="Papežská politika a císařský dvůr pražský na předělu XVI. a XVII. věku =, 1925" OBJID="08e687d0-dc6c-11e1-8357-00505682629d" TYPE="Monograph" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">  
+  <mets:metsHdr CREATEDATE="2012-08-02T08:37:36Z" LASTMODDATE="2012-08-02T08:37:36Z"> 
+    <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION"> 
+      <mets:name>ABA001</mets:name> 
+    </mets:agent>  
+    <mets:agent ROLE="ARCHIVIST" TYPE="ORGANIZATION"> 
+      <mets:name>ABA001</mets:name> 
+    </mets:agent> 
+  </mets:metsHdr>  
+  <mets:dmdSec ID="MODSMD_VOLUME_0001"> 
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <mods:mods ID="MODS_VOLUME_0001"> 
+          <mods:titleInfo ID="MODS_TITLE"> 
+            <mods:title>Papežská politika a císařský dvůr pražský na předělu XVI. a XVII. věku =</mods:title>  
+            <mods:subTitle>La politica papale e la Curia imperiale a Praga alla fine del cinquecento ed al principio del secento</mods:subTitle> 
+          </mods:titleInfo>  
+          <mods:titleInfo type="alternative"> 
+            <mods:title>Politica papale e la Curia imperiale a Praga alla fine del cinquecento ed al principio del secento</mods:title> 
+          </mods:titleInfo>  
+          <mods:name type="personal" usage="primary"> 
+            <mods:namePart>Stloukal, Karel</mods:namePart>  
+            <mods:namePart type="date">1887-1957</mods:namePart>  
+            <mods:role> 
+              <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          <mods:typeOfResource>text</mods:typeOfResource>  
+          <mods:genre>volume</mods:genre>  
+          <mods:originInfo> 
+            <mods:place> 
+              <mods:placeTerm authority="marccountry" type="text">xr</mods:placeTerm> 
+            </mods:place>  
+            <mods:place> 
+              <mods:placeTerm type="text">Praha</mods:placeTerm> 
+            </mods:place>  
+            <mods:publisher>Filosof. fakulta University Karlovy</mods:publisher>  
+            <mods:publisher>Řivnáč [distributor]</mods:publisher>  
+            <mods:dateIssued>1925</mods:dateIssued>  
+            <mods:issuance>monographic</mods:issuance> 
+          </mods:originInfo>  
+          <mods:language> 
+            <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+          </mods:language>  
+          <mods:language objectPart="summary or subtitle"> 
+            <mods:languageTerm authority="iso639-2b" type="code">ita</mods:languageTerm> 
+          </mods:language>  
+          <mods:physicalDescription> 
+            <mods:form authority="marcform">print</mods:form>  
+            <mods:form authority="marccategory">text</mods:form>  
+            <mods:form authority="marcsmd">regular print</mods:form>  
+            <mods:extent>viii, 255 s. ; 23 cm</mods:extent> 
+          </mods:physicalDescription>  
+          <mods:note>Obsahuje rejstřík</mods:note>  
+          <mods:note>Autor též používal jméno: Stloukal-Zlínský, K.</mods:note>  
+          <mods:note type="language">Italské resumé</mods:note>  
+          <mods:relatedItem type="series"> 
+            <mods:titleInfo> 
+              <mods:title>Práce z vědeckých ústavů</mods:title> 
+            </mods:titleInfo> 
+          </mods:relatedItem>  
+          <mods:identifier type="ccnb">cnb000633807</mods:identifier>  
+          <mods:identifier type="oclc">21025837</mods:identifier>  
+          <mods:recordInfo> 
+            <mods:recordContentSource authority="marcorg">ABA001</mods:recordContentSource>  
+            <mods:recordCreationDate encoding="marc">000518</mods:recordCreationDate>  
+            <mods:recordChangeDate encoding="iso8601">20080507115209.0</mods:recordChangeDate>  
+            <mods:recordIdentifier source="CZ-PrNK">nos190145885</mods:recordIdentifier>  
+            <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl (Revision 1.76 2012/02/01)</mods:recordOrigin>  
+            <mods:languageOfCataloging> 
+              <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+            </mods:languageOfCataloging> 
+          </mods:recordInfo>  
+          <mods:identifier type="uuid">08e687d0-dc6c-11e1-8357-00505682629d</mods:identifier>  
+          <mods:identifier type="urnnbn">urn:nbn:cz:aba001-0005rk</mods:identifier>
+        </mods:mods> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec>  
+  <mets:dmdSec ID="DCMD_VOLUME_0001"> 
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <oai_dc:dc> 
+          <dc:title>Papežská politika a císařský dvůr pražský na předělu XVI. a XVII. věku = La politica papale e la Curia imperiale a Praga alla fine del cinquecento ed al principio del secento /</dc:title>  
+          <dc:creator>Stloukal, Karel, 1887-1957 jk01121209 aut</dc:creator>  
+          <dc:type>text</dc:type>  
+          <dc:publisher>Praha : Filosof. fakulta University Karlovy : Řivnáč [distributor],</dc:publisher>  
+          <dc:date>1925</dc:date>  
+          <dc:language>cze</dc:language>  
+          <dc:description>Obsahuje rejstřík</dc:description>  
+          <dc:description>Autor též používal jméno: Stloukal-Zlínský, K.</dc:description>  
+          <dc:identifier>uuid:08e687d0-dc6c-11e1-8357-00505682629d</dc:identifier>  
+          <dc:identifier>urnnbn:urn:nbn:cz:aba001-0005rk</dc:identifier>
+        </oai_dc:dc> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec>  
+  <mets:fileSec> 
+    <mets:fileGrp ID="MC_IMGGRP" USE="Images"> 
+      <mets:file CHECKSUM="683c56156318291f0c93433450efaf5a" CHECKSUMTYPE="MD5" ID="MC_0001" MIMETYPE="image/jp2" SEQ="0" SIZE="4179082"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="masterCopy/1_00003.tif.jp2"></mets:FLocat> 
+      </mets:file>  
+      <mets:file CHECKSUM="134fe4c596877831558dcb77cea69f94" CHECKSUMTYPE="MD5" ID="MC_0002" MIMETYPE="image/jp2" SEQ="1" SIZE="1098870"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="masterCopy/1_00004.tif.jp2"></mets:FLocat> 
+      </mets:file> 
+    </mets:fileGrp>  
+    <mets:fileGrp ID="UC_IMGGRP" USE="Images"> 
+      <mets:file CHECKSUM="9225d78bd960ac5c5df546d59b1b437c" CHECKSUMTYPE="MD5" ID="UC_0001" MIMETYPE="image/jp2" SEQ="0" SIZE="519162"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="userCopy/1_00003.tif.jp2"></mets:FLocat> 
+      </mets:file>  
+      <mets:file CHECKSUM="971767fc6a57ae303f8a85f5b4f79947" CHECKSUMTYPE="MD5" ID="UC_0002" MIMETYPE="image/jp2" SEQ="1" SIZE="519163"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="userCopy/1_00004.tif.jp2"></mets:FLocat> 
+      </mets:file> 
+    </mets:fileGrp>  
+    <mets:fileGrp ID="ALTOGRP" USE="Text"> 
+      <mets:file CHECKSUM="09866cee950332620b7e714a12ba5454" CHECKSUMTYPE="MD5" ID="ALTO_0001" MIMETYPE="text/xml" SEQ="0" SIZE="13305"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="ALTO/1_00003.tif.xml"></mets:FLocat> 
+      </mets:file>  
+      <mets:file CHECKSUM="4f6a7ab55a75d2085af14d69037eabf5" CHECKSUMTYPE="MD5" ID="ALTO_0002" MIMETYPE="text/xml" SEQ="1" SIZE="58438"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="ALTO/1_00004.tif.xml"></mets:FLocat> 
+      </mets:file> 
+    </mets:fileGrp>  
+    <mets:fileGrp ID="TXTGRP" USE="Text"> 
+      <mets:file CHECKSUM="6e6e089e4f65878cc4e429a284b628f2" CHECKSUMTYPE="MD5" ID="TXT_0001" MIMETYPE="text/plain" SEQ="0" SIZE="597"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/1_00003.tif.txt"></mets:FLocat> 
+      </mets:file>  
+      <mets:file CHECKSUM="4806e833455a57bdad326d5a3bd61513" CHECKSUMTYPE="MD5" ID="TXT_0002" MIMETYPE="text/plain" SEQ="1" SIZE="2790"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/1_00004.tif.txt"></mets:FLocat> 
+      </mets:file> 
+    </mets:fileGrp>  
+    <mets:fileGrp ID="TECHMDGRP" USE="Technical Metadata"> 
+      <mets:file CHECKSUM="3b444c3e54827c3cbd8247f6f60d1255" CHECKSUMTYPE="MD5" ID="AMD_0001" MIMETYPE="text/xml" SEQ="0" SIZE="25750"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="amdSec/AMD_METS_1_00003.xml"></mets:FLocat> 
+      </mets:file>  
+      <mets:file CHECKSUM="f61c077ce0f630f4260d62e9614438e0" CHECKSUMTYPE="MD5" ID="AMD_0002" MIMETYPE="text/xml" SEQ="1" SIZE="25750"> 
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="amdSec/AMD_METS_1_00004.xml"></mets:FLocat> 
+      </mets:file> 
+    </mets:fileGrp> 
+  </mets:fileSec>  
+  <mets:structMap LABEL="Physical_Structure" TYPE="PHYSICAL"> 
+    <mets:div DMDID="MODSMD_TITLE" ID="DIV_P_0000" LABEL="Papežská politika a císařský dvůr pražský na předělu XVI. a XVII. věku =, 1925" TYPE="Monograph"> 
+      <mets:div ID="DIV_P_PAGE_0000" ORDER="1" ORDERLABEL="" TYPE="normalPage"> 
+        <mets:fptr> 
+          <mets:area FILEID="MC_0001"/> 
+        </mets:fptr>  
+        <mets:fptr> 
+          <mets:area BEGIN="Page1" BETYPE="IDREF" FILEID="ALTO_0001"/> 
+        </mets:fptr>  
+        <mets:fptr> 
+          <mets:area FILEID="TXT_0001"/> 
+        </mets:fptr>  
+        <mets:fptr> 
+          <mets:area FILEID="AMD_0001"/> 
+        </mets:fptr> 
+      </mets:div>  
+      <mets:div ID="DIV_P_PAGE_0001" ORDER="2" ORDERLABEL="" TYPE="normalPage"> 
+        <mets:fptr> 
+          <mets:area FILEID="MC_0002"/> 
+        </mets:fptr>  
+        <mets:fptr> 
+          <mets:area BEGIN="Page1" BETYPE="IDREF" FILEID="ALTO_0002"/> 
+        </mets:fptr>  
+        <mets:fptr> 
+          <mets:area FILEID="TXT_0002"/> 
+        </mets:fptr>  
+        <mets:fptr> 
+          <mets:area FILEID="AMD_0002"/> 
+        </mets:fptr> 
+      </mets:div> 
+    </mets:div> 
+  </mets:structMap>  
+  <mets:structMap LABEL="Logical_Structure" TYPE="LOGICAL"> 
+    <mets:div DMDID="MODSMD_ISSUE_1" ID="ISSUE_0001" LABEL="Papežská politika a císařský dvůr pražský na předělu XVI. a XVII. věku =, 1925" TYPE="Monograph"> 
+      <mets:div DMDID="MODSMD_ART_0001" ID="ART_0001" LABEL="Papežská politika a císařský dvůr pražský na předělu XVI. a XVII. věku =, 1925" TYPE="ARTICLE"> 
+        <mets:div ID="ART_0001_0001" ORDER="0"> 
+          <mets:fptr> 
+            <mets:area BETYPE="IDREF" FILEID="ALTO_0001"/> 
+          </mets:fptr> 
+        </mets:div>  
+        <mets:div ID="ART_0001_0002" ORDER="1"> 
+          <mets:fptr> 
+            <mets:area BETYPE="IDREF" FILEID="ALTO_0002"/> 
+          </mets:fptr> 
+        </mets:div> 
+      </mets:div> 
+    </mets:div> 
+  </mets:structMap> 
+</mets:mets>

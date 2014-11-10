@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration>
+
+	<appender name="file"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="datePattern" value="'-'yyyyMMdd" />
+		<param name="File" value="${mule.home}/logs/mule-master.log" />
+		<param name="Threshold" value="ALL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy.MM.dd HH:mm:ss,SSS} %5p [%t] %c - %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="file_error"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="datePattern" value="'-'yyyyMMdd" />
+		<param name="File" value="${mule.home}/logs/mule-master-error.log" />
+		<param name="Threshold" value="WARN" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy.MM.dd HH:mm:ss,SSS} %5p [%t] %c - %m%n" />
+		</layout>
+	</appender>	
+
+	<logger name = "com.logica.ndk">
+		<level value="INFO"/>
+	</logger>
+
+	<logger name = "org.mule">
+		<level value="INFO"/>
+	</logger>
+
+	<root>
+		<level value="INFO"/>
+		<appender-ref ref="file"/>
+		<appender-ref ref="file_error"/>
+	</root>
+
+</log4j:configuration>

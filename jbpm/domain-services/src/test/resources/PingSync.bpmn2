@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_yH2jkF7uEeGoB9OpJ5jAfg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_errorItem"/>
+  <bpmn2:itemDefinition id="_resultItem"/>
+  <bpmn2:process id="prototype.PingSync" drools:packageName="prototype" name="PingSync" isExecutable="true">
+    <bpmn2:property id="error" itemSubjectRef="_errorItem"/>
+    <bpmn2:property id="result" itemSubjectRef="_resultItem"/>
+    <bpmn2:startEvent id="_76623FF6-25DD-4F81-AB96-2114E23BDD83" drools:bgcolor="#ffffff" name="">
+      <bpmn2:outgoing>_3A77BC28-E83A-4731-89E9-F357FC83F975</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_1568865B-A5E6-4DFD-A455-AB3A84D75B08" drools:taskName="PingSyncUtilCall" name="PingSyncUtilCall">
+      <bpmn2:incoming>_3A77BC28-E83A-4731-89E9-F357FC83F975</bpmn2:incoming>
+      <bpmn2:outgoing>_F4A19096-5730-4C66-92A2-7E5F9D1D799C</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_yH2jkV7uEeGoB9OpJ5jAfg">
+        <bpmn2:dataInput id="_1568865B-A5E6-4DFD-A455-AB3A84D75B08_TaskNameInput" name="TaskName"/>
+        <bpmn2:dataInput id="_1568865B-A5E6-4DFD-A455-AB3A84D75B08_errorInput" name="error"/>
+        <bpmn2:dataOutput id="_1568865B-A5E6-4DFD-A455-AB3A84D75B08_resultOutput" name="result"/>
+        <bpmn2:inputSet id="_yH2jkl7uEeGoB9OpJ5jAfg">
+          <bpmn2:dataInputRefs>_1568865B-A5E6-4DFD-A455-AB3A84D75B08_errorInput</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_1568865B-A5E6-4DFD-A455-AB3A84D75B08_TaskNameInput</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_yH2jk17uEeGoB9OpJ5jAfg">
+          <bpmn2:dataOutputRefs>_1568865B-A5E6-4DFD-A455-AB3A84D75B08_resultOutput</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_yH3KoF7uEeGoB9OpJ5jAfg">
+        <bpmn2:targetRef>_1568865B-A5E6-4DFD-A455-AB3A84D75B08_TaskNameInput</bpmn2:targetRef>
+        <bpmn2:assignment id="_yH3KoV7uEeGoB9OpJ5jAfg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_yH3Kol7uEeGoB9OpJ5jAfg">PingSyncUtilCall</bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_yH3Ko17uEeGoB9OpJ5jAfg">_1568865B-A5E6-4DFD-A455-AB3A84D75B08_TaskNameInput</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_yH3KpF7uEeGoB9OpJ5jAfg">
+        <bpmn2:sourceRef>error</bpmn2:sourceRef>
+        <bpmn2:targetRef>_1568865B-A5E6-4DFD-A455-AB3A84D75B08_errorInput</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_yH3KpV7uEeGoB9OpJ5jAfg">
+        <bpmn2:sourceRef>_1568865B-A5E6-4DFD-A455-AB3A84D75B08_resultOutput</bpmn2:sourceRef>
+        <bpmn2:targetRef>result</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_3A77BC28-E83A-4731-89E9-F357FC83F975" sourceRef="_76623FF6-25DD-4F81-AB96-2114E23BDD83" targetRef="_1568865B-A5E6-4DFD-A455-AB3A84D75B08"/>
+    <bpmn2:sequenceFlow id="_F4A19096-5730-4C66-92A2-7E5F9D1D799C" sourceRef="_1568865B-A5E6-4DFD-A455-AB3A84D75B08" targetRef="_AB4F31DD-4132-486B-9368-CBDC1A45893F"/>
+    <bpmn2:endEvent id="_AB4F31DD-4132-486B-9368-CBDC1A45893F" drools:bgcolor="#ffffff" name="">
+      <bpmn2:incoming>_F4A19096-5730-4C66-92A2-7E5F9D1D799C</bpmn2:incoming>
+      <bpmn2:terminateEventDefinition id="_yH3Kpl7uEeGoB9OpJ5jAfg"/>
+    </bpmn2:endEvent>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_yH3Kp17uEeGoB9OpJ5jAfg">
+    <bpmndi:BPMNPlane id="_yH3KqF7uEeGoB9OpJ5jAfg" bpmnElement="prototype.PingSync">
+      <bpmndi:BPMNShape id="_yH3KqV7uEeGoB9OpJ5jAfg" bpmnElement="_76623FF6-25DD-4F81-AB96-2114E23BDD83">
+        <dc:Bounds height="30.0" width="30.0" x="180.0" y="123.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_yH3Kql7uEeGoB9OpJ5jAfg" bpmnElement="_1568865B-A5E6-4DFD-A455-AB3A84D75B08">
+        <dc:Bounds height="81.0" width="209.0" x="285.0" y="98.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_yH3Kq17uEeGoB9OpJ5jAfg" bpmnElement="_3A77BC28-E83A-4731-89E9-F357FC83F975">
+        <di:waypoint xsi:type="dc:Point" x="195.0" y="138.0"/>
+        <di:waypoint xsi:type="dc:Point" x="389.5" y="138.5"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_yH3KrF7uEeGoB9OpJ5jAfg" bpmnElement="_F4A19096-5730-4C66-92A2-7E5F9D1D799C">
+        <di:waypoint xsi:type="dc:Point" x="389.5" y="138.5"/>
+        <di:waypoint xsi:type="dc:Point" x="552.0" y="137.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_yH3KrV7uEeGoB9OpJ5jAfg" bpmnElement="_AB4F31DD-4132-486B-9368-CBDC1A45893F">
+        <dc:Bounds height="28.0" width="28.0" x="538.0" y="123.0"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

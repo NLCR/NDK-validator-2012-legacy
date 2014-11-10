@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><oai_marc>
+<fixfield id="LDR">-----nas-a22------a-4500</fixfield>
+<fixfield id="FMT">SE</fixfield>
+<fixfield id="001">cps19950357380</fixfield>
+<fixfield id="003">CZ-PrNK</fixfield>
+<fixfield id="005">20130520135301.0</fixfield>
+<fixfield id="008">910426d19911992xr-wr-p--||||u|----0cze--</fixfield>
+<varfield i1=" " i2=" " id="015">
+<subfield label="a">cnb000357380</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="040">
+<subfield label="a">ABA001</subfield>
+<subfield label="b">cze</subfield>
+<subfield label="d">ABA001</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="043">
+<subfield label="a">e-xr---</subfield>
+<subfield label="b">e-xr-pg</subfield>
+<subfield label="2">czenas</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">08</subfield>
+<subfield label="2">MRF-sel</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">379.8</subfield>
+<subfield label="2">MRF-sel</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">050</subfield>
+<subfield label="2">MRF-sel</subfield>
+</varfield>
+<varfield i1="0" i2="0" id="245">
+<subfield label="a">Áčko :</subfield>
+<subfield label="b">týdeník pro sedm set tisíc školáků ...</subfield>
+</varfield>
+<varfield i1="1" i2="4" id="246">
+<subfield label="a">Týdeník Áčko</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="260">
+<subfield label="a">Praha :</subfield>
+<subfield label="b">Deltapress, vydavatelství,</subfield>
+<subfield label="c">1991-1992</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="300">
+<subfield label="a">2 sv. ;</subfield>
+<subfield label="c">30 cm</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="310">
+<subfield label="a">1x týdně</subfield>
+</varfield>
+<varfield i1="0" i2=" " id="362">
+<subfield label="a">Roč. 1, č. 1 (1991)-roč. 2, č. 18 (1992)</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="500">
+<subfield label="a">Rozsah a rozměry pro registraci: 52x16 s., 210/297</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="500">
+<subfield label="a">Vydává: Deltapress, vydavatelství</subfield>
+</varfield>
+<varfield i1="0" i2=" " id="653">
+<subfield label="a">děti</subfield>
+<subfield label="a">mládež</subfield>
+<subfield label="a">volný čas</subfield>
+<subfield label="a">zábava</subfield>
+</varfield>
+<varfield i1="2" i2=" " id="710">
+<subfield label="a">Deltapress (vydavatelství)</subfield>
+<subfield label="7">ko2002102230</subfield>
+</varfield>
+<varfield i1="0" i2="0" id="785">
+<subfield label="t">Áčko s hvězdičkou</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="910">
+<subfield label="a">ABA001</subfield>
+<subfield label="b">54 D 91634</subfield>
+<subfield label="r">1991-92</subfield>
+<subfield label="t">p</subfield>
+<subfield label="b">54 D 091634/Roč.1.1991</subfield></varfield>
+<varfield i1=" " i2=" " id="968">
+<subfield label="a">13b</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="969">
+<subfield label="a">a8</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="970">
+<subfield label="n">Deltapress, vydavatelství</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="998">
+<subfield label="a">http://aleph.nkp.cz/F/?func=direct&amp;doc_number=000357380&amp;local_base=NKC</subfield>
+</varfield>
+</oai_marc>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_G4wwkFFjEeG4lqxKC76Jgg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_imgtypeItem"/>
+  <bpmn2:process id="com.logica.ndk.prototype.jbpm.convertToJpegSynch" drools:packageName="prototype" name="ConvertToJpegSynch" isExecutable="true">
+    <bpmn2:property id="imgtype" itemSubjectRef="_imgtypeItem"/>
+    <bpmn2:startEvent id="_7832A800-04E4-474D-B708-A7366E9CCEDF" drools:bgcolor="#ffffff" name="">
+      <bpmn2:outgoing>_34660160-A4C1-4458-A473-90C3875D5506</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59" drools:taskName="ConvertToJpegSynchUtilCall" name="ConvertToJpegSynchUtilCall">
+      <bpmn2:incoming>_34660160-A4C1-4458-A473-90C3875D5506</bpmn2:incoming>
+      <bpmn2:outgoing>_C4B05DF5-3615-456C-A47C-BE6E2727D965</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_G4wwkVFjEeG4lqxKC76Jgg">
+        <bpmn2:dataInput id="_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59_TaskNameInput" name="TaskName"/>
+        <bpmn2:dataInput id="_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59_MyFirstParamInput" name="MyFirstParam"/>
+        <bpmn2:inputSet id="_G4wwklFjEeG4lqxKC76Jgg">
+          <bpmn2:dataInputRefs>_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59_MyFirstParamInput</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59_TaskNameInput</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_G4wwk1FjEeG4lqxKC76Jgg"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_G4wwlFFjEeG4lqxKC76Jgg">
+        <bpmn2:targetRef>_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59_TaskNameInput</bpmn2:targetRef>
+        <bpmn2:assignment id="_G4wwlVFjEeG4lqxKC76Jgg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_G4wwllFjEeG4lqxKC76Jgg">ConvertToJpegSynchUtilCall</bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_G4wwl1FjEeG4lqxKC76Jgg">_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59_TaskNameInput</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_G4wwmFFjEeG4lqxKC76Jgg">
+        <bpmn2:sourceRef>imgtype</bpmn2:sourceRef>
+        <bpmn2:targetRef>_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59_MyFirstParamInput</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_34660160-A4C1-4458-A473-90C3875D5506" sourceRef="_7832A800-04E4-474D-B708-A7366E9CCEDF" targetRef="_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59"/>
+    <bpmn2:sequenceFlow id="_C4B05DF5-3615-456C-A47C-BE6E2727D965" sourceRef="_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59" targetRef="_9F781711-97ED-4E04-A055-2EC1546638C2"/>
+    <bpmn2:endEvent id="_9F781711-97ED-4E04-A055-2EC1546638C2" drools:bgcolor="#ffffff" name="">
+      <bpmn2:incoming>_C4B05DF5-3615-456C-A47C-BE6E2727D965</bpmn2:incoming>
+      <bpmn2:terminateEventDefinition id="_G4xXoFFjEeG4lqxKC76Jgg"/>
+    </bpmn2:endEvent>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_G4xXoVFjEeG4lqxKC76Jgg">
+    <bpmndi:BPMNPlane id="_G4xXolFjEeG4lqxKC76Jgg" bpmnElement="com.logica.ndk.prototype.jbpm.convertToJpegSynch">
+      <bpmndi:BPMNShape id="_G4xXo1FjEeG4lqxKC76Jgg" bpmnElement="_7832A800-04E4-474D-B708-A7366E9CCEDF">
+        <dc:Bounds height="30.0" width="30.0" x="141.0" y="115.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_G4xXpFFjEeG4lqxKC76Jgg" bpmnElement="_D0FD8F1A-E83F-4CE9-8728-D76BF21C6F59">
+        <dc:Bounds height="82.0" width="226.0" x="240.0" y="89.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_G4xXpVFjEeG4lqxKC76Jgg" bpmnElement="_34660160-A4C1-4458-A473-90C3875D5506">
+        <di:waypoint xsi:type="dc:Point" x="156.0" y="130.0"/>
+        <di:waypoint xsi:type="dc:Point" x="353.0" y="130.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_G4xXplFjEeG4lqxKC76Jgg" bpmnElement="_C4B05DF5-3615-456C-A47C-BE6E2727D965">
+        <di:waypoint xsi:type="dc:Point" x="353.0" y="130.0"/>
+        <di:waypoint xsi:type="dc:Point" x="554.0" y="128.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_G4xXp1FjEeG4lqxKC76Jgg" bpmnElement="_9F781711-97ED-4E04-A055-2EC1546638C2">
+        <dc:Bounds height="28.0" width="28.0" x="540.0" y="114.0"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

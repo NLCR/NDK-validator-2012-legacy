@@ -1,0 +1,127 @@
+<xs:schema xmlns:tns="http://registrdigitalizace.cz/soapservices"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0"
+	targetNamespace="http://registrdigitalizace.cz/soapservices">
+	<xs:element name="DigitizationRegistryException" type="tns:DigitizationRegistryException" />
+	<xs:element name="addRecordUrnNbn" type="tns:addRecordUrnNbn" />
+	<xs:element name="addRecordUrnNbnResponse" type="tns:addRecordUrnNbnResponse" />
+	<xs:element name="findRecords" type="tns:findRecords" />
+	<xs:element name="findRecordsResponse" type="tns:findRecordsResponse" />
+	<xs:element name="getRecordState" type="tns:getRecordState" />
+	<xs:element name="getRecordStateResponse" type="tns:getRecordStateResponse" />
+	<xs:element name="setRecordState" type="tns:setRecordState" />
+	<xs:element name="setRecordStateResponse" type="tns:setRecordStateResponse" />
+	<xs:element name="setRecordUrnNbn" type="tns:setRecordUrnNbn" />
+	<xs:element name="setRecordUrnNbnResponse" type="tns:setRecordUrnNbnResponse" />
+	<xs:complexType name="findRecords">
+		<xs:sequence>
+			<xs:element name="query" type="tns:plainQuery" minOccurs="0" />
+			<xs:element name="format" type="tns:recordFormat"
+				minOccurs="0" />
+			<xs:element name="maxResults" type="xs:int" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="plainQuery" final="extension restriction">
+		<xs:sequence>
+			<xs:element name="barcode" type="xs:string" minOccurs="0" />
+			<xs:element name="ccnb" type="xs:string" minOccurs="0" />
+			<xs:element name="isbn" type="xs:string" minOccurs="0" />
+			<xs:element name="issn" type="xs:string" minOccurs="0" />
+			<xs:element name="issueDate" type="xs:string" minOccurs="0" />
+			<xs:element name="signature" type="xs:string" minOccurs="0" />
+			<xs:element name="title" type="xs:string" minOccurs="0" />
+			<xs:element name="volume" type="xs:string" minOccurs="0" />
+			<xs:element name="pole001" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="findRecordsResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:digitizationRecord"
+				minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="digitizationRecord" final="extension restriction">
+		<xs:sequence>
+			<xs:element name="recordId" type="xs:int" />
+			<xs:element name="state" type="tns:digitizationState" />
+			<xs:element xmlns:ns1="http://www.w3.org/2005/05/xmlmime"
+				name="descriptor" ns1:expectedContentTypes="application/xml" type="xs:base64Binary"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DigitizationRegistryException">
+		<xs:sequence>
+			<xs:element name="message" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="addRecordUrnNbn">
+		<xs:sequence>
+			<xs:element name="recordId" type="xs:int" />
+			<xs:element name="date" type="xs:dateTime" minOccurs="0" />
+			<xs:element name="urnNbn" type="xs:string" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="addRecordUrnNbnResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:boolean" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getRecordState">
+		<xs:sequence>
+			<xs:element name="recordId" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getRecordStateResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:digitizationState"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="setRecordState">
+		<xs:sequence>
+			<xs:element name="recordId" type="xs:int" />
+			<xs:element name="newState" type="tns:digitizationState"
+				minOccurs="0" />
+			<xs:element name="oldState" type="tns:digitizationState"
+				minOccurs="0" />
+			<xs:element name="user" type="xs:string" minOccurs="0" />
+			<xs:element name="date" type="xs:dateTime" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="setRecordStateResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:boolean" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="setRecordUrnNbn">
+		<xs:sequence>
+			<xs:element name="recordId" type="xs:int" />
+			<xs:element name="date" type="xs:dateTime" minOccurs="0" />
+			<xs:element name="urnNbn" type="xs:string" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="setRecordUrnNbnResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:boolean" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="recordFormat">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MARC_XML" />
+			<xs:enumeration value="MODS_33" />
+			<xs:enumeration value="MODS_34" />
+			<xs:enumeration value="DC_RDF" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="digitizationState">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CANCELED" />
+			<xs:enumeration value="FINISHED" />
+			<xs:enumeration value="IN_PROGRESS" />
+			<xs:enumeration value="REVISION" />
+			<xs:enumeration value="SCHEDULED" />
+			<xs:enumeration value="UNDEFINED" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

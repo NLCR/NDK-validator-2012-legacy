@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><oai_marc>
+<fixfield id="LDR">-----nam-a22-----1--4500</fixfield>
+<fixfield id="FMT">BK</fixfield>
+<fixfield id="001">bk193000470</fixfield>
+<fixfield id="003">CZ-PrNK</fixfield>
+<fixfield id="005">20120203085929.0</fixfield>
+<fixfield id="008">990917s1930----xr------------------cze--</fixfield>
+<varfield i1=" " i2=" " id="015">
+<subfield label="a">cnb000934119</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="020">
+<subfield label="a">(Váz.)</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="035">
+<subfield label="a">(OCoLC)85509641</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="040">
+<subfield label="a">ABA001</subfield>
+<subfield label="b">cze</subfield>
+<subfield label="c">LIA001</subfield>
+<subfield label="d">ABA001</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">327(437:47):7/8(437:47)(082)</subfield>
+<subfield label="2">undef</subfield>
+</varfield>
+<varfield i1="1" i2=" " id="100">
+<subfield label="a">Čapek, Em.,</subfield>
+<subfield label="d">1880-1960</subfield>
+<subfield label="7">jk01020999</subfield>
+<subfield label="4">aut</subfield>
+</varfield>
+<varfield i1="1" i2="0" id="245">
+<subfield label="a">100 hlasů o střední škole =</subfield>
+<subfield label="b">Reforms of Secondary Schools in Czechoslovakia (see page CCXXX) : Anketa revue Nové Čechy a MAP /</subfield>
+<subfield label="c">E. Čapek</subfield>
+</varfield>
+<varfield i1="3" i2=" " id="246">
+<subfield label="a">Sto hlasů o střední škole</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="260">
+<subfield label="a">Praha :</subfield>
+<subfield label="b">Nové Čechy,</subfield>
+<subfield label="c">1930</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="300">
+<subfield label="a">V - CCXC - [I] - 181 s. ;</subfield>
+<subfield label="c">8°</subfield>
+</varfield>
+<varfield i1="1" i2=" " id="490">
+<subfield label="a">Knihovna Pokrokové Revue ;</subfield>
+<subfield label="v">sv. 3</subfield>
+</varfield>
+<varfield i1=" " i2="0" id="830">
+<subfield label="a">Knihovna Pokrokové Revue</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="910">
+<subfield label="a">BOA001</subfield>
+<subfield label="b">2-1230.893,123456</subfield>
+</varfield>
+</oai_marc>

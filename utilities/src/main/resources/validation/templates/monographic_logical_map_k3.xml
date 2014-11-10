@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<validationTemplate>
+    <name>monographic_logical_map</name>
+    <version>1.0</version>
+    <rootValidationNode mandatory="MANDATORY" name="mets:mets" nullable="false">
+        <attribute mandatory="MANDATORY" name="LABEL"/>
+        <attribute mandatory="MANDATORY" name="TYPE"/>
+    </rootValidationNode>
+</validationTemplate>

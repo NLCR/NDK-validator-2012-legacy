@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module xmlns="urn:jboss:module:1.0" name="com.logica.ndk.tm.jbpm.core.config">
+  <resources>
+    <resource-root path="jbpm-core-config.jar"/>
+  </resources>
+</module>

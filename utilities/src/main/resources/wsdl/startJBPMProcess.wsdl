@@ -1,0 +1,114 @@
+<wsdl:definitions xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://wwww.logica.com/ndk/tm/process" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="StartJBPMProcessService" targetNamespace="http://wwww.logica.com/ndk/tm/process">
+<wsdl:types>
+<xs:schema xmlns:tns="http://wwww.logica.com/ndk/tm/process" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://wwww.logica.com/ndk/tm/process">
+<xs:element name="executeAsync" type="tns:executeAsync"/>
+<xs:element name="executeAsyncResponse" type="tns:executeAsyncResponse"/>
+<xs:element name="executeSync" type="tns:executeSync"/>
+<xs:element name="executeSyncResponse" type="tns:executeSyncResponse"/>
+<xs:complexType name="executeSync">
+<xs:sequence>
+<xs:element minOccurs="0" name="processName" type="xs:string"/>
+<xs:element minOccurs="0" name="params" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="executeSyncResponse">
+<xs:sequence>
+<xs:element minOccurs="0" name="return" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="executeAsync">
+<xs:sequence>
+<xs:element minOccurs="0" name="processName" type="xs:string"/>
+<xs:element minOccurs="0" name="params" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="executeAsyncResponse">
+<xs:sequence/>
+</xs:complexType>
+<xs:element name="BusinessException" type="tns:BusinessException"/>
+<xs:complexType name="BusinessException">
+<xs:sequence>
+<xs:element name="errorCode" nillable="true" type="xs:long"/>
+<xs:element name="nodeId" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="SystemException" type="tns:SystemException"/>
+<xs:complexType name="SystemException">
+<xs:sequence>
+<xs:element name="errorCode" nillable="true" type="xs:long"/>
+<xs:element name="nodeId" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+</wsdl:types>
+<wsdl:message name="executeSyncResponse">
+<wsdl:part element="tns:executeSyncResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="BusinessException">
+<wsdl:part element="tns:BusinessException" name="BusinessException"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="SystemException">
+<wsdl:part element="tns:SystemException" name="SystemException"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="executeSync">
+<wsdl:part element="tns:executeSync" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="executeAsyncResponse">
+<wsdl:part element="tns:executeAsyncResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="executeAsync">
+<wsdl:part element="tns:executeAsync" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:portType name="StartJBPMProcess">
+<wsdl:operation name="executeSync">
+<wsdl:input message="tns:executeSync" name="executeSync"></wsdl:input>
+<wsdl:output message="tns:executeSyncResponse" name="executeSyncResponse"></wsdl:output>
+<wsdl:fault message="tns:BusinessException" name="BusinessException"></wsdl:fault>
+<wsdl:fault message="tns:SystemException" name="SystemException"></wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="executeAsync">
+<wsdl:input message="tns:executeAsync" name="executeAsync"></wsdl:input>
+<wsdl:output message="tns:executeAsyncResponse" name="executeAsyncResponse"></wsdl:output>
+<wsdl:fault message="tns:BusinessException" name="BusinessException"></wsdl:fault>
+<wsdl:fault message="tns:SystemException" name="SystemException"></wsdl:fault>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="StartJBPMProcessServiceSoapBinding" type="tns:StartJBPMProcess">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="executeSync">
+<soap:operation soapAction="" style="document"/>
+<wsdl:input name="executeSync">
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output name="executeSyncResponse">
+<soap:body use="literal"/>
+</wsdl:output>
+<wsdl:fault name="BusinessException">
+<soap:fault name="BusinessException" use="literal"/>
+</wsdl:fault>
+<wsdl:fault name="SystemException">
+<soap:fault name="SystemException" use="literal"/>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="executeAsync">
+<soap:operation soapAction="" style="document"/>
+<wsdl:input name="executeAsync">
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output name="executeAsyncResponse">
+<soap:body use="literal"/>
+</wsdl:output>
+<wsdl:fault name="BusinessException">
+<soap:fault name="BusinessException" use="literal"/>
+</wsdl:fault>
+<wsdl:fault name="SystemException">
+<soap:fault name="SystemException" use="literal"/>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="StartJBPMProcessService">
+<wsdl:port binding="tns:StartJBPMProcessServiceSoapBinding" name="StartJBPMProcessPort">
+<soap:address location="REPLACE_WITH_ACTUAL_URL"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

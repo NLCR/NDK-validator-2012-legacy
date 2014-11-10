@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.2 (http://www.xmlspy.com) by Karel Kucera (AiP Beroun, Ltd.) -->
+<!ENTITY % masterx.dtd SYSTEM "masterx.dtd">
+%masterx.dtd;
+<!ENTITY % msnkaip_page.dtd SYSTEM "msnkaip_page.dtd">
+%msnkaip_page.dtd;
+<!ELEMENT manuscript (msDescription, techDesc*, page*)>

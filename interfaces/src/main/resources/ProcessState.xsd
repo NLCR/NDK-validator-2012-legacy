@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" targetNamespace="http://wwww.logica.com/ndk/tm/process"
+	xmlns:tns="http://wwww.logica.com/ndk/tm/process" elementFormDefault="qualified" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" jaxb:extensionBindingPrefixes="xjc"
+	jaxb:version="2.0">
+
+	<xs:annotation>
+		<xs:appinfo>
+			<jaxb:globalBindings>
+				<xjc:serializable uid="12343" />
+				<xjc:superClass name="com.logica.ndk.tm.process.BaseClass" />
+			</jaxb:globalBindings>
+		</xs:appinfo>
+	</xs:annotation>
+
+	<xs:element name="processState">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="processId" />
+				<xs:element type="xs:string" name="processName" />
+				<xs:element type="xs:long" name="instanceId" />
+				<xs:element type="xs:date" name="startDate" />
+				<xs:element type="xs:date" name="endDate" />
+				<xs:element name="state">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:enumeration value="0" /><!-- STATE_PENDING - process is created but not started -->
+							<xs:enumeration value="1" /><!-- STATE_ACTIVE - process is started. It's running or in wait state -->
+							<xs:enumeration value="2" /><!-- STATE_COMPLETED - process completed with no error -->
+							<xs:enumeration value="3" /><!-- STATE_ABORTED - process completed with error -->
+							<xs:enumeration value="4" /><!-- STATE_SUSPENDED - not used now -->
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="parameters" type="tns:ParamMap">
+				</xs:element>
+				<xs:element name="nodes" type="tns:NodeList">
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="ParamMap">
+		<xs:sequence>
+			<xs:element name="items" type="tns:ParamMapItem" maxOccurs="unbounded" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ParamMapItem">
+		<xs:sequence>
+			<xs:element type="xs:string" name="name" />
+			<xs:element type="xs:string" name="value" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="NodeList">
+		<xs:sequence>
+			<xs:element name="items" type="tns:Node" maxOccurs="unbounded" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Node">
+		<xs:sequence>
+			<xs:element type="xs:string" name="name" />
+			<xs:element type="xs:date" name="startDate" />
+			<xs:element type="xs:date" name="endDate" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="CheckOcrOutputResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="responseCode" />
+				<xs:element type="xs:string" name="ocr" />
+				<xs:element type="xs:int" name="ocrRate" />
+				<xs:element type="xs:int" name="ocrPagesOk" />
+				<xs:element type="xs:int" name="ocrPagesException" />
+				<xs:element type="xs:int" name="ocrLicenceUsed" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="FindRecordResult">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:int" name="recordId" />
+				<xs:element name="descriptor" type="xs:string" />
+				<xs:element name="digitizationState" type="tns:DigitizationState" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="GetAlephExtendedDataResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="result" />
+				<xs:element type="xs:string" name="docnum" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="AssignUrnNbnResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="urnNbn" />
+				<xs:element type="tns:UrnNbnSource" name="urnNbnSource">
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="UrnNbnSource">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="RESOLVER" />
+			<xs:enumeration value="DB" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="DigitizationState">
+		<xs:restriction base="xs:string">
+		  <xs:enumeration value="CANCELED" />
+			<xs:enumeration value="FINISHED" />
+			<xs:enumeration value="IN_PROGRESS" />
+			<xs:enumeration value="REVISION" />
+			<xs:enumeration value="SCHEDULED" />
+			<xs:enumeration value="UNDEFINED" />															
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="ProcessMap">
+		<xs:sequence>
+			<xs:element name="process" type="tns:FreeProcess" maxOccurs="unbounded" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="FreeProcess">
+		<xs:sequence>
+			<xs:element type="xs:string" name="processId" />
+			<xs:element type="xs:int" name="count" />
+			<xs:element type="xs:int" name="priority" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

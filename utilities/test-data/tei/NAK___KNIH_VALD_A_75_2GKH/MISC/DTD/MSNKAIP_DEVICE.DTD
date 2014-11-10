@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.2 (http://www.xmlspy.com) by Karel Kucera (AiP Beroun, Ltd.) -->
+<!--
+   ========================================================
+	       Root element pro technický popis digitalizace rukopisu 
+   ========================================================
+-->
+<!ENTITY % DIG35.dtd SYSTEM "DIG35.dtd">
+%DIG35.dtd;
+<!-- lens obsahuje informace o objektivech, do zákl. popisu přidáno POUZE pracovně -->
+<!ELEMENT techDesc (imgBasic?, imgCreation, imgPerformance?, imgHistory?)>
+<!ATTLIST techDesc
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+>
+<!-- 
+   ========================================================
+   Deklarace elementů pro imgBasic, imgCreation, imgPerformance a imgHistory
+   Tyto deklarace odpovídají kapitolám 2 - 5 standardu NISO, viz:
+               	 NISO Draft Standard   -   Data Dictionary  
+	               Technical Metadata for Digital Still Images
+      	                Working Draft, 1.0  July 5, 2000
+   ========================================================
+-->
+<!--**********   imgBasic - viz kapitola 2 standardu NISO   **********-->
+<!ELEMENT imgBasic (imgFormat, imgFile, preferredPresentation?)>
+<!--..........   imgFormat - viz kapitola 2.1   ..........-->
+<!ELEMENT imgFormat (mimeType, format, compression, fhotometricInterpretation, segment*)>
+<!ELEMENT mimeType (#PCDATA)>
+<!ELEMENT format (#PCDATA)>
+<!ELEMENT compression (#PCDATA)>
+<!ELEMENT fhotometricInterpretation (#PCDATA)>
+<!ELEMENT segment (stripOffset?, rowsPerStrip?, stripByteCounts?, tileWidth?, tileLength?, tileOffset?, tileByteCount?)>
+<!ATTLIST segment
+	segmentType (strips | tiles) #REQUIRED
+>
+<!ELEMENT stripOffset (#PCDATA)>
+<!ELEMENT rowsPerStrip (#PCDATA)>
+<!ELEMENT stripByteCounts (#PCDATA)>
+<!ELEMENT tileWidth (#PCDATA)>
+<!ELEMENT tileLength (#PCDATA)>
+<!ELEMENT tileOffset (#PCDATA)>
+<!ELEMENT tileByteCount (#PCDATA)>
+<!--..........   imgFile - viz kapitola 2.2   ..........-->
+<!ELEMENT imgFile (imgIdentifier, fileSize, checksum?)>
+<!ATTLIST imgFile
+	orientation (normal | 180 | cw90 | ccw90 | uncnown) #IMPLIED
+	dispOrientation (portrait | landscape) #IMPLIED
+>
+<!ELEMENT imgIdentifier (#PCDATA)>
+<!ELEMENT fileSize (#PCDATA)>
+<!ELEMENT checksum (#PCDATA)>
+<!--..........   preferredPresentation - viz kapitola 2.3   ..........-->
+<!ELEMENT preferredPresentation (#PCDATA)>
+<!--**********   imgCreation - viz kapitola 3 standardu NISO   **********-->
+<!ELEMENT imgCreation (imageCreation, methodology)?>
+<!--..........   imageCreation - viz kapitola 3.1   ..........-->
+<!ELEMENT imageCreation (sourceType?, scanningAgency*, hostComputer?, deviceSource?, scanningSystem?, CAMERA_SETTINGS?, sensor?, lens?, dateTimeCreated?)>
+<!ELEMENT sourceType (#PCDATA)>
+<!ELEMENT scanningAgency (#PCDATA)>
+<!ELEMENT hostComputer (#PCDATA)>
+<!ELEMENT deviceSource (#PCDATA)>
+<!ELEMENT scanningSystem (#PCDATA)>
+<!ELEMENT sensor (#PCDATA)>
+<!ELEMENT lens (#PCDATA)>
+<!ELEMENT dateTimeCreated (#PCDATA)>
+<!--..........   methodology - viz kapitola 3.2   ..........-->
+<!ELEMENT methodology (#PCDATA)>
+<!--**********   imgPerformance - viz kapitola 4 standardu NISO   **********-->
+<!ELEMENT imgPerformance (spatialMetrics?, energetics?, targetData*)>
+<!--..........   spatialMetrics - viz kapitola 4.1   ..........-->
+<!ELEMENT spatialMetrics (imageWidth, imageLength, xSamplingFrequency, ySamplingFrequency, samplingFrequencyPlane, sourceXdimension, sourceYdimension)>
+<!ATTLIST spatialMetrics
+	samplingFrequencyUnit (noUnit | inch | cm) #REQUIRED
+>
+<!ELEMENT imageWidth (#PCDATA)>
+<!ELEMENT imageLength (#PCDATA)>
+<!ELEMENT xSamplingFrequency (#PCDATA)>
+<!ELEMENT ySamplingFrequency (#PCDATA)>
+<!ELEMENT samplingFrequencyPlane (#PCDATA)>
+<!ATTLIST samplingFrequencyPlane
+	plane (cameraScanerFocal | object | sourceObject) #REQUIRED
+>
+<!ELEMENT sourceXdimension (#PCDATA)>
+<!ELEMENT sourceYdimension (#PCDATA)>
+<!--..........   energetics - viz kapitola 4.2   ..........-->
+<!ELEMENT energetics (bitsPerSample, samplesPerPixel, extrasamples?, colormap?, grayResponseCurve, grayResponseUnit, whitePoint?, primaryChromaticities?)>
+<!ELEMENT bitsPerSample (#PCDATA)>
+<!ELEMENT samplesPerPixel (#PCDATA)>
+<!ELEMENT extrasamples (#PCDATA)>
+<!ELEMENT colormap (#PCDATA)>
+<!ELEMENT grayResponseCurve (#PCDATA)>
+<!ELEMENT grayResponseUnit (#PCDATA)>
+<!ELEMENT whitePoint (#PCDATA)>
+<!ELEMENT primaryChromaticities (#PCDATA)>
+<!--..........   targetData - viz kapitola 4.3   ..........-->
+<!ELEMENT targetData (targetID | imageData? | performanceData? | profiles?)>
+<!ATTLIST targetData
+	targetType (external | internal) #REQUIRED
+>
+<!ELEMENT targetID (#PCDATA)>
+<!ELEMENT imageData (#PCDATA)>
+<!ELEMENT performanceData (#PCDATA)>
+<!ELEMENT profiles (#PCDATA)>
+<!--**********  imgHistory - viz kapitola 5 standardu NISO   **********-->
+<!ELEMENT imgHistory (imgProcessing*, imgPrevMetadata*)>
+<!--..........   imgProcessing - viz kapitola 5.1   ..........-->
+<!ELEMENT imgProcessing (dateTimeProcessed?, sourceData?, processingAgency?, processingSoftware?, processingActions?)>
+<!ELEMENT dateTimeProcessed (#PCDATA)>
+<!ELEMENT sourceData (#PCDATA)>
+<!ELEMENT processingAgency (#PCDATA)>
+<!ELEMENT processingSoftware (#PCDATA)>
+<!ELEMENT processingActions (#PCDATA)>
+<!--..........   imgPrevMetadata - viz kapitola 5.2   ..........-->
+<!ELEMENT imgPrevMetadata (imgBasic?, imgCreation?, imgPerformance?, imgProcessing?)>

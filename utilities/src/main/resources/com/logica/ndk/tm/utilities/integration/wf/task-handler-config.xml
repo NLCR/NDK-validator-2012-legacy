@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<processes>
+		<!-- Common params -->
+		<process name='common'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+				<param name='localBase' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='pageCount' />
+				<param name='error' />
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+			<instance-limit>-1</instance-limit>
+			<timeout>172800000</timeout>
+		</process>
+		
+		<!-- Process specific params -->
+		
+		<!-- Package -->
+		<process name='prototype.cisteni-svazku'>
+			<input-params>
+				<param name='cdmId' />
+			</input-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.cisteni-IE'>
+			<input-params>
+				<param name='cdmId' />
+			</input-params>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='prototype.ocr-empty'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='ocr' />
+			</input-params>
+			<output-params>
+				<param name='ocr' />
+				<param name='ocrRate' />
+				<param name='ocrLicenceUsed' />
+				<param name='processedPages' />
+			</output-params>
+			<finish-signal>NDKSigDigitFinishOCR</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.ocr'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='ocr' />
+				<param name='ocrFont' />
+				<param name='language' />
+			</input-params>
+			<output-params>
+				<param name='ocr' />
+				<param name='ocrRate' />
+				<param name='ocrLicenceUsed' />
+			</output-params>
+			<finish-signal>NDKSigDigitFinishOCR</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+			<process name='prototype.zpracovani-manualniho-ocr'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='ocr' />
+			</input-params>
+			<output-params>
+				<param name='ocr' />
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.vytvoreni-cdm-digitalizace'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='publish' />
+				<param name='scans' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='uuid' />
+				<param name='error' />
+			</output-params>
+			<finish-signal>NDKSigDigitFinishDir</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.vytvoreni-cdm-digitalizace-format-migration'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='publish' />
+				<param name='scans' />
+				<param name='importType' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='uuid' />
+				<param name='error' />
+			</output-params>
+			<finish-signal>NDKSigDigitFinishDir</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.vytvoreni-cdm-digitalizace-ltp'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='publish' />
+				<param name='scans' />
+				<param name='importType' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='uuid' />
+				<param name='error' />
+			</output-params>
+			<finish-signal>NDKSigDigitFinishDir</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.vstup-z-digitalizace'>
+			<input-params>
+				<param name='pathId' />
+				<param name='localURNString' />
+				<param name='scans' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.vstup-z-digitalizace-format-migration'>
+			<input-params>
+				<param name='pathId' />
+				<param name='localURNString' />
+				<param name='scans' />
+				<param name='importType' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.import-dat-do-cdm'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='scans' />
+				<param name='dimensionX' />
+				<param name='dimensionY' />
+				<param name='dpi' />
+				<param name='color' />	
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.import-dat-do-cdm-format-migration'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='scans' />
+				<param name='dimensionX' />
+				<param name='dimensionY' />
+				<param name='dpi' />
+				<param name='color' />	
+				<param name='importType' />
+			</input-params>
+			<output-params>
+				<param name='dpi' />
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.priprav-data-pro-scantailor'>
+			<input-params>
+				<param name='dimensionX' />
+				<param name='dimensionY' />
+				<param name='dpi' />
+				<param name='profilePP' />
+				<param name='color' />
+				<param name='scans' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.prijmi-data-ze-scantailor'>
+			<input-params>
+				<param name='dimensionX' />
+				<param name='dimensionY' />
+				<param name='dpi' />
+				<param name='profilePP' />
+				<param name='color' />
+				<param name='scans' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.priprav-data-pro-editacni-modul'>
+			<input-params>
+				<param name='importType' />
+				<param name='ocr' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.rozdeleni-na-int-entity'>
+			<input-params>
+				<param name='importType' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.vytvoreni-obrazu'>
+			<input-params>
+				<param name='profileUC' />
+				<param name='profileMC' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.validace-obrazu'>
+			<input-params>
+				<param name='dpi' />
+				<param name='color' />	
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>		
+		<process name='prototype.dokonceni'>
+			<input-params>
+				<param name='rdId' />
+				<param name='docNumber' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.id-dokonceni'>
+			<input-params>
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigImportFinish</finish-signal>
+			<package-type>NDKImport</package-type>
+		</process>
+
+		<process name='prototype.vyrazeni'>
+			<input-params>
+				<param name='rdId' />
+				<param name='docNumber' />
+				<param name='importType' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		<process name='prototype.vyrazeni-reskenDoskenLTP'>
+			<input-params>
+				<param name='rdId' />
+				<param name='docNumber' />
+				<param name='importType' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		
+		<process name='prototype.validace-finalni'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='importType' />
+			</input-params>
+			<finish-signal>NDKSigDigitFinish</finish-signal>
+			<package-type>NDKDigitPackage</package-type>
+		</process>
+		
+		<!-- Int. entity -->
+		<process name='import.vstup-digitalizace'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='title' />
+				<param name='author' />
+				<param name='language' />
+				<param name='isbn' />
+				<param name='issn' />
+				<param name='ccnb' />
+				<param name='sigla' />
+				<param name='volumeDate' />
+				<param name='volumeNumber' />
+				<param name='partNumber' />
+				<param name='processEM' />
+				<param name='processLTP' />
+				<param name='processKrameriusNkcr' />
+				<param name='processKrameriusMzk' />
+				<param name='processUrnnbn' />
+				<param name='pageCount' />
+				<param name='typeCode' />
+			</output-params>
+			<finish-signal>NDKSigIEntityFinishBiblio</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<!-- Int. entity -->
+		<process name='import.vstup-digitalizace-fix'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='rdId' />
+				<param name='public' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='title' />
+				<param name='author' />
+				<param name='language' />
+				<param name='isbn' />
+				<param name='issn' />
+				<param name='ccnb' />
+				<param name='sigla' />
+				<param name='volumeDate' />
+				<param name='volumeNumber' />
+				<param name='partNumber' />
+				<param name='processEM' />
+				<param name='processLTP' />
+				<param name='processKrameriusNkcr' />
+				<param name='processKrameriusMzk' />
+				<param name='processUrnnbn' />
+				<param name='pageCount' />
+				<param name='typeCode' />
+				<param name='dateIssued' />
+				<param name='issueNumber' />
+				<param name='rdId' />
+				<param name='volumeUUID' />
+				<param name='titleUUID' />
+				<param name='issueUUID' />
+				<param name='recordIdentifier' />
+				<param name='barCode' />
+                <param name='dateIssued' />
+                <param name='partName' />
+			</output-params>
+			<finish-signal>NDKSigIEntityFinishBiblio</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='import.vstup-externi'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='title' />
+				<param name='author' />
+				<param name='language' />
+				<param name='isbn' />
+				<param name='issn' />
+				<param name='ccnb' />
+				<param name='sigla' />
+				<param name='volumeDate' />
+				<param name='volumeNumber' />
+				<param name='partNumber' />
+				<param name='processEM' />
+				<param name='processLTP' />
+				<param name='processKrameriusNkcr' />
+				<param name='processKrameriusMzk' />
+				<param name='processUrnnbn' />
+				<param name='pageCount' />
+				<param name='typeCode' />
+			</output-params>
+			<finish-signal>NDKSigIEntityFinishBiblio</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='import.vstup-manuscriptorium'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='title' />
+				<param name='author' />
+				<param name='language' />
+				<param name='isbn' />
+				<param name='issn' />
+				<param name='ccnb' />
+				<param name='sigla' />
+				<param name='volumeDate' />
+				<param name='volumeNumber' />
+				<param name='partNumber' />
+				<param name='processEM' />
+				<param name='processLTP' />
+				<param name='processKrameriusNkcr' />
+				<param name='processKrameriusMzk' />
+				<param name='processUrnnbn' />
+				<param name='pageCount' />
+				<param name='typeCode' />
+			</output-params>
+			<finish-signal>NDKSigIEntityFinishBiblio</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='prototype.vstup-z-harvest'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='titleUUID' />
+				<param name='recordIdentifier' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='title' />
+				<param name='author' />
+				<param name='language' />
+				<param name='isbn' />
+				<param name='issn' />
+				<param name='ccnb' />
+				<param name='sigla' />
+				<param name='volumeDate' />
+				<param name='volumeNumber' />
+				<param name='partNumber' />
+				<param name='processEM' />
+				<param name='processLTP' />
+				<param name='processKrameriusNkcr' />
+				<param name='processKrameriusMzk' />
+				<param name='processUrnnbn' />
+				<param name='pageCount' />
+				<param name='typeCode' />
+				<param name='titleUUID' />
+				<param name='recordIdentifier' />
+			</output-params>
+			<finish-signal>NDKSigIEntityFinishBiblio</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		
+		<process name='prototype.vstup-z-wa'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='titleUUID' />
+				<param name='recordIdentifier' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='title' />
+				<param name='author' />
+				<param name='language' />
+				<param name='isbn' />
+				<param name='issn' />
+				<param name='ccnb' />
+				<param name='sigla' />
+				<param name='volumeDate' />
+				<param name='volumeNumber' />
+				<param name='partNumber' />
+				<param name='processEM' />
+				<param name='processLTP' />
+				<param name='processKrameriusNkcr' />
+				<param name='processKrameriusMzk' />
+				<param name='processUrnnbn' />
+				<param name='pageCount' />
+				<param name='typeCode' />
+				<param name='titleUUID' />
+				<param name='recordIdentifier' />
+			</output-params>
+			<finish-signal>NDKSigIEntityFinishBiblio</finish-signal>
+			<package-type>NDKIEntity</package-type>
+			<timeout>36000000</timeout>
+		</process>
+		<process name='import.vstup-k4'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='title' />
+				<param name='author' />
+				<param name='language' />
+				<param name='isbn' />
+				<param name='issn' />
+				<param name='ccnb' />
+				<param name='sigla' />
+				<param name='volumeDate' />
+				<param name='volumeNumber' />
+				<param name='partNumber' />
+				<param name='processEM' />
+				<param name='processLTP' />
+				<param name='processKrameriusNkcr' />
+				<param name='processKrameriusMzk' />
+				<param name='processUrnnbn' />
+				<param name='pageCount' />
+				<param name='typeCode' />
+				<param name='titleUUID' />
+				<param name='volumeUUID' />
+				<param name='issueUUID' />
+				<param name='recordIdentifier' />
+			</output-params>
+			<finish-signal>NDKSigIEntityFinishBiblio</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='import.validace-ie-zakladni'>
+			<input-params>
+				<param name='cdmId' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='import.prirad-urnnbn'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='sigla' />
+				<param name='rdId' />
+				<param name='pageCount' />
+			</input-params>
+			<output-params>
+				<param name='urnnbn' />
+			</output-params>
+			<finish-signal>NDKSigIEntityFinishUrnnbn</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='import.update-urnnbn'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='urnnbn' />
+				<param name='publish' />
+				<param name='sigla' />
+				<param name='pageCount' />
+			</input-params>
+			<output-params>
+				<param name='urnnbn' />
+			</output-params>
+			<finish-signal>NDKSigIEntityFinishUrnnbn</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='prototype.vytvoreni-sip1'>
+			<input-params>
+				<param name='cdmId' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='prototype.vytvoreni-sip1-ltp'>
+			<input-params>
+				<param name='cdmId' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>		
+		<process name='ientity.priprav-data-pro-k4'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='processKrameriusNkcr' />
+				<param name='processKrameriusMzk' />
+				<param name='public' />
+			</input-params>
+			<output-params>
+			</output-params>			
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='ientity.import-dat-do-k4-nkcr'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='public' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<instance-limit>1</instance-limit>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='ientity.import-dat-do-k4-nkcr-ltp'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='public' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<instance-limit>1</instance-limit>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='prototype.empty'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='public' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<instance-limit>1</instance-limit>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='ientity.import-dat-do-k4-mzk'>
+			<input-params>
+				<param name='cdmId' />
+				<param name='public' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<instance-limit>1</instance-limit>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='ientity.import-dat-do-k4-mzk-ltp'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='public' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<instance-limit>1</instance-limit>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='import.ie-dokonceni'>
+			<input-params>
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+		<process name='import.ie-vyrazeni'>
+			<input-params>
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigIEntityFinish</finish-signal>
+			<package-type>NDKIEntity</package-type>
+		</process>
+
+		<!-- Import -->
+		<process name='import.id-upload'>
+			<input-params>
+				<param name='taskId' />
+				<param name='url' />
+				<param name='importType' />
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='uuid' />
+			</output-params>
+			<finish-signal>NDKSigImportFinishUpload</finish-signal>
+			<package-type>NDKImport</package-type>
+		</process>
+		
+		<process name='import.vstup-LTP'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='url' />
+				<param name='importType' />
+			</input-params>
+			<output-params>				
+				<param name='uuid' />
+				<param name='scanCount' />
+				<param name='pageCount' />
+				<param name='pathId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>NDKSigImportFinishUpload</finish-signal>
+			<package-type>NDKImport</package-type>
+		</process>
+		
+		<process name='import.id-upload-wa'>
+			<input-params>
+			</input-params>
+			<output-params>
+				<param name='cdmId' />
+				<param name='uuid' />
+			</output-params>
+			<finish-signal>NDKSigImportFinishUpload</finish-signal>
+			<package-type>NDKImport</package-type>
+		</process>
+		
+		<process name='import.id-create-packages-ltp'>
+			<input-params>
+				<param name='taskId' />
+				<param name='url' />
+				<param name='cdmId' />
+				<param name='importType' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigImportFinish</finish-signal>
+			<package-type>NDKImport</package-type>
+		</process>
+		
+		<process name='import.id-create-packages-format-migration'>
+			<input-params>
+				<param name='taskId' />
+				<param name='url' />
+				<param name='cdmId' />
+				<param name='importType' />
+			</input-params>
+			<output-params>
+				<param name='note' />
+			</output-params>
+			<finish-signal>NDKSigImportFinish</finish-signal>
+			<package-type>NDKImport</package-type>
+		</process>
+		<process name='import.id-create-packages'>
+			<input-params>
+				<param name='taskId' />
+				<param name='url' />
+				<param name='importType' />
+			</input-params>
+			<output-params>
+			</output-params>
+			<finish-signal>NDKSigImportFinish</finish-signal>
+			<package-type>NDKImport</package-type>
+		</process>
+		
+		<!-- LTP -->
+		<process name='ltp.vytvoreni-cdm'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+				<param name='url' />
+				<param name='note' />
+				<param name='typeCode' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='title' />
+				<param name='author' />
+				<param name='language' />
+				<param name='isbn' />
+				<param name='issn' />
+				<param name='ccnb' />
+				<param name='sigla' />
+				<param name='volumeDate' />
+				<param name='volumeNumber' />
+				<param name='partNumber' />
+				<param name='processManual' />
+				<param name='pageCount' />
+				<param name='typeCode' />
+				<param name='idAIP' />
+				<param name='barCode' />
+			</output-params>
+			<finish-signal>LWFSigFinishInput</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.vstup-reskenDosken'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+				<param name='url' />
+				<param name='note' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='title' />
+				<param name='author' />
+				<param name='language' />
+				<param name='isbn' />
+				<param name='issn' />
+				<param name='ccnb' />
+				<param name='sigla' />
+				<param name='volumeDate' />
+				<param name='volumeNumber' />
+				<param name='partNumber' />
+				<param name='processManual' />
+				<param name='pageCount' />
+				<param name='typeCode' />
+				<param name='idAIP' />
+				<param name='barCode' />
+			</output-params>
+			<finish-signal>LWFSigFinishInput</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.empty'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>LWFSigFinishPreproc</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.copy-to-tm-wf'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+				<param name='note' />
+				<param name='url' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>LWFSigFinishPreproc</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+			<timeout>36000000000</timeout>
+		</process>
+		<process name='ltp.convert'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='processManual' />
+			</output-params>
+			<finish-signal>LWFSigFinishPreproc</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.prijmi-data-z-editacniho-modulu'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>LWFSigFinishPostproc</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.empty-prijmi-data-z-editacniho-modulu'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>LWFSigFinishPostproc</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.vytvoreni-sip1'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>LWFSigFinishOutput</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.vytvoreni-sip1-ltp'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>LWFSigFinishOutput</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.dokonceni'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>LWFSigFinishOK</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.dokonceni-nook'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>LWFSigFinishError</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+		<process name='ltp.mods-and-dc-update'>
+			<input-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+				<param name='barCode' />
+				<param name='title' />
+				<param name='pathId' />
+				<param name='activity' />
+				<param name='reservedBy' />
+				<param name='uuid' />
+				<param name='libraryId' />
+			</input-params>
+			<output-params>
+				<param name='taskId' />
+				<param name='cdmId' />
+			</output-params>
+			<finish-signal>LWFSigFinishError</finish-signal>
+			<package-type>LWFWorkPackage</package-type>
+			<instance-limit>-1</instance-limit>
+		</process>
+
+	</processes>
+	
+	
+	
+	<tasks>
+		<task name='WAITFORIE' ignored='true' />
+		<task name='IDWAITFORPACKAGES' ignored='true' />
+	<!--	<task name='IDFINALIZE' ignored='true' /> -->
+		
+		<task name='CREATEDIR'>
+			<type-definition>sourcePackageObject.importType.code</type-definition>
+			<process-mapping type=''>prototype.vytvoreni-cdm-digitalizace</process-mapping>
+			<process-mapping type='PACKAGE'>prototype.vytvoreni-cdm-digitalizace-ltp</process-mapping>
+			<process-mapping type='FORMATMIGRATION'>prototype.vytvoreni-cdm-digitalizace-format-migration</process-mapping>
+		</task>
+		<task name='COVERUPLOAD'>
+			<process-mapping>prototype.vstup-z-digitalizace</process-mapping>
+		</task>
+		<task name='UPLOAD'>
+			<type-definition>sourcePackageObject.importType.code</type-definition>
+			<process-mapping type=''>prototype.vstup-z-digitalizace</process-mapping>
+			<process-mapping type='FORMATMIGRATION'>prototype.vstup-z-digitalizace-format-migration</process-mapping>
+		</task>
+		<task name='CDMIMPORT'>
+			<type-definition>sourcePackageObject.importType.code</type-definition>
+			<times-definition>1</times-definition>
+			<process-mapping type=''>prototype.import-dat-do-cdm</process-mapping>
+			<process-mapping type='FORMATMIGRATION'>prototype.import-dat-do-cdm-format-migration</process-mapping>
+		</task>
+		<task name='PREPAREPP'>
+			<process-mapping>prototype.priprav-data-pro-scantailor</process-mapping>			
+		</task>
+		<task name='PROCESSPP'>
+			<process-mapping>prototype.prijmi-data-ze-scantailor</process-mapping>
+		</task>
+		<task name='PICTUREVALIDATION'>
+			<process-mapping>prototype.validace-obrazu</process-mapping>
+		</task>
+		<task name='USERCOPY'>
+			<process-mapping>prototype.vytvoreni-obrazu</process-mapping>
+		</task>	
+		<task name='OCR'>
+			<process-mapping>prototype.ocr</process-mapping>
+		</task>
+		<task name='PROCESSMANUALOCR'>
+			<process-mapping>prototype.zpracovani-manualniho-ocr</process-mapping>
+		</task>
+		<task name='COMPLETION'>
+			<process-mapping>prototype.priprav-data-pro-editacni-modul</process-mapping>
+		</task>
+		<task name='PROCESSEM'>
+			<process-mapping>prototype.prijmi-data-z-editacniho-modulu</process-mapping>
+		</task>
+		<task name='VALIDATE'>
+			<process-mapping>prototype.validace-finalni</process-mapping>
+		</task>
+		<task name='SPLIT'>
+			<process-mapping>prototype.rozdeleni-na-int-entity</process-mapping>
+		</task>
+		<task name='REDUCTION'>
+			<process-mapping>prototype.cisteni-svazku</process-mapping>
+		</task>
+		<task name='FINALIZE'>
+			<process-mapping>prototype.dokonceni</process-mapping>
+		</task>
+		<task name='IDFINALIZE'>
+			<process-mapping>prototype.id-dokonceni</process-mapping>
+		</task>
+		<task name='FINALIZENOOK'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping>prototype.vyrazeni</process-mapping>
+			<process-mapping type='PACKAGE'>prototype.vyrazeni-reskenDoskenLTP</process-mapping>
+		</task>
+		<task name='IEPREPARE'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping type=''>import.vstup-digitalizace-fix</process-mapping>
+			<process-mapping type='PICTURES'>import.vstup-externi</process-mapping>
+			<process-mapping type='MNS'>import.vstup-manuscriptorium</process-mapping>
+			<process-mapping type='WA'>prototype.vstup-z-wa</process-mapping>
+			<process-mapping type='HARVEST'>prototype.vstup-z-harvest</process-mapping>
+			<process-mapping type='K4'>import.vstup-k4</process-mapping>		
+		</task>
+		<task name='IEVALIDATE'>
+			<process-mapping>import.validace-ie-zakladni</process-mapping>
+		</task>
+		<task name='IEURNNBN'>
+			<process-mapping>import.prirad-urnnbn</process-mapping>
+		</task>
+		<task name='IEEXPORTLTP'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping>prototype.vytvoreni-sip1</process-mapping>
+			<process-mapping type='PACKAGE'>prototype.vytvoreni-sip1-ltp</process-mapping>
+		</task>
+		<task name='IEPREPAREKRAMERIUS'>
+			<process-mapping>ientity.priprav-data-pro-k4</process-mapping>
+		</task>
+		<task name='IEREDUCTION'>
+			<process-mapping>prototype.cisteni-IE</process-mapping>
+		</task>
+		<task name='IEEXPORTKRAMERIUSNKCR'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping>ientity.import-dat-do-k4-nkcr</process-mapping>
+			<process-mapping type='PACKAGE'>ientity.import-dat-do-k4-nkcr-ltp</process-mapping>
+		</task>
+		<task name='IEEXPORTKRAMERIUSMZK'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping>ientity.import-dat-do-k4-mzk</process-mapping>
+			<process-mapping type='PACKAGE'>ientity.import-dat-do-k4-mzk-ltp</process-mapping>
+		</task>
+		<task name='IEUPDATEURNNBN'>
+			<process-mapping>import.update-urnnbn</process-mapping>
+		</task>
+		<task name='IEFINALIZE'>
+			<process-mapping>import.ie-dokonceni</process-mapping>
+		</task>
+		<task name='IEFINALIZENOOK'>
+			<process-mapping>import.ie-vyrazeni</process-mapping>
+		</task>
+		<task name='IDUPLOAD'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping type=''>import.id-upload</process-mapping>
+			<process-mapping type='K4'>import.id-upload</process-mapping>
+			<process-mapping type='WA'>import.id-upload-wa</process-mapping>
+			<process-mapping type='FORMATMIGRATION'>import.id-upload-wa</process-mapping>
+			<process-mapping type='PACKAGE'>import.vstup-LTP</process-mapping>	
+		</task>
+		<task name='IDCREATEPACKAGES'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping type=''>import.id-create-packages</process-mapping>
+			<process-mapping type='K4'>import.id-create-packages</process-mapping>
+			<process-mapping type='WA'>import.id-create-packages</process-mapping>
+			<process-mapping type='PACKAGE'>import.id-create-packages-ltp</process-mapping>
+			<process-mapping type='FORMATMIGRATION'>import.id-create-packages-format-migration</process-mapping>
+		</task>
+		
+		<!--WF LTP-->
+		<task name='WPINPUT'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping type=''>ltp.vytvoreni-cdm</process-mapping>
+			<process-mapping type='PACKAGE'>ltp.vstup-reskenDosken</process-mapping>
+			<process-mapping type='ACTUALIZEFROMALEPH'>ltp.vytvoreni-cdm</process-mapping>
+			<process-mapping type='IMPORTIMAGE'>ltp.vytvoreni-cdm</process-mapping>
+			<process-mapping type='REPAIR'>ltp.vytvoreni-cdm</process-mapping>
+			<process-mapping type='FORMATMIGRATION'>ltp.vytvoreni-cdm</process-mapping>
+		</task>
+		<task name='WPPREPROC'>
+			<type-definition>importType.code</type-definition>			
+			<process-mapping type='PACKAGE'>ltp.copy-to-tm-wf</process-mapping>	
+			<process-mapping type='ACTUALIZEFROMALEPH'>ltp.mods-and-dc-update</process-mapping>
+			<process-mapping type='IMPORTIMAGE'>ltp.merge</process-mapping>
+			<process-mapping type='REPAIR'>ltp.empty</process-mapping>
+			<process-mapping type='FORMATMIGRATION'>ltp.convert</process-mapping>
+		</task>
+		<task name='WPPOSTPROC'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping type='PACKAGE'>ltp.empty-prijmi-data-z-editacniho-modulu</process-mapping>	
+			<process-mapping type='ACTUALIZEFROMALEPH'>ltp.prijmi-data-z-editacniho-modulu</process-mapping>
+			<process-mapping type='IMPORTIMAGE'>ltp.prijmi-data-z-editacniho-modulu</process-mapping>
+			<process-mapping type='REPAIR'>ltp.prijmi-data-z-editacniho-modulu</process-mapping>
+			<process-mapping type='FORMATMIGRATION'>ltp.prijmi-data-z-editacniho-modulu</process-mapping>
+			<process-mapping type=''>ltp.prijmi-data-z-editacniho-modulu</process-mapping>
+		</task>		
+		<task name='WPOUTPUT'>
+			<type-definition>importType.code</type-definition>
+			<process-mapping type='PACKAGE'>ltp.vytvoreni-sip1-ltp</process-mapping>	
+			<process-mapping type='ACTUALIZEFROMALEPH'>ltp.vytvoreni-sip1</process-mapping>
+			<process-mapping type='IMPORTIMAGE'>ltp.vytvoreni-sip1</process-mapping>
+			<process-mapping type='REPAIR'>ltp.vytvoreni-sip1</process-mapping>
+			<process-mapping type='FORMATMIGRATION'>ltp.vytvoreni-sip1</process-mapping>
+			<process-mapping type=''>ltp.vytvoreni-sip1</process-mapping>
+		</task>		
+		<task name='WPFINISHNOOK'>
+			<process-mapping>ltp.dokonceni-nook</process-mapping>
+		</task>		
+		<task name='WPFINISH'>
+			<process-mapping>ltp.dokonceni</process-mapping>
+		</task>
+	</tasks>
+
+</configuration>

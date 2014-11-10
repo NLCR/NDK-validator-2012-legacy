@@ -1,0 +1,4 @@
+# Config file for EM. Created 0000-00-00T00:00:00.000+00:00
+"pageId","pageLabel","pageType","pageOrder","pageOrderLabel","dmdId","scanId","scanType","scanNote","admid","scanMode","profilOCR","OCRResult"
+"1_1000350721_00_0010","1_1000350721_00_0010.tif","cover","1","","","1","ENVELOPEDESTRUCT","","","BASIC","MANUAL","85"
+"1_1000350721_00_0011","1_1000350721_00_0011.tif","cover","1","","","1","ENVELOPEDESTRUCT","","","BASIC","FRACTURE","85"

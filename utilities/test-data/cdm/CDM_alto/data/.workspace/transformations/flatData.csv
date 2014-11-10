@@ -1,0 +1,4 @@
+# Premis events log file. Created 2012-06-01T16:11:01.499+02:00
+"dateTime";"utility";"utilityVersion";"operation";"eventDir";"agent";"agentVersion";"file";"status";"formatDesignationName";"formatRegistryKey";"preservationLevelValue"
+"2012-06-01T16:11:01.490+02:00";"CreateScantailorConfigImpl";"";"create_config";"flatData";"dom4j";"1.6.1";"\data\flatData\1_1000350721_00_0010.tif";"OK";"image/tiff";"fmt/353";"deleted"
+"2012-06-01T16:11:01.569+02:00";"CreateScantailorConfigImpl";"";"create_config";"flatData";"dom4j";"1.6.1";"\data\flatData\1_1000350721_00_0011.tif";"OK";"image/tiff";"fmt/353";"deleted"

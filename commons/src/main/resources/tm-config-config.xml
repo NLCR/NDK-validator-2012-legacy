@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+This is configuration of configuration subsystem ;-)
+
+Note that:
+- order of precendence is from the first (highest priority)
+  to the last (lowest priority)
+- configuraion files can be marked as optional
+- if you do not specify an absolute path, the file will be searched automatically in the following locations:
+    * in the current directory
+    * in the user home directory
+    * in the classpath
+-->
+<configuration>
+  <!-- 1: system properties have top priority; override any other property! -->
+  <system/>
+  
+  <!-- 2: OS-specific environment properties (for example JAVA_HOME); optional -->
+  <env/>
+
+  <!-- 3: specific settings for local server; optional -->
+  <xml fileName="C:/NDK/tm-config.xml" config-optional="true"/>
+
+  <!-- 4: global configuration for all servers; optional -->
+  <xml URL="http://localhost/ndk/tm-config-global.xml" config-optional="true"/>
+
+  <!-- 5: default settings; should contain safe/reasonable default values -->
+  <xml fileName="tm-config-defaults.xml"/>
+</configuration>

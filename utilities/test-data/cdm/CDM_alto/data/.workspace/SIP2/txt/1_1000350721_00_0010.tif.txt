@@ -1,0 +1,39 @@
+﻿20	Bankovní soustava ................ 179
+20.1	Bankovní soustava ..............................179
+20.2	Komerční banky ................................181
+20.3'Bankovní kreace peněz..........................182
+21	Hospodáxský růst..................................186
+21.1	Vymezení hospodářského růstu ....................186
+21.2	Zdroje hospodářského růstu ......................188
+22	Hospodářský cyklus ................................194
+22.1	Co je hospodářský cyklus?......................194
+22.2	Hospodářský cyklus a jeho fáze..................194
+22.3	Příčiny hospodářského cyklu ....................196
+23	Nezaměstnanost....................................200
+23.1	Nezaměstnanost a typy nezaměstnanosti ..........200
+23.2	Příčiny nezaměstnanosti v tržní ekonomice . . .	203
+23.3	Míra nezaměstnanosti neakcelerující inflaci . .	205
+24	Inflace..........................................209
+24.1	Definice inflace ................................209
+24.2	Inflace tažená poptávkou ........................211
+24.3	Inflace tlačená náklady ........................213
+24.4	Inflace setrvačná a inflační očekávání ..........214
+24.5	Inflace a nezaměstnanost ........................215
+25	Makroekonomická stabilizační hospodářská politika	217
+25.1	Základní přístupy k hospodářské politice	217
+25.2	Státní rozpočet................................220
+25.3	Státní dluh a schodek státního rozpočtu ....	224
+25.4	Peněžní a úvěrová politika ......................224
+25.5	Důchodová politika ..............................226
+Oddíl IV
+MEZINÁRODNÍ EKONOMIE ................................229
+26	Mezináxodní obchod a mezinárodni měnový systém . .	229
+26.1	Mezinárodní obchod a jeho ekonomické výhody	229
+26.2	Svobodný obchod, cla a kvóty....................232
+26.3	Obchodní a platební bilance ....................234
+26.4	Mezinárodní měnový systém. Měnové kursy ....	236
+27	Světová ekonomika ................................240
+27.1	Charakteristika světové ekonomiky ..............240
+27.2	Mezinárodní ekonomická integrace ................241
+27.3	Rozvojové země..................................242
+- 6 -

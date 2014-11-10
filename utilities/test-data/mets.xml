@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:mets ID="idvalue0" LABEL="" OBJID="" PROFILE="" TYPE="" xmlns:p="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ mets.xsd ">
+  <p:metsHdr ADMID="idvalue0" CREATEDATE="2001-12-31T12:00:00" ID="idvalue1" LASTMODDATE="2001-12-31T12:00:00" RECORDSTATUS="">
+    <p:agent ID="idvalue2" OTHERROLE="" OTHERTYPE="" ROLE="CREATOR" TYPE="INDIVIDUAL">
+      <p:name>p:name</p:name>
+      <p:note>p:note</p:note>
+    </p:agent>
+    <p:altRecordID ID="idvalue3" TYPE="">p:altRecordID</p:altRecordID>
+    <p:metsDocumentID ID="idvalue4" TYPE="">p:metsDocumentID</p:metsDocumentID>
+  </p:metsHdr>
+  <p:dmdSec ADMID="idvalue0" CREATED="2001-12-31T12:00:00" GROUPID="" ID="idvalue5" STATUS="">
+    <p:mdRef CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue6" LABEL="" LOCTYPE="ARK" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERLOCTYPE="" OTHERMDTYPE="" SIZE="0" XPTR="" xlink:actuate="onLoad" xlink:arcrole="" xlink:href="http://tempuri.org" xlink:role="" xlink:show="new" xlink:title="" xlink:type="simple"/>
+    <p:mdWrap CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue7" LABEL="" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERMDTYPE="" SIZE="0">
+      <p:binData>MA==</p:binData>
+    </p:mdWrap>
+  </p:dmdSec>
+  <p:amdSec ID="idvalue8">
+    <p:techMD ADMID="idvalue0" CREATED="2001-12-31T12:00:00" GROUPID="" ID="idvalue9" STATUS="">
+      <p:mdRef CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue10" LABEL="" LOCTYPE="ARK" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERLOCTYPE="" OTHERMDTYPE="" SIZE="0" XPTR="" xlink:actuate="onLoad" xlink:arcrole="" xlink:href="http://tempuri.org" xlink:role="" xlink:show="new" xlink:title="" xlink:type="simple"/>
+      <p:mdWrap CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue11" LABEL="" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERMDTYPE="" SIZE="0">
+        <p:binData>MA==</p:binData>
+      </p:mdWrap>
+    </p:techMD>
+    <p:rightsMD ADMID="idvalue0" CREATED="2001-12-31T12:00:00" GROUPID="" ID="idvalue12" STATUS="">
+      <p:mdRef CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue13" LABEL="" LOCTYPE="ARK" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERLOCTYPE="" OTHERMDTYPE="" SIZE="0" XPTR="" xlink:actuate="onLoad" xlink:arcrole="" xlink:href="http://tempuri.org" xlink:role="" xlink:show="new" xlink:title="" xlink:type="simple"/>
+      <p:mdWrap CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue14" LABEL="" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERMDTYPE="" SIZE="0">
+        <p:binData>MA==</p:binData>
+      </p:mdWrap>
+    </p:rightsMD>
+    <p:sourceMD ADMID="idvalue0" CREATED="2001-12-31T12:00:00" GROUPID="" ID="idvalue15" STATUS="">
+      <p:mdRef CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue16" LABEL="" LOCTYPE="ARK" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERLOCTYPE="" OTHERMDTYPE="" SIZE="0" XPTR="" xlink:actuate="onLoad" xlink:arcrole="" xlink:href="http://tempuri.org" xlink:role="" xlink:show="new" xlink:title="" xlink:type="simple"/>
+      <p:mdWrap CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue17" LABEL="" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERMDTYPE="" SIZE="0">
+        <p:binData>MA==</p:binData>
+      </p:mdWrap>
+    </p:sourceMD>
+    <p:digiprovMD ADMID="idvalue0" CREATED="2001-12-31T12:00:00" GROUPID="" ID="idvalue18" STATUS="">
+      <p:mdRef CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue19" LABEL="" LOCTYPE="ARK" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERLOCTYPE="" OTHERMDTYPE="" SIZE="0" XPTR="" xlink:actuate="onLoad" xlink:arcrole="" xlink:href="http://tempuri.org" xlink:role="" xlink:show="new" xlink:title="" xlink:type="simple"/>
+      <p:mdWrap CHECKSUM="" CHECKSUMTYPE="Adler-32" CREATED="2001-12-31T12:00:00" ID="idvalue20" LABEL="" MDTYPE="MARC" MDTYPEVERSION="" MIMETYPE="" OTHERMDTYPE="" SIZE="0">
+        <p:binData>MA==</p:binData>
+      </p:mdWrap>
+    </p:digiprovMD>
+  </p:amdSec>
+  <p:fileSec ID="idvalue21">
+    <p:fileGrp ADMID="idvalue0" ID="idvalue22" USE="" VERSDATE="2001-12-31T12:00:00">
+      <p:fileGrp ADMID="idvalue0" ID="idvalue23" USE="" VERSDATE="2001-12-31T12:00:00"/>
+    </p:fileGrp>
+  </p:fileSec>
+  <p:structMap ID="idvalue24" LABEL="" TYPE="">
+    <p:div ADMID="idvalue0" CONTENTIDS="" DMDID="idvalue0" ID="idvalue25" LABEL="" ORDER="0" ORDERLABEL="" TYPE="" p:label="">
+      <p:mptr CONTENTIDS="" ID="idvalue26" LOCTYPE="ARK" OTHERLOCTYPE="" xlink:actuate="onLoad" xlink:arcrole="" xlink:href="http://tempuri.org" xlink:role="" xlink:show="new" xlink:title="" xlink:type="simple"/>
+      <p:fptr CONTENTIDS="" FILEID="idvalue0" ID="idvalue27">
+        <p:par ID="idvalue28">
+          <p:area ADMID="idvalue0" BEGIN="" BETYPE="BYTE" CONTENTIDS="" COORDS="" END="" EXTENT="" EXTTYPE="BYTE" FILEID="idvalue0" ID="idvalue29" SHAPE="RECT"/>
+        </p:par>
+      </p:fptr>
+      <p:div ADMID="idvalue0" CONTENTIDS="" DMDID="idvalue0" ID="idvalue30" LABEL="" ORDER="0" ORDERLABEL="" TYPE="" p:label=""/>
+    </p:div>
+  </p:structMap>
+  <p:structLink ID="idvalue31">
+    <p:smLink ID="idvalue32" p:actuate="onLoad" p:arcrole="" p:from="" p:show="new" p:title="" p:to=""/>
+  </p:structLink>
+  <p:behaviorSec CREATED="2001-12-31T12:00:00" ID="idvalue33" LABEL="">
+    <p:behaviorSec CREATED="2001-12-31T12:00:00" ID="idvalue34" LABEL=""/>
+    <p:behavior ADMID="idvalue0" BTYPE="" CREATED="2001-12-31T12:00:00" GROUPID="" ID="idvalue35" LABEL="" STRUCTID="idvalue0">
+      <p:interfaceDef ID="idvalue36" LABEL="" LOCTYPE="ARK" OTHERLOCTYPE="" xlink:actuate="onLoad" xlink:arcrole="" xlink:href="http://tempuri.org" xlink:role="" xlink:show="new" xlink:title="" xlink:type="simple"/>
+      <p:mechanism ID="idvalue37" LABEL="" LOCTYPE="ARK" OTHERLOCTYPE="" xlink:actuate="onLoad" xlink:arcrole="" xlink:href="http://tempuri.org" xlink:role="" xlink:show="new" xlink:title="" xlink:type="simple"/>
+    </p:behavior>
+  </p:behaviorSec>
+</p:mets>

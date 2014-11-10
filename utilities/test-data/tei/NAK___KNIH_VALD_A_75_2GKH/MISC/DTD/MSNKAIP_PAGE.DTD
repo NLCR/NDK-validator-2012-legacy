@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.2 (http://www.xmlspy.com) by Karel Kucera (AiP Beroun, Ltd.) -->
+<!ENTITY % msnkaip_device.dtd SYSTEM "msnkaip_device.dtd">
+%msnkaip_device.dtd;
+<!ELEMENT page ((pgFoliation | pgPagination), pgDescription*, pgNote*, pgTranscription?, pgImage*, pgWatermark*, techDesc?)>
+<!ATTLIST page
+	version NMTOKEN "1.0"
+	lang NMTOKEN #IMPLIED
+	techD IDREF #IMPLIED
+>
+<!ELEMENT pgFoliation (#PCDATA)>
+<!ELEMENT pgPagination (#PCDATA)>
+<!ELEMENT pgDescription (pgCaption?, pgText)>
+<!ATTLIST pgDescription
+	lang NMTOKEN #REQUIRED
+>
+<!ELEMENT pgCaption (#PCDATA)>
+<!ELEMENT pgText (#PCDATA | pgItem)*>
+<!ELEMENT pgItem (#PCDATA | pgItem)*>
+<!ATTLIST pgItem
+	num NMTOKEN #IMPLIED
+	name CDATA #IMPLIED
+	type (text | number | date) #IMPLIED
+>
+<!ELEMENT pgNote (#PCDATA)>
+<!ATTLIST pgNote
+	lang NMTOKEN #REQUIRED
+>
+<!ELEMENT pgTranscription (#PCDATA)>
+<!ELEMENT pgImage EMPTY>
+<!ATTLIST pgImage
+	id ID #REQUIRED
+	quality (thumbnail | preview | normal | excellent | detail) #IMPLIED
+	href CDATA #REQUIRED
+>
+<!ELEMENT pgWatermark (#PCDATA)>
+<!ATTLIST pgWatermark
+	quality (thumbnail | preview | normal | excellent | detail) #IMPLIED
+	href CDATA #REQUIRED
+>

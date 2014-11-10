@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LABEL="WA wa" OBJID="wa" TYPE="WA" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <mets:metsHdr CREATEDATE="2012-06-25T16:33:19Z" LASTMODDATE="2012-06-25T16:33:19Z">
+    <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <mets:name>creator</mets:name>
+    </mets:agent>
+    <mets:agent ROLE="ARCHIVIST" TYPE="ORGANIZATION">
+      <mets:name>archivist</mets:name>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:amdSec ID="AMDWARC0001">
+    <mets:techMD ID="OBJ_0001">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData xmlns:premis="info:lc/xmlns/premis-v21">
+          <object xmlns="info:lc/xmlns/premis-v2" xsi:type="file">  
+            <objectIdentifier> 
+              <objectIdentifierType>fileName</objectIdentifierType>  
+              <objectIdentifierValue>Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz</objectIdentifierValue> 
+            </objectIdentifier>  
+            <preservationLevel> 
+              <preservationLevelValue>preservation</preservationLevelValue> 
+            </preservationLevel>  
+            <objectCharacteristics> 
+              <compositionLevel>0</compositionLevel>  
+              <fixity> 
+                <messageDigestAlgorithm>MD5</messageDigestAlgorithm>  
+                <messageDigest>a41fa8f6ebcec37f6f2e55d4a19593ce</messageDigest>  
+                <messageDigestOriginator>TM</messageDigestOriginator> 
+              </fixity>  
+              <size>5242389</size>  
+              <format> 
+                <formatDesignation> 
+                  <formatName>application/warc</formatName>  
+                  <formatVersion>1.0</formatVersion> 
+                </formatDesignation>  
+                <formatRegistry> 
+                  <formatRegistryName>PRONOM</formatRegistryName>  
+                  <formatRegistryKey>fmt/289</formatRegistryKey> 
+                </formatRegistry> 
+              </format>  
+              <creatingApplication> 
+                <creatingApplicationName>Heritrix 1.15.5 http://crawler.archive.org</creatingApplicationName>  
+                <creatingApplicationVersion>1.15.5</creatingApplicationVersion>  
+                <dateCreatedByApplication>2012-06-15T12:38:39Z</dateCreatedByApplication> 
+              </creatingApplication> 
+            </objectCharacteristics> 
+          </object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+  </mets:amdSec>
+  <mets:fileSec>
+    <mets:fileGrp ID="WARC0001" USE="WARC">
+      <mets:file CHECKSUM="a41fa8f6ebcec37f6f2e55d4a19593ce" CHECKSUMTYPE="MD5" ID="WARC_0001" MIMETYPE="application/octet-stream" SEQ="0" SIZE="5242389">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="ARC/Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz"></mets:FLocat>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp ID="TXTGRP" USE="Text">
+      <mets:file CHECKSUM="fb73498432c97a9ee110e954a6374d1c" CHECKSUMTYPE="MD5" ID="TXT_0001" MIMETYPE="text/plain" SEQ="0" SIZE="109426">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/urn-uuid-02ea744e-18ab-4dd0-b49d-612f169d098f.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="da147de493005e6feec6bae5680c5313" CHECKSUMTYPE="MD5" ID="TXT_0002" MIMETYPE="text/plain" SEQ="1" SIZE="318340">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/urn-uuid-0c71c5ec-b045-4a3c-bc14-a4c75fef9264.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="50ba8c48bfd523acf821e5dba576506f" CHECKSUMTYPE="MD5" ID="TXT_0003" MIMETYPE="text/plain" SEQ="2" SIZE="177369">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/urn-uuid-3b2036e3-fb46-4100-b0b4-8e951fea74fe.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="61d235a69c0f560a65496bbfe0570673" CHECKSUMTYPE="MD5" ID="TXT_0004" MIMETYPE="text/plain" SEQ="3" SIZE="98136">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/urn-uuid-3c6795bd-dd37-4e18-aea9-bff8894cee84.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="630a70e3eb36eb7b901f07c54cd519b2" CHECKSUMTYPE="MD5" ID="TXT_0005" MIMETYPE="text/plain" SEQ="4" SIZE="378490">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/urn-uuid-441b1edb-06c4-47cf-b413-301aaa9669ab.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="39eba544cc9751554449411a380fd9b3" CHECKSUMTYPE="MD5" ID="TXT_0006" MIMETYPE="text/plain" SEQ="5" SIZE="42504">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/urn-uuid-560c1f9e-4ff7-4e13-83d2-917bbf5d6e2f.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="4fdeff3660165e99cf9b3b29408b4655" CHECKSUMTYPE="MD5" ID="TXT_0007" MIMETYPE="text/plain" SEQ="6" SIZE="1836">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/urn-uuid-d942e7cf-760d-488f-ae01-bd5d9f71128f.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="ab84a49239150cf78c04e652291a6576" CHECKSUMTYPE="MD5" ID="TXT_0008" MIMETYPE="text/plain" SEQ="7" SIZE="295388">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/urn-uuid-f718a578-72fd-438a-88a0-f5ff6757c5ef.txt"></mets:FLocat>
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+</mets:mets>

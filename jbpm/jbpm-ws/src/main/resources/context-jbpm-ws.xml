@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+		xmlns:jaxws="http://cxf.apache.org/jaxws" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:http-conf="http://cxf.apache.org/transports/http/configuration"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+		http://cxf.apache.org/transports/http/configuration
+		http://cxf.apache.org/schemas/configuration/http-conf.xsd">
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="classpath:context-jbpm-ws.properties" />
+	</bean>
+
+	<bean id="mbeanServer" class="org.springframework.jmx.support.MBeanServerFactoryBean">
+		<property name="locateExistingServerIfPossible" value="true" />
+	</bean>
+
+	<bean class="org.springframework.jmx.export.MBeanExporter">
+		<property name="server" ref="mbeanServer" />
+		<property name="beans">
+			<map>
+				<entry key="com.logica.ndk:type=JBPMMBean" value-ref="jbpmJMXBean" />
+			</map>
+		</property>
+	</bean>
+		
+	<bean id="jbpmJMXBean" class="com.logica.ndk.tm.process.jmx.JBPMJmx"/>
+	
+	<!-- we need to init TMInfo class on Spring initialization to LOG TMInfo on startup of web application -->
+	<bean id="tmInfo" class="com.logica.ndk.tm.info.TMInfo"/>
+	
+	<!-- toto nastavenie plati pre kazy HTTP request (WS calls, ...). Je mozne to upravit pomocou name atributu. Viac manual apache cxf  -->
+	<http-conf:conduit name=".*">
+                <http-conf:client ConnectionTimeout="5000" ReceiveTimeout="10000"/>
+	</http-conf:conduit> 
+	
+    <jaxws:client id="logServerClient"
+                  serviceClass="com.logica.ndk.tm.log.LogServer"
+                  address="${logging.ws.url}" />
+
+	<bean id="readMuleLog" class="com.logica.ndk.jbpm.ReadMuleLog">
+		<property name="readMuleLog" value="${read.mule.log}"/>
+	</bean>
+</beans>

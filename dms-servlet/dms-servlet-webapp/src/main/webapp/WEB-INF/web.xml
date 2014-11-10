@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	
+	<display-name>DMS Servlet</display-name>
+	<welcome-file-list>
+		<welcome-file>/jsp/index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- JSP -->
+	<servlet>
+		<servlet-name>GetAbstraction</servlet-name>
+		<servlet-class>com.logica.ndk.tm.dms.servlet.GetAbstractionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetAbstraction</servlet-name>
+		<url-pattern>/abstraction/*</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/html_error/error_500_server_error.html</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/html_error/error_404_not_found.html</location>
+	</error-page> 
+</web-app>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.logica.ndk.tm</groupId>
+		<artifactId>jbpm</artifactId>
+		<version>1.5.1-SNAPSHOT</version>
+	</parent>
+
+  <groupId>com.logica.ndk.tm</groupId>
+  <artifactId>jbpm-human-task-war</artifactId>
+  <packaging>war</packaging>
+	<name>NDK TM - jbpm human task service</name>
+	<version>1.5.1-SNAPSHOT</version>
+	<description />
+
+  <build>
+		<finalName>jbpm-human-task-war</finalName>
+		<testOutputDirectory>target/test-classes</testOutputDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+	</build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-human-task</artifactId>
+      <version>${jbpm.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-tm</artifactId>
+      <version>${jbpm.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <!-- Any servlet container supports -->
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+    </dependency>
+  </dependencies>
+</project>

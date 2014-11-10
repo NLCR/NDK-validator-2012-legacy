@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<validationTemplate>
+    <name>physical_map_amd</name>
+    <version>1.0</version>
+    <rootValidationNode mandatory="MANDATORY" name="mets:mets" nullable="false">
+        <element mandatory="MANDATORY" name="mets:structMap" nullable="false">
+            <attribute mandatory="MANDATORY" name="TYPE">
+                <possibleValue>PHYSICAL</possibleValue>
+            </attribute>
+        </element>
+    </rootValidationNode>
+</validationTemplate>

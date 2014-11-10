@@ -1,0 +1,58 @@
+Sprofile=PROFILE2
+Scap=no
+Sextensions=0
+Ssize={3425,2385}
+Sorigin={0,0}
+Stiles={1024,1024}
+Stile_origin={0,0}
+Scomponents=3
+Ssigned=no,no,no
+Sprecision=8,8,8
+Ssampling={1,1},{1,1},{1,1}
+Sdims={3425,2385},{3425,2385},{3425,2385}
+Cycc=yes
+Cmct=0
+Clayers=12
+Cuse_sop=no
+Cuse_eph=no
+Corder=RPCL
+Calign_blk_last={no,no}
+Clevels=5
+Cads=0
+Cdfs=0
+Cdecomp=B(-:-:-)
+Creversible=no
+Ckernels=W9X7
+Catk=0
+Cuse_precincts=yes
+Cprecincts={256,256},{128,128},{128,128},{128,128},{128,128},{128,128}
+Cblk={64,64}
+Cmodes=BYPASS
+Qguard=1
+Qderived=no
+Qabs_steps=0.000115,0.000114,0.000114,0.000112,0.000229,0.000229,0.000227,0.000
+467,0.000467,0.000470,0.000978,0.000978,0.001009,0.001931,0.001931,0.001877
+
+>> New attributes for tile 0:
+
+>> New attributes for tile 1:
+
+>> New attributes for tile 2:
+
+>> New attributes for tile 3:
+
+>> New attributes for tile 4:
+
+>> New attributes for tile 5:
+
+>> New attributes for tile 6:
+
+>> New attributes for tile 7:
+
+>> New attributes for tile 8:
+
+>> New attributes for tile 9:
+
+>> New attributes for tile 10:
+
+>> New attributes for tile 11:

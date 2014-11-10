@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<inputDirs>F:\CDT-01\_HARD_LINK_SERVICE,D:\Work\test\_HARD_LINK_SERVICE_2</inputDirs>
+	<driversMapping>//hdigfscl02/CDT-01/=F:\CDT-01\</driversMapping>
+	<command>C:\NDK\makeHardLink.bat ${target} "${source}"</command>
+	<sleepInSeconds>10</sleepInSeconds>
+	<cygwinHome>C:\cygwin\bin\</cygwinHome>
+	<readLinkCmd>readlink.exe ${link}</readLinkCmd>
+</configuration>

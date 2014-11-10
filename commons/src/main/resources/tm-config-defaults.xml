@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<cdm>
+		<!-- CDM base dir hash table. Sluzi na ukladanie CDM-iek do viac lokacii. Base dir sa ziskava pre dane cdmId podla tejto tabulky. Klucom je posledny znak 
+		     MD5_hex(cdmId). Hodnota je lokacia pre dane cdmId -->
+		<baseDirHashTable>
+			0=${java.io.tmpdir}/cdm,
+			1=${java.io.tmpdir}/cdm,
+			2=${java.io.tmpdir}/cdm,
+			3=${java.io.tmpdir}/cdm,
+			4=${java.io.tmpdir}/cdm,
+			5=${java.io.tmpdir}/cdm,
+			6=${java.io.tmpdir}/cdm,
+			7=${java.io.tmpdir}/cdm,
+			8=${java.io.tmpdir}/cdm,
+			9=${java.io.tmpdir}/cdm,
+			a=${java.io.tmpdir}/cdm,
+			b=${java.io.tmpdir}/cdm,
+			c=${java.io.tmpdir}/cdm,
+			d=${java.io.tmpdir}/cdm,
+			e=${java.io.tmpdir}/cdm,
+			f=${java.io.tmpdir}/cdm
+		</baseDirHashTable>
+		<!-- Sub directory for recycleBin. Tento podadresar sa vytvori v baseDir. Base dir je zavisle od cdmId - pozri property baseDirHashTable -->
+		<recycleSubDir>/recycle-bin</recycleSubDir>
+		<!--  Free space limit for deleting/purging recycle-bin using PurgCdm; in bytes; default=0 i.e. do NOT remove anything -->
+		<freeSpaceLimit>0</freeSpaceLimit>
+		<purgeScript>/cygdrive/c/NDK/purge-recycle.sh</purgeScript>
+		<gitDir>${java.io.tmpdir}</gitDir>
+		<waPremisExtensions>*.premis.xml</waPremisExtensions>
+		<waModsExtensions>*.mods.xml</waModsExtensions>
+		<mimeTypesJp2>image/jp2 jp2 JP2 jpeg2 JPEG2 jpeg2000 JPEG2000</mimeTypesJp2>
+		<formatRegistryKeyMapping>image/tiff=fmt/353, image/jp2=x-fmt/392, text/xml=fmt/101, application/arc-1.0=x-fmt/219, application/arc-1.1=fmt/410, application/warc=fmt/289, image/jpeg=fmt/43, image/vnd.djvu=fmt/318</formatRegistryKeyMapping>
+		<mets>
+			<defaultCreator>ABA001</defaultCreator>
+			<defaultArchivist>ABA001</defaultArchivist>
+		</mets>
+		<cmdMetsHelper>
+			<identifierTypes>doi,oclc,isbn,ccnb,barCode,uuid,URN:ISBN,urnnbn,issn,http</identifierTypes>
+		</cmdMetsHelper>
+		<storages>
+			<priorityCount>3</priorityCount>
+			<priority0>\\\\hdigfscl02\CDT-01,\\\\hdigfscl02\CDT-01</priority0>
+			<priority1>\\\\hdigfscl02\CDT-01,\\\\hdigfscl02\CDT-01</priority1>
+			<priority2>\\\\hdigfscl02\CDT-01,\\\\hdigfscl02\CDT-01</priority2>
+			<diskSpaceTreshold>10000000000</diskSpaceTreshold>
+		</storages>
+		<symlinks>
+			<enabled>false</enabled>
+			<resolve>false</resolve>
+			<linkedCdmDir>_LINKED_CDM</linkedCdmDir>
+			<command>cmd /c mklink /d ${source} ${target}</command>
+			<description>Creating symlink for CDM</description>
+		</symlinks>
+		<hardlinks>
+			<enabled>false</enabled>
+			<copyTargets>\\\\hdigfscl02\\CDT-01\\_HARD_LINK_SERVICE</copyTargets>
+		</hardlinks>		
+	</cdm>
+	<aleph>
+		<nk>
+			<url>http://aleph.nkp.cz/X</url>
+			<defaultBase>NKC</defaultBase>
+		</nk>
+		<mzk>
+			<url>http://aleph.mzk.cz/X</url>
+			<defaultBase>MZK01</defaultBase>
+		</mzk>
+	</aleph>
+	<metsMetadata>
+		<norwayFonds>
+			<note>Podpořeno grantem z Norska prostřednictvím Norského finančního mechanismu
+			</note>
+			<financed>Norské fondy</financed>
+		</norwayFonds>
+		<validation>
+			<templates>monograph,periodical,amd_mets,manuscript,wa,periodical_biblio,monograph_biblio_final,periodical_em_result,harvest,multi_monographic_title_dc,periodical_title_biblio,monographic_volume_biblio_final</templates>
+			<continueOnException>true</continueOnException>
+			<pathToTemplates>C:/NDK/templates/</pathToTemplates>
+			<workspaceFile>validation\validatio.txt</workspaceFile>
+			<monograph>monographic_volume,file_sec,physical_map,monographic_logical_map</monograph>
+			<monograph_k3>monographic_volume_k3,file_sec_k3,physical_map_k3,monographic_logical_map_k3</monograph_k3>
+			<periodical>periodical_volume,periodical_title,periodical_issue,periodical_supplement,file_sec,physical_map,periodical_logical_map</periodical>
+			<periodical_k3>periodical_volume_k3,periodical_title_k3,periodical_issue_k3,periodical_supplement,file_sec_k3,physical_map_k3,periodical_logical_map_k3</periodical_k3>
+			<amd_mets>amd_sec,amd_sec_mix,amd_file_sec,physical_map_amd</amd_mets>
+			<amd_mets_k3>amd_sec,amd_sec_mix,amd_file_sec_k3,physical_map_amd_k3</amd_mets_k3>
+			<manuscript></manuscript>
+			<wa></wa>
+			<periodical_biblio>periodical_title</periodical_biblio>
+			<monograph_biblio>monographic_volume_biblio</monograph_biblio>
+			<monograph_biblio_final>monographic_volume_biblio_final</monograph_biblio_final>
+			<periodical_em_result>periodical_volume,periodical_issue_multiple,periodical_supplement_multiple</periodical_em_result>
+			<monograph_em_result>multi_monographic_title,multi_monographic_title_dc,multipart_monographic_volume</monograph_em_result>
+			<multi_part_monograph_title>multi_monographic_title</multi_part_monograph_title>
+			<multi_part_monograph_title_biblio>multi_monographic_title_biblio</multi_part_monograph_title_biblio>
+			<harvest></harvest>
+			<amd_mets_wa></amd_mets_wa>
+			<amd_mets_harvest></amd_mets_harvest>
+			<mix-ps>mix_ps</mix-ps>
+			<mix-mc>mix_mc</mix-mc>
+		</validation>
+		<monograph>
+			<agentRole>CREATOR</agentRole>
+			<agentType>ORGANIZATION</agentType>
+			<MDTYPE>
+				<mods>MODS</mods>
+				<dc>DC</dc>
+			</MDTYPE>
+			<MIMETYPE>text/xml</MIMETYPE>
+			<nameType>personal,corporate,conference,family</nameType>
+			<namePartType>date,family,given,termsOfAddress</namePartType>
+		</monograph>
+	</metsMetadata>
+	<modsMetadata>
+		<monograph>
+			<nameTypes>personal, corporate, conference, family,karel</nameTypes>
+			<namePartTypes>date, family, given, termsOfAddress</namePartTypes>
+			<genre>volume</genre>
+			<languageTermType>code</languageTermType>
+			<languageTermAuthority>iso639-2b</languageTermAuthority>
+			<languageTermType>code</languageTermType>
+			<form>print</form>
+			<physicalDescriptionAuthority>marcform</physicalDescriptionAuthority>
+			<creationDateEncoding>iso8601</creationDateEncoding>
+		</monograph>
+		<periodical>
+			<titleGenre>title</titleGenre>
+			<volumeGenre>volume</volumeGenre>
+			<supplementGenre>volume_supplement, issue_supplement</supplementGenre>
+			<issueGenre>issue</issueGenre>
+			<languageTermType>code</languageTermType>
+			<languageTermAuthority>iso639-2b</languageTermAuthority>
+			<languageTermType>code</languageTermType>
+			<form>print</form>
+			<physicalDescriptionAuthority>marcform</physicalDescriptionAuthority>
+			<creationDateEncoding>iso8601</creationDateEncoding>
+		</periodical>
+	</modsMetadata>
+	<format-migration>
+			<types>FORMATMIGRATION</types>
+			<targetFormat>tif</targetFormat>
+			<mc-profile>MC1-1</mc-profile>
+			<uc-profile>UC1-8</uc-profile>
+			<template>FORMATMIGRATION</template>
+			<enviroment-info-path>\\\\hdigfscl02\CDT-01\import-FormatMigration</enviroment-info-path>
+			<metadata-file>import-properties.csv</metadata-file>
+			<metadata-error-file>import-properties-error.txt</metadata-error-file>
+			<imageMagick>
+				<params>-type TrueColor -depth 8</params>
+				<params-change-dpi>-type TrueColor -depth 8 -resample ${dpi} -density ${dpi}</params-change-dpi>
+			</imageMagick>
+			<cropTypeCode>2</cropTypeCode>
+			<virtualScannerCode>VIRTUALSCAN</virtualScannerCode>
+			<rename-source-dir>true</rename-source-dir>
+	</format-migration>
+	<ltp-format-migration>
+	<types>FORMATMIGRATION</types>
+		<default>
+			<sourceExt>jp2</sourceExt>
+			<targetExt>jpg</targetExt>
+			<directories>masterCopy,postprocessingData</directories>
+		</default>
+	</ltp-format-migration>
+	<utility>
+		<checkRawLinks>
+			<maxChecks>60</maxChecks>
+		</checkRawLinks>
+		<ping><test>A</test></ping>
+		<fileChar>
+			<!-- case insensitive wildcard list of extensions which will be processed by FileCharacterization utility -->
+			<imgExtensions>*.tif,*.tiff,*.jpeg,*.jpg,*.jp2,*.jpg2000,*.djvu</imgExtensions>
+			<recursive>true</recursive>
+			<maxAttempt>3</maxAttempt>
+		</fileChar>
+		<convertToJpeg2000>
+			<!-- case insensitive wildcard list of extensions which will be processed by ConvertToJpeg2000 utility -->
+			<sourceExt>*.tif,*.tiff</sourceExt>
+			<maxAttempt>3</maxAttempt>
+			<minSize>1024</minSize>
+			<profile>
+				<agentName>Kakadu</agentName>
+				<agentVersion>7.0</agentVersion>
+				<!-- commas has to be escaped by \ -->
+				<MC1-1>Cblk={64\,64} Corder=RPCL Stiles={4096\,4096} Cprecincts={256\,256}\,{256\,256}\,{128\,128} ORGtparts=R Creversible=yes Clayers=1 Clevels=5 Cmodes=BYPASS Cuse_sop=yes Cuse_eph=yes</MC1-1>
+				<UC1-4>Cblk={64\,64} Corder=RPCL Stiles={1024\,1024} Cprecincts={256\,256}\,{256\,256}\,{128\,128} ORGtparts=R -rate 6 Clayers=12 Clevels=5 Cmodes=BYPASS</UC1-4>
+				<UC1-8>Cblk={64\,64} Corder=RPCL Stiles={1024\,1024} Cprecincts={256\,256}\,{256\,256}\,{128\,128} ORGtparts=R -rate 3 Clayers=12 Clevels=5 Cmodes=BYPASS</UC1-8>				
+				<UC1-10>Cblk={64\,64} Corder=RPCL Stiles={1024\,1024} Cprecincts={256\,256}\,{256\,256}\,{128\,128} ORGtparts=R -rate 2.4 Clayers=12 Clevels=5 Cmodes=BYPASS</UC1-10>				
+				<UC1-20>Cblk={64\,64} Corder=RPCL Stiles={1024\,1024} Cprecincts={256\,256}\,{256\,256}\,{128\,128} ORGtparts=R -rate 1.2 Clayers=12 Clevels=5 Cmodes=BYPASS</UC1-20>
+				<UC1-30>Cblk={64\,64} Corder=RPCL Stiles={1024\,1024} Cprecincts={256\,256}\,{256\,256}\,{128\,128} ORGtparts=R -rate 0.8 Clayers=12 Clevels=5 Cmodes=BYPASS</UC1-30>		
+				<pdfImages>Cblk={64\,64} Corder=RPCL Stiles={1024\,1024} Cprecincts={256\,256}\,{128\,128} ORGtparts=R -rate 0.6 Clayers=12 Clevels=5 Cmodes=BYPASS</pdfImages>				
+				<reduceResolution>-reduce 1</reduceResolution>				
+				
+				<ltp>
+					<agentName>Kakadu-reduceResolution</agentName>
+					<agentVersion>7.0</agentVersion>
+					<cleanTarget>true</cleanTarget>	
+				</ltp>
+				
+				<!-- old params
+				<JPEG2000PRESERVEDPI>Creversible=yes Stiles={4096\,4096} Corder=RPCL Clevels=5 Clayers=1
+					Cprecincts={256\,256}\,{256\,256}\,{128\,128} Cblk={64\,64} Cmodes=BYPASS
+				</JPEG2000PRESERVEDPI>
+				<JPEG2000DPI300>Creversible=yes Stiles={4096\,4096} Corder=RPCL Clevels=5 Clayers=1
+					Cprecincts={256\,256}\,{256\,256}\,{128\,128} Cblk={64\,64} Cmodes=BYPASS
+				</JPEG2000DPI300>
+				<JPEG2000PRESERVEDPIMCLOSSY>Creversible=no Stiles={1024\,1024} Corder=RPCL Clevels=5 Clayers=12
+					Cprecincts={256\,256}\,{256\,256}\,{128\,128} Cblk={64\,64} Cmodes=BYPASS
+				</JPEG2000PRESERVEDPIMCLOSSY>				
+				<JPEG2000HALFDPIMCLOSSY>Creversible=no Stiles={1024\,1024} Corder=RPCL Clevels=5 Clayers=12
+					Cprecincts={256\,256}\,{256\,256}\,{128\,128} Cblk={64\,64} Cmodes=BYPASS
+				</JPEG2000HALFDPIMCLOSSY>
+				 -->
+				<custom>Creversible=no Stiles={1024\,1024} Corder=RPCL Clevels=5 Clayers=12 Cprecincts={256\,256}\,{256\,256}\,{128\,128} Cblk={64\,64} Cmodes=BYPASS
+				</custom>
+				<profilePrefix></profilePrefix>				
+			</profile>
+			<output>
+				<format>JPEG2000</format>
+				<version>1.0</version>
+				<colorMode>RGB</colorMode>
+				<colorDepth>24</colorDepth>
+				<compressionScheme>JPEG2000</compressionScheme>
+				<objIdentifierType>JHOVE</objIdentifierType>
+			</output>
+		</convertToJpeg2000>
+		<transformJpeg2000>
+			<!-- case insensitive wildcard list of extensions which will be processed by ConvertToJpeg2000 utility -->
+			<sourceExt>*.jp2,*.jpeg2000</sourceExt>
+			<maxAttempt>3</maxAttempt>
+			<profile>
+				<!-- commas has to be escaped by \ -->
+				<agentName>Kakadu-reduce</agentName>
+			  <agentVersion>7.0</agentVersion>
+				<reduceResolution>-reduce 1</reduceResolution>
+				<profilePrefix></profilePrefix>				
+			</profile>
+			<output>
+				<format>JPEG2000</format>
+				<version>1.0</version>
+				<colorMode>RGB</colorMode>
+				<colorDepth>24</colorDepth>
+			</output>
+		</transformJpeg2000>
+		<convertToJpg>
+			<!-- case insensitive wildcard list of extensions which will be processed by ConvertToJpeg2000 utility -->
+			<sourceExt>*.jpg</sourceExt>
+			<profile>
+				<!-- commas has to be escaped by \ -->
+				<noCompress>-compress none</noCompress>
+				<profilePrefix></profilePrefix>				
+			</profile>
+		</convertToJpg>
+		<convertImage>
+			<!-- case insensitive wildcard list of extensions which will be processed by ConvertToJpeg2000 utility -->
+			<sourceExt>*.tif,*.tiff</sourceExt>
+			<profile>
+				<!-- commas has to be escaped by \ -->
+				<thumbnail>-resize 200x200</thumbnail>
+				<preview>-resize 1200x1200</preview>
+				<previewK4>-resize 600x600</previewK4>
+				<tif/>
+			</profile>
+		</convertImage>
+		<convertToImagesForPdf>
+			<targetExt>jpg</targetExt>
+			<profile>-compress none</profile>
+		</convertToImagesForPdf>
+		<convertToTiff>
+			<parameters>-compress none -colorspace sRGB -units PixelsPerInch</parameters>
+		</convertToTiff>
+		<urnNbn>
+			<serverUrls>
+				<!-- ${sigla} is a placeholder for sigla code -->
+				<assign>https://resolver-test2.nkp.cz/api/v3/registrars/${sigla}/digitalDocuments</assign>
+    			<reserve>https://resolver-test2.nkp.cz/api/v3/registrars/${sigla}/urnNbnReservations</reserve>
+				<createDigitalInstance>https://resolver-test2.nkp.cz/api/v3/resolver/${urnNbn}/digitalInstances</createDigitalInstance>
+				<removeUUID>https://resolver-test2.nkp.cz/api/v3/resolver/${urnNbn}/registrarScopeIdentifiers/uuid</removeUUID>
+				<deactivation>https://resolver-test2.nkp.cz/api/v3/urnnbn/${urnNbn}</deactivation>
+			</serverUrls>
+			<reservationSize>100</reservationSize>
+			<!-- Percentage treshold: if unused are lowest of <unusedTreshold> % from reservationSize, then reserve new -->
+			<unusedThreshold>80</unusedThreshold>
+			<registrarCodes>nk,mzk</registrarCodes>
+			<registrarCodesMapping>
+				<!-- Na NK se mapují: aba000, aba001, aba002, ABA002, aba003, aba014, 
+					aba016, aba018, aba019, aba025, aba100, aba200, skc001 Ma MZK se mapují: 
+					boa001, boa002, boa003 Vše ostatní se mapuje 1:1 -->
+				<aba000>nk</aba000>
+				<aba001>nk</aba001>
+				<aba002>nk</aba002>
+				<aba003>nk</aba003>
+				<aba014>nk</aba014>
+				<aba016>nk</aba016>
+				<aba018>nk</aba018>
+				<aba019>nk</aba019>
+				<aba025>nk</aba025>
+				<aba100>nk</aba100>
+				<aba200>nk</aba200>
+				<skc001>nk</skc001>
+				<boa001>mzk</boa001>
+				<boa002>mzk</boa002>
+				<boa003>mzk</boa003>
+				<zre802>zre802</zre802>
+				<zlg001>zlg001</zlg001>
+				<aba004>aba004</aba004>
+				<aba008>aba008</aba008>
+				<vkol>vkol</vkol>
+				<hbe304>hbe304</hbe304>
+				<aba007>aba007</aba007>
+				<aba010>aba010</aba010>
+				<aba012>aba012</aba012>
+				<aba013>aba013</aba013>
+				<abc135>abc135</abc135>
+				<abe045>abe045</abe045>
+				<abe190>abe190</abe190>
+				<abe310>abe310</abe310>
+				<abe323>abe323</abe323>
+				<abe336>abe336</abe336>
+				<abe343>abe343</abe343>
+				<abg001>abg001</abg001>
+				<boa303>boa303</boa303>
+				<bve301>bve301</bve301>
+				<cba001>cba001</cba001>
+				<cbe301>cbe301</cbe301>
+				<cbe302>cbe302</cbe302>
+				<hka001>hka001</hka001>
+				<hke302>hke302</hke302>
+				<jhe301>jhe301</jhe301>
+				<ktg503>ktg503</ktg503>
+				<kve303>kve303</kve303>
+				<lia001>lia001</lia001>
+				<lid001>lid001</lid001>
+				<ola001>ola001</ola001>
+				<pae302>pae302</pae302>
+				<pna001>pna001</pna001>
+				<roe301>roe301</roe301>
+				<ulg001>ulg001</ulg001>
+				<aba310>aba310</aba310>		
+				<K4>
+					<aba000>aba001</aba000>
+					<aba001>aba001</aba001>
+					<aba002>aba001</aba002>
+					<aba003>aba001</aba003>
+					<aba014>aba001</aba014>
+					<aba016>aba001</aba016>
+					<aba018>aba001</aba018>
+					<aba019>aba001</aba019>
+					<aba025>aba001</aba025>
+					<aba100>aba001</aba100>
+					<aba200>aba001</aba200>
+					<skc001>aba001</skc001>
+					<boa001>boa001</boa001>
+					<boa002>boa001</boa002>
+					<boa003>boa001</boa003>
+					<zre802>zre802</zre802>
+					<zlg001>zlg001</zlg001>
+					<aba004>aba004</aba004>
+					<aba008>aba008</aba008>
+					<vkol>vkol</vkol>
+					<hbe304>hbe304</hbe304>
+					<aba007>aba007</aba007>
+					<aba010>aba010</aba010>
+					<aba012>aba012</aba012>
+					<aba013>aba013</aba013>
+					<abc135>abc135</abc135>
+					<abe045>abe045</abe045>
+					<abe190>abe190</abe190>
+					<abe310>abe310</abe310>
+					<abe323>abe323</abe323>
+					<abe336>abe336</abe336>
+					<abe343>abe343</abe343>
+					<abg001>abg001</abg001>
+					<boa303>boa303</boa303>
+					<bve301>bve301</bve301>
+					<cba001>cba001</cba001>
+					<cbe301>cbe301</cbe301>
+					<cbe302>cbe302</cbe302>
+					<hka001>hka001</hka001>
+					<hke302>hke302</hke302>
+					<jhe301>jhe301</jhe301>
+					<ktg503>ktg503</ktg503>
+					<kve303>kve303</kve303>
+					<lia001>lia001</lia001>
+					<lid001>lid001</lid001>
+					<ola001>ola001</ola001>
+					<pae302>pae302</pae302>
+					<pna001>pna001</pna001>
+					<roe301>roe301</roe301>
+					<ulg001>ulg001</ulg001>
+					<aba310>aba310</aba310>	
+				</K4>		 
+			</registrarCodesMapping>
+			<libraryArchiverMapping>
+				<nk>76</nk>				
+				<mzk>76</mzk>
+				<aba004>76</aba004>
+				<zlg001>76</zlg001>
+				<aba008>76</aba008>
+				<vkol>76</vkol>
+				<hbe304>76</hbe304>
+				<aba007>76</aba007>
+				<aba010>76</aba010>
+				<aba012>76</aba012>
+				<aba013>76</aba013>
+				<abc135>76</abc135>
+				<abe045>76</abe045>
+				<abe190>76</abe190>
+				<abe310>76</abe310>
+				<abe323>76</abe323>
+				<abe336>76</abe336>
+				<abe343>76</abe343>
+				<abg001>76</abg001>
+				<boa303>76</boa303>
+				<bve301>76</bve301>
+				<cba001>76</cba001>
+				<cbe301>76</cbe301>
+				<cbe302>76</cbe302>
+				<hka001>76</hka001>
+				<hke302>76</hke302>
+				<jhe301>76</jhe301>
+				<ktg503>76</ktg503>
+				<kve303>76</kve303>
+				<lia001>76</lia001>
+				<lid001>76</lid001>
+				<ola001>76</ola001>
+				<pae302>76</pae302>
+				<pna001>76</pna001>
+				<roe301>76</roe301>
+				<ulg001>76</ulg001>
+				<aba310>76</aba310>
+				<aba000>76</aba000>
+				<aba001>76</aba001>
+				<aba002>76</aba002>
+				<aba003>76</aba003>
+				<aba014>76</aba014>
+				<aba016>76</aba016>
+				<aba018>76</aba018>
+				<aba019>76</aba019>
+				<aba025>76</aba025>
+				<aba100>76</aba100>
+				<aba200>76</aba200>
+				<skc001>76</skc001>
+				<boa001>76</boa001>
+				<boa002>76</boa002>
+				<boa003>76</boa003>
+				<zre802>76</zre802>
+			</libraryArchiverMapping>
+			<username>logica</username>
+			<password>pmIwl2Ano</password>
+			<defaultSigla>ABA001</defaultSigla>
+			<duplicityMatchPattern>already registered by registrar</duplicityMatchPattern>
+			<duplicityCode>400</duplicityCode>
+			<k4>
+				<nk>
+					<instance>49</instance>
+					<format>jpg;jp2;pdf</format>
+					<url>http://192.168.131.17:8080/search/handle/uuid:${uuid}</url>
+				</nk>
+				<mzk>
+					<instance>50</instance>
+					<format>jpg;jp2;pdf</format>
+					<url>http://ndk-test.mzk.cz/search/handle/uuid:${uuid}</url>
+				</mzk>
+			</k4>
+			<publish>
+				<public>volně přístupné</public>
+				<private>chráněno autorskými právy</private>
+			</publish>
+			<financed>IOP-NDK</financed>
+		</urnNbn>
+		<io>
+			<!-- Default permission for accecing into CDM is FULL ACCESS - inheritable -->
+			<defaultGrantPermission>(OI)(CI)F</defaultGrantPermission>
+		</io>
+		<sip1>
+			<import-dir>D:\safe-la\import\</import-dir>
+			<import-dir-wa>D:\safe-la\importWA\</import-dir-wa>
+			<mapping>masterCopy=masterCopy,userCopy=userCopy,amdSec=amdSec,TXT=TXT,ALTO=ALTO,ARC=ARC,METS_${cdmId}.xml=METS_${cdmId}.xml,info.xml=info.xml,MD5_${cdmId}.md5=MD5_${cdmId}.md5,LTP_MD.xml=LTP_MD.xml</mapping>
+			<fileNameFormat>
+				MC=MC_${uuid}_${index}.${ext},
+				UC=UC_${uuid}_${index}.${ext},
+				AMD=AMD_METS_${uuid}_${index}.${ext},
+				TXT=TXT_${uuid}_${index}.${ext},
+				ALTO=ALTO_${uuid}_${index}.${ext},
+				METS=METS_${uuid}.${ext}
+			</fileNameFormat>
+			<infoXml>
+				<xPathPackageId>//mets:dmdSec[@ID='{documentType}']/mets:mdWrap/mets:xmlData/mods:mods/mods:identifier[@type='uuid']/text()"</xPathPackageId>
+				<collection>Digitalizace národní knihovny</collection>
+				<institution>Česká národní knihovna</institution>
+			</infoXml>
+		</sip1>
+		<sip2>
+			<abstraction-dir>//hdigfscl02/CDMP_02/PDF-TXT-STORE-P</abstraction-dir>
+			<profile>
+				<nkcr>
+					<!-- <url>192.168.131.17</url>
+					<processUrl>http://192.168.131.17:8080/search/lr?</processUrl>
+					<user>root</user>
+					-->
+					<generateFoxml>
+						<!-- Zapina pouze generovani alto stremu ve foxml, 
+						pro kopirovani do krameria je potreba jeste pridat ALTO=alto do copyToK4/mappingDirsToBeCopied
+						a  alto do copyToK4/xmlDirs-->
+						<docBase>file:/kramerius_ndk</docBase>
+						<createAlto>true</createAlto>
+						<createTiles>true</createTiles>
+						<renamingAlto>false</renamingAlto>
+						<fullImageFullName>false</fullImageFullName><!-- why? -->
+						<tilesUrl>http://imgserver.nkp.cz/{year}/{uuid}/img/UC_{file}</tilesUrl>
+						<preview>http://imgserver.nkp.cz/{year}/{uuid}/img/UC_{file}/preview.jpg</preview>
+						<previewContGrp>E</previewContGrp>
+						<thumb>http://imgserver.nkp.cz/{year}/{uuid}/img/UC_{file}/thumb.jpg</thumb>
+						<thumbContGrp>E</thumbContGrp>
+						<imgFull>http://imgserver.nkp.cz/{year}/{uuid}/img/UC_{file}/big.jpg</imgFull>
+						<imgFullContGrp>E</imgFullContGrp>
+						<ocrTxt>{docBase}/{year}/{uuid}/txt/TXT_{file}</ocrTxt>
+						<ocrTxtContGrp>E</ocrTxtContGrp>
+						<alto>{docBase}/{year}/{uuid}/alto/ALTO_{file}</alto>
+						<altoContGrp>E</altoContGrp>						
+						<!-- <targetBase>file:/kramerius/01/documentrepository</targetBase>	ZASTARALE -->
+						<K4>
+							<docBase>file:/kramerius_ndk</docBase>
+							<createAlto>false</createAlto>
+							<createTiles>true</createTiles>
+							<renamingAlto>false</renamingAlto>
+							<fullImageFullName>false</fullImageFullName>							
+							<tilesUrl>http://imgserver.nkp.cz/{year}/{uuid}/img/{file}</tilesUrl>
+							<preview>http://imgserver.nkp.cz/{year}/{uuid}/img/{file}/preview.jpg</preview>
+							<previewContGrp>E</previewContGrp>
+							<thumb>http://imgserver.nkp.cz/{year}/{uuid}/img/{file}/thumb.jpg</thumb>
+							<thumbContGrp>E</thumbContGrp>
+							<imgFull>http://imgserver.nkp.cz/{year}/{uuid}/img/{file}/big.jpg</imgFull>
+							<imgFullContGrp>E</imgFullContGrp>
+							<ocrTxt>{docBase}/{year}/{uuid}/txt/{file}</ocrTxt>
+							<ocrTxtContGrp>E</ocrTxtContGrp>
+							<alto>{docBase}/{year}/{uuid}/alto/{file}</alto>
+							<altoContGrp>E</altoContGrp>
+						</K4>					
+					</generateFoxml>
+					<copyToK4>
+						<importLTPLogFolder>/home/logica/aktualizace/</importLTPLogFolder>
+						<data>
+							<url>192.168.131.17</url>
+							<user>root</user>
+							<dirs>userCopy=img,preview=preview,TH=thumbnail,TXT=txt,SIP2/NKCR/xml=xml</dirs>
+							<targetDir>/kramerius/{year}/documentrepository/${cdmId}</targetDir>
+						</data>
+						<xml>
+							<url>192.168.131.17</url>
+							<user>root</user>
+							<dirs>.workspace/SIP2/NKCR/xml=xml</dirs>
+							<targetDir>/root/.kramerius4/import/${cdmId}</targetDir>
+						</xml>					
+						<!-- <mappingDirsToBeCopied>userCopy=img,preview=preview,TH=thumbnail,TXT=txt</mappingDirsToBeCopied> -->
+						<!--<imagesDirs>img,preview,thumbnail,txt</imagesDirs>
+						<xmlDirs>xml</xmlDirs>
+						<dirK4ForXML>/root/.kramerius4/import/${cdmId}</dirK4ForXML>
+						<dirK4ForPictures>/kramerius/{year}/documentrepository/${cdmId}
+						</dirK4ForPictures>
+						
+						<k4CopyUser>root</k4CopyUser> -->
+						<!-- <imgDir>UC</imgDir> -->
+						<!-- <thumbnailDir>TH</thumbnailDir> -->
+						<!-- <previewDir>preview</previewDir> -->
+						<!-- <xmlDir>xml</xmlDir> -->
+						<scpCommand>\bin\scp -r</scpCommand>
+						<countCommand>\bin\ssh -p 22 ${user}@${host} ls -l ${directory} | wc -l</countCommand>
+						<mkDirCommand>\bin\ssh -p 22 ${user}@${host} mkdir</mkDirCommand>
+						<rmDirCommand>\bin\ssh -p 22 ${user}@${host} rm -f -r</rmDirCommand>
+						<chmodCommand>\bin\ssh -p 22 ${user}@${host} chmod 775 {file} -R</chmodCommand>	
+					</copyToK4>
+					<move>
+						<url>hterm</url>
+						<user>logica</user>							
+						<mkDir>\bin\ssh -p 22 {user}@{host} mkdir</mkDir>
+						<command>\bin\ssh -p 22 {user}@{host} cp -r {source} {target}</command>
+						<source>/cygdrive/c/cygwin/home/{cdmId}</source>
+						<target>/cygdrive/c/cygwin/home/target/{cdmId}</target>
+					</move>
+					<clearKrameriusFolder>
+						<user>root</user>
+						<host>192.168.131.17</host>
+						<xmlPath>/root/.kramerius4/import/${cdmId}</xmlPath>
+						<rmCommand>\bin\ssh -p 22 ${user}@${host} rm -f -r</rmCommand>
+					</clearKrameriusFolder>
+					<foxml>
+						<schemaVersion>1.1</schemaVersion>
+					</foxml>
+					<startKrameriusProcess>						
+						<reindexProfile>
+							<url>http://192.168.131.16:8080/search/api/v4.6/processes?def=reindex</url>
+							<name>reindexProfile</name>
+							<params>{"parameters":["${type}"\,"uuid:${uuid}"]}</params>						
+							<firstPeriodicalIndexType>reindexDoc</firstPeriodicalIndexType>
+							<otherIndexType>reindexDoc</otherIndexType>
+							<firstUuidType>TITLE</firstUuidType>
+							<otherUuidType>VOLUME</otherUuidType>
+							<user>krameriusAdmin</user>
+							<password>krameriusAdmin</password>
+						</reindexProfile>
+						<importProfile>
+							<url>http://192.168.131.16:8080/search/api/v4.6/processes?def=parametrizedimport</url>
+							<!-- <name>importProfile</name> -->
+							<params>{"mapping":{"importDirectory":"${importDir}"\,"startIndexer":"true"\,"updateExisting":"false"}}</params>
+							<user>krameriusAdmin</user>
+							<password>krameriusAdmin</password>
+							<report-warnings>false</report-warnings>
+						</importProfile>
+					</startKrameriusProcess>
+					<checkKrameriusProcessResult>
+						<url>http://192.168.131.16:8080/search/api/v4.6/processes?uuid=${procesId}</url>
+						<user>krameriusAdmin</user>
+						<password>krameriusAdmin</password>
+					</checkKrameriusProcessResult>
+					<fedoraCredentials>
+						<user>fedoraAdmin</user>
+						<password>vmware</password>
+						<url>http://192.168.131.16:8080/fedora/</url>
+					</fedoraCredentials>
+					<deleteFromKramerius>
+						<url>http://192.168.131.16:8080/search/api/v4.6/processes?def=delete</url>
+						<params>{"parameters":["uuid:${uuid}"\,"${uuidPath}"\,"${deleteEmptyParents}"]}</params>
+						<cmd>\bin\ssh -p 22 ${user}@${host} rm -f -r</cmd>
+						<cdmDir>/kramerius_ndk/{year}/{cdmId}</cdmDir>
+					</deleteFromKramerius>	
+					<getFoxmlURL>http://192.168.131.16:8080/search/api/v5.0/item/uuid:${pid}/foxml</getFoxmlURL>					
+					<checkPidExistenceURL>http://192.168.131.16:8080/search/api/v5.0/item/uuid:${pid}</checkPidExistenceURL>										
+				</nkcr>
+
+				<mzk>
+					
+					<!-- <url>ndk-test.mzk.cz</url>
+					<processUrl>http://ndk-test.mzk.cz/search/lr?</processUrl>
+					<user>logica</user>
+					<docBase>file:/home/logica/imageserver-data</docBase> -->
+
+					<generateFoxml>
+						<!-- Zapina pouze generovani alto stremu ve foxml, 
+						pro kopirovani do krameria je potreba jeste pridat ALTO=alto do copyToK4/mappingDirsToBeCopied
+						a  alto do copyToK4/xmlDirs-->
+						<docBase>file:/home/logica/imageserver-data</docBase>
+						<createAlto>true</createAlto>
+						<createTiles>true</createTiles>
+						<renamingAlto>true</renamingAlto>
+						<fullImageFullName>false</fullImageFullName>
+						<tilesUrl>http://ndk-test.mzk.cz/imageserver/NDK/{year}/{month}/{uuid}/{file}</tilesUrl>
+						
+						<preview>http://ndk-test.mzk.cz/imageserver/NDK/{year}/{month}/{uuid}/UC_{file}/preview.jpg</preview>
+						<previewContGrp>E</previewContGrp>
+						
+						<thumb>http://ndk-test.mzk.cz/imageserver/NDK/{year}/{month}/{uuid}/UC_{file}/big.jpg</thumb>
+						<thumbContGrp>E</thumbContGrp>
+						
+						<imgFull>http://ndk-test.mzk.cz/imageserver/NDK/{year}/{month}/{uuid}/UC_{file}/big.jpg</imgFull>
+						<imgFullContGrp>E</imgFullContGrp>
+						
+						<ocrTxt>file:/home/logica/foxml-import/{uuid}/xml/txt/TXT_{file}</ocrTxt>
+						<ocrTxtContGrp>M</ocrTxtContGrp>
+						
+						<alto>file:/home/logica/foxml-import/{uuid}/xml/alto/ALTO_{file}</alto>
+						<altoContGrp>M</altoContGrp>
+						
+						<donator>IOP_NDK</donator>
+						<therImagingInformation>Pravidla pro vytvareni obrazu NDK
+						</therImagingInformation>
+						
+					</generateFoxml>
+
+					<copyToK4>
+						<importLTPLogFolder>/home/kramerius/aktualizace/</importLTPLogFolder>
+						<data>
+							<url>hterm</url>
+							<user>logica</user>
+							<dirs>userCopy=img</dirs>
+							<targetDir>/home/logica/imageserver-data/{year}/{month}/${cdmId}</targetDir>
+						</data>
+						<xml>
+							<url>hterm</url>
+							<user>logica</user>
+							<dirs>.workspace/SIP2/MZK/xml=xml,ALTO=alto,TXT=txt</dirs>
+							<targetDir>/home/logica/foxml-import/${cdmId}</targetDir>
+						</xml>						
+						
+						<!-- <mappingDirsToBeCopied>userCopy=img,ALTO=alto,TXT=txt</mappingDirsToBeCopied>  -->
+						<scpCommand>\bin\scp -r -P 17460</scpCommand>
+						<countCommand>\bin\ssh -p 17460 ${user}@${host} ls -l ${directory} | wc -l</countCommand>
+						<mkDirCommand>\bin\ssh -p 17460 ${user}@${host} mkdir -p -m 775</mkDirCommand>						
+						<rmDirCommand>\bin\ssh -p 17460 ${user}@${host} rm -f -r</rmDirCommand>
+						<chmodCommand>\bin\ssh -p 17460 ${user}@${host} chmod 775 {file} -R</chmodCommand>
+					</copyToK4>
+					<move>
+						<url>hterm</url>
+						<user>logica</user>							
+						<command>\bin\ssh -p 17460 {user}@{host} cp -r {source} {target}</command>
+						<source>/cygdrive/c/cygwin/home/{cdmId}</source>
+						<target>/cygdrive/c/cygwin/home/target/{cdmId}</target>
+					</move>
+					<clearKrameriusFolder>
+						<user>logica</user>
+						<host>hterm</host>
+						<xmlPath>/home/logica/foxml-import/${cdmId}</xmlPath>
+						<rmCommand>\bin\ssh -p 17460 ${user}@${host} rm -f -r</rmCommand>
+					</clearKrameriusFolder>
+					<foxml>
+						<schemaVersion>1.1</schemaVersion>
+					</foxml>
+					<startKrameriusProcess>
+						<reindexProfile>
+							<url>http://ndk-test.mzk.cz/search/api/v4.6/processes?def=reindex</url>
+							<name>reindexProfile</name>	
+							<params>{"parameters":["${type}"\,"uuid:${uuid}"]}</params>						
+							<firstPeriodicalIndexType>reindexDoc</firstPeriodicalIndexType>
+							<otherIndexType>reindexDoc</otherIndexType>
+							<firstUuidType>TITLE</firstUuidType>
+							<otherUuidType>VOLUME</otherUuidType>
+							<user>krameriusAdmin</user>
+							<password>krameriusAdmin</password>
+						</reindexProfile>
+						<importProfile>
+							<url>http://ndk-test.mzk.cz/search/api/v4.6/processes?def=parametrizedimport</url>
+							<params>{"mapping":{"importDirectory":"${importDir}"\,"startIndexer":"true"\,"updateExisting":"false"}}</params>
+							<!-- <name>importProfile</name> -->
+							<user>krameriusAdmin</user>
+							<password>krameriusAdmin</password>
+							<report-warnings>false</report-warnings>
+						</importProfile>											
+					</startKrameriusProcess>
+					<checkKrameriusProcessResult>
+						<url>http://ndk-test.mzk.cz/search/api/v4.6/processes?uuid=${procesId}</url>
+						<user>krameriusAdmin</user>
+						<password>krameriusAdmin</password>
+					</checkKrameriusProcessResult>
+					<fedoraCredentials>
+						<user>fedoraAdmin</user>
+						<password>lucks7aeoN</password>
+						<url>http://ndk-test.mzk.cz/fedora/</url>
+					</fedoraCredentials>
+					<deleteFromKramerius>
+						<url>http://ndk-test.mzk.cz/search/api/v4.6/processes?def=delete
+						</url>
+						<params>{"parameters":["uuid:${uuid}"\,"${uuidPath}"\,"${deleteEmptyParents}"]}</params>
+						<cdmDir>/home/logica/imageserver-data/{year}/{month}/${cdmId}</cdmDir>
+						<cmd>\bin\ssh -p 17460 ${user}@${host} rm -f -r</cmd>
+					</deleteFromKramerius>
+					<getFoxmlURL>http://ndk-test.mzk.cz/search/api/v5.0/item/uuid:${pid}/foxml</getFoxmlURL>		
+					<checkPidExistenceURL>http://ndk-test.mzk.cz/search/api/v5.0/item/uuid:${pid}</checkPidExistenceURL>					
+				</mzk>
+			</profile>
+			<defaultPublic>false</defaultPublic>
+			
+		</sip2>
+		<tei2mods>
+			<functionsXSLPath>classpath:tei/tei2mods_functions.xsl</functionsXSLPath>
+			<manuScriptXSLPath>classpath:tei/tei2mods-manuscript.xsl</manuScriptXSLPath>
+		</tei2mods>
+		<mns2mods>			
+			<manuScriptXSLPath>classpath:mns/mns2mods-manuscript.xsl</manuScriptXSLPath>
+		</mns2mods>
+		<arc2warc>
+			<!-- case insensitive wildcard list of extensions which will be processed by arc2warc utility -->
+			<inputExtensions>*.arc,*.arc.gz</inputExtensions>
+			<recursive>true</recursive>
+			<outputExtension>.warc</outputExtension>
+			<outputGZExtension>.warc.gz</outputGZExtension>
+			<warcApp>Arc2Warc</warcApp>
+			<warcAppVersion>1.0</warcAppVersion>
+			<arcApp>Heritrix 1.15.5 http://crawler.archive.org</arcApp>
+			<arcAppVersion>1.15.5</arcAppVersion>
+		</arc2warc>
+		<warcDump>
+			<!-- case insensitive wildcard list of extensions which will be processed by warcDump utility -->
+			<inputExtensions>*.warc,*.warc.gz</inputExtensions>
+			<recursive>true</recursive>
+			<!-- Regular expression of mime types for responses which will NOT BE dumped from warc file. All other records will be dumped -->
+			<skipMimeTypeRegExp>(image/x-icon)|(text/css)</skipMimeTypeRegExp>
+			<!-- Regular expression of url for responses which will NOT BE dumped from warc file. All other records will be dumped -->
+			<skipUrlRegExp>(.*/robots.txt)|(.*/favicon.ico)</skipUrlRegExp>						
+			<deleteTemporaryDataFileAfterTextExtraction>true</deleteTemporaryDataFileAfterTextExtraction>
+			<dumpRecordHeader>false</dumpRecordHeader>
+			<dumpContentHeader>false</dumpContentHeader>
+			<waPremisExtension>.premis.xml</waPremisExtension>
+			<!-- filename format for file which contains info about warc data used by harvester -->
+			<waInfoFilenameFormat>WA_%s.xml</waInfoFilenameFormat>
+			<!-- wildcard for filename used by copy utility to find all wa info files -->
+			<waInfoFilenameWildcard>WA_*.xml</waInfoFilenameWildcard>
+			<waTxtFileWildcard>*.txt</waTxtFileWildcard>
+			<waModsExtension>.mods.xml</waModsExtension>
+		</warcDump>
+		<validateWA>
+			<!-- case insensitive wildcard list of extensions which will be processed by warcDump utility -->
+			<inputExtensions>*.arc,*.warc,*.arc.gz,*.warc.gz</inputExtensions>
+			<recursive>true</recursive>
+		</validateWA>
+		<validateCDM>
+			<validateUtfExt>*txt,*xml</validateUtfExt>
+			<maxScanSize>1600</maxScanSize>
+		</validateCDM>
+		<validateMns>
+			<!-- case insensitive wildcard list of extensions which will be processed by ConvertToJpeg2000 utility -->
+			<sourceExt>*.jpg,*.db</sourceExt>
+		</validateMns>
+		<scantailor>
+			<scantailorProfiles>SCANTAILORCOLOR</scantailorProfiles>
+			<profile>				
+				<scantailorcolor>
+					<preprocess>--layout=${cropType} --match-layout=false --match-layout-default=false --match-layout-tolerance=-1 --enable-page-detection --disable-content-detection --enable-fine-tuning --page-detection-box=${dimensionX}x${dimensionY} --margins=0 --default-margins=0 --end-filter=5 --color-mode=color_grayscale --default-color-mode=color_grayscale --output-dpi=${dpi} --default-output-dpi=${dpi} --tiff-compression=none</preprocess>
+					<postprocess>-v --tiff-force-rgb  --default-margins=0 --start-filter=6 --tiff-compression=none --match-layout-default=false</postprocess>
+				</scantailorcolor>
+				<agentName>Scantailor</agentName>
+				<agentVersion>Aug 12 2012</agentVersion>
+			</profile>
+			<defaultDpi>300</defaultDpi>
+			<suffixes>_1L, _2R</suffixes>
+			<doublePageCode>2</doublePageCode>		
+		</scantailor>
+		<postprocess>
+			<manual>
+				<GIMP>
+					<agentName>Gimp</agentName>
+					<agentVersion>2.6</agentVersion>
+				</GIMP>
+				<PAGEIMPROVER>
+					<agentName>Page Improver</agentName>
+					<agentVersion>X</agentVersion>
+				</PAGEIMPROVER>
+				<PHOTOSHOP>
+					<agentName>Adobe Photoshop</agentName>
+					<agentVersion>11.0</agentVersion>
+				</PHOTOSHOP>
+				<default>
+					<agentName>Manual postprocessing</agentName>
+					<agentVersion>Manual postprocessing</agentVersion>
+				</default>
+			</manual>
+		</postprocess>
+		<rd>
+			<host></host>
+		</rd>
+		<aleph>
+			<notification>
+				<!-- pracovny adresar kde sa zhromazduju vsetky Aleph reuqesty vytvorene pocas spracovania CDM - utilta CreateAlephRecord. 
+				Tento adresar je sledovany cron utilitou NotifyAlephImpl, ktora vytvori spoloccny Alpeh request z tychto ciastocnych ktore su v tomto work adresari. 
+				Pocas vykonavania sa v tomto adresary vytvoria podadresare: incoming, processing, archive, error
+				Vysledok prace NotifyAlephImpl kopiruje do adresara requestTargetDir  
+				Moze mat rovnaku hodnotu ako requestTargetDir -->
+				<requestWorkDir>C:\NDK\alephRequestWorkDir</requestWorkDir>
+				<!-- Cielovy adresar pre utilitu NotifyAlephImpl. Utilita NotifyAlephImpl vytvori spolocny Aleph request ktory je nakopirvany do tohto adresara ktory by mal byt poolovany Alephom 
+				Moze mat rovnaku hodnotu ako requestWorkDir -->
+				<requestTargetDir>C:\NDK\alephRequestTargetDir</requestTargetDir>
+				<!-- pracovny adresar pre utilitu ReadAlephResponseImpl. Tato utilita si tu presuva odpovede z adresara responseTargetDir.
+				Pocas vykonavania sa v tomto adresary vytvoria podadresare: incoming, processing, archive, error 
+				moze mat rovnakou hodnotu ako responseTargetDir -->
+				<responseWorkDir>C:\NDK\alephResponseWorkDir</responseWorkDir>
+				<!-- Adresar kde Aleph uklada responses. Tento adresar je sledovany cron utilitou ReadAlephResponseImpl ak sa najde odpoved, prekopiruje sa do responseWorkDir kde odpovede tato utilita dalej spracuvava. 
+				Moze mat rovnaku hodnotu ako responseWorkDir -->				
+				<responseTargetDir>C:\NDK\alephResponseTargetDir</responseTargetDir>
+			</notification>
+		</aleph>
+		<emCsvRecord>
+			<mapping>
+				<scanModeCustomInclude>RESCANADDSCAN,ADDSCAN,RESCAN,FORMATMIGRATION</scanModeCustomInclude>
+				<specialScanTreat>
+					<specialScanTypes>ENVELOPEDESTRUCT,ENVELOPETRAVENTUS,BEGIN,END</specialScanTypes>
+					<ENVELOPEDESTRUCT>1</ENVELOPEDESTRUCT> <!-- how many scans of this type will be added to the beggining -->
+					<ENVELOPETRAVENTUS>1</ENVELOPETRAVENTUS>
+					<BEGIN>*</BEGIN>
+					<END>0</END>
+				</specialScanTreat>
+			</mapping>
+		</emCsvRecord>
+		<premis>
+			<skipDirs>userCopy,TH,preview,Preview</skipDirs>
+		</premis>
+		<convertDjVuToTiff>
+			<!-- case insensitive wildcard list of extensions which will be processed by ConvertToJpeg2000 utility -->
+			<sourceExt>*.djvu</sourceExt>
+		</convertDjVuToTiff>
+		<validateImagesForPostproc>
+			<!-- regular expression for source files for ValidateImagesForPostproc utility -->
+			<!-- all file names except Thumbs.db -->
+			<sourceFileFilterRegexp>^(?!.*(Thumbs\\.db)).*$</sourceFileFilterRegexp>
+		</validateImagesForPostproc>
+		<rsync>
+			<command>${cygwinHome}\\bin\\rsync -rt --chmod=ugo=rwx -p --partial --append-verify --log-file=/cygdrive/c/buffer/rsync.log ${source} ${target}</command>
+			<!-- Cas v ms, ktory sa moze prikaz vykonavat. Po vyprsani casu sa zabije OS proces ktory vykonava command. Povolene hodnoty su >= 0. 0 znamena ziaden timeout -->
+			<commandTimeout>10800000</commandTimeout><!-- 3h -->
+			<!-- Pocat pokusov pre vykonanie command. Ak bol command neuspesny kvoli dosiahnutiu timeout utilita sa pokusi command znovu vykonat. Povolene hodnoty su > 0 -->
+			<commandAttempts>10</commandAttempts>
+		</rsync>
+		<repairSplitWithRename>
+			<command>${cygwinHome}\\bin\\bash /cygdrive/c/NDK/repairSplitWithRename.sh ${source} ${target}</command>
+			<description>rename with generate missing ALTO_PREMIS in IE-SPLIT</description>
+		</repairSplitWithRename>
+		<tiffinfo>
+			<command>${cygwinHome}\\bin\\tiffinfo ${source}</command>
+			<description>tiffInfo</description>
+		</tiffinfo>
+		<convertImagesForST>
+			<command>${cygwinHome}\\bin\\bash /cygdrive/c/NDK/convertTiff.sh ${source} ${target}</command>
+			<description>convert TIFF to JPG-TIFF</description>
+			<priorityCount>3</priorityCount>
+			<priority0>//hdigfscl02/WORK01/test1,//hdigfscl02/WORK01/test2</priority0>
+			<priority1>//hdigfscl02/WORK01/test3,//hdigfscl02/WORK01/test4</priority1>
+			<priority2>//hdigfscl02/WORK01/test5,//hdigfscl02/WORK01/test6</priority2>
+			<diskSpaceTreshold>10</diskSpaceTreshold>
+		</convertImagesForST>
+		<repairInvalidAlto>
+			<command>${cygwinHome}\\bin\\bash /cygdrive/c/NDK/repair-alto-invalid-SP.sh ${source}</command>
+			<description>Repairing Alto</description>
+		</repairInvalidAlto>
+		<freeDiskSpace>
+			<command>c:\\NDK\checkFreeSpace.cmd ${source}</command>
+			<description>Checking free space</description>
+			<defaultMinFreeSpaceMB>10240</defaultMinFreeSpaceMB>
+		</freeDiskSpace>
+		<createFlatStructure>
+			<sourceExt>*.tif,*.tiff,*.jpg</sourceExt>
+		</createFlatStructure>	
+		<createPDF>
+			<fonts>Times New Roman=Times-Roman,Courier=Courier</fonts>
+		</createPDF>
+		<ISBN>
+			<pattern>
+				(978){0,1}80\d([0-9]|){6}\d[0-9xX]|(978-){0,1}80-\d([0-9]|-){6}\d-[0-9xX]|(978\s){0,1}80\s\d([0-9]|\s){6}\d\s[0-9xX]|978-80\d([0-9]|){6}\d[0-9xX]
+			</pattern>
+		</ISBN>
+		<ISSN>
+			<pattern>
+				\d{4}-\d{3}[0-9Xx]{1}
+			</pattern>
+		</ISSN>
+		<flatData>
+			<imgExt>*.tif,*.tiff</imgExt>
+		</flatData>
+		<cleanFolders>
+			<package>RAW_DATA_DIR,FLAT_DATA_DIR,POSTPROCESSING_DATA_DIR,ORIGINAL_DATA</package>
+			<entity>MC_DIR,UC_DIR,TH_DIR,IMAGES_PDF,WA_DATA_DIR</entity>
+		</cleanFolders>	
+		<fileSystemOperations>
+			<disks>CDMP_01,CDMP_02,CDMP_03,CDMP_04,CDMP_05,CDMP_06,CDMP_07,CDMP_08</disks>
+		    <numberOfFiles>20</numberOfFiles>
+		    <operationsCount>1000</operationsCount>
+		    <exts>xml, tif, tiff, mix, jp2, jpg</exts>
+		</fileSystemOperations>
+        <getUUID>
+            <blackListPath>C:\NDK\uuidBlackList.txt</blackListPath>
+            <allowedActions>VALIDATE,CONTROL,SPLIT,OCR,MANUALOCR,PROCESSMANUALOCR,PROCESSEM</allowedActions>
+        </getUUID>
+        <startJbpmProcess>
+        	<url>http://localhost:65082/services/StartJBPMProcess?wsdl</url>
+        	<nsUri>http://wwww.logica.com/ndk/tm/process</nsUri>
+        </startJbpmProcess>
+	</utility>
+	<process>
+		<sessionId>677</sessionId>
+		<priority>c:/ndk/tm-process-priorities.properties</priority>
+		<handler>
+			<dryRun>false</dryRun>
+		</handler>
+		<formatMigration>
+			<default>
+				<alephLocality>NKCR</alephLocality>
+				<alephCode>NKCR</alephCode>
+			</default>
+			<imagesExts>jp2,JP2,jpg,JPG,Jpeg,JPEG,tif,tiff,TIF,TIFF</imagesExts>
+			<dpiSolutions>MIN,MAX,MAJOR</dpiSolutions>
+		</formatMigration>
+		<webArchive>
+			<filePathForRDC>//hdigfscl02/CDT-01/RDC/wa/hastest</filePathForRDC>
+		</webArchive>
+		<ocr>
+			<defaultOcrProfile>ABBY</defaultOcrProfile>
+			<profiles>ABBY,ABBY_FRACTURE</profiles>
+			<ABBY>
+				<default>
+					<default>
+						<inputDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/in</inputDir>
+						<outputDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/out</outputDir>
+						<exceptionsDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/exception</exceptionsDir>
+						<transferDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/transfer-in</transferDir>
+					</default>
+				</default>	
+				<FONT1>
+					<default>
+						<inputDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/in</inputDir>
+						<outputDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/out</outputDir>
+						<exceptionsDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/exception</exceptionsDir>
+						<transferDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/transfer-in</transferDir>
+					</default>
+					<CZE>
+						<inputDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/in</inputDir>
+						<outputDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/out</outputDir>
+						<exceptionsDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/exception</exceptionsDir>
+						<transferDir>//Hdigfscl02/CDT-01/OCR-INOUT/default/transfer-in</transferDir>
+					</CZE>
+				</FONT1>	
+				<agentName>ABBYY</agentName>
+				<agentVersion>3.5</agentVersion>
+			</ABBY>
+			<ABBY_FRACTURE>
+				<default>
+					<default>
+						<inputDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR/default/in</inputDir>
+						<outputDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR/default/out</outputDir>
+						<exceptionsDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR/default/exception</exceptionsDir>
+						<transferDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR/default/transfer-in</transferDir>
+					</default>
+				</default>	
+				<FONT1>
+					<default>
+						<inputDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR-TEST/default/in</inputDir>
+						<outputDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR-TEST/default/out</outputDir>
+						<exceptionsDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR-TEST/default/exception</exceptionsDir>
+						<transferDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR-TEST/default/transfer-in</transferDir>
+					</default>
+					<CZE>
+						<inputDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR-TEST/default/in</inputDir>
+						<outputDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR-TEST/default/out</outputDir>
+						<exceptionsDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR-TEST/default/exception</exceptionsDir>
+						<transferDir>//hdigfscl02/CDT-01/OCR-INOUT-FRAKTUR-TEST/default/transfer-in</transferDir>
+					</CZE>
+				</FONT1>	
+				<agentName>ABBYY</agentName>
+				<agentVersion>3.5</agentVersion>
+			</ABBY_FRACTURE>
+			<MANUAL>
+				<agentVersion>3.5</agentVersion>
+			</MANUAL>
+			<altoFileSuffix>*.tif.xml</altoFileSuffix>
+			<textFileSuffix>*.txt</textFileSuffix>
+			<resultFileSuffix>*.result.xml</resultFileSuffix>
+			<!-- Maximal retry count for check -->
+			<maxRetry>480</maxRetry>
+			<!-- Soft limit in minutes -->
+			<checkSoftLimit>480</checkSoftLimit>
+			<!-- Timeout in minutes -->
+			<checkTimeoutLimit>2880</checkTimeoutLimit>
+			<filePathForRDC>//hdigfscl02/CDT-01/RDC/ocr/hastest</filePathForRDC>
+		</ocr>
+		<!-- default value for utility priority - remove it to use ActiveMQ default or use 0 to 9. Element can't be empty -->
+		<!-- TM_UTIL_PRIORITY_DEFAULT>4</TM_UTIL_PRIORITY_DEFAULT-->
+		<!-- default value for process timeout in milliseconds -->
+		<TM_PROC_TIMEOUT_DEFAULT>30000</TM_PROC_TIMEOUT_DEFAULT>
+		<muleWsClient>
+			<!-- Specifies the amount of time, in milliseconds, that the client will attempt to establish a connection before it times out -->
+			<connectionTimeout>60000</connectionTimeout>
+			<!-- Specifies the amount of time, in milliseconds, that the client will wait for a response before it times out. -->
+			<receiveTimeout>60000</receiveTimeout>
+		</muleWsClient>
+	</process>
+	<ftp>
+		<timeout>30</timeout>
+	</ftp>
+	<import>
+		<importDir>C:\NDK\import</importDir>
+		<type>
+			<k4>K4</k4>
+			<wa>WA</wa>
+		</type>
+		<harvest>
+			<logsDir>logs</logsDir>
+			<arcMandatoryDirs>logs,logs/dmdsec,logs/index</arcMandatoryDirs>
+			<warcMandatoryDirs>logs,logs/dmdsec,logs/index,logs/crawl</warcMandatoryDirs>
+			<arcSuffix>.arc.gz</arcSuffix>
+			<warcSuffix>.warc.gz</warcSuffix>
+			<arcOpenSuffix>.arc.gz.open</arcOpenSuffix>
+			<warcOpenSuffix>.warc.gz.open</warcOpenSuffix>
+			<harvestSuffix>harvest.xml</harvestSuffix>
+			<logFiles>
+				crawl.log,local-errors.log,progress-statistics.log,uri-errors.log,runtime-errors.log,journal.log,
+				crawl-report.txt,crawl-manifest.txt,hosts-report.txt,mimetype-report.txt,processors-report.txt,
+				responsecode-report.txt,seeds.txt,seeds-report.txt,order.xml,settings.xml,wa_info.txt
+			</logFiles>
+			<logToConvert>
+				state.job=>state.txt
+			</logToConvert>
+			<wf>
+				<packageType>NDKIEntity</packageType>
+			</wf>				
+		</harvest>
+		<ltp>
+			<templateCode>IMPORT</templateCode>
+			<transferInDir>//hdigfscl02/CDT-01/importLTP-reskenDosken/</transferInDir>
+			<transferOutDir>//hdigfscl02/CDT-01/importSIPLTP-reskenDosken/</transferOutDir>
+			<taskToReserveDir>//hdigfscl02/CDT-01/importLTP-taksToReserve/</taskToReserveDir>
+			<k4mzk>false</k4mzk>
+			<k4nk>false</k4nk>
+			<rescan-scanMode>RESCANADDSCAN</rescan-scanMode>
+			<rescan-contractId-prefix>LTP resken-dosken </rescan-contractId-prefix>
+			<scan>
+				<userName>SvcTM</userName>
+				<scannerCode>VIRTUALSCAN</scannerCode>
+				<scanTypeCode>FREE</scanTypeCode>
+				<localUrn>NONE</localUrn>
+				<note>Resken/dosken z LTP</note>
+				<scanModeCode>BASIC</scanModeCode>
+				<cropTypeCode>1</cropTypeCode>
+				<profilePPCode>NONE</profilePPCode>
+			</scan>
+		</ltp>
+		<kramerius>
+			<djvuFolder>img</djvuFolder>
+			<djvuAmdFolder>img_amd</djvuAmdFolder>
+			<jpegFolder>jpg</jpegFolder>
+			<jpegAmdFolder>jpg_amd</jpegAmdFolder>
+			<djvuExt>djvu</djvuExt>
+			<jpegExt>jpg</jpegExt>
+			<amdExt>amd</amdExt>
+			<response>
+				<jpeg>JPEG</jpeg>
+				<djvu>DJVU</djvu>
+			</response>
+			<conversion>
+				<tif>
+					<targetFormat>tif</targetFormat>
+					<params>-type TrueColor -depth 8</params>
+				</tif>
+				<jp2>
+					<targetFormat>jp2</targetFormat>
+					<params></params>
+				</jp2>
+			</conversion>
+		</kramerius>
+	</import>
+	<wf>
+		<baseUrl>http://localhost:9090/ndk-wf-api/</baseUrl>
+		<tmUser>svctm</tmUser>
+		<signal>
+			<IEntityFinish>NDKSigIEntityFinish</IEntityFinish>
+			<NDKSigReset>NDKSigReset</NDKSigReset>
+		</signal>
+		<maxItems>20000</maxItems>
+	</wf>
+	<cygwinHome>C:\cygwin</cygwinHome>
+	<cygwinBin>C:\cygwin\bin\</cygwinBin>
+	<scanTailorHome>C:\NDK\scantailor</scanTailorHome>
+	<IMAGEMAGICK_HOME>C:\cygwin\bin</IMAGEMAGICK_HOME>
+	<shutdownAttribute>
+		<fileLocation>C:\NDK\shutdown</fileLocation>
+	</shutdownAttribute>
+	<taskHandler>
+		<configFile>C:\NDK\task-handler-config.xml</configFile>
+		<lockFile>C:\NDK\task-handler-lock</lockFile>
+		<manualLockFile>C:\NDK\task-handler-lock-manual</manualLockFile>
+		<packageTypes>NDKDigitPackage,NDKIEntity,NDKImport</packageTypes>
+		<defaultWorkPlaceCode>LSA</defaultWorkPlaceCode>		
+	</taskHandler>
+	<processFinishedHandler>
+		<runtimeConfigFile>C:\NDK\process-finished-handler.properties</runtimeConfigFile>
+	</processFinishedHandler>
+	<org>
+		<apache>
+			<commons>
+				<id>
+					<uuid>
+						<config>
+							<resource>
+								<filename>C:\NDK\uuid.state</filename>
+							</resource>
+						</config>
+					</uuid>
+				</id>
+			</commons>
+		</apache>
+	</org>
+	<tika>
+		<TIKA_HOME_RUNNABLE>C:\NDK\apache-tika-1.1\tika-app-1.1.jar</TIKA_HOME_RUNNABLE>
+		<version>1.1</version>
+		<memParam>1532m</memParam>
+		<tikaScript>${cygwinHome}\\bin\\bash /cygdrive/c/NDK/tika-extract.sh ${input} ${output}</tikaScript>
+	</tika>
+	<meta>
+		<creator>
+			<code>ABA001</code>
+			<name>ABA001</name>
+		</creator>
+		<archivist>
+			<code>ABA001</code>
+			<name>ABA001</name>
+		</archivist>
+	</meta>
+	<rd>
+		<checkState>true</checkState>
+		<wsdlLocation>http://sluzby.incad.cz/registry-ws/DigitizationRegistryService?wsdl</wsdlLocation>
+		<qnameUri>http://registrdigitalizace.cz/soapservices</qnameUri>
+		<qnameLocalService>DigitizationRegistryService</qnameLocalService>
+		<username>logica-wsclient</username>
+		<password>Kb+93s4PX4IGE}364kY6H210u8G353 mRYRuGfcnn3KIL7scjD)i3q:~pa9?D</password>		
+	</rd>
+	<jbpmws>
+		<wsdlLocation>http://localhost:8080/jbpm-ws/services?wsdl</wsdlLocation>
+		<qnameUri>http://wwww.logica.com/ndk/tm/process</qnameUri>
+		<qnameLocalService>JBPMWSFacadeImplService</qnameLocalService>
+		<username></username>
+		<password></password>
+		<secondsToExp>120000</secondsToExp>
+		<wfLink>http://hastest:9090/safe/PersistentObjectAction.do?id=</wfLink>	
+		<outageConfig>C:\NDK\outage-config.xml</outageConfig>	
+	</jbpmws>
+	<jbpmTimer>
+		<timer>
+			<ocr-timer>prototype.ocr</ocr-timer>
+			<sip1-timer>prototype.vytvoreni-sip1,test.signal</sip1-timer>
+			<sip2-import-timer>ientity.import-dat-do-k4-nkcr,ientity.import-dat-do-k4-mzk</sip2-import-timer>
+			<sip2-index-timer>ientity.import-dat-do-k4-nkcr,ientity.import-dat-do-k4-mzk</sip2-index-timer>
+		</timer>
+	</jbpmTimer>
+	<DJVULIBRE_HOME>C:\NDK\DjVuLibre</DJVULIBRE_HOME>
+	<harvester>
+		<webarchiveInputDir>//HDIGFSCL02/CDT-01/harvester/_webarchive.in/</webarchiveInputDir>
+		<webarchiveTxtDir>//HDIGFSCL02/CDT-01/harvester/webarchive.TXT/</webarchiveTxtDir>
+	</harvester>
+</configuration>

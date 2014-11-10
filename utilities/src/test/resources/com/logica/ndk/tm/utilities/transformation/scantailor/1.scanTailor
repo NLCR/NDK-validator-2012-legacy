@@ -1,0 +1,191 @@
+<project outputDirectory="//hdigfscl02/CDT-01/CDM-001/CDM_f2090640-1ab4-11e3-95c4-00505682629d/data/.workspace/scanTailor/tempOut" layoutDirection="LTR">
+  <directories>
+    <directory path="//hdigfscl02/WORK01/test2/f2090640-1ab4-11e3-95c4-00505682629d/flatDataJpg" id="1"/>
+  </directories>
+  <files>
+    <file dirId="1" id="2" name="1_1_00081.tif"/>
+    <file dirId="1" id="5" name="1_1_00082.tif"/>
+  </files>
+  <images>
+    <image subPages="1" fileImage="0" fileId="2" id="3">
+      <size width="1719" height="2664"/>
+      <dpi vertical="300" horizontal="300"/>
+    </image>
+    <image subPages="1" fileImage="0" fileId="5" id="6">
+      <size width="1719" height="2664"/>
+      <dpi vertical="300" horizontal="300"/>
+    </image>
+  </images>
+  <pages>
+    <page imageId="3" subPage="single" selected="selected" id="4"/>
+    <page imageId="6" subPage="single" id="7"/>
+  </pages>
+  <file-name-disambiguation/>
+  <filters>
+    <fix-orientation/>
+    <page-split defaultLayoutType="single-cut">
+      <image id="3">
+        <params mode="auto">
+          <pages type="single-cut">
+            <outline>
+              <point x="0" y="0"/>
+              <point x="1719" y="0"/>
+              <point x="1719" y="2664"/>
+              <point x="0" y="2664"/>
+              <point x="0" y="0"/>
+            </outline>
+            <cutter1>
+              <p1 x="0" y="0"/>
+              <p2 x="0" y="2664"/>
+            </cutter1>
+            <cutter2>
+              <p1 x="1678.205677198903" y="2664"/>
+              <p2 x="1678.205677198903" y="0"/>
+            </cutter2>
+          </pages>
+          <dependencies>
+            <rotation degrees="0"/>
+            <size width="1719" height="2664"/>
+            <layoutType>single-cut</layoutType>
+          </dependencies>
+        </params>
+      </image>
+      <image id="6">
+        <params mode="auto">
+          <pages type="single-cut">
+            <outline>
+              <point x="0" y="0"/>
+              <point x="1719" y="0"/>
+              <point x="1719" y="2664"/>
+              <point x="0" y="2664"/>
+              <point x="0" y="0"/>
+            </outline>
+            <cutter1>
+              <p1 x="23.62418789729065" y="0"/>
+              <p2 x="0.37581210270924" y="2664"/>
+            </cutter1>
+            <cutter2>
+              <p1 x="1717.624187897291" y="0"/>
+              <p2 x="1694.375812102709" y="2664"/>
+            </cutter2>
+          </pages>
+          <dependencies>
+            <rotation degrees="0"/>
+            <size width="1719" height="2664"/>
+            <layoutType>single-cut</layoutType>
+          </dependencies>
+        </params>
+      </image>
+    </page-split>
+    <deskew average="0.0625" maxDeviation="5" sigma="0.4375">
+      <page id="4">
+        <params mode="auto" deviation="-0.4375" angle="0.5">
+          <dependencies>
+            <rotation degrees="0"/>
+            <page-outline>
+              <point x="0" y="0"/>
+              <point x="1678.20556640625" y="0"/>
+              <point x="1678.20556640625" y="2664"/>
+              <point x="0" y="2664"/>
+              <point x="0" y="0"/>
+            </page-outline>
+          </dependencies>
+        </params>
+      </page>
+      <page id="7">
+        <params mode="auto" deviation="0.4375" angle="-0.375">
+          <dependencies>
+            <rotation degrees="0"/>
+            <page-outline>
+              <point x="1717.624163179868" y="0"/>
+              <point x="1694.37585602536" y="2664"/>
+              <point x="0.3757601193716613" y="2664"/>
+              <point x="23.62406727388016" y="0"/>
+              <point x="1717.624163179868" y="0"/>
+            </page-outline>
+          </dependencies>
+        </params>
+      </page>
+    </deskew>
+    <select-content pageDetectionBoxHeight="0" pageDetectionBoxWidth="0" average="86.81141166457469" maxDeviation="1" pageDetectionTolerance="0.1" sigma="0.3545973042633648">
+      <page id="4">
+        <params mode="auto" page-detect="true" content-detect="false" fine-tune-corners="true" deviation="0.3545973042633648">
+          <content-rect width="1628" x="34" y="52" height="2562"/>
+          <page-rect width="1628" x="34" y="52" height="2562"/>
+          <content-size-mm width="137.8373333333334" height="216.916"/>
+          <page-borders right="0" left="0" bottom="0" top="0"/>
+          <dependencies>
+            <rotated-page-outline>
+              <point x="23.24749056766816" y="0"/>
+              <point x="1701.389156048259" y="14.64492044881288"/>
+              <point x="1678.141665480591" y="2678.543483491766"/>
+              <point x="0" y="2663.898563042952"/>
+              <point x="23.24749056766816" y="0"/>
+            </rotated-page-outline>
+          </dependencies>
+        </params>
+      </page>
+      <page id="7">
+        <params mode="auto" page-detect="true" content-detect="false" fine-tune-corners="true" deviation="-0.3545973042633648">
+          <content-rect width="1642" x="42" y="38" height="2582"/>
+          <page-rect width="1642" x="42" y="38" height="2582"/>
+          <content-size-mm width="139.0226666666667" height="218.6093333333333"/>
+          <page-borders right="0" left="0" bottom="0" top="0"/>
+          <dependencies>
+            <rotated-page-outline>
+              <point x="1699.775907712401" y="0"/>
+              <point x="1693.963813242969" y="2664.095100281413"/>
+              <point x="0" y="2675.182225825806"/>
+              <point x="5.81209446943209" y="11.08712554439279"/>
+              <point x="1699.775907712401" y="0"/>
+            </rotated-page-outline>
+          </dependencies>
+        </params>
+      </page>
+    </select-content>
+    <page-layout>
+      <page id="4">
+        <params>
+          <hardMarginsMM right="0" left="0" bottom="0" top="0"/>
+          <pageRect width="1628" x="34" y="52" height="2562"/>
+          <contentRect width="0" x="0" y="0" height="0"/>
+          <contentSizeMM width="137.8373333333334" height="216.916"/>
+          <alignment vert="top" autoMargins="false" hor="hcenter" tolerance="0.2" null="1"/>
+        </params>
+      </page>
+      <page id="7">
+        <params>
+          <hardMarginsMM right="0" left="0" bottom="0" top="0"/>
+          <pageRect width="1642" x="42" y="38" height="2582"/>
+          <contentRect width="0" x="0" y="0" height="0"/>
+          <contentSizeMM width="139.0226666666667" height="218.6093333333333"/>
+          <alignment vert="top" autoMargins="false" hor="hcenter" tolerance="0.2" null="1"/>
+        </params>
+      </page>
+    </page-layout>
+    <output tiffCompression="1">
+      <page id="4">
+        <zones/>
+        <fill-zones/>
+        <params pictureShape="0" depthPerception="2" despeckleLevel="cautious" dewarpingMode="off">
+          <dpi vertical="300" horizontal="300"/>
+          <color-params colorMode="colorOrGray">
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
+            <bw thresholdAdj="0"/>
+          </color-params>
+        </params>
+      </page>
+      <page id="7">
+        <zones/>
+        <fill-zones/>
+        <params pictureShape="0" depthPerception="2" despeckleLevel="cautious" dewarpingMode="off">
+          <dpi vertical="300" horizontal="300"/>
+          <color-params colorMode="colorOrGray">
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
+            <bw thresholdAdj="0"/>
+          </color-params>
+        </params>
+      </page>
+    </output>
+  </filters>
+</project>

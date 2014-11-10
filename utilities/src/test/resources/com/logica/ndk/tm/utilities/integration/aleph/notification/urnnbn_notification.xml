@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:URNNBNNotification xmlns:tns="http://www.logica.com/ndk/tm/urnnbn_notification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.logica.com/ndk/tm/urnnbn_notification urnnbn_notification.xsd ">
+  <tns:batchNumber>2012_03_29_0001</tns:batchNumber>
+  <tns:records>
+    <tns:record>
+      <tns:docNumber>000358463</tns:docNumber>
+      <tns:barCode>1001240651</tns:barCode>
+      <tns:url>http://kramerius.nkp.cz/kramerius/handle/ABA001/5358443</tns:url>
+	  <tns:uuid>c71af6e0-ae2d-11e1-952a-02004c4f4f50</tns:uuid>
+      <tns:digitalRecords>
+        <tns:digitalRecord>
+          <tns:urnnbn>urn:nbn:cz:aba001-0001ue</tns:urnnbn>
+          <tns:url>http://kramerius.nkp.cz/kramerius/handle/ABA001/5358443/1</tns:url>
+		  <tns:uuid>c71af6e0-ae2d-11e1-952a-02004c4f4f51</tns:uuid>
+        </tns:digitalRecord>
+        <tns:digitalRecord>
+        	<tns:urnnbn>urn:nbn:cz:aba001-0002ue</tns:urnnbn>
+        	<tns:url>http://kramerius.nkp.cz/kramerius/handle/ABA001/5358443/1</tns:url>
+			<tns:uuid>c71af6e0-ae2d-11e1-952a-02004c4f4f52</tns:uuid>
+        </tns:digitalRecord>
+        <tns:digitalRecord>
+        	<tns:urnnbn>urn:nbn:cz:aba001-0003ue</tns:urnnbn>
+        	<tns:url>http://kramerius.nkp.cz/kramerius/handle/ABA001/5358443/1</tns:url>
+			<tns:uuid>c71af6e0-ae2d-11e1-952a-02004c4f4f53</tns:uuid>
+        </tns:digitalRecord>
+      </tns:digitalRecords>
+    </tns:record>
+    
+    <tns:record>
+    	<tns:docNumber>001701183</tns:docNumber>
+    	<tns:barCode>1001519853</tns:barCode>
+    	<tns:url>http://kramerius.nkp.cz/kramerius/handle/ABA001/5358743</tns:url>
+		<tns:uuid>c71af6e0-ae2d-11e1-952a-02004c4f4f54</tns:uuid>
+    	<tns:digitalRecords>
+    		<tns:digitalRecord>
+    			<tns:urnnbn>urn:nbn:cz:aba001-0103ue</tns:urnnbn>
+    			<tns:url>http://kramerius.nkp.cz/kramerius/handle/ABA001/5358743</tns:url>
+				<tns:uuid>c71af6e0-ae2d-11e1-952a-02004c4f4f54</tns:uuid>
+    		</tns:digitalRecord>
+    	</tns:digitalRecords>
+    </tns:record>
+  </tns:records>
+</tns:URNNBNNotification>

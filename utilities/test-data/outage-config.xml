@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outages>
+	<outage action="IEPREPARE" 	from="* * * * *" 	duration="240" 	description="Always free" />
+	<outage action="LTP" 		from="00 00 * * *" 	duration="1440" description="Always every day all day" />
+	<outage action="AAA" 		from="* * * * 8" 	duration="240" 	description="Never" />
+</outages>

@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Konfigurace pro utility. Z nej se generuji konfigurace, ktere sa importuji 
+	do Mule master i Mule slave. Kazda utilita ma jeden zaznam (spolecny pro 
+	synchronni i asynchronni formu). Kazda utilita je prave v jedne kategorii 
+	(category). Jmeno kategorie je libovolne. Atributy utility: name=Jmeno pre 
+	model/flow; z nej se generuje jmeno sluzby i webservice url class=Trida rozhrani. 
+	Predpoklada se ze jmeno implementacni tridy se ziska priadnim 'Impl'. method=(Nepovinne) 
+	jmeno metody v implementaci, ktere sa (na Mule slave) zavola. Jinak se ji 
+	Mule snazi uhodnout. opAsync=Jmeno operace pro asynchronni rozhrani. Nepovinne 
+	(pak ale async WS nebude). opSync=Jmeno operace pro synchronni rozhrani. 
+	Nepovinne (pak ale sync WS nebude). -->
+
+<cfg-mule-utils xmlns="http://www.logica.com/schema/ndk/mule/utils/config">
+
+	<!-- kategorie: sample -->
+	<category name="sample">
+
+		<util name="SomeSample" class="com.logica.ndk.tm.utilities.sample.SomeSample"
+			method="execute" opAsync="executeAsync" opSync="execute" />
+
+		<!-- Example for "custom" component definition -->
+		<util name="OtherSample" class="com.logica.ndk.tm.utilities.sample.OtherSample"
+			opAsync="executeAsync" opSync="executeSync">
+			<slaveComponent>
+				<component xmlns="http://www.mulesoft.org/schema/mule/core">
+					<!-- optional - explicitne specifikovana metoda kterou Mule zavola; 
+						jinak Mule hada dle signatury -->
+					<method-entry-point-resolver>
+						<include-entry-point method="execute" />
+					</method-entry-point-resolver>
+					<!-- zpusob jak zde nastavit utilite properties; viz property v OtherSampleImpl.java -->
+					<prototype-object
+						class="com.logica.ndk.tm.utilities.sample.OtherSampleImpl">
+						<!-- prime nastaveni hodnoty -->
+						<property key="sampleProperty" value="sampleValue" />
+						<!-- reference na spring:bean definovany jinde, napr. mule-config-utils-slave.xml -->
+						<!--property key="sampleProperty" value-ref="sampleRef" xmlns="http://www.mulesoft.org/schema/mule/core"/ -->
+					</prototype-object>
+				</component>
+			</slaveComponent>
+		</util>
+
+		<util name="SedaSample" class="com.logica.ndk.tm.utilities.sample.SedaSample"
+			method="execute" opAsync="executeAsync" opSync="execute" />
+
+	</category>
+
+	<!-- kategorie: integration -->
+	<category name="integration">
+
+		<!-- REGISTR DIGITALIZACE -->
+		<util name="RDSetRecordState"
+			class="com.logica.ndk.tm.utilities.integration.rd.RDSetRecordState"
+			opAsync="setRecordStateAsync" opSync="setRecordStateSync" />
+
+		<util name="RDAddRecordUrnNbn"
+			class="com.logica.ndk.tm.utilities.integration.rd.RDAddRecordUrnNbn"
+			opAsync="addRecordUrnNbnAsync" opSync="addRecordUrnNbnSync" />
+
+		<util name="RDSetRecordUrnNbn"
+			class="com.logica.ndk.tm.utilities.integration.rd.RDSetRecordUrnNbn"
+			opAsync="setRecordUrnNbnAsync" opSync="setRecordUrnNbnSync" />
+
+		<util name="RDFindRecord"
+			class="com.logica.ndk.tm.utilities.integration.rd.RDFindRecord"
+			opAsync="findRecordAsync" opSync="findRecordSync" />
+			
+		<!-- FEDORA -->
+		<util name="SendFoxmlToFedora"
+			class="com.logica.ndk.tm.utilities.transformation.SendFoxmlToFedora"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="UpdateFoxmlMetadata"
+			class="com.logica.ndk.tm.utilities.transformation.UpdateFoxmlMetadata"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<!-- URN NBN RESOLVER -->
+
+		<util name="CreateDigitalInstance"
+			class="com.logica.ndk.tm.utilities.urnnbn.CreateDigitalInstance"
+			opAsync="executeAsync" opSync="executeSync">
+			<slaveComponent>
+				<component xmlns="http://www.mulesoft.org/schema/mule/core">
+					<method-entry-point-resolver>
+						<include-entry-point method="execute" />
+					</method-entry-point-resolver>
+					<prototype-object
+						class="com.logica.ndk.tm.utilities.urnnbn.CreateDigitalInstanceImpl">
+						<property key="restTemplate" value-ref="restTemplate"
+							xmlns="http://www.mulesoft.org/schema/mule/core" />
+					</prototype-object>
+				</component>
+			</slaveComponent>
+		</util>
+
+		<util name="AssignUrnNbn" class="com.logica.ndk.tm.utilities.urnnbn.AssignUrnNbn"
+			opAsync="assignAsync" opSync="assignSync">
+			<slaveComponent>
+				<component xmlns="http://www.mulesoft.org/schema/mule/core">
+					<method-entry-point-resolver>
+						<include-entry-point method="assign" />
+					</method-entry-point-resolver>
+					<prototype-object
+						class="com.logica.ndk.tm.utilities.urnnbn.AssignUrnNbnImpl">
+						<property key="urnNbnDao" value-ref="urnNbnDAO"
+							xmlns="http://www.mulesoft.org/schema/mule/core" />
+						<property key="restTemplate" value-ref="restTemplate"
+							xmlns="http://www.mulesoft.org/schema/mule/core" />
+					</prototype-object>
+				</component>
+			</slaveComponent>
+		</util>
+
+		<util name="UpdateUrnNbn" class="com.logica.ndk.tm.utilities.urnnbn.UpdateUrnNbn"
+			opAsync="assignAsync" opSync="assignSync">
+			<slaveComponent>
+				<component xmlns="http://www.mulesoft.org/schema/mule/core">
+					<method-entry-point-resolver>
+						<include-entry-point method="assign" />
+					</method-entry-point-resolver>
+					<prototype-object
+						class="com.logica.ndk.tm.utilities.urnnbn.UpdateUrnNbnImpl">
+						<property key="restTemplate" value-ref="restTemplate"
+							xmlns="http://www.mulesoft.org/schema/mule/core" />
+					</prototype-object>
+				</component>
+			</slaveComponent>
+		</util>
+
+		<util name="UrnNbnAgent" class="com.logica.ndk.tm.utilities.urnnbn.UrnNbnAgent"
+			opAsync="executeAsync" opSync="executeSync">
+			<slaveComponent>
+				<component xmlns="http://www.mulesoft.org/schema/mule/core">
+					<method-entry-point-resolver>
+						<include-entry-point method="execute" />
+					</method-entry-point-resolver>
+					<prototype-object
+						class="com.logica.ndk.tm.utilities.urnnbn.UrnNbnAgentImpl">
+						<property key="urnNbnDao" value-ref="urnNbnDAO"
+							xmlns="http://www.mulesoft.org/schema/mule/core" />
+						<property key="restTemplate" value-ref="restTemplate"
+							xmlns="http://www.mulesoft.org/schema/mule/core" />
+					</prototype-object>
+				</component>
+			</slaveComponent>
+		</util>
+		
+		<util name="DeactivateUrnNbn"
+			class="com.logica.ndk.tm.utilities.urnnbn.DeactivateUrnNbn"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<!-- KRAMERIUS -->
+		<util name="StartKrameriusProcess"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.StartKrameriusProcess"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="StartKrameriusIndexProcess"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.StartKrameriusIndexProcess"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CheckKrameriusProcessResult"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.CheckKrameriusProcessResult"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CheckExistenceOfUuid"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.CheckExistenceOfUuid"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="DeleteFromK4"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.DeleteFromK4"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CheckKrameriusNoBatchProcessResult"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.CheckKrameriusNoBatchProcessResult"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ClearKrameriusFolder"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.ClearKrameriusFolder"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="SendFoxmlToK4"
+			class="com.logica.ndk.tm.utilities.transformation.SendFoxmlToK4"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="MoveFromTempToK4"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.MoveFromTempToK4"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateLogForLTPImport"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.CreateLogForLTPImport"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="HttpClient"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.HttpClient"
+			method="doPost" opAsync="doPostAsync" opSync="doPostSync" />
+
+		<!-- ALEPH -->
+
+		<util name="GetAlephExtendedData"
+			class="com.logica.ndk.tm.utilities.integration.aleph.GetAlephExtendedData"
+			method="getBibliographicDataByBarCode" opAsync="getBibliographicDataByBarCodeAsync"
+			opSync="getBibliographicDataByBarCodeSync" />
+			
+		<util name="GetAlephRecordExtendedData"
+			class="com.logica.ndk.tm.utilities.integration.aleph.GetAlephRecordExtendedData"
+			method="getBibliographicData" opAsync="getBibliographicDataAsync"
+			opSync="getBibliographicDataSync" />
+
+		<util name="GetAlephItem"
+			class="com.logica.ndk.tm.utilities.integration.aleph.GetAlephItem"
+			opAsync="getItemAsync" opSync="getItemSync" />
+
+		<util name="GetAlephData"
+			class="com.logica.ndk.tm.utilities.integration.aleph.GetAlephData"
+			method="getBibliographicDataByBarCode" opAsync="getBibliographicDataByBarCodeAsync"
+			opSync="getBibliographicDataByBarCodeSync" />
+
+		<util name="CreateAlephEnrichedData"
+			class="com.logica.ndk.tm.utilities.integration.aleph.CreateAlephEnrichedData"
+			method="createBibliographicEnrichedDataByBarCode" opAsync="createBibliographicEnrichedDataByBarCodeAsync"
+			opSync="createBibliographicEnrichedDataByBarCodeSync" />
+			
+		<!-- JBPM -->
+		<util name="StartJBPMProcess"
+			class="com.logica.ndk.tm.utilities.integration.jbpm.StartJBPMProcess"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="StartJBPMProcessElsewhere"
+			class="com.logica.ndk.tm.utilities.integration.jbpm.StartJBPMProcessElsewhere"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="GetJBPMProcessState"
+			class="com.logica.ndk.tm.utilities.integration.jbpm.GetJBPMProcessState"
+			opAsync="executeAsync" opSync="executeSync" />	
+
+		<util name="CheckJBPMProcessStateElsewhere"
+			class="com.logica.ndk.tm.utilities.integration.jbpm.CheckJBPMProcessStateElsewhere"
+			opAsync="executeAsync" opSync="executeSync" />
+
+	</category>
+
+	<!-- kategorie: inthard - dlouhotrvajiici integracni utility -->
+	<category name="inthard">
+		<util name="CreateSIP2FromCDM"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.CreateSIP2FromCDM"
+			opAsync="executeAsync" opSync="executeSync" />
+	</category>
+
+	<!-- kategorie: hard - utility pracujici s celymi obrazy a soubory -->
+	<category name="hard">
+		
+		<util name="CopyTo" class="com.logica.ndk.tm.utilities.io.CopyTo"
+			method="copy" opAsync="copyAsync" opSync="copySync" />
+			
+		<util name="FSOperationsGenerator" class="com.logica.ndk.tm.utilities.fs.FSOperationsGenerator"
+			opAsync="executeAsync" opSync="executeSync" />
+		
+		<!-- File system check utility -->	
+		<util name="TestHandlingCDMProp" class="com.logica.ndk.tm.utilities.fs.TestHandlingCDMProp"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="GetFileAnalyzer" class="com.logica.ndk.tm.utilities.fs.GetFileAnalyzer"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="PrepareProcessData" class="com.logica.ndk.tm.utilities.fs.PrepareProcessData"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="TransformToMixAnalyzer" class="com.logica.ndk.tm.utilities.fs.TransformToMixAnalyzer"
+			opAsync="executeAsync" opSync="executeSync" />
+		<!-- File system check utility konec-->
+		
+		<util name="CopyToLTPImput" class="com.logica.ndk.tm.utilities.io.CopyToLTPImput"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CopyFromLtpToTrasDir" class="com.logica.ndk.tm.utilities.io.CopyFromLtpToTrasDir"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ImportSIP1"
+			class="com.logica.ndk.tm.utilities.transformation.sip1.ImportSIP1"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ImportSIP1LTP"
+			class="com.logica.ndk.tm.utilities.transformation.sip1.ImportSIP1LTP"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="FileCharacterization"
+			class="com.logica.ndk.tm.utilities.file.FileCharacterization"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="TiffInfoCharacterization"
+			class="com.logica.ndk.tm.utilities.file.TiffInfoCharacterization"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="RunScantailorPreprocess"
+			class="com.logica.ndk.tm.utilities.transformation.scantailor.RunScantailorPreprocess"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="RunScantailorCrop"
+			class="com.logica.ndk.tm.utilities.transformation.scantailor.RunScantailorCrop"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateSIP1FromCDM"
+			class="com.logica.ndk.tm.utilities.transformation.sip1.CreateSIP1FromCDM"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ConvertImage"
+			class="com.logica.ndk.tm.utilities.transformation.ConvertImage"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ConvertToJpeg2000"
+			class="com.logica.ndk.tm.utilities.transformation.jpeg2000.ConvertToJpeg2000"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ConvertToJpeg2000LTP"
+			class="com.logica.ndk.tm.utilities.transformation.jpeg2000.ConvertToJpeg2000LTP"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="TransformJpeg2000"
+			class="com.logica.ndk.tm.utilities.transformation.jpeg2000.TransformJpeg2000"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ConvertToTiff"
+			class="com.logica.ndk.tm.utilities.transformation.ConvertToTiff"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="TransformToRawData"
+			class="com.logica.ndk.tm.utilities.transformation.TransformToRawData"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ConvertMCToPPTif"
+			class="com.logica.ndk.tm.utilities.transformation.ConvertMCToPPTif"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ConvertDjVuToTiff"
+			class="com.logica.ndk.tm.utilities.transformation.djvu.ConvertDjVuToTiff"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="ConvertJpgToTiff"
+			class="com.logica.ndk.tm.utilities.transformation.jpg.ConvertJpgToTiff"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreatePDF" class="com.logica.ndk.tm.utilities.alto.CreatePDF"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateMD5File"
+			class="com.logica.ndk.tm.utilities.transformation.CreateMD5File"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidateMD5" class="com.logica.ndk.tm.utilities.validation.ValidateMD5"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GitBackup" class="com.logica.ndk.tm.utilities.git.GitBackup"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateCDMFromSIP" class="com.logica.ndk.tm.utilities.file.CreateCDMFromSIP"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateIntEntitiesFromImport"
+			class="com.logica.ndk.tm.utilities.integration.wf.CreateIntEntitiesFromImport"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreatePackageForLTPImport"
+			class="com.logica.ndk.tm.utilities.integration.wf.CreatePackageForLTPImport"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreatePackageForFormatMigration"
+			class="com.logica.ndk.tm.utilities.integration.wf.CreatePackageForFormatMigration"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidatePSPScan" class="com.logica.ndk.tm.utilities.file.ValidatePSPScan"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="UpdateCdm" class="com.logica.ndk.tm.utilities.file.UpdateCdm"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ConvertImagesForST"
+			class="com.logica.ndk.tm.utilities.transformation.ConvertImagesForST"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="CopyToOcrInput" class="com.logica.ndk.tm.utilities.ocr.CopyToOcrInput"
+			method="copy" opAsync="copyAsync" opSync="copySync" />
+
+		<util name="CopyFilesFromLTPImpotToCDM"
+			class="com.logica.ndk.tm.utilities.file.CopyFilesFromLTPImpotToCDM"
+			opAsync="executeAsync" opSync="executeSync" />
+
+	</category>
+
+	<!-- kategorie: rsync -->
+	<category name="rsync">
+
+		<util name="Rsync" class="com.logica.ndk.tm.utilities.file.Rsync"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CopyFtp" class="com.logica.ndk.tm.utilities.io.CopyFtp"
+			opAsync="executeAsync" opSync="executeSync" />
+
+	</category>
+
+	<category name="wa">
+		<util name="Arc2Warc" class="com.logica.ndk.tm.utilities.wa.Arc2Warc"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="WarcDump" class="com.logica.ndk.tm.utilities.wa.WarcDump"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="HarvestLog" class="com.logica.ndk.tm.utilities.wa.HarvestLog"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="WaLog" class="com.logica.ndk.tm.utilities.wa.WaLog"
+			opAsync="executeAsync" opSync="executeSync">
+			<slaveComponent>
+				<component xmlns="http://www.mulesoft.org/schema/mule/core">
+					<method-entry-point-resolver>
+						<include-entry-point method="execute" />
+					</method-entry-point-resolver>
+					<prototype-object class="com.logica.ndk.tm.utilities.wa.WaLogImpl">
+						<property key="waLogDAO" value-ref="waLogDAO"
+							xmlns="http://www.mulesoft.org/schema/mule/core" />
+					</prototype-object>
+				</component>
+			</slaveComponent>
+		</util>
+
+		<util name="CreateEmptyCdmWA" class="com.logica.ndk.tm.utilities.file.CreateEmptyCdmWA"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidateWA" class="com.logica.ndk.tm.utilities.wa.ValidateWA"
+			opAsync="executeAsync" opSync="executeSync" />
+	</category>
+
+	<!-- kategorie: quick - utility, jejich vykonani se ocekava, ze probehne 
+		velmi rychle -->
+	<category name="quick">
+		<util name="MoveTo" class="com.logica.ndk.tm.utilities.io.MoveTo"
+			method="moveDir" opAsync="moveDirAsync" opSync="moveDirSync" />
+			
+		<util name="CreateSignature"
+			class="com.logica.ndk.tm.utilities.integration.wf.CreateSignature"
+			opAsync="executeAsync" opSync="executeSync" />
+		
+		<util name="DeactivateInWF"
+			class="com.logica.ndk.tm.utilities.integration.wf.DeactivateInWF"
+			opAsync="executeAsync" opSync="executeSync" />		
+			
+		<util name="MoveOcrFiles" 
+			class="com.logica.ndk.tm.utilities.ocr.MoveOcrFiles"
+			opAsync="executeAsync" opSync="executeSync" />
+		
+		<util name="GetKrameriusUuidPath"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.GetKrameriusUuidPath"
+			opAsync="executeAsync" opSync="executeSync" />	
+		
+		<util name="DeactivateMetadata" 
+			class="com.logica.ndk.tm.utilities.transformation.DeactivateMetadata"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="RetryTest" class="com.logica.ndk.tm.utilities.aspect.RetryTest"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GenerateFoxmlNoPages" class="com.logica.ndk.tm.utilities.transformation.GenerateFoxmlNoPages"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="NotifyLtpOfError" class="com.logica.ndk.tm.utilities.integration.NotifyLtpOfError"
+			method="notify" opAsync="notifyAsync" opSync="notifySync" />
+
+		<util name="CheckRawDataHardLinks" class="com.logica.ndk.tm.utilities.transformation.structure.CheckRawDataHardLinks"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CopyToSmallFiles" class="com.logica.ndk.tm.utilities.io.CopyToSmallFiles"
+			method="copySmallFiles" opAsync="copySmallFilesAsync" opSync="copySmallFilesSync" />
+
+		<util name="GetUuidFromMetsFile"
+			class="com.logica.ndk.tm.utilities.transformation.mets.GetUuidFromMetsFile"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GetUUID"
+			class="com.logica.ndk.tm.utilities.transformation.em.GetUUID"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="SmallFileCharacterization"
+			class="com.logica.ndk.tm.utilities.file.SmallFileCharacterization"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="Delete" class="com.logica.ndk.tm.utilities.io.Delete"
+			opAsync="deleteAsync" opSync="deleteSync" />
+
+		<util name="DeleteDir" class="com.logica.ndk.tm.utilities.io.DeleteDir"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="FailIfDirExists" class="com.logica.ndk.tm.utilities.io.FailIfDirExists"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CleanData" class="com.logica.ndk.tm.utilities.io.CleanData"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CheckSIP1ImportResult"
+			class="com.logica.ndk.tm.utilities.transformation.sip1.CheckSIP1ImportResult"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="PrepareForUrnNbn" class="com.logica.ndk.tm.utilities.urnnbn.PrepareForUrnNbn"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="InvalidateUrnNbn" class="com.logica.ndk.tm.utilities.urnnbn.InvalidateUrnNbn"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="FilesList" class="com.logica.ndk.tm.utilities.ocr.FilesList"
+			opAsync="generateAsync" opSync="generateSync" />
+
+		<util name="CheckOcrOutput" class="com.logica.ndk.tm.utilities.ocr.CheckOcrOutput"
+			opAsync="checkAsync" opSync="checkSync" />
+
+		<util name="CopyOcrResult" class="com.logica.ndk.tm.utilities.ocr.CopyOcrResult"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GenerateEvent" class="com.logica.ndk.tm.utilities.premis.GenerateEvent"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GenerateEventFormatMigration" class="com.logica.ndk.tm.utilities.premis.GenerateEventFormatMigration"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidateCdmMetadata"
+			class="com.logica.ndk.tm.utilities.validation.ValidateCdmMetadata"
+			opAsync="validateAsync" opSync="validateSync" />
+
+		<util name="UpdateMetsDC"
+			class="com.logica.ndk.tm.utilities.transformation.UpdateMetsDC"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="RepairDC"
+			class="com.logica.ndk.tm.utilities.transformation.RepairDC"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GetBibliographicData"
+			class="com.logica.ndk.tm.utilities.transformation.em.GetBibliographicData"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GetBibliographicDataFromImport"
+			class="com.logica.ndk.tm.utilities.transformation.em.GetBibliographicDataFromImport"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidateAlephBiblioMetadata"
+			class="com.logica.ndk.tm.utilities.validation.ValidateAlephBiblioMetadata"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateScansCSV" class="com.logica.ndk.tm.utilities.file.CreateScansCSV"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="SetVolumeUuid"
+			class="com.logica.ndk.tm.utilities.transformation.mets.SetVolumeUuid"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="SaveAlephMetadata"
+			class="com.logica.ndk.tm.utilities.integration.aleph.SaveAlephMetadata"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateIntEntities"
+			class="com.logica.ndk.tm.utilities.integration.wf.CreateIntEntities"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CleanFilesByPPDir" class="com.logica.ndk.tm.utilities.file.CleanFilesByPPDir"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateEmptyScanBatchFolder"
+			class="com.logica.ndk.tm.utilities.file.CreateEmptyScanBatchFolder"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="BackUpMetadataFiles" class="com.logica.ndk.tm.utilities.file.BackUpMetadataFiles"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="UpdateFilesModificationTime"
+			class="com.logica.ndk.tm.utilities.file.UpdateFilesModificationTime"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidatePPOutput"
+			class="com.logica.ndk.tm.utilities.validation.ValidatePPOutput"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidateTiffinfo"
+			class="com.logica.ndk.tm.utilities.validation.ValidateTiffinfo"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateEmConfig"
+			class="com.logica.ndk.tm.utilities.transformation.em.CreateEmConfig"
+			opAsync="createAsync" opSync="createSync" />
+
+		<util name="CreateEmConfigFromMets"
+			class="com.logica.ndk.tm.utilities.transformation.em.CreateEmConfigFromMets"
+			opAsync="createAsync" opSync="createSync" />
+
+		<util name="CheckIfMetsExists"
+			class="com.logica.ndk.tm.utilities.transformation.CheckIfMetsExists"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CopyTxtFromOcrOutput" class="com.logica.ndk.tm.utilities.io.CopyTxtFromOcrOutput"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CopyAltoFromOcrOutput" class="com.logica.ndk.tm.utilities.io.CopyAltoFromOcrOutput"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CheckFreeDiskSpace" class="com.logica.ndk.tm.utilities.io.CheckFreeDiskSpace"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CountValidPages"
+			class="com.logica.ndk.tm.utilities.transformation.em.CountValidPages"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CountPreprocessPages"
+			class="com.logica.ndk.tm.utilities.transformation.manual.CountPreprocessPages"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="HandleManualPostprocess"
+			class="com.logica.ndk.tm.utilities.transformation.manual.HandleManualPostprocess"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateMapping"
+			class="com.logica.ndk.tm.utilities.transformation.CreateMapping"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="CreateRdcCsvFile"
+			class="com.logica.ndk.tm.utilities.file.CreateRdcCsvFile"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="AnalyzeImport"
+			class="com.logica.ndk.tm.utilities.file.AnalyzeImport"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="CreateFlatStructure"
+			class="com.logica.ndk.tm.utilities.transformation.structure.CreateFlatStructure"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="CreateScansForFormatMigration"
+			class="com.logica.ndk.tm.utilities.integration.wf.CreateScansForFormatMigration"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="NoOcr"
+			class="com.logica.ndk.tm.utilities.ocr.NoOcr"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="EvaluateOcrResult"
+			class="com.logica.ndk.tm.utilities.ocr.EvaluateOcrResult"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="DeleteOcrDirs"
+			class="com.logica.ndk.tm.utilities.ocr.DeleteOcrDirs"
+			opAsync="executeAsync" opSync="executeSync" />
+	</category>
+
+	<!-- kategorie: medium - utility bezici v radech jednotek minut -->
+	<category name="medium">
+		<util name="CreateScantailorConfig"
+			class="com.logica.ndk.tm.utilities.transformation.scantailor.CreateScantailorConfig"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="RenameImportedFilesFromLTP"
+			class="com.logica.ndk.tm.utilities.file.RenameImportedFilesFromLTP"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="WaitForFile"
+			class="com.logica.ndk.tm.utilities.test.waiters.WaitForFile"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="WaitForTime"
+			class="com.logica.ndk.tm.utilities.test.waiters.WaitForTime"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateMets"
+			class="com.logica.ndk.tm.utilities.transformation.CreateMets"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateAmdMetsAfterMigration"
+			class="com.logica.ndk.tm.utilities.transformation.CreateAmdMetsAfterMigration"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateMetsMns"
+			class="com.logica.ndk.tm.utilities.transformation.CreateMetsMns"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateOriginalData"
+			class="com.logica.ndk.tm.utilities.transformation.CreateOriginalData"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="DeleteByEm"
+			class="com.logica.ndk.tm.utilities.transformation.em.DeleteByEm"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ExtendEmCsv"
+			class="com.logica.ndk.tm.utilities.transformation.em.ExtendEmCsv"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateInfoXmlForSIP1"
+			class="com.logica.ndk.tm.utilities.transformation.sip1.CreateInfoXmlForSIP1"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GeneratePremis" class="com.logica.ndk.tm.utilities.premis.GeneratePremis"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="GeneratePremisKrameriusImport" class="com.logica.ndk.tm.utilities.premis.GeneratePremisKrameriusImport"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GeneratePremisFormatMigration" class="com.logica.ndk.tm.utilities.premis.GeneratePremisFormatMigration"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="TransformAMDMetsToPremis"
+			class="com.logica.ndk.tm.utilities.premis.TransformAMDMetsToPremis"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="TransformPremisToCVS"
+			class="com.logica.ndk.tm.utilities.premis.TransformPremisToCVS"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GeneratePremisManualOCR"
+			class="com.logica.ndk.tm.utilities.premis.GeneratePremisManualOCR"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="PurgeByMets"
+			class="com.logica.ndk.tm.utilities.transformation.em.PurgeByMets"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="TeiToMods"
+			class="com.logica.ndk.tm.utilities.transformation.tei.TeiToMods"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="MnsToMods"
+			class="com.logica.ndk.tm.utilities.transformation.mns.MnsToMods"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GenerateFoxmlForSIP2"
+			class="com.logica.ndk.tm.utilities.transformation.sip2.GenerateFoxmlForSIP2"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateMetsK4"
+			class="com.logica.ndk.tm.utilities.transformation.CreateMetsK4"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="MergeCDM" class="com.logica.ndk.tm.utilities.transformation.MergeCDM"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="UpdateMetsFiles"
+			class="com.logica.ndk.tm.utilities.transformation.UpdateMetsFiles"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="UpdateAmdSec"
+			class="com.logica.ndk.tm.utilities.transformation.UpdateAmdSec"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="RemovePrefix"
+			class="com.logica.ndk.tm.utilities.transformation.RemovePrefix"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="UpdateMets"
+			class="com.logica.ndk.tm.utilities.transformation.UpdateMets"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="UpdateModsAndDc"
+			class="com.logica.ndk.tm.utilities.transformation.UpdateModsAndDc"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidateCdmSip1" class="com.logica.ndk.tm.utilities.em.ValidateCdmSip1"
+			opAsync="validateAsync" opSync="validateSync" />
+
+		<util name="ValidateCdmSip2" class="com.logica.ndk.tm.utilities.em.ValidateCdmSip2"
+			opAsync="validateAsync" opSync="validateSync" />
+
+		<util name="ValidateEncodingUTF8" class="com.logica.ndk.tm.utilities.io.ValidateEncodingUTF8"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidateXML" class="com.logica.ndk.tm.utilities.file.ValidateXML"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidateMns" class="com.logica.ndk.tm.utilities.validation.ValidateMns"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="ValidateImagesForPostproc"
+			class="com.logica.ndk.tm.utilities.validation.ValidateImagesForPostproc"
+			opAsync="validateAsync" opSync="validateSync" />
+
+		<util name="ValidateEmResult"
+			class="com.logica.ndk.tm.utilities.validation.ValidateEmResult"
+			opAsync="validateAsync" opSync="validateSync" />
+			
+		<util name="ValidateEmCsv"
+			class="com.logica.ndk.tm.utilities.validation.ValidateEmCsv"
+			opAsync="validateAsync" opSync="validateSync" />
+
+		<util name="ValidateCdmBasic"
+			class="com.logica.ndk.tm.utilities.validation.ValidateCdmBasic"
+			opAsync="validateAsync" opSync="validateSync" />
+
+		<util name="ValidateAltoFiles"
+			class="com.logica.ndk.tm.utilities.validation.ValidateAltoFiles"
+			opAsync="validateAsync" opSync="validateSync" />
+
+		<util name="Antivir" class="com.logica.ndk.tm.utilities.security.Antivir"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CommandLineUtility"
+			class="com.logica.ndk.tm.utilities.commandline.CommandLineUtility"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateTXT" class="com.logica.ndk.tm.utilities.alto.CreateTXT"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="RemoveCDMById" class="com.logica.ndk.tm.utilities.file.RemoveCDMById"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CmdLineAdvanced"
+			class="com.logica.ndk.tm.utilities.commandline.CmdLineAdvanced"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="SplitByIntEntity"
+			class="com.logica.ndk.tm.utilities.transformation.em.SplitByIntEntity"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="RenameCdmByPath" class="com.logica.ndk.tm.utilities.transformation.em.RenameCdmByPath"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="AltoCharacterization"
+			class="com.logica.ndk.tm.utilities.file.AltoCharacterization"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="PurgeCdm" class="com.logica.ndk.tm.utilities.admin.PurgeCdm"
+			opAsync="executeAsync" opSync="executeSync" />
+			
+		<util name="ValidateMix" class="com.logica.ndk.tm.utilities.validation.ValidateMix"
+			opAsync="executeAsync" opSync="executeSync" />
+	</category>
+
+	<!-- kategorie: synchronous - urcena pre utility ktore sa zvyknu volat synchronne -->
+	<category name="synchronous">
+
+		<util name="GrantAccess" class="com.logica.ndk.tm.utilities.io.GrantAccess"
+			opAsync="grantAsync" opSync="grantSync" />
+
+		<util name="RevokeAccess" class="com.logica.ndk.tm.utilities.io.RevokeAccess"
+			opAsync="revokeAsync" opSync="revokeSync" />
+
+		<util name="ShutDownService" class="com.logica.ndk.tm.utilities.shutdown.ShutDownService"
+			opAsync="isShuttingDownAsync" opSync="isShuttingDownSync" />
+
+		<util name="Ping" class="com.logica.ndk.tm.utilities.ping.Ping"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GenerateUuid" class="com.logica.ndk.tm.utilities.uuid.GenerateUuid"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<!-- need revision -->
+
+		<util name="CreateEmptyCdm" class="com.logica.ndk.tm.utilities.file.CreateEmptyCdm"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GetUUIDFromMets"
+			class="com.logica.ndk.tm.utilities.transformation.mets.GetUUIDFromMets"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateCDMById" class="com.logica.ndk.tm.utilities.file.CreateCDMById"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="GetAIPIdentificator"
+			class="com.logica.ndk.tm.utilities.transformation.em.GetAIPIdentificator"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CreateAlephRecord"
+			class="com.logica.ndk.tm.utilities.integration.aleph.notification.CreateAlephRecord"
+			opAsync="executeAsync" opSync="executeSync" />
+
+		<util name="CheckAlephResponse"
+			class="com.logica.ndk.tm.utilities.integration.aleph.notification.CheckAlephResponse"
+			opAsync="executeAsync" opSync="executeSync" />
+
+	</category>
+
+</cfg-mule-utils>

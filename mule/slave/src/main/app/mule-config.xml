@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:spring="http://www.springframework.org/schema/beans" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf"
+	xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio"
+	xmlns:script="http://www.mulesoft.org/schema/mule/scripting" xmlns:management="http://www.mulesoft.org/schema/mule/management"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jersey="http://www.mulesoft.org/schema/mule/jersey"
+	xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:jdbc="http://www.mulesoft.org/schema/mule/jdbc"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.mulesoft.org/schema/mule/core META-INF/mule.xsd
+       http://www.mulesoft.org/schema/mule/cxf META-INF/mule-cxf.xsd
+       http://www.mulesoft.org/schema/mule/jms META-INF/mule-jms.xsd
+       http://www.mulesoft.org/schema/mule/http META-INF/mule-http.xsd
+       http://www.mulesoft.org/schema/mule/stdio META-INF/mule-stdio.xsd
+       http://www.mulesoft.org/schema/mule/scripting META-INF/mule-scripting.xsd
+       http://www.mulesoft.org/schema/mule/jersey META-INF/mule-jersey.xsd
+       http://www.mulesoft.org/schema/mule/management META-INF/mule-management.xsd
+       http://www.mulesoft.org/schema/mule/xml META-INF/mule-xml.xsd
+	     http://www.mulesoft.org/schema/mule/vm META-INF/mule-vm.xsd
+	     http://www.mulesoft.org/schema/mule/jdbc META-INF/mule-jdbc.xsd
+	     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<management:jmx-default-config port="${slave.jmx.port}" registerMx4jAdapter="true" />
+	<management:jmx-mx4j-adaptor jmxAdaptorUrl="${slave.mx4j.url}" />		
+
+	<vm:connector name="vmConnector">
+		<receiver-threading-profile maxThreadsActive="200" maxThreadsIdle="200"
+			poolExhaustedAction="ABORT" />
+	</vm:connector>
+
+	<!-- default properties -->
+	<context:property-placeholder location="classpath:slave.properties" />
+
+	<jms:activemq-connector name="slaveOutConnector" connectionFactory-ref="jmsFactory" persistentDelivery="true" acknowledgementMode="CLIENT_ACKNOWLEDGE"/>
+	
+	<mulexml:jaxb-context name="jaxbContext" packageNames="com.logica.ndk.tm.process" />
+
+	<spring:beans>
+	    
+		<aop:aspectj-autoproxy/>
+	
+		<spring:bean id="jmsFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+			<spring:property name="brokerURL" value="${activemq.broker.url}" />
+		</spring:bean>
+
+		<spring:bean id="tmUtilDS" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+			<spring:property name="driverClass">
+				<spring:value>com.microsoft.sqlserver.jdbc.SQLServerDriver</spring:value>
+			</spring:property>
+			<spring:property name="jdbcUrl">
+				<spring:value>${utilities.db.url}</spring:value>
+			</spring:property>
+			<spring:property name="user">
+				<spring:value>${utilities.db.username}</spring:value>
+			</spring:property>
+			<spring:property name="password">
+				<spring:value>${utilities.db.password}</spring:value>
+			</spring:property>
+			<spring:property name="properties">
+				<spring:props>
+					<spring:prop key="c3p0.acquire_increment">5</spring:prop>
+					<spring:prop key=" c3p0.idle_test_period">100</spring:prop>
+					<spring:prop key="c3p0.max_size">10</spring:prop>
+					<spring:prop key="c3p0.max_statements">1</spring:prop>
+					<spring:prop key=" c3p0.min_size">3</spring:prop>
+					<spring:prop key="user">${utilities.db.username}</spring:prop>
+					<spring:prop key="password">${utilities.db.password}</spring:prop>
+				</spring:props>
+			</spring:property>
+		</spring:bean>
+		
+		<spring:bean id="tmUtilTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			<spring:property name="dataSource" ref="tmUtilDS" />
+		</spring:bean>
+
+		<spring:bean id="tmUtilTransactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+			<spring:property name="transactionManager" ref="tmUtilTransactionManager" />
+			<spring:property name="propagationBehaviorName" value="PROPAGATION_REQUIRED" />
+		</spring:bean>
+
+		<spring:bean id="tmUtilJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+			<spring:property name="dataSource" ref="tmUtilDS" />
+		</spring:bean>
+
+		<spring:bean id="restTemplate" class="org.springframework.web.client.RestTemplate" />
+
+		<spring:bean id="urnNbnDAO" class="com.logica.ndk.tm.utilities.urnnbn.UrnNbnDAO">
+			<spring:property name="jdbcTemplate" ref="tmUtilJdbcTemplate" />
+			<spring:property name="txTemplate" ref="tmUtilTransactionTemplate" />
+		</spring:bean>
+		
+		<spring:bean id="waLogDAO" class="com.logica.ndk.tm.utilities.wa.WaLogDAO">
+			<spring:property name="jdbcTemplate" ref="tmUtilJdbcTemplate" />
+			<spring:property name="txTemplate" ref="tmUtilTransactionTemplate" />
+		</spring:bean>	
+		
+		<spring:bean id="LogDAO" class="com.logica.ndk.tm.log.LogDAO">
+			<spring:property name="jdbcTemplate" ref="tmUtilJdbcTemplate" />
+			<spring:property name="txTemplate" ref="tmUtilTransactionTemplate" />
+		</spring:bean>				
+		
+		<!-- we need to init TMInfo class on Spring initialization to LOG TMInfo on startup of mule -->
+		<spring:bean id="tmInfo" class="com.logica.ndk.tm.info.TMInfo"/>
+
+		<spring:import resource="mule-config-utils-slave.xml" />
+		<spring:import resource="mule-config-quartz-slave.xml" />
+	</spring:beans>
+
+</mule>

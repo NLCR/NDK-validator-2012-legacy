@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:premis="info:lc/xmlns/premis-v2" xmlns:mix="http://www.loc.gov/mix/v20" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd info:lc/xmlns/premis-v2 http://www.loc.gov/standards/premis/premis.xsd" TYPE="Periodical" xmlns:mets="http://www.loc.gov/METS/">
+  <mets:metsHdr CREATEDATE="2012-01-20T17:34:27" LASTMODDATE="2012-01-20T17:34:27">
+    <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <mets:name>Elsyst Egineering</mets:name>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:amdSec ID="PAGE0001">
+    <mets:techMD ID="OBJ_001">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:object xsi:type="premis:file" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:objectIdentifier>
+              <premis:objectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:objectIdentifierType>
+              <premis:objectIdentifierValue>2586</premis:objectIdentifierValue>
+            </premis:objectIdentifier>
+            <premis:preservationLevel>
+              <premis:preservationLevelValue>deleted</premis:preservationLevelValue>
+              <premis:preservationLevelDateAssigned>2012-01-20T17:34:28</premis:preservationLevelDateAssigned>
+            </premis:preservationLevel>
+            <premis:objectCharacteristics>
+              <premis:compositionLevel>0</premis:compositionLevel>
+              <premis:fixity>
+                <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+                <premis:messageDigest>a12336d8e2ea040a57e6b02212ea8f8e</premis:messageDigest>
+                <premis:messageDigestOriginator>Elsyst Engineering</premis:messageDigestOriginator>
+              </premis:fixity>
+              <premis:size>15516428</premis:size>
+              <premis:format>
+                <premis:formatDesignation>
+                  <premis:formatName>image/tiff</premis:formatName>
+                  <premis:formatVersion>42</premis:formatVersion>
+                </premis:formatDesignation>
+                <premis:formatRegistry>
+                  <premis:formatRegistryName>PRONOM</premis:formatRegistryName>
+                  <premis:formatRegistryKey>x-cmp/12</premis:formatRegistryKey>
+                </premis:formatRegistry>
+              </premis:format>
+              <premis:creatingApplication>
+                <premis:creatingApplicationName />
+                <premis:creatingApplicationVersion />
+                <premis:dateCreatedByApplication>0001-01-01T00:00:00</premis:dateCreatedByApplication>
+              </premis:creatingApplication>
+            </premis:objectCharacteristics>
+            <premis:originalName>D:\Test-Virtual\Vystup\ivo_import\nahledy\B300C__161420.tif</premis:originalName>
+            <premis:linkingEventIdentifier>
+              <premis:linkingEventIdentifierType>EE_Sirius_NDK_ANLs_LoggingID</premis:linkingEventIdentifierType>
+              <premis:linkingEventIdentifierValue>20412</premis:linkingEventIdentifierValue>
+            </premis:linkingEventIdentifier>
+            <premis:linkingEventIdentifier>
+              <premis:linkingEventIdentifierType>EE_Sirius_NDK_ANLs_LoggingID</premis:linkingEventIdentifierType>
+              <premis:linkingEventIdentifierValue>20413</premis:linkingEventIdentifierValue>
+            </premis:linkingEventIdentifier>
+            <premis:linkingEventIdentifier>
+              <premis:linkingEventIdentifierType>EE_Sirius_NDK_ANLs_LoggingID</premis:linkingEventIdentifierType>
+              <premis:linkingEventIdentifierValue>22171</premis:linkingEventIdentifierValue>
+            </premis:linkingEventIdentifier>
+            <premis:linkingEventIdentifier>
+              <premis:linkingEventIdentifierType>EE_Sirius_NDK_ANLs_LoggingID</premis:linkingEventIdentifierType>
+              <premis:linkingEventIdentifierValue>22172</premis:linkingEventIdentifierValue>
+            </premis:linkingEventIdentifier>
+          </premis:object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="OBJ_002">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:object xsi:type="premis:file" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:objectIdentifier>
+              <premis:objectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:objectIdentifierType>
+              <premis:objectIdentifierValue>24277</premis:objectIdentifierValue>
+            </premis:objectIdentifier>
+            <premis:preservationLevel>
+              <premis:preservationLevelValue>preservation</premis:preservationLevelValue>
+              <premis:preservationLevelDateAssigned>2012-01-20T17:34:28</premis:preservationLevelDateAssigned>
+            </premis:preservationLevel>
+            <premis:objectCharacteristics>
+              <premis:compositionLevel>0</premis:compositionLevel>
+              <premis:fixity>
+                <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+                <premis:messageDigest>f1c6d2e2234022ba0bae083bea2021f4</premis:messageDigest>
+                <premis:messageDigestOriginator>Elsyst Engineering</premis:messageDigestOriginator>
+              </premis:fixity>
+              <premis:size>9148461</premis:size>
+              <premis:format>
+                <premis:formatDesignation>
+                  <premis:formatName>image/jp2</premis:formatName>
+                  <premis:formatVersion>1.0</premis:formatVersion>
+                </premis:formatDesignation>
+                <premis:formatRegistry>
+                  <premis:formatRegistryName>PRONOM</premis:formatRegistryName>
+                  <premis:formatRegistryKey>fmt/151</premis:formatRegistryKey>
+                </premis:formatRegistry>
+              </premis:format>
+              <premis:creatingApplication>
+                <premis:creatingApplicationName>BATCHPROCESSOR</premis:creatingApplicationName>
+                <premis:creatingApplicationVersion>1.0.0.0</premis:creatingApplicationVersion>
+                <premis:dateCreatedByApplication>2012-01-04T11:08:38</premis:dateCreatedByApplication>
+              </premis:creatingApplication>
+            </premis:objectCharacteristics>
+            <premis:originalName>C:\SiriusBatchProcessor\skenserver_Sirius_NDK_ANL\B300C__161420a.jp2</premis:originalName>
+            <premis:relationship>
+              <premis:relationshipType>derivation</premis:relationshipType>
+              <premis:relationshipSubType>created from</premis:relationshipSubType>
+              <premis:relatedObjectIdentification>
+                <premis:relatedObjectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:relatedObjectIdentifierType>
+                <premis:relatedObjectIdentifierValue>24277</premis:relatedObjectIdentifierValue>
+              </premis:relatedObjectIdentification>
+              <premis:relatedEventIdentification>
+                <premis:relatedEventIdentifierType>EE_Sirius_NDK_ANL_LoggingID</premis:relatedEventIdentifierType>
+                <premis:relatedEventIdentifierValue>63285</premis:relatedEventIdentifierValue>
+                <premis:relatedEventSequence>1</premis:relatedEventSequence>
+              </premis:relatedEventIdentification>
+            </premis:relationship>
+          </premis:object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="OBJ_003">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:object xsi:type="premis:file" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:objectIdentifier>
+              <premis:objectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:objectIdentifierType>
+              <premis:objectIdentifierValue>4400</premis:objectIdentifierValue>
+            </premis:objectIdentifier>
+            <premis:preservationLevel>
+              <premis:preservationLevelValue>preservation</premis:preservationLevelValue>
+              <premis:preservationLevelDateAssigned>2012-01-20T17:34:28</premis:preservationLevelDateAssigned>
+            </premis:preservationLevel>
+            <premis:objectCharacteristics>
+              <premis:compositionLevel>0</premis:compositionLevel>
+              <premis:fixity>
+                <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+                <premis:messageDigest>8a6168b613099d5b5ad0b4f9799809fe</premis:messageDigest>
+                <premis:messageDigestOriginator>Elsyst Engineering</premis:messageDigestOriginator>
+              </premis:fixity>
+              <premis:size>268977</premis:size>
+              <premis:format>
+                <premis:formatDesignation>
+                  <premis:formatName>text/xml</premis:formatName>
+                  <premis:formatVersion>2.0</premis:formatVersion>
+                </premis:formatDesignation>
+                <premis:formatRegistry>
+                  <premis:formatRegistryName>PRONOM</premis:formatRegistryName>
+                  <premis:formatRegistryKey>fmt/101</premis:formatRegistryKey>
+                </premis:formatRegistry>
+              </premis:format>
+              <premis:creatingApplication>
+                <premis:creatingApplicationName>BATCHPROCESSOR</premis:creatingApplicationName>
+                <premis:creatingApplicationVersion>1.0.0.0</premis:creatingApplicationVersion>
+                <premis:dateCreatedByApplication>2012-01-04T11:08:38</premis:dateCreatedByApplication>
+              </premis:creatingApplication>
+            </premis:objectCharacteristics>
+            <premis:originalName>C:\SiriusBatchProcessor\skenserver_Sirius_NDK_ANL\B300C__161420a.xml</premis:originalName>
+            <premis:relationship>
+              <premis:relationshipType>derivation</premis:relationshipType>
+              <premis:relationshipSubType>created from</premis:relationshipSubType>
+              <premis:relatedObjectIdentification>
+                <premis:relatedObjectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:relatedObjectIdentifierType>
+                <premis:relatedObjectIdentifierValue>4400</premis:relatedObjectIdentifierValue>
+              </premis:relatedObjectIdentification>
+              <premis:relatedEventIdentification>
+                <premis:relatedEventIdentifierType>EE_Sirius_NDK_ANL_LoggingID</premis:relatedEventIdentifierType>
+                <premis:relatedEventIdentifierValue>24190</premis:relatedEventIdentifierValue>
+                <premis:relatedEventSequence>1</premis:relatedEventSequence>
+              </premis:relatedEventIdentification>
+            </premis:relationship>
+          </premis:object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="MIX_001">
+      <mets:mdWrap MDTYPE="NISOIMG" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <mix:mix xmlns:mix="http://www.loc.gov/mix/v20">
+            <mix:BasicDigitalObjectInformation>
+              <mix:FormatDesignation>
+                <mix:formatName>image/tif</mix:formatName>
+                <mix:formatVersion>42</mix:formatVersion>
+              </mix:FormatDesignation>
+              <mix:byteOrder>little endian</mix:byteOrder>
+              <mix:Compression>
+                <mix:compressionScheme>LZW</mix:compressionScheme>
+              </mix:Compression>
+            </mix:BasicDigitalObjectInformation>
+            <mix:BasicImageInformation>
+              <mix:BasicImageCharacteristics>
+                <mix:imageWidth>2424</mix:imageWidth>
+                <mix:imageHeight>3292</mix:imageHeight>
+                <mix:PhotometricInterpretation>
+                  <mix:colorSpace>Bgr</mix:colorSpace>
+                </mix:PhotometricInterpretation>
+              </mix:BasicImageCharacteristics>
+            </mix:BasicImageInformation>
+            <mix:ImageCaptureMetadata>
+              <mix:SourceInformation>
+                <mix:sourceType>Newspaper</mix:sourceType>
+              </mix:SourceInformation>
+              <mix:GeneralCaptureInformation>
+                <mix:dateTimeCreated>2011-11-23T04:54:25</mix:dateTimeCreated>
+                <mix:imageProducer>Elsyst Engineering</mix:imageProducer>
+                <mix:captureDevice>digital still camera</mix:captureDevice>
+              </mix:GeneralCaptureInformation>
+              <mix:ScannerCapture>
+                <mix:scannerManufacturer>Elsyst Engineering</mix:scannerManufacturer>
+                <mix:ScannerModel>
+                  <mix:scannerModelName>Atlas</mix:scannerModelName>
+                  <mix:scannerModelNumber>2</mix:scannerModelNumber>
+                  <mix:scannerModelSerialNo>002903-022</mix:scannerModelSerialNo>
+                </mix:ScannerModel>
+                <mix:MaximumOpticalResolution>
+                  <mix:xOpticalResolution>300</mix:xOpticalResolution>
+                  <mix:yOpticalResolution>300</mix:yOpticalResolution>
+                  <mix:opticalResolutionUnit>in.</mix:opticalResolutionUnit>
+                </mix:MaximumOpticalResolution>
+                <mix:ScanningSystemSoftware>
+                  <mix:scanningSoftwareName>Capture One</mix:scanningSoftwareName>
+                  <mix:scanningSoftwareVersionNo> 6</mix:scanningSoftwareVersionNo>
+                </mix:ScanningSystemSoftware>
+              </mix:ScannerCapture>
+              <mix:orientation>normal*</mix:orientation>
+            </mix:ImageCaptureMetadata>
+            <mix:ImageAssessmentMetadata>
+              <mix:SpatialMetrics>
+                <mix:samplingFrequencyUnit>in.</mix:samplingFrequencyUnit>
+                <mix:xSamplingFrequency>
+                  <mix:numerator>300</mix:numerator>
+                  <mix:denominator>1</mix:denominator>
+                </mix:xSamplingFrequency>
+                <mix:ySamplingFrequency>
+                  <mix:numerator>300</mix:numerator>
+                  <mix:denominator>1</mix:denominator>
+                </mix:ySamplingFrequency>
+              </mix:SpatialMetrics>
+              <mix:ImageColorEncoding>
+                <mix:BitsPerSample>
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+                </mix:BitsPerSample>
+                <mix:samplesPerPixel>3</mix:samplesPerPixel>
+              </mix:ImageColorEncoding>
+            </mix:ImageAssessmentMetadata>
+          </mix:mix>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="MIX_002">
+      <mets:mdWrap MDTYPE="NISOIMG" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <mix:mix xmlns:mix="http://www.loc.gov/mix/v20">
+            <mix:BasicDigitalObjectInformation>
+              <mix:FormatDesignation>
+                <mix:formatName>image/jp2</mix:formatName>
+                <mix:formatVersion>1.0</mix:formatVersion>
+              </mix:FormatDesignation>
+              <mix:byteOrder>big endian</mix:byteOrder>
+              <mix:Compression>
+                <mix:compressionScheme>lossless</mix:compressionScheme>
+              </mix:Compression>
+            </mix:BasicDigitalObjectInformation>
+            <mix:BasicImageInformation>
+              <mix:BasicImageCharacteristics>
+                <mix:imageWidth>2424</mix:imageWidth>
+                <mix:imageHeight>3292</mix:imageHeight>
+                <mix:PhotometricInterpretation>
+                  <mix:colorSpace>Bgr</mix:colorSpace>
+                </mix:PhotometricInterpretation>
+              </mix:BasicImageCharacteristics>
+              <mix:SpecialFormatCharacteristics>
+                <mix:JPEG2000>
+                  <mix:CodecCompliance>
+                    <mix:codec>OpenJPG</mix:codec>
+                    <mix:codecVersion>1.4.0</mix:codecVersion>
+                    <mix:codestreamProfile>P0</mix:codestreamProfile>
+                    <mix:complianceClass>C0</mix:complianceClass>
+                  </mix:CodecCompliance>
+                  <mix:EncodingOptions>
+                    <mix:Tiles>
+                      <mix:tileWidth>4096</mix:tileWidth>
+                      <mix:tileHeight>4096</mix:tileHeight>
+                    </mix:Tiles>
+                    <mix:qualityLayers>1</mix:qualityLayers>
+                    <mix:resolutionLevels>5</mix:resolutionLevels>
+                  </mix:EncodingOptions>
+                </mix:JPEG2000>
+              </mix:SpecialFormatCharacteristics>
+            </mix:BasicImageInformation>
+            <mix:ImageAssessmentMetadata>
+              <mix:SpatialMetrics>
+                <mix:samplingFrequencyUnit>in.</mix:samplingFrequencyUnit>
+                <mix:xSamplingFrequency>
+                  <mix:numerator>300</mix:numerator>
+                  <mix:denominator>1</mix:denominator>
+                </mix:xSamplingFrequency>
+                <mix:ySamplingFrequency>
+                  <mix:numerator>300</mix:numerator>
+                  <mix:denominator>1</mix:denominator>
+                </mix:ySamplingFrequency>
+              </mix:SpatialMetrics>
+              <mix:ImageColorEncoding>
+                <mix:BitsPerSample>
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+                </mix:BitsPerSample>
+                <mix:samplesPerPixel>3</mix:samplesPerPixel>
+              </mix:ImageColorEncoding>
+            </mix:ImageAssessmentMetadata>
+            <mix:ChangeHistory>
+              <mix:ImageProcessing>
+                <mix:dateTimeProcessed>2011-12-08T09:55:36</mix:dateTimeProcessed>
+                <mix:sourceData>D:\Test-Virtual\Vystup\ivo_import\nahledy\B300C__161420.tif</mix:sourceData>
+              </mix:ImageProcessing>
+            </mix:ChangeHistory>
+          </mix:mix>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:digiprovMD ID="EVT_001">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:event xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>EE_Sirius_NDK_ANL_LoggingID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>20412</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>cropSet</premis:eventType>
+            <premis:eventDateTime>2011-11-30T16:11:33</premis:eventDateTime>
+            <premis:eventDetail />
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>succeessful</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_Sirius_NDK_ANL_UserID</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>6</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>operator</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_App_Name</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>agent_Sirius</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>software</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_Sirius_NDK_ANL_MachineID</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>11</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>machine</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>2586</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="EVT_002">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:event xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>EE_Sirius_NDK_ANL_LoggingID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>20413</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>rotationSet</premis:eventType>
+            <premis:eventDateTime>2011-11-30T16:11:33</premis:eventDateTime>
+            <premis:eventDetail />
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>succeessful</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_Sirius_NDK_ANL_UserID</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>6</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>operator</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_App_Name</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>agent_Sirius</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>software</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_Sirius_NDK_ANL_MachineID</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>11</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>machine</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>2586</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="EVT_003">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:event xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>EE_Sirius_NDK_ANL_LoggingID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>22171</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>cropSet</premis:eventType>
+            <premis:eventDateTime>2011-11-30T16:22:10</premis:eventDateTime>
+            <premis:eventDetail />
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>succeessful</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_Sirius_NDK_ANL_UserID</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>6</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>operator</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_App_Name</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>agent_Sirius</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>software</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_Sirius_NDK_ANL_MachineID</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>11</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>machine</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>2586</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="EVT_004">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:event xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>EE_Sirius_NDK_ANL_LoggingID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>22172</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>rotationSet</premis:eventType>
+            <premis:eventDateTime>2011-11-30T16:22:10</premis:eventDateTime>
+            <premis:eventDetail />
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>succeessful</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_Sirius_NDK_ANL_UserID</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>6</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>operator</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_App_Name</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>agent_Sirius</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>software</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_Sirius_NDK_ANL_MachineID</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>11</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>machine</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>2586</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="EVT_005">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:event xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>EE_Sirius_NDK_ANL_LoggingID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>63285</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>derivation</premis:eventType>
+            <premis:eventDateTime>2011-12-08T09:55:57</premis:eventDateTime>
+            <premis:eventDetail>migration/MC_creation</premis:eventDetail>
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>succeessful</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_App_Name</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>agent_Sirius</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>software</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>24277</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="EVT_006">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:event xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>EE_Sirius_NDK_ANL_LoggingID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>24190</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>derivation</premis:eventType>
+            <premis:eventDateTime>2011-11-30T16:35:20</premis:eventDateTime>
+            <premis:eventDetail>capture/XML_creation</premis:eventDetail>
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>succeessful</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>EE_App_Name</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>agent_Sirius</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>software</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>EE_Sirius_NDK_ANL_FileID</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>4400</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="AGENT_001">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:agent xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:agentIdentifier>
+              <premis:agentIdentifierType>EE_Sirius_NDK_ANL_UserID</premis:agentIdentifierType>
+              <premis:agentIdentifierValue>6</premis:agentIdentifierValue>
+            </premis:agentIdentifier>
+            <premis:agentName>Synková</premis:agentName>
+            <premis:agentType>operator</premis:agentType>
+            <premis:agentNote />
+          </premis:agent>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="AGENT_002">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:agent xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:agentIdentifier>
+              <premis:agentIdentifierType>EE_App_Name</premis:agentIdentifierType>
+              <premis:agentIdentifierValue>agent_Sirius</premis:agentIdentifierValue>
+            </premis:agentIdentifier>
+            <premis:agentName>SIRIUS</premis:agentName>
+            <premis:agentType>software</premis:agentType>
+            <premis:agentNote />
+          </premis:agent>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="AGENT_003">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:agent xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:agentIdentifier>
+              <premis:agentIdentifierType>EE_Sirius_NDK_ANL_MachineID</premis:agentIdentifierType>
+              <premis:agentIdentifierValue>11</premis:agentIdentifierValue>
+            </premis:agentIdentifier>
+            <premis:agentName>SKEN14.ELSYST01.VY</premis:agentName>
+            <premis:agentType>machine</premis:agentType>
+            <premis:agentNote />
+          </premis:agent>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="AGENT_004">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:agent xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:agentIdentifier>
+              <premis:agentIdentifierType>EE_App_Name</premis:agentIdentifierType>
+              <premis:agentIdentifierValue>agent_Sirius</premis:agentIdentifierValue>
+            </premis:agentIdentifier>
+            <premis:agentName>BATCHPROCESSOR</premis:agentName>
+            <premis:agentType>software</premis:agentType>
+            <premis:agentNote>C:\Program Files\Elsyst Engineering\BatchProcessor\Utilities\image_to_j2k.exe -i "C:\SiriusBatchProcessor\skenserver_Sirius_NDK_ANL\B300C__161420a.tif" -o "C:\SiriusBatchProcessor\skenserver_Sirius_NDK_ANL\B300C__161420a.jp2" -c [256,256],[256,256],[128,128],[128,128],[128,128],[128,128] -p RPCL -n 6 -t 4096,4096 -b 64,64 -SOP -EPH</premis:agentNote>
+          </premis:agent>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+    <mets:digiprovMD ID="AGENT_005">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:agent xmlns:premis="info:lc/xmlns/premis-v2">
+            <premis:agentIdentifier>
+              <premis:agentIdentifierType>EE_App_Name</premis:agentIdentifierType>
+              <premis:agentIdentifierValue>agent_Sirius</premis:agentIdentifierValue>
+            </premis:agentIdentifier>
+            <premis:agentName>BATCHPROCESSOR</premis:agentName>
+            <premis:agentType>software</premis:agentType>
+            <premis:agentNote />
+          </premis:agent>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+  </mets:amdSec>
+  <mets:fileSec>
+    <mets:fileGrp ID="MC_IMGGRP" USE="Images">
+      <mets:file ID="MC_ANL000005_0002" MIMETYPE="image/jp2" SIZE="9148461" CHECKSUMTYPE="MD5" CHECKSUM="f1c6d2e2234022ba0bae083bea2021f4" SEQ="0" CREATED="2012-01-20T17:29:15">
+        <mets:FLocat xlink:href="../masterCopy/MC_ANL000005_0002.jp2" LOCTYPE="URL" />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp ID="ALTOGRP" USE="Text">
+      <mets:file ID="ALTO_ANL000005_0002" MIMETYPE="text/xml" SIZE="268977" CHECKSUMTYPE="MD5" CHECKSUM="8a6168b613099d5b5ad0b4f9799809fe" SEQ="0" CREATED="2012-01-20T17:29:16">
+        <mets:FLocat xlink:href="../ALTO/ALTO_ANL000005_0002.xml" LOCTYPE="URL" />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp ID="TXTGRP" USE="Text">
+      <mets:file ID="TXT_ANL000005_0002" MIMETYPE="text/plain" SIZE="4536" CHECKSUMTYPE="MD5" CHECKSUM="07e4c367c0802f5100a4548d5d4cd839" SEQ="0" CREATED="2012-01-20T17:29:15">
+        <mets:FLocat xlink:href="../txt/TXT_ANL000005_0002.txt" LOCTYPE="URL" />
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+  <mets:structMap TYPE="PHYSICAL">
+    <mets:div TYPE="PERIODICAL_PAGE">
+      <mets:fptr FILEID="MC_ANL000005_0002" />
+      <mets:fptr FILEID="ALTO_ANL000005_0002" />
+      <mets:fptr FILEID="TXT_ANL000005_0002" />
+    </mets:div>
+  </mets:structMap>
+</mets:mets>

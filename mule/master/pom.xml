@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.logica.ndk.tm</groupId>
+    <artifactId>mule</artifactId>
+    <version>1.5.1-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.logica.ndk.tm</groupId>
+  <artifactId>master</artifactId>
+  <packaging>mule</packaging>
+  <name>NDK TM - mule master app</name>
+  <version>1.5.1-SNAPSHOT</version>
+  <description />
+
+  <build>
+    <plugins>
+      <!-- MULE plugin -->
+      <plugin>
+        <groupId>org.mule.tools</groupId>
+        <artifactId>maven-mule-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <copyToAppsDirectory>false</copyToAppsDirectory>
+        </configuration>
+      </plugin>
+      <!-- ASSEMBLY -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <finalName>${project.artifactId}-${project.version}</finalName>
+          <descriptors>
+            <descriptor>assembly.xml</descriptor>
+          </descriptors>
+          <appendAssemblyId>false</appendAssemblyId>
+        </configuration>
+      </plugin>
+      <!-- RD service generation -->
+      <plugin>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-codegen-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>generate-sources</id>
+            <phase>generate-sources</phase>
+            <configuration>
+              <sourceRoot>${project.build.directory}/generated/cxf</sourceRoot>
+              <wsdlOptions>
+                <wsdlOption>
+                  <wsdl>${basedir}/src/main/resources/DigitizationRegistryService.wsdl</wsdl>
+                  <extraargs>
+                    <!-- extraarg>-server</extraarg -->
+                  </extraargs>
+                </wsdlOption>
+              </wsdlOptions>
+            </configuration>
+            <goals>
+              <goal>wsdl2java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <!-- quickfix koli maven build error "org.apache.xerces.dom.ElementNSImpl.setUserData" -->
+          <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.8.1</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+      <!-- sources are generated here -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>add-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>${project.build.directory}/generated/cxf</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <pluginManagement>
+    	<plugins>
+    		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+    		<plugin>
+    			<groupId>org.eclipse.m2e</groupId>
+    			<artifactId>lifecycle-mapping</artifactId>
+    			<version>1.0.0</version>
+    			<configuration>
+    				<lifecycleMappingMetadata>
+    					<pluginExecutions>
+    						<pluginExecution>
+    							<pluginExecutionFilter>
+    								<groupId>org.mule.tools</groupId>
+    								<artifactId>
+    									maven-mule-plugin
+    								</artifactId>
+    								<versionRange>[1.7,)</versionRange>
+    								<goals>
+    									<goal>filter-resources</goal>
+    									<goal>
+    										attach-test-resources
+    									</goal>
+    								</goals>
+    							</pluginExecutionFilter>
+    							<action>
+    								<ignore />
+    							</action>
+    						</pluginExecution>
+    						<pluginExecution>
+    							<pluginExecutionFilter>
+    								<groupId>org.apache.cxf</groupId>
+    								<artifactId>
+    									cxf-codegen-plugin
+    								</artifactId>
+    								<versionRange>
+    									[2.5.2,)
+    								</versionRange>
+    								<goals>
+    									<goal>wsdl2java</goal>
+    								</goals>
+    							</pluginExecutionFilter>
+    							<action>
+    								<ignore />
+    							</action>
+    						</pluginExecution>
+    						<pluginExecution>
+    							<pluginExecutionFilter>
+    								<groupId>org.codehaus.mojo</groupId>
+    								<artifactId>
+    									build-helper-maven-plugin
+    								</artifactId>
+    								<versionRange>[1.7,)</versionRange>
+    								<goals>
+    									<goal>add-source</goal>
+    								</goals>
+    							</pluginExecutionFilter>
+    							<action>
+    								<ignore />
+    							</action>
+    						</pluginExecution>
+    					</pluginExecutions>
+    				</lifecycleMappingMetadata>
+    			</configuration>
+    		</plugin>
+    	</plugins>
+    </pluginManagement>
+  </build>
+
+  <profiles>
+    <!-- this profile enables automatic deployment of mule app to ${env.MULE_HOME}/apps -->
+    <profile>
+      <id>MULE</id>
+      <build>
+        <plugins>
+          <!-- make sure that MULE_HOME is set when installing -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <version>1.0-beta-1</version>
+            <executions>
+              <execution>
+                <phase>install</phase>
+                <goals>
+                  <goal>enforce</goal>
+                </goals>
+                <configuration>
+                  <rules>
+                    <requireProperty>
+                      <property>env.MULE_HOME</property>
+                      <message>You must set MULE_HOME before installing the
+                        example.</message>
+                    </requireProperty>
+                  </rules>
+                  <fail>true</fail>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <!-- automatically deploy the artifact after it has been built -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.4</version>
+            <executions>
+              <execution>
+                <id>package-example</id>
+                <phase>install</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <tasks>
+                    <copy file="${project.build.directory}/${project.build.finalName}.zip" todir="${env.MULE_HOME}/apps" overwrite="true" />
+                  </tasks>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>cfg-mule-utils</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>utilities</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+	
+	<!-- JDBC driver -->
+	<dependency>
+		<groupId>microsoft.mssql</groupId>
+		<artifactId>sqljdbc4</artifactId>
+		<version>3.0</version>
+	</dependency>
+	<dependency>
+		<groupId>c3p0</groupId>
+		<artifactId>c3p0</artifactId>
+		<version>0.9.1.2</version>
+	</dependency>	
+
+    <!-- Mule Transports -->
+    <dependency>
+      <groupId>org.mule.transports</groupId>
+      <artifactId>mule-transport-file</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.transports</groupId>
+      <artifactId>mule-transport-http</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.transports</groupId>
+      <artifactId>mule-transport-jdbc</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.transports</groupId>
+      <artifactId>mule-transport-jms</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.transports</groupId>
+      <artifactId>mule-transport-vm</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.transports</groupId>
+      <artifactId>mule-transport-quartz</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Mule Modules -->
+    <dependency>
+      <groupId>org.mule.modules</groupId>
+      <artifactId>mule-module-client</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.modules</groupId>
+      <artifactId>mule-module-cxf</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.modules</groupId>
+      <artifactId>mule-module-management</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.modules</groupId>
+      <artifactId>mule-module-scripting</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.modules</groupId>
+      <artifactId>mule-module-sxc</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.modules</groupId>
+      <artifactId>mule-module-xml</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mule.modules</groupId>
+      <artifactId>mule-module-jersey</artifactId>
+      <version>${mule.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>activemq-core</artifactId>
+      <version>5.5.1</version>
+    </dependency>
+    <!-- start: test dependencies to test WS secured by WS security -->
+	<dependency>
+		<groupId>xalan</groupId>
+		<artifactId>xalan</artifactId>
+		<version>2.7.1</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.bouncycastle</groupId>
+		<artifactId>bcprov-jdk16</artifactId>
+		<version>1.46</version>
+		<scope>test</scope>
+	</dependency>
+	<!-- end: test dependencies to test WS secured by WS security -->
+  </dependencies>
+</project>

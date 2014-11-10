@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><oai_marc>
+<fixfield id="LDR">-----cam-a22------a-4500</fixfield>
+<fixfield id="FMT">BK</fixfield>
+<fixfield id="001">cpk20041490472</fixfield>
+<fixfield id="003">CZ-PrNK</fixfield>
+<fixfield id="005">20050126133634.0</fixfield>
+<fixfield id="007">ta</fixfield>
+<fixfield id="008">041203s2004----xr-----g------000-d-cze--</fixfield>
+<varfield i1=" " i2=" " id="015">
+<subfield label="a">cnb001490472</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="020">
+<subfield label="a">80-86216-47-0 (brož.)</subfield>
+<subfield label="z">80-8621-47-0</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="035">
+<subfield label="a">(OCoLC)85124282</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="040">
+<subfield label="a">BOA001</subfield>
+<subfield label="b">cze</subfield>
+<subfield label="d">ABA001</subfield>
+</varfield>
+<varfield i1=" " i2="7" id="072">
+<subfield label="a">821.162.3-2</subfield>
+<subfield label="x">České drama</subfield>
+<subfield label="2">Konspekt</subfield>
+<subfield label="9">25</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">821.162.3-2</subfield>
+<subfield label="2">MRF</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">(0:82-2)</subfield>
+<subfield label="2">MRF</subfield>
+</varfield>
+<varfield i1="1" i2=" " id="100">
+<subfield label="a">Čapek, Karel,</subfield>
+<subfield label="d">1890-1938</subfield>
+<subfield label="7">jk01021023</subfield>
+<subfield label="4">aut</subfield>
+</varfield>
+<varfield i1="1" i2="0" id="245">
+<subfield label="a">Bílá nemoc :</subfield>
+<subfield label="b">[drama o třech aktech ve 14 obrazech] /</subfield>
+<subfield label="c">Karel Čapek</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="250">
+<subfield label="a">Vyd. 21., V nakl. Artur 1.</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="260">
+<subfield label="a">Praha :</subfield>
+<subfield label="b">Artur,</subfield>
+<subfield label="c">2004</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="300">
+<subfield label="a">93 s. ;</subfield>
+<subfield label="c">19 cm</subfield>
+</varfield>
+<varfield i1="1" i2=" " id="490">
+<subfield label="a">Edice D ;</subfield>
+<subfield label="v">sv. 13</subfield>
+</varfield>
+<varfield i1=" " i2="7" id="655">
+<subfield label="a">česká dramata</subfield>
+<subfield label="7">fd133957</subfield>
+<subfield label="2">czenas</subfield>
+</varfield>
+<varfield i1=" " i2="9" id="655">
+<subfield label="a">Czech drama</subfield>
+<subfield label="2">eczenas</subfield>
+</varfield>
+<varfield i1=" " i2="0" id="830">
+<subfield label="a">D (Artur)</subfield>
+<subfield label="0">s</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="910">
+<subfield label="a">ABA001</subfield>
+</varfield>
+</oai_marc>

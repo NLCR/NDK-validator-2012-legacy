@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oai_marc>
+	<fixfield id="LDR">-----nam-a22------a-4500</fixfield>
+	<fixfield id="FMT">BK</fixfield>
+	<fixfield id="001">cpk20000529298</fixfield>
+	<fixfield id="003">CZ-PrNK</fixfield>
+	<fixfield id="005">20110401121943.0</fixfield>
+	<fixfield id="007">ta</fixfield>
+	<fixfield id="008">070417q19111940xr------------------cze--</fixfield>
+	<varfield i1=" " i2=" " id="015">
+		<subfield label="a">cnb000529298</subfield>
+	</varfield>
+	<varfield i1=" " i2=" " id="020">
+		<subfield label="a">(Váz.)</subfield>
+	</varfield>
+	<varfield i1=" " i2=" " id="040">
+		<subfield label="a">ABA001</subfield>
+		<subfield label="b">cze</subfield>
+	</varfield>
+	<varfield i1="1" i2=" " id="041">
+		<subfield label="a">cze</subfield>
+		<subfield label="h">rus</subfield>
+		<subfield label="h">scr</subfield>
+		<subfield label="h">ger</subfield>
+		<subfield label="h">hun</subfield>
+		<subfield label="h">eng</subfield>
+	</varfield>
+	<varfield i1="0" i2="0" id="245">
+		<subfield label="a">1000 nejkrásnějších novell 1000 světových spisovatelů.</subfield>
+		<subfield label="n">Sv. 40 /</subfield>
+		<subfield label="c">pořádá a literárními úvody doprovází Fr. Sekanina</subfield>
+	</varfield>
+	<varfield i1="3" i2=" " id="246">
+		<subfield label="a">Tisíc nejkrásnějších novell 1000 světových spisovatelů</subfield>
+	</varfield>
+	<varfield i1=" " i2=" " id="260">
+		<subfield label="a">V Praze :</subfield>
+		<subfield label="b">Jos. R. Vilímek,</subfield>
+		<subfield label="c">[191-]</subfield>
+	</varfield>
+	<varfield i1=" " i2=" " id="300">
+		<subfield label="a">100 s. ;</subfield>
+		<subfield label="c">18 cm</subfield>
+	</varfield>
+	<varfield i1=" " i2=" " id="500">
+		<subfield label="a">Část. přeloženo z různých jazyků</subfield>
+	</varfield>
+	<varfield i1=" " i2=" " id="501">
+		<subfield label="a">Obsahuje přívazky: 1000 nejkrásnějších novell ... Sv. 41. -- 1000 nejkrásnějších novell ...
+			Sv. 42</subfield>
+		<subfield label="5">CZ-PrNK</subfield>
+	</varfield>
+	<varfield i1="0" i2=" " id="505">
+		<subfield label="a">Mumu / Ivan S. Turgeněv -- Dcera Severova / Mil. Begovič -- Fatema / E. Hardt -- Podsudí,
+			velký pes / Kal. Mikszáth -- Povídka námořníkova / G. Chaucer</subfield>
+	</varfield>
+	<varfield i1="1" i2=" " id="700">
+		<subfield label="a">Sekanina, František,</subfield>
+		<subfield label="d">1875-1958</subfield>
+		<subfield label="7">jk01110682</subfield>
+		<subfield label="4">aui</subfield>
+	</varfield>
+	<varfield i1="1" i2="2" id="700">
+		<subfield label="a">Turgenev, Ivan Sergejevič,</subfield>
+		<subfield label="d">1818-1883.</subfield>
+		<subfield label="t">Mumu</subfield>
+	</varfield>
+	<varfield i1="1" i2="2" id="700">
+		<subfield label="a">Begović, Milan,</subfield>
+		<subfield label="d">1876-1948.</subfield>
+		<subfield label="t">Dcera Severova</subfield>
+	</varfield>
+	<varfield i1="1" i2="2" id="700">
+		<subfield label="a">Hardt, Ernst,</subfield>
+		<subfield label="d">1876-1947.</subfield>
+		<subfield label="t">Fatema</subfield>
+	</varfield>
+	<varfield i1="1" i2="2" id="700">
+		<subfield label="a">Mikszáth, Kálmán,</subfield>
+		<subfield label="d">1847-1910.</subfield>
+		<subfield label="t">Podsudí, velký pes</subfield>
+	</varfield>
+	<varfield i1="1" i2="2" id="700">
+		<subfield label="a">Chaucer, Geoffrey,</subfield>
+		<subfield label="d">ca 1340-1400.</subfield>
+		<subfield label="t">Povídka námořníkova</subfield>
+	</varfield>
+	<varfield i1=" " i2=" " id="910">
+		<subfield label="a">ABA001</subfield>
+	</varfield>
+</oai_marc>

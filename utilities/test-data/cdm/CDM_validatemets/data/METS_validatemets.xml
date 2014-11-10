@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LABEL="Bílá nemoc, 2004" OBJID="5be08930-abf3-11e1-b7a2-00505682629d" TYPE="Monograph" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">  
+    <mets:metsHdr CREATEDATE="2012-06-01T16:17:15Z" LASTMODDATE="2012-06-01T16:17:15Z"> 
+        <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION"> 
+            <mets:name>BOA001</mets:name> 
+        </mets:agent>  
+        <mets:agent ROLE="ARCHIVIST" TYPE="ORGANIZATION"> 
+            <mets:name>BOA001</mets:name> 
+        </mets:agent> 
+    </mets:metsHdr>  
+    <mets:dmdSec ID="MODSMD_VOLUME_0001"> 
+        <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml"> 
+            <mets:xmlData> 
+                <mods:mods ID="MODS_VOLUME_0001"> 
+                    <mods:titleInfo ID="MODS_TITLE"> 
+                        <mods:title>Bílá nemoc</mods:title>  
+                        <mods:subTitle>[drama o třech aktech ve 14 obrazech]</mods:subTitle> 
+                    </mods:titleInfo>  
+                    <mods:name type="personal" usage="primary"> 
+                        <mods:namePart>Čapek, Karel</mods:namePart>  
+                        <mods:namePart type="date">1890-1938</mods:namePart>  
+                        <mods:role> 
+                            <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm> 
+                        </mods:role> 
+                    </mods:name>  
+                    <mods:typeOfResource>text</mods:typeOfResource>  
+                    <mods:genre>volume</mods:genre>  
+                    <mods:originInfo> 
+                        <mods:place> 
+                            <mods:placeTerm authority="marccountry" type="text">xr</mods:placeTerm> 
+                        </mods:place>  
+                        <mods:place> 
+                            <mods:placeTerm type="text">Praha</mods:placeTerm> 
+                        </mods:place>  
+                        <mods:publisher>Artur</mods:publisher>  
+                        <mods:dateIssued>2004</mods:dateIssued>  
+                        <mods:edition>Vyd. 21., V nakl. Artur 1.</mods:edition>  
+                        <mods:issuance>monographic</mods:issuance> 
+                    </mods:originInfo>  
+                    <mods:language> 
+                        <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+                    </mods:language>  
+                    <mods:physicalDescription> 
+                        <mods:form authority="marcform">print</mods:form>  
+                        <mods:form authority="marccategory">text</mods:form>  
+                        <mods:form authority="marcsmd">regular print</mods:form>  
+                        <mods:extent>93 s. ; 19 cm</mods:extent> 
+                    </mods:physicalDescription>  
+                    <mods:targetAudience authority="marctarget">general</mods:targetAudience>  
+                    <mods:classification authority="udc">821.162.3-2</mods:classification>  
+                    <mods:classification authority="udc">(0:82-2)</mods:classification>  
+                    <mods:relatedItem type="series"> 
+                        <mods:titleInfo> 
+                            <mods:title>D (Artur)</mods:title> 
+                        </mods:titleInfo> 
+                    </mods:relatedItem>  
+                    <mods:identifier type="ccnb">cnb001490472</mods:identifier>  
+                    <mods:identifier type="isbn">80-86216-47-0</mods:identifier>  
+                    <mods:identifier invalid="yes" type="isbn">80-8621-47-0</mods:identifier>  
+                    <mods:identifier type="oclc">85124282</mods:identifier>  
+                    <mods:recordInfo> 
+                        <mods:descriptionStandard>aacr</mods:descriptionStandard>  
+                        <mods:recordContentSource authority="marcorg">BOA001</mods:recordContentSource>  
+                        <mods:recordCreationDate encoding="marc">041203</mods:recordCreationDate>  
+                        <mods:recordChangeDate encoding="iso8601">20050126133634.0</mods:recordChangeDate>  
+                        <mods:recordIdentifier source="CZ-PrNK">cpk20041490472</mods:recordIdentifier>  
+                        <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl (Revision 1.76 2012/02/01)</mods:recordOrigin>  
+                        <mods:languageOfCataloging> 
+                            <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+                        </mods:languageOfCataloging> 
+                    </mods:recordInfo>  
+                    <mods:identifier type="uuid">5be08930-abf3-11e1-b7a2-00505682629d</mods:identifier>  
+                    <mods:identifier type="urnNbn">urn:nbn:cz:aba001-000687</mods:identifier>
+                </mods:mods> 
+            </mets:xmlData> 
+        </mets:mdWrap> 
+    </mets:dmdSec>  
+    <mets:dmdSec ID="DCMD_VOLUME_0001"> 
+        <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml"> 
+            <mets:xmlData> 
+                <oai_dc:dc> 
+                    <dc:title>Bílá nemoc : [drama o třech aktech ve 14 obrazech] /</dc:title>  
+                    <dc:creator>Čapek, Karel, 1890-1938 jk01021023 aut</dc:creator>  
+                    <dc:type>text</dc:type>  
+                    <dc:type>česká dramata fd133957 czenas</dc:type>  
+                    <dc:type>Czech drama eczenas</dc:type>  
+                    <dc:publisher>Praha : Artur,</dc:publisher>  
+                    <dc:date>2004</dc:date>  
+                    <dc:language>cze</dc:language>  
+                    <dc:identifier>URN:ISBN:80-86216-47-0</dc:identifier>  
+                    <dc:identifier>uuid:5be08930-abf3-11e1-b7a2-00505682629d</dc:identifier>  
+                    <dc:identifier>urnNbn:urn:nbn:cz:aba001-000687</dc:identifier>
+                </oai_dc:dc> 
+            </mets:xmlData> 
+        </mets:mdWrap> 
+    </mets:dmdSec>  
+    <mets:fileSec> 
+        <mets:fileGrp ID="MC_IMGGRP" USE="Images"> 
+            <mets:file CHECKSUM="06d601af37e3cd0b2a9199ec9a92763e" CHECKSUMTYPE="MD5" ID="MC_0001" MIMETYPE="image/jp2" SEQ="0" SIZE="1024874"> 
+                <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="masterCopy/1_1000350721_00_0010.tif.jp2"/> 
+            </mets:file>  
+            <mets:file CHECKSUM="10db85fecec8bbb6253f81c2a54322ca" CHECKSUMTYPE="MD5" ID="MC_0002" MIMETYPE="image/jp2" SEQ="1" SIZE="1012972"> 
+                <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="masterCopy/1_1000350721_00_0011.tif.jp2"/> 
+            </mets:file> 
+        </mets:fileGrp>  
+        <mets:fileGrp ID="ALTOGRP" USE="Text"> 
+            <mets:file CHECKSUM="209e6563d6498a49c1b0b48e801ec231" CHECKSUMTYPE="MD5" ID="ALTO_0001" MIMETYPE="text/xml" SEQ="0" SIZE="32582"> 
+                <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="ALTO/1_1000350721_00_0010.tif.xml"/> 
+            </mets:file>  
+            <mets:file CHECKSUM="003202f7e120df1563683dd48dc24a23" CHECKSUMTYPE="MD5" ID="ALTO_0002" MIMETYPE="text/xml" SEQ="1" SIZE="29599"> 
+                <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="ALTO/1_1000350721_00_0011.tif.xml"/> 
+            </mets:file> 
+        </mets:fileGrp>  
+        <mets:fileGrp ID="TXTGRP" USE="Text"> 
+            <mets:file CHECKSUM="3716c696d2326ee0fd9e3e0fde6b4e3b" CHECKSUMTYPE="MD5" ID="TXT_0001" MIMETYPE="text/plain" SEQ="0" SIZE="2262"> 
+                <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/1_1000350721_00_0010.tif.txt"/> 
+            </mets:file>  
+            <mets:file CHECKSUM="dc06f90c68c1f4ffa60f2e2be7b5fb67" CHECKSUMTYPE="MD5" ID="TXT_0002" MIMETYPE="text/plain" SEQ="1" SIZE="1710"> 
+                <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="TXT/1_1000350721_00_0011.tif.txt"/> 
+            </mets:file> 
+        </mets:fileGrp>  
+        <mets:fileGrp ID="TECHMDGRP" USE="Technical Metadata"/> 
+    </mets:fileSec>  
+    <mets:structMap>
+        <mets:div ID="DIV_P_0001">
+            <mets:div DMDID="DCMD_VOLUME_0001" ID="DIV_P_DOCUMENT_0001">
+                <mets:fptr FILEID="MC_0001"/>
+                <mets:fptr FILEID="ALTO_0001"/>
+                <mets:fptr FILEID="TXT_0001"/>
+            </mets:div>
+        </mets:div>
+    </mets:structMap>
+</mets:mets>

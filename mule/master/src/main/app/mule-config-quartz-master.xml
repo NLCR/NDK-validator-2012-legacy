@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:spring="http://www.springframework.org/schema/beans" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf"
+  xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio"
+  xmlns:script="http://www.mulesoft.org/schema/mule/scripting" xmlns:management="http://www.mulesoft.org/schema/mule/management"
+  xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jersey="http://www.mulesoft.org/schema/mule/jersey"
+  xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz"
+  xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+  http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+  http://www.mulesoft.org/schema/mule/core META-INF/mule.xsd
+  http://www.mulesoft.org/schema/mule/cxf META-INF/mule-cxf.xsd
+  http://www.mulesoft.org/schema/mule/jms META-INF/mule-jms.xsd
+  http://www.mulesoft.org/schema/mule/http META-INF/mule-http.xsd
+  http://www.mulesoft.org/schema/mule/stdio META-INF/mule-stdio.xsd
+  http://www.mulesoft.org/schema/mule/scripting META-INF/mule-scripting.xsd
+  http://www.mulesoft.org/schema/mule/jersey META-INF/mule-jersey.xsd
+  http://www.mulesoft.org/schema/mule/management META-INF/mule-management.xsd
+  http://www.mulesoft.org/schema/mule/xml META-INF/mule-xml.xsd
+  http://www.mulesoft.org/schema/mule/quartz META-INF/mule-quartz.xsd">
+
+  <!-- Konfigurace pro Quartz, je li potreba neco jineho jako default. -->
+  <!-- quartz:connector name="quartzConnector1">
+    <quartz:factory-property key="org.quartz.scheduler.instanceName" value="MuleScheduler1" />
+    <quartz:factory-property key="org.quartz.threadPool.class" value="org.quartz.simpl.SimpleThreadPool" />
+    <quartz:factory-property key="org.quartz.threadPool.threadCount" value="3" />
+    <quartz:factory-property key="org.quartz.scheduler.rmi.proxy" value="false" />
+    <quartz:factory-property key="org.quartz.scheduler.rmi.export" value="false" />
+    <quartz:factory-property key="org.quartz.jobStore.class" value="org.quartz.simpl.RAMJobStore" />
+  </quartz:connector-->
+
+   <!-- periodicke spousteni TaskHandler-u -->
+    <flow name="quartzTaskHandler">
+        <!-- spousti se kazdych 10s -->
+        <quartz:inbound-endpoint cronExpression="${taskHandler.cron}" startDelay="20000" jobName="eventTimer">
+            <quartz:event-generator-job/> 
+        </quartz:inbound-endpoint>
+        <component class="com.logica.ndk.tm.utilities.integration.wf.TaskHandlerImpl"> 
+            <method-entry-point-resolver> 
+                <include-entry-point method="handleWaitingTasks"/> 
+            </method-entry-point-resolver> 
+        </component> 
+    </flow> 
+
+    <!-- periodicke spousteni utility PurgeCdm -->
+    <flow name="quartzPurgeCdmHandler">
+        <!-- spousti se kazdy den v 4:30 (AM) -->
+        <quartz:inbound-endpoint cronExpression="${purgeCdm.cron}" jobName="purgeCdmTimer">
+            <quartz:event-generator-job/> 
+        </quartz:inbound-endpoint>
+        <cxf:jaxws-client serviceClass="com.logica.ndk.tm.utilities.admin.PurgeCdm" operation="executeAsync" />
+        <outbound-endpoint address="${services.url}/PurgeCdm"/>
+    </flow>
+    
+    <flow name="NotifyAleph">
+		<quartz:inbound-endpoint cronExpression="${notifyAleph.cron}" jobName="notifyAlephTimer">
+			<quartz:event-generator-job />
+		</quartz:inbound-endpoint>
+		<component class="com.logica.ndk.tm.utilities.integration.aleph.notification.NotifyAlephImpl">
+			<method-entry-point-resolver>
+				<include-entry-point method="execute"/>
+			</method-entry-point-resolver>
+		</component>
+	</flow>
+	
+	<flow name="CheckLTPImport">
+		<quartz:inbound-endpoint cronExpression="${checkLTPImport.cron}" jobName="checkLTPImportTimer">
+			<quartz:event-generator-job />
+		</quartz:inbound-endpoint>
+		<component class="com.logica.ndk.tm.utilities.integration.wf.CreateImportsFromLTPImpl">
+			<method-entry-point-resolver>
+				<include-entry-point method="execute"/>
+			</method-entry-point-resolver>
+		</component>
+	</flow>
+	
+	<flow name="ReserveFinishLTPCron">
+		<quartz:inbound-endpoint cronExpression="${reserveFinishLTPCron.cron}" jobName="eserveFinishLTPCronTimer">
+			<quartz:event-generator-job />
+		</quartz:inbound-endpoint>
+		<component class="com.logica.ndk.tm.utilities.integration.wf.ReserveFinishLTPCron">
+			<method-entry-point-resolver>
+				<include-entry-point method="execute"/>
+			</method-entry-point-resolver>
+		</component>
+	</flow>	
+	
+	<flow name="ReadAlephResponse">
+		<quartz:inbound-endpoint cronExpression="${readAlephResponse.cron}" jobName="readAlephResponseTimer">
+			<quartz:event-generator-job />
+		</quartz:inbound-endpoint>
+		<component class="com.logica.ndk.tm.utilities.integration.aleph.notification.ReadAlephResponseImpl">
+			<method-entry-point-resolver>
+				<include-entry-point method="execute"/>
+			</method-entry-point-resolver>
+		</component>
+	</flow> 
+	
+	<jms:endpoint name="notificationDelayQueueEndpoint" queue="${notificationDelayQueue.name}"/>
+	
+	<flow name="ProcessNotificationDelayQueue">
+		<quartz:inbound-endpoint cronExpression="${processNotificationDelayQueue.cron}" jobName="processNotificationDelayQueueTimer">
+			<quartz:endpoint-polling-job>
+				<quartz:job-endpoint ref="notificationDelayQueueEndpoint"/>
+			</quartz:endpoint-polling-job>
+		</quartz:inbound-endpoint>
+		<logger message="ProcessNotificationDelayQueue flow: #[message]" level="INFO"/>
+		<jms:outbound-endpoint queue="${notificationQueue.name}">
+			<message-properties-transformer>
+				<add-message-property key="timeToLive" value="${notificationQueue.ttl}"/>
+			</message-properties-transformer>
+		</jms:outbound-endpoint>
+	</flow>
+	
+	<!-- JBPM Timer substitutes - using cron to generate JBPM events 
+	<flow name="OCREvent">
+        <quartz:inbound-endpoint cronExpression="${ocrTimer.cron}" startDelay="20000" jobName="ocrTimer">
+            <quartz:event-generator-job/> 
+        </quartz:inbound-endpoint>
+
+		<logger message="OCREvent flow running" level="DEBUG"/>
+
+		<expression-transformer>
+			<return-argument evaluator="string" expression="${ocrTimer.type}"/>
+			<return-argument evaluator="string" expression="${ocrTimer.data}"/>
+		</expression-transformer>
+		
+        <component class="com.logica.ndk.tm.utilities.integration.jbpm.EventTrigerImpl"> 
+            <method-entry-point-resolver> 
+                <include-entry-point method="execute"/> 
+            </method-entry-point-resolver> 
+        </component> 
+	</flow>
+	<flow name="SIP1Event">
+        <quartz:inbound-endpoint cronExpression="${sip1Timer.cron}" startDelay="22000" jobName="sip1Timer">
+            <quartz:event-generator-job/> 
+        </quartz:inbound-endpoint>
+
+		<logger message="SIP1Eevent flow running" level="DEBUG"/>
+
+		<expression-transformer>
+			<return-argument evaluator="string" expression="${sip1Timer.type}"/>
+			<return-argument evaluator="string" expression="${sip1Timer.data}"/>
+		</expression-transformer>
+		
+        <component class="com.logica.ndk.tm.utilities.integration.jbpm.EventTrigerImpl"> 
+            <method-entry-point-resolver> 
+                <include-entry-point method="execute"/> 
+            </method-entry-point-resolver> 
+        </component> 
+	</flow>
+	<flow name="SIP2ImportEvent">
+        <quartz:inbound-endpoint cronExpression="${sip2ImportTimer.cron}" startDelay="24000" jobName="sip2ImportTimer">
+            <quartz:event-generator-job/> 
+        </quartz:inbound-endpoint>
+
+		<logger message="SIP2ImportEvent flow running" level="DEBUG"/>
+
+		<expression-transformer>
+			<return-argument evaluator="string" expression="${sip2ImportTimer.type}"/>
+			<return-argument evaluator="string" expression="${sip2ImportTimer.data}"/>
+		</expression-transformer>
+		
+        <component class="com.logica.ndk.tm.utilities.integration.jbpm.EventTrigerImpl"> 
+            <method-entry-point-resolver> 
+                <include-entry-point method="execute"/> 
+            </method-entry-point-resolver> 
+        </component> 
+	</flow>
+	<flow name="SIP2IndexEvent">
+        <quartz:inbound-endpoint cronExpression="${sip2IndexTimer.cron}" startDelay="26000" jobName="sip2IndexTimer">
+            <quartz:event-generator-job/> 
+        </quartz:inbound-endpoint>
+
+		<logger message="SIP2IndexEvent flow running" level="DEBUG"/>
+
+		<expression-transformer>
+			<return-argument evaluator="string" expression="${sip2IndexTimer.type}"/>
+			<return-argument evaluator="string" expression="${sip2IndexTimer.data}"/>
+		</expression-transformer>
+		
+        <component class="com.logica.ndk.tm.utilities.integration.jbpm.EventTrigerImpl"> 
+            <method-entry-point-resolver> 
+                <include-entry-point method="execute"/> 
+            </method-entry-point-resolver> 
+        </component> 
+	</flow>-->
+	
+	<!-- Process timeout job -->
+	<flow name="ProcessTimeout">
+        <quartz:inbound-endpoint cronExpression="${processTimeout.cron}" startDelay="22000" jobName="processTimeout">
+            <quartz:event-generator-job/> 
+        </quartz:inbound-endpoint>
+
+		<logger message="Process timeout job running" level="DEBUG"/>
+
+		<expression-transformer>
+			<return-argument evaluator="string" expression="ProcessTimeoutJob"/>
+		</expression-transformer>
+		
+        <component class="com.logica.ndk.tm.utilities.integration.wf.TaskHandlerImpl"> 
+            <method-entry-point-resolver> 
+                <include-entry-point method="endInstancesExceededTimeout"/> 
+            </method-entry-point-resolver> 
+        </component> 
+	</flow>
+	
+	<!--  test signal flow 
+	
+	<flow name="TestSignalCron">
+		<quartz:inbound-endpoint cronExpression="${testSignalCron.cron}" jobName="testSignalCronTimer">
+			<quartz:event-generator-job />
+		</quartz:inbound-endpoint>
+		<component class="com.logica.ndk.tm.utilities.test.waiters.SendSignalByFileImpl">
+			<method-entry-point-resolver>
+				<include-entry-point method="execute"/>
+			</method-entry-point-resolver>
+		</component>
+	</flow>
+	-->
+</mule>

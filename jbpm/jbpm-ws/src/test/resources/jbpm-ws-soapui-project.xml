@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="jbpm-ws" resourceRoot="" soapui-version="4.0.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="JBPMWSFacadeImplServiceSoapBinding" type="wsdl" bindingName="{http://wwww.logica.com/ndk/tm/process}JBPMWSFacadeImplServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/jbpm-ws/services?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/jbpm-ws/services?wsdl"><con:part><con:url>http://localhost:8080/jbpm-ws/services?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="JBPMWSFacadeImplService" targetNamespace="http://wwww.logica.com/ndk/tm/process" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://wwww.logica.com/ndk/tm/process" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://wwww.logica.com/ndk/tm/process" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="activeInstances" type="tns:activeInstances"/>
+      <xs:element name="activeInstancesResponse" type="tns:activeInstancesResponse"/>
+      <xs:element name="createProcessInstance" type="tns:createProcessInstance"/>
+      <xs:element name="createProcessInstanceResponse" type="tns:createProcessInstanceResponse"/>
+      <xs:element name="endInstance" type="tns:endInstance"/>
+      <xs:element name="endInstanceResponse" type="tns:endInstanceResponse"/>
+      <xs:element name="processState">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="processId" type="xs:string"/>
+            <xs:element name="processName" type="xs:string"/>
+            <xs:element name="instanceId" type="xs:long"/>
+            <xs:element name="state" type="xs:int"/>
+            <xs:element name="parameters" type="tns:ParamMap"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="signalEvent" type="tns:signalEvent"/>
+      <xs:element name="signalEventForInstance" type="tns:signalEventForInstance"/>
+      <xs:element name="signalEventForInstanceResponse" type="tns:signalEventForInstanceResponse"/>
+      <xs:element name="signalEventResponse" type="tns:signalEventResponse"/>
+      <xs:element name="startProcess" type="tns:startProcess"/>
+      <xs:element name="startProcessInstance" type="tns:startProcessInstance"/>
+      <xs:element name="startProcessInstanceResponse" type="tns:startProcessInstanceResponse"/>
+      <xs:element name="startProcessResponse" type="tns:startProcessResponse"/>
+      <xs:element name="state" type="tns:state"/>
+      <xs:element name="stateResponse" type="tns:stateResponse"/>
+      <xs:complexType name="startProcess">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="processId" type="xs:string"/>
+          <xs:element minOccurs="0" name="parameters" type="tns:ParamMap"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ParamMap">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="items" nillable="true" type="tns:ParamMapItem"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ParamMapItem">
+        <xs:sequence>
+          <xs:element name="name" type="xs:string"/>
+          <xs:element name="value" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="startProcessResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="startProcessInstance">
+        <xs:sequence>
+          <xs:element name="processInstanceId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="startProcessInstanceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="signalEventForInstance">
+        <xs:sequence>
+          <xs:element name="instanceId" type="xs:long"/>
+          <xs:element minOccurs="0" name="type" type="xs:string"/>
+          <xs:element minOccurs="0" name="eventData" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="signalEventForInstanceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="createProcessInstance">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="processId" type="xs:string"/>
+          <xs:element minOccurs="0" name="parameters" type="tns:ParamMap"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="createProcessInstanceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="endInstance">
+        <xs:sequence>
+          <xs:element name="instanceId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="endInstanceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="state">
+        <xs:sequence>
+          <xs:element name="instanceId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="stateResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="processId" type="xs:string"/>
+                <xs:element name="processName" type="xs:string"/>
+                <xs:element name="instanceId" type="xs:long"/>
+                <xs:element name="state" type="xs:int"/>
+                <xs:element name="parameters" type="tns:ParamMap"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="signalEvent">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="type" type="xs:string"/>
+          <xs:element minOccurs="0" name="eventData" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="signalEventResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="activeInstances">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="processId" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="activeInstancesResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="signalEvent">
+    <wsdl:part element="tns:signalEvent" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createProcessInstanceResponse">
+    <wsdl:part element="tns:createProcessInstanceResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="startProcessInstanceResponse">
+    <wsdl:part element="tns:startProcessInstanceResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="signalEventForInstance">
+    <wsdl:part element="tns:signalEventForInstance" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="startProcess">
+    <wsdl:part element="tns:startProcess" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="state">
+    <wsdl:part element="tns:state" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="signalEventResponse">
+    <wsdl:part element="tns:signalEventResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="activeInstances">
+    <wsdl:part element="tns:activeInstances" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="endInstance">
+    <wsdl:part element="tns:endInstance" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="startProcessInstance">
+    <wsdl:part element="tns:startProcessInstance" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="activeInstancesResponse">
+    <wsdl:part element="tns:activeInstancesResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="startProcessResponse">
+    <wsdl:part element="tns:startProcessResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="signalEventForInstanceResponse">
+    <wsdl:part element="tns:signalEventForInstanceResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="endInstanceResponse">
+    <wsdl:part element="tns:endInstanceResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createProcessInstance">
+    <wsdl:part element="tns:createProcessInstance" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="stateResponse">
+    <wsdl:part element="tns:stateResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="JBPMWSFacade">
+    <wsdl:operation name="startProcess">
+      <wsdl:input message="tns:startProcess" name="startProcess"></wsdl:input>
+      <wsdl:output message="tns:startProcessResponse" name="startProcessResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="startProcessInstance">
+      <wsdl:input message="tns:startProcessInstance" name="startProcessInstance"></wsdl:input>
+      <wsdl:output message="tns:startProcessInstanceResponse" name="startProcessInstanceResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signalEventForInstance">
+      <wsdl:input message="tns:signalEventForInstance" name="signalEventForInstance"></wsdl:input>
+      <wsdl:output message="tns:signalEventForInstanceResponse" name="signalEventForInstanceResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createProcessInstance">
+      <wsdl:input message="tns:createProcessInstance" name="createProcessInstance"></wsdl:input>
+      <wsdl:output message="tns:createProcessInstanceResponse" name="createProcessInstanceResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="endInstance">
+      <wsdl:input message="tns:endInstance" name="endInstance"></wsdl:input>
+      <wsdl:output message="tns:endInstanceResponse" name="endInstanceResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="state">
+      <wsdl:input message="tns:state" name="state"></wsdl:input>
+      <wsdl:output message="tns:stateResponse" name="stateResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signalEvent">
+      <wsdl:input message="tns:signalEvent" name="signalEvent"></wsdl:input>
+      <wsdl:output message="tns:signalEventResponse" name="signalEventResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="activeInstances">
+      <wsdl:input message="tns:activeInstances" name="activeInstances"></wsdl:input>
+      <wsdl:output message="tns:activeInstancesResponse" name="activeInstancesResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="JBPMWSFacadeImplServiceSoapBinding" type="tns:JBPMWSFacade">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="startProcess">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="startProcess">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="startProcessResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signalEventForInstance">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="signalEventForInstance">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="signalEventForInstanceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="startProcessInstance">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="startProcessInstance">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="startProcessInstanceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createProcessInstance">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="createProcessInstance">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createProcessInstanceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="endInstance">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="endInstance">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="endInstanceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="state">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="state">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="stateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="activeInstances">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="activeInstances">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="activeInstancesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signalEvent">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="signalEvent">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="signalEventResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JBPMWSFacadeImplService">
+    <wsdl:port binding="tns:JBPMWSFacadeImplServiceSoapBinding" name="JBPMWSFacadeImplPort">
+      <soap:address location="http://localhost:8080/jbpm-ws/services"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/jbpm-ws/services</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="activeInstances" bindingOperationName="activeInstances" type="Request-Response" outputName="activeInstancesResponse" inputName="activeInstances" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/jbpm-ws/services</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:proc="http://wwww.logica.com/ndk/tm/process">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <proc:activeInstances>
+         <proc:processId>com.sample.evaluation</proc:processId>
+      </proc:activeInstances>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wwww.logica.com/ndk/tm/process/JBPMWSFacade/activeInstances"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="createProcessInstance" bindingOperationName="createProcessInstance" type="Request-Response" outputName="createProcessInstanceResponse" inputName="createProcessInstance" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/jbpm-ws/services</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:proc="http://wwww.logica.com/ndk/tm/process">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <proc:createProcessInstance>
+         <!--Optional:-->
+         <proc:processId>?</proc:processId>
+         <!--Optional:-->
+         <proc:parameters>
+            <!--Zero or more repetitions:-->
+            <proc:items>
+               <proc:name>?</proc:name>
+               <proc:value>?</proc:value>
+            </proc:items>
+         </proc:parameters>
+      </proc:createProcessInstance>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wwww.logica.com/ndk/tm/process/JBPMWSFacade/createProcessInstance"/></con:call></con:operation><con:operation isOneWay="false" action="" name="endInstance" bindingOperationName="endInstance" type="Request-Response" outputName="endInstanceResponse" inputName="endInstance" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/jbpm-ws/services</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:proc="http://wwww.logica.com/ndk/tm/process">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <proc:endInstance>
+         <proc:instanceId>1</proc:instanceId>
+      </proc:endInstance>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wwww.logica.com/ndk/tm/process/JBPMWSFacade/endInstance"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="signalEvent" bindingOperationName="signalEvent" type="Request-Response" outputName="signalEventResponse" inputName="signalEvent" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/jbpm-ws/services</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:proc="http://wwww.logica.com/ndk/tm/process">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <proc:signalEvent>
+         <!--Optional:-->
+         <proc:type>?</proc:type>
+         <!--Optional:-->
+         <proc:eventData>?</proc:eventData>
+      </proc:signalEvent>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wwww.logica.com/ndk/tm/process/JBPMWSFacade/signalEvent"/></con:call></con:operation><con:operation isOneWay="false" action="" name="signalEventForInstance" bindingOperationName="signalEventForInstance" type="Request-Response" outputName="signalEventForInstanceResponse" inputName="signalEventForInstance" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/jbpm-ws/services</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:proc="http://wwww.logica.com/ndk/tm/process">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <proc:signalEventForInstance>
+         <proc:instanceId>?</proc:instanceId>
+         <!--Optional:-->
+         <proc:type>?</proc:type>
+         <!--Optional:-->
+         <proc:eventData>?</proc:eventData>
+      </proc:signalEventForInstance>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wwww.logica.com/ndk/tm/process/JBPMWSFacade/signalEventForInstance"/></con:call></con:operation><con:operation isOneWay="false" action="" name="startProcess" bindingOperationName="startProcess" type="Request-Response" outputName="startProcessResponse" inputName="startProcess" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/jbpm-ws/services</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:proc="http://wwww.logica.com/ndk/tm/process">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <proc:startProcess>
+	<!--  com.logica.ndk.prototyp.jbpm.convertToJpegWSClientTest   -->
+	<!--   com.sample.evaluation   -->
+         <proc:processId>com.logica.ndk.prototyp.jbpm.convertToJpegWSClientTest</proc:processId>
+         <proc:parameters>
+            <proc:items>
+               <proc:name>p1</proc:name>
+               <proc:value>v1</proc:value>
+            </proc:items>
+         </proc:parameters>
+      </proc:startProcess>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wwww.logica.com/ndk/tm/process/JBPMWSFacade/startProcess"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="startProcessInstance" bindingOperationName="startProcessInstance" type="Request-Response" outputName="startProcessInstanceResponse" inputName="startProcessInstance" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/jbpm-ws/services</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:proc="http://wwww.logica.com/ndk/tm/process">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <proc:startProcessInstance>
+         <proc:processInstanceId>?</proc:processInstanceId>
+      </proc:startProcessInstance>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wwww.logica.com/ndk/tm/process/JBPMWSFacade/startProcessInstance"/></con:call></con:operation><con:operation isOneWay="false" action="" name="state" bindingOperationName="state" type="Request-Response" outputName="stateResponse" inputName="state" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/jbpm-ws/services</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:proc="http://wwww.logica.com/ndk/tm/process">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <proc:state>
+         <proc:instanceId>1</proc:instanceId>
+      </proc:state>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wwww.logica.com/ndk/tm/process/JBPMWSFacade/state"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:sensitiveInformation/></con:soapui-project>

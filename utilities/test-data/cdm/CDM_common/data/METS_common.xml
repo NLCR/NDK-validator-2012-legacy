@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:premis="info:lc/xmlns/premis-v2" LABEL="Proceedings of the third European workshop on Probabilistic Graphical Models, 2006" TYPE="Monograph" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://www.w3.org/1999/xlink http://www.w3.org/1999/xlink.xsd">  
+  <mets:metsHdr CREATEDATE="2013-08-27T09:53:40" LASTMODDATE="2013-08-27T09:53:40"> 
+    <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION"> 
+      <mets:name>ABA001</mets:name> 
+    </mets:agent>  
+    <mets:agent ROLE="ARCHIVIST" TYPE="ORGANIZATION"> 
+      <mets:name>ABA001</mets:name> 
+    </mets:agent> 
+  </mets:metsHdr>  
+  <mets:dmdSec ID="MODSMD_VOLUME_0001"> 
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <mods:mods ID="MODS_VOLUME_0001"> 
+          <mods:titleInfo> 
+            <mods:title>Proceedings of the third European workshop on Probabilistic Graphical Models</mods:title>  
+            <mods:subTitle>Prague, Czech Republic, September 12-15, 2006</mods:subTitle> 
+          </mods:titleInfo>  
+          <mods:titleInfo type="alternative"> 
+            <mods:title>European workshop on Probabilistic Graphical Models</mods:title> 
+          </mods:titleInfo>  
+          <mods:titleInfo type="alternative"> 
+            <mods:title>Probabilistic Graphical Models</mods:title> 
+          </mods:titleInfo>  
+          <mods:titleInfo type="alternative"> 
+            <mods:title>PGM 06</mods:title> 
+          </mods:titleInfo>  
+          <mods:titleInfo type="alternative"> 
+            <mods:title>Proceedings of PGM'06</mods:title> 
+          </mods:titleInfo>  
+          <mods:name type="conference"> 
+            <mods:namePart>Probabilistic Graphical Models (3. : 2006 : Praha, Česko)</mods:namePart> 
+          </mods:name>  
+          <mods:name type="personal"> 
+            <mods:namePart>Studený, Milan</mods:namePart>  
+            <mods:role> 
+              <mods:roleTerm authority="marcrelator" type="code">edt</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          <mods:name type="personal"> 
+            <mods:namePart>Vomlel, Jiří</mods:namePart>  
+            <mods:role> 
+              <mods:roleTerm authority="marcrelator" type="code">edt</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          <mods:typeOfResource>text</mods:typeOfResource>  
+          <mods:genre>volume</mods:genre>  
+          <mods:originInfo> 
+            <mods:place> 
+              <mods:placeTerm authority="marccountry" type="text">xr</mods:placeTerm> 
+            </mods:place>  
+            <mods:place> 
+              <mods:placeTerm type="text">Prague</mods:placeTerm> 
+            </mods:place>  
+            <mods:publisher>Action M Agency</mods:publisher>  
+            <mods:dateIssued>2006</mods:dateIssued>  
+            <mods:issuance>single unit</mods:issuance> 
+          </mods:originInfo>  
+          <mods:language> 
+            <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm> 
+          </mods:language>  
+          <mods:physicalDescription> 
+            <mods:form authority="marcform">print</mods:form>  
+            <mods:form authority="marccategory">text</mods:form>  
+            <mods:form authority="marcsmd">regular print</mods:form>  
+            <mods:extent>332 s. : il. ; 30 cm</mods:extent> 
+          </mods:physicalDescription>  
+          <mods:targetAudience authority="marctarget">specialized</mods:targetAudience>  
+          <mods:note type="statement of responsibility">edited by Milan Studený and Jiří Vomlel</mods:note>  
+          <mods:note>80 výt.</mods:note>  
+          <mods:note type="bibliography">Obsahuje bibliografie a rejstřík</mods:note>  
+          <mods:subject authority="czenas"> 
+            <mods:topic>počítačové modelování</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="czenas"> 
+            <mods:topic>pravděpodobnostní metody</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="czenas"> 
+            <mods:topic>soft computing</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="eczenas"> 
+            <mods:topic>computer modeling</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="eczenas"> 
+            <mods:topic>probabilistic methods</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="eczenas"> 
+            <mods:topic>soft computing</mods:topic> 
+          </mods:subject>  
+          <mods:subject> 
+            <mods:topic>grafické pravděpodobnostní modely</mods:topic> 
+          </mods:subject>  
+          <mods:classification authority="udc">004.94</mods:classification>  
+          <mods:classification authority="udc">519.21</mods:classification>  
+          <mods:classification authority="udc">51-021.167</mods:classification>  
+          <mods:classification authority="udc">(062.534)</mods:classification>  
+          <mods:location> 
+            <mods:physicalLocation authority="siglaADR">ABA001</mods:physicalLocation>  
+            <mods:url displayLabel="Obsah" usage="primary display">http://toc.nkp.cz/NKC/200612/contents/nkc20061688508_1.pdf</mods:url> 
+          </mods:location>
+		  <mods:identifier type="urnnbn">urn:nbn:cz:nk-0000rd</mods:identifier>		  
+          <mods:identifier type="ccnb">cnb001688508</mods:identifier>  
+          <mods:identifier type="isbn">80-86742-14-8</mods:identifier>  
+          <mods:identifier type="oclc">85712412</mods:identifier>  
+          <mods:recordInfo> 
+            <mods:descriptionStandard>aacr</mods:descriptionStandard>  
+            <mods:recordContentSource authority="marcorg">ABA001</mods:recordContentSource>  
+            <mods:recordCreationDate encoding="iso8601">2006-09-07T00:00:00Z</mods:recordCreationDate>  
+            <mods:recordChangeDate encoding="iso8601">2006-12-20T10:56:31Z</mods:recordChangeDate>  
+            <mods:recordIdentifier source="CZ-PrNK">nkc20061688508</mods:recordIdentifier>  
+            <mods:recordOrigin>machine generated</mods:recordOrigin>  
+            <mods:languageOfCataloging> 
+              <mods:languageTerm authority="iso639-2b" type="code">cze</mods:languageTerm> 
+            </mods:languageOfCataloging> 
+          </mods:recordInfo> 
+        </mods:mods> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec>  
+  <mets:dmdSec ID="DCMD_VOLUME_0001"> 
+    <mets:mdWrap MDTYPE="DC" MIMETYPE="text/xml"> 
+      <mets:xmlData> 
+        <oai_dc:dc> 
+          <dc:title>Proceedings of the third European workshop on Probabilistic Graphical Models: Prague, Czech Republic, September 12-15, 2006</dc:title>  
+          <dc:title>European workshop on Probabilistic Graphical Models</dc:title>  
+          <dc:title>Probabilistic Graphical Models</dc:title>  
+          <dc:title>PGM 06</dc:title>  
+          <dc:title>Proceedings of PGM'06</dc:title>  
+          <dc:contributor>Probabilistic Graphical Models (3. : 2006 : Praha, Česko)</dc:contributor>  
+          <dc:contributor>Studený, Milan</dc:contributor>  
+          <dc:contributor>Vomlel, Jiří</dc:contributor>  
+          <dc:date>2006</dc:date>  
+          <dc:publisher>Action M Agency</dc:publisher>  
+          <dc:language>eng</dc:language>  
+          <dc:format>332 s. : il. ; 30 cm</dc:format>  
+          <dc:format>print</dc:format>  
+          <dc:description>edited by Milan Studený and Jiří Vomlel</dc:description>  
+          <dc:description>80 výt.</dc:description>  
+          <dc:description>Obsahuje bibliografie a rejstřík</dc:description>  
+          <dc:subject>počítačové modelování</dc:subject>  
+          <dc:subject>pravděpodobnostní metody</dc:subject>  
+          <dc:subject>soft computing</dc:subject>  
+          <dc:subject>computer modeling</dc:subject>  
+          <dc:subject>probabilistic methods</dc:subject>  
+          <dc:subject>soft computing</dc:subject>  
+          <dc:subject>grafické pravděpodobnostní modely</dc:subject>  
+          <dc:subject>004.94</dc:subject>  
+          <dc:subject>519.21</dc:subject>  
+          <dc:subject>51-021.167</dc:subject>  
+          <dc:subject>(062.534)</dc:subject>  
+          <dc:type>model:Monograph</dc:type>  
+          <dc:identifier>URN:ISBN:80-86742-14-8</dc:identifier>  
+          <dc:identifier>oclc:85712412</dc:identifier>  
+          <dc:identifier>ccnb:cnb001688508</dc:identifier> 
+        </oai_dc:dc> 
+      </mets:xmlData> 
+    </mets:mdWrap> 
+  </mets:dmdSec>  
+  <mets:fileSec> 
+    <mets:fileGrp ID="MC_IMGGRP" USE="Images"> 
+      <mets:file CHECKSUM="72c08e5bda8dacb2e31ec529a014213e" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:30:48" ID="MC_0001" MIMETYPE="image/jp2" SEQ="0" SIZE="328459"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="masterCopy/1000350721_00_0004.tif.jp2"/> 
+      </mets:file>  
+      <mets:file CHECKSUM="38487eff3aa8521f266a6f291cccf7e2" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:30:48" ID="MC_0002" MIMETYPE="image/jp2" SEQ="1" SIZE="1061343"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="masterCopy/1000350721_00_0005.tif.jp2"/> 
+      </mets:file>  
+      <mets:file CHECKSUM="01cd9bf6883c9b0491962e6d5618849d" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:30:48" ID="MC_0003" MIMETYPE="image/jp2" SEQ="2" SIZE="600295"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="masterCopy/1000350721_00_0006.tif.jp2"/> 
+      </mets:file> 
+    </mets:fileGrp>  
+    <mets:fileGrp ID="UC_IMGGRP" USE="Images"> 
+      <mets:file CHECKSUM="6b92db5948afe7c96567538ca6aecd82" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:30:49" ID="UC_0001" MIMETYPE="application/octet-stream" SEQ="0" SIZE="173490"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="userCopy/1000350721_00_0004.tif.jp2.JPG2000"/> 
+      </mets:file>  
+      <mets:file CHECKSUM="4e5951ee381598783a5a07d54a0c9a1a" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:30:49" ID="UC_0002" MIMETYPE="application/octet-stream" SEQ="1" SIZE="303297"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="userCopy/1000350721_00_0005.tif.jp2.JPG2000"/> 
+      </mets:file>  
+      <mets:file CHECKSUM="31aa4922a88b0437388154c959d82e58" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:30:49" ID="UC_0003" MIMETYPE="application/octet-stream" SEQ="2" SIZE="137870"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="userCopy/1000350721_00_0006.tif.jp2.JPG2000"/> 
+      </mets:file> 
+    </mets:fileGrp>  
+    <mets:fileGrp ID="ALTOGRP" USE="Layout"> 
+      <mets:file CHECKSUM="ae9aa30ef50e0359d12680764f4d3951" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:30:48" ID="ALTO_0001" MIMETYPE="text/xml" SEQ="0" SIZE="47348"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="ALTO/scan-0001.tif.xml"/> 
+      </mets:file>  
+      <mets:file CHECKSUM="d0bd8a5d2366fc182421ff05ad24d570" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:30:48" ID="ALTO_0002" MIMETYPE="text/xml" SEQ="1" SIZE="60939"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="ALTO/scan-0002.tif.xml"/> 
+      </mets:file>  
+      <mets:file CHECKSUM="46bb38da0473d8ad8dc72fb59eaa0b13" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:30:48" ID="ALTO_0003" MIMETYPE="text/xml" SEQ="2" SIZE="61854"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="ALTO/scan-0003.tif.xml"/> 
+      </mets:file> 
+    </mets:fileGrp>  
+    <mets:fileGrp ID="TXTGRP" USE="Text"> 
+      <mets:file CHECKSUM="31d829383adb291ba468053cfa05085c" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:29:18" ID="TXT_0001" MIMETYPE="text/plain" SEQ="0" SIZE="9"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="TXT/1000350721_00_0004.tif.txt"/> 
+      </mets:file>  
+      <mets:file CHECKSUM="fd66d3b7ead119751fbb985c03951829" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:29:18" ID="TXT_0002" MIMETYPE="text/plain" SEQ="1" SIZE="156"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="TXT/1000350721_00_0005.tif.txt"/> 
+      </mets:file>  
+      <mets:file CHECKSUM="ce26f06d52826a066923ee9634da7e55" CHECKSUMTYPE="MD5" CREATED="2013-07-03T09:29:18" ID="TXT_0003" MIMETYPE="text/plain" SEQ="2" SIZE="461"> 
+        <mets:FLocat LOCTYPE="URL" xlink:href="TXT/1000350721_00_0006.tif.txt"/> 
+      </mets:file> 
+    </mets:fileGrp> 
+  </mets:fileSec>  
+  <mets:structMap> 
+    <mets:div DMDID="J-1" TYPE="investigation"> 
+      <mets:div DMDID="J-2" TYPE="dataset"> 
+        <mets:fptr FILEID="F-1"/>  
+        <mets:fptr FILEID="F-2"/> 
+      </mets:div> 
+    </mets:div> 
+  </mets:structMap> 
+</mets:mets>

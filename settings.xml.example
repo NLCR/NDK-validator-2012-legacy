@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+Toto je example pro ~/.m2/settings.xml pro EEA Maven repo jako univerzalni proxy.
+
+-->
+
+<settings xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
+      <id>eea</id>
+    </server>
+  </servers>
+  <mirrors>
+    <mirror>
+      <id>eea</id>
+      <name>EEA Central Proxy</name>
+      <url>http://maven.eea.sk/artifactory/repo</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+  <profiles>
+    <profile>
+      <id>enterprise-eea</id>
+      <repositories>
+        <repository>
+          <id>eea-public</id>
+          <name>EEA repository for public libs</name>
+          <url>http://maven.eea.sk/artifactory/public/</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>daily</updatePolicy>
+            <checksumPolicy>fail</checksumPolicy>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>daily</updatePolicy>
+            <checksumPolicy>fail</checksumPolicy>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>enterprise-eea</activeProfile>
+  </activeProfiles>
+</settings>

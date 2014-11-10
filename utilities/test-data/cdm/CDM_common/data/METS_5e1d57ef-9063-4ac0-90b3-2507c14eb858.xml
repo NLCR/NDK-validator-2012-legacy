@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><mets xmlns="http://www.loc.gov/METS/" OBJID="5e1d57ef-9063-4ac0-90b3-2507c14eb858" TYPE="Periodical"><metsHdr CREATEDATE="2012-04-06T16:43:41Z" LASTMODDATE="2012-04-06T16:43:41Z"><agent ROLE="CREATOR" TYPE="ORGANIZATION"><name>NDK_TM</name></agent></metsHdr><dmdSec ID="MODSMD_TITLE"><mdWrap MDTYPE="MODS" MIMETYPE="text/xml"><xmlData><mods xmlns="http://www.loc.gov/mods/v3" version="3.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+<titleInfo ID="MODS_TITLE">
+<title>Proceedings of the third European workshop on Probabilistic Graphical Models</title>
+<subTitle>Prague, Czech Republic, September 12-15, 2006</subTitle>
+</titleInfo>
+<titleInfo type="alternative">
+<title>European workshop on Probabilistic Graphical Models</title>
+</titleInfo>
+<titleInfo type="alternative">
+<title>Probabilistic Graphical Models</title>
+</titleInfo>
+<titleInfo type="alternative">
+<title>PGM 06</title>
+</titleInfo>
+<titleInfo type="alternative">
+<title>Proceedings of PGM'06</title>
+</titleInfo>
+<name type="conference">
+<namePart>Probabilistic Graphical Models 2006 : Praha, Česko)</namePart>
+</name>
+<name type="personal">
+<namePart>Studený, Milan</namePart>
+<role>
+<roleTerm authority="marcrelator" type="code">edt</roleTerm>
+</role>
+</name>
+<name type="personal">
+<namePart>Vomlel, Jiří</namePart>
+<role>
+<roleTerm authority="marcrelator" type="code">edt</roleTerm>
+</role>
+</name>
+<typeOfResource/>
+<genre authority="czenas">sborníky konferencí</genre>
+<genre authority="eczenas">proceedings of conferences</genre>
+<originInfo>
+<place>
+<placeTerm authority="marccountry" type="code">xr-</placeTerm>
+</place>
+<place>
+<placeTerm type="text">Prague</placeTerm>
+</place>
+<publisher>Action M Agency</publisher>
+<dateIssued>2006</dateIssued>
+<issuance/>
+</originInfo>
+<language>
+<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+</language>
+<physicalDescription>
+<form authority="marccategory">text</form>
+<form authority="marcsmd">regular print</form>
+<extent>332 s. : il. ; 30 cm</extent>
+</physicalDescription>
+<note>80 výt.</note>
+<note type="bibliography">Obsahuje bibliografie a rejstřík</note>
+<subject authority="czenas">
+<topic>počítačové modelování</topic>
+</subject>
+<subject authority="czenas">
+<topic>pravděpodobnostní metody</topic>
+</subject>
+<subject authority="czenas">
+<topic>soft computing</topic>
+</subject>
+<subject>
+<topic>computer modeling</topic>
+</subject>
+<subject>
+<topic>probabilistic methods</topic>
+</subject>
+<subject>
+<topic>soft computing</topic>
+</subject>
+<subject>
+<topic>
+grafické pravděpodobnostní modely
+</topic>
+</subject>
+<classification authority="udc">004.94</classification>
+<classification authority="udc">519.21</classification>
+<classification authority="udc">51-021.167</classification>
+<classification authority="udc">(062.534)</classification>
+<location>
+<url displayLabel="Obsah" usage="primary display">http://toc.nkp.cz/NKC/200612/contents/nkc20061688508_1.pdf</url>
+</location>
+<identifier type="ccnb">cnb001688508</identifier>
+<identifier type="isbn">80-86742-14-8 (brož.)</identifier>
+<identifier type="oclc">85712412</identifier>
+<recordInfo>
+<recordContentSource authority="marcorg">ABA001</recordContentSource>
+<recordCreationDate encoding="marc">060907</recordCreationDate>
+<recordChangeDate encoding="iso8601">20061220105631.0</recordChangeDate>
+<recordIdentifier source="CZ-PrNK">nkc20061688508</recordIdentifier>
+<recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.76 2012/02/01)</recordOrigin>
+<languageOfCataloging>
+<languageTerm authority="iso639-2b" type="code">cze</languageTerm>
+</languageOfCataloging>
+</recordInfo>
+<identifier type="uuid">5e1d57ef-9063-4ac0-90b3-2507c14eb858</identifier></mods></xmlData></mdWrap></dmdSec><fileSec><fileGrp ID="MC_IMGGRP" USE="Images"/><fileGrp ID="ALTOGRP" USE="Text"/><fileGrp ID="TXTGRP" USE="Text"/><fileGrp ID="TECHMDGRP" USE="Technical Metadata"/></fileSec><structMap><div DMDID="J-1" TYPE="investigation"><div DMDID="J-2" TYPE="dataset"><fptr FILEID="F-1"/><fptr FILEID="F-2"/></div></div></structMap></mets>

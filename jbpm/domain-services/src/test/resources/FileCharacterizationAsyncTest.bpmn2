@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_FfMpoVcWEeG28LOKocV_AQ" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_masterDataIdItem"/>
+  <bpmn2:itemDefinition id="_resultItem"/>
+  <bpmn2:process id="com.logica.ndk.prototype.FileCharacterizationAsyncTest" drools:packageName="prototype" name="FileCharacterizationAsyncTest" isExecutable="true">
+    <bpmn2:property id="masterDataId" itemSubjectRef="_masterDataIdItem"/>
+    <bpmn2:property id="result" itemSubjectRef="_resultItem"/>
+    <bpmn2:startEvent id="_D14A6E4C-6EEB-4FA9-827B-DCACED31804D" drools:bgcolor="#ffffff" name="">
+      <bpmn2:outgoing>_8E2F5FE7-E68B-4B46-9E10-F45195817728</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_8E2F5FE7-E68B-4B46-9E10-F45195817728" sourceRef="_D14A6E4C-6EEB-4FA9-827B-DCACED31804D" targetRef="_0E9BE43F-FE81-4A84-9577-33A779C5EDA1"/>
+    <bpmn2:task id="_0E9BE43F-FE81-4A84-9577-33A779C5EDA1" drools:taskName="FileCharacterizationAsyncDef" name="FileCharacterizationAsyncDef">
+      <bpmn2:incoming>_8E2F5FE7-E68B-4B46-9E10-F45195817728</bpmn2:incoming>
+      <bpmn2:outgoing>_2386E46D-E2D9-4A9C-B3EC-9D8FAEABF853</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_FfNQsFcWEeG28LOKocV_AQ">
+        <bpmn2:dataInput id="_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_TaskNameInput" name="TaskName"/>
+        <bpmn2:dataInput id="_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_masterDataIdInput" name="masterDataId"/>
+        <bpmn2:dataOutput id="_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_resultOutput" name="result"/>
+        <bpmn2:inputSet id="_FfNQsVcWEeG28LOKocV_AQ">
+          <bpmn2:dataInputRefs>_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_masterDataIdInput</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_TaskNameInput</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_FfNQslcWEeG28LOKocV_AQ">
+          <bpmn2:dataOutputRefs>_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_resultOutput</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_FfNQs1cWEeG28LOKocV_AQ">
+        <bpmn2:targetRef>_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_TaskNameInput</bpmn2:targetRef>
+        <bpmn2:assignment id="_FfNQtFcWEeG28LOKocV_AQ">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_FfNQtVcWEeG28LOKocV_AQ">FileCharacterizationAsyncDef</bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_FfNQtlcWEeG28LOKocV_AQ">_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_TaskNameInput</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_FfNQt1cWEeG28LOKocV_AQ">
+        <bpmn2:sourceRef>masterDataId</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_masterDataIdInput</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_FfNQuFcWEeG28LOKocV_AQ">
+        <bpmn2:sourceRef>_0E9BE43F-FE81-4A84-9577-33A779C5EDA1_resultOutput</bpmn2:sourceRef>
+        <bpmn2:targetRef>result</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_2386E46D-E2D9-4A9C-B3EC-9D8FAEABF853" sourceRef="_0E9BE43F-FE81-4A84-9577-33A779C5EDA1" targetRef="_450FCD78-CC65-4CDC-AEAB-FADB5EDC64E7"/>
+    <bpmn2:endEvent id="_450FCD78-CC65-4CDC-AEAB-FADB5EDC64E7" drools:bgcolor="#ffffff" name="">
+      <bpmn2:incoming>_2386E46D-E2D9-4A9C-B3EC-9D8FAEABF853</bpmn2:incoming>
+      <bpmn2:terminateEventDefinition id="_FfN3wFcWEeG28LOKocV_AQ"/>
+    </bpmn2:endEvent>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_FfN3wVcWEeG28LOKocV_AQ">
+    <bpmndi:BPMNPlane id="_FfN3wlcWEeG28LOKocV_AQ" bpmnElement="com.logica.ndk.prototype.FileCharacterizationAsyncTest">
+      <bpmndi:BPMNShape id="_FfN3w1cWEeG28LOKocV_AQ" bpmnElement="_D14A6E4C-6EEB-4FA9-827B-DCACED31804D">
+        <dc:Bounds height="30.0" width="30.0" x="105.0" y="116.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_FfN3xFcWEeG28LOKocV_AQ" bpmnElement="_8E2F5FE7-E68B-4B46-9E10-F45195817728">
+        <di:waypoint xsi:type="dc:Point" x="120.0" y="131.0"/>
+        <di:waypoint xsi:type="dc:Point" x="370.5" y="131.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_FfN3xVcWEeG28LOKocV_AQ" bpmnElement="_0E9BE43F-FE81-4A84-9577-33A779C5EDA1">
+        <dc:Bounds height="82.0" width="231.0" x="255.0" y="90.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_FfN3xlcWEeG28LOKocV_AQ" bpmnElement="_2386E46D-E2D9-4A9C-B3EC-9D8FAEABF853">
+        <di:waypoint xsi:type="dc:Point" x="370.5" y="131.0"/>
+        <di:waypoint xsi:type="dc:Point" x="544.0" y="130.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_FfN3x1cWEeG28LOKocV_AQ" bpmnElement="_450FCD78-CC65-4CDC-AEAB-FADB5EDC64E7">
+        <dc:Bounds height="28.0" width="28.0" x="530.0" y="116.0"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

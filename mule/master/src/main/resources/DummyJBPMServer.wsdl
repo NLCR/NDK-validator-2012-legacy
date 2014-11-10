@@ -1,0 +1,348 @@
+<?xml version="1.0" ?>
+<wsdl:definitions name="JBPMWSFacadeImplService"
+	targetNamespace="http://process.tm.ndk.logica.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://process.tm.ndk.logica.com/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<wsdl:types>
+		<xs:schema elementFormDefault="qualified"
+			targetNamespace="http://process.tm.ndk.logica.com/" version="1.0"
+			xmlns:tns="http://process.tm.ndk.logica.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+			<xs:element name="activeInstances" type="tns:activeInstances"></xs:element>
+			<xs:element name="activeInstancesResponse" type="tns:activeInstancesResponse"></xs:element>
+			<xs:element name="createProcessInstance" type="tns:createProcessInstance"></xs:element>
+			<xs:element name="createProcessInstanceResponse" type="tns:createProcessInstanceResponse"></xs:element>
+			<xs:element name="endInstance" type="tns:endInstance"></xs:element>
+			<xs:element name="endInstanceResponse" type="tns:endInstanceResponse"></xs:element>
+			<xs:element name="processState">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="processId" type="xs:string"></xs:element>
+						<xs:element name="processName" type="xs:string"></xs:element>
+						<xs:element name="instanceId" type="xs:long"></xs:element>
+						<xs:element name="state" type="xs:int"></xs:element>
+						<xs:element name="parameters" type="tns:ParamMap"></xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="signalEvent" type="tns:signalEvent"></xs:element>
+			<xs:element name="signalEventForInstance" type="tns:signalEventForInstance"></xs:element>
+			<xs:element name="signalEventForInstanceResponse" type="tns:signalEventForInstanceResponse"></xs:element>
+			<xs:element name="signalEventResponse" type="tns:signalEventResponse"></xs:element>
+			<xs:element name="startProcess" type="tns:startProcess"></xs:element>
+			<xs:element name="startProcessInstance" type="tns:startProcessInstance"></xs:element>
+			<xs:element name="startProcessInstanceResponse" type="tns:startProcessInstanceResponse"></xs:element>
+			<xs:element name="startProcessResponse" type="tns:startProcessResponse"></xs:element>
+			<xs:element name="state" type="tns:state"></xs:element>
+			<xs:element name="stateResponse" type="tns:stateResponse"></xs:element>
+			<xs:complexType name="startProcess">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="processId" type="xs:string"></xs:element>
+					<xs:element minOccurs="0" name="parameters" type="tns:ParamMap"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ParamMap">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="items"
+						nillable="true" type="tns:ParamMapItem"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ParamMapItem">
+				<xs:sequence>
+					<xs:element name="name" type="xs:string"></xs:element>
+					<xs:element name="value" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="startProcessResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:long"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="startProcessInstance">
+				<xs:sequence>
+					<xs:element name="processInstanceId" type="xs:long"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="startProcessInstanceResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:long"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="signalEventForInstance">
+				<xs:sequence>
+					<xs:element name="instanceId" type="xs:long"></xs:element>
+					<xs:element minOccurs="0" name="type" type="xs:string"></xs:element>
+					<xs:element minOccurs="0" name="eventData" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="signalEventForInstanceResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="createProcessInstance">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="processId" type="xs:string"></xs:element>
+					<xs:element minOccurs="0" name="parameters" type="tns:ParamMap"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="createProcessInstanceResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:long"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="endInstance">
+				<xs:sequence>
+					<xs:element name="instanceId" type="xs:long"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="endInstanceResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="state">
+				<xs:sequence>
+					<xs:element name="instanceId" type="xs:long"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="stateResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="processId" type="xs:string"></xs:element>
+								<xs:element name="processName" type="xs:string"></xs:element>
+								<xs:element name="instanceId" type="xs:long"></xs:element>
+								<xs:element name="state" type="xs:int"></xs:element>
+								<xs:element name="parameters" type="tns:ParamMap"></xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="signalEvent">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="type" type="xs:string"></xs:element>
+					<xs:element minOccurs="0" name="eventData" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="signalEventResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="activeInstances">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="processId" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="activeInstancesResponse">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="return"
+						type="xs:long"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="signalEvent">
+		<wsdl:part element="tns:signalEvent" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="createProcessInstanceResponse">
+		<wsdl:part element="tns:createProcessInstanceResponse" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="startProcessInstanceResponse">
+		<wsdl:part element="tns:startProcessInstanceResponse" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="signalEventForInstance">
+		<wsdl:part element="tns:signalEventForInstance" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="startProcess">
+		<wsdl:part element="tns:startProcess" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="state">
+		<wsdl:part element="tns:state" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="signalEventResponse">
+		<wsdl:part element="tns:signalEventResponse" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="activeInstances">
+		<wsdl:part element="tns:activeInstances" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="endInstance">
+		<wsdl:part element="tns:endInstance" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="startProcessInstance">
+		<wsdl:part element="tns:startProcessInstance" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="activeInstancesResponse">
+		<wsdl:part element="tns:activeInstancesResponse" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="startProcessResponse">
+		<wsdl:part element="tns:startProcessResponse" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="signalEventForInstanceResponse">
+		<wsdl:part element="tns:signalEventForInstanceResponse"
+			name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="endInstanceResponse">
+		<wsdl:part element="tns:endInstanceResponse" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="createProcessInstance">
+		<wsdl:part element="tns:createProcessInstance" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="stateResponse">
+		<wsdl:part element="tns:stateResponse" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="JBPMWSFacadePortType">
+		<wsdl:operation name="startProcess">
+			<wsdl:input message="tns:startProcess" name="startProcess">
+			</wsdl:input>
+			<wsdl:output message="tns:startProcessResponse" name="startProcessResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="startProcessInstance">
+			<wsdl:input message="tns:startProcessInstance" name="startProcessInstance">
+			</wsdl:input>
+			<wsdl:output message="tns:startProcessInstanceResponse"
+				name="startProcessInstanceResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="signalEventForInstance">
+			<wsdl:input message="tns:signalEventForInstance" name="signalEventForInstance">
+			</wsdl:input>
+			<wsdl:output message="tns:signalEventForInstanceResponse"
+				name="signalEventForInstanceResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="createProcessInstance">
+			<wsdl:input message="tns:createProcessInstance" name="createProcessInstance">
+			</wsdl:input>
+			<wsdl:output message="tns:createProcessInstanceResponse"
+				name="createProcessInstanceResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="endInstance">
+			<wsdl:input message="tns:endInstance" name="endInstance">
+			</wsdl:input>
+			<wsdl:output message="tns:endInstanceResponse" name="endInstanceResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="state">
+			<wsdl:input message="tns:state" name="state">
+			</wsdl:input>
+			<wsdl:output message="tns:stateResponse" name="stateResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="signalEvent">
+			<wsdl:input message="tns:signalEvent" name="signalEvent">
+			</wsdl:input>
+			<wsdl:output message="tns:signalEventResponse" name="signalEventResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="activeInstances">
+			<wsdl:input message="tns:activeInstances" name="activeInstances">
+			</wsdl:input>
+			<wsdl:output message="tns:activeInstancesResponse" name="activeInstancesResponse">
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="JBPMWSFacadeImplServiceSoapBinding"
+		type="tns:JBPMWSFacadePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+		<wsdl:operation name="startProcess">
+			<soap:operation soapAction="" style="document"></soap:operation>
+			<wsdl:input name="startProcess">
+				<soap:body use="literal"></soap:body>
+			</wsdl:input>
+			<wsdl:output name="startProcessResponse">
+				<soap:body use="literal"></soap:body>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="signalEventForInstance">
+			<soap:operation soapAction="" style="document"></soap:operation>
+			<wsdl:input name="signalEventForInstance">
+				<soap:body use="literal"></soap:body>
+			</wsdl:input>
+			<wsdl:output name="signalEventForInstanceResponse">
+				<soap:body use="literal"></soap:body>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="startProcessInstance">
+			<soap:operation soapAction="" style="document"></soap:operation>
+			<wsdl:input name="startProcessInstance">
+				<soap:body use="literal"></soap:body>
+			</wsdl:input>
+			<wsdl:output name="startProcessInstanceResponse">
+				<soap:body use="literal"></soap:body>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="createProcessInstance">
+			<soap:operation soapAction="" style="document"></soap:operation>
+			<wsdl:input name="createProcessInstance">
+				<soap:body use="literal"></soap:body>
+			</wsdl:input>
+			<wsdl:output name="createProcessInstanceResponse">
+				<soap:body use="literal"></soap:body>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="endInstance">
+			<soap:operation soapAction="" style="document"></soap:operation>
+			<wsdl:input name="endInstance">
+				<soap:body use="literal"></soap:body>
+			</wsdl:input>
+			<wsdl:output name="endInstanceResponse">
+				<soap:body use="literal"></soap:body>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="state">
+			<soap:operation soapAction="" style="document"></soap:operation>
+			<wsdl:input name="state">
+				<soap:body use="literal"></soap:body>
+			</wsdl:input>
+			<wsdl:output name="stateResponse">
+				<soap:body use="literal"></soap:body>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="activeInstances">
+			<soap:operation soapAction="" style="document"></soap:operation>
+			<wsdl:input name="activeInstances">
+				<soap:body use="literal"></soap:body>
+			</wsdl:input>
+			<wsdl:output name="activeInstancesResponse">
+				<soap:body use="literal"></soap:body>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="signalEvent">
+			<soap:operation soapAction="" style="document"></soap:operation>
+			<wsdl:input name="signalEvent">
+				<soap:body use="literal"></soap:body>
+			</wsdl:input>
+			<wsdl:output name="signalEventResponse">
+				<soap:body use="literal"></soap:body>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="JBPMWSFacade">
+		<wsdl:port binding="tns:JBPMWSFacadeImplServiceSoapBinding"
+			name="JBPMWSFacadeImplPort">
+			<soap:address location="http://localhost:8080/jbpm-ws/services"></soap:address>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

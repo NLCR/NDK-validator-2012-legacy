@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/" OBJID="testCdmId" TYPE="Periodical"><metsHdr CREATEDATE="2012-03-05T15:03:29Z" LASTMODDATE="2012-03-05T15:03:29Z"><agent ROLE="CREATOR" TYPE="ORGANISATION"><name>NDK_TM</name></agent></metsHdr><fileSec><fileGrp ID="MC_IMGGRP" USE="Images"/><fileGrp ID="TECHMDGRP" USE="Technical Metadata"/></fileSec><structMap><div DMDID="J-1" TYPE="investigation"><div DMDID="J-2" TYPE="dataset"><fptr FILEID="F-1"/><fptr FILEID="F-2"/></div></div></structMap></mets>

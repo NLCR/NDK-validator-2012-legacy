@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.logica.ndk.tm</groupId>
+		<artifactId>main</artifactId>
+		<version>1.5.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.logica.ndk.tm</groupId>
+	<artifactId>commons</artifactId>
+	<packaging>jar</packaging>
+	<name>NDK TM - commons</name>
+	<version>1.5.1-SNAPSHOT</version>
+	
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+				<excludes>
+					<exclude>**/tm-info/**</exclude>
+				</excludes>				
+			</resource>
+			<resource>
+				<directory>src/main/resources/tm-info</directory>
+				<filtering>true</filtering>
+			</resource>		
+		</resources>
+	</build>
+	
+	<dependencies>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.8</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.8.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-id-eea</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- for Win32 specific operations - like get process id of started system command -->
+		<dependency>
+			<groupId>com.sun.jna</groupId>
+			<artifactId>jna</artifactId>
+			<version>3.0.9</version>
+		</dependency>		
+	</dependencies>
+</project>

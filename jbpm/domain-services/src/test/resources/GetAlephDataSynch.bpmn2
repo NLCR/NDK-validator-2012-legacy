@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_D1-n4FltEeGjH72JZMq0kg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_barCodeItem"/>
+  <bpmn2:itemDefinition id="_libraryIdItem"/>
+  <bpmn2:process id="prototype.GetAlephDataSynch" drools:packageName="prototype" name="GetAlephDataSynch" isExecutable="true">
+    <bpmn2:property id="barCode" itemSubjectRef="_barCodeItem"/>
+    <bpmn2:property id="libraryId" itemSubjectRef="_libraryIdItem"/>
+    <bpmn2:task id="_7A1B6860-8541-49A7-95B4-3EC3BBF50894" drools:taskName="GetAlephDataSynchUtilCall" name="GetAlephDataSynchUtilCall">
+      <bpmn2:incoming>_6361F170-9BA9-436B-BADB-2653EA3D8ECB</bpmn2:incoming>
+      <bpmn2:outgoing>_DEF613AC-916A-416C-B3F5-E1322737D0D4</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_D1-n4VltEeGjH72JZMq0kg">
+        <bpmn2:dataInput id="_7A1B6860-8541-49A7-95B4-3EC3BBF50894_TaskNameInput" name="TaskName"/>
+        <bpmn2:dataInput id="_7A1B6860-8541-49A7-95B4-3EC3BBF50894_barCodeInput" name="barCode"/>
+        <bpmn2:dataInput id="_7A1B6860-8541-49A7-95B4-3EC3BBF50894_libraryIdInput" name="libraryId"/>
+        <bpmn2:inputSet id="_D1-n4lltEeGjH72JZMq0kg">
+          <bpmn2:dataInputRefs>_7A1B6860-8541-49A7-95B4-3EC3BBF50894_barCodeInput</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_7A1B6860-8541-49A7-95B4-3EC3BBF50894_libraryIdInput</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_7A1B6860-8541-49A7-95B4-3EC3BBF50894_TaskNameInput</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_D1_O8FltEeGjH72JZMq0kg"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_D1_O8VltEeGjH72JZMq0kg">
+        <bpmn2:targetRef>_7A1B6860-8541-49A7-95B4-3EC3BBF50894_TaskNameInput</bpmn2:targetRef>
+        <bpmn2:assignment id="_D1_O8lltEeGjH72JZMq0kg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_D1_O81ltEeGjH72JZMq0kg">GetAlephDataSynchUtilCall</bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_D1_O9FltEeGjH72JZMq0kg">_7A1B6860-8541-49A7-95B4-3EC3BBF50894_TaskNameInput</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_D1_O9VltEeGjH72JZMq0kg">
+        <bpmn2:sourceRef>barCode</bpmn2:sourceRef>
+        <bpmn2:targetRef>_7A1B6860-8541-49A7-95B4-3EC3BBF50894_barCodeInput</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_D1_O9lltEeGjH72JZMq0kg">
+        <bpmn2:sourceRef>libraryId</bpmn2:sourceRef>
+        <bpmn2:targetRef>_7A1B6860-8541-49A7-95B4-3EC3BBF50894_libraryIdInput</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:startEvent id="_A3DD34E5-E9C3-4C28-A80E-F9D80D475F4B" drools:bgcolor="#ffffff" name="">
+      <bpmn2:outgoing>_6361F170-9BA9-436B-BADB-2653EA3D8ECB</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_6361F170-9BA9-436B-BADB-2653EA3D8ECB" sourceRef="_A3DD34E5-E9C3-4C28-A80E-F9D80D475F4B" targetRef="_7A1B6860-8541-49A7-95B4-3EC3BBF50894"/>
+    <bpmn2:endEvent id="_949EC5E7-CB27-4079-98A2-4D2344395063" drools:bgcolor="#ffffff" name="">
+      <bpmn2:incoming>_DEF613AC-916A-416C-B3F5-E1322737D0D4</bpmn2:incoming>
+      <bpmn2:terminateEventDefinition id="_D1_O91ltEeGjH72JZMq0kg"/>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_DEF613AC-916A-416C-B3F5-E1322737D0D4" sourceRef="_7A1B6860-8541-49A7-95B4-3EC3BBF50894" targetRef="_949EC5E7-CB27-4079-98A2-4D2344395063"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_D1_O-FltEeGjH72JZMq0kg">
+    <bpmndi:BPMNPlane id="_D1_O-VltEeGjH72JZMq0kg" bpmnElement="prototype.GetAlephDataSynch">
+      <bpmndi:BPMNShape id="_D1_O-lltEeGjH72JZMq0kg" bpmnElement="_7A1B6860-8541-49A7-95B4-3EC3BBF50894">
+        <dc:Bounds height="80.0" width="100.0" x="227.0" y="154.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_D1_O-1ltEeGjH72JZMq0kg" bpmnElement="_A3DD34E5-E9C3-4C28-A80E-F9D80D475F4B">
+        <dc:Bounds height="30.0" width="30.0" x="51.0" y="157.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_D1_O_FltEeGjH72JZMq0kg" bpmnElement="_6361F170-9BA9-436B-BADB-2653EA3D8ECB">
+        <di:waypoint xsi:type="dc:Point" x="66.0" y="172.0"/>
+        <di:waypoint xsi:type="dc:Point" x="154.0" y="172.0"/>
+        <di:waypoint xsi:type="dc:Point" x="154.0" y="194.0"/>
+        <di:waypoint xsi:type="dc:Point" x="277.0" y="194.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_D1_O_VltEeGjH72JZMq0kg" bpmnElement="_949EC5E7-CB27-4079-98A2-4D2344395063">
+        <dc:Bounds height="28.0" width="28.0" x="463.0" y="165.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_D1_O_lltEeGjH72JZMq0kg" bpmnElement="_DEF613AC-916A-416C-B3F5-E1322737D0D4">
+        <di:waypoint xsi:type="dc:Point" x="277.0" y="194.0"/>
+        <di:waypoint xsi:type="dc:Point" x="397.0" y="194.0"/>
+        <di:waypoint xsi:type="dc:Point" x="397.0" y="183.0"/>
+        <di:waypoint xsi:type="dc:Point" x="477.0" y="179.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

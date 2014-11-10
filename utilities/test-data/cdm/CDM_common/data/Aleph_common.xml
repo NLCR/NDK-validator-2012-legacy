@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><oai_marc>
+<fixfield id="LDR">-----nam-a22------a-4500</fixfield>
+<fixfield id="FMT">BK</fixfield>
+<fixfield id="001">nkc20061688508</fixfield>
+<fixfield id="003">CZ-PrNK</fixfield>
+<fixfield id="005">20061220105631.0</fixfield>
+<fixfield id="007">ta</fixfield>
+<fixfield id="008">060907s2006----xr-a---f------101-0-eng--</fixfield>
+<varfield i1=" " i2=" " id="015">
+<subfield label="a">cnb001688508</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="020">
+<subfield label="a">80-86742-14-8 (brož.)</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="035">
+<subfield label="a">(OCoLC)85712412</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="040">
+<subfield label="a">ABA001</subfield>
+<subfield label="b">cze</subfield>
+<subfield label="d">OLA001</subfield>
+</varfield>
+<varfield i1=" " i2="7" id="072">
+<subfield label="a">004.8</subfield>
+<subfield label="x">Umělá inteligence</subfield>
+<subfield label="2">Konspekt</subfield>
+<subfield label="9">23</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">004.94</subfield>
+<subfield label="2">MRF</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">519.21</subfield>
+<subfield label="2">MRF</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">51-021.167</subfield>
+<subfield label="2">MRF</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="080">
+<subfield label="a">(062.534)</subfield>
+<subfield label="2">MRF</subfield>
+</varfield>
+<varfield i1="2" i2=" " id="111">
+<subfield label="a">Probabilistic Graphical Models</subfield>
+<subfield label="n">(3. :</subfield>
+<subfield label="d">2006 :</subfield>
+<subfield label="c">Praha, Česko)</subfield>
+<subfield label="7">kn20061212005</subfield>
+</varfield>
+<varfield i1="1" i2="0" id="245">
+<subfield label="a">Proceedings of the third European workshop on Probabilistic Graphical Models :</subfield>
+<subfield label="b">Prague, Czech Republic, September 12-15, 2006 /</subfield>
+<subfield label="c">edited by Milan Studený and Jiří Vomlel</subfield>
+</varfield>
+<varfield i1="3" i2="0" id="246">
+<subfield label="a">European workshop on Probabilistic Graphical Models</subfield>
+</varfield>
+<varfield i1="3" i2="0" id="246">
+<subfield label="a">Probabilistic Graphical Models</subfield>
+</varfield>
+<varfield i1="3" i2="0" id="246">
+<subfield label="a">PGM 06</subfield>
+</varfield>
+<varfield i1="1" i2="4" id="246">
+<subfield label="a">Proceedings of PGM'06</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="260">
+<subfield label="a">Prague :</subfield>
+<subfield label="b">Action M Agency,</subfield>
+<subfield label="c">2006</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="300">
+<subfield label="a">332 s. :</subfield>
+<subfield label="b">il. ;</subfield>
+<subfield label="c">30 cm</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="500">
+<subfield label="a">80 výt.</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="504">
+<subfield label="a">Obsahuje bibliografie a rejstřík</subfield>
+</varfield>
+<varfield i1="0" i2="7" id="650">
+<subfield label="a">počítačové modelování</subfield>
+<subfield label="7">ph124513</subfield>
+<subfield label="2">czenas</subfield>
+</varfield>
+<varfield i1="0" i2="7" id="650">
+<subfield label="a">pravděpodobnostní metody</subfield>
+<subfield label="7">ph220676</subfield>
+<subfield label="2">czenas</subfield>
+</varfield>
+<varfield i1="0" i2="7" id="650">
+<subfield label="a">soft computing</subfield>
+<subfield label="7">ph201888</subfield>
+<subfield label="2">czenas</subfield>
+</varfield>
+<varfield i1="0" i2="9" id="650">
+<subfield label="a">computer modeling</subfield>
+<subfield label="2">eczenas</subfield>
+</varfield>
+<varfield i1="0" i2="9" id="650">
+<subfield label="a">probabilistic methods</subfield>
+<subfield label="2">eczenas</subfield>
+</varfield>
+<varfield i1="0" i2="9" id="650">
+<subfield label="a">soft computing</subfield>
+<subfield label="2">eczenas</subfield>
+</varfield>
+<varfield i1="0" i2=" " id="653">
+<subfield label="a">grafické pravděpodobnostní modely</subfield>
+</varfield>
+<varfield i1=" " i2="7" id="655">
+<subfield label="a">sborníky konferencí</subfield>
+<subfield label="7">fd133333</subfield>
+<subfield label="2">czenas</subfield>
+</varfield>
+<varfield i1=" " i2="9" id="655">
+<subfield label="a">proceedings of conferences</subfield>
+<subfield label="2">eczenas</subfield>
+</varfield>
+<varfield i1="1" i2=" " id="700">
+<subfield label="a">Studený, Milan</subfield>
+<subfield label="4">edt</subfield>
+</varfield>
+<varfield i1="1" i2=" " id="700">
+<subfield label="a">Vomlel, Jiří</subfield>
+<subfield label="4">edt</subfield>
+</varfield>
+<varfield i1="4" i2="1" id="856">
+<subfield label="y">Obsah</subfield>
+<subfield label="u">http://toc.nkp.cz/NKC/200612/contents/nkc20061688508_1.pdf</subfield>
+</varfield>
+<varfield i1=" " i2=" " id="910">
+<subfield label="a">ABA001</subfield>
+</varfield>
+</oai_marc>

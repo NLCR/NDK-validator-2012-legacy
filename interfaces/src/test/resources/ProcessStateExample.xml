@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processState>
+	<processId>com.logica.ndk.prototype.ConvertToJPEGSynch</processId>
+	<processName>ConvertToJPEGSynch</processName>
+	<instanceId>1</instanceId>
+	<state>0</state>
+	<variables>
+		<variable>
+			<name>var1</name>
+			<value>var1_value</value>
+		</variable>
+		<variable>
+			<name>var2</name>
+			<value>var2_value</value>
+		</variable>
+	</variables>
+</processState>

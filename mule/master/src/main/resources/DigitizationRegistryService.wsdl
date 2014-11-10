@@ -1,0 +1,169 @@
+<definitions
+	xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy"
+	xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://registrdigitalizace.cz/soapservices" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://registrdigitalizace.cz/soapservices"
+	name="DigitizationRegistryService">
+	<types>
+		<xsd:schema>
+			<xsd:import namespace="http://registrdigitalizace.cz/soapservices"
+				schemaLocation="DigitizationRegistryService_schema1.xsd" />
+		</xsd:schema>
+	</types>
+	<message name="findRecords">
+		<part name="parameters" element="tns:findRecords" />
+	</message>
+	<message name="findRecordsResponse">
+		<part name="parameters" element="tns:findRecordsResponse" />
+	</message>
+	<message name="DigitizationRegistryException">
+		<part name="fault" element="tns:DigitizationRegistryException" />
+	</message>
+	<message name="getRecordState">
+		<part name="parameters" element="tns:getRecordState" />
+	</message>
+	<message name="getRecordStateResponse">
+		<part name="parameters" element="tns:getRecordStateResponse" />
+	</message>
+	<message name="setRecordUrnNbn">
+		<part name="parameters" element="tns:setRecordUrnNbn" />
+	</message>
+	<message name="setRecordUrnNbnResponse">
+		<part name="parameters" element="tns:setRecordUrnNbnResponse" />
+	</message>
+	<message name="addRecordUrnNbn">
+		<part name="parameters" element="tns:addRecordUrnNbn" />
+	</message>
+	<message name="addRecordUrnNbnResponse">
+		<part name="parameters" element="tns:addRecordUrnNbnResponse" />
+	</message>
+	<message name="setRecordState">
+		<part name="parameters" element="tns:setRecordState" />
+	</message>
+	<message name="setRecordStateResponse">
+		<part name="parameters" element="tns:setRecordStateResponse" />
+	</message>
+	<portType name="DigitizationRegistry">
+		<operation name="findRecords">
+			<input
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/findRecordsRequest"
+				message="tns:findRecords" />
+			<output
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/findRecordsResponse"
+				message="tns:findRecordsResponse" />
+			<fault message="tns:DigitizationRegistryException" name="DigitizationRegistryException"
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/findRecords/Fault/DigitizationRegistryException" />
+		</operation>
+		<operation name="getRecordState">
+			<input
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/getRecordStateRequest"
+				message="tns:getRecordState" />
+			<output
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/getRecordStateResponse"
+				message="tns:getRecordStateResponse" />
+			<fault message="tns:DigitizationRegistryException" name="DigitizationRegistryException"
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/getRecordState/Fault/DigitizationRegistryException" />
+		</operation>
+		<operation name="setRecordUrnNbn">
+			<input
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/setRecordUrnNbnRequest"
+				message="tns:setRecordUrnNbn" />
+			<output
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/setRecordUrnNbnResponse"
+				message="tns:setRecordUrnNbnResponse" />
+			<fault message="tns:DigitizationRegistryException" name="DigitizationRegistryException"
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/setRecordUrnNbn/Fault/DigitizationRegistryException" />
+		</operation>
+		<operation name="addRecordUrnNbn">
+			<input
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/addRecordUrnNbnRequest"
+				message="tns:addRecordUrnNbn" />
+			<output
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/addRecordUrnNbnResponse"
+				message="tns:addRecordUrnNbnResponse" />
+			<fault message="tns:DigitizationRegistryException" name="DigitizationRegistryException"
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/addRecordUrnNbn/Fault/DigitizationRegistryException" />
+		</operation>
+		<operation name="setRecordState">
+			<input
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/setRecordStateRequest"
+				message="tns:setRecordState" />
+			<output
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/setRecordStateResponse"
+				message="tns:setRecordStateResponse" />
+			<fault message="tns:DigitizationRegistryException" name="DigitizationRegistryException"
+				wsam:Action="http://registrdigitalizace.cz/soapservices/DigitizationRegistry/setRecordState/Fault/DigitizationRegistryException" />
+		</operation>
+	</portType>
+	<binding name="DigitizationRegistryPortBinding" type="tns:DigitizationRegistry">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http"
+			style="document" />
+		<operation name="findRecords">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+			<fault name="DigitizationRegistryException">
+				<soap:fault name="DigitizationRegistryException" use="literal" />
+			</fault>
+		</operation>
+		<operation name="getRecordState">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+			<fault name="DigitizationRegistryException">
+				<soap:fault name="DigitizationRegistryException" use="literal" />
+			</fault>
+		</operation>
+		<operation name="setRecordUrnNbn">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+			<fault name="DigitizationRegistryException">
+				<soap:fault name="DigitizationRegistryException" use="literal" />
+			</fault>
+		</operation>
+		<operation name="addRecordUrnNbn">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+			<fault name="DigitizationRegistryException">
+				<soap:fault name="DigitizationRegistryException" use="literal" />
+			</fault>
+		</operation>
+		<operation name="setRecordState">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+			<fault name="DigitizationRegistryException">
+				<soap:fault name="DigitizationRegistryException" use="literal" />
+			</fault>
+		</operation>
+	</binding>
+	<service name="DigitizationRegistryService">
+		<port name="DigitizationRegistryPort" binding="tns:DigitizationRegistryPortBinding">
+			<soap:address
+				location="REPLACE_WITH_ACTUAL_URL" />
+		</port>
+	</service>
+</definitions>

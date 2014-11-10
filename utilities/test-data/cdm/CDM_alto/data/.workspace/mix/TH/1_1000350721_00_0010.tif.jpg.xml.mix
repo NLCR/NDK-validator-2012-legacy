@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><mix xmlns="http://www.loc.gov/mix/v20">
+<BasicDigitalObjectInformation>
+<ObjectIdentifier>
+<objectIdentifierType>JHOVE</objectIdentifierType>
+</ObjectIdentifier>
+<byteOrder>big endian</byteOrder>
+<Compression>
+<compressionScheme>JPEG</compressionScheme>
+</Compression>
+</BasicDigitalObjectInformation>
+<BasicImageInformation>
+<BasicImageCharacteristics>
+<imageWidth>135</imageWidth>
+<imageHeight>200</imageHeight>
+<PhotometricInterpretation>
+<colorSpace>YCbCr</colorSpace>
+</PhotometricInterpretation>
+</BasicImageCharacteristics>
+</BasicImageInformation>
+<ImageAssessmentMetadata>
+<SpatialMetrics>
+<samplingFrequencyUnit>in.</samplingFrequencyUnit>
+<xSamplingFrequency>
+<numerator>300</numerator>
+</xSamplingFrequency>
+<ySamplingFrequency>
+<numerator>300</numerator>
+</ySamplingFrequency>
+</SpatialMetrics>
+<ImageColorEncoding>
+<BitsPerSample>
+<bitsPerSampleUnit>integer</bitsPerSampleUnit>
+</BitsPerSample>
+<samplesPerPixel>1</samplesPerPixel>
+</ImageColorEncoding>
+</ImageAssessmentMetadata>
+</mix>

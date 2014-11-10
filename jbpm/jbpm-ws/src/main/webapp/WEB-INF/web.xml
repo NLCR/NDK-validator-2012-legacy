@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	
+	<display-name>jBPM WS Server</display-name>
+	<welcome-file-list>
+		<welcome-file>/jsp/index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:context-jbpm-ws.xml</param-value>
+	</context-param>
+	
+
+	
+	<!-- WS -->
+	<servlet>
+		<servlet-name>JBPMWSFacade</servlet-name>
+		<servlet-class>com.logica.ndk.tm.process.impl.JBPMWSFacadeImpl</servlet-class>
+		<init-param>
+		<param-name>enablePooling</param-name>
+		<param-value>false</param-value>
+		</init-param>
+	</servlet>
+	<!-- JSP -->
+	<servlet>
+		<servlet-name>ActiveInstances</servlet-name>
+		<servlet-class>com.logica.ndk.jbpm.servlet.ActiveInstancesServlet</servlet-class>
+		<init-param>
+			<param-name>enablePooling</param-name>
+			<param-value>false</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>History</servlet-name>
+		<servlet-class>com.logica.ndk.jbpm.servlet.HistoryServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>State</servlet-name>
+		<servlet-class>com.logica.ndk.jbpm.servlet.StateServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EndInstance</servlet-name>
+		<servlet-class>com.logica.ndk.jbpm.servlet.EndInstanceServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>StartDuplicateInstance</servlet-name>
+		<servlet-class>com.logica.ndk.jbpm.servlet.StartDuplicateInstanceServlet</servlet-class>
+	</servlet>	
+	<servlet>
+		<servlet-name>ActiveUtilities</servlet-name>
+		<servlet-class>com.logica.ndk.jbpm.servlet.ActiveUtilitiesServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ErrorStopServlet</servlet-name>
+		<servlet-class>com.logica.ndk.jbpm.servlet.ErrorStopServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProcessRuntimePropertiesServlet</servlet-name>
+		<servlet-class>com.logica.ndk.jbpm.servlet.ProcessRuntimePropertiesServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OutageConfigServlet</servlet-name>
+		<servlet-class>com.logica.ndk.jbpm.servlet.OutageConfigServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ErrorStopServlet</servlet-name>
+		<url-pattern>/ProcessErrorStopStatus</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OutageConfigServlet</servlet-name>
+		<url-pattern>/OutageConfig</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProcessRuntimePropertiesServlet</servlet-name>
+		<url-pattern>/ProcessRuntimeConfiguration</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JBPMWSFacade</servlet-name>
+		<url-pattern>/services</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ActiveInstances</servlet-name>
+		<url-pattern>/activeInstances</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>History</servlet-name>
+		<url-pattern>/history</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>State</servlet-name>
+		<url-pattern>/state</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EndInstance</servlet-name>
+		<url-pattern>/endInstance</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StartDuplicateInstance</servlet-name>
+		<url-pattern>/startDuplicateInstance</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>ActiveUtilities</servlet-name>
+		<url-pattern>/activeUtilities</url-pattern>
+	</servlet-mapping>
+</web-app>

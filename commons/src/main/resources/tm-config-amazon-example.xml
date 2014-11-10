@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <cdm>
+    <baseDir>//db/CDM-001</baseDir>
+    <recycleDir>//db/CDM-001-RECYCLE</recycleDir>
+  </cdm>
+</configuration>

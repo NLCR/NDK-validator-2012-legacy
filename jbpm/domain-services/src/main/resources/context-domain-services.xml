@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="classpath:context-domain-services.properties" />
+	</bean>
+
+	<bean id="getAlephDataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetAlephData" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GetAlephData" />
+	</bean>
+
+	<bean id="deactivateMetadataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="DeactivateMetadata" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/DeactivateMetadata" />
+	</bean>
+
+	<bean id="httpClientEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="HttpClient" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/HttpClient" />
+	</bean>
+	
+	<bean id="renameCdmByPath" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RenameCdmByPath" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RenameCdmByPath" />
+	</bean>
+
+	<bean id="waitForTimeEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="WaitForTime" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/WaitForTime" />
+	</bean>
+	
+	<bean id="notifyLtpOfErrorEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="NotifyLtpOfError" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/NotifyLtpOfError" />
+	</bean>	
+
+	<bean id="waitForFileEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="WaitForFile" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/WaitForFile" />
+	</bean>
+
+	<bean id="copyToEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyTo" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyTo" />
+	</bean>
+
+	<bean id="transformToMixAnalyzerEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="TransformToMixAnalyzer" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/TransformToMixAnalyzer" />
+	</bean>
+
+	<bean id="getFileAnalyzerEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetFileAnalyzer" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GetFileAnalyzer" />
+	</bean>
+
+	<bean id="prepareProcessDataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="PrepareProcessData" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/PrepareProcessData" />
+	</bean>
+
+	<bean id="fsOperationsGeneratorEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="FSOperationsGenerator" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/FSOperationsGenerator" />
+	</bean>
+
+	<bean id="testHandlingCDMPropEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="TestHandlingCDMProp" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/TestHandlingCDMProp" />
+	</bean>
+
+	<bean id="copyFromLtpToTrasDirEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyFromLtpToTrasDir" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyFromLtpToTrasDir" />
+	</bean>
+
+	<bean id="copyToSmallFilesEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyToSmallFiles" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyToSmallFiles" />
+	</bean>
+
+	<bean id="moveToEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="MoveTo" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/MoveTo" />
+	</bean>
+
+	<bean id="moveOcrFilesEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="MoveOcrFiles" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/MoveOcrFiles" />
+	</bean>
+
+	<bean id="moveFromTempToK4Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="MoveFromTempToK4" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/MoveFromTempToK4" />
+	</bean>
+
+	<bean id="copyAltoFromOcrOutputEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyAltoFromOcrOutput" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyAltoFromOcrOutput" />
+	</bean>
+
+	<bean id="copyTxtFromOcrOutputEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyTxtFromOcrOutput" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyTxtFromOcrOutput" />
+	</bean>
+
+	<bean id="evaluateOcrResultEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="EvaluateOcrResult" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/EvaluateOcrResult" />
+	</bean>
+
+	<bean id="noOcrEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="NoOcr" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/NoOcr" />
+	</bean>
+
+	<bean id="deleteOcrDirsEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="DeleteOcrDirs" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/DeleteOcrDirs" />
+	</bean>
+
+	<bean id="createCDMFromSIPEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateCDMFromSIP" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateCDMFromSIP" />
+	</bean>
+
+	<bean id="createInfoXmlForSIP1Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateInfoXmlForSIP1" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateInfoXmlForSIP1" />
+	</bean>
+
+	<bean id="generateFoxmlNoPagesEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GenerateFoxmlNoPages" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GenerateFoxmlNoPages" />
+	</bean>
+
+	<bean id="sendFoxmlToFedoraEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="SendFoxmlToFedora" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/SendFoxmlToFedora" />
+	</bean>
+
+	<bean id="sendFoxmlToK4Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="SendFoxmlToK4" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/SendFoxmlToK4" />
+	</bean>
+
+	<bean id="updateFoxmlMetadataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="UpdateFoxmlMetadata" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/UpdateFoxmlMetadata" />
+	</bean>
+
+	<bean id="copyFtpEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyFtp" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyFtp" />
+	</bean>
+
+	<bean id="deleteEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="Delete" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/Delete" />
+	</bean>
+
+	<bean id="deleteDirEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="DeleteDir" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/DeleteDir" />
+	</bean>
+
+	<bean id="failIfDirExistsEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="FailIfDirExists" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/FailIfDirExists" />
+	</bean>
+
+	<bean id="cleanDataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CleanData" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CleanData" />
+	</bean>
+
+	<bean id="copyToLTPImputEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyToLTPImput" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyToLTPImput" />
+	</bean>
+
+	<bean id="grantAccessEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GrantAccess" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GrantAccess" />
+	</bean>
+
+	<bean id="revokeAccessEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RevokeAccess" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RevokeAccess" />
+	</bean>
+
+	<bean id="filesListEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="FilesList" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/FilesList" />
+	</bean>
+
+	<bean id="checkOcrOutputEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckOcrOutput" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckOcrOutput" />
+	</bean>
+
+	<bean id="copyOcrResultEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyOcrResult" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyOcrResult" />
+	</bean>
+
+	<bean id="assignUrnNbnEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="AssignUrnNbn" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/AssignUrnNbn" />
+	</bean>
+	
+	<bean id="deactivateUrnNbnEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="DeactivateUrnNbn" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/DeactivateUrnNbn" />
+	</bean>
+
+	<bean id="updateUrnNbnEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="UpdateUrnNbn" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/UpdateUrnNbn" />
+	</bean>
+
+	<bean id="prepareForUrnNbnEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="PrepareForUrnNbn" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/PrepareForUrnNbn" />
+	</bean>
+
+	<bean id="invalidateUrnNbnEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="InvalidateUrnNbn" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/InvalidateUrnNbn" />
+	</bean>
+
+	<bean id="createDigitalInstanceEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateDigitalInstance" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateDigitalInstance" />
+	</bean>
+
+	<bean id="gitBackupEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GitBackup" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GitBackup" />
+	</bean>
+
+	<bean id="fileCharacterizationEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="FileCharacterization" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/FileCharacterization" />
+	</bean>
+
+	<bean id="tiffInfoCharacterizationEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="TiffInfoCharacterization" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/TiffInfoCharacterization" />
+	</bean>
+
+	<bean id="altoCharacterizationEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="AltoCharacterization" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/AltoCharacterization" />
+	</bean>
+
+	<bean id="smallFileCharacterizationEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="SmallFileCharacterization" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/SmallFileCharacterization" />
+	</bean>
+
+	<bean id="validatePSPScanEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidatePSPScan" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidatePSPScan" />
+	</bean>
+
+	<bean id="validateAlephBiblioMetadataOutputEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateAlephBiblioMetadata" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateAlephBiblioMetadata" />
+	</bean>
+
+	<bean id="validateMnsEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateMns" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateMns" />
+	</bean>
+	
+	<bean id="validateMixEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateMix" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateMix" />
+	</bean>
+
+	<bean id="validateCdmSip1Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateCdmSip1" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateCdmSip1" />
+	</bean>
+
+	<bean id="validatePPOutputEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidatePPOutput" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidatePPOutput" />
+	</bean>
+
+	<bean id="convertImageEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ConvertImage" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ConvertImage" />
+	</bean>
+
+	<bean id="convertToJpeg2000Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ConvertToJpeg2000" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ConvertToJpeg2000" />
+	</bean>
+
+	<bean id="convertToJpeg2000LTPEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ConvertToJpeg2000LTP" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ConvertToJpeg2000LTP" />
+	</bean>
+
+	<bean id="transformJpeg2000Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="TransformJpeg2000" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/TransformJpeg2000" />
+	</bean>
+
+	<bean id="convertToTiffEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ConvertToTiff" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ConvertToTiff" />
+	</bean>
+
+	<bean id="transformToRawDataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="TransformToRawData" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/TransformToRawData" />
+	</bean>
+
+	<bean id="convertMCToPPTifEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ConvertMCToPPTif" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ConvertMCToPPTif" />
+	</bean>
+
+	<bean id="pingEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="Ping" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/Ping" />
+	</bean>
+	
+	<bean id="startJBPMProcessEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="StartJBPMProcess" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/StartJBPMProcess" />
+	</bean>
+	
+	<bean id="startJBPMProcessElsewhereEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="StartJBPMProcessElsewhere" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/StartJBPMProcessElsewhere" />
+	</bean>
+	
+	<bean id="getJBPMProcessStateEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetJBPMProcessState" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GetJBPMProcessState" />
+	</bean>
+
+	<bean id="checkJBPMProcessStateElsewhereEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckJBPMProcessStateElsewhere" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckJBPMProcessStateElsewhere" />
+	</bean>
+
+	<bean id="deleteByEmEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="DeleteByEm" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/DeleteByEm" />
+	</bean>
+
+	<bean id="extendEmCsvEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ExtendEmCsv" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ExtendEmCsv" />
+	</bean>
+
+	<bean id="countValidPagesEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CountValidPages" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CountValidPages" />
+	</bean>
+
+	<bean id="someSampleEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="SomeSample" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/SomeSample" />
+	</bean>
+
+	<bean id="otherSampleEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="OtherSample" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/OtherSample" />
+	</bean>
+
+	<bean id="sedaSampleEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="SedaSample" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/SedaSample" />
+	</bean>
+
+	<bean id="createEmptyCdmEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateEmptyCdm" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateEmptyCdm" />
+	</bean>
+
+	<bean id="createScantailorConfigEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateScantailorConfig" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateScantailorConfig" />
+	</bean>
+
+	<bean id="runScantailorCropEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RunScantailorCrop" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RunScantailorCrop" />
+	</bean>
+
+	<bean id="runScantailorPreprocessEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RunScantailorPreprocess" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RunScantailorPreprocess" />
+	</bean>
+
+	<bean id="importScantailorResultEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ImportScantailorResult" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ImportScantailorResult" />
+	</bean>
+
+	<bean id="countPreprocessPagesEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CountPreprocessPages" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CountPreprocessPages" />
+	</bean>
+
+	<bean id="handleManualPostprocessEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="HandleManualPostprocess" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/HandleManualPostprocess" />
+	</bean>
+
+	<bean id="createCdmFromSkenEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateCdmFromSken" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateCdmFromSken" />
+	</bean>
+
+	<bean id="validateCdmBasicEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateCdmBasic" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateCdmBasic" />
+	</bean>
+
+	<bean id="validateAltoFilesEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateAltoFiles" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateAltoFiles" />
+	</bean>
+
+	<bean id="validateCdmMetadataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateCdmMetadata" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateCdmMetadata" />
+	</bean>
+
+	<bean id="createMetsEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateMets" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateMets" />
+	</bean>
+
+	<bean id="createAmdMetsAfterMigrationEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateAmdMetsAfterMigration" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateAmdMetsAfterMigration" />
+	</bean>
+
+	<bean id="checkIfMetsExistsEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckIfMetsExists" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckIfMetsExists" />
+	</bean>
+
+	<bean id="createMetsMnsEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateMetsMns" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateMetsMns" />
+	</bean>
+
+	<bean id="createMD5FileEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateMD5File" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateMD5File" />
+	</bean>
+
+	<bean id="createOriginalDataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateOriginalData" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateOriginalData" />
+	</bean>
+
+	<bean id="createEmConfigEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateEmConfig" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateEmConfig" />
+	</bean>
+
+	<bean id="createEmConfigFromMetsEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateEmConfigFromMets" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateEmConfigFromMets" />
+	</bean>
+
+	<bean id="saveAlephMetadataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="SaveAlephMetadata" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/SaveAlephMetadata" />
+	</bean>
+
+	<bean id="generateUuidEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GenerateUuid" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GenerateUuid" />
+	</bean>
+
+	<bean id="rsyncEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="Rsync" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/Rsync" />
+	</bean>
+
+	<bean id="createSIP1FromCDMEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateSIP1FromCDM" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateSIP1FromCDM" />
+	</bean>
+
+	<bean id="importSIP1Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ImportSIP1" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ImportSIP1" />
+	</bean>
+
+	<bean id="importSIP1LTPEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ImportSIP1LTP" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ImportSIP1LTP" />
+	</bean>
+
+	<bean id="checkSIP1ImportResultEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckSIP1ImportResult" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckSIP1ImportResult" />
+	</bean>
+
+	<bean id="generateFoxmlForSIP2Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GenerateFoxmlForSIP2" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GenerateFoxmlForSIP2" />
+	</bean>
+
+	<bean id="createSIP2FromCDMEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateSIP2FromCDM" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateSIP2FromCDM" />
+	</bean>
+
+	<bean id="createLogForLTPImportEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateLogForLTPImport" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateLogForLTPImport" />
+	</bean>
+
+	<bean id="startKrameriusProcessEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="StartKrameriusProcess" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/StartKrameriusProcess" />
+	</bean>
+	
+	<bean id="startKrameriusIndexProcessEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="StartKrameriusIndexProcess" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/StartKrameriusIndexProcess" />
+	</bean>
+
+	<bean id="checkKrameriusProcessResultEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckKrameriusProcessResult" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckKrameriusProcessResult" />
+	</bean>
+
+	<bean id="checkExistenceOfUuidEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckExistenceOfUuid" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckExistenceOfUuid" />
+	</bean>
+
+	<bean id="deleteFromK4Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="DeleteFromK4" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/DeleteFromK4" />
+	</bean>
+
+	<bean id="getKrameriusUuidPathEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetKrameriusUuidPath" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GetKrameriusUuidPath" />
+	</bean>
+
+	<bean id="checkKrameriusNoBatchProcessResultEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckKrameriusNoBatchProcessResult" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckKrameriusNoBatchProcessResult" />
+	</bean>
+
+	<bean id="clearKrameriusFolderEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ClearKrameriusFolder" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ClearKrameriusFolder" />
+	</bean>
+
+	<bean id="commandLineUtilityEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CommandLineUtility" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CommandLineUtility" />
+	</bean>
+
+	<bean id="generatePremisEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GeneratePremis" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GeneratePremis" />
+	</bean>
+	
+	<bean id="generatePremisKrameriusImportEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GeneratePremisKrameriusImport" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GeneratePremisKrameriusImport" />
+	</bean>
+
+	<bean id="generatePremisFormatMigrationEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GeneratePremisFormatMigration" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GeneratePremisFormatMigration" />
+	</bean>
+
+	<bean id="transformAMDMetsToPremisEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="TransformAMDMetsToPremis" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/TransformAMDMetsToPremis" />
+	</bean>
+
+	<bean id="transformPremisToCVSEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="TransformPremisToCVS" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/TransformPremisToCVS" />
+	</bean>
+
+	<bean id="generatePremisManualOCREndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GeneratePremisManualOCR" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GeneratePremisManualOCR" />
+	</bean>
+
+	<bean id="generateEventEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GenerateEvent" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GenerateEvent" />
+	</bean>
+
+	<bean id="generateEventFormatMigrationEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GenerateEventFormatMigration" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GenerateEventFormatMigration" />
+	</bean>
+
+	<bean id="splitByIntEntityEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="SplitByIntEntity" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/SplitByIntEntity" />
+	</bean>
+
+	<bean id="getBibliographicDataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetBibliographicData" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GetBibliographicData" />
+	</bean>
+
+	<bean id="getBibliographicDataFromImportEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetBibliographicDataFromImport" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address"
+			value="${services.url}/GetBibliographicDataFromImport" />
+	</bean>
+
+	<bean id="getAIPIdentificatorEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetAIPIdentificator" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GetAIPIdentificator" />
+	</bean>
+
+	<bean id="createPDFEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreatePDF" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreatePDF" />
+	</bean>
+
+	<bean id="createTXTEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateTXT" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateTXT" />
+	</bean>
+
+	<bean id="createScansCSVEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateScansCSV" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateScansCSV" />
+	</bean>
+
+	<bean id="createFlatStructureEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateFlatStructure" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateFlatStructure" />
+	</bean>
+	
+	<bean id="checkRawDataHardLinksEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckRawDataHardLinks" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckRawDataHardLinks" />
+	</bean>
+
+	<bean id="createCdmByIdEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateCDMById" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateCDMById" />
+	</bean>
+
+	<bean id="cleanFilesByPPDirEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CleanFilesByPPDir" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CleanFilesByPPDir" />
+	</bean>
+
+	<bean id="copyFilesFromLTPImpotToCDMEndPoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyFilesFromLTPImpotToCDM" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyFilesFromLTPImpotToCDM" />
+	</bean>
+
+	<bean id="renameImportedFilesFromLTPEndPoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RenameImportedFilesFromLTP" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RenameImportedFilesFromLTP" />
+	</bean>
+
+	<bean id="backUpMetadataFilesEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="BackUpMetadataFiles" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/BackUpMetadataFiles" />
+	</bean>
+
+	<bean id="updateFilesModificationTimeEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="UpdateFilesModificationTime" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/UpdateFilesModificationTime" />
+	</bean>
+
+	<bean id="createEmptyScanBatchFolderEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateEmptyScanBatchFolder" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateEmptyScanBatchFolder" />
+	</bean>
+
+	<bean id="validateMD5Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateMD5" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateMD5" />
+	</bean>
+
+	<bean id="updateMetsEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="UpdateMets" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/UpdateMets" />
+	</bean>
+
+	<bean id="updateModsAndDcEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="UpdateModsAndDc" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/UpdateModsAndDc" />
+	</bean>
+
+	<bean id="updateAmdSecEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="UpdateAmdSec" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/UpdateAmdSec" />
+	</bean>
+
+	<bean id="getUUIDFromMetsEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetUUIDFromMets" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GetUUIDFromMets" />
+	</bean>
+
+	<bean id="getUUIDEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetUUID" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GetUUID" />
+	</bean>
+
+	<bean id="getUuidFromMetsFileEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="GetUuidFromMetsFile" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/GetUuidFromMetsFile" />
+	</bean>
+
+	<bean id="setVolumeUuidEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="SetVolumeUuid" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/SetVolumeUuid" />
+	</bean>
+
+	<bean id="createIntEntitiesEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateIntEntities" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateIntEntities" />
+	</bean>
+
+	<bean id="deactivateInWFEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="DeactivateInWF" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/DeactivateInWF" />
+	</bean>
+
+	<bean id="createSignatureEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateSignature" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateSignature" />
+	</bean>
+
+	<bean id="createIntEntitiesFromImportEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateIntEntitiesFromImport" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateIntEntitiesFromImport" />
+	</bean>
+
+	<bean id="createPackageForFormatMigrationEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreatePackageForFormatMigration" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreatePackageForFormatMigration" />
+	</bean>
+
+	<bean id="createScansForFormatMigrationEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateScansForFormatMigration" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateScansForFormatMigration" />
+	</bean>
+
+	<bean id="createPackageForLTPImportEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreatePackageForLTPImport" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreatePackageForLTPImport" />
+	</bean>
+
+	<bean id="antivirEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="Antivir" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/Antivir" />
+	</bean>
+
+	<bean id="createEmptyCdmWAEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateEmptyCdmWA" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateEmptyCdmWA" />
+	</bean>
+
+	<bean id="arc2WarcEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="Arc2Warc" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/Arc2Warc" />
+	</bean>
+
+	<bean id="warcDumpEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="WarcDump" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/WarcDump" />
+	</bean>
+
+	<bean id="validateWAEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateWA" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateWA" />
+	</bean>
+
+	<bean id="waLogEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="WaLog" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/WaLog" />
+	</bean>
+
+	<bean id="harvestLogEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="HarvestLog" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/HarvestLog" />
+	</bean>
+
+	<bean id="rdSetRecordStateEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RDSetRecordState" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RDSetRecordState" />
+	</bean>
+
+	<bean id="rdAddRecordUrnNbnEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RDAddRecordUrnNbn" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RDAddRecordUrnNbn" />
+	</bean>
+
+	<bean id="rdSetRecordUrnNbnEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RDSetRecordUrnNbn" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RDSetRecordUrnNbn" />
+	</bean>
+
+	<bean id="createAlephRecordEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateAlephRecord" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateAlephRecord" />
+	</bean>
+
+	<bean id="checkAlephResponseEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckAlephResponse" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckAlephResponse" />
+	</bean>
+
+	<bean id="convertDjVuToTiffEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ConvertDjVuToTiff" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ConvertDjVuToTiff" />
+	</bean>
+
+	<bean id="createMetsK4Endpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateMetsK4" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateMetsK4" />
+	</bean>
+
+	<bean id="updateCdmEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="UpdateCdm" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/UpdateCdm" />
+	</bean>
+
+	<bean id="validateImagesForPostprocEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateImagesForPostproc" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateImagesForPostproc" />
+	</bean>
+
+	<!-- <bean id="shutDownServiceEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint"> 
+		<property name="serviceName" value="ShutDownService" /> <property name="namespace" 
+		value="http://wwww.logica.com/ndk/tm/process" /> <property name="address" 
+		value="${services.url}/ShutDownService" /> </bean> -->
+	<bean id="removeCDMByIdEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RemoveCDMById" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RemoveCDMById" />
+	</bean>
+	
+	<bean id="createRdcCsvFileEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateRdcCsvFile" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateRdcCsvFile" />
+	</bean>
+
+	<bean id="mergeCDMEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="MergeCDM" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/MergeCDM" />
+	</bean>
+
+	<bean id="updateMetsFilesEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="UpdateMetsFiles" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/UpdateMetsFiles" />
+	</bean>
+
+	<bean id="removePrefixEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RemovePrefix" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RemovePrefix" />
+	</bean>
+
+	<bean id="validateEmResultEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateEmResult" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateEmResult" />
+	</bean>
+	
+	<bean id="validateEmCsvEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateEmCsv" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateEmCsv" />
+	</bean>
+
+	<bean id="updateMetsDCEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="UpdateMetsDC" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/UpdateMetsDC" />
+	</bean>
+
+	<bean id="repairDCEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RepairDC" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RepairDC" />
+	</bean>
+
+	<bean id="validateTiffinfoEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ValidateTiffinfo" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ValidateTiffinfo" />
+	</bean>
+
+	<bean id="createAlephEnrichedDataEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateAlephEnrichedData" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateAlephEnrichedData" />
+	</bean>
+
+	<bean id="convertImagesForSTEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ConvertImagesForST" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ConvertImagesForST" />
+	</bean>
+
+	<bean id="copyToOcrInputEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CopyToOcrInput" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CopyToOcrInput" />
+	</bean>
+
+	<bean id="cmdLineAdvancedEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CmdLineAdvanced" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CmdLineAdvanced" />
+	</bean>
+
+	<bean id="checkFreeDiskSpaceEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CheckFreeDiskSpace" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CheckFreeDiskSpace" />
+	</bean>
+
+	<bean id="createMappingEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="CreateMapping" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/CreateMapping" />
+	</bean>
+
+	<bean id="retryTestEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="RetryTest" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/RetryTest" />
+	</bean>
+	
+	<bean id="analyzeImportEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="AnalyzeImport" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/AnalyzeImport" />
+	</bean>
+
+	<bean id="convertJpgToTiffEndpoint" class="com.logica.ndk.tm.jbpm.ws.EndPoint">
+		<property name="serviceName" value="ConvertJpgToTiff" />
+		<property name="namespace" value="http://wwww.logica.com/ndk/tm/process" />
+		<property name="address" value="${services.url}/ConvertJpgToTiff" />
+	</bean>
+
+	<!-- JMS -->
+
+	<bean id="jmsConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory"
+		destroy-method="stop">
+		<property name="connectionFactory">
+			<bean class="org.apache.activemq.ActiveMQConnectionFactory">
+				<property name="brokerURL">
+					<value>${activemq.broker.url}</value>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="responseMessageListener" class="com.logica.ndk.tm.jbpm.jms.ResponseMessageListener" />
+
+	<bean id="jmsContainer"
+		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="jmsConnectionFactory" />
+		<!-- maybe set this by JNDI (responseQueue will be bean of class org.springframework.jndi.JndiObjectFactoryBean) 
+			property name="destination" ref="responseQueue" / -->
+		<property name="destinationName" value="responseQueue" />
+		<property name="messageListener" ref="responseMessageListener" />
+		<property name="sessionTransacted" value="true" />
+		<property name="cacheLevelName" value="CACHE_CONSUMER" />
+		<property name="maxConcurrentConsumers" value="3" />
+	</bean>
+
+	<!-- <bean id="simpleTrigger" class="com.logica.ndk.tm.jbpm.asyncTimer.FinishRegistedWorkItemsJob">
+  		
+  		<property name="jobDetail" ref="jobDetail"/>
+		
+  		<property name="startDelay" value="30000"/>
+		
+  		<property name="repeatInterval" value="10000"/>
+	</bean>
+	
+	<bean id="jobDetail" class="com.logica.ndk.tm.jbpm.asyncTimer.RegistrWorkItemHandler">
+  		<property name="targetObject" ref="com.logica.ndk.tm.jbpm.asyncTimer.RegistrWorkItemHandler"/>
+  		<property name="targetMethod" value="execute"/>
+  		<property name="concurrent" value="false"/>
+	</bean> -->
+
+</beans>

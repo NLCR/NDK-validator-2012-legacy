@@ -1,0 +1,638 @@
+<!-- ************************************************************************ -->
+<!-- DIG35 Metadata DTD 2000-03-06                                            -->
+<!--                                                                          -->
+<!-- This version is for DIG35 Metadata Working Draft 1.0 (20000306)          -->
+<!-- ************************************************************************ -->
+<!-- Predefined General Entities -->
+<!ENTITY lt "&#38;#60;">
+<!ENTITY gt "&#62;">
+<!ENTITY amp "&#38;#38;">
+<!ENTITY apos "&#39;">
+<!ENTITY quot "&#34;">
+<!-- ======================================================================== -->
+<!-- DIG35 Root element                                                       -->
+<!-- ======================================================================== -->
+<!ELEMENT METADATA ((BASIC_PARAM?, CREATION?, CONTENT?, HISTORY?, IPR?), METADATA*)>
+<!ATTLIST METADATA
+	xmlLang NMTOKEN #IMPLIED
+	TYPE (SINGLE | COLLECTION) "SINGLE"
+>
+<!-- ======================================================================== -->
+<!-- Fundamental Type and Field Definitions                                   -->
+<!-- ======================================================================== -->
+<!-- Attribute definitions -->
+<!ENTITY % att-lang "xmlLang CDATA #IMPLIED">
+<!ENTITY % att-timestamp "TIMESTAMP CDATA #IMPLIED">
+<!ENTITY % att-lang-ts "%att-lang; %att-timestamp;">
+<!ENTITY % att-lang-ts-id "%att-lang-ts; IDENTIFIER ID #IMPLIED">
+<!ENTITY % att-uri-loc "linkRef CDATA #REQUIRED">
+<!--"xmlns:xlink  CDATA #FIXED 'http://www.w3.org/XML/XLink'
+                        xlink:href CDATA #REQUIRED"-->
+<!-- Date and Time Type -->
+<!ENTITY % date-element "YEAR?, MONTH?, DAY?, SEASON?">
+<!ENTITY % time-element "HOUR?, MINUTE?, SECOND?">
+<!ENTITY % dig35-date "(%date-element;, PROPRIETARY?,
+                                             COMMENT?)">
+<!ENTITY % dig35-time "(%time-element;, PROPRIETARY?,
+                                             COMMENT?)">
+<!ENTITY % dig35-date-time "(%date-element;, %time-element;,
+                                            PROPRIETARY?, COMMENT?)">
+<!ELEMENT DATE_TIME %dig35-date-time;>
+<!ATTLIST DATE_TIME
+	%att-lang-ts; 
+>
+<!ELEMENT DATE (%date-element;, SEASON?, PROPRIETARY?, COMMENT?)>
+<!ATTLIST DATE
+	%att-lang-ts; 
+>
+<!ELEMENT TIME (%time-element;, PROPRIETARY?, COMMENT?)>
+<!ATTLIST TIME
+	%att-lang-ts; 
+>
+<!ELEMENT YEAR (#PCDATA)>
+<!ELEMENT MONTH (#PCDATA)>
+<!ELEMENT DAY (#PCDATA)>
+<!ELEMENT SEASON (#PCDATA)>
+<!ATTLIST SEASON
+	%att-lang; 
+>
+<!ELEMENT HOUR (#PCDATA)>
+<!ELEMENT MINUTE (#PCDATA)>
+<!ELEMENT SECOND (#PCDATA)>
+<!-- Product Description Type-->
+<!ENTITY % dig35-product-desc "(MANUFACTURER?, MODEL?, SERIAL? )">
+<!ELEMENT MANUFACTURER (#PCDATA)>
+<!ELEMENT MODEL (#PCDATA)>
+<!ELEMENT SERIAL (#PCDATA)>
+<!-- Person Description Type-->
+<!ENTITY % dig35-person "(NAME_TITLE?,
+                                             PERSON_NAME*, NICK_NAME?,
+                                             JOB_TITLE?, COMPANY_NAME?,
+                                             ADDRESS*, PHONE*, EMAIL*, WEB*,
+                                             BIRTH_DATE?, AGE?,
+                                             PROPRIETARY?, COMMENT?)">
+<!ELEMENT NAME_TITLE (#PCDATA)>
+<!ATTLIST NAME_TITLE
+	%att-lang-ts; 
+>
+<!ELEMENT PERSON_NAME (NC+)>
+<!ATTLIST PERSON_NAME
+	%att-lang-ts; 
+>
+<!ELEMENT NC (#PCDATA)>
+<!ATTLIST NC
+	TYPE (prefix | given | family | suffix) "given"
+>
+<!ELEMENT NICK_NAME (#PCDATA)>
+<!ATTLIST NICK_NAME
+	%att-lang-ts; 
+>
+<!ELEMENT JOB_TITLE (#PCDATA)>
+<!ATTLIST JOB_TITLE
+	%att-lang-ts; 
+>
+<!ELEMENT COMPANY_NAME (#PCDATA)>
+<!ATTLIST COMPANY_NAME
+	%att-lang-ts; 
+>
+<!ELEMENT PHONE (#PCDATA)>
+<!ATTLIST PHONE
+	%att-timestamp; 
+	TYPE CDATA #IMPLIED
+>
+<!ELEMENT EMAIL (#PCDATA)>
+<!ATTLIST EMAIL
+	%att-lang-ts; 
+	TYPE CDATA #IMPLIED
+>
+<!ELEMENT WEB EMPTY>
+<!ATTLIST WEB
+	%att-lang-ts; 
+	%att-uri-loc; 
+	TYPE CDATA #IMPLIED
+>
+<!ELEMENT BIRTH_DATE %dig35-date;>
+<!ELEMENT AGE (#PCDATA)>
+<!ATTLIST AGE
+	%att-lang-ts; 
+>
+<!-- Organization type -->
+<!ENTITY % dig35-org "(ORGANIZATION_NAME?,
+                                             ADDRESS*, PHONE*, EMAIL*, WEB*,
+                                             PROPRIETARY?, COMMENT?)">
+<!ELEMENT ORGANIZATION_NAME (#PCDATA)>
+<!ATTLIST ORGANIZATION_NAME
+	%att-lang-ts; 
+>
+<!-- Comment field -->
+<!ELEMENT COMMENT (#PCDATA)>
+<!ATTLIST COMMENT
+	%att-lang-ts; 
+>
+<!-- Proprietary field -->
+<!ELEMENT PROPRIETARY ANY>
+<!ATTLIST PROPRIETARY
+	%att-lang-ts; 
+	BLIND_WRTIE (TRUE | FALSE) "FALSE"
+>
+<!-- Location type -->
+<!ENTITY % dig35-location "(COORD_LOC?, UTM_COORD_LOC?, ADDRESS?,
+                                            GPS?, PROPRIETARY?, COMMENT?)">
+<!ELEMENT LOCATION %dig35-location;>
+<!ATTLIST LOCATION
+	%att-lang-ts; 
+>
+<!ELEMENT COORD_LOC (LONGITUDE?, LATITUDE?)>
+<!ATTLIST COORD_LOC
+	%att-timestamp; 
+>
+<!ELEMENT LONGITUDE (#PCDATA)>
+<!ELEMENT LATITUDE (#PCDATA)>
+<!ELEMENT UTM_COORD_LOC (ALTITUDE?, DATUM?, ZONE?, UTM_LONGITUDE?, UTM_LATITUDE?)>
+<!ATTLIST UTM_COORD_LOC
+	%att-timestamp; 
+>
+<!ELEMENT ALTITUDE (#PCDATA)>
+<!ELEMENT DATUM (#PCDATA)>
+<!ELEMENT ZONE (#PCDATA)>
+<!ELEMENT UTM_LONGITUDE (#PCDATA)>
+<!ELEMENT UTM_LATITUDE (#PCDATA)>
+<!--  Address type -->
+<!ELEMENT ADDRESS (ADDR_NAME?, ADDR*, (POSTCODE | ZIPCODE)?, COUNTRY?, TYPE?)>
+<!ATTLIST ADDRESS
+	%att-lang-ts; 
+>
+<!ELEMENT ADDR_NAME (#PCDATA)>
+<!ELEMENT ADDR (#PCDATA)>
+<!ATTLIST ADDR
+	TYPE CDATA #IMPLIED
+>
+<!ELEMENT POSTCODE (#PCDATA)>
+<!ELEMENT ZIPCODE (#PCDATA)>
+<!ELEMENT COUNTRY (#PCDATA)>
+<!ATTLIST COUNTRY
+	%att-lang; 
+>
+<!ELEMENT TYPE (#PCDATA)>
+<!-- GPS type -->
+<!-- This section still needs completion depending on DIG35 specification changes. -->
+<!ELEMENT GPS (COORD_LOC?, TIME?, GPS_SATELLITES?, GPS_STATUS?, GPS_MEASURE_MODE?, GPS_DOP?, GPS_SPEED?, GPS_TRACK?, GPS_IMAGE_DIR?, GPS_MAP_DATUM?, GPS_DEST_LOC?, GPS_DEST_BEARING?, GPS_DEST_DISTANCE?)>
+<!ELEMENT GPS_SATELLITES (#PCDATA)>
+<!ELEMENT GPS_STATUS (#PCDATA)>
+<!ELEMENT GPS_MEASURE_MODE (#PCDATA)>
+<!ELEMENT GPS_DOP (#PCDATA)>
+<!ELEMENT GPS_SPEED (#PCDATA)>
+<!ELEMENT GPS_TRACK (#PCDATA)>
+<!ELEMENT GPS_IMAGE_DIR (#PCDATA)>
+<!ELEMENT GPS_MAP_DATUM (#PCDATA)>
+<!ELEMENT GPS_DEST_LOC (ZONE, LONGITUDE, LATITUDE)>
+<!ELEMENT GPS_DEST_BEARING (#PCDATA)>
+<!ELEMENT GPS_DEST_DISTANCE (#PCDATA)>
+<!-- Direction type-->
+<!ENTITY % dig35-direction "(YAW?, PITCH?, ROLL?)">
+<!ELEMENT DIRECTION %dig35-direction;>
+<!ATTLIST DIRECTION
+	%att-timestamp; 
+>
+<!ELEMENT YAW (#PCDATA)>
+<!ELEMENT PITCH (#PCDATA)>
+<!ELEMENT ROLL (#PCDATA)>
+<!-- Position type -->
+<!-- Changed; need clarification -->
+<!ENTITY % dig35-position "(((POINT | RECT) |
+                                            RECT | REGION)?,
+                                            PROPRIETARY?, COMMENT?)">
+<!ELEMENT POSITION %dig35-position;>
+<!ATTLIST POSITION
+	%att-lang-ts; 
+>
+<!ELEMENT POINT (X, Y)>
+<!ELEMENT RECT (X, Y, WIDTH, HEIGHT)>
+<!ELEMENT REGION ((X1, Y1, X2?, Y2?, X3?, Y3?)*)>
+<!ELEMENT X (#PCDATA)>
+<!ELEMENT Y (#PCDATA)>
+<!ELEMENT WIDTH (#PCDATA)>
+<!ELEMENT HEIGHT (#PCDATA)>
+<!ELEMENT X1 (#PCDATA)>
+<!ELEMENT Y1 (#PCDATA)>
+<!ELEMENT X2 (#PCDATA)>
+<!ELEMENT Y2 (#PCDATA)>
+<!ELEMENT X3 (#PCDATA)>
+<!ELEMENT Y3 (#PCDATA)>
+<!-- ======================================================================== -->
+<!-- Basic Image Parameter                                                    -->
+<!-- ======================================================================== -->
+<!ELEMENT BASIC_PARAM (BASIC_INFO?, OUTPUT?, COLOR_INFO?, CHANNEL_LIST?)>
+<!ATTLIST BASIC_PARAM
+	%att-lang-ts; 
+>
+<!ELEMENT BASIC_INFO (FILE?, IMAGE_ID?, IMAGE_SIZE?, BITS_PER_COMP*, NUM_COMPONENTS?, COMPRESSION?)>
+<!ATTLIST BASIC_INFO
+	%att-lang-ts; 
+>
+<!ELEMENT FILE EMPTY>
+<!ATTLIST FILE
+	REF ENTITY #IMPLIED
+>
+<!ELEMENT IMAGE_ID (#PCDATA)>
+<!ATTLIST IMAGE_ID
+	%att-lang-ts; 
+>
+<!ELEMENT IMAGE_SIZE (WIDTH, HEIGHT)>
+<!ATTLIST IMAGE_SIZE
+	%att-timestamp; 
+>
+<!ELEMENT BITS_PER_COMP (#PCDATA)>
+<!ATTLIST BITS_PER_COMP
+	%att-timestamp; 
+>
+<!ELEMENT NUM_COMPONENTS (#PCDATA)>
+<!ATTLIST NUM_COMPONENTS
+	%att-timestamp; 
+>
+<!ELEMENT COMPRESSION (#PCDATA)>
+<!ATTLIST COMPRESSION
+	%att-lang-ts; 
+>
+<!ELEMENT OUTPUT (WIDTH, HEIGHT)>
+<!ATTLIST OUTPUT
+	%att-timestamp; 
+>
+<!ELEMENT COLOR_INFO (COLORSPACE+)>
+<!ATTLIST COLOR_INFO
+	%att-lang-ts; 
+>
+<!ELEMENT COLORSPACE (#PCDATA)>
+<!ATTLIST COLORSPACE
+	%att-lang-ts; 
+	REF ENTITY #IMPLIED
+>
+<!ELEMENT CHANNEL_LIST (CHANNEL+)>
+<!ATTLIST CHANNEL_LIST
+	%att-lang-ts; 
+	PREMULTIPLIED (TRUE | FALSE) "FALSE"
+>
+<!ELEMENT CHANNEL (CH_NAME, SIZE)>
+<!ELEMENT CH_NAME (#PCDATA)>
+<!ELEMENT SIZE (#PCDATA)>
+<!-- ======================================================================== -->
+<!-- Image Creation                                                           -->
+<!-- ======================================================================== -->
+<!ELEMENT CREATION (GENERAL_CREATION?, CAMERA_CAPTURE?, SCANNER_CAPTURE?, CAPTURED_ITEM?)>
+<!ATTLIST CREATION
+	%att-lang-ts; 
+>
+<!-- General Image Creation -->
+<!ELEMENT GENERAL_CREATION (CREATION_TIME?, SOURCE?, SCENE_TYPE?, IMAGE_CREATOR?, OPERATOR_ORG?, OPERATOR_ID?)>
+<!ATTLIST GENERAL_CREATION
+	%att-lang-ts; 
+>
+<!ELEMENT CREATION_TIME %dig35-date-time;>
+<!ATTLIST CREATION_TIME
+	%att-lang-ts; 
+>
+<!ELEMENT SOURCE (#PCDATA)>
+<!ATTLIST SOURCE
+	%att-lang-ts; 
+>
+<!ELEMENT SCENE_TYPE (#PCDATA)>
+<!ATTLIST SCENE_TYPE
+	%att-lang-ts; 
+>
+<!ELEMENT IMAGE_CREATOR (#PCDATA)>
+<!ATTLIST IMAGE_CREATOR
+	%att-lang-ts; 
+>
+<!ELEMENT OPERATOR_ORG %dig35-org;>
+<!ATTLIST OPERATOR_ORG
+	%att-lang-ts; 
+>
+<!ELEMENT OPERATOR_ID (#PCDATA)>
+<!ATTLIST OPERATOR_ID
+	%att-lang-ts; 
+>
+<!-- Camera capture -->
+<!ELEMENT CAMERA_CAPTURE (CAMERA_INFO?, SOFTWARE_INFO?, LENS_INFO?, DEVICE?, CAMERA_SETTINGS?, ACCESSORY*)>
+<!ATTLIST CAMERA_CAPTURE
+	%att-lang-ts; 
+>
+<!ELEMENT CAMERA_INFO %dig35-product-desc;>
+<!ATTLIST CAMERA_INFO
+	%att-lang-ts; 
+>
+<!ELEMENT SOFTWARE_INFO %dig35-product-desc;>
+<!ATTLIST SOFTWARE_INFO
+	%att-lang-ts; 
+>
+<!ELEMENT LENS_INFO %dig35-product-desc;>
+<!ATTLIST LENS_INFO
+	%att-lang-ts; 
+>
+<!ELEMENT DEVICE (SENSOR_TECHNOLOGY?, FOCAL_PLANE_RES?, SPECTRAL_SENSITIVITY?, ISO_SATURATION?, ISO_NOISE?, SPATIAL_FREQ_RESP?, CFA_PATTERN?, OECF?, MAX_APERTURE?)>
+<!ATTLIST DEVICE
+	%att-lang-ts; 
+>
+<!ELEMENT SENSOR_TECHNOLOGY (#PCDATA)>
+<!ATTLIST SENSOR_TECHNOLOGY
+	%att-lang-ts; 
+>
+<!ELEMENT FOCAL_PLANE_RES (X, Y)>
+<!ATTLIST FOCAL_PLANE_RES
+	%att-lang-ts; 
+>
+<!ELEMENT SPECTRAL_SENSITIVITY (#PCDATA)>
+<!ELEMENT ISO_SATURATION (#PCDATA)>
+<!ELEMENT ISO_NOISE (#PCDATA)>
+<!ELEMENT SPATIAL_FREQ_RESP (SPATIAL_FREQ_VAL+)>
+<!ELEMENT SPATIAL_FREQ_VAL (SPATIAL_FREQ, HORIZONTAL_SFR, VERTICAL_SFR)>
+<!ELEMENT SPATIAL_FREQ (#PCDATA)>
+<!ELEMENT HORIZONTAL_SFR (#PCDATA)>
+<!ELEMENT VERTICAL_SFR (#PCDATA)>
+<!ELEMENT CFA_PATTERN (COLOR_ROW+)>
+<!ELEMENT COLOR_ROW (COLOR+)>
+<!ELEMENT COLOR (#PCDATA)>
+<!ELEMENT OECF (LOG_VAL+)>
+<!ELEMENT LOG_VAL (LOG_EXPOSURE, OUTPUT_LEVEL+)>
+<!ELEMENT LOG_EXPOSURE (#PCDATA)>
+<!ELEMENT OUTPUT_LEVEL (#PCDATA)>
+<!ELEMENT MAX_APERTURE (#PCDATA)>
+<!-- Camera settings -->
+<!ELEMENT CAMERA_SETTINGS (EXP_TIME?, SHUTTER_SPEED?, F_NUMBER?, APERTURE?, EXP_PROGRAM?, BRIGHTNESS?, EXPOSURE_BIAS?, SUBJECT_DISTANCE?, METERING_MODE?, SCENE_ILLUMINANT?, COLOR_TEMP?, FOCAL_LENGTH?, FLASH?, FLASH_ENERGY?, FLASH_RETURN?, BACK_LIGHT?, SUBJECT_LOCATION?, EXPOSURE_INDEX?, AUTO_FOCUS?, SPECIAL_EFFECTS*, CAMERA_LOCATION?, ORIENTATION?, PAR?)>
+<!ATTLIST CAMERA_SETTINGS
+	%att-lang-ts; 
+>
+<!ELEMENT EXP_TIME (#PCDATA)>
+<!ELEMENT SHUTTER_SPEED (#PCDATA)>
+<!ELEMENT F_NUMBER (#PCDATA)>
+<!ELEMENT APERTURE (#PCDATA)>
+<!ELEMENT EXP_PROGRAM (#PCDATA)>
+<!ELEMENT BRIGHTNESS (#PCDATA)>
+<!ELEMENT EXPOSURE_BIAS (#PCDATA)>
+<!ELEMENT SUBJECT_DISTANCE (#PCDATA)>
+<!ELEMENT METERING_MODE (#PCDATA)>
+<!ELEMENT SCENE_ILLUMINANT (#PCDATA)>
+<!ELEMENT COLOR_TEMP (#PCDATA)>
+<!ELEMENT FOCAL_LENGTH (#PCDATA)>
+<!ELEMENT FLASH (#PCDATA)>
+<!ELEMENT FLASH_ENERGY (#PCDATA)>
+<!ELEMENT FLASH_RETURN (#PCDATA)>
+<!ELEMENT BACK_LIGHT (#PCDATA)>
+<!ELEMENT SUBJECT_LOCATION %dig35-location;>
+<!ELEMENT EXPOSURE_INDEX (#PCDATA)>
+<!ELEMENT AUTO_FOCUS (#PCDATA)>
+<!ELEMENT SPECIAL_EFFECTS (#PCDATA)>
+<!ELEMENT CAMERA_LOCATION %dig35-location;>
+<!ELEMENT ORIENTATION %dig35-direction;>
+<!ELEMENT PAR (WIDTH, HEIGHT)>
+<!ELEMENT ACCESSORY %dig35-product-desc;>
+<!ATTLIST ACCESSORY
+	%att-lang-ts; 
+>
+<!-- Scanner Capture -->
+<!ELEMENT SCANNER_CAPTURE (SCANNER_INFO?, SOFTWARE_INFO?, SCANNER_SETTINGS?)>
+<!ATTLIST SCANNER_CAPTURE
+	%att-lang-ts; 
+>
+<!ELEMENT SCANNER_INFO %dig35-product-desc;>
+<!ATTLIST SCANNER_INFO
+	%att-lang-ts; 
+>
+<!ELEMENT SCANNER_SETTINGS (PIXEL_SIZE?, PHYSICAL_SCAN_RES?)>
+<!ATTLIST SCANNER_SETTINGS
+	%att-timestamp; 
+>
+<!ELEMENT PIXEL_SIZE (#PCDATA)>
+<!ELEMENT PHYSICAL_SCAN_RES (X, Y)>
+<!-- Captured item -->
+<!ELEMENT CAPTURED_ITEM (REFLECTION_PRINT | FILM)>
+<!ATTLIST CAPTURED_ITEM
+	%att-lang-ts; 
+>
+<!-- Reflection print -->
+<!ELEMENT REFLECTION_PRINT (DOCUMENT_SIZE?, MEDIUM?, RP_TYPE?)>
+<!ATTLIST REFLECTION_PRINT
+	%att-lang-ts; 
+>
+<!ELEMENT DOCUMENT_SIZE (X, Y)>
+<!ELEMENT MEDIUM (#PCDATA)>
+<!ELEMENT RP_TYPE (#PCDATA)>
+<!-- Film -->
+<!ELEMENT FILM (BRAND?, CATEGORY?, FILM_SIZE?, ROLL_ID?, FRAME_ID?, FILM_SPEED?)>
+<!ATTLIST FILM
+	%att-lang-ts; 
+>
+<!ELEMENT BRAND (#PCDATA)>
+<!ELEMENT CATEGORY (#PCDATA)>
+<!ELEMENT FILM_SIZE (X, Y)>
+<!ELEMENT ROLL_ID (#PCDATA)>
+<!ELEMENT FRAME_ID (#PCDATA)>
+<!ELEMENT FILM_SPEED (#PCDATA)>
+<!-- ======================================================================== -->
+<!-- Content Description                                                      -->
+<!-- ======================================================================== -->
+<!ELEMENT CONTENT (ROLL_CAPTION?, CAPTION?, CAPTURE_TIME?, PERSON*, THING*, ORGANIZATION*, KEYWORD*, LOCATION?, EVENT*, AUDIO*, PROPRIETARY?, COMMENT?)>
+<!ATTLIST CONTENT
+	%att-lang-ts; 
+>
+<!ELEMENT ROLL_CAPTION (#PCDATA)>
+<!ATTLIST ROLL_CAPTION
+	%att-lang-ts; 
+>
+<!ELEMENT CAPTION (#PCDATA)>
+<!ATTLIST CAPTION
+	%att-lang-ts; 
+>
+<!ELEMENT CAPTURE_TIME %dig35-date-time;>
+<!ATTLIST CAPTURE_TIME
+	%att-lang-ts; 
+>
+<!ELEMENT PERSON (%dig35-person;, LOCATION?, POSITION?, KEYWORD*)>
+<!ATTLIST PERSON
+	%att-lang-ts-id; 
+>
+<!ELEMENT THING (PROPRIETARY?, COMMENT, LOCATION?, POSITION?, THING*)>
+<!ATTLIST THING
+	%att-lang-ts-id; 
+>
+<!ELEMENT ORGANIZATION (%dig35-org;, LOCATION?, POSITION?, KEYWORD*)>
+<!ATTLIST ORGANIZATION
+	%att-lang-ts-id; 
+>
+<!ELEMENT KEYWORD (#PCDATA | PROPRIETARY | COMMENT | KEYWORD)*>
+<!ATTLIST KEYWORD
+	%att-lang-ts; 
+	DICTIONARY CDATA #IMPLIED
+>
+<!-- Event -->
+<!ELEMENT EVENT (EVENT_TYPE, PARTICIPANT*, EVENT_TIME?, DURATION?, LOCATION?, PROPRIETARY?, COMMENT?, EVENT*)>
+<!ATTLIST EVENT
+	%att-lang-ts; 
+	IDENTIFIER ID #IMPLIED
+>
+<!ELEMENT EVENT_TYPE (#PCDATA)>
+<!ATTLIST EVENT_TYPE
+	%att-lang; 
+>
+<!ELEMENT PARTICIPANT (#PCDATA)>
+<!ATTLIST PARTICIPANT
+	%att-lang; 
+	REF IDREF #IMPLIED
+>
+<!ELEMENT EVENT_TIME %dig35-date-time;>
+<!ATTLIST EVENT_TIME
+	%att-lang-ts; 
+>
+<!ELEMENT DURATION %dig35-date-time;>
+<!ATTLIST DURATION
+	%att-lang-ts; 
+>
+<!-- Audio -->
+<!ELEMENT AUDIO (PROPRIETARY?, COMMENT?)>
+<!ATTLIST AUDIO
+	%att-lang-ts; %att-uri-loc;
+>
+<!-- ======================================================================== -->
+<!-- History                                                                  -->
+<!-- ======================================================================== -->
+<!ELEMENT HISTORY (IMG_PROCESSING?, METADATA_HISTORY*)>
+<!ATTLIST HISTORY
+	%att-lang-ts; 
+>
+<!-- Image processing -->
+<!ELEMENT IMG_PROCESSING (IMG_CREATED?, IMG_CROPPED?, IMG_ROTATED?, IMG_GTC_ADJUSTED?, IMG_SPACIALLY_ADJUSTED?, IMG_RETOUCHED?, IMG_EXTENSIVELY_EDITED?, IMG_COMPOSITED?, IMG_STC_ADJUSTED?)>
+<!ATTLIST IMG_PROCESSING
+	%att-timestamp; 
+>
+<!ELEMENT IMG_CREATED EMPTY>
+<!ELEMENT IMG_CROPPED EMPTY>
+<!ELEMENT IMG_ROTATED EMPTY>
+<!ELEMENT IMG_GTC_ADJUSTED EMPTY>
+<!ELEMENT IMG_SPACIALLY_ADJUSTED EMPTY>
+<!ELEMENT IMG_RETOUCHED EMPTY>
+<!ELEMENT IMG_EXTENSIVELY_EDITED EMPTY>
+<!ELEMENT IMG_COMPOSITED EMPTY>
+<!ELEMENT IMG_STC_ADJUSTED EMPTY>
+<!-- Metadata history -->
+<!ELEMENT METADATA_HISTORY (UIID? | (BASIC_PARAM?, CREATION?, CONTENT?, IPR?) | METADATA_HISTORY*)>
+<!ATTLIST HISTORY
+	%att-lang-ts; 
+>
+<!ELEMENT UIID (#PCDATA)>
+<!-- ======================================================================== -->
+<!-- Intellectual Property Rights                                             -->
+<!-- ======================================================================== -->
+<!ELEMENT IPR (IPR_NAMES?, IPR_DESCRIPTION?, IPR_DATES?, IPR_EXPLOITATION?, IPR_IDENTIFICATION?, IPR_CONTACT_POINT?)>
+<!ATTLIST IPR
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_NAMES (IPR_ORIGINAL_AUTHOR?, IPR_IMAGE_CREATOR?, IPR_RIGHT_HOLDER?)>
+<!ATTLIST IPR_NAMES
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_ORIGINAL_AUTHOR (#PCDATA)>
+<!ATTLIST IPR_ORIGINAL_AUTHOR
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_IMAGE_CREATOR (#PCDATA)>
+<!ATTLIST IPR_IMAGE_CREATOR
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_RIGHT_HOLDER (#PCDATA)>
+<!ATTLIST IPR_RIGHT_HOLDER
+	%att-lang-ts; 
+>
+<!-- IPR description -->
+<!ELEMENT IPR_DESCRIPTION (IPR_TITLE?, IPR_LEGEND?, IPR_CAPTION?, COPYRIGHT?)>
+<!ELEMENT IPR_TITLE (#PCDATA)>
+<!ATTLIST IPR_TITLE
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_LEGEND (#PCDATA)>
+<!ATTLIST IPR_LEGEND
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_CAPTION (#PCDATA)>
+<!ATTLIST IPR_CAPTION
+	%att-lang-ts; 
+>
+<!ELEMENT COPYRIGHT (#PCDATA)>
+<!ATTLIST COPYRIGHT
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_DATES (ORIGINAL_CREATION_DATE?, PICTURE_TAKEN_DATE?, SCAN_DATE?, PROCESSING_DATE?, MODIFICATION_DATE?, LAST_MODIFICATION_DATE?)>
+<!ATTLIST IPR_DATES
+	%att-lang-ts; 
+>
+<!ELEMENT ORIGINAL_CREATION_DATE %dig35-date-time;>
+<!ATTLIST ORIGINAL_CREATION_DATE
+	%att-lang-ts; 
+>
+<!ELEMENT PICTURE_TAKEN_DATE %dig35-date-time;>
+<!ATTLIST PICTURE_TAKEN_DATE
+	%att-lang-ts; 
+>
+<!ELEMENT SCAN_DATE %dig35-date-time;>
+<!ATTLIST SCAN_DATE
+	%att-lang-ts; 
+>
+<!ELEMENT PROCESSING_DATE %dig35-date-time;>
+<!ATTLIST PROCESSING_DATE
+	%att-lang-ts; 
+>
+<!ELEMENT MODIFICATION_DATE %dig35-date-time;>
+<!ATTLIST MODIFICATION_DATE
+	%att-lang-ts; 
+>
+<!ELEMENT LAST_MODIFICATION_DATE %dig35-date-time;>
+<!ATTLIST LAST_MODIFICATION_DATE
+	%att-lang-ts; 
+>
+<!-- IPR exploitation -->
+<!ELEMENT IPR_EXPLOITATION (IPR_PROTECTION?, IPR_RESTRICTIONS_OF_USE?, IPR_OBLIGATIONS?, IPR_MGMT_SYS?)>
+<!ATTLIST IPR_EXPLOITATION
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_PROTECTION (#PCDATA)>
+<!ATTLIST IPR_EXPLOITATION
+	%att-timestamp; 
+>
+<!ELEMENT IPR_RESTRICTIONS_OF_USE (#PCDATA)>
+<!ATTLIST IPR_RESTRICTIONS_OF_USE
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_OBLIGATIONS (#PCDATA)>
+<!ATTLIST IPR_OBLIGATIONS
+	%att-lang-ts; 
+>
+<!-- IPR management system -->
+<!ELEMENT IPR_MGMT_SYS (IPR_MGMT_TYPE?, IPR_MGMT_SYS_ID?, IPR_MGMT_SYS_LOCATION)>
+<!ATTLIST IPR_MGMT_SYS
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_MGMT_TYPE (#PCDATA)>
+<!ELEMENT IPR_MGMT_SYS_ID (#PCDATA)>
+<!ELEMENT IPR_MGMT_SYS_LOCATION EMPTY>
+<!ATTLIST IPR_MGMT_SYS_LOCATION
+	%att-uri-loc; 
+>
+<!ELEMENT IPR_IDENTIFICATION (IPR_IDENTIFIER?, LICENCE_PLATE?)>
+<!ELEMENT IPR_IDENTIFIER (IPR_ID_MODE?, IPR_ID)>
+<!ATTLIST IPR_IDENTIFIER
+	%att-lang-ts; 
+>
+<!ELEMENT IPR_ID_MODE (#PCDATA)>
+<!ELEMENT IPR_ID (#PCDATA)>
+<!ELEMENT LICENCE_PLATE (LP_COUNTRY, LP_REG_AUT, LP_REG_NUM)>
+<!ATTLIST LICENCE_PLATE
+	%att-lang-ts; 
+>
+<!ELEMENT LP_COUNTRY (#PCDATA)>
+<!ELEMENT LP_REG_AUT (#PCDATA)>
+<!ELEMENT LP_REG_NUM (#PCDATA)>
+<!ELEMENT IPR_CONTACT_POINT (IPR_ADDRESS?, IPR_LINK?, IPR_COLLECTION?)>
+<!ELEMENT IPR_ADDRESS (#PCDATA)>
+<!ELEMENT IPR_LINK (#PCDATA)>
+<!ELEMENT IPR_COLLECTION EMPTY>
+<!ATTLIST IPR_MGMT_SYS_LOCATION
+	%att-uri-loc; 
+>

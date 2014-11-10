@@ -1,0 +1,4 @@
+# Premis events log file. Created 2012-06-01T16:17:01.032+02:00
+"dateTime";"utility";"utilityVersion";"operation";"eventDir";"agent";"agentVersion";"file";"status";"formatDesignationName";"formatRegistryKey";"preservationLevelValue"
+"2012-06-01T16:17:01.016+02:00";"CopyAltoFromOcrOutputImpl";"";"create_config";"ALTO";"abbyy";"3.0";"\data\ALTO\1_1000350721_00_0010.tif.xml";"OK";"text/xml";"fmt/101";"preservation"
+"2012-06-01T16:17:01.034+02:00";"CopyAltoFromOcrOutputImpl";"";"create_config";"ALTO";"abbyy";"3.0";"\data\ALTO\1_1000350721_00_0011.tif.xml";"OK";"text/xml";"fmt/101";"preservation"

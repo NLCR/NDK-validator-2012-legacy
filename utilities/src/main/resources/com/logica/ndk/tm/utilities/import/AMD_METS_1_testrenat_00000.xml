@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:premis="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TYPE="Monograph">
+  <mets:metsHdr CREATEDATE="2012-07-23T10:33:12.907+02:00" LASTMODDATE="2012-07-23T10:33:12.907+02:00">
+    <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <mets:name>NDK_TM</mets:name>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:amdSec ID="1_testrenat_00000">
+    <mets:techMD ID="OBJ_0001">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:object xsi:type="file">  
+            <premis:objectIdentifier> 
+              <premis:objectIdentifierType>file</premis:objectIdentifierType>  
+              <premis:objectIdentifierValue>1_testrenat_00000</premis:objectIdentifierValue> 
+            </premis:objectIdentifier>  
+            <premis:preservationLevel> 
+              <premis:preservationLevelValue>deleted</premis:preservationLevelValue>  
+              <premis:preservationLevelDateAssigned>2012-07-23T10:34:50.999+02:00</premis:preservationLevelDateAssigned> 
+            </premis:preservationLevel>  
+            <premis:objectCharacteristics> 
+              <premis:compositionLevel>0</premis:compositionLevel>  
+              <premis:size>10486818</premis:size>  
+              <premis:format> 
+                <premis:formatDesignation> 
+                  <premis:formatName>image/tiff</premis:formatName>  
+                  <premis:formatVersion>6.0</premis:formatVersion> 
+                </premis:formatDesignation>  
+                <premis:formatRegistry> 
+                  <premis:formatRegistryName>PRONOM</premis:formatRegistryName>  
+                  <premis:formatRegistryKey>fmt/353</premis:formatRegistryKey> 
+                </premis:formatRegistry> 
+              </premis:format> 
+            </premis:objectCharacteristics>  
+          </premis:object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="OBJ_0002">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:object xsi:type="file">  
+            <premis:objectIdentifier> 
+              <premis:objectIdentifierType>file</premis:objectIdentifierType>  
+              <premis:objectIdentifierValue>1_testrenat_00000</premis:objectIdentifierValue> 
+            </premis:objectIdentifier>  
+            <premis:preservationLevel> 
+              <premis:preservationLevelValue>preservation</premis:preservationLevelValue>  
+              <premis:preservationLevelDateAssigned>2012-07-23T10:34:51.583+02:00</premis:preservationLevelDateAssigned> 
+            </premis:preservationLevel>  
+            <premis:objectCharacteristics> 
+              <premis:compositionLevel>0</premis:compositionLevel>   
+              <premis:size>10486818</premis:size>  
+              <premis:format> 
+                <premis:formatDesignation> 
+                  <premis:formatName>image/jp2</premis:formatName>  
+                  <premis:formatVersion>6.0</premis:formatVersion> 
+                </premis:formatDesignation>  
+                <premis:formatRegistry> 
+                  <premis:formatRegistryName>PRONOM</premis:formatRegistryName>  
+                  <premis:formatRegistryKey>fmt/151</premis:formatRegistryKey> 
+                </premis:formatRegistry> 
+              </premis:format> 
+            </premis:objectCharacteristics>  
+          </premis:object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="OBJ_0003">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:object xsi:type="file">  
+            <premis:objectIdentifier> 
+              <premis:objectIdentifierType>file</premis:objectIdentifierType>  
+              <premis:objectIdentifierValue>1_testrenat_00000</premis:objectIdentifierValue> 
+            </premis:objectIdentifier>  
+            <premis:preservationLevel> 
+              <premis:preservationLevelValue>preservation</premis:preservationLevelValue>  
+              <premis:preservationLevelDateAssigned>2012-07-23T10:34:52.678+02:00</premis:preservationLevelDateAssigned> 
+            </premis:preservationLevel>  
+            <premis:objectCharacteristics> 
+              <premis:compositionLevel>0</premis:compositionLevel>  
+              <premis:size>34270</premis:size>  
+              <premis:format> 
+                <premis:formatDesignation> 
+                  <premis:formatName>text/xml</premis:formatName>  
+                  <premis:formatVersion>6.0</premis:formatVersion> 
+                </premis:formatDesignation>  
+                <premis:formatRegistry> 
+                  <premis:formatRegistryName>PRONOM</premis:formatRegistryName>  
+                  <premis:formatRegistryKey>fmt/101</premis:formatRegistryKey> 
+                </premis:formatRegistry> 
+              </premis:format> 
+            </premis:objectCharacteristics>
+          </premis:object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+
+  </mets:amdSec>
+</mets:mets>

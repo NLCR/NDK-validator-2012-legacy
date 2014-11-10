@@ -1,0 +1,31 @@
+Aug 2, 2012 8:39:20 AM Main METS: e:\safe-la\import\process_CDM_08e687d0-dc6c-11e1-8357-00505682629d\METS_08e687d0-dc6c-11e1-8357-00505682629d.xml
+Aug 2, 2012 8:39:20 AM Number of page METS: 2
+Aug 2, 2012 8:39:20 AM Script has been processed
+Aug 2, 2012 8:39:20 AM Kontrola konzistence balicku...
+Aug 2, 2012 8:39:20 AM OK
+Aug 2, 2012 8:39:20 AM Import noveho balicku NDK-000000000038
+Aug 2, 2012 8:39:21 AM Finish DATA ZIP Time duration: 310[ms]
+Aug 2, 2012 8:39:21 AM createDataZIP - storage prepare
+Aug 2, 2012 8:39:21 AM File  does not exist, actual version is going to be uploaded...
+Aug 2, 2012 8:39:25 AM Stream close
+Aug 2, 2012 8:39:25 AM Finish ZIP UPLOAD Time duration: 4257[ms]
+Aug 2, 2012 8:39:31 AM Finish STORAGE CHECK Time duration: 5749[ms]
+Aug 2, 2012 8:39:31 AM createDataZIP - storage done
+Aug 2, 2012 8:39:31 AM Finish METADATA ZIP Time duration: 3[ms]
+Aug 2, 2012 8:39:31 AM createMetadataZIP - storage prepare
+Aug 2, 2012 8:39:31 AM File  does not exist, actual version is going to be uploaded...
+Aug 2, 2012 8:39:34 AM Stream close
+Aug 2, 2012 8:39:34 AM Finish ZIP UPLOAD Time duration: 3397[ms]
+Aug 2, 2012 8:39:40 AM Finish STORAGE CHECK Time duration: 5468[ms]
+Aug 2, 2012 8:39:40 AM createMetadataZIP - storage done
+Aug 2, 2012 8:39:40 AM Finish METADATA ZIP Time duration: 2[ms]
+Aug 2, 2012 8:39:40 AM createMetadataZIP - storage prepare
+Aug 2, 2012 8:39:40 AM File  does not exist, actual version is going to be uploaded...
+Aug 2, 2012 8:39:40 AM Stream close
+Aug 2, 2012 8:39:40 AM Finish ZIP UPLOAD Time duration: 55[ms]
+Aug 2, 2012 8:39:40 AM Finish STORAGE CHECK Time duration: 7[ms]
+Aug 2, 2012 8:39:40 AM createMetadataZIP - storage done
+Aug 2, 2012 8:39:40 AM Script done
+Aug 2, 2012 8:39:40 AM SAFE LTP transaction commit start
+Aug 2, 2012 8:39:40 AM SAFE LTP transaction confirm
+Aug 2, 2012 8:39:40 AM Finish PACKAGE Time duration: 20112[ms]

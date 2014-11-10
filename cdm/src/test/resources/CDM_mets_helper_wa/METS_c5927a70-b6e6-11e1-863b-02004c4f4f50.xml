@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LABEL="WA c5927a70-b6e6-11e1-863b-02004c4f4f50" OBJID="c5927a70-b6e6-11e1-863b-02004c4f4f50" TYPE="WA" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <mets:metsHdr CREATEDATE="2012-06-18T17:06:12Z" LASTMODDATE="2012-06-18T17:06:12Z">
+    <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <mets:name>creator</mets:name>
+    </mets:agent>
+    <mets:agent ROLE="ARCHIVIST" TYPE="ORGANIZATION">
+      <mets:name>archivist</mets:name>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:amdSec ID="AMDWARC0001">
+    <mets:techMD ID="OBJ_001">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData xmlns:premis="info:lc/xmlns/premis-v21">
+          <object xmlns="info:lc/xmlns/premis-v2" xsi:type="file">  
+            <objectIdentifier> 
+              <objectIdentifierType>fileName</objectIdentifierType>  
+              <objectIdentifierValue>Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz</objectIdentifierValue> 
+            </objectIdentifier>  
+            <preservationLevel> 
+              <preservationLevelValue>preservation</preservationLevelValue> 
+            </preservationLevel>  
+            <objectCharacteristics> 
+              <compositionLevel>0</compositionLevel>  
+              <fixity> 
+                <messageDigestAlgorithm>MD5</messageDigestAlgorithm>  
+                <messageDigest>a41fa8f6ebcec37f6f2e55d4a19593ce</messageDigest>  
+                <messageDigestOriginator>TM</messageDigestOriginator> 
+              </fixity>  
+              <size>5242389</size>  
+              <format> 
+                <formatDesignation> 
+                  <formatName>WARC</formatName>  
+                  <formatVersion>1.0</formatVersion> 
+                </formatDesignation>  
+                <formatRegistry> 
+                  <formatRegistryName>PRONOM</formatRegistryName>  
+                  <formatRegistryKey>fmt/289</formatRegistryKey> 
+                </formatRegistry> 
+              </format>  
+              <creatingApplication> 
+                <creatingApplicationName>Heritrix 1.15.5 http://crawler.archive.org</creatingApplicationName>  
+                <creatingApplicationVersion>1.15.5</creatingApplicationVersion>  
+                <dateCreatedByApplication>2012-06-15T12:38:39Z</dateCreatedByApplication> 
+              </creatingApplication> 
+            </objectCharacteristics>  
+            <storage> 
+              <contentLocationType>URI</contentLocationType>  
+              <contentLocationValue>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\ARC\Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz</contentLocationValue> 
+            </storage> 
+          </object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+  </mets:amdSec>
+  <mets:dmdSec ID="MODSMD_DOC_0001">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData>
+        <mods:mods>  
+          <mods:titleInfo> 
+            <mods:title>http://is.muni.cz/th/263851/ff_b/K._Valasek_-_Bakalarska_prace_-_Ztohoven.pdf</mods:title> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:dateCaptured encoding="w3cdtf">2012-05-16T16:21:51Z</mods:dateCaptured> 
+          </mods:originInfo>  
+          <mods:physicalDescription> 
+            <mods:internetMediaType>application/pdf</mods:internetMediaType> 
+          </mods:physicalDescription>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier>urn:uuid:02ea744e-18ab-4dd0-b49d-612f169d098f</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:physicalLocation>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-02ea744e-18ab-4dd0-b49d-612f169d098f.txt</mods:physicalLocation> 
+          </mods:location> 
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_DOC_0002">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData>
+        <mods:mods>  
+          <mods:titleInfo> 
+            <mods:title>http://www.marxists.org/archive/marx/works/download/doc/Poverty-Philosophy.doc</mods:title> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:dateCaptured encoding="w3cdtf">2012-05-16T16:21:34Z</mods:dateCaptured> 
+          </mods:originInfo>  
+          <mods:physicalDescription> 
+            <mods:internetMediaType>application/msword</mods:internetMediaType> 
+          </mods:physicalDescription>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier>urn:uuid:0c71c5ec-b045-4a3c-bc14-a4c75fef9264</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:physicalLocation>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-0c71c5ec-b045-4a3c-bc14-a4c75fef9264.txt</mods:physicalLocation> 
+          </mods:location> 
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_DOC_0003">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData>
+        <mods:mods>  
+          <mods:titleInfo> 
+            <mods:title>http://aplikace.mvcr.cz/archiv2008/rs_atlantic/data/files/korupce-sz.doc</mods:title> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:dateCaptured encoding="w3cdtf">2012-05-16T16:21:33Z</mods:dateCaptured> 
+          </mods:originInfo>  
+          <mods:physicalDescription> 
+            <mods:internetMediaType>application/msword</mods:internetMediaType> 
+          </mods:physicalDescription>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier>urn:uuid:3b2036e3-fb46-4100-b0b4-8e951fea74fe</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:physicalLocation>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-3b2036e3-fb46-4100-b0b4-8e951fea74fe.txt</mods:physicalLocation> 
+          </mods:location> 
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_DOC_0004">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData>
+        <mods:mods>  
+          <mods:titleInfo> 
+            <mods:title>http://www.transparency.cz/doc/zakladni_dokumenty/TIC_VZ10_CZ_www.pdf</mods:title> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:dateCaptured encoding="w3cdtf">2012-05-16T16:21:33Z</mods:dateCaptured> 
+          </mods:originInfo>  
+          <mods:physicalDescription> 
+            <mods:internetMediaType>application/pdf</mods:internetMediaType> 
+          </mods:physicalDescription>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier>urn:uuid:3c6795bd-dd37-4e18-aea9-bff8894cee84</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:physicalLocation>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-3c6795bd-dd37-4e18-aea9-bff8894cee84.txt</mods:physicalLocation> 
+          </mods:location> 
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_DOC_0005">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData>
+        <mods:mods>  
+          <mods:titleInfo> 
+            <mods:title>http://magia.ic.cz/old/knihy/Bozskakomedie.rtf</mods:title> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:dateCaptured encoding="w3cdtf">2012-05-16T16:21:33Z</mods:dateCaptured> 
+          </mods:originInfo>  
+          <mods:physicalDescription> 
+            <mods:internetMediaType>application/rtf</mods:internetMediaType> 
+          </mods:physicalDescription>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier>urn:uuid:441b1edb-06c4-47cf-b413-301aaa9669ab</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:physicalLocation>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-441b1edb-06c4-47cf-b413-301aaa9669ab.txt</mods:physicalLocation> 
+          </mods:location> 
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_DOC_0006">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData>
+        <mods:mods>  
+          <mods:titleInfo> 
+            <mods:title>http://www.ceskatelevize.cz/pub/reporterict/211-452-80124-0049.doc</mods:title> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:dateCaptured encoding="w3cdtf">2012-05-16T16:21:33Z</mods:dateCaptured> 
+          </mods:originInfo>  
+          <mods:physicalDescription> 
+            <mods:internetMediaType>application/msword</mods:internetMediaType> 
+          </mods:physicalDescription>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier>urn:uuid:560c1f9e-4ff7-4e13-83d2-917bbf5d6e2f</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:physicalLocation>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-560c1f9e-4ff7-4e13-83d2-917bbf5d6e2f.txt</mods:physicalLocation> 
+          </mods:location> 
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_TITLE">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData>
+        <mods:mods>  
+          <mods:titleInfo> 
+            <mods:title>Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz</mods:title>  
+            <mods:subTitle>Fileformats-Crawl</mods:subTitle>  
+            <mods:subTitle>Crawl pro logicu</mods:subTitle> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:dateCaptured encoding="w3cdtf">2012-06-15T12:38:39Z</mods:dateCaptured> 
+          </mods:originInfo>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier>urn:uuid:5b095217-1724-4ace-9532-446df19293ef</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:identifier type="modsType">warcinfo</mods:identifier> 
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_DOC_0007">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData>
+        <mods:mods>  
+          <mods:titleInfo> 
+            <mods:title>http://www.branco-nd.cz/media/File/Cenik_skladu.pdf</mods:title> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:dateCaptured encoding="w3cdtf">2012-05-16T16:21:38Z</mods:dateCaptured> 
+          </mods:originInfo>  
+          <mods:physicalDescription> 
+            <mods:internetMediaType>application/pdf</mods:internetMediaType> 
+          </mods:physicalDescription>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier>urn:uuid:d942e7cf-760d-488f-ae01-bd5d9f71128f</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:physicalLocation>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-d942e7cf-760d-488f-ae01-bd5d9f71128f.txt</mods:physicalLocation> 
+          </mods:location> 
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="MODSMD_DOC_0008">
+    <mets:mdWrap MDTYPE="MODS" MIMETYPE="text/xml">
+      <mets:xmlData>
+        <mods:mods>  
+          <mods:titleInfo> 
+            <mods:title>http://is.muni.cz/th/13535/pravf_r/rigorozni_prace-lichva_v_ObcZ.rtf</mods:title> 
+          </mods:titleInfo>  
+          <mods:originInfo> 
+            <mods:dateCaptured encoding="w3cdtf">2012-05-16T16:21:33Z</mods:dateCaptured> 
+          </mods:originInfo>  
+          <mods:physicalDescription> 
+            <mods:internetMediaType>application/rtf</mods:internetMediaType> 
+          </mods:physicalDescription>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier>urn:uuid:f718a578-72fd-438a-88a0-f5ff6757c5ef</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:physicalLocation>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-f718a578-72fd-438a-88a0-f5ff6757c5ef.txt</mods:physicalLocation> 
+          </mods:location> 
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:structMap>
+    <mets:div ID="DIV_P_0001">
+      <mets:div DMDID="MODSMD_DOC_0001" ID="DIV_P_DOCUMENT_0001">
+        <mets:fptr FILEID="TXT_0001"/>
+      </mets:div>
+      <mets:div DMDID="MODSMD_DOC_0002" ID="DIV_P_DOCUMENT_0002">
+        <mets:fptr FILEID="TXT_0002"/>
+      </mets:div>
+      <mets:div DMDID="MODSMD_DOC_0003" ID="DIV_P_DOCUMENT_0003">
+        <mets:fptr FILEID="TXT_0003"/>
+      </mets:div>
+      <mets:div DMDID="MODSMD_DOC_0004" ID="DIV_P_DOCUMENT_0004">
+        <mets:fptr FILEID="TXT_0004"/>
+      </mets:div>
+      <mets:div DMDID="MODSMD_DOC_0005" ID="DIV_P_DOCUMENT_0005">
+        <mets:fptr FILEID="TXT_0005"/>
+      </mets:div>
+      <mets:div DMDID="MODSMD_DOC_0006" ID="DIV_P_DOCUMENT_0006">
+        <mets:fptr FILEID="TXT_0006"/>
+      </mets:div>
+      <mets:div DMDID="MODSMD_DOC_0007" ID="DIV_P_DOCUMENT_0007">
+        <mets:fptr FILEID="TXT_0007"/>
+      </mets:div>
+      <mets:div DMDID="MODSMD_DOC_0008" ID="DIV_P_DOCUMENT_0008">
+        <mets:fptr FILEID="TXT_0008"/>
+      </mets:div>
+    </mets:div>
+  </mets:structMap>
+  <mets:fileSec>
+    <mets:fileGrp ID="WARC0001" USE="WARC">
+      <mets:file CHECKSUM="a41fa8f6ebcec37f6f2e55d4a19593ce" CHECKSUMTYPE="MD5" ID="WARC_0001" MIMETYPE="application/octet-stream" SEQ="0" SIZE="5242389">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\ARC\Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz"></mets:FLocat>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp ID="TXTGRP" USE="Text">
+      <mets:file CHECKSUM="0baaac4fd8968b5db04bf81cac0b14fb" CHECKSUMTYPE="MD5" ID="TXT_0001" MIMETYPE="text/plain" SEQ="0" SIZE="838">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-02ea744e-18ab-4dd0-b49d-612f169d098f.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="0d0f98cb11cb100bbd2222f045c0fa31" CHECKSUMTYPE="MD5" ID="TXT_0002" MIMETYPE="text/plain" SEQ="1" SIZE="842">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-0c71c5ec-b045-4a3c-bc14-a4c75fef9264.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="227cb63285f99f98a02dfbdf9f893f74" CHECKSUMTYPE="MD5" ID="TXT_0003" MIMETYPE="text/plain" SEQ="2" SIZE="836">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-3b2036e3-fb46-4100-b0b4-8e951fea74fe.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="35b7a52368397fdc1b569ec9ef2526b6" CHECKSUMTYPE="MD5" ID="TXT_0004" MIMETYPE="text/plain" SEQ="3" SIZE="830">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-3c6795bd-dd37-4e18-aea9-bff8894cee84.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="a0d4eef7c42e244681f87e039ab05fe4" CHECKSUMTYPE="MD5" ID="TXT_0005" MIMETYPE="text/plain" SEQ="4" SIZE="807">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-441b1edb-06c4-47cf-b413-301aaa9669ab.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="b1f3e20d9beac9b947598661b4a2603e" CHECKSUMTYPE="MD5" ID="TXT_0006" MIMETYPE="text/plain" SEQ="5" SIZE="830">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-560c1f9e-4ff7-4e13-83d2-917bbf5d6e2f.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="3b8925e2e3189318aa6bdd911e4b4413" CHECKSUMTYPE="MD5" ID="TXT_0007" MIMETYPE="text/plain" SEQ="6" SIZE="812">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-d942e7cf-760d-488f-ae01-bd5d9f71128f.txt"></mets:FLocat>
+      </mets:file>
+      <mets:file CHECKSUM="b57624bfcaf17617699076a81a4ae943" CHECKSUMTYPE="MD5" ID="TXT_0008" MIMETYPE="text/plain" SEQ="7" SIZE="829">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlink:href="c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\TXT\urn-uuid-f718a578-72fd-438a-88a0-f5ff6757c5ef.txt"></mets:FLocat>
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+</mets:mets>

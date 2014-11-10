@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<waInfo>
+<title>
+<cdmId>wa</cdmId>
+<creatingApplicationName>Heritrix 1.15.5 http://crawler.archive.org</creatingApplicationName>
+<creatingApplicationVersion>1.15.5</creatingApplicationVersion>
+<date encoding="w3cdtf">2012-06-15T12:38:39Z</date>
+<description>Crawl pro logicu</description>
+<formatName>application/warc</formatName>
+<formatVersion>1.0</formatVersion>
+<id>urn:uuid:5b095217-1724-4ace-9532-446df19293ef</id>
+<isPartOf>Fileformats-Crawl</isPartOf>
+<warcFileLocation>ARC/Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz</warcFileLocation>
+<warcFileName>Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz</warcFileName>
+</title>
+<record>
+<date encoding="w3cdtf">2012-05-16T16:21:33Z</date>
+<id>urn:uuid:560c1f9e-4ff7-4e13-83d2-917bbf5d6e2f</id>
+<mimeType>application/msword</mimeType>
+<targetUri>http://www.ceskatelevize.cz/pub/reporterict/211-452-80124-0049.doc</targetUri>
+<txtDumpFileLocation>TXT/urn-uuid-560c1f9e-4ff7-4e13-83d2-917bbf5d6e2f.txt</txtDumpFileLocation>
+</record>
+<record>
+<date encoding="w3cdtf">2012-05-16T16:21:33Z</date>
+<id>urn:uuid:3b2036e3-fb46-4100-b0b4-8e951fea74fe</id>
+<mimeType>application/msword</mimeType>
+<targetUri>http://aplikace.mvcr.cz/archiv2008/rs_atlantic/data/files/korupce-sz.doc</targetUri>
+<txtDumpFileLocation>TXT/urn-uuid-3b2036e3-fb46-4100-b0b4-8e951fea74fe.txt</txtDumpFileLocation>
+</record>
+<record>
+<date encoding="w3cdtf">2012-05-16T16:21:33Z</date>
+<id>urn:uuid:f718a578-72fd-438a-88a0-f5ff6757c5ef</id>
+<mimeType>application/rtf</mimeType>
+<targetUri>http://is.muni.cz/th/13535/pravf_r/rigorozni_prace-lichva_v_ObcZ.rtf</targetUri>
+<txtDumpFileLocation>TXT/urn-uuid-f718a578-72fd-438a-88a0-f5ff6757c5ef.txt</txtDumpFileLocation>
+</record>
+<record>
+<date encoding="w3cdtf">2012-05-16T16:21:33Z</date>
+<id>urn:uuid:441b1edb-06c4-47cf-b413-301aaa9669ab</id>
+<mimeType>application/rtf</mimeType>
+<targetUri>http://magia.ic.cz/old/knihy/Bozskakomedie.rtf</targetUri>
+<txtDumpFileLocation>TXT/urn-uuid-441b1edb-06c4-47cf-b413-301aaa9669ab.txt</txtDumpFileLocation>
+</record>
+<record>
+<date encoding="w3cdtf">2012-05-16T16:21:33Z</date>
+<id>urn:uuid:3c6795bd-dd37-4e18-aea9-bff8894cee84</id>
+<mimeType>application/pdf</mimeType>
+<targetUri>http://www.transparency.cz/doc/zakladni_dokumenty/TIC_VZ10_CZ_www.pdf</targetUri>
+<txtDumpFileLocation>TXT/urn-uuid-3c6795bd-dd37-4e18-aea9-bff8894cee84.txt</txtDumpFileLocation>
+</record>
+<record>
+<date encoding="w3cdtf">2012-05-16T16:21:34Z</date>
+<id>urn:uuid:0c71c5ec-b045-4a3c-bc14-a4c75fef9264</id>
+<mimeType>application/msword</mimeType>
+<targetUri>http://www.marxists.org/archive/marx/works/download/doc/Poverty-Philosophy.doc</targetUri>
+<txtDumpFileLocation>TXT/urn-uuid-0c71c5ec-b045-4a3c-bc14-a4c75fef9264.txt</txtDumpFileLocation>
+</record>
+<record>
+<date encoding="w3cdtf">2012-05-16T16:21:38Z</date>
+<id>urn:uuid:d942e7cf-760d-488f-ae01-bd5d9f71128f</id>
+<mimeType>application/pdf</mimeType>
+<targetUri>http://www.branco-nd.cz/media/File/Cenik_skladu.pdf</targetUri>
+<txtDumpFileLocation>TXT/urn-uuid-d942e7cf-760d-488f-ae01-bd5d9f71128f.txt</txtDumpFileLocation>
+</record>
+<record>
+<date encoding="w3cdtf">2012-05-16T16:21:51Z</date>
+<id>urn:uuid:02ea744e-18ab-4dd0-b49d-612f169d098f</id>
+<mimeType>application/pdf</mimeType>
+<targetUri>http://is.muni.cz/th/263851/ff_b/K._Valasek_-_Bakalarska_prace_-_Ztohoven.pdf</targetUri>
+<txtDumpFileLocation>TXT/urn-uuid-02ea744e-18ab-4dd0-b49d-612f169d098f.txt</txtDumpFileLocation>
+</record>
+</waInfo>

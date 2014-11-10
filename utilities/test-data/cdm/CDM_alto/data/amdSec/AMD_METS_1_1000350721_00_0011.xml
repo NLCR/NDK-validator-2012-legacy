@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:premis="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TYPE="Monograph">
+  <mets:metsHdr CREATEDATE="2011-12-14T17:05:46.000+01:00" LASTMODDATE="2011-12-14T17:05:46.000+01:00">
+    <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <mets:name>NDK_TM</mets:name>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:amdSec ID="1_1000350721_00_0011">
+    <mets:techMD ID="OBJ_0001">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:object xsi:type="premis:file">  
+            <premis:objectIdentifier> 
+              <premis:objectIdentifierType>file</premis:objectIdentifierType>  
+              <premis:objectIdentifierValue>1_1000350721_00_0011</premis:objectIdentifierValue> 
+            </premis:objectIdentifier>  
+            <premis:preservationLevel> 
+              <premis:preservationLevelValue>deleted</premis:preservationLevelValue>  
+              <premis:preservationLevelDateAssigned>2012-06-01T16:17:10.450+02:00</premis:preservationLevelDateAssigned> 
+            </premis:preservationLevel>  
+            <premis:objectCharacteristics> 
+              <premis:compositionLevel>0</premis:compositionLevel>  
+              <premis:fixity> 
+                <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>  
+                <premis:messageDigest>1cd74c85b48d7aad952357a3b927b123</premis:messageDigest> 
+              </premis:fixity>  
+              <premis:size>25219357</premis:size>  
+              <premis:format> 
+                <premis:formatDesignation> 
+                  <premis:formatName>image/tiff</premis:formatName>  
+                  <premis:formatVersion>TODO: version</premis:formatVersion> 
+                </premis:formatDesignation>  
+                <premis:formatRegistry> 
+                  <premis:formatRegistryName>PRONOM</premis:formatRegistryName>  
+                  <premis:formatRegistryKey>fmt/353</premis:formatRegistryKey> 
+                </premis:formatRegistry> 
+              </premis:format> 
+            </premis:objectCharacteristics>  
+            <premis:originalName>1_1000350721_00_0011.tif</premis:originalName>  
+            <premis:storage> 
+              <premis:contentLocation> 
+                <premis:contentLocationType>filepath</premis:contentLocationType>  
+                <premis:contentLocationValue>\\Hdigfscl02\cdt-01\CDM-001</premis:contentLocationValue> 
+              </premis:contentLocation>  
+              <premis:storageMedium>disk</premis:storageMedium> 
+            </premis:storage> 
+          </premis:object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="OBJ_0002">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:object xsi:type="premis:file">  
+            <premis:objectIdentifier> 
+              <premis:objectIdentifierType>file</premis:objectIdentifierType>  
+              <premis:objectIdentifierValue>1_1000350721_00_0011</premis:objectIdentifierValue> 
+            </premis:objectIdentifier>  
+            <premis:preservationLevel> 
+              <premis:preservationLevelValue>preservation</premis:preservationLevelValue>  
+              <premis:preservationLevelDateAssigned>2012-06-01T16:17:11.833+02:00</premis:preservationLevelDateAssigned> 
+            </premis:preservationLevel>  
+            <premis:objectCharacteristics> 
+              <premis:compositionLevel>0</premis:compositionLevel>  
+              <premis:fixity> 
+                <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>  
+                <premis:messageDigest>8698f805a1c16f9bfc74b78b27cacdba</premis:messageDigest> 
+              </premis:fixity>  
+              <premis:size>23371470</premis:size>  
+              <premis:format> 
+                <premis:formatDesignation> 
+                  <premis:formatName>image/jp2</premis:formatName>  
+                  <premis:formatVersion>TODO: version</premis:formatVersion> 
+                </premis:formatDesignation>  
+                <premis:formatRegistry> 
+                  <premis:formatRegistryName>PRONOM</premis:formatRegistryName>  
+                  <premis:formatRegistryKey>fmt/151</premis:formatRegistryKey> 
+                </premis:formatRegistry> 
+              </premis:format> 
+            </premis:objectCharacteristics>  
+            <premis:originalName>1_1000350721_00_0011.tif</premis:originalName>  
+            <premis:storage> 
+              <premis:contentLocation> 
+                <premis:contentLocationType>filepath</premis:contentLocationType>  
+                <premis:contentLocationValue>\\Hdigfscl02\cdt-01\CDM-001</premis:contentLocationValue> 
+              </premis:contentLocation>  
+              <premis:storageMedium>disk</premis:storageMedium> 
+            </premis:storage> 
+          </premis:object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="OBJ_0003">
+      <mets:mdWrap MDTYPE="PREMIS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <premis:object xsi:type="premis:file">  
+            <premis:objectIdentifier> 
+              <premis:objectIdentifierType>file</premis:objectIdentifierType>  
+              <premis:objectIdentifierValue>1_1000350721_00_0011</premis:objectIdentifierValue> 
+            </premis:objectIdentifier>  
+            <premis:preservationLevel> 
+              <premis:preservationLevelValue>preservation</premis:preservationLevelValue>  
+              <premis:preservationLevelDateAssigned>2012-06-01T16:17:13.159+02:00</premis:preservationLevelDateAssigned> 
+            </premis:preservationLevel>  
+            <premis:objectCharacteristics> 
+              <premis:compositionLevel>0</premis:compositionLevel>  
+              <premis:fixity> 
+                <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>  
+                <premis:messageDigest>003202f7e120df1563683dd48dc24a23</premis:messageDigest> 
+              </premis:fixity>  
+              <premis:size>29599</premis:size>  
+              <premis:format> 
+                <premis:formatDesignation> 
+                  <premis:formatName>text/xml</premis:formatName>  
+                  <premis:formatVersion>TODO: version</premis:formatVersion> 
+                </premis:formatDesignation>  
+                <premis:formatRegistry> 
+                  <premis:formatRegistryName>PRONOM</premis:formatRegistryName>  
+                  <premis:formatRegistryKey>fmt/101</premis:formatRegistryKey> 
+                </premis:formatRegistry> 
+              </premis:format> 
+            </premis:objectCharacteristics>  
+            <premis:originalName>1_1000350721_00_0011.tif.xml</premis:originalName>  
+            <premis:storage> 
+              <premis:contentLocation> 
+                <premis:contentLocationType>filepath</premis:contentLocationType>  
+                <premis:contentLocationValue>\\Hdigfscl02\cdt-01\CDM-001</premis:contentLocationValue> 
+              </premis:contentLocation>  
+              <premis:storageMedium>disk</premis:storageMedium> 
+            </premis:storage> 
+          </premis:object>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="MIX_0001">
+      <mets:mdWrap MDTYPE="NISOIMG" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <mix:mix xmlns:mix="http://www.loc.gov/mix/v20"> 
+            <mix:BasicDigitalObjectInformation> 
+              <mix:ObjectIdentifier> 
+                <mix:objectIdentifierType>JHOVE</mix:objectIdentifierType> 
+              </mix:ObjectIdentifier>  
+              <mix:byteOrder>little endian</mix:byteOrder>  
+              <mix:Compression> 
+                <mix:compressionScheme>Uncompressed</mix:compressionScheme> 
+              </mix:Compression> 
+            </mix:BasicDigitalObjectInformation>  
+            <mix:BasicImageInformation> 
+              <mix:BasicImageCharacteristics> 
+                <mix:imageWidth>2397</mix:imageWidth>  
+                <mix:imageHeight>3507</mix:imageHeight>  
+                <mix:PhotometricInterpretation> 
+                  <mix:colorSpace>RGB</mix:colorSpace>  
+                  <mix:ReferenceBlackWhite> 
+                    <mix:Component> 
+                      <mix:componentPhotometricInterpretation>R</mix:componentPhotometricInterpretation>  
+                      <mix:footroom> 
+                        <mix:numerator>0</mix:numerator> 
+                      </mix:footroom>  
+                      <mix:headroom> 
+                        <mix:numerator>255</mix:numerator> 
+                      </mix:headroom> 
+                    </mix:Component>  
+                    <mix:Component> 
+                      <mix:componentPhotometricInterpretation>G</mix:componentPhotometricInterpretation>  
+                      <mix:footroom> 
+                        <mix:numerator>0</mix:numerator> 
+                      </mix:footroom>  
+                      <mix:headroom> 
+                        <mix:numerator>255</mix:numerator> 
+                      </mix:headroom> 
+                    </mix:Component>  
+                    <mix:Component> 
+                      <mix:componentPhotometricInterpretation>B</mix:componentPhotometricInterpretation>  
+                      <mix:footroom> 
+                        <mix:numerator>0</mix:numerator> 
+                      </mix:footroom>  
+                      <mix:headroom> 
+                        <mix:numerator>255</mix:numerator> 
+                      </mix:headroom> 
+                    </mix:Component> 
+                  </mix:ReferenceBlackWhite> 
+                </mix:PhotometricInterpretation> 
+              </mix:BasicImageCharacteristics> 
+            </mix:BasicImageInformation>  
+            <mix:ImageCaptureMetadata> 
+              <mix:ScannerCapture> 
+                <mix:ScanningSystemSoftware> 
+                  <mix:scanningSoftwareName>Pixel Translations Inc., PIXTIFF Version 57.5.218.7646</mix:scanningSoftwareName> 
+                </mix:ScanningSystemSoftware> 
+              </mix:ScannerCapture>  
+              <mix:orientation>normal*</mix:orientation> 
+            </mix:ImageCaptureMetadata>  
+            <mix:ImageAssessmentMetadata> 
+              <mix:SpatialMetrics> 
+                <mix:samplingFrequencyUnit>in.</mix:samplingFrequencyUnit>  
+                <mix:xSamplingFrequency> 
+                  <mix:numerator>300</mix:numerator> 
+                </mix:xSamplingFrequency>  
+                <mix:ySamplingFrequency> 
+                  <mix:numerator>300</mix:numerator> 
+                </mix:ySamplingFrequency> 
+              </mix:SpatialMetrics>  
+              <mix:ImageColorEncoding> 
+                <mix:BitsPerSample> 
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>  
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>  
+                  <mix:bitsPerSampleUnit>integer</mix:bitsPerSampleUnit> 
+                </mix:BitsPerSample>  
+                <mix:samplesPerPixel>3</mix:samplesPerPixel> 
+              </mix:ImageColorEncoding> 
+            </mix:ImageAssessmentMetadata> 
+          </mix:mix>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+    <mets:techMD ID="MIX_0002">
+      <mets:mdWrap MDTYPE="NISOIMG" MIMETYPE="image/jp2">
+        <mets:xmlData>
+          <mix:mix xmlns:mix="http://www.loc.gov/mix/v20"> 
+            <mix:BasicDigitalObjectInformation> 
+              <mix:ObjectIdentifier> 
+                <mix:objectIdentifierType>JHOVE</mix:objectIdentifierType> 
+              </mix:ObjectIdentifier>  
+              <mix:byteOrder>little endian</mix:byteOrder>  
+              <mix:Compression> 
+                <mix:compressionScheme>Uncompressed</mix:compressionScheme> 
+              </mix:Compression> 
+            </mix:BasicDigitalObjectInformation>  
+            <mix:BasicImageInformation> 
+              <mix:BasicImageCharacteristics> 
+                <mix:imageWidth>2397</mix:imageWidth>  
+                <mix:imageHeight>3507</mix:imageHeight>  
+                <mix:PhotometricInterpretation> 
+                  <mix:colorSpace>RGB</mix:colorSpace>  
+                  <mix:ReferenceBlackWhite> 
+                    <mix:Component> 
+                      <mix:componentPhotometricInterpretation>R</mix:componentPhotometricInterpretation>  
+                      <mix:footroom> 
+                        <mix:numerator>0</mix:numerator> 
+                      </mix:footroom>  
+                      <mix:headroom> 
+                        <mix:numerator>255</mix:numerator> 
+                      </mix:headroom> 
+                    </mix:Component>  
+                    <mix:Component> 
+                      <mix:componentPhotometricInterpretation>G</mix:componentPhotometricInterpretation>  
+                      <mix:footroom> 
+                        <mix:numerator>0</mix:numerator> 
+                      </mix:footroom>  
+                      <mix:headroom> 
+                        <mix:numerator>255</mix:numerator> 
+                      </mix:headroom> 
+                    </mix:Component>  
+                    <mix:Component> 
+                      <mix:componentPhotometricInterpretation>B</mix:componentPhotometricInterpretation>  
+                      <mix:footroom> 
+                        <mix:numerator>0</mix:numerator> 
+                      </mix:footroom>  
+                      <mix:headroom> 
+                        <mix:numerator>255</mix:numerator> 
+                      </mix:headroom> 
+                    </mix:Component> 
+                  </mix:ReferenceBlackWhite> 
+                </mix:PhotometricInterpretation> 
+              </mix:BasicImageCharacteristics> 
+            </mix:BasicImageInformation>  
+            <mix:ImageCaptureMetadata> 
+              <mix:ScannerCapture> 
+                <mix:ScanningSystemSoftware> 
+                  <mix:scanningSoftwareName>Pixel Translations Inc., PIXTIFF Version 57.5.218.7646</mix:scanningSoftwareName> 
+                </mix:ScanningSystemSoftware> 
+              </mix:ScannerCapture>  
+              <mix:orientation>normal*</mix:orientation> 
+            </mix:ImageCaptureMetadata>  
+            <mix:ImageAssessmentMetadata> 
+              <mix:SpatialMetrics> 
+                <mix:samplingFrequencyUnit>in.</mix:samplingFrequencyUnit>  
+                <mix:xSamplingFrequency> 
+                  <mix:numerator>300</mix:numerator> 
+                </mix:xSamplingFrequency>  
+                <mix:ySamplingFrequency> 
+                  <mix:numerator>300</mix:numerator> 
+                </mix:ySamplingFrequency> 
+              </mix:SpatialMetrics>  
+              <mix:ImageColorEncoding> 
+                <mix:BitsPerSample> 
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>  
+                  <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>  
+                  <mix:bitsPerSampleUnit>integer</mix:bitsPerSampleUnit> 
+                </mix:BitsPerSample>  
+                <mix:samplesPerPixel>3</mix:samplesPerPixel> 
+              </mix:ImageColorEncoding> 
+            </mix:ImageAssessmentMetadata> 
+          </mix:mix>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:techMD>
+  </mets:amdSec>
+</mets:mets>

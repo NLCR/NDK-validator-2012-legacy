@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<premis xmlns="info:lc/xmlns/premis-v2" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.loc.gov/mix/v20">
+    <object xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="file">
+        <objectIdentifier>
+            <objectIdentifierType>fileName</objectIdentifierType>
+            <objectIdentifierValue>Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz</objectIdentifierValue>
+        </objectIdentifier>
+        <preservationLevel>
+            <preservationLevelValue>preservation</preservationLevelValue>
+        </preservationLevel>
+        <objectCharacteristics>
+            <compositionLevel>0</compositionLevel>
+            <fixity>
+                <messageDigestAlgorithm>MD5</messageDigestAlgorithm>
+                <messageDigest>a41fa8f6ebcec37f6f2e55d4a19593ce</messageDigest>
+                <messageDigestOriginator>TM</messageDigestOriginator>
+            </fixity>
+            <size>5242389</size>
+            <format>
+                <formatDesignation>
+                    <formatName>WARC</formatName>
+                    <formatVersion>1.0</formatVersion>
+                </formatDesignation>
+                <formatRegistry>
+                    <formatRegistryName>PRONOM</formatRegistryName>
+                    <formatRegistryKey>fmt/289</formatRegistryKey>
+                </formatRegistry>
+            </format>
+            <creatingApplication>
+                <creatingApplicationName>Heritrix 1.15.5 http://crawler.archive.org</creatingApplicationName>
+                <creatingApplicationVersion>1.15.5</creatingApplicationVersion>
+                <dateCreatedByApplication>2012-06-15T12:38:39Z</dateCreatedByApplication>
+            </creatingApplication>
+        </objectCharacteristics>
+        <storage>
+            <contentLocationType>URI</contentLocationType>
+            <contentLocationValue>c:\NDK\data_test\CDM_c5927a70-b6e6-11e1-863b-02004c4f4f50\data\ARC\Fileformats-20120516162133-00000-crawler00.webarchiv.cz.arc.gz.warc.warc.gz</contentLocationValue>
+        </storage>
+    </object>
+</premis>

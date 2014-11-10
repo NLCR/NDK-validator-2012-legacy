@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.logica.ndk.tm</groupId>
+		<artifactId>main</artifactId>
+		<version>1.5.1-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.logica.ndk.tm</groupId>
+	<artifactId>interfaces</artifactId>
+	<packaging>jar</packaging>
+	<name>NDK TM - interfaces</name>
+	<version>1.5.1-SNAPSHOT</version>
+	<description />
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>add-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>${project.build.directory}/generated/jaxb</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxb2-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>process.state</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+						<configuration>
+							<packageName>com.logica.ndk.tm.process</packageName>
+							<schemaDirectory>${basedir}/src/main/resources</schemaDirectory>
+							<schemaFiles>ProcessState.xsd</schemaFiles>
+							<outputDirectory>${project.build.directory}/generated/jaxb</outputDirectory>
+							<extension>true</extension>
+							<staleFile>${project.build.directory}/jaxb/stale/process.state.done</staleFile>
+						</configuration>
+					</execution>
+					<execution>
+						<id>urnNbn</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+						<configuration>
+							<packageName>com.logica.ndk.tm.utilities.urnnbn</packageName>
+							<schemaDirectory>${basedir}/src/main/resources/urnNbn/xsd</schemaDirectory>
+							<schemaFiles>digInstImport.xsd</schemaFiles>
+							<outputDirectory>${project.build.directory}/generated/jaxb</outputDirectory>
+							<extension>true</extension>
+							<clearOutputDir>false</clearOutputDir>
+							<staleFile>${project.build.directory}/jaxb/stale/urnnbn.state.done</staleFile>
+							<bindingDirectory>${basedir}/src/main/resources/jaxb</bindingDirectory>
+							<!-- bindingFiles>jaxb-bindings.xml</bindingFiles -->
+						</configuration>
+					</execution>
+					<execution>
+						<id>urnNbn2</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+						<configuration>
+							<packageName>com.logica.ndk.tm.utilities.urnnbn</packageName>
+							<schemaDirectory>${basedir}/src/main/resources/urnNbn/xsd</schemaDirectory>
+							<schemaFiles>digDocRegistration.xsd</schemaFiles>
+							<outputDirectory>${project.build.directory}/generated/jaxb</outputDirectory>
+							<extension>true</extension>
+							<clearOutputDir>false</clearOutputDir>
+							<staleFile>${project.build.directory}/jaxb/stale/urnnbn2.state.done</staleFile>
+							<bindingDirectory>${basedir}/src/main/resources/jaxb</bindingDirectory>
+							<bindingFiles>jaxb-bindings.xml</bindingFiles>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.codehaus.mojo
+										</groupId>
+										<artifactId>
+											jaxb2-maven-plugin
+										</artifactId>
+										<versionRange>
+											[1.3.1,)
+										</versionRange>
+										<goals>
+											<goal>xjc</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>commons</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-jaxrs</artifactId>
+			<version>1.6.3</version>
+		</dependency>
+	</dependencies>
+</project>

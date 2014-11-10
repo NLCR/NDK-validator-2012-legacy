@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:titleInfo>
+<mods:title>http://gate.muzeum.zlin.cz/katalog/l.dll?h~DD=1&amp;T=ileg%E1ln%ED+noviny</mods:title>
+</mods:titleInfo>
+<mods:originInfo>
+<mods:dateCaptured encoding="w3cdtf">2011-09-13T11:53:19Z</mods:dateCaptured>
+</mods:originInfo>
+<mods:physicalDescription>
+<mods:internetMediaType>text/html; charset=iso-8859-1</mods:internetMediaType>
+</mods:physicalDescription>
+<mods:recordInfo>
+<mods:recordIdentifier>urn:uuid:2c93e25d-553b-435b-890b-fa1d36891b4c</mods:recordIdentifier>
+</mods:recordInfo>
+<mods:location>
+<mods:physicalLocation>c:\NDK\data_test\CDM_ede8ea30-abcf-11e1-be03-02004c4f4f50\data\TXT\urn-uuid-2c93e25d-553b-435b-890b-fa1d36891b4c.txt</mods:physicalLocation>
+</mods:location>
+</mods:mods>

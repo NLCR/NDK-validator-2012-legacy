@@ -1,0 +1,4 @@
+defc71b28593bb73c7c94a8332f85da8  bagit.txt
+02d3db55db9d4787cccb8b0d5c73a3a4  bag-info.txt
+7c447e9c48541d1458f1765ab772aee9  manifest-md5.txt
+68403b11960741cbecddcb5821bd417a  cdmProperties.xml

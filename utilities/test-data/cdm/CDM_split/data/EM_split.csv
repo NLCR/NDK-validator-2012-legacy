@@ -1,0 +1,6 @@
+# Config file for EM. Created 2012-04-16T17:02:30.322+02:00
+"pageId","pageLabel","pageType","pageOrder","pageOrderLabel","dmdId","scanId","scanType","scanNote","admid"
+"scan0001","scan0001.tif.jp2","normalPage","0","1","MODSMD_ISSUE_0001","01","flat","","1"
+"scan0002","scan0002.tif.jp2","normalPage","1","2","MODSMD_ISSUE_0002","01","flat","","1"
+"scan0003","scan0003.tif.jp2","normalPage","0","1","MODSMD_ISSUE_0001","01","flat","","1"
+"scan0004","scan0004.tif.jp2","normalPage","1","2","MODSMD_ISSUE_0002","01","flat","","1"

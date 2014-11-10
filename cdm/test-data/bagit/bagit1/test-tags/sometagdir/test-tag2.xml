@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:spring="http://www.springframework.org/schema/beans" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf"
+	xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio"
+	xmlns:script="http://www.mulesoft.org/schema/mule/scripting" xmlns:management="http://www.mulesoft.org/schema/mule/management"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jersey="http://www.mulesoft.org/schema/mule/jersey"
+	xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jcr="http://www.mulesoft.org/schema/mule/jcr" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz"
+	xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/3.2/mule.xsd
+	http://www.mulesoft.org/schema/mule/cxf http://www.mulesoft.org/schema/mule/cxf/3.2/mule-cxf.xsd
+	http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/3.2/mule-jms.xsd
+	http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/3.2/mule-http.xsd
+	http://www.mulesoft.org/schema/mule/stdio http://www.mulesoft.org/schema/mule/stdio/3.2/mule-stdio.xsd
+	http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/3.2/mule-scripting.xsd
+	http://www.mulesoft.org/schema/mule/jersey http://www.mulesoft.org/schema/mule/jersey/3.2/mule-jersey.xsd
+	http://www.mulesoft.org/schema/mule/management http://www.mulesoft.org/schema/mule/management/3.2/mule-management.xsd
+	http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/3.2/mule-xml.xsd
+	http://www.mulesoft.org/schema/mule/jcr http://dist.muleforge.org/mule-transport-jcr/schema/3.2/mule-jcr.xsd
+	http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/3.1/mule-file.xsd
+	http://www.mulesoft.org/schema/mule/quartz http://www.mulesoft.org/schema/mule/quartz/3.0/mule-quartz.xsd">
+
+	<!-- management:jmx-default-config port="${master.jmx.port}"
+		registerMx4jAdapter="true" />
+	<management:jmx-mx4j-adaptor jmxAdaptorUrl="${master.mx4j.url}" /-->
+
+	<context:property-placeholder location="classpath:oaipmh.properties" />
+
+	<jms:activemq-connector name="JMSConnectorMaster" connectionFactory-ref="jmsFactory" />
+
+	<mulexml:jaxb-context name="processJaxb" packageNames="com.logica.ndk.tm.process" />
+
+	<mulexml:namespace-manager>
+		<mulexml:namespace prefix="oaipmh" uri="http://www.openarchives.org/OAI/2.0/" />
+	</mulexml:namespace-manager>
+
+	<jcr:connector name="jcrConnector" repository-ref="jcrRepository" username="admin" password="admin" />
+
+	<http:connector name="httpConnector" clientSoTimeout="5000" serverSoTimeout="5000" />
+
+	<spring:beans>
+		<!-- spring:import resource="mule-config-jbpm.xml" /-->
+		<spring:bean id="jmsFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+			<spring:property name="brokerURL" value="${activemq.broker.url}" />
+		</spring:bean>
+
+		<spring:bean name="actualDateBean" scope="prototype" class="com.logica.ndk.tm.oaipmh.ActualDateUTC" />
+		<spring:bean name="actualDate" factory-bean="actualDateBean" factory-method="getDateInUTC" />
+
+		<spring:bean id="jcrRepository" class="org.apache.jackrabbit.rmi.repository.URLRemoteRepository">
+			<spring:constructor-arg value="http://localhost:8080/rmi" />
+		</spring:bean>
+	</spring:beans>
+
+	<!-- flow name="invokeFromFile">
+		<file:inbound-endpoint path="c://test"/>
+		<outbound-endpoint address="vm://invokeHarvesting">
+			<message-properties-transformer scope="session">
+				<add-message-property key="metadataPrefix" value="#[xpath()]marc21" />
+				<add-message-property key="from" value="2011-05-01" />
+				<add-message-property key="url" value="http://aleph.nkp.cz:8991/OAI" />
+				<add-message-property key="stylesheet" value="e:\NDKDEV\harverster\mule\src\main\resources\stylesheet.xsl" />
+			</message-properties-transformer>
+		</outbound-endpoint>
+	</flow-->
+
+
+	<flow name="invoke">
+		<inbound-endpoint address="stdio://in" />
+		<outbound-endpoint address="vm://invokeHarvesting">
+			<message-properties-transformer scope="session">
+				<add-message-property key="metadataPrefix" value="marc21" />
+				<add-message-property key="from" value="2011-05-01" />
+				<!-- add-message-property key="url" value="http://oai.mzk.cz" /-->
+				<add-message-property key="url" value="http://aleph.nkp.cz:8991/OAI" />
+				<add-message-property key="stylesheet" value="e:\NDKDEV\harverster\mule\src\main\resources\stylesheet.xsl" />
+			</message-properties-transformer>
+		</outbound-endpoint>
+	</flow>
+
+	<flow name="harvester">
+		<inbound-endpoint address="vm://invokeHarvesting">
+			<message-properties-transformer>
+				<add-message-property key="MULE_STYLESHEET" value="#[header:SESSION:stylesheet]" />
+				<add-message-property key="MULE_HARVESTING_START" value-ref="actualDate" />
+			</message-properties-transformer>
+		</inbound-endpoint>
+
+		<custom-processor class="com.logica.ndk.tm.oaipmh.TimeoutConfigurableRestServiceWrapper">
+			<spring:property name="soTimeout" value="5000" />
+			<spring:property name="serviceUrl" value="#[header:SESSION:url]" />
+			<spring:property name="verb" value="ListRecords" />
+			<spring:property name="metadataPrefix" value="#[header:SESSION:metadataPrefix]" />
+			<spring:property name="from" value="#[header:SESSION:from]" />
+			<spring:property name="resumptionToken" value="#[header:SESSION:resumptionToken]" />
+		</custom-processor>
+
+		<object-to-string-transformer />
+		<!-- mulexml:schema-validation-filter schemaLocations="schema/oaipmh.xsd"/-->
+		<mulexml:xpath-filter pattern="boolean(/oaipmh:OAI-PMH/oaipmh:ListRecords)" expectedValue="true" />
+		<mulexml:dom-to-xml-transformer />
+
+		<choice>
+			<when expression="boolean(/oaipmh:OAI-PMH/oaipmh:ListRecords/oaipmh:resumptionToken)" evaluator="xpath">
+				<all>
+					<outbound-endpoint address="vm://invokeHarvesting">
+						<message-properties-transformer scope="session">
+							<delete-message-property key="metadataPrefix" />
+							<delete-message-property key="from" />
+							<add-message-property key="resumptionToken"
+								value="#[xpath:/oaipmh:OAI-PMH/oaipmh:ListRecords/oaipmh:resumptionToken]" />
+						</message-properties-transformer>
+					</outbound-endpoint>
+					<outbound-endpoint address="vm://out" />
+				</all>
+			</when>
+			<otherwise>
+				<all>
+				<!-- sem pride dalsi outbound vm://protokol, resp. file://protokol -->
+				<!-- file:outbound-endpoint path="c://test" / -->
+					<outbound-endpoint address="vm://timer">
+						<script:transformer>
+							<script:script engine="groovy">
+								<script:text>
+									return new Date()
+								</script:text>
+							</script:script>
+						</script:transformer>
+					</outbound-endpoint>
+					<outbound-endpoint address="vm://out" />
+				</all>
+			</otherwise>
+		</choice>
+
+	</flow>
+
+	<file:connector name="output" outputPattern="#[function:datestamp].xml" />
+
+	<flow name="messageSplitting">
+
+		<inbound-endpoint address="vm://out">
+			<message-properties-transformer scope="outbound">
+				<add-message-property key="MULE_STYLESHEET" value="#[header:INBOUND:MULE_STYLESHEET]" />
+				<add-message-property key="MULE_HARVESTING_START" value="#[header:INBOUND:MULE_HARVESTING_START]" />
+			</message-properties-transformer>
+		</inbound-endpoint>
+		<custom-splitter class="com.logica.ndk.tm.oaipmh.CustomExpressionSplitter">
+			<spring:property name="evaluator" value="xpath" />
+			<spring:property name="expression" value="/oaipmh:OAI-PMH/oaipmh:ListRecords/oaipmh:record" />
+		</custom-splitter>
+		<!-- splitter expression="/oaipmh:OAI-PMH/oaipmh:ListRecords/oaipmh:record" evaluator="xpath"/-->
+		<mulexml:dom-to-xml-transformer />
+
+		<custom-transformer class="com.logica.ndk.tm.oaipmh.CustomXsltTransformer">
+			<spring:property name="xslFile" value="#[header:OUTBOUND:MULE_STYLESHEET]" />
+		</custom-transformer>
+
+		<mulexml:dom-to-xml-transformer />
+
+		<outbound-endpoint address="jms://splitted" />
+
+		<!-- jcr:outbound-endpoint path="/" nodeRelPath="targetSingleNtResourceNode" nodeTypeName="nt:resource">
+			<property key="jcr:mimeType" value="text/plain" />
+		</jcr:outbound-endpoint -->
+
+	</flow>
+
+	<flow name="timerFlow">
+		<inbound-endpoint address="vm://timer" />
+		<custom-transformer class="com.logica.ndk.tm.oaipmh.DateToCronExpressionTransformer">
+			<spring:property name="offset" value="1" />
+		</custom-transformer>
+		<message-properties-transformer scope="session">
+				<!-- add-message-property key="metadataPrefix" value="oai_dc" /-->
+			<add-message-property key="metadataPrefix" value="marc21" />
+			<add-message-property key="from" value="#[header:INVOCATION:MULE_HARVESTING_START]" />
+			<add-message-property key="url" value="http://aleph.nkp.cz:8991/OAI" />
+			<add-message-property key="stylesheet" value="classpath:stylesheet.xsl" />
+		</message-properties-transformer>
+		<quartz:outbound-endpoint jobName="fero">
+			<quartz:scheduled-dispatch-job>
+				<quartz:job-endpoint address="vm://invokeHarvesting" />
+			</quartz:scheduled-dispatch-job>
+		</quartz:outbound-endpoint>
+	</flow>
+</mule>

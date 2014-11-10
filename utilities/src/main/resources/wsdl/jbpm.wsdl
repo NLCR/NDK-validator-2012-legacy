@@ -1,0 +1,686 @@
+<wsdl:definitions name="JBPMWSFacadeImplService"
+	targetNamespace="http://wwww.logica.com/ndk/tm/process" xmlns:ns1="http://schemas.xmlsoap.org/soap/http"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://wwww.logica.com/ndk/tm/process"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<wsdl:types>
+		<xs:schema attributeFormDefault="unqualified"
+			elementFormDefault="qualified" targetNamespace="http://wwww.logica.com/ndk/tm/process"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema">
+			<xs:element name="AssignUrnNbnResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="urnNbn" type="xs:string" />
+						<xs:element name="urnNbnSource" type="tns:UrnNbnSource" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CheckOcrOutputResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="responseCode" type="xs:string" />
+						<xs:element name="ocr" type="xs:string" />
+						<xs:element name="ocrRate" type="xs:int" />
+						<xs:element name="ocrPagesOk" type="xs:int" />
+						<xs:element name="ocrPagesException" type="xs:int" />
+						<xs:element name="ocrLicenceUsed" type="xs:int" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FindRecordResult">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="recordId" type="xs:int" />
+						<xs:element name="descriptor" type="xs:string" />
+						<xs:element name="digitizationState" type="tns:DigitizationState" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetAlephExtendedDataResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="result" type="xs:string" />
+						<xs:element name="docnum" type="xs:string" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="activeInstances" type="tns:activeInstances" />
+			<xs:element name="activeInstancesExceedTimeout" type="tns:activeInstancesExceedTimeout" />
+			<xs:element name="activeInstancesExceedTimeoutResponse"
+				type="tns:activeInstancesExceedTimeoutResponse" />
+			<xs:element name="activeInstancesResponse" type="tns:activeInstancesResponse" />
+			<xs:element name="createProcessInstance" type="tns:createProcessInstance" />
+			<xs:element name="createProcessInstanceResponse" type="tns:createProcessInstanceResponse" />
+			<xs:element name="endInstance" type="tns:endInstance" />
+			<xs:element name="endInstanceResponse" type="tns:endInstanceResponse" />
+			<xs:element name="endInstancesExceedTimeout" type="tns:endInstancesExceedTimeout" />
+			<xs:element name="endInstancesExceedTimeoutResponse" type="tns:endInstancesExceedTimeoutResponse" />
+			<xs:element name="getFreeProcessInstances" type="tns:getFreeProcessInstances" />
+			<xs:element name="getFreeProcessInstancesResponse" type="tns:getFreeProcessInstancesResponse" />
+			<xs:element name="processState">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="processId" type="xs:string" />
+						<xs:element name="processName" type="xs:string" />
+						<xs:element name="instanceId" type="xs:long" />
+						<xs:element name="startDate" type="xs:date" />
+						<xs:element name="endDate" type="xs:date" />
+						<xs:element name="state" type="xs:int" />
+						<xs:element name="parameters" type="tns:ParamMap" />
+						<xs:element name="nodes" type="tns:NodeList" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="resumeProcess" type="tns:resumeProcess" />
+			<xs:element name="resumeProcessResponse" type="tns:resumeProcessResponse" />
+			<xs:element name="resumeProcesses" type="tns:resumeProcesses" />
+			<xs:element name="resumeProcessesResponse" type="tns:resumeProcessesResponse" />
+			<xs:element name="signalEvent" type="tns:signalEvent" />
+			<xs:element name="signalEventForInstance" type="tns:signalEventForInstance" />
+			<xs:element name="signalEventForInstanceResponse" type="tns:signalEventForInstanceResponse" />
+			<xs:element name="signalEventResponse" type="tns:signalEventResponse" />
+			<xs:element name="startProcess" type="tns:startProcess" />
+			<xs:element name="startProcessInstance" type="tns:startProcessInstance" />
+			<xs:element name="startProcessInstanceResponse" type="tns:startProcessInstanceResponse" />
+			<xs:element name="startProcessResponse" type="tns:startProcessResponse" />
+			<xs:element name="state" type="tns:state" />
+			<xs:element name="stateResponse" type="tns:stateResponse" />
+			<xs:complexType name="startProcess">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="processId" type="xs:string" />
+					<xs:element minOccurs="0" name="parameters" type="tns:ParamMap" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ParamMap">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="items"
+						nillable="true" type="tns:ParamMapItem" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ParamMapItem">
+				<xs:sequence>
+					<xs:element name="name" type="xs:string" />
+					<xs:element name="value" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="startProcessResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:long" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="resumeProcesses">
+				<xs:sequence />
+			</xs:complexType>
+			<xs:complexType name="resumeProcessesResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="startProcessInstance">
+				<xs:sequence>
+					<xs:element name="processInstanceId" type="xs:long" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="startProcessInstanceResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:long" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="signalEventForInstance">
+				<xs:sequence>
+					<xs:element name="instanceId" type="xs:long" />
+					<xs:element minOccurs="0" name="type" type="xs:string" />
+					<xs:element minOccurs="0" name="eventData" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="signalEventForInstanceResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="resumeProcess">
+				<xs:sequence>
+					<xs:element name="instanceId" type="xs:long" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="resumeProcessResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="createProcessInstance">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="processId" type="xs:string" />
+					<xs:element minOccurs="0" name="parameters" type="tns:ParamMap" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="createProcessInstanceResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:long" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="endInstance">
+				<xs:sequence>
+					<xs:element name="instanceId" type="xs:long" />
+					<xs:element minOccurs="0" name="initiator" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="endInstanceResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="getFreeProcessInstances">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="includeFull" type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="getFreeProcessInstancesResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="tns:ProcessMap" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ProcessMap">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="process"
+						nillable="true" type="tns:FreeProcess" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="FreeProcess">
+				<xs:sequence>
+					<xs:element name="processId" type="xs:string" />
+					<xs:element name="count" type="xs:int" />
+					<xs:element name="priority" type="xs:int" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="state">
+				<xs:sequence>
+					<xs:element name="instanceId" type="xs:long" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="stateResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="processId" type="xs:string" />
+								<xs:element name="processName" type="xs:string" />
+								<xs:element name="instanceId" type="xs:long" />
+								<xs:element name="startDate" type="xs:date" />
+								<xs:element name="endDate" type="xs:date" />
+								<xs:element name="state" type="xs:int" />
+								<xs:element name="parameters" type="tns:ParamMap" />
+								<xs:element name="nodes" type="tns:NodeList" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="NodeList">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="items"
+						nillable="true" type="tns:Node" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Node">
+				<xs:sequence>
+					<xs:element name="name" type="xs:string" />
+					<xs:element name="startDate" type="xs:date" />
+					<xs:element name="endDate" type="xs:date" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="activeInstancesExceedTimeout">
+				<xs:sequence />
+			</xs:complexType>
+			<xs:complexType name="activeInstancesExceedTimeoutResponse">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="return"
+						type="xs:long" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="signalEvent">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="type" type="xs:string" />
+					<xs:element minOccurs="0" name="eventData" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="signalEventResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="activeInstances">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="processId" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="activeInstancesResponse">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="return"
+						type="xs:long" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="endInstancesExceedTimeout">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="initiator" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="endInstancesExceedTimeoutResponse">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="return"
+						type="xs:long" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="UrnNbnSource">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="RESOLVER" />
+					<xs:enumeration value="DB" />
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="DigitizationState">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="CANCELED" />
+					<xs:enumeration value="FINISHED" />
+					<xs:enumeration value="IN_PROGRESS" />
+					<xs:enumeration value="REVISION" />
+					<xs:enumeration value="SCHEDULED" />
+					<xs:enumeration value="UNDEFINED" />
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="JBPMBusinessException">
+				<xs:sequence>
+					<xs:element name="rootExceptionName" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="JBPMBusinessException" type="tns:JBPMBusinessException" />
+			<xs:complexType name="JBPMSystemException">
+				<xs:sequence>
+					<xs:element name="rootExceptionName" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="JBPMSystemException" type="tns:JBPMSystemException" />
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="getFreeProcessInstances">
+		<wsdl:part element="tns:getFreeProcessInstances" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="activeInstancesExceedTimeoutResponse">
+		<wsdl:part element="tns:activeInstancesExceedTimeoutResponse"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="JBPMSystemException">
+		<wsdl:part element="tns:JBPMSystemException" name="JBPMSystemException" />
+	</wsdl:message>
+	<wsdl:message name="getFreeProcessInstancesResponse">
+		<wsdl:part element="tns:getFreeProcessInstancesResponse"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="signalEventForInstance">
+		<wsdl:part element="tns:signalEventForInstance" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="startProcess">
+		<wsdl:part element="tns:startProcess" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="resumeProcess">
+		<wsdl:part element="tns:resumeProcess" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="activeInstances">
+		<wsdl:part element="tns:activeInstances" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="activeInstancesExceedTimeout">
+		<wsdl:part element="tns:activeInstancesExceedTimeout" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="JBPMBusinessException">
+		<wsdl:part element="tns:JBPMBusinessException" name="JBPMBusinessException" />
+	</wsdl:message>
+	<wsdl:message name="activeInstancesResponse">
+		<wsdl:part element="tns:activeInstancesResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="resumeProcessesResponse">
+		<wsdl:part element="tns:resumeProcessesResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="signalEventForInstanceResponse">
+		<wsdl:part element="tns:signalEventForInstanceResponse"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="endInstanceResponse">
+		<wsdl:part element="tns:endInstanceResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="createProcessInstance">
+		<wsdl:part element="tns:createProcessInstance" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="stateResponse">
+		<wsdl:part element="tns:stateResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="signalEvent">
+		<wsdl:part element="tns:signalEvent" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="createProcessInstanceResponse">
+		<wsdl:part element="tns:createProcessInstanceResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="startProcessInstanceResponse">
+		<wsdl:part element="tns:startProcessInstanceResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="resumeProcesses">
+		<wsdl:part element="tns:resumeProcesses" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="state">
+		<wsdl:part element="tns:state" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="endInstancesExceedTimeout">
+		<wsdl:part element="tns:endInstancesExceedTimeout" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="signalEventResponse">
+		<wsdl:part element="tns:signalEventResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="endInstance">
+		<wsdl:part element="tns:endInstance" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="endInstancesExceedTimeoutResponse">
+		<wsdl:part element="tns:endInstancesExceedTimeoutResponse"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="startProcessInstance">
+		<wsdl:part element="tns:startProcessInstance" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="startProcessResponse">
+		<wsdl:part element="tns:startProcessResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="resumeProcessResponse">
+		<wsdl:part element="tns:resumeProcessResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:portType name="JBPMWSFacade">
+		<wsdl:operation name="startProcess">
+			<wsdl:input message="tns:startProcess" name="startProcess" />
+			<wsdl:output message="tns:startProcessResponse" name="startProcessResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="resumeProcesses">
+			<wsdl:input message="tns:resumeProcesses" name="resumeProcesses" />
+			<wsdl:output message="tns:resumeProcessesResponse" name="resumeProcessesResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="startProcessInstance">
+			<wsdl:input message="tns:startProcessInstance" name="startProcessInstance" />
+			<wsdl:output message="tns:startProcessInstanceResponse"
+				name="startProcessInstanceResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="signalEventForInstance">
+			<wsdl:input message="tns:signalEventForInstance" name="signalEventForInstance" />
+			<wsdl:output message="tns:signalEventForInstanceResponse"
+				name="signalEventForInstanceResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="resumeProcess">
+			<wsdl:input message="tns:resumeProcess" name="resumeProcess" />
+			<wsdl:output message="tns:resumeProcessResponse" name="resumeProcessResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="createProcessInstance">
+			<wsdl:input message="tns:createProcessInstance" name="createProcessInstance" />
+			<wsdl:output message="tns:createProcessInstanceResponse"
+				name="createProcessInstanceResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="endInstance">
+			<wsdl:input message="tns:endInstance" name="endInstance" />
+			<wsdl:output message="tns:endInstanceResponse" name="endInstanceResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="getFreeProcessInstances">
+			<wsdl:input message="tns:getFreeProcessInstances" name="getFreeProcessInstances" />
+			<wsdl:output message="tns:getFreeProcessInstancesResponse"
+				name="getFreeProcessInstancesResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="state">
+			<wsdl:input message="tns:state" name="state" />
+			<wsdl:output message="tns:stateResponse" name="stateResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="activeInstancesExceedTimeout">
+			<wsdl:input message="tns:activeInstancesExceedTimeout"
+				name="activeInstancesExceedTimeout" />
+			<wsdl:output message="tns:activeInstancesExceedTimeoutResponse"
+				name="activeInstancesExceedTimeoutResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="signalEvent">
+			<wsdl:input message="tns:signalEvent" name="signalEvent" />
+			<wsdl:output message="tns:signalEventResponse" name="signalEventResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="activeInstances">
+			<wsdl:input message="tns:activeInstances" name="activeInstances" />
+			<wsdl:output message="tns:activeInstancesResponse" name="activeInstancesResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+		<wsdl:operation name="endInstancesExceedTimeout">
+			<wsdl:input message="tns:endInstancesExceedTimeout" name="endInstancesExceedTimeout" />
+			<wsdl:output message="tns:endInstancesExceedTimeoutResponse"
+				name="endInstancesExceedTimeoutResponse" />
+			<wsdl:fault message="tns:JBPMSystemException" name="JBPMSystemException" />
+			<wsdl:fault message="tns:JBPMBusinessException" name="JBPMBusinessException" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="JBPMWSFacadeImplServiceSoapBinding"
+		type="tns:JBPMWSFacade">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="resumeProcesses">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="resumeProcesses">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="resumeProcessesResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="startProcess">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="startProcess">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="startProcessResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="signalEventForInstance">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="signalEventForInstance">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="signalEventForInstanceResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="startProcessInstance">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="startProcessInstance">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="startProcessInstanceResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="resumeProcess">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="resumeProcess">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="resumeProcessResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="createProcessInstance">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="createProcessInstance">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="createProcessInstanceResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="endInstance">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="endInstance">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="endInstanceResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getFreeProcessInstances">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="getFreeProcessInstances">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="getFreeProcessInstancesResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="state">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="state">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="stateResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="activeInstancesExceedTimeout">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="activeInstancesExceedTimeout">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="activeInstancesExceedTimeoutResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="activeInstances">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="activeInstances">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="activeInstancesResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="signalEvent">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="signalEvent">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="signalEventResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="endInstancesExceedTimeout">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="endInstancesExceedTimeout">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="endInstancesExceedTimeoutResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="JBPMSystemException">
+				<soap:fault name="JBPMSystemException" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="JBPMBusinessException">
+				<soap:fault name="JBPMBusinessException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="JBPMWSFacadeImplService">
+		<wsdl:port binding="tns:JBPMWSFacadeImplServiceSoapBinding"
+			name="JBPMWSFacadeImplPort">
+			<soap:address location="REPLACE_WITH_ACTUAL_URL" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

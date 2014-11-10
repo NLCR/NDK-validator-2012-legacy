@@ -1,0 +1,90 @@
+<XmlResult Id="{8A102418-23F7-481C-B3A3-9E6E72D2E30B}" IsFailed="false" Priority="Normal" OCRTimeout="0"
+	Date="23.03.2012 11:55:08.210000">
+	<Subfolder>f65b8deb-d158-4923-9d74-7d7b4cb71da0</Subfolder>
+	<BarcodeText></BarcodeText>
+	<UserProperty></UserProperty>
+	<Name>scan-0001.tif</Name>
+	<UserName>unknown</UserName>
+	<InputFile Name="{FD56D68A-4A58-47B9-AF03-37CAA555CBB5}_scan-0001.tif" Id="{FD56D68A-4A58-47B9-AF03-37CAA555CBB5}"
+		FileModificationTime="23.03.2012 11:55:06.443890">
+		<Warning>Page 1: Increase resolution to improve recognition accuracy of small text.</Warning>
+		<Warning>Page 1: Check the recognition language.</Warning>
+		<OutputDocuments>
+			<FileName>scan-0001.tif</FileName>
+			<FormatSettings Id="{EFFC46B8-BD0F-4422-8549-7D781814F42C}" OutputFileFormat="NoConversion"
+				KeepLastModifiedDate="false" OutputFlowType="SharedFolder">
+				<OutputLocation>C:\Users\Public\ABBYY\ABBYY Recognition Server 3.0\Default Workflow\Output Folder</OutputLocation>
+				<NamingRule>&lt;FileName&gt;.&lt;Ext&gt;</NamingRule>
+			</FormatSettings>
+		</OutputDocuments>
+		<OutputDocuments>
+			<FileName>scan-0001.xml.xml</FileName>
+			<FormatSettings Id="{E94579B1-875C-4687-B734-4DF1DC624A94}" OutputFileFormat="ALTO"
+				KeepLastModifiedDate="false" OutputFlowType="SharedFolder" CoordinatesParticularity="Words" FormattingMode="Plain">
+				<OutputLocation>C:\Users\Public\ABBYY\ABBYY Recognition Server 3.0\Default Workflow\Output Folder</OutputLocation>
+				<NamingRule>&lt;FileName&gt;.&lt;Ext&gt;.xml</NamingRule>
+			</FormatSettings>
+		</OutputDocuments>
+		<OutputDocuments>
+			<FileName>scan-0001.txt.txt</FileName>
+			<FormatSettings Id="{0DEC44BB-61CB-4B9F-B44E-DAA6DE21AA38}" OutputFileFormat="Text"
+				KeepLastModifiedDate="false" OutputFlowType="SharedFolder" CodePage="NULL_CODE_PAGE" EncodingType="UTF8"
+				UsePageBreakCharacters="false" KeepOriginalHeadersFooters="true" InsertEmptyLineBetweenParagraphs="false"
+				KeepLineBreaks="false">
+				<OutputLocation>C:\Users\Public\ABBYY\ABBYY Recognition Server 3.0\Default Workflow\Output Folder</OutputLocation>
+				<NamingRule>&lt;FileName&gt;.&lt;Ext&gt;.txt</NamingRule>
+			</FormatSettings>
+		</OutputDocuments>
+		<OutputDocuments>
+			<FileName>scan-0001.pdf.pdf</FileName>
+			<FormatSettings Id="{7538E4E7-1F1D-456F-A923-C3D72C470D85}" OutputFileFormat="PDF"
+				KeepLastModifiedDate="false" OutputFlowType="SharedFolder" ExportMode="ImageOnText" PictureFormat="Automatic"
+				Quality="70" PictureResolution="-300" UseExplicitDocumentInfo="false" UseOriginalPaperSize="true"
+				KeepOriginalHeadersFooters="true" PdfVersion="Auto" ReplaceUncertainWordsWithImages="false" WriteTaggedPdf="false"
+				IsEncryptionRequested="false" UseImprovedCompression="true">
+				<OutputLocation>C:\Users\Public\ABBYY\ABBYY Recognition Server 3.0\Default Workflow\Output Folder</OutputLocation>
+				<NamingRule>&lt;FileName&gt;.&lt;Ext&gt;.pdf</NamingRule>
+			</FormatSettings>
+		</OutputDocuments>
+		<Statistics TotalCharacters="100" UncertainCharacters="20" PagesArea="1" />
+	</InputFile>
+	<ImageProcessingParams Deskew="true" RemoveTexture="true" SplitDualPages="false"
+		ConvertToBWFormat="false" RotationType="Automatic" />
+	<RecognitionParams RecognitionQuality="Fast" LookForBarcodes="true" VerificationMode="NoVerification"
+		RecognitionMode="FullPage">
+		<TextType>Normal</TextType>
+		<Language>Czech</Language>
+		<Language>Slovak</Language>
+		<Language>English</Language>
+	</RecognitionParams>
+	<ExportParams DocumentSeparationMethod="OneFilePerImage" XMLResultPublishingMethod="XMLResultToFolder">
+		<PublishingScriptLanguage></PublishingScriptLanguage>
+		<FailedScriptLanguage></FailedScriptLanguage>
+		<ExportFormat Id="{EFFC46B8-BD0F-4422-8549-7D781814F42C}" OutputFileFormat="NoConversion"
+			KeepLastModifiedDate="false" OutputFlowType="SharedFolder">
+			<OutputLocation>C:\Users\Public\ABBYY\ABBYY Recognition Server 3.0\Default Workflow\Output Folder</OutputLocation>
+			<NamingRule>&lt;FileName&gt;.&lt;Ext&gt;</NamingRule>
+		</ExportFormat>
+		<ExportFormat Id="{E94579B1-875C-4687-B734-4DF1DC624A94}" OutputFileFormat="ALTO" KeepLastModifiedDate="false"
+			OutputFlowType="SharedFolder" CoordinatesParticularity="Words" FormattingMode="Plain">
+			<OutputLocation>C:\Users\Public\ABBYY\ABBYY Recognition Server 3.0\Default Workflow\Output Folder</OutputLocation>
+			<NamingRule>&lt;FileName&gt;.&lt;Ext&gt;.xml</NamingRule>
+		</ExportFormat>
+		<ExportFormat Id="{0DEC44BB-61CB-4B9F-B44E-DAA6DE21AA38}" OutputFileFormat="Text" KeepLastModifiedDate="false"
+			OutputFlowType="SharedFolder" CodePage="NULL_CODE_PAGE" EncodingType="UTF8" UsePageBreakCharacters="false"
+			KeepOriginalHeadersFooters="true" InsertEmptyLineBetweenParagraphs="false" KeepLineBreaks="false">
+			<OutputLocation>C:\Users\Public\ABBYY\ABBYY Recognition Server 3.0\Default Workflow\Output Folder</OutputLocation>
+			<NamingRule>&lt;FileName&gt;.&lt;Ext&gt;.txt</NamingRule>
+		</ExportFormat>
+		<ExportFormat Id="{7538E4E7-1F1D-456F-A923-C3D72C470D85}" OutputFileFormat="PDF" KeepLastModifiedDate="false"
+			OutputFlowType="SharedFolder" ExportMode="ImageOnText" PictureFormat="Automatic" Quality="70" PictureResolution="-300"
+			UseExplicitDocumentInfo="false" UseOriginalPaperSize="true" KeepOriginalHeadersFooters="true" PdfVersion="Auto"
+			ReplaceUncertainWordsWithImages="false" WriteTaggedPdf="false" IsEncryptionRequested="false" UseImprovedCompression="true">
+			<OutputLocation>C:\Users\Public\ABBYY\ABBYY Recognition Server 3.0\Default Workflow\Output Folder</OutputLocation>
+			<NamingRule>&lt;FileName&gt;.&lt;Ext&gt;.pdf</NamingRule>
+		</ExportFormat>
+		<XMLResultLocation>C:\Users\Public\ABBYY\ABBYY Recognition Server 3.0\Default Workflow\Output Folder
+		</XMLResultLocation>
+	</ExportParams>
+	<Statistics TotalCharacters="100" UncertainCharacters="20" PagesArea="1" />
+</XmlResult>
